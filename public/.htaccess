@@ -1,0 +1,89 @@
+# movvabrasil.net - Hostinger (LiteSpeed/Apache)
+# Este arquivo vai junto com o conteudo de dist/ para dentro de public_html.
+
+# ---------------------------------------------------------------
+# 1. HTTPS obrigatorio
+# ---------------------------------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://movvabrasil.net/$1 [R=301,L]
+
+# ---------------------------------------------------------------
+# 2. Host canonico: www -> raiz
+#    Dois enderecos servindo o mesmo conteudo divide sinal de busca.
+# ---------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.movvabrasil\.net$ [NC]
+RewriteRule ^(.*)$ https://movvabrasil.net/$1 [R=301,L]
+
+# ---------------------------------------------------------------
+# 3. Redirecionamentos do site antigo (Builderall)
+#    /home existia no sitemap antigo e respondia junto com a raiz.
+# ---------------------------------------------------------------
+RewriteRule ^home/?$ / [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# ---------------------------------------------------------------
+# 4. URLs limpas: /movva-e-confiavel serve movva-e-confiavel.html
+# ---------------------------------------------------------------
+# Tira a extensao .html de quem digitar com ela
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Serve o arquivo .html sem mostrar a extensao
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Tira a barra final, exceto na raiz
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+</IfModule>
+
+# ---------------------------------------------------------------
+# 5. Pagina de erro propria - e 404 de verdade, nao 200
+# ---------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ---------------------------------------------------------------
+# 6. Compressao
+# ---------------------------------------------------------------
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+AddOutputFilterByType DEFLATE application/javascript application/json
+AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------
+# 7. Cache: assets com hash no nome podem durar um ano.
+#    HTML nao, porque precisa refletir publicacao nova.
+# ---------------------------------------------------------------
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 6 months"
+ExpiresByType image/webp "access plus 6 months"
+ExpiresByType image/png "access plus 6 months"
+ExpiresByType image/jpeg "access plus 6 months"
+ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+<FilesMatch "\.(html)$">
+  Header set Cache-Control "public, max-age=0, must-revalidate"
+</FilesMatch>
+</IfModule>
+
+# ---------------------------------------------------------------
+# 8. Tipos corretos para os arquivos lidos por IA
+# ---------------------------------------------------------------
+<IfModule mod_mime.c>
+AddType text/plain .txt
+AddType text/markdown .md
+AddType application/xml .xml
+</IfModule>

@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.publicado.valueOf() - a.data.publicado.valueOf()
+);
+
+const atualizadoEm = '2026-10-20';
+const title = 'Blog: planos de celular, operadoras virtuais e portabilidade';
+const description =
+  'Conteúdo prático sobre planos de celular, operadoras móveis virtuais, portabilidade e cobertura. Cada texto traz a fonte e a data da última checagem.';
+
+const rotuloCluster = {
+  categoria: 'Entenda a categoria',
+  diferencial: 'Tecnologia',
+  dor: 'Guia prático',
+  marca: 'Análise',
+  comparacao: 'Comparação',
+};
+
+const fmt = (d) =>
+  d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+---
+
+<Base {title} {description} path="/blog" {atualizadoEm} tipo="website">
+  <div class="wrap stack--lg stack">
+
+    <header class="stack">
+      <p class="eyebrow">Blog</p>
+      <h1>Planos, cobertura e portabilidade, sem conversa de vendedor</h1>
+      <p class="lede">
+        Texto curto, resposta no começo e fonte linkada. Quando eu não consegui
+        confirmar alguma coisa, está escrito que não consegui.
+      </p>
+    </header>
+
+    <section class="stack">
+      {posts.length === 0 && <p>Nenhum texto publicado ainda.</p>}
+      {posts.map((post) => (
+        <article class="card">
+          <p class="eyebrow">{rotuloCluster[post.data.cluster]}</p>
+          <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+          <p>{post.data.description}</p>
+          <p class="meta-line">
+            Publicado em {fmt(post.data.publicado)}
+            {post.data.atualizado && post.data.atualizado.valueOf() !== post.data.publicado.valueOf()
+              && ` · atualizado em ${fmt(post.data.atualizado)}`}
+          </p>
+        </article>
+      ))}
+    </section>
+
+  </div>
+</Base>

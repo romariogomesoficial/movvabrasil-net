@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+import { LINK_AFILIADO } from '../data/site.js';
+
+const atualizadoEm = '2026-10-20';
+const title = 'Programa de afiliados MOVVA: como funciona e quanto eu realmente ganhei';
+const description =
+  'Como funciona a remuneração de afiliados da MOVVA Brasil, quanto custa participar e os números reais de um afiliado VIP em três meses e meio. Sem projeção de matriz cheia.';
+---
+
+<Base {title} {description} path="/oportunidade" {atualizadoEm}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <p class="eyebrow">Programa de afiliados</p>
+      <h1>Como funciona o programa de afiliados da MOVVA</h1>
+      <p class="answer">
+        A MOVVA remunera afiliados por indicação de planos, por posição em uma matriz
+        e por bônus sobre a equipe direta. Existe uma licença paga que dobra os
+        ganhos. Não há ganho garantido, e a maior parte da minha comissão até hoje
+        veio de pessoas entrando, não de contas de celular sendo pagas.
+      </p>
+    </header>
+
+    <section class="stack">
+      <div class="card card--warn">
+        <h3>Leia isto antes de qualquer coisa</h3>
+        <p>
+          Programas de marketing de rede têm uma distribuição de resultados muito
+          desigual. O material de treinamento da própria MOVVA apresenta esta
+          proporção: de <strong>200 pessoas convidadas</strong>, cerca de 100 conhecem
+          o negócio, 10 entram, 6 ficam, 3 continuam e <strong>1 se destaca</strong>.
+          Isso é 0,5%.
+        </p>
+        <p>
+          Qualquer número de ganho que você vir por aí precisa ser lido junto com essa
+          proporção. Projeções construídas sobre uma matriz completa de 11.110 pessoas
+          não são previsão de resultado: são o cenário máximo teórico.
+        </p>
+      </div>
+    </section>
+
+    <section class="stack">
+      <h2>Como a remuneração é composta</h2>
+      <ul>
+        <li><strong>Bônus de adesão</strong> — percentual sobre a entrada de quem você indica.</li>
+        <li><strong>Bônus de recorrência</strong> — percentual sobre a mensalidade, enquanto a pessoa continua pagando.</li>
+        <li><strong>Bônus de matriz</strong> — percentual sobre movimentação nos níveis da sua matriz.</li>
+        <li><strong>Matching</strong> — percentual sobre o que seus diretos ganham.</li>
+        <li><strong>Licença VIP</strong> — licença paga que dobra os ganhos e a pontuação do plano de carreira.</li>
+        <li><strong>GoldPoints</strong> — pontuação que destrava graduações e premiações.</li>
+      </ul>
+      <p class="meta-line">
+        Os percentuais e os valores mudam. Confirme sempre no material oficial e
+        vigente da empresa, não em PDF antigo circulando em grupo de WhatsApp.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Os meus números, abertos</h2>
+      <p>
+        Afiliado VIP, cadastrado em julho de 2026, graduação Consultor, oito pessoas
+        na rede. Período de 7 de julho a 20 de outubro de 2026.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Indicador</th><th class="num">Valor</th></tr></thead>
+          <tbody>
+            <tr><td>Comissão gerada no período</td><td class="num">R$ 146,08</td></tr>
+            <tr><td>Recebido líquido, após taxa de saque de 16%</td><td class="num">R$ 115,43</td></tr>
+            <tr><td>Parcela originada de entrada e licença</td><td class="num">96,7%</td></tr>
+            <tr><td>Bônus de recorrência sobre plano de telefonia</td><td class="num">R$ 0,00</td></tr>
+            <tr><td>Comissão em outubro de 2026</td><td class="num">R$ 0,00</td></tr>
+            <tr><td>Custo mensal do meu plano</td><td class="num">R$ 159,80</td></tr>
+            <tr><td>Resultado acumulado até aqui</td><td class="num">negativo</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Publico isso porque considero desonesto recrutar alguém mostrando apenas o
+        cenário bom. Se em algum momento esses números virarem, eu atualizo a tabela.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Para quem isso faz sentido</h2>
+      <p>
+        Na minha leitura, faz sentido para quem <strong>já quer trocar de operadora</strong>
+        e, usando o serviço, decide indicar. O ganho vira consequência de um produto que
+        a pessoa usaria de qualquer jeito.
+      </p>
+      <p>
+        Não faz sentido para quem precisa de dinheiro rápido, nem para quem vai entrar
+        com recurso que faz falta no orçamento. A proporção de 0,5% lá em cima não é
+        detalhe: é a informação mais importante desta página.
+      </p>
+      <div class="card card--accent">
+        <h3>Se ainda quiser conhecer</h3>
+        <p>
+          O cadastro é feito na plataforma oficial da MOVVA. Se você usar o link
+          abaixo, eu recebo comissão caso você se torne cliente ou afiliado — é assim
+          que este site se paga, e é por isso que ele mostra os números ruins também.
+        </p>
+        <p>
+          <a class="btn" href={LINK_AFILIADO} rel="nofollow sponsored noopener" target="_blank">
+            Ver a apresentação oficial
+          </a>
+        </p>
+      </div>
+    </section>
+
+  </article>
+</Base>

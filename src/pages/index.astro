@@ -1,0 +1,100 @@
+---
+import Base from '../layouts/Base.astro';
+import { EMPRESA } from '../data/site.js';
+
+const atualizadoEm = '2026-10-20';
+const title = 'MOVVA Brasil: o que é a operadora, explicado sem promessa de renda';
+const description =
+  'O que é a MOVVA Brasil, qual autorização ela tem na Anatel, sobre qual rede o chip funciona e o que ainda não dá para confirmar. Escrito por um distribuidor independente, com as fontes públicas linkadas.';
+---
+
+<Base {title} {description} path="/" {atualizadoEm} tipo="website">
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <p class="eyebrow">Operadora móvel virtual · Brasil</p>
+      <h1>MOVVA Brasil, explicada com documento na mão</h1>
+      <p class="answer">
+        A MOVVA Brasil é uma operadora móvel virtual (MVNO) que vende planos de
+        celular e remunera afiliados por indicação. A empresa tem CNPJ ativo desde
+        2017 e recebeu autorização da Anatel em julho de 2026 para explorar serviços
+        de telecomunicações em todo o país. O serviço roda sobre infraestrutura de
+        terceiros, por contrato de parceria.
+      </p>
+    </header>
+
+    <section class="stack">
+      <h2>O que dá para verificar hoje</h2>
+      <p>
+        Cada item abaixo veio de registro público e pode ser conferido por qualquer
+        pessoa, sem depender da minha palavra nem da apresentação da empresa.
+      </p>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Informação</th><th>Registro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Razão social</td><td>{EMPRESA.razaoSocial}</td></tr>
+            <tr><td>CNPJ</td><td class="num">{EMPRESA.cnpj}</td></tr>
+            <tr><td>Constituição</td><td>{EMPRESA.constituicao}</td></tr>
+            <tr><td>Autorização Anatel</td><td>{EMPRESA.atoAnatel}</td></tr>
+            <tr><td>Processo SEI</td><td class="num">{EMPRESA.processoSei}</td></tr>
+            <tr><td>Alteração na Junta Comercial</td><td class="num">JUCESP {EMPRESA.jucesp}</td></tr>
+            <tr><td>Parceiro de rede móvel</td><td>{EMPRESA.parceiroSmp}</td></tr>
+            <tr><td>Infraestrutura</td><td>{EMPRESA.infraestrutura}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="meta-line">
+        Confira você mesmo: <a href={EMPRESA.fontes.receita} rel="nofollow noopener">consulta de CNPJ na Receita Federal</a>
+        · <a href={EMPRESA.fontes.anatel} rel="nofollow noopener">consulta de processo no SEI da Anatel</a>.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>O que a empresa anuncia, e que eu ainda estou testando</h2>
+      <p>
+        Faço questão de separar as duas coisas. O que está abaixo é o que o material
+        oficial da MOVVA promete. Eu contratei o plano e estou com a ativação em
+        andamento; conforme eu conseguir medir cada ponto, publico o resultado aqui,
+        inclusive se for ruim.
+      </p>
+      <ul>
+        <li><strong>Dupla conectividade</strong> — um único chip que usaria duas redes. Ainda não testei na prática.</li>
+        <li><strong>Internet acumulativa</strong> — gigas não usados passariam para o mês seguinte.</li>
+        <li><strong>Sem fidelidade</strong> — sem multa por cancelamento.</li>
+        <li><strong>Portabilidade</strong> — possibilidade de levar o número atual.</li>
+        <li><strong>MOVVA Club</strong> — clube de benefícios e descontos.</li>
+      </ul>
+      <div class="card card--warn">
+        <h3>Por que eu não afirmo nada disso ainda</h3>
+        <p>
+          Porque eu não medi. Repetir a promessa da empresa como se fosse fato
+          verificado é o que a maior parte do conteúdo sobre a MOVVA faz hoje, e é
+          exatamente o que eu não quero fazer aqui. Quando o chip ativar, eu publico
+          teste de cobertura, velocidade e o comportamento real da troca de rede.
+        </p>
+      </div>
+    </section>
+
+    <section class="stack">
+      <h2>Comece por aqui</h2>
+      <div class="card card--accent">
+        <h3><a href="/movva-e-confiavel">A MOVVA é confiável? É pirâmide?</a></h3>
+        <p>
+          A pergunta que todo mundo faz antes de decidir. Respondo com os documentos
+          que existem, os riscos que existem, e os meus números reais de ganho.
+        </p>
+      </div>
+      <div class="card">
+        <h3><a href="/oportunidade">Programa de afiliados</a></h3>
+        <p>
+          Como funciona a remuneração, quanto custa entrar, e o que os números
+          realmente mostram sobre quanto se ganha. Sem projeção de matriz cheia.
+        </p>
+      </div>
+    </section>
+
+  </article>
+</Base>

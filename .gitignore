@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Resultado do build: quem gera e o GitHub Actions, nao o commit
+dist/
+.astro/
+
+# Pacote de upload manual
+*.zip
+
+# Sistema
+.DS_Store
+Thumbs.db
+.env
+.env.*

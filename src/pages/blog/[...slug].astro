@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+import { SITE, AUTOR } from '../../data/site.js';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const path = `/blog/${post.id}`;
+const iso = (d) => d.toISOString().slice(0, 10);
+const atualizadoEm = iso(post.data.atualizado ?? post.data.publicado);
+
+const schemaArtigo = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: iso(post.data.publicado),
+  dateModified: atualizadoEm,
+  inLanguage: SITE.locale,
+  author: { '@type': 'Person', name: AUTOR.nome, '@id': `${SITE.url}/#autor` },
+  mainEntityOfPage: new URL(path, SITE.url).href,
+};
+
+const fmt = (d) =>
+  d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+---
+
+<Base
+  title={post.data.title}
+  description={post.data.description}
+  {path}
+  {atualizadoEm}
+  schemaExtra={schemaArtigo}
+>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <h1>{post.data.title}</h1>
+      <p class="answer">{post.data.resposta}</p>
+      <p class="meta-line">
+        Por {AUTOR.nome} · publicado em {fmt(post.data.publicado)}
+        {post.data.atualizado && post.data.atualizado.valueOf() !== post.data.publicado.valueOf()
+          && ` · atualizado em ${fmt(post.data.atualizado)}`}
+      </p>
+    </header>
+
+    <div class="prosa">
+      <Content />
+    </div>
+
+    {post.data.fontes.length > 0 && (
+      <section class="card stack">
+        <h2>Fontes</h2>
+        <ul>
+          {post.data.fontes.map((f) => (
+            <li><a href={f.url} rel="nofollow noopener">{f.rotulo}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <p class="meta-line">
+      Achou um erro? Escreva e eu corrijo, com nota de correção na página.
+      Veja os <a href="/avisos-legais">avisos legais</a>.
+    </p>
+
+  </article>
+</Base>
+
+<style>
+  .prosa { display: flex; flex-direction: column; gap: 1.1rem; }
+  .prosa :global(h2) { margin-top: 1.2rem; }
+  .prosa :global(h3) { margin-top: 0.6rem; }
+  .prosa :global(ul), .prosa :global(ol) { padding-left: 1.2rem; }
+</style>

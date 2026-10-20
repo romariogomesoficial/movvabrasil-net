@@ -1,0 +1,41 @@
+name: Compilar e publicar
+
+# Toda vez que o codigo mudar na branch main, o GitHub compila o site e coloca
+# o resultado pronto na branch "deploy". A Hostinger puxa dessa branch.
+# Assim o public_html recebe so HTML pronto, nunca o codigo-fonte.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o codigo
+        uses: actions/checkout@v4
+
+      - name: Preparar o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar o site
+        run: npm run build
+
+      - name: Publicar o resultado na branch deploy
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: deploy
+          enable_jekyll: true
+          commit_message: 'publicar: ${{ github.event.head_commit.message }}'

@@ -1,0 +1,203 @@
+---
+import '../styles/global.css';
+import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
+
+const {
+  title,
+  description,
+  path = '/',
+  atualizadoEm,
+  tipo = 'article',
+  schemaExtra = null,
+} = Astro.props;
+
+const canonical = new URL(path, SITE.url).href;
+const tituloCompleto = path === '/' ? title : `${title} — ${SITE.name}`;
+
+const schemaBase = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE.url}/#site`,
+      url: SITE.url,
+      name: SITE.name,
+      inLanguage: SITE.locale,
+      publisher: { '@id': `${SITE.url}/#autor` },
+    },
+    {
+      '@type': 'Person',
+      '@id': `${SITE.url}/#autor`,
+      name: AUTOR.nome,
+      jobTitle: AUTOR.papel,
+      url: SITE.url,
+      sameAs: AUTOR.perfis,
+    },
+    {
+      '@type': 'Organization',
+      '@id': `${SITE.url}/#movva`,
+      name: EMPRESA.razaoSocial,
+      alternateName: 'MOVVA',
+      taxID: EMPRESA.cnpj,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Avenida Paulista, 1842, Conjunto 178',
+        addressLocality: 'São Paulo',
+        addressRegion: 'SP',
+        postalCode: '01310-923',
+        addressCountry: 'BR',
+      },
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${canonical}#pagina`,
+      url: canonical,
+      name: title,
+      description,
+      inLanguage: SITE.locale,
+      isPartOf: { '@id': `${SITE.url}/#site` },
+      author: { '@id': `${SITE.url}/#autor` },
+      ...(atualizadoEm ? { dateModified: atualizadoEm } : {}),
+    },
+  ],
+};
+
+const schemas = schemaExtra ? [schemaBase, schemaExtra] : [schemaBase];
+
+const nav = [
+  { href: '/', rotulo: 'Início' },
+  { href: '/movva-e-confiavel', rotulo: 'É confiável?' },
+  { href: '/blog', rotulo: 'Blog' },
+  { href: '/oportunidade', rotulo: 'Programa de afiliados' },
+];
+
+const dataLegivel = atualizadoEm
+  ? new Date(`${atualizadoEm}T12:00:00`).toLocaleDateString('pt-BR', {
+      day: '2-digit', month: 'long', year: 'numeric',
+    })
+  : null;
+---
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>{tituloCompleto}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+
+  <meta property="og:type" content={tipo} />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content={tituloCompleto} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={tituloCompleto} />
+  <meta name="twitter:description" content={description} />
+
+  <meta name="author" content={AUTOR.nome} />
+  {atualizadoEm && <meta name="last-modified" content={atualizadoEm} />}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap"
+  />
+
+  {schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+</head>
+<body>
+
+  <!-- Declaracao de vinculo no TOPO, nao no rodape. Exigencia de politica e de honestidade. -->
+  <div class="vinculo-barra">
+    <div class="wrap wrap--wide">
+      <p>{VINCULO}</p>
+    </div>
+  </div>
+
+  <header class="cabecalho">
+    <div class="wrap wrap--wide cabecalho__linha">
+      <a href="/" class="marca">
+        <strong>Movva Brasil</strong>
+        <span>.net</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          {nav.map((i) => (
+            <li><a href={i.href} aria-current={i.href === path ? 'page' : undefined}>{i.rotulo}</a></li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <slot />
+  </main>
+
+  <footer class="rodape">
+    <div class="wrap wrap--wide stack">
+      <p><strong>{VINCULO}</strong></p>
+      <p class="meta-line">
+        Publicado por {AUTOR.nome}, {AUTOR.papel}. As informações sobre a empresa citadas
+        aqui vêm de registros públicos e podem ser conferidas de forma independente na
+        <a href={EMPRESA.fontes.receita} rel="nofollow noopener">Receita Federal</a> e no
+        <a href={EMPRESA.fontes.anatel} rel="nofollow noopener">sistema da Anatel</a>.
+      </p>
+      <p class="meta-line">
+        Participar do programa de afiliados não garante ganho de nenhum valor. Os
+        resultados variam conforme o esforço de cada pessoa, e a maioria dos
+        participantes de programas desse tipo não obtém renda significativa.
+        Veja os <a href="/avisos-legais">avisos legais</a> com os números reais.
+      </p>
+      {dataLegivel && <p class="meta-line">Página atualizada em {dataLegivel}.</p>}
+      <ul class="nav nav--rodape">
+        <li><a href="/avisos-legais">Avisos legais</a></li>
+        <li><a href="/politica-de-privacidade">Política de privacidade</a></li>
+        <li><a href="/termos-de-uso">Termos de uso</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<style>
+  .vinculo-barra {
+    background: var(--warn-soft);
+    border-bottom: 1px solid var(--rule);
+    padding-block: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--warn);
+    font-weight: 600;
+  }
+  .vinculo-barra p { margin: 0; }
+
+  .cabecalho { border-bottom: 1px solid var(--rule); padding-block: 1rem; }
+  .cabecalho__linha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+  }
+  .marca { font-family: var(--display); font-size: 1.22rem; text-decoration: none; color: var(--ink); }
+  .marca span { color: var(--accent); }
+
+  .nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; list-style: none; padding: 0; margin: 0; font-size: 0.94rem; }
+  .nav a { color: var(--muted); text-decoration: none; }
+  .nav a:hover, .nav a[aria-current="page"] { color: var(--accent); }
+
+  .rodape {
+    margin-top: 4rem;
+    border-top: 1px solid var(--rule);
+    padding-block: 2.5rem 3.5rem;
+    background: var(--surface);
+  }
+  .nav--rodape { padding-top: 0.25rem; }
+</style>

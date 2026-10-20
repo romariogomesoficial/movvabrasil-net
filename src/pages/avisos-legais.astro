@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import { AUTOR, EMPRESA } from '../data/site.js';
+
+const atualizadoEm = '2026-10-20';
+const title = 'Avisos legais';
+const description =
+  'Declaração de vínculo, aviso de renda e limites de responsabilidade deste site. Distribuidor independente MOVVA, sem relação oficial com a empresa.';
+---
+
+<Base {title} {description} path="/avisos-legais" {atualizadoEm}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <h1>Avisos legais</h1>
+      <p class="lede">
+        Esta página existe para que ninguém tome uma decisão financeira com base em
+        uma impressão errada sobre o que este site é.
+      </p>
+    </header>
+
+    <section class="stack">
+      <h2>Declaração de vínculo</h2>
+      <p>
+        Este site é mantido por {AUTOR.nome}, <strong>distribuidor independente</strong> da
+        {' '}{EMPRESA.razaoSocial}. <strong>Não é um canal oficial da empresa</strong>, não
+        a representa juridicamente, não presta suporte corporativo e não fala em nome
+        dela. Opiniões, análises e medições publicadas aqui são minhas.
+      </p>
+      <p>
+        Recebo comissão quando alguém se cadastra como cliente ou afiliado pelos links
+        deste site. Esses links são marcados como patrocinados no código da página.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Aviso de renda</h2>
+      <div class="card card--warn">
+        <p>
+          <strong>Não existe garantia de ganho de qualquer valor.</strong> Participar de um
+          programa de afiliados não é emprego, não gera vínculo trabalhista e não
+          assegura renda mínima, fixa ou recorrente.
+        </p>
+        <p>
+          Resultados dependem de esforço individual, tempo dedicado, mercado e fatores
+          fora do controle de qualquer participante. Na maioria dos programas de
+          marketing de rede, a maior parte dos participantes não obtém renda
+          significativa, e parte deles tem resultado negativo após considerar os custos.
+        </p>
+      </div>
+      <h3>Meus resultados reais, para referência</h3>
+      <p>
+        De 7 de julho a 20 de outubro de 2026, como afiliado com licença VIP e oito
+        pessoas na rede, gerei <strong>R$ 146,08</strong> em comissões e recebi
+        <strong> R$ 115,43</strong> líquidos. Em outubro de 2026 minha comissão foi
+        <strong> R$ 0,00</strong>, contra um custo mensal de plano de <strong>R$ 159,80</strong>.
+        O resultado acumulado é negativo.
+      </p>
+      <p>
+        Esses são os meus números, não uma média e nem uma previsão para você. Os seus
+        podem ser melhores ou piores.
+      </p>
+      <h3>Sobre projeções</h3>
+      <p>
+        Este site não publica projeção de ganho. Números como "R$ 17.868 por mês" ou
+        "R$ 253.055 por ano", que circulam em material de divulgação, derivam de uma
+        matriz teoricamente completa com 11.110 pessoas. Não são previsão de resultado
+        e não devem ser usados para decidir nada.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Informações sobre a empresa</h2>
+      <p>
+        Os dados institucionais citados neste site vêm de registros públicos e estão
+        corretos até onde consegui verificar na data de atualização desta página.
+        Registros mudam. Confira sempre na fonte primária:
+        <a href={EMPRESA.fontes.receita} rel="nofollow noopener">Receita Federal</a> e
+        {' '}<a href={EMPRESA.fontes.anatel} rel="nofollow noopener">Anatel</a>.
+      </p>
+      <p>
+        Características de produto descritas como anunciadas pela empresa são
+        reproduções do material dela, não afirmações verificadas por mim. Quando eu
+        testar e medir, indico isso explicitamente no texto.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Limite de responsabilidade</h2>
+      <p>
+        O conteúdo é informativo e representa minha análise pessoal. Não é consultoria
+        financeira, jurídica, contábil ou de investimento. Decisões tomadas a partir
+        daqui são de responsabilidade de quem as toma. Procure um profissional
+        habilitado antes de comprometer recursos.
+      </p>
+    </section>
+
+  </article>
+</Base>

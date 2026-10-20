@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import { AUTOR, SITE } from '../data/site.js';
+
+const atualizadoEm = '2026-10-20';
+const title = 'Termos de uso';
+const description =
+  'Condições de uso do conteúdo deste site, natureza informativa do material e limites de responsabilidade.';
+
+// ATENCAO: preencha o e-mail de contato abaixo antes de publicar.
+const CONTATO = 'contato@movvabrasil.net';
+---
+
+<Base {title} {description} path="/termos-de-uso" {atualizadoEm}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <h1>Termos de uso</h1>
+      <p class="lede">Ao navegar por {SITE.url}, você concorda com o que está aqui.</p>
+    </header>
+
+    <section class="stack">
+      <h2>Natureza do conteúdo</h2>
+      <p>
+        O material deste site é informativo e opinativo. Reúne registros públicos,
+        reprodução de material divulgado pela empresa citada e medições feitas por
+        mim, {AUTOR.nome}, na condição de distribuidor independente.
+      </p>
+      <p>
+        Nada aqui é consultoria financeira, jurídica, contábil ou de investimento, nem
+        oferta de emprego, nem promessa de rendimento. Leia os
+        {' '}<a href="/avisos-legais">avisos legais</a>.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Independência</h2>
+      <p>
+        Este site não é canal oficial da MOVVA Brasil Ltda e não a representa. Marcas,
+        nomes e materiais da empresa pertencem a ela e são citados a título
+        informativo e de divulgação por distribuidor autorizado.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Precisão e atualização</h2>
+      <p>
+        Faço esforço razoável para manter as informações corretas e marco a data de
+        atualização em cada página. Valores, regras de remuneração, características de
+        produto e registros públicos mudam, às vezes sem aviso. Confirme sempre na
+        fonte oficial antes de decidir.
+      </p>
+      <p>
+        Encontrou erro? Escreva para <strong>{CONTATO}</strong>. Correção de fato é
+        bem-vinda e será publicada.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Uso do conteúdo</h2>
+      <p>
+        Você pode citar trechos com indicação da fonte e link para a página original.
+        Reprodução integral sem autorização, ou uso que faça parecer que este site é
+        canal oficial de qualquer empresa, não é permitido.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Limite de responsabilidade</h2>
+      <p>
+        Não respondo por decisões tomadas com base neste conteúdo, nem por conteúdo,
+        disponibilidade ou prática de sites de terceiros para os quais eu aponte.
+      </p>
+    </section>
+
+  </article>
+</Base>

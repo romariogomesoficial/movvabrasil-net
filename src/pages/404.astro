@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+
+const title = 'Página não encontrada';
+const description = 'O endereço acessado não existe neste site.';
+---
+
+<Base {title} {description} path="/404">
+  <article class="wrap stack--lg stack">
+    <header class="stack">
+      <p class="eyebrow">Erro 404</p>
+      <h1>Esta página não existe</h1>
+      <p class="lede">
+        O endereço pode ter mudado, ou o link que te trouxe aqui está errado.
+      </p>
+    </header>
+
+    <section class="stack">
+      <h2>Para onde ir</h2>
+      <ul>
+        <li><a href="/">Início — o que é a MOVVA Brasil</a></li>
+        <li><a href="/movva-e-confiavel">A MOVVA é confiável? É pirâmide?</a></li>
+        <li><a href="/oportunidade">Programa de afiliados e meus números reais</a></li>
+      </ul>
+    </section>
+  </article>
+</Base>

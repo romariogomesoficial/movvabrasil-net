@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import { AUTOR, SITE } from '../data/site.js';
+
+const atualizadoEm = '2026-10-20';
+const title = 'Política de privacidade';
+const description =
+  'Quais dados este site coleta, por que coleta e como exercer seus direitos sob a LGPD.';
+
+// ATENCAO: esta politica descreve o site como ele esta HOJE - estatico, sem
+// formulario e sem analytics. Se voce adicionar captura de e-mail, WhatsApp,
+// pixel do Meta ou Google Analytics, ATUALIZE esta pagina ANTES de publicar o
+// formulario. Politica desatualizada e passivo sob a LGPD.
+---
+
+<Base {title} {description} path="/politica-de-privacidade" {atualizadoEm}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <h1>Política de privacidade</h1>
+      <p class="lede">
+        Escrita em linguagem direta, descrevendo o que o site realmente faz hoje.
+      </p>
+    </header>
+
+    <section class="stack">
+      <h2>Quem é o responsável</h2>
+      <p>
+        {AUTOR.nome}, {AUTOR.papel}, responsável pelo site {SITE.url}. Para qualquer
+        solicitação relacionada aos seus dados, use o canal de contato informado nos
+        <a href="/termos-de-uso">termos de uso</a>.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Que dados este site coleta</h2>
+      <p>
+        <strong>Nenhum dado pessoal é solicitado por este site.</strong> Não há formulário
+        de cadastro, não há captura de e-mail e não há área de login.
+      </p>
+      <p>
+        Como em qualquer site, o servidor registra automaticamente informações técnicas
+        de acesso — endereço IP, data e hora, página acessada, tipo de navegador — em
+        registros mantidos pelo provedor de hospedagem. Esses registros existem por
+        segurança e por exigência do Marco Civil da Internet.
+      </p>
+      <p>
+        As fontes tipográficas são carregadas do Google Fonts. Ao carregá-las, seu
+        navegador faz uma requisição aos servidores do Google, que pode registrar seu
+        endereço IP.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Links para fora</h2>
+      <p>
+        Este site contém links para a plataforma oficial da MOVVA e para órgãos
+        públicos. Ao clicar, você passa a ser regido pela política de privacidade
+        daquele destino, não por esta. Os links para a plataforma da MOVVA são links
+        de afiliado: se você se cadastrar por eles, o sistema da empresa registra que
+        a indicação veio de mim.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Seus direitos sob a LGPD</h2>
+      <p>
+        A Lei 13.709/2018 garante a você, entre outros, o direito de confirmar se há
+        tratamento de dados seus, acessá-los, corrigi-los, solicitar anonimização,
+        bloqueio ou eliminação, e revogar consentimento. Como este site não mantém
+        base de dados pessoais própria, pedidos desse tipo serão respondidos
+        informando exatamente isso, por escrito.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Mudanças</h2>
+      <p>
+        Se este site passar a coletar qualquer dado — formulário, lista de e-mail,
+        ferramenta de análise de audiência ou pixel de anúncio — esta página será
+        atualizada antes de a coleta começar, e a data de atualização no rodapé
+        refletirá a mudança.
+      </p>
+    </section>
+
+  </article>
+</Base>
