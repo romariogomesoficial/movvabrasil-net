@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import ProximoPasso from '../components/ProximoPasso.astro';
 import { SITE, CHIP } from '../data/site.js';
 import { PLANOS, RECOMENDADO, DIFERENCIAIS, EM_ABERTO, CONFERIDO_EM } from '../data/planos.js';
+import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 import { linkWhatsApp } from '../data/contato.js';
 
 // Link remunerado: leva ao meu WhatsApp e eu recebo comissão se a pessoa
@@ -24,32 +25,11 @@ const title = 'Planos MOVVA: preços, franquias e qual compensa em 2026';
 const description =
   'Os cinco planos de celular da MOVVA com preço, franquia de dados e preço por giga. Comparação lado a lado, o que vem em todos eles e o que eu ainda não consegui confirmar.';
 
-const faq = [
-  {
-    p: 'Quanto custa o plano da MOVVA?',
-    r: `Os planos da MOVVA vão de R$ ${PLANOS[0].preco} por ${PLANOS[0].gb} GB a R$ ${PLANOS[PLANOS.length - 1].preco} por ${PLANOS[PLANOS.length - 1].gb} GB, em cinco faixas. O ${RECOMENDADO.nome}, de ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco}, é o que eu mais indico. Valores conferidos no material oficial em ${fmtData(CONFERIDO_EM)}; confirme o preço vigente antes de pagar.`,
-  },
-  {
-    p: 'Qual plano da MOVVA tem o melhor preço por giga?',
-    r: `O ${PLANOS[PLANOS.length - 1].nome}, de ${PLANOS[PLANOS.length - 1].gb} GB, sai a R$ ${porGiga(PLANOS[PLANOS.length - 1])} por giga — o menor da tabela. Mas preço por giga só importa se você usar a franquia: um plano de ${PLANOS[PLANOS.length - 1].gb} GB para quem gasta ${PLANOS[0].gb} GB é mais caro na prática, não mais barato.`,
-  },
-  {
-    p: 'Os planos da MOVVA têm fidelidade?',
-    r: 'Não. O documento oficial de diferenciais da MOVVA lista "não tem fidelidade" entre as características dos planos, sem prazo mínimo de permanência nem multa para sair.',
-  },
-  {
-    p: 'Dá para levar o meu número para a MOVVA?',
-    r: 'Dá. A portabilidade numérica é direito garantido pela Anatel e vale para qualquer operadora, inclusive as virtuais. O número continua seu; muda a empresa que presta o serviço.',
-  },
-  {
-    p: 'Os gigas que sobram acumulam?',
-    r: 'O documento oficial da MOVVA lista "gigas acumulativos infinitos" entre os diferenciais dos planos. O que eu não consegui confirmar é por quanto tempo o saldo acumulado fica válido — não localizei o contrato que fixe esse prazo.',
-  },
-  {
-    p: 'Qual rede o chip da MOVVA usa?',
-    r: 'O documento oficial descreve dupla conectividade: duas redes num chip só, TIM e VIVO, com o aparelho usando a que estiver melhor no local. ' + CHIP.frase,
-  },
-];
+// As perguntas desta página vivem em src/data/perguntas.js, junto das das
+// outras páginas: a central de perguntas mostra todas, e mantê-las escritas
+// aqui significaria a mesma pergunta em dois arquivos, com a resposta velha
+// seguindo no ar em JSON-LD.
+const faq = perguntasDe('/planos');
 
 // ItemList de ofertas: é o formato que um buscador e um assistente conseguem
 // ler como "cinco produtos com preço", em vez de cinco parágrafos soltos.
@@ -83,15 +63,7 @@ const schemaExtra = [
       },
     })),
   },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faq.map((i) => ({
-      '@type': 'Question',
-      name: i.p,
-      acceptedAnswer: { '@type': 'Answer', text: i.r },
-    })),
-  },
+  schemaFaq(faq),
 ];
 ---
 
@@ -197,7 +169,7 @@ const schemaExtra = [
         Entre um plano e outro muda a franquia de dados. O resto é igual nos
         cinco, e vem do documento oficial de diferenciais da MOVVA.
       </p>
-      <ul class="beneficios">
+      <ul class="beneficios" role="list">
         {DIFERENCIAIS.map((d) => (
           <li>
             <strong>{d.titulo}</strong>

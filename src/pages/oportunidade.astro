@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { LINK_AFILIADO } from '../data/site.js';
+import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 
 // Os treze PINs oficiais de graduação, na ordem da escada. Os nomes vêm dos
 // próprios medalhões, que são material da empresa — por isso os nomes entram
@@ -44,13 +45,18 @@ const NIVEIS = [
 // Onde eu estou de verdade, lido no meu painel em 21/10/2026.
 const MEU_NIVEL = 1;
 
+// As quatro perguntas de dinheiro vivem em src/data/perguntas.js, com as das
+// outras páginas, e aparecem aqui e na análise da empresa — são as mesmas
+// perguntas nos dois lugares, e escrever duas vezes é escrever duas respostas.
+const faq = perguntasDe('/oportunidade');
+
 const atualizadoEm = '2026-10-20';
 const title = 'Programa de afiliados MOVVA: como funciona e quanto eu realmente ganhei';
 const description =
   'Como funciona a remuneração de afiliados da MOVVA Brasil, quanto custa participar e os números reais de um afiliado VIP em três meses e meio. Sem projeção de matriz cheia.';
 ---
 
-<Base {title} {description} path="/oportunidade" {atualizadoEm}>
+<Base {title} {description} path="/oportunidade" {atualizadoEm} schemaExtra={schemaFaq(faq)}>
   <article class="wrap stack--lg stack">
 
     <header class="stack">
@@ -105,7 +111,7 @@ const description =
         medalhões oficiais de cada graduação, na ordem.
       </p>
 
-      <ol class="escada">
+      <ol class="escada" role="list">
         {NIVEIS.map((nv) => (
           <li class={`degrau${nv.n === MEU_NIVEL ? ' degrau--meu' : ''}`}>
             <Image src={nv.img} alt={`Medalhão de ${nv.nome}`} width={88} densities={[1, 2]} />
@@ -153,6 +159,22 @@ const description =
       <p>
         Publico isso porque considero desonesto recrutar alguém mostrando apenas o
         cenário bom. Se em algum momento esses números virarem, eu atualizo a tabela.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>As perguntas que me fazem sobre dinheiro</h2>
+      <div class="stack">
+        {faq.map((i) => (
+          <details class="qa">
+            <summary>{i.p}</summary>
+            <p>{i.r}</p>
+          </details>
+        ))}
+      </div>
+      <p class="meta-line">
+        As outras perguntas sobre a empresa e sobre o plano estão na
+        {' '}<a href="/perguntas-frequentes">central de perguntas</a>.
       </p>
     </section>
 
@@ -235,6 +257,16 @@ const description =
   }
   .degrau--meu .degrau__nome { color: var(--ink); font-weight: 600; }
   .degrau--meu .degrau__n { color: var(--accent); }
+  .qa {
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0.8rem 1rem;
+  }
+  .qa summary { cursor: pointer; font-weight: 600; }
+  .qa[open] summary { color: var(--accent); margin-bottom: 0.5rem; }
+  .qa p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+
   .degrau__aqui {
     font-family: var(--mono);
     font-size: 0.6rem;

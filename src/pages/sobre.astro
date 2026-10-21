@@ -1,0 +1,240 @@
+---
+import Base from '../layouts/Base.astro';
+import ProximoPasso from '../components/ProximoPasso.astro';
+import { SITE, AUTOR, EMPRESA, CHIP } from '../data/site.js';
+import { conferencia } from '../data/conferencia.js';
+
+// Os números desta página são contados do conteúdo, como os da faixa. Página
+// sobre método não pode trazer número escrito à mão: seria a contradição mais
+// cara do site inteiro.
+const { fontes, emAberto, posts } = await conferencia();
+
+const atualizadoEm = '2026-10-21';
+const title = 'Quem escreve este site, e como ele é feito';
+const description =
+  'Romário Gomes de Paula, distribuidor independente MOVVA. O método deste site: o que entra como confirmado, o que entra como anunciado pela empresa, o que fica em aberto — e o que eu ganho com isso.';
+
+// Person com um perfil de verdade: esta página é a URL que descreve o autor.
+// Sem ela o grafo tinha um Person apontando para a home, que fala do produto.
+const schemaExtra = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    '@id': `${SITE.url}/#autor`,
+    name: AUTOR.nome,
+    jobTitle: AUTOR.papel,
+    url: `${SITE.url}/sobre`,
+    description: `Distribuidor independente da ${EMPRESA.razaoSocial}. Publica no movvabrasil.net o que consegue confirmar em documento sobre a operadora, incluindo os próprios resultados como afiliado.`,
+    knowsAbout: [
+      'Operadora móvel virtual',
+      'Portabilidade numérica',
+      'Regulamentação da Anatel',
+      'Marketing de rede',
+    ],
+    worksFor: { '@id': `${SITE.url}/#movva` },
+  },
+};
+---
+
+<Base {title} {description} path="/sobre" {atualizadoEm} {schemaExtra}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <p class="eyebrow">Quem escreve</p>
+      <h1>Quem escreve este site, e como ele é feito</h1>
+      <p class="answer">
+        Sou {AUTOR.nome}, distribuidor independente da {EMPRESA.razaoSocial}.
+        Ganho comissão quando alguém contrata pelos meus links — e é justamente
+        por isso que este site publica os meus números ruins junto com os bons,
+        e marca o que eu não consegui confirmar.
+      </p>
+    </header>
+
+    <section class="stack">
+      <h2>Por que um site, e não só um WhatsApp</h2>
+      <p>
+        Quem está decidindo trocar de operadora não precisa de mais entusiasmo.
+        Precisa de documento, de data e de uma frase honesta onde o documento
+        não existe — e isso não cabe numa conversa de WhatsApp, que some assim
+        que a tela rola.
+      </p>
+      <p>
+        Então eu escrevi aqui. Este site vende, eu sou afiliado e não escondo,
+        mas vende mostrando o que dá para conferir. É uma aposta: a de que
+        mostrar o que eu não sei convence mais do que afirmar o que eu não posso
+        provar.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>As três categorias que organizam tudo aqui</h2>
+      <p>
+        Toda afirmação neste site cai em uma de três categorias, e a diferença
+        entre elas é de onde a informação veio.
+      </p>
+
+      <ol class="estados" role="list">
+        <li class="estado estado--verificado">
+          <p class="estado__rotulo">Verificado</p>
+          <p>
+            Tem documento público por trás, linkado na própria página: ato da
+            Anatel, registro na Receita, texto de resolução. É o que você pode
+            conferir sem acreditar em mim.
+          </p>
+          <p class="estado__exemplo">
+            Exemplo: o {EMPRESA.atoAnatel}, consultável pelo processo
+            {' '}{EMPRESA.processoSei} no sistema SEI da Anatel.
+          </p>
+        </li>
+
+        <li class="estado estado--anunciado">
+          <p class="estado__rotulo">Anunciado pela empresa</p>
+          <p>
+            Está no material oficial da MOVVA e eu reproduzo como o que é:
+            informação da empresa sobre o próprio produto. Documento de empresa
+            é fonte, e fonte se cita — não é boato de distribuidor.
+          </p>
+          <p class="estado__exemplo">
+            Exemplo: os seis diferenciais dos planos, do documento
+            “Diferenciais planos de telefonia MOVVA”.
+          </p>
+        </li>
+
+        <li class="estado estado--aberto">
+          <p class="estado__rotulo">Em aberto</p>
+          <p>
+            Eu procurei e não achei documento que feche a resposta. Em vez de
+            preencher com suposição, eu escrevo que não sei. Cada post tem uma
+            seção só para isso, e a faixa no alto de toda página soma quantos
+            pontos continuam assim.
+          </p>
+          <p class="estado__exemplo">
+            Hoje são <strong>{emAberto}</strong> pontos em aberto em
+            {' '}{posts} textos, contra <strong>{fontes}</strong> fontes
+            primárias citadas.
+          </p>
+        </li>
+      </ol>
+
+      <p class="meta-line">
+        Os dois números acima não são escritos à mão: o site os conta sozinho a
+        partir do conteúdo, toda vez que é publicado. Número de credibilidade
+        escrito à mão vira mentira no dia seguinte.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>O que eu ganho com isto</h2>
+      <p>
+        Comissão, quando alguém contrata um plano ou se cadastra como afiliado
+        por um link daqui. Esses links são marcados como patrocinados no código
+        da página, que é o que o Google pede, e a declaração completa está em
+        {' '}<a href="/avisos-legais">avisos legais</a>.
+      </p>
+      <p>
+        O que eu ganhei de verdade até agora está publicado, com os meses de
+        ganho zero incluídos, na página do
+        {' '}<a href="/oportunidade">programa de afiliados</a>. Até o fechamento
+        mais recente, o resultado acumulado é negativo: o plano custa mais por
+        mês do que a comissão trouxe. Eu publico isso porque recrutar alguém
+        mostrando só o cenário bom é o tipo de coisa que eu não gostaria que
+        fizessem comigo.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>O que ainda falta neste site</h2>
+      <div class="card card--warn">
+        <p>{CHIP.frase}</p>
+        <p>
+          Enquanto isso não acontecer, não há neste site nenhuma medição de
+          velocidade, nenhum teste de sinal e nenhum relato de uso feito por
+          mim. O que existe é documento e regra — e está dito assim em cada
+          página onde o assunto aparece.
+        </p>
+      </div>
+    </section>
+
+    <section class="stack">
+      <h2>Como me checar</h2>
+      <ul class="checagem" role="list">
+        <li>
+          <strong>A empresa</strong> — {EMPRESA.razaoSocial}, CNPJ
+          {' '}{EMPRESA.cnpj}. Consulte na
+          {' '}<a href={EMPRESA.fontes.receita} rel="nofollow noopener">Receita Federal</a>.
+        </li>
+        <li>
+          <strong>A autorização</strong> — {EMPRESA.atoAnatel}, processo
+          {' '}{EMPRESA.processoSei}, no
+          {' '}<a href={EMPRESA.fontes.anatel} rel="nofollow noopener">sistema SEI da Anatel</a>.
+        </li>
+        <li>
+          <strong>As fontes de cada texto</strong> — todo post do
+          {' '}<a href="/blog">blog</a> lista as fontes usadas, com link.
+        </li>
+        <li>
+          <strong>A mim</strong> — me chame no WhatsApp e pergunte. Se eu não
+          souber, eu digo que não sei; é o que eu faço nas páginas.
+        </li>
+      </ul>
+    </section>
+
+    <ProximoPasso contexto="duvida" />
+  </article>
+</Base>
+
+<style>
+  .estados {
+    display: grid;
+    gap: 0.9rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: estado;
+  }
+  .estado {
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--rule);
+    border-left-width: 3px;
+    border-radius: 12px;
+    background: var(--surface);
+    display: grid;
+    gap: 0.4rem;
+  }
+  /* Uma cor por estado seria vistoso e errado: os três são o mesmo tipo de
+     informação editorial, e o verde já está reservado para a marca e para a
+     ação. O que distingue é a borda e o rótulo. */
+  .estado--verificado { border-left-color: var(--accent); }
+  .estado--anunciado  { border-left-color: var(--muted); }
+  .estado--aberto     { border-left-color: var(--rule); }
+
+  .estado__rotulo {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    margin: 0;
+  }
+  .estado--verificado .estado__rotulo { color: var(--accent); }
+  .estado p { margin: 0; }
+  .estado__exemplo {
+    font-size: 0.88rem;
+    color: var(--muted);
+    padding-top: 0.15rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .checagem {
+    display: grid;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .checagem li {
+    padding-left: 0.9rem;
+    border-left: 2px solid var(--borda-verde);
+    min-width: 0;
+  }
+</style>

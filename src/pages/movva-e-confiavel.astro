@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import ProximoPasso from '../components/ProximoPasso.astro';
 import ComposicaoComissao from '../components/diagramas/ComposicaoComissao.astro';
 import { EMPRESA, CHIP } from '../data/site.js';
+import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 
 // O estado do chip vem de CHIP, no site.js, e não escrito à mão aqui: ele
 // aparece nesta página em dois lugares e no site inteiro em mais de dez.
@@ -16,52 +17,13 @@ const title = 'A MOVVA é confiável? É pirâmide? O que dá e o que não dá p
 const description =
   'Análise honesta da MOVVA Brasil: CNPJ, autorização da Anatel, contrato de rede, riscos do programa de afiliados e meus ganhos reais em três meses e meio. Com as fontes públicas linkadas.';
 
-const faq = [
-  {
-    p: 'A MOVVA Brasil tem CNPJ?',
-    r: `Sim. ${EMPRESA.razaoSocial}, CNPJ ${EMPRESA.cnpj}, constituída em ${EMPRESA.constituicao}, com situação cadastral ativa na Receita Federal. A empresa existe formalmente desde antes de entrar no setor de telecomunicações.`,
-  },
-  {
-    p: 'A MOVVA tem autorização da Anatel?',
-    r: `Sim. O ${EMPRESA.atoAnatel} autorizou a MOVVA a explorar Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito, por prazo indeterminado, em todo o território nacional. O processo é o ${EMPRESA.processoSei} e pode ser consultado publicamente no sistema SEI da Anatel. Uma ressalva que importa: esse ato autoriza serviços de telecomunicações, mas não diz, por si, em qual dos dois modelos de rede virtual da Resolução 777/2025 a empresa opera — credenciada ou autorizada. Isso eu não confirmei.`,
-  },
-  {
-    p: 'A MOVVA é uma pirâmide financeira?',
-    r: 'A MOVVA vende plano de celular, que é serviço regulado pela Anatel — isso a diferencia de um esquema sem produto. Ressalva: ' + CHIP.frase + ' O ponto de atenção não é a existência do produto, e sim de onde vem o dinheiro das comissões: se a maior parte nasce de pessoas entrando e pagando licença, e não de contas de celular sendo pagas mês a mês, a estrutura se aproxima do que a Lei 1.521/51 trata como cadeia. Isso é mensurável, e nesta página eu publico a minha própria medição.',
-  },
-  {
-    p: 'Quanto custa entrar na MOVVA?',
-    r: 'Existe um cadastro de afiliado e uma licença VIP paga, que dobra as comissões e a pontuação do plano de carreira. Além disso, para ter o serviço, você contrata um plano mensal e paga o chip mais o frete. Peça os valores vigentes por escrito, com protocolo, e confira na própria página de contratação antes de pagar — eles já mudaram desde o material de lançamento.',
-  },
-  {
-    p: 'Quanto se ganha na MOVVA?',
-    r: 'Não existe ganho garantido. Nos meus primeiros três meses e meio como afiliado VIP, com oito pessoas na rede, eu gerei R$ 146,08 em comissões e recebi R$ 115,43 líquidos após a taxa de saque. Em outubro meu ganho foi R$ 0,00, contra um custo de plano de R$ 159,80 por mês. Desconfie de qualquer número de projeção baseado em matriz cheia.',
-  },
-  {
-    p: 'A MOVVA está no Reclame Aqui?',
-    // Correção de 21/10/2026: esta resposta dizia que a página do Reclame Aqui
-    // era da operadora. Não é — é de outra empresa, com outro CNPJ. O erro foi
-    // meu, e a página sobre o assunto conta a história inteira.
-    r: 'Em 21 de outubro de 2026 eu não localizei página da MOVVA BRASIL LTDA (CNPJ 28.450.689/0001-75) no Reclame Aqui. A página chamada "Movva" que aparece na busca é de outra empresa: CNPJ 16.896.559/0001-81, consultoria em gestão. Ausência de reclamação não é sinal de qualidade nem de defeito, é falta de dado. Confira sempre pelo CNPJ, e não pelo nome.',
-  },
-  {
-    p: 'O plano de compensação pode mudar?',
-    r: 'Pode, e já mudou. No meu próprio extrato existe uma linha identificada como "Bônus Matching (antigo)", o que indica que a regra de matching sob a qual eu entrei foi alterada. Considere isso antes de montar qualquer planejamento de longo prazo.',
-  },
-];
-
-const schemaFaq = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faq.map((i) => ({
-    '@type': 'Question',
-    name: i.p,
-    acceptedAnswer: { '@type': 'Answer', text: i.r },
-  })),
-};
+// As perguntas desta pagina vivem em src/data/perguntas.js, junto das das
+// outras paginas. A central de perguntas mostra todas; manter copia aqui
+// deixaria a resposta velha no ar em JSON-LD depois da primeira correcao.
+const faq = perguntasDe('/movva-e-confiavel');
 ---
 
-<Base {title} {description} path="/movva-e-confiavel" {atualizadoEm} schemaExtra={schemaFaq}>
+<Base {title} {description} path="/movva-e-confiavel" {atualizadoEm} schemaExtra={schemaFaq(faq)}>
   <article class="wrap stack--lg stack">
 
     <header class="stack">

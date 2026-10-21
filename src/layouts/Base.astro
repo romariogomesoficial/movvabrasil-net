@@ -95,6 +95,7 @@ const nav = [
   { href: '/', rotulo: 'Início' },
   { href: '/planos', rotulo: 'Planos' },
   { href: '/movva-e-confiavel', rotulo: 'É confiável?' },
+  { href: '/perguntas-frequentes', rotulo: 'Perguntas' },
   { href: '/blog', rotulo: 'Blog' },
   { href: '/oportunidade', rotulo: 'Programa de afiliados' },
 ];
@@ -174,7 +175,7 @@ const dataLegivel = atualizadoEm
         <span class="marca__tld" aria-hidden="true">.net</span>
       </a>
       <nav aria-label="Principal">
-        <ul class="nav">
+        <ul class="nav" role="list">
           {nav.map((i) => (
             <li><a href={i.href} aria-current={i.href === path ? 'page' : undefined}>{i.rotulo}</a></li>
           ))}
@@ -209,7 +210,7 @@ const dataLegivel = atualizadoEm
         daqui. <a href="/avisos-legais">Como eu ganho</a>.
       </p>
       <p class="meta-line">
-        Publicado por {AUTOR.nome}, {AUTOR.papel}. As informações sobre a empresa citadas
+        Publicado por <a href="/sobre">{AUTOR.nome}</a>, {AUTOR.papel}. As informações sobre a empresa citadas
         aqui vêm de registros públicos e podem ser conferidas de forma independente na
         <a href={EMPRESA.fontes.receita} rel="nofollow noopener">Receita Federal</a> e no
         <a href={EMPRESA.fontes.anatel} rel="nofollow noopener">sistema da Anatel</a>.
@@ -221,7 +222,8 @@ const dataLegivel = atualizadoEm
         Veja os <a href="/avisos-legais">avisos legais</a> com os números reais.
       </p>
       {dataLegivel && <p class="meta-line">Página atualizada em {dataLegivel}.</p>}
-      <ul class="nav nav--rodape">
+      <ul class="nav nav--rodape" role="list">
+        <li><a href="/sobre">Quem escreve</a></li>
         <li><a href="/avisos-legais">Avisos legais</a></li>
         <li><a href="/politica-de-privacidade">Política de privacidade</a></li>
         <li><a href="/termos-de-uso">Termos de uso</a></li>

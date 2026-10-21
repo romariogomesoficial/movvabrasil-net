@@ -25,6 +25,18 @@ export const PAGINAS_OG = [
     resumo: 'Os cinco planos lado a lado, com preço por giga e o que eu não consegui confirmar.',
   },
   {
+    path: '/perguntas-frequentes',
+    chapeu: 'Perguntas frequentes',
+    titulo: 'As perguntas que me fazem sobre a MOVVA',
+    resumo: 'Resposta curta para cada uma, e o link de onde a resposta foi conferida.',
+  },
+  {
+    path: '/sobre',
+    chapeu: 'Quem escreve',
+    titulo: 'Quem escreve este site, e como ele é feito',
+    resumo: 'O método: o que entra como confirmado, o que é da empresa e o que fica em aberto.',
+  },
+  {
     path: '/movva-e-confiavel',
     chapeu: 'Análise',
     titulo: 'A MOVVA é confiável? É pirâmide?',

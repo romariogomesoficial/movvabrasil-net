@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+import ProximoPasso from '../components/ProximoPasso.astro';
+import { getCollection } from 'astro:content';
+import { PERGUNTAS, TEMAS, schemaFaq } from '../data/perguntas.js';
+
+// As perguntas desta página vêm de dois lugares, e nenhuma delas é escrita
+// aqui:
+//   - src/data/perguntas.js, que as outras páginas também leem;
+//   - o campo `resposta` de cada post, que é o bloco curto já publicado no
+//     topo dele.
+//
+// Por que não escrever à mão: uma central de perguntas escrita à parte vira,
+// em um mês, a versão velha do site. E FAQ velha não fica só velha — ela sai
+// em JSON-LD e é lida por assistente de IA como se fosse a minha palavra de
+// hoje.
+const posts = await getCollection('blog');
+
+// A pergunta de um post é o título dele; a resposta é a `resposta` que o
+// esquema da coleção já exige. Ordem: a mesma do blog, do mais recente.
+const DOS_POSTS = posts
+  .sort((a, b) => (b.data.atualizado ?? b.data.publicado) - (a.data.atualizado ?? a.data.publicado))
+  .map((post) => ({
+    tema: 'Cobertura, chip e portabilidade',
+    p: post.data.title,
+    r: post.data.resposta,
+    onde: `/blog/${post.id}`,
+    ondeRotulo: 'Ler o texto inteiro',
+  }));
+
+const TODAS = [...PERGUNTAS, ...DOS_POSTS];
+
+const ROTULO_PAGINA = {
+  '/planos': 'Ver os planos',
+  '/movva-e-confiavel': 'Ver a análise completa',
+  '/oportunidade': 'Ver os meus números',
+};
+
+// Agrupa mantendo a ordem dos temas das páginas e deixando o dos posts por
+// último: quem chega aqui pela busca quase sempre quer empresa ou preço.
+const GRUPOS = [...TEMAS, 'Cobertura, chip e portabilidade'].map((tema) => ({
+  tema,
+  itens: TODAS.filter((q) => q.tema === tema),
+}));
+
+const atualizadoEm = '2026-10-21';
+const title = 'Perguntas frequentes sobre a MOVVA Brasil';
+const description =
+  'As perguntas que me fazem sobre a MOVVA: empresa, preço dos planos, cobertura, portabilidade e o programa de afiliados. Resposta curta em cada uma, com o link de onde ela foi conferida.';
+
+const schemaExtra = schemaFaq(TODAS);
+---
+
+<Base {title} {description} path="/perguntas-frequentes" {atualizadoEm} {schemaExtra}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <p class="eyebrow">Perguntas frequentes</p>
+      <h1>As perguntas que me fazem sobre a MOVVA</h1>
+      <p class="answer">
+        Reuni aqui {TODAS.length} perguntas com a resposta curta de cada uma.
+        Onde existe documento, ele está linkado no texto completo. Onde eu não
+        consegui confirmar, a resposta diz isso — é informação sobre a empresa
+        que eu não tenho, não opinião que eu estou guardando.
+      </p>
+    </header>
+
+    <nav class="indice" aria-label="Temas">
+      <!-- role="list" porque list-style: none faz o VoiceOver parar de
+           anunciar a lista como lista. A bolinha sai, a semântica fica. -->
+      <ul role="list">
+        {GRUPOS.map((g) => (
+          <li><a href={`#${g.tema.toLowerCase().replace(/[^a-zà-ú]+/g, '-')}`}>{g.tema}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    {GRUPOS.map((g) => (
+      <section class="stack" id={g.tema.toLowerCase().replace(/[^a-zà-ú]+/g, '-')}>
+        <h2>{g.tema}</h2>
+        <div class="stack">
+          {g.itens.map((q) => (
+            <details class="qa">
+              <summary>{q.p}</summary>
+              <div class="qa__corpo">
+                <p>{q.r}</p>
+                {(q.onde ?? q.paginas?.[0]) && (
+                  <p class="qa__onde">
+                    <a href={q.onde ?? q.paginas[0]}>
+                      {q.ondeRotulo ?? ROTULO_PAGINA[q.paginas?.[0]] ?? 'Ver a página'}
+                    </a>
+                  </p>
+                )}
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <section class="stack">
+      <h2>Não achou a sua pergunta?</h2>
+      <p>
+        Me mande. Se eu souber, eu respondo; se não souber, eu digo que não sei
+        e vou atrás do documento — e, quando achar, a resposta entra nesta
+        página. Foi assim que boa parte do que está aqui apareceu.
+      </p>
+    </section>
+
+    <ProximoPasso contexto="duvida" />
+  </article>
+</Base>
+
+<style>
+  .indice ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .indice a {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+  }
+  .indice a:hover { color: var(--accent); border-color: var(--borda-verde); }
+
+  /* scroll-margin porque o cabeçalho é fixo: sem isto o salto do índice
+     esconde o próprio título do grupo debaixo dele. */
+  section[id] { scroll-margin-top: 8rem; }
+
+  .qa {
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0.8rem 1rem;
+  }
+  .qa summary { cursor: pointer; font-weight: 600; }
+  .qa[open] summary { color: var(--accent); margin-bottom: 0.5rem; }
+  .qa__corpo { display: grid; gap: 0.4rem; }
+  .qa__corpo p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+  .qa__onde { font-family: var(--mono); font-size: 0.74rem; }
+</style>
