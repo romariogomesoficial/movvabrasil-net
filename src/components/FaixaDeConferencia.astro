@@ -1,0 +1,64 @@
+---
+// A faixa de conferência, no alto de toda página.
+//
+// O que ela faz, e por que é a coisa mais difícil de copiar deste site: ela
+// não afirma que o site é cuidadoso, ela mostra a conta. Fontes distintas,
+// itens em aberto e correções assumidas, contados do próprio conteúdo no
+// build. Um concorrente copia uma seção de benefícios numa tarde; para copiar
+// esta faixa ele precisa ter feito o trabalho que ela conta.
+//
+// Nenhum número aqui é escrito à mão — ver src/data/conferencia.js.
+import { conferencia } from '../data/conferencia.js';
+
+const { fontes, emAberto, correcoes, conferidoEm } = await conferencia();
+
+// Data curta: por extenso ela empurrava a faixa para duas linhas, e faixa de
+// duas linhas deixa de ser faixa.
+const dia = conferidoEm.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
+---
+
+<div class="faixa">
+  <div class="wrap wrap--wide faixa__linha">
+    <span class="faixa__item faixa__item--data">Conferido em {dia}</span>
+    <span class="faixa__sep" aria-hidden="true">·</span>
+    <span class="faixa__item"><strong>{fontes}</strong> fontes primárias</span>
+    <span class="faixa__sep" aria-hidden="true">·</span>
+    <span class="faixa__item"><strong>{emAberto}</strong> em aberto</span>
+    <span class="faixa__sep" aria-hidden="true">·</span>
+    <a class="faixa__item faixa__item--link" href="/correcoes">
+      <strong>{correcoes}</strong> correções
+    </a>
+  </div>
+</div>
+
+<style>
+  /* Fina de propósito: ela é credencial, não chamada. Compete com o cabeçalho
+     se crescer, e a primeira tela pertence à oferta. */
+  .faixa {
+    background: var(--veu-1);
+    border-bottom: 1px solid var(--rule);
+    padding-block: 0.4rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .faixa__linha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.1rem 0.55rem;
+  }
+  .faixa__item { white-space: nowrap; }
+  .faixa__item strong { color: var(--accent); font-weight: 600; }
+  .faixa__sep { color: var(--rule); }
+  .faixa__item--link { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--rule); }
+  .faixa__item--link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* No celular a data sai: ela é a parte menos acionável, e sem ela os três
+     números cabem numa linha só. A data continua no rodapé de toda página. */
+  @media (max-width: 40rem) {
+    .faixa__item--data,
+    .faixa__item--data + .faixa__sep { display: none; }
+    .faixa { font-size: 0.68rem; }
+  }
+</style>

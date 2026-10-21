@@ -5,6 +5,7 @@ import { urlDoCartao } from '../data/og.js';
 import { CLOUDFLARE_TOKEN, MEDINDO } from '../data/medicao.js';
 import { linkWhatsApp } from '../data/contato.js';
 import { Image } from 'astro:assets';
+import FaixaDeConferencia from '../components/FaixaDeConferencia.astro';
 import logoClaro from '../assets/logo-movva-preta-verde.png';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
 
@@ -182,6 +183,11 @@ const dataLegivel = atualizadoEm
       >Assinar</a>
     </div>
   </header>
+
+  {/* Logo abaixo do cabeçalho, antes de qualquer conteúdo: é a credencial que
+      enquadra tudo o que vem depois. Fina, para não disputar a primeira tela
+      com a oferta. */}
+  <FaixaDeConferencia />
 
   <main id="conteudo" tabindex="-1">
     <slot />
