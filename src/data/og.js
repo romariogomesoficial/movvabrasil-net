@@ -19,6 +19,12 @@ export const PAGINAS_OG = [
     resumo: 'O que dá para confirmar em registro público e o que ainda não dá.',
   },
   {
+    path: '/planos',
+    chapeu: 'Planos de celular',
+    titulo: 'Planos MOVVA: preço, franquia e qual compensa',
+    resumo: 'Os cinco planos lado a lado, com preço por giga e o que eu não consegui confirmar.',
+  },
+  {
     path: '/movva-e-confiavel',
     chapeu: 'Análise',
     titulo: 'A MOVVA é confiável? É pirâmide?',

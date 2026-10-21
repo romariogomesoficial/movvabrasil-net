@@ -1,6 +1,48 @@
 ---
 import Base from '../layouts/Base.astro';
+import { Image } from 'astro:assets';
 import { LINK_AFILIADO } from '../data/site.js';
+
+// Os treze PINs oficiais de graduação, na ordem da escada. Os nomes vêm dos
+// próprios medalhões, que são material da empresa — por isso os nomes entram
+// como verificados.
+//
+// As EXIGÊNCIAS de cada nível não entram. Elas circulam em site de
+// distribuidor e em PDF de grupo, e não localizei o documento oficial que as
+// fixe. A única exigência publicada aqui é a do meu próximo nível, porque essa
+// eu leio no meu próprio painel.
+import consultor from '../assets/pins/consultor.png';
+import empreendedor from '../assets/pins/empreendedor.png';
+import especialista from '../assets/pins/especialista.png';
+import supervisor from '../assets/pins/supervisor.png';
+import gestor from '../assets/pins/gestor.png';
+import executivo from '../assets/pins/executivo.png';
+import diretor from '../assets/pins/diretor.png';
+import diretorSenior from '../assets/pins/diretor-senior.png';
+import acionista from '../assets/pins/acionista.png';
+import embaixador from '../assets/pins/embaixador.png';
+import embaixadorSenior from '../assets/pins/embaixador-senior.png';
+import vicePresidente from '../assets/pins/vice-presidente.png';
+import presidente from '../assets/pins/presidente.png';
+
+const NIVEIS = [
+  { n: 1, nome: 'Consultor', img: consultor },
+  { n: 2, nome: 'Empreendedor', img: empreendedor },
+  { n: 3, nome: 'Especialista', img: especialista },
+  { n: 4, nome: 'Supervisor', img: supervisor },
+  { n: 5, nome: 'Gestor', img: gestor },
+  { n: 6, nome: 'Executivo', img: executivo },
+  { n: 7, nome: 'Diretor', img: diretor },
+  { n: 8, nome: 'Diretor Sênior', img: diretorSenior },
+  { n: 9, nome: 'Acionista', img: acionista },
+  { n: 10, nome: 'Embaixador', img: embaixador },
+  { n: 11, nome: 'Embaixador Sênior', img: embaixadorSenior },
+  { n: 12, nome: 'Vice-Presidente', img: vicePresidente },
+  { n: 13, nome: 'Presidente', img: presidente },
+];
+
+// Onde eu estou de verdade, lido no meu painel em 21/10/2026.
+const MEU_NIVEL = 1;
 
 const atualizadoEm = '2026-10-20';
 const title = 'Programa de afiliados MOVVA: como funciona e quanto eu realmente ganhei';
@@ -53,6 +95,38 @@ const description =
       <p class="meta-line">
         Os percentuais e os valores mudam. Confirme sempre no material oficial e
         vigente da empresa, não em PDF antigo circulando em grupo de WhatsApp.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>A escada tem treze degraus</h2>
+      <p>
+        O plano de carreira da MOVVA vai de Consultor a Presidente. Estes são os
+        medalhões oficiais de cada graduação, na ordem.
+      </p>
+
+      <ol class="escada">
+        {NIVEIS.map((nv) => (
+          <li class={`degrau${nv.n === MEU_NIVEL ? ' degrau--meu' : ''}`}>
+            <Image src={nv.img} alt={`Medalhão de ${nv.nome}`} width={88} densities={[1, 2]} />
+            <span class="degrau__n">{nv.n}</span>
+            <span class="degrau__nome">{nv.nome}</span>
+            {nv.n === MEU_NIVEL && <span class="degrau__aqui">eu estou aqui</span>}
+          </li>
+        ))}
+      </ol>
+
+      <p>
+        Eu estou no primeiro. Cadastrei-me em julho de 2026 e graduei Consultor em
+        agosto; de lá para cá não subi. Para o segundo degrau, o meu painel pede
+        seis diretos ativos e eu tenho quatro.
+      </p>
+      <p class="meta-line">
+        Os nomes das graduações vêm dos medalhões oficiais da empresa. As
+        exigências de cada nível não estão aqui porque eu não localizei o
+        documento oficial que as fixe — o que circula em site de distribuidor e
+        em PDF de grupo eu não reproduzo. A única exigência publicada acima é a
+        do meu próximo nível, porque essa eu leio no meu próprio painel.
       </p>
     </section>
 
@@ -111,3 +185,64 @@ const description =
 
   </article>
 </Base>
+
+<style>
+  /* Treze medalhões numa escada. Doze apagados e um aceso: o contraste é o
+     argumento da seção, e é mais honesto do que qualquer frase. Mostrar os
+     treze brilhando seria pôster de recrutamento. */
+  .escada {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5.4rem, 1fr));
+    gap: 1.1rem 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .degrau {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.18rem;
+    text-align: center;
+    min-width: 0;
+  }
+  .degrau img {
+    width: 100%;
+    max-width: 72px;
+    height: auto;
+    display: block;
+    /* Os que ainda não foram alcançados ficam apagados: não é enfeite, é o
+       estado real deles para quem está lendo. */
+    filter: grayscale(1) brightness(0.62);
+    opacity: 0.5;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+  .degrau:hover img { opacity: 0.8; }
+  .degrau__n {
+    font-family: var(--mono);
+    font-size: 0.64rem;
+    color: var(--muted);
+  }
+  .degrau__nome {
+    font-size: 0.74rem;
+    line-height: 1.25;
+    color: var(--muted);
+  }
+
+  .degrau--meu img {
+    filter: none;
+    opacity: 1;
+  }
+  .degrau--meu .degrau__nome { color: var(--ink); font-weight: 600; }
+  .degrau--meu .degrau__n { color: var(--accent); }
+  .degrau__aqui {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--accent);
+    border: 1px solid var(--borda-verde);
+    background: var(--veu-2);
+    border-radius: 999px;
+    padding: 0.1rem 0.4rem;
+    margin-top: 0.15rem;
+  }
+</style>

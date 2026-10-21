@@ -27,25 +27,32 @@ import CadeiaDeRede from '../components/diagramas/CadeiaDeRede.astro';
 import { Image } from 'astro:assets';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
 import { EMPRESA, CHIP } from '../data/site.js';
+import { PLANOS, RECOMENDADO } from '../data/planos.js';
 import { linkWhatsApp } from '../data/contato.js';
 
 const atualizadoEm = '2026-10-21';
-const title = 'Chip MOVVA: 25 GB por R$ 79,90 com portabilidade inclusa';
+
+// Preço do plano recomendado partido em reais e centavos: o cartão de oferta
+// exibe os dois em tamanhos diferentes. Vem de planos.js como o resto — o
+// título, o H1 e o cartão citavam "25 GB por R$ 79,90" escrito à mão, e um dia
+// de mudança de tabela deixaria o título vendendo um preço que a tabela
+// logo abaixo já não pratica.
+const [REAIS, CENTAVOS] = RECOMENDADO.preco.split(',');
+const MENOR = PLANOS[0];
+const MAIOR = PLANOS[PLANOS.length - 1];
+
+const title = `Chip MOVVA: ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco} com portabilidade inclusa`;
 const description =
-  'Planos MOVVA de 10 a 50 GB, a partir de R$ 58,90. TIM e Vivo no mesmo chip, gigas acumulativos, sem prazo de permanência e portabilidade inclusa — com os registros públicos da empresa à mão.';
+  `Planos MOVVA de ${MENOR.gb} a ${MAIOR.gb} GB, a partir de R$ ${MENOR.preco}. TIM e Vivo no mesmo chip, gigas acumulativos, sem prazo de permanência e portabilidade inclusa — com os registros públicos da empresa à mão.`;
 
 // Os links de contratação são remunerados: levam ao meu WhatsApp e eu recebo
 // comissão. rel="sponsored" é o que o Google pede para link pago, e sem ele a
 // frase que já está publicada em /avisos-legais seria falsa.
 const REL_PAGO = 'nofollow sponsored noopener';
 
-const PLANOS = [
-  { nome: 'Start',   gb: 10, preco: '58,90',  nota: 'Para quem usa pouco dado' },
-  { nome: 'Plus',    gb: 15, preco: '73,90',  nota: 'Uso leve com folga' },
-  { nome: 'Liberty', gb: 25, preco: '79,90',  nota: 'O que eu mais indico', destaque: true },
-  { nome: 'Max',     gb: 35, preco: '96,90',  nota: 'Para quem trabalha no celular' },
-  { nome: 'Ultra',   gb: 50, preco: '126,90', nota: 'Para quem consome muito dado' },
-];
+// Os planos saíram daqui para src/data/planos.js. A home e a página /planos
+// liam a mesma tabela escrita em dois lugares, e tabela de preço duplicada é a
+// forma mais rápida de publicar dois preços diferentes para o mesmo plano.
 
 // Os diferenciais que a MOVVA publica no documento oficial "Diferenciais
 // planos de telefonia MOVVA", escritos aqui como a empresa os publica — sem
@@ -122,8 +129,8 @@ const BENEFICIOS = [
              Agora: constatação na primeira linha, oferta concreta na segunda. -->
         <h1>
           Você muda de operadora, não de número.<br />Chip MOVVA:
-          <span class="destaque">25&nbsp;GB</span> por
-          <span class="destaque">R$&nbsp;79,90</span>.
+          <span class="destaque">{RECOMENDADO.gb}&nbsp;GB</span> por
+          <span class="destaque">R$&nbsp;{RECOMENDADO.preco}</span>.
         </h1>
 
         <!-- Não repete "chip MOVVA", que o título acabou de dizer duas linhas
@@ -142,7 +149,7 @@ const BENEFICIOS = [
 
         <ul class="pilulas">
           <li>Portabilidade inclusa</li>
-          <li>De 10 a 50 GB</li>
+          <li>De {MENOR.gb} a {MAIOR.gb} GB</li>
           <li>Registros públicos à mão</li>
         </ul>
       </div>
@@ -151,10 +158,10 @@ const BENEFICIOS = [
            vem depois é mais quieto, de propósito. -->
       <aside class="oferta borda-luz">
         <p class="oferta__chapeu">A minha recomendação</p>
-        <p class="oferta__nome">MOVVA Liberty</p>
-        <p class="oferta__gb brilho">25 GB</p>
+        <p class="oferta__nome">MOVVA {RECOMENDADO.nome}</p>
+        <p class="oferta__gb brilho">{RECOMENDADO.gb} GB</p>
         <p class="oferta__preco">
-          <span>R$</span><strong>79</strong><span>,90</span><small>/mês</small>
+          <span>R$</span><strong>{REAIS}</strong><span>,{CENTAVOS}</span><small>/mês</small>
         </p>
         <p class="oferta__fonte">O que vem no plano:</p>
         <ul class="oferta__itens">
@@ -336,6 +343,11 @@ const BENEFICIOS = [
           </article>
         ))}
       </div>
+
+      <p class="meta-line">
+        <a href="/planos">Ver a comparação completa</a> — preço por giga de cada
+        plano, para quem cada um serve e o que eu ainda não consegui confirmar.
+      </p>
     </div>
   </section>
 

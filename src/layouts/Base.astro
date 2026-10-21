@@ -85,10 +85,15 @@ const schemaBase = {
   ],
 };
 
-const schemas = schemaExtra ? [schemaBase, schemaExtra] : [schemaBase];
+// concat achata: uma página pode passar um schema só ou vários. Antes isto
+// aceitava só um objeto, e uma página com dois schemas publicava o segundo
+// aninhado dentro do primeiro — JSON-LD válido na sintaxe e invisível na
+// leitura.
+const schemas = schemaExtra ? [schemaBase, ...[].concat(schemaExtra)] : [schemaBase];
 
 const nav = [
   { href: '/', rotulo: 'Início' },
+  { href: '/planos', rotulo: 'Planos' },
   { href: '/movva-e-confiavel', rotulo: 'É confiável?' },
   { href: '/blog', rotulo: 'Blog' },
   { href: '/oportunidade', rotulo: 'Programa de afiliados' },

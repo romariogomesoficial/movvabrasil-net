@@ -1,0 +1,349 @@
+---
+import Base from '../layouts/Base.astro';
+import ProximoPasso from '../components/ProximoPasso.astro';
+import { SITE, CHIP } from '../data/site.js';
+import { PLANOS, RECOMENDADO, DIFERENCIAIS, EM_ABERTO, CONFERIDO_EM } from '../data/planos.js';
+import { linkWhatsApp } from '../data/contato.js';
+
+// Link remunerado: leva ao meu WhatsApp e eu recebo comissão se a pessoa
+// contratar. rel="sponsored" é o que o Google pede, e é a mesma declaração que
+// já está publicada em /avisos-legais.
+const REL_PAGO = 'nofollow sponsored noopener';
+
+const fmtData = (iso) =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', {
+    day: '2-digit', month: 'long', year: 'numeric',
+  });
+
+// Preço por giga: a única coluna da tabela que é cálculo meu, e a que de fato
+// responde "qual compensa". Arredondo na exibição, não no dado.
+const porGiga = (p) => (p.precoNumero / p.gb).toFixed(2).replace('.', ',');
+
+const atualizadoEm = CONFERIDO_EM;
+const title = 'Planos MOVVA: preços, franquias e qual compensa em 2026';
+const description =
+  'Os cinco planos de celular da MOVVA com preço, franquia de dados e preço por giga. Comparação lado a lado, o que vem em todos eles e o que eu ainda não consegui confirmar.';
+
+const faq = [
+  {
+    p: 'Quanto custa o plano da MOVVA?',
+    r: `Os planos da MOVVA vão de R$ ${PLANOS[0].preco} por ${PLANOS[0].gb} GB a R$ ${PLANOS[PLANOS.length - 1].preco} por ${PLANOS[PLANOS.length - 1].gb} GB, em cinco faixas. O ${RECOMENDADO.nome}, de ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco}, é o que eu mais indico. Valores conferidos no material oficial em ${fmtData(CONFERIDO_EM)}; confirme o preço vigente antes de pagar.`,
+  },
+  {
+    p: 'Qual plano da MOVVA tem o melhor preço por giga?',
+    r: `O ${PLANOS[PLANOS.length - 1].nome}, de ${PLANOS[PLANOS.length - 1].gb} GB, sai a R$ ${porGiga(PLANOS[PLANOS.length - 1])} por giga — o menor da tabela. Mas preço por giga só importa se você usar a franquia: um plano de ${PLANOS[PLANOS.length - 1].gb} GB para quem gasta ${PLANOS[0].gb} GB é mais caro na prática, não mais barato.`,
+  },
+  {
+    p: 'Os planos da MOVVA têm fidelidade?',
+    r: 'Não. O documento oficial de diferenciais da MOVVA lista "não tem fidelidade" entre as características dos planos, sem prazo mínimo de permanência nem multa para sair.',
+  },
+  {
+    p: 'Dá para levar o meu número para a MOVVA?',
+    r: 'Dá. A portabilidade numérica é direito garantido pela Anatel e vale para qualquer operadora, inclusive as virtuais. O número continua seu; muda a empresa que presta o serviço.',
+  },
+  {
+    p: 'Os gigas que sobram acumulam?',
+    r: 'O documento oficial da MOVVA lista "gigas acumulativos infinitos" entre os diferenciais dos planos. O que eu não consegui confirmar é por quanto tempo o saldo acumulado fica válido — não localizei o contrato que fixe esse prazo.',
+  },
+  {
+    p: 'Qual rede o chip da MOVVA usa?',
+    r: 'O documento oficial descreve dupla conectividade: duas redes num chip só, TIM e VIVO, com o aparelho usando a que estiver melhor no local. ' + CHIP.frase,
+  },
+];
+
+// ItemList de ofertas: é o formato que um buscador e um assistente conseguem
+// ler como "cinco produtos com preço", em vez de cinco parágrafos soltos.
+const schemaExtra = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Planos de celular MOVVA',
+    numberOfItems: PLANOS.length,
+    itemListElement: PLANOS.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Product',
+        '@id': `${SITE.url}/planos#${p.slug}`,
+        name: `MOVVA ${p.nome}`,
+        category: 'Plano de telefonia móvel',
+        description: `Plano de celular com ${p.gb} GB de franquia de dados, portabilidade e sem fidelidade.`,
+        brand: { '@type': 'Brand', name: 'MOVVA' },
+        offers: {
+          '@type': 'Offer',
+          price: p.precoNumero.toFixed(2),
+          priceCurrency: 'BRL',
+          availability: 'https://schema.org/InStock',
+          url: `${SITE.url}/planos#${p.slug}`,
+          priceValidUntil: '2026-12-31',
+          // Sem seller: quem presta o servico e a MOVVA, nao este site. Dizer
+          // o contrario seria exatamente a representacao enganosa que o
+          // rodape de toda pagina nega.
+        },
+      },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((i) => ({
+      '@type': 'Question',
+      name: i.p,
+      acceptedAnswer: { '@type': 'Answer', text: i.r },
+    })),
+  },
+];
+---
+
+<Base {title} {description} path="/planos" {atualizadoEm} {schemaExtra}>
+  <article class="wrap stack--lg stack">
+
+    <header class="stack">
+      <p class="eyebrow">Planos de celular</p>
+      <h1>Planos MOVVA: preço, franquia e qual compensa</h1>
+      <!-- Resposta direta na primeira tela. E o trecho que um buscador ou um
+           assistente extrai inteiro; enterra-la no meio da pagina e abrir mao
+           da citacao. -->
+      <p class="answer">
+        A MOVVA tem cinco planos de celular, de R$ {PLANOS[0].preco} por {PLANOS[0].gb} GB
+        a R$ {PLANOS[PLANOS.length - 1].preco} por {PLANOS[PLANOS.length - 1].gb} GB.
+        Todos vêm com portabilidade, sem fidelidade e com os dados que sobram
+        acumulando. Eu indico o <strong>{RECOMENDADO.nome}</strong>,
+        de {RECOMENDADO.gb} GB por R$ {RECOMENDADO.preco}.
+      </p>
+      <p class="meta-line">
+        Tabela conferida no material oficial em {fmtData(CONFERIDO_EM)}.
+        Preço de operadora muda: confirme o valor vigente na página de
+        contratação antes de pagar.
+      </p>
+    </header>
+
+    <!-- ===================== A TABELA ===================== -->
+    <section class="stack">
+      <h2>Os cinco planos, lado a lado</h2>
+      <p>
+        A coluna que decide quase sempre é a última. Preço por giga só conta
+        quando você realmente usa a franquia — comprar 50 GB para gastar 10
+        é pagar mais caro pelo giga que você usa, não mais barato.
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Plano</th>
+              <th class="num">Dados</th>
+              <th class="num">Por mês</th>
+              <th class="num">Por giga</th>
+              <th>Para quem</th>
+            </tr>
+          </thead>
+          <tbody>
+            {PLANOS.map((p) => (
+              <tr class={p.destaque ? 'linha--destaque' : undefined}>
+                <td>
+                  <a href={`#${p.slug}`}>MOVVA {p.nome}</a>
+                  {p.destaque && <span class="tag">eu indico</span>}
+                </td>
+                <td class="num">{p.gb} GB</td>
+                <td class="num">R$ {p.preco}</td>
+                <td class="num">R$ {porGiga(p)}</td>
+                <td>{p.nota}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="meta-line">
+        Nomes, franquias e preços são da MOVVA. A coluna “por giga” é conta
+        minha, feita a partir dos dois números anteriores. A coluna “para quem”
+        é recomendação minha, não classificação da empresa.
+      </p>
+    </section>
+
+    <!-- ===================== CADA PLANO ===================== -->
+    <section class="stack">
+      <h2>Qual deles é o seu</h2>
+      <p>
+        Antes de escolher pelo preço, olhe quanto você gastou de dados no último
+        mês — essa informação está nos ajustes do seu celular, em “uso de dados”.
+        É o número que decide, e quase ninguém olha antes de contratar.
+      </p>
+
+      <div class="cartoes">
+        {PLANOS.map((p) => (
+          <article id={p.slug} class={`cartao${p.destaque ? ' cartao--destaque borda-luz' : ''}`}>
+            {p.destaque && <span class="cartao__selo">Eu indico</span>}
+            <h3>MOVVA {p.nome}</h3>
+            <p class={`cartao__gb${p.destaque ? ' destaque' : ''}`}>{p.gb} GB</p>
+            <p class="cartao__preco">R$ <strong>{p.preco}</strong><small>/mês</small></p>
+            <p class="cartao__perfil">{p.perfil}</p>
+            <p class="cartao__giga">R$ {porGiga(p)} por giga</p>
+            <a
+              class={`btn btn--sm${p.destaque ? '' : ' btn--ghost'}`}
+              href={linkWhatsApp('plano')}
+              rel={REL_PAGO}
+              target="_blank"
+            >Falar sobre o {p.nome}</a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- ===================== O QUE VEM EM TODOS ===================== -->
+    <section class="stack">
+      <h2>O que vem em todos eles</h2>
+      <p>
+        Entre um plano e outro muda a franquia de dados. O resto é igual nos
+        cinco, e vem do documento oficial de diferenciais da MOVVA.
+      </p>
+      <ul class="beneficios">
+        {DIFERENCIAIS.map((d) => (
+          <li>
+            <strong>{d.titulo}</strong>
+            <span>{d.texto}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="meta-line">
+        A empresa lista seis diferenciais. O sexto é o programa de indicação, que
+        não é característica do plano de celular e por isso não está aqui: ele
+        tem <a href="/oportunidade">página própria</a>, com os meus números reais.
+      </p>
+    </section>
+
+    <!-- ===================== O QUE EU NÃO CONFIRMEI ===================== -->
+    <section class="stack">
+      <h2>O que eu ainda não consegui confirmar</h2>
+      <div class="card card--warn">
+        <p>
+          Isto fala do produto, não de opinião. São os pontos em que eu não
+          localizei documento que feche a resposta — e que eu prefiro deixar à
+          vista a preencher com suposição.
+        </p>
+        <ul>
+          {EM_ABERTO.map((item) => <li>{item}</li>)}
+        </ul>
+        <p class="meta-line">{CHIP.frase}</p>
+      </div>
+    </section>
+
+    <!-- ===================== PERGUNTAS ===================== -->
+    <section class="stack">
+      <h2>Perguntas sobre os planos</h2>
+      <div class="stack">
+        {faq.map((i) => (
+          <details class="qa">
+            <summary>{i.p}</summary>
+            <p>{i.r}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <section class="stack">
+      <h2>Antes de contratar, vale ler</h2>
+      <ul class="leituras">
+        <li><a href="/blog/portabilidade-sem-perder-o-numero">Como levar o seu número sem ficar sem linha</a></li>
+        <li><a href="/blog/operadora-virtual-pega-bem">Operadora virtual pega bem? O que muda na prática</a></li>
+        <li><a href="/blog/esim-ou-chip-fisico">eSIM ou chip físico: qual pedir</a></li>
+        <li><a href="/blog/internet-que-acumula">Internet que acumula: como funciona o saldo que sobra</a></li>
+        <li><a href="/movva-e-confiavel">A MOVVA é confiável? O que dá e o que não dá para verificar</a></li>
+      </ul>
+    </section>
+
+    <ProximoPasso contexto="plano" />
+  </article>
+</Base>
+
+<style>
+  /* A linha do plano recomendado recebe um véu, não uma cor cheia: a tabela
+     inteira tingida de verde deixa de ter destaque nenhum. */
+  .linha--destaque { background: var(--veu-1); }
+  .tag {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--accent);
+    border: 1px solid var(--borda-verde);
+    background: var(--veu-2);
+    border-radius: 999px;
+    padding: 0.1rem 0.4rem;
+    margin-left: 0.4rem;
+    white-space: nowrap;
+  }
+
+  .cartoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+  @media (min-width: 34rem) { .cartoes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 58rem) { .cartoes { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+  .cartao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1.1rem;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--surface);
+    /* Alvo do link #slug: sem isto o cabeçalho fixo come o topo do cartão. */
+    scroll-margin-top: 8rem;
+  }
+  .cartao--destaque { border-color: var(--borda-verde); }
+  .cartao__selo {
+    align-self: flex-start;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    color: var(--accent);
+    border: 1px solid var(--borda-verde);
+    background: var(--veu-2);
+    border-radius: 999px;
+    padding: 0.12rem 0.45rem;
+  }
+  .cartao h3 { font-size: 1.02rem; margin: 0; }
+  .cartao__gb { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+  .cartao__preco { display: flex; align-items: baseline; gap: 0.15rem; color: var(--muted); }
+  .cartao__preco strong { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.04em; color: var(--ink); }
+  .cartao__preco small { font-size: 0.8rem; }
+  .cartao__perfil { font-size: 0.88rem; color: var(--muted); flex: 1; }
+  .cartao__giga { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); }
+  .cartao .btn { justify-content: center; margin-top: 0.35rem; }
+
+  .beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 40rem) { .beneficios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .beneficios li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding-left: 0.9rem;
+    border-left: 2px solid var(--borda-verde);
+    min-width: 0;
+  }
+  .beneficios strong { font-size: 0.95rem; }
+  .beneficios span { font-size: 0.9rem; color: var(--muted); }
+
+  .qa {
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0.8rem 1rem;
+  }
+  .qa summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style-position: outside;
+  }
+  .qa[open] summary { color: var(--accent); margin-bottom: 0.5rem; }
+  .qa p { margin: 0; color: var(--muted); font-size: 0.94rem; }
+
+  .leituras { display: grid; gap: 0.45rem; padding-left: 1.1rem; }
+</style>
