@@ -6,9 +6,20 @@
 // acabar com duas tabelas que se desmentem — foi o que aconteceu com a frase
 // do chip, e a licao ja esta em CHIP, no site.js.
 //
-// DE ONDE VEM: tabela publicada no material da empresa, conferida em
-// 21/10/2026. Os cinco nomes e as cinco franquias sao da MOVVA; o que e MEU
-// esta marcado campo a campo abaixo, e so isso.
+// DE ONDE VEM, e esta parte importa mais do que parece: os cinco nomes, as
+// cinco franquias e os cinco precos eu conferi em 21/10/2026 em material de
+// DIVULGACAO DA REDE DE DISTRIBUIDORES. Nao em documento da propria MOVVA.
+//
+// A primeira versao deste arquivo dizia "tabela publicada no material da
+// empresa". Nao e verdade: o documento oficial que eu tenho na pasta,
+// "Diferenciais planos de telefonia MOVVA", tem doze paginas e nenhum preco.
+// Atribuir a tabela a ele seria dar a um numero de divulgacao o peso de
+// documento — exatamente o que este site existe para nao fazer.
+//
+// Por isso a pagina pede, na tela, que o leitor confira o valor vigente antes
+// de pagar, e o assunto esta em EM_ABERTO.
+//
+// O que e MEU, e nao da MOVVA nem da rede, esta marcado campo a campo abaixo.
 //
 // QUANDO O PRECO MUDAR: mude aqui. A home, a pagina /planos, o cartao de
 // compartilhamento e o llms.txt acompanham sozinhos.
@@ -119,6 +130,8 @@ export const DIFERENCIAIS = [
 // O que eu AINDA NAO consegui confirmar sobre os planos. Isto fala do produto,
 // nao de mim — e por isso vai para a tela, e conta na faixa de conferencia.
 export const EM_ABERTO = [
+  'A origem dos preços. Eu confiro os cinco valores em material de divulgação da rede de distribuidores, não em documento da própria MOVVA — o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela de preços. Confirme o valor vigente na página de contratação antes de pagar.',
+  'Se a dupla conectividade são duas redes contratadas ou uma rede com roaming na outra. O documento oficial da MOVVA descreve "duas redes em um único chip: TIM e VIVO"; uma página de divulgação da rede descrevia a mesma característica como "rede TIM + roaming VIVO". As duas coisas se conferem de formas diferentes, e eu não achei documento que feche qual é.',
   'A velocidade depois que a franquia acaba. O material que eu tenho não diz se o plano reduz a velocidade ou corta os dados.',
   'O limite dos gigas acumulativos. O documento oficial diz "infinitos"; eu não achei o contrato que fixe por quanto tempo o saldo fica válido.',
   'O que exatamente o MOVVA Club oferece. Eu tenho o nome do benefício, não a lista de parceiros.',

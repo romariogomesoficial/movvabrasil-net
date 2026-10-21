@@ -112,6 +112,28 @@ enuncia.
 **Como apareceu:** abrindo o Anexo da Resolução 777/2025 para conferir uma
 citação que havia entrado numa correção anterior sem ninguém ter lido a fonte.
 
+### / e /planos — a origem dos cinco preços
+
+**Passou a dizer:** “Preços conferidos no material oficial em 21 de outubro de
+2026”, na home e na página de planos novas, e “Valores conferidos no material
+oficial” na resposta da pergunta “quanto custa o plano da MOVVA?”.
+
+**O erro:** não existe tabela de preços em material oficial da empresa. O único
+documento da MOVVA na pasta do projeto é “Diferenciais planos de telefonia
+MOVVA”, de doze páginas, que lista os seis diferenciais e **nenhum preço**. Os
+cinco valores vêm de uma página de divulgação da rede de distribuidores. São
+números de divulgação recebendo o peso de documento — exatamente o que o site
+existe para não fazer, e logo na informação que mais pesa numa decisão de compra.
+
+**Como apareceu:** não por revisão do próprio texto. Um verificador adversarial
+checava outra página, a do custo do primeiro mês, e foi atrás da origem do
+preço citado lá. A origem errada estava em três lugares ao mesmo tempo, porque
+todos os três liam do mesmo módulo.
+
+**O que mudou junto:** a atribuição passou a nomear a fonte real em todos os
+três lugares, e a origem do preço virou o primeiro item dos pontos em aberto da
+página de planos — ponto em aberto fala do assunto, e isso cabe na tela.
+
 ---
 
 ## Por que não é página pública
