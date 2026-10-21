@@ -5,78 +5,101 @@
 // sinal vem da mesma antena nos dois modelos. O que muda e de quem ele e
 // cliente, e de quem e a numeracao. Por isso as duas faixas compartilham a
 // mesma coluna de antena a esquerda.
+//
+// Sobre a animacao: ela nao e enfeite. O pulso que corre da origem ate voce E
+// o mecanismo que o desenho explica — o sinal saindo da antena de quem tem
+// espectro e chegando no seu aparelho, passando pela empresa que vendeu o
+// plano. Ele sai da esquerda para a direita, na ordem da cadeia, e o segundo
+// trecho so acende depois do primeiro. Quem pediu menos movimento no sistema
+// ve o diagrama parado, com o pulso em repouso no meio de cada trecho.
 ---
 
 <figure class="figura">
   <svg
-    viewBox="0 0 768 360"
+    viewBox="0 0 768 372"
     role="img"
     aria-label="Nos dois modelos de operadora virtual o sinal vem da mesma antena, da prestadora de origem. No credenciamento, a numeração é da origem e o cliente é usuário dela. Na autorização, a virtual tem outorga própria e contrato de compartilhamento de rede."
   >
     <defs>
+      <linearGradient id="rampaCadeia" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="var(--g1)" />
+        <stop offset="0.5" stop-color="var(--g2)" />
+        <stop offset="1" stop-color="var(--g3)" />
+      </linearGradient>
+      <linearGradient id="rampaOrigem" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="var(--g1)" />
+        <stop offset="1" stop-color="var(--g2)" />
+      </linearGradient>
       <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5"
               markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-        <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor" />
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--accent)" />
       </marker>
     </defs>
 
     <!-- ================= modelo 1: credenciamento ================= -->
     <text x="20" y="22" class="titulo">Credenciamento</text>
 
-    <rect x="20" y="36" width="190" height="72" rx="3" class="caixa caixa--origem" />
+    <rect x="20" y="36" width="190" height="72" rx="10" class="caixa caixa--origem" />
     <text x="115" y="62" class="nome" text-anchor="middle">Prestadora de origem</text>
     <text x="115" y="82" class="sub" text-anchor="middle">tem antena, espectro</text>
     <text x="115" y="98" class="sub" text-anchor="middle">e outorga de SMP</text>
 
     <line x1="210" y1="72" x2="296" y2="72" class="fio" marker-end="url(#seta)" />
-    <text x="253" y="64" class="aresta" text-anchor="middle">representa</text>
+    <circle cx="214" cy="72" r="4" class="pulso pulso--a" />
+    <text x="253" y="62" class="aresta" text-anchor="middle">representa</text>
 
-    <rect x="300" y="36" width="190" height="72" rx="3" class="caixa" />
+    <rect x="300" y="36" width="190" height="72" rx="10" class="caixa" />
     <text x="395" y="62" class="nome" text-anchor="middle">Credenciada</text>
     <text x="395" y="82" class="sub" text-anchor="middle">vende com a marca dela,</text>
     <text x="395" y="98" class="sub" text-anchor="middle">sem numeração própria</text>
 
     <line x1="490" y1="72" x2="576" y2="72" class="fio" marker-end="url(#seta)" />
-    <text x="533" y="64" class="aresta" text-anchor="middle">vende</text>
+    <circle cx="494" cy="72" r="4" class="pulso pulso--b" />
+    <text x="533" y="62" class="aresta" text-anchor="middle">vende</text>
 
-    <rect x="580" y="36" width="168" height="72" rx="3" class="caixa caixa--voce" />
+    <rect x="580" y="36" width="168" height="72" rx="10" class="caixa caixa--voce" />
     <text x="664" y="68" class="nome" text-anchor="middle">Você</text>
     <text x="664" y="88" class="sub" text-anchor="middle">usuário da origem</text>
 
-    <text x="20" y="132" class="nota">
+    <text x="20" y="136" class="nota">
       A numeração é da prestadora de origem (art. 221) e você passa a ser usuário dela (art. 237).
     </text>
 
     <!-- ================= modelo 2: autorizacao ================= -->
-    <text x="20" y="196" class="titulo">Autorização</text>
+    <text x="20" y="200" class="titulo">Autorização</text>
 
-    <rect x="20" y="210" width="190" height="72" rx="3" class="caixa caixa--origem" />
-    <text x="115" y="236" class="nome" text-anchor="middle">Prestadora de origem</text>
-    <text x="115" y="256" class="sub" text-anchor="middle">a mesma antena</text>
-    <text x="115" y="272" class="sub" text-anchor="middle">do modelo acima</text>
+    <rect x="20" y="214" width="190" height="72" rx="10" class="caixa caixa--origem" />
+    <text x="115" y="240" class="nome" text-anchor="middle">Prestadora de origem</text>
+    <text x="115" y="260" class="sub" text-anchor="middle">a mesma antena</text>
+    <text x="115" y="276" class="sub" text-anchor="middle">do modelo acima</text>
 
-    <line x1="210" y1="246" x2="296" y2="246" class="fio" marker-end="url(#seta)" />
-    <text x="253" y="238" class="aresta" text-anchor="middle">compartilha rede</text>
+    <line x1="210" y1="250" x2="296" y2="250" class="fio" marker-end="url(#seta)" />
+    <circle cx="214" cy="250" r="4" class="pulso pulso--c" />
+    <!-- Em uma linha este rótulo mede 89px num vão de 86 e encosta nas duas
+         caixas. Quebrado, cabe com folga — os outros seguem em uma linha. -->
+    <text x="253" y="234" class="aresta" text-anchor="middle">compartilha</text>
+    <text x="253" y="245" class="aresta" text-anchor="middle">rede</text>
 
-    <rect x="300" y="210" width="190" height="72" rx="3" class="caixa" />
-    <text x="395" y="236" class="nome" text-anchor="middle">Autorizada</text>
-    <text x="395" y="256" class="sub" text-anchor="middle">tem outorga própria,</text>
-    <text x="395" y="272" class="sub" text-anchor="middle">mas não tem espectro</text>
+    <rect x="300" y="214" width="190" height="72" rx="10" class="caixa" />
+    <text x="395" y="240" class="nome" text-anchor="middle">Autorizada</text>
+    <text x="395" y="260" class="sub" text-anchor="middle">tem outorga própria,</text>
+    <text x="395" y="276" class="sub" text-anchor="middle">mas não tem espectro</text>
 
-    <line x1="490" y1="246" x2="576" y2="246" class="fio" marker-end="url(#seta)" />
-    <text x="533" y="238" class="aresta" text-anchor="middle">vende</text>
+    <line x1="490" y1="250" x2="576" y2="250" class="fio" marker-end="url(#seta)" />
+    <circle cx="494" cy="250" r="4" class="pulso pulso--d" />
+    <text x="533" y="240" class="aresta" text-anchor="middle">vende</text>
 
-    <rect x="580" y="210" width="168" height="72" rx="3" class="caixa caixa--voce" />
-    <text x="664" y="242" class="nome" text-anchor="middle">Você</text>
-    <text x="664" y="262" class="sub" text-anchor="middle">usuário da autorizada</text>
+    <rect x="580" y="214" width="168" height="72" rx="10" class="caixa caixa--voce" />
+    <text x="664" y="246" class="nome" text-anchor="middle">Você</text>
+    <text x="664" y="266" class="sub" text-anchor="middle">usuário da autorizada</text>
 
-    <text x="20" y="306" class="nota">
+    <text x="20" y="314" class="nota">
       Pode ter contrato com mais de uma prestadora de origem na mesma área (art. 241, § 2º).
     </text>
 
     <!-- o que nao muda -->
-    <line x1="20" y1="330" x2="748" y2="330" class="regua" />
-    <text x="20" y="350" class="fechamento">
+    <rect x="20" y="338" width="728" height="2" rx="1" class="regua" />
+    <text x="20" y="362" class="fechamento">
       O sinal é o mesmo nos dois. O que muda é de quem você é cliente — e nenhum dos dois cria cobertura nova.
     </text>
   </svg>
@@ -88,21 +111,66 @@
 
 <style>
   .figura { margin: 2rem 0; display: flex; flex-direction: column; gap: 0.7rem; color: var(--ink); }
-  .figura svg { width: 100%; max-width: 100%; height: auto; display: block; }
+  .figura svg { width: 100%; max-width: 100%; height: auto; display: block; overflow: visible; }
   figcaption { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
 
   .caixa { fill: none; stroke: var(--rule); stroke-width: 1.5; }
-  /* A antena e o unico elemento com peso: e dela que o sinal sai nos dois casos. */
-  .caixa--origem { stroke: var(--accent); stroke-width: 2.5; }
-  .caixa--voce { stroke: var(--ink); stroke-dasharray: 4 3; }
+  /* A origem é o único elemento com peso: é dela que o sinal sai nos dois
+     casos. Ganha a rampa de espectro no traço e um fundo de acento, que a
+     separa do resto sem precisar engrossar a linha. */
+  .caixa--origem {
+    stroke: url(#rampaOrigem);
+    stroke-width: 2;
+    fill: var(--accent-soft);
+  }
+  /* Tracejada porque "você" é quem o desenho descreve, não parte da rede. */
+  .caixa--voce { stroke: var(--muted); stroke-dasharray: 5 4; }
 
-  .titulo { font-size: 15px; font-weight: 600; fill: var(--ink); font-family: var(--display); }
+  .titulo { font-size: 15px; font-weight: 600; fill: var(--ink); font-family: var(--display); letter-spacing: -0.01em; }
   .nome { font-size: 14px; font-weight: 600; fill: var(--ink); font-family: var(--body); }
   .sub { font-size: 12px; fill: var(--muted); font-family: var(--body); }
   .aresta { font-size: 11.5px; fill: var(--muted); font-family: var(--body); }
   .nota { font-size: 12.5px; fill: var(--muted); font-family: var(--body); }
   .fechamento { font-size: 14px; font-weight: 600; fill: var(--ink); font-family: var(--body); }
 
-  .fio { stroke: var(--muted); stroke-width: 1.5; }
-  .regua { stroke: var(--rule); stroke-width: 1; }
+  .fio { stroke: url(#rampaCadeia); stroke-width: 2; }
+  .regua { fill: url(#rampaCadeia); opacity: 0.35; }
+
+  /* ---------------------------------------------------------------
+     O pulso
+     Cada trecho tem 86px. O ponto nasce no começo, atravessa e some no
+     fim; o segundo trecho sai meio ciclo depois do primeiro, para o sinal
+     parecer atravessar a cadeia inteira em vez de piscar nos dois lugares
+     ao mesmo tempo. O segundo modelo fica em contratempo do primeiro, pelo
+     mesmo motivo: duas faixas em uníssono leem como erro de renderização.
+     --------------------------------------------------------------- */
+  /* Sobre fundo claro o verde da rampa é claro demais e um ponto de 4px
+     sumiria, então ali vale o acento. Onde o fundo é escuro — a home, que é
+     o único lugar onde este diagrama aparece hoje — o verde tem presença e
+     separa o pulso da ponta da seta, que já é cor de acento. */
+  .pulso { fill: var(--accent); }
+  :global(body.escuro) .pulso { fill: var(--g1); }
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme="light"])) .pulso { fill: var(--g1); }
+  }
+  @keyframes correr {
+    0%        { transform: translateX(0);    opacity: 0; }
+    12%       { opacity: 1; }
+    82%       { opacity: 1; }
+    100%      { transform: translateX(78px); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .pulso {
+      animation: correr 2.6s cubic-bezier(0.45, 0, 0.3, 1) infinite;
+    }
+    .pulso--a { animation-delay: 0s; }
+    .pulso--b { animation-delay: 0.85s; }
+    .pulso--c { animation-delay: 1.3s; }
+    .pulso--d { animation-delay: 2.15s; }
+  }
+  /* Sem animação o ponto não some: fica parado no meio do trecho, que é
+     informação ("passa por aqui") em vez de enfeite congelado. */
+  @media (prefers-reduced-motion: reduce) {
+    .pulso { transform: translateX(39px); }
+  }
 </style>
