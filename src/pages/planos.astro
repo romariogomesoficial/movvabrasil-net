@@ -233,10 +233,13 @@ const schemaExtra = [
   /* A linha do plano recomendado recebe um véu, não uma cor cheia: a tabela
      inteira tingida de verde deixa de ter destaque nenhum. */
   .linha--destaque { background: var(--veu-1); }
+  /* --accent-ink, e não --accent: a etiqueta fica dentro da linha destacada,
+     então é verde sobre dois véus verdes empilhados, e com --accent media
+     4,28:1 no tema claro — abaixo dos 4,5 que a WCAG pede para texto. */
   .tag {
     font-family: var(--mono);
     font-size: 0.6rem;
-    color: var(--accent);
+    color: var(--accent-ink);
     border: 1px solid var(--borda-verde);
     background: var(--veu-2);
     border-radius: 999px;
@@ -269,7 +272,7 @@ const schemaExtra = [
     align-self: flex-start;
     font-family: var(--mono);
     font-size: 0.62rem;
-    color: var(--accent);
+    color: var(--accent-ink);
     border: 1px solid var(--borda-verde);
     background: var(--veu-2);
     border-radius: 999px;
