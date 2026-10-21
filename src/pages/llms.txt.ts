@@ -8,16 +8,9 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
+import { ROTULO_DO_CLUSTER } from '../data/clusters.js';
 
 export const prerender = true;
-
-const GRUPOS: Record<string, string> = {
-  marca: 'Análise da empresa',
-  categoria: 'Como funciona uma operadora virtual',
-  diferencial: 'Tecnologia e características de plano',
-  dor: 'Guias práticos',
-  comparacao: 'Comparações',
-};
 
 export const GET: APIRoute = async () => {
   const posts = (await getCollection('blog')).sort(
@@ -39,7 +32,7 @@ export const GET: APIRoute = async () => {
             `- [${p.data.title}](${SITE.url}/blog/${p.id}): ${p.data.description}\n  Resposta curta: ${p.data.resposta}`
         )
         .join('\n');
-      return `### ${GRUPOS[cluster] ?? cluster}\n\n${itens}`;
+      return `### ${ROTULO_DO_CLUSTER[cluster] ?? cluster}\n\n${itens}`;
     })
     .join('\n\n');
 

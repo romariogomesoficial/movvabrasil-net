@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ProximoPasso from '../../components/ProximoPasso.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, AUTOR } from '../../data/site.js';
+import { ROTULO_DO_CLUSTER } from '../../data/clusters.js';
 
 // A mensagem que ja vai escrita no WhatsApp muda conforme o assunto do post,
 // para voce saber de onde a pessoa veio sem precisar perguntar.
@@ -16,10 +17,27 @@ const CONTEXTO_POR_CLUSTER = {
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+
+  // Leitura relacionada: primeiro os do mesmo tema, depois os mais recentes de
+  // outros temas, ate tres. Calculado aqui porque getStaticPaths roda separado
+  // do corpo da pagina.
+  const porData = [...posts].sort(
+    (a, b) => b.data.publicado.valueOf() - a.data.publicado.valueOf()
+  );
+
+  return posts.map((post) => {
+    const mesmoTema = porData.filter(
+      (p) => p.id !== post.id && p.data.cluster === post.data.cluster
+    );
+    const outros = porData.filter(
+      (p) => p.id !== post.id && p.data.cluster !== post.data.cluster
+    );
+    const relacionados = [...mesmoTema, ...outros].slice(0, 3);
+    return { params: { slug: post.id }, props: { post, relacionados } };
+  });
 }
 
-const { post } = Astro.props;
+const { post, relacionados } = Astro.props;
 const { Content } = await render(post);
 
 const path = `/blog/${post.id}`;
@@ -82,6 +100,19 @@ const fmt = (d) =>
       Achou um erro? Escreva e eu corrijo, com nota de correção na página.
       Veja os <a href="/avisos-legais">avisos legais</a>.
     </p>
+
+    {relacionados.length > 0 && (
+      <section class="relacionados stack">
+        <h2>Leia também</h2>
+        {relacionados.map((p) => (
+          <article class="card">
+            <p class="eyebrow">{ROTULO_DO_CLUSTER[p.data.cluster] ?? 'Blog'}</p>
+            <h3><a href={`/blog/${p.id}`}>{p.data.title}</a></h3>
+            <p class="meta-line">{p.data.description}</p>
+          </article>
+        ))}
+      </section>
+    )}
 
     <ProximoPasso
       contexto={post.id === 'portabilidade-sem-perder-o-numero'

@@ -1,23 +1,17 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { agruparPorCluster } from '../../data/clusters.js';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.publicado.valueOf() - a.data.publicado.valueOf()
 );
+const grupos = agruparPorCluster(posts);
 
-const atualizadoEm = '2026-10-20';
+const atualizadoEm = '2026-10-21';
 const title = 'Blog: planos de celular, operadoras virtuais e portabilidade';
 const description =
   'Conteúdo prático sobre planos de celular, operadoras móveis virtuais, portabilidade e cobertura. Cada texto traz a fonte e a data da última checagem.';
-
-const rotuloCluster = {
-  categoria: 'Entenda a categoria',
-  diferencial: 'Tecnologia',
-  dor: 'Guia prático',
-  marca: 'Análise',
-  comparacao: 'Comparação',
-};
 
 // timeZone UTC e obrigatorio: a data do frontmatter vira meia-noite UTC, e sem
 // isso o Brasil, tres horas atras, mostra o dia anterior em todo post.
@@ -29,7 +23,7 @@ const fmt = (d) =>
   <div class="wrap stack--lg stack">
 
     <header class="stack">
-      <p class="eyebrow">Blog</p>
+      <p class="eyebrow">Blog · {posts.length} textos</p>
       <h1>Planos, cobertura e portabilidade, sem conversa de vendedor</h1>
       <p class="lede">
         Texto curto, resposta no começo e fonte linkada. Quando eu não consegui
@@ -37,21 +31,46 @@ const fmt = (d) =>
       </p>
     </header>
 
-    <section class="stack">
-      {posts.length === 0 && <p>Nenhum texto publicado ainda.</p>}
-      {posts.map((post) => (
-        <article class="card">
-          <p class="eyebrow">{rotuloCluster[post.data.cluster]}</p>
-          <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
-          <p>{post.data.description}</p>
-          <p class="meta-line">
-            Publicado em {fmt(post.data.publicado)}
-            {post.data.atualizado && post.data.atualizado.valueOf() !== post.data.publicado.valueOf()
-              && ` · atualizado em ${fmt(post.data.atualizado)}`}
-          </p>
-        </article>
-      ))}
-    </section>
+    {grupos.map((g) => (
+      <section class="stack">
+        <div class="grupo-cabeca">
+          <h2>{g.rotulo}</h2>
+          <p class="meta-line">{g.descricao}</p>
+        </div>
+
+        <div class="stack">
+          {g.posts.map((post) => (
+            <article class="card">
+              <h3><a href={`/blog/${post.id}`}>{post.data.title}</a></h3>
+              <p>{post.data.description}</p>
+              <p class="meta-line">
+                Publicado em {fmt(post.data.publicado)}
+                {post.data.atualizado
+                  && post.data.atualizado.valueOf() !== post.data.publicado.valueOf()
+                  && ` · atualizado em ${fmt(post.data.atualizado)}`}
+                {' · '}{post.data.fontes.length} {post.data.fontes.length === 1 ? 'fonte' : 'fontes'}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    {posts.length === 0 && <p>Nenhum texto publicado ainda.</p>}
 
   </div>
 </Base>
+
+<style>
+  .grupo-cabeca {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--rule);
+  }
+  .grupo-cabeca h2 { font-size: 1.5rem; }
+  .card h3 { font-size: 1.12rem; }
+  .card h3 a { text-decoration: none; }
+  .card h3 a:hover { text-decoration: underline; }
+</style>
