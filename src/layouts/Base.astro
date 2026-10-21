@@ -10,6 +10,7 @@ const {
   atualizadoEm,
   tipo = 'article',
   schemaExtra = null,
+  naoIndexar = false,
 } = Astro.props;
 
 const canonical = new URL(path, SITE.url).href;
@@ -89,6 +90,7 @@ const dataLegivel = atualizadoEm
   <title>{tituloCompleto}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  {naoIndexar && <meta name="robots" content="noindex, nofollow" />}
 
   <meta property="og:type" content={tipo} />
   <meta property="og:site_name" content={SITE.name} />

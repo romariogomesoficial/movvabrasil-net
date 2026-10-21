@@ -1,0 +1,85 @@
+---
+// Galeria para o Romario escolher e baixar. Fora do sitemap e com noindex:
+// e ferramenta de trabalho, nao conteudo do site.
+import Base from '../layouts/Base.astro';
+import { listarPecas } from '../data/criativos.js';
+import { FORMATOS } from '../lib/criativo.js';
+
+const pecas = listarPecas();
+const porFormato = Object.keys(FORMATOS).map((f) => ({
+  formato: f,
+  rotulo: FORMATOS[f].rotulo,
+  medida: `${FORMATOS[f].largura}×${FORMATOS[f].altura}`,
+  itens: pecas.filter((p) => p.formato === f),
+}));
+
+const title = 'Criativos';
+const description = 'Peças prontas para publicar, geradas no build.';
+---
+
+<Base {title} {description} path="/criativos" naoIndexar={true}>
+  <div class="wrap wrap--wide stack--lg stack">
+    <header class="stack">
+      <p class="eyebrow">Ferramenta interna</p>
+      <h1>Criativos prontos</h1>
+      <p class="lede">
+        Gerados a cada publicação, na identidade da MOVVA. Clique para baixar em
+        tamanho cheio.
+      </p>
+      <div class="card card--warn">
+        <h3>O que já vem embutido em toda peça</h3>
+        <ul>
+          <li><strong>#publi</strong> em texto, na primeira tela — exigência do Guia de Influenciadores do CONAR, e vale também para post orgânico.</li>
+          <li><strong>Distribuidor independente</strong> e o canal oficial da empresa.</li>
+          <li><strong>Nenhum campo para valor de ganho.</strong> Não há como colocar sem reescrever o template.</li>
+        </ul>
+        <p class="meta-line">
+          O porquê de cada regra está em REGRAS-CRIATIVO.md, no repositório.
+        </p>
+      </div>
+    </header>
+
+    {porFormato.map((g) => (
+      <section class="stack">
+        <h2>{g.rotulo}</h2>
+        <p class="meta-line">{g.medida} pixels · {g.itens.length} peças</p>
+        <div class="grade">
+          {g.itens.map((p) => (
+            <figure class="peca">
+              <a href={`/criativo/${p.rota}.png`} download={`movva-${p.rota}.png`}>
+                <img src={`/criativo/${p.rota}.png`} alt={p.titulo} loading="lazy" />
+              </a>
+              <figcaption>
+                <strong>{p.titulo}</strong>
+                <a href={`/criativo/${p.rota}.png`} download={`movva-${p.rota}.png`}>Baixar</a>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  .peca { margin: 0; display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; }
+  .peca img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: #141216;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+  }
+  figcaption strong { font-weight: 600; }
+</style>

@@ -13,6 +13,8 @@ export default defineConfig({
     sitemap({
       lastmod: new Date(),
       changefreq: 'weekly',
+      // A galeria de criativos e ferramenta de trabalho, nao conteudo do site.
+      filter: (pagina) => !pagina.includes('/criativos'),
     }),
   ],
 });
