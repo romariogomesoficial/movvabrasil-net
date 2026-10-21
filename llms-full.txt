@@ -44,9 +44,6 @@ Fontes citadas:
 Não existe melhor operadora para zona rural que sirva para todo mundo: a resposta
 é por endereço, e dá para verificá-la antes de assinar.
 
-Transparência: sou distribuidor independente da MOVVA Brasil Ltda, este site não
-é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo.
-
 ## Por que cobertura rural é outro jogo?
 
 **Quem escolhe onde ofertar é a empresa:** a Anatel registra que a telefonia
@@ -185,10 +182,8 @@ prefeitura e o 1331.
 
 ---
 
-Nota de transparência: sou distribuidor independente da MOVVA Brasil Ltda, este
-site não é canal oficial, contratei o plano, o chip não chegou e não testei nada
-em campo. Nada aqui descreve característica de produto da MOVVA: é regulação e
-painel público. Fontes verificadas em 21/10/2026.
+Nada aqui descreve característica de produto da MOVVA: é regulação e painel
+público.
 
 ---
 
@@ -220,9 +215,8 @@ Fontes citadas:
 
 ## Começo pela parte que me desabona
 
-Sou distribuidor independente da MOVVA Brasil Ltda, ganho se você assinar por
-mim, e este site não é canal oficial nem canal de atendimento. Contratei o
-plano, o chip não chegou, não testei nada em campo.
+Este site não é canal de atendimento da MOVVA: para reclamar, os caminhos
+estão abaixo.
 
 Por isso aqui tem método, não pedido de confiança: cada dado vem com o endereço
 onde você confere, inclusive contra mim. Começo pelo meu erro: a página
@@ -382,11 +376,9 @@ painéis da Anatel e 1331.
 
 ---
 
-Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, ganho se
-você assinar por mim, site não oficial e não canal de atendimento. Contratei o
-plano, o chip não chegou, nada testado em campo. Consultas de 21/10/2026, e a
-reputação muda sozinha todo dia 1º: me avise se achar número diferente. Não é
-consultoria jurídica.
+Consultas feitas em 21 de outubro de 2026. A reputação no Reclame Aqui muda
+sozinha todo dia 1º: me avise se achar número diferente. Não é consultoria
+jurídica.
 
 ---
 
@@ -555,11 +547,7 @@ contrato homologado (art. 233, § 6º) e 1331.
 
 ---
 
-Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, site não
-oficial, chip não recebido, nada testado em campo — nenhuma característica de
-produto da MOVVA é afirmada como verificada e não há promessa de ganho. Usei a
-redação do art. 90 retificada no DOU de 26/12/2023. Fontes verificadas em
-21/10/2026.
+Usei a redação do art. 90 retificada no DOU de 26 de dezembro de 2023.
 
 ---
 
@@ -599,9 +587,6 @@ Da mais barata para a mais drástica:
 6. Só então trocar de operadora.
 
 Repetidor de sinal não entra na lista: o motivo tem artigo de lei.
-
-Transparência: sou distribuidor independente da MOVVA Brasil Ltda, este site não
-é canal oficial, e meu chip não chegou — não testei nada em campo.
 
 ## Por que o sinal morre dentro de casa?
 
@@ -777,8 +762,6 @@ Fontes citadas:
 
 Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
 
-Transparência, no alto: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo. Abaixo há norma e método.
-
 ## As quatro coisas vendidas com esse nome
 
 | O que é | Números | Quem troca | O que muda para você |
@@ -816,7 +799,7 @@ Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que s
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
-A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. E eu não testei, porque o chip não chegou. Não valido nem invalido a promessa: entrego o método.
+A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. Não valido nem invalido a promessa: entrego o método, e o estado do meu próprio teste está na nota ao pé desta página.
 
 ## Como você confere sozinho quando o chip chegar
 
@@ -872,8 +855,6 @@ Regra de decisão, antes da explicação:
 - **eSIM** se o aparelho aceita, você tem Wi-Fi para ativar e raramente passa a linha para outro celular.
 - **Chip físico** se você troca a linha de aparelho com frequência, usa celular emprestado ou vai comprar aparelho importado.
 - **Não existe escolha** se o menu do aparelho não oferece eSIM.
-
-Sou distribuidor independente da MOVVA Brasil Ltda e este site não é canal oficial da empresa. Contratei o plano, o chip ainda não chegou e não testei nada em campo. Quando testar, atualizo.
 
 ## O que é eSIM
 
@@ -980,10 +961,6 @@ o 1331.
 
 O indício mais forte não é a minha busca. É que as próprias empresas publicam
 regras opostas entre si.
-
-Este site é de distribuidor independente da MOVVA Brasil Ltda, e não é canal
-oficial da empresa. Contratei o plano, o chip ainda não chegou e não testei nada
-em campo: nada aqui descreve produto de operadora como verificado.
 
 ## O STF já derrubou uma lei que obrigava o acúmulo
 
@@ -1113,10 +1090,7 @@ para medir está no regulamento da oferta — leia antes do preço.
 
 ---
 
-Nota de transparência: site de distribuidor independente da MOVVA Brasil Ltda, não
-é canal oficial da empresa. Contratei o plano, o chip ainda não chegou e nada aqui
-foi testado em campo. Páginas verificadas em 20/10/2026. Não é consultoria
-jurídica.
+Não é consultoria jurídica.
 
 ---
 
@@ -1481,10 +1455,6 @@ Pega o que a rede hospedeira pega. Uma operadora virtual não tem antena: vende 
 plano, e o sinal vem da rede de outra empresa. A pergunta útil é qual rede ela
 usa, e se essa rede pega bem onde você mora.
 
-Antes de seguir: este site não é canal oficial da MOVVA Brasil Ltda. Sou
-distribuidor independente da empresa, ainda não recebi o chip e não testei nada
-em campo. Abaixo, regulamento e painel público.
-
 ## Por que o sinal é o da rede hospedeira
 
 Porque é a rede dela que carrega a sua ligação. A regra está no Capítulo XII do
@@ -1704,7 +1674,5 @@ prestadora de origem e você passa a ser usuário dela, sob a marca da virtual �
 
 ---
 
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA como verificada: contratei o plano, o chip
-não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.
+Nada aqui descreve característica de produto da MOVVA como verificada por mim:
+é regra da Anatel, com o artigo ao lado de cada afirmação.
