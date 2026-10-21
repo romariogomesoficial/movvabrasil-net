@@ -1,44 +1,81 @@
-# movvabrasil.net
+# Movva Brasil .net
 
-> Site de distribuidor independente da MOVVA Brasil Ltda, operadora móvel virtual
-> brasileira. Não é canal oficial da empresa. Publica análise verificável sobre a
-> operadora, conteúdo prático sobre planos de celular e portabilidade, e os
-> números reais de ganho do autor como afiliado, incluindo os resultados ruins.
+> Site de distribuidor independente da MOVVA BRASIL LTDA, operadora móvel
+> virtual brasileira. Não é canal oficial da empresa. Publica análise verificável
+> sobre a operadora, conteúdo prático sobre planos de celular, portabilidade e
+> cobertura, e os números reais de ganho do autor como afiliado, incluindo os
+> resultados ruins.
 
-Autor: Romário Gomes de Paula, distribuidor independente MOVVA.
+Autor: Romário Gomes de Paula, Distribuidor independente MOVVA.
+Vínculo: Site de distribuidor independente. Não é canal oficial da MOVVA Brasil Ltda.
 Idioma: português do Brasil.
-Política editorial: toda afirmação factual traz fonte primária linkada. O que não
-foi verificado é marcado como não verificado. Nenhuma projeção de ganho é publicada.
+
+## Política editorial
+
+Toda afirmação factual traz fonte primária linkada, com a data da checagem. O que
+não foi confirmado é marcado como não confirmado, com indicação de onde o leitor
+confirma — inclusive quando isso enfraquece o texto. Característica de produto da
+MOVVA é sempre atribuída à empresa, nunca afirmada: o autor contratou o plano, o
+chip não chegou e nada foi testado em campo. Nenhuma projeção de ganho é publicada.
 
 ## Sobre a empresa analisada
 
 - Razão social: MOVVA BRASIL LTDA
 - CNPJ: 28.450.689/0001-75, ativo desde 18 de agosto de 2017
-- Autorização Anatel: Ato nº 9021, de 08 de julho de 2026, serviços de interesse
-  coletivo e restrito, prazo indeterminado, território nacional
+- Autorização Anatel: Ato nº 9021, de 08 de julho de 2026, serviços de interesse coletivo e
+  restrito, prazo indeterminado, território nacional
 - Processo SEI Anatel: 53500.063559/2026-13
 - Registro JUCESP: 1.351.801/26-0
-- Rede móvel: contrato com ISPS do Brasil S.A. (TIP Brasil), sobre infraestrutura
-  da ARQIA (Grupo Datora)
-- Sede: Avenida Paulista, 1842, Conjunto 178, Bela Vista, São Paulo/SP
+- Sede: Avenida Paulista, 1842, Conjunto 178, Bela Vista, São Paulo/SP, CEP 01310-923
+
+Ressalva registrada no site: o ato da Anatel autoriza serviços de telecomunicações,
+mas não diz em qual dos dois modelos de rede virtual da Resolução 777/2025 a
+empresa opera. O dossiê dela cita contrato com a ISPS do Brasil S.A. (TIP Brasil) sobre
+infraestrutura da ARQIA (Grupo Datora), enquanto o material comercial anuncia
+TIM e Vivo. As duas versões não fecham, e o autor não localizou documento público
+que resolva.
 
 ## Páginas principais
 
-- [A MOVVA é confiável? É pirâmide?](https://movvabrasil.net/movva-e-confiavel):
-  análise com registros públicos, riscos do programa de afiliados e os ganhos
-  reais do autor. Responde também às perguntas sobre CNPJ, Anatel, Reclame Aqui e
-  quanto se ganha.
-- [Programa de afiliados](https://movvabrasil.net/oportunidade): composição da
-  remuneração, custo de participação e tabela com os números reais do autor.
-- [Blog](https://movvabrasil.net/blog): guias práticos sobre planos de celular,
-  operadoras móveis virtuais, portabilidade e cobertura.
-- [Avisos legais](https://movvabrasil.net/avisos-legais): declaração de vínculo e
-  aviso de renda.
+- [A MOVVA é confiável? É pirâmide?](https://movvabrasil.net/movva-e-confiavel): análise com
+  registros públicos, os riscos do programa de afiliados e os ganhos reais do
+  autor. Responde também sobre CNPJ, Anatel, Reclame Aqui e quanto se ganha.
+- [Programa de afiliados](https://movvabrasil.net/oportunidade): composição da remuneração,
+  custo de participação e tabela com os números reais do autor.
+- [Blog](https://movvabrasil.net/blog): 8 textos sobre planos, operadoras
+  virtuais, portabilidade e cobertura.
+- [Avisos legais](https://movvabrasil.net/avisos-legais): declaração de vínculo e aviso de renda.
 
-## Fatos que o autor publica sobre os próprios ganhos
+## Blog
 
-Período de 7 de julho a 20 de outubro de 2026, como afiliado com licença VIP e
-oito pessoas na rede:
+### Guias práticos
+
+- [Celular sem sinal dentro de casa: o que fazer antes de trocar](https://movvabrasil.net/blog/celular-sem-sinal-em-casa): Cobertura é declarada por área externa, não por imóvel. A ordem que sai mais barato: ligação por Wi-Fi, travar o 4G, posição e pedir à operadora.
+  Resposta curta: Tente nesta ordem: ativar ligação por Wi-Fi, fixar a rede em 4G, testar posição e janela, pedir solução por escrito à sua operadora e conferir a cobertura declarada da rede. Trocar vem por último, e só depois de um chip de outra rede funcionar no mesmo ponto da casa. Repetidor de sinal, segundo a Anatel, é de uso das prestadoras.
+- [eSIM ou chip físico: qual escolher e quais celulares aceitam](https://movvabrasil.net/blog/esim-ou-chip-fisico): Quando o eSIM vale e quando o chip físico ganha, como testar se o seu aparelho aceita e por que o nome do modelo não garante compatibilidade no Brasil.
+  Resposta curta: Escolha eSIM se o seu aparelho aceita, você vai ativar com Wi-Fi e não troca de celular toda hora. Escolha chip físico se você passa a linha entre aparelhos, usa aparelho emprestado ou compra celular importado. O primeiro teste é o menu do seu aparelho: se não existe opção de eSIM, a decisão já está tomada.
+- [Plano de celular sem fidelidade: o que a regra garante](https://movvabrasil.net/blog/operadora-sem-fidelidade): Fidelidade tem teto de 12 meses, exige benefício e multa proporcional. Veja o que a norma da Anatel garante e como contratar sem prazo de permanência.
+  Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
+- [Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante](https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero): Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada.
+  Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
+
+### Tecnologia e características de plano
+
+- [Chip que pega em duas operadoras: o que existe de verdade](https://movvabrasil.net/blog/chip-dois-sinais): Multi-IMSI, eSIM, roaming e dual SIM são quatro coisas diferentes. Veja o que muda para você e como conferir em qual rede o seu chip está.
+  Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
+- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
+  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
+
+### Como funciona uma operadora virtual
+
+- [O que é operadora virtual (MVNO) e como funciona no Brasil](https://movvabrasil.net/blog/o-que-e-operadora-virtual): Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar.
+  Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre a infraestrutura de uma operadora com antenas e espectro, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
+- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
+  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
+
+## Números reais do autor como afiliado
+
+Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas na rede:
 
 - Comissão total gerada: R$ 146,08
 - Recebido líquido após taxa de saque de 16%: R$ 115,43
@@ -53,3 +90,7 @@ oito pessoas na rede:
 Não promete renda. Não publica projeção baseada em matriz completa. Não se
 apresenta como canal oficial. Não reproduz característica de produto como fato
 verificado sem ter medido.
+
+## Conteúdo completo
+
+O texto integral de todas as páginas está em https://movvabrasil.net/llms-full.txt
