@@ -71,9 +71,11 @@ art. 91 e as leis de fora dele. Não é acusação a ninguém.
 
 Caminho oficial: operadora, Ouvidoria dela e Anatel Consumidor — sempre com
 protocolo. Direto na operadora, a reclamação tem de ser resolvida em até 7 dias
-corridos (RGC, art. 10, caput, na lista do art. 90). Os dez dias são outro
-balcão: é o prazo que a Anatel afirma para a operadora responder reclamação
-encaminhada pela agência. O 1331 atende em dias úteis, das 8h às 20h.
+corridos (RGC, art. 10, caput, na lista do art. 90). Dez dias é outro prazo, e
+vale para outra coisa: solicitação ou pedido de informação que não puder ser
+atendido de imediato tem de ser atendido em até 10 dias corridos (art. 10, § 1º,
+também na lista). É também o prazo que a Anatel afirma para a operadora responder
+reclamação encaminhada pela agência. O 1331 atende em dias úteis, das 8h às 20h.
 
 O atrito: a Ouvidoria dos arts. 87 a 89 não entra na lista do art. 90, então a
 pequena não é obrigada a mantê-la. E a inversão que ninguém conta: no

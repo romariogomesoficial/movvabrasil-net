@@ -202,6 +202,51 @@ documento errado.
 **Como apareceu:** um verificador extraiu o PDF da nota técnica inteiro para
 conferir outra coisa e reparou que o número não estava lá.
 
+### Página inicial — a quarta superfície da “portabilidade grátis”
+
+**Passou a dizer:** no cartão “Portabilidade inclusa”, “Pela regra da Anatel o
+processo leva até 3 dias úteis e, **para você, não tem custo**”
+(`src/pages/index.astro`).
+
+**O erro:** o mesmo da entrada acima, e sobrevivendo a ela. A rodada que corrigiu
+os dois posts e o criativo não mexeu na home, que é a página mais vista do site.
+Agora o cartão diz o que a norma diz: quem você deixa não pode cobrar pela saída
+(RGST, art. 92) — sem afirmar gratuidade.
+
+**Fica anotado:** a expressão “Portabilidade inclusa” continua no título, na meta
+description, nas pílulas do hero e no cartão de oferta. Ela vem do documento de
+diferenciais da empresa, não da norma; mas, enquanto não houver documento da MOVVA
+dizendo se ela cobra ou dispensa a portabilidade (art. 70, § 3º), “inclusa” é
+palavra do site sobre anúncio da empresa, e vale decidir se fica.
+
+**Como apareceu:** conferência da página do custo do primeiro mês contra o
+repositório inteiro, por grep de “não tem custo” depois de os posts já estarem
+corrigidos.
+
+### FAQ — chip, frete e o custo mensal do autor
+
+**Passou a dizer:** em `src/data/perguntas.js`, “você contrata um plano mensal e
+paga o chip mais o frete [...] eles já mudaram desde o material de lançamento”; e,
+na resposta sobre ganhos, “um custo de plano de R$ 159,80 por mês”.
+
+**O erro:** duas afirmações sem documento, num arquivo que sai em FAQPage JSON-LD
+e por isso é lido por assistente de IA. A primeira dava por certo que o chip e o
+frete são cobrados à parte — o que não está em documento nenhum — e ainda afirmava
+conhecer variação de valores. A segunda chamava R$ 159,80 de “custo de plano” num
+site que vende o Liberty a R$ 79,90, sem dizer o que o valor cobre.
+
+**Como apareceu:** a página do custo do primeiro mês declarou as duas coisas em
+aberto, e o conferidor comparou com o que a FAQ afirmava.
+
+### /blog/esim-ou-chip-fisico — as duas fichas da Apple
+
+**Passou a dizer:** “A nota de rodapé registra o mesmo para o iPhone Duo”, dentro
+do parágrafo que descrevia a ficha do iPhone Air.
+
+**O erro:** dois aparelhos pendurados numa ficha só. A ficha do iPhone Duo é
+documento próprio, já estava na lista de fontes do post, e a nota de rodapé 14 é
+dela. Correção de redação, não de pesquisa.
+
 ---
 
 ## Por que não é página pública
@@ -218,7 +263,7 @@ retirada do ar por decisão dele.
 própria página corrigida, onde quem leu a versão anterior volta, em vez de
 página dedicada que concentra todos os erros num lugar só.
 
-**O que permanece vale como regra de trabalho:** nenhuma destas oito correções
-veio de leitor reclamando. Vieram de revisão, de leitura da fonte primária e de
+**O que permanece vale como regra de trabalho:** nenhuma destas correções veio de
+leitor reclamando. Vieram de revisão, de leitura da fonte primária e de
 refazer uma conta em vez de aceitá-la. É o processo que tem de continuar, esteja
 ele publicado ou não.

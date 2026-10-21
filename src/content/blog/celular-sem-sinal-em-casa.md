@@ -64,7 +64,10 @@ como referência.
 
 A TIM afirma que um município conta como atendido com 80% da área urbana do
 distrito sede coberta, e que pode faltar sinal dentro da casa — material de
-operadora. Mapa verde na sua rua não é promessa de sinal no seu quarto.
+operadora, que não diz a qual compromisso esse percentual se refere. O critério
+muda de compromisso para compromisso, então não leia esse número como definição
+geral de município coberto. Mapa verde na sua rua não é promessa de sinal no seu
+quarto.
 
 ## Ligar por Wi-Fi resolve?
 

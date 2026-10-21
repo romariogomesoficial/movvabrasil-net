@@ -48,9 +48,9 @@ const [REAIS, CENTAVOS] = RECOMENDADO.preco.split(',');
 const MENOR = PLANOS[0];
 const MAIOR = PLANOS[PLANOS.length - 1];
 
-const title = `Chip MOVVA: ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco} com portabilidade inclusa`;
+const title = `Chip MOVVA: ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco} e você leva o seu número`;
 const description =
-  `Planos MOVVA de ${MENOR.gb} a ${MAIOR.gb} GB, a partir de R$ ${MENOR.preco}. TIM e Vivo no mesmo chip, gigas acumulativos, sem prazo de permanência e portabilidade inclusa — com os registros públicos da empresa à mão.`;
+  `Planos MOVVA de ${MENOR.gb} a ${MAIOR.gb} GB, a partir de R$ ${MENOR.preco}. TIM e Vivo no mesmo chip, gigas acumulativos, sem prazo de permanência, e você leva o seu número — com os registros públicos da empresa à mão.`;
 
 // Os links de contratação são remunerados: levam ao meu WhatsApp e eu recebo
 // comissão. rel="sponsored" é o que o Google pede para link pago, e sem ele a
@@ -82,13 +82,13 @@ const REL_PAGO = 'nofollow sponsored noopener';
 const BENEFICIOS = [
   {
     titulo: 'Dupla conectividade',
-    texto: 'Duas redes num único chip: TIM e Vivo. Mais cobertura do que depender de uma rede só.',
+    texto: 'Duas redes num único chip: TIM e Vivo. O aparelho usa a que estiver melhor no lugar onde você está.',
     link: '/blog/chip-dois-sinais',
     linkRotulo: 'Como funciona um chip de duas redes',
   },
   {
     titulo: 'Gigas acumulativos',
-    texto: 'Infinitos. O que você não usou no mês não vira pó: fica para o ciclo seguinte.',
+    texto: 'A MOVVA anuncia “infinitos”: o que você não usou no mês fica para o ciclo seguinte. Por quanto tempo o saldo vale, eu não achei no contrato.',
     link: '/blog/internet-que-acumula',
     linkRotulo: 'O que muda quando a franquia acumula',
   },
@@ -99,8 +99,8 @@ const BENEFICIOS = [
     linkRotulo: 'O que a lei garante sobre fidelidade',
   },
   {
-    titulo: 'Portabilidade inclusa',
-    texto: 'Você mantém o número que já tem. Pela regra da Anatel o processo leva até 3 dias úteis e, para você, não tem custo.',
+    titulo: 'Leve o seu número',
+    texto: 'Você mantém o número que já tem. Pela regra da Anatel o processo leva até 3 dias úteis, e quem você deixa não pode cobrar pela saída (RGST, art. 92).',
     link: '/blog/portabilidade-sem-perder-o-numero',
     linkRotulo: 'Prazo, custo e como desistir',
   },
@@ -143,7 +143,7 @@ const BENEFICIOS = [
         <!-- Não repete "chip MOVVA", que o título acabou de dizer duas linhas
              acima: título e subtítulo não podem gastar o mesmo argumento. -->
         <p class="hero__sub">
-          Portabilidade inclusa, gigas que acumulam e sem prazo de permanência.
+          Você leva o seu número, gigas que acumulam e sem prazo de permanência.
           E os registros públicos da empresa à mão, para você conferir.
         </p>
 
@@ -155,7 +155,7 @@ const BENEFICIOS = [
         </div>
 
         <ul class="pilulas" role="list">
-          <li>Portabilidade inclusa</li>
+          <li>Leve o seu número</li>
           <li>De {MENOR.gb} a {MAIOR.gb} GB</li>
           <li>Registros públicos à mão</li>
         </ul>
@@ -173,8 +173,8 @@ const BENEFICIOS = [
         <p class="oferta__fonte">O que vem no plano:</p>
         <ul class="oferta__itens" role="list">
           <li>TIM e Vivo no mesmo chip</li>
-          <li>Gigas acumulativos infinitos</li>
-          <li>Portabilidade inclusa</li>
+          <li>Gigas acumulativos — a MOVVA anuncia “infinitos”</li>
+          <li>Leve o seu número</li>
           <li>Sem prazo de permanência</li>
         </ul>
         <a class="btn" href={linkWhatsApp('plano')} rel={REL_PAGO} target="_blank">

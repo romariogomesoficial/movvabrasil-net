@@ -104,13 +104,13 @@ export const PERGUNTAS = [
     paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quanto custa entrar na MOVVA?',
-    r: 'Existe um cadastro de afiliado e uma licença VIP paga, que dobra as comissões e a pontuação do plano de carreira. Além disso, para ter o serviço, você contrata um plano mensal e paga o chip mais o frete. Peça os valores vigentes por escrito, com protocolo, e confira na própria página de contratação antes de pagar — eles já mudaram desde o material de lançamento.',
+    r: 'Existe um cadastro de afiliado e uma licença VIP paga, que dobra as comissões e a pontuação do plano de carreira. Além disso, para ter o serviço, você contrata um plano mensal. Se o chip e o frete são cobrados à parte ou já vêm na primeira mensalidade, eu não localizei documento que diga, e também não localizei os valores. Peça tudo por escrito, com protocolo, e confira na própria página de contratação antes de pagar.',
   },
   {
     paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quanto se ganha na MOVVA?',
-    r: 'Não existe ganho garantido. Nos meus primeiros três meses e meio como afiliado VIP, com oito pessoas na rede, eu gerei R$ 146,08 em comissões e recebi R$ 115,43 líquidos após a taxa de saque. Em outubro meu ganho foi R$ 0,00, contra um custo de plano de R$ 159,80 por mês. Desconfie de qualquer número de projeção baseado em matriz cheia.',
+    r: 'Não existe ganho garantido. Nos meus primeiros três meses e meio como afiliado VIP, com oito pessoas na rede, eu gerei R$ 146,08 em comissões e recebi R$ 115,43 líquidos após a taxa de saque. Em outubro meu ganho foi R$ 0,00, contra R$ 159,80 por mês que eu pago de plano — o dobro do Liberty de 25 GB, e eu não abri a minha fatura para dizer o que esse valor cobre. Desconfie de qualquer número de projeção baseado em matriz cheia.',
   },
   {
     paginas: ['/oportunidade', '/movva-e-confiavel'],

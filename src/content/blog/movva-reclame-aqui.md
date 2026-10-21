@@ -153,9 +153,11 @@ degrau.
 | Ouvidoria | 10 dias corridos | art. 87, § 7º | Não aparece |
 | Levar à Anatel | remetido a Portaria | art. 89 | Não aparece |
 
-Três prazos de dez dias convivem sem se confundir: a ouvidoria, o que a Anatel
-afirma para a operadora responder reclamação encaminhada pela agência, e o do
-consumidor.gov.br. Direto na operadora, são 7 dias.
+Quatro prazos de dez dias convivem sem se confundir: a solicitação ou o pedido
+de informação que a própria operadora não atende de imediato (art. 10, § 1º, que
+está na lista do art. 90), a ouvidoria, o que a Anatel afirma para a operadora
+responder reclamação encaminhada pela agência, e o do consumidor.gov.br.
+Reclamação direto na operadora é outra coisa: 7 dias.
 
 A ressalva pesa aqui: pela lista do art. 90, nas duas versões que a página da
 Anatel exibe, os arts. 9º e 10 alcançam Prestadora de Pequeno Porte e os
@@ -199,8 +201,8 @@ Anatel](/blog/operadora-virtual-pega-bem).
   associam a um nome anterior; a ponte é inferência minha.
 - **Por que o histórico ainda exibe "Sem índice"**, de que volume a regra dos
   50% derruba reputação, e os cortes de AR.
-- **Arts. 87 e 89 fora do art. 90**, se a operadora é Prestadora de Pequeno
-  Porte, e qual norma fixa os dez dias na Anatel.
+- **Se a operadora é Prestadora de Pequeno Porte**, e qual norma fixa os dez
+  dias na Anatel.
 
 Onde confirmar: Reclame Aqui pelo CNPJ, manual de reputação, Resolução 765/2023,
 painéis da Anatel e 1331.

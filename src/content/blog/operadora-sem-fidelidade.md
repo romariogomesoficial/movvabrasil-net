@@ -107,8 +107,11 @@ continuam devidas (§ 3º).
 Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
 Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). Direto na operadora, a
 reclamação tem de ser resolvida em até 7 dias corridos (RGC, art. 10, caput, que
-está na lista do art. 90). Os dez dias são outro balcão: é o prazo que a Anatel
-afirma para a operadora responder reclamação encaminhada pela agência.
+está na lista do art. 90). Dez dias é outro prazo, e vale para outra coisa:
+solicitação ou pedido de informação que não puder ser atendido de imediato tem
+de ser atendido em até 10 dias corridos (art. 10, § 1º, também na lista). É
+também o prazo que a Anatel afirma para a operadora responder reclamação
+encaminhada pela agência.
 
 ## Como cancelar, na prática
 

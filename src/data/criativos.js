@@ -36,7 +36,7 @@ export const CRIATIVOS = [
     chave: 'liberty-preco',
     chapeu: 'Plano Liberty',
     titulo: '25 GB por R$ 79,90 por mês',
-    apoio: 'Portabilidade inclusa, gigas acumulativos e sem prazo de permanência. Confira a cobertura na sua região antes de contratar.',
+    apoio: 'Leve o seu número, gigas acumulativos e sem prazo de permanência. Confira a cobertura na sua região antes de contratar.',
     formatos: ['quadrado', 'story'],
   },
   {

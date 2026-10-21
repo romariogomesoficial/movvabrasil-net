@@ -75,7 +75,7 @@ A Apple afirma que o eSIM é mais seguro porque não pode ser removido em caso d
 
 ## E se o aparelho não tem bandeja?
 
-Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A nota de rodapé registra o mesmo para o iPhone Duo.
+Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A ficha do iPhone Duo diz o mesmo, na seção de cartão SIM e na nota de rodapé 14 — são duas fichas, cada uma na lista de fontes com o seu endereço.
 
 ## Quantos perfis e quantas redes cabem no aparelho?
 

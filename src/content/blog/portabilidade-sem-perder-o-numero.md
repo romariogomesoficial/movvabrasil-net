@@ -1,7 +1,7 @@
 ---
 title: "Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante"
 description: "Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada."
-resposta: "A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A linha fica indisponível por 2 horas em 99% dos casos, com teto de 24 horas."
+resposta: "A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A janela de transição é de 2 horas em 99% dos casos, com teto de 24 horas."
 cluster: dor
 publicado: 2026-10-20
 atualizado: 2026-10-20
@@ -23,9 +23,10 @@ disso, mas o que vale como direito é o prazo máximo.
 ## O que acontece com a sua linha durante a troca
 
 Existe uma janela de transição em que o telefone pode ficar sem funcionar. Pelo
-**art. 103, IV**, ela é de **2 horas em 99% dos casos** — e, no caso restante, a
-norma admite **até 24 horas**. Ou seja: duas horas é o que a regra garante na
-quase totalidade das portabilidades, não um teto absoluto.
+**art. 103, IV**, ela é de **2 horas em 99% dos casos** e, em nenhum caso, pode
+passar de **24 horas**. O que a norma põe aí é teto para a janela, com a ordem
+de minimizar a interrupção dentro dela (art. 100, § 2º) — não a garantia de que
+a linha fica muda as duas horas inteiras.
 
 Vale planejar: se você depende do telefone para trabalhar, peça a portabilidade
 num dia e horário em que uma parada de algumas horas não atrapalhe.
