@@ -117,9 +117,10 @@ setores com e sem cobertura.
 
 É predição, não medição, e a agência avisa isso: os dados saem do sistema
 Mosaico, com modelo ITU-R P.1812-5, e podem não representar com exatidão a
-cobertura real. Uma localidade entra como coberta com mais de 95% da área
-coberta, e desde setembro de 2024 o limiar de 4G e 5G passou de -110 dBm para
--90 dBm. Para ver antena licenciada perto de casa, use o painel Estações do SMP.
+cobertura real. O painel não classifica localidade em coberta ou não coberta: a
+nota técnica diz que ele agrega os setores censitários e devolve um percentual,
+sem percentual de corte. E desde setembro de 2024 o limiar de 4G e 5G passou de
+-110 dBm para -90 dBm. Para ver antena licenciada perto de casa, use o painel Estações do SMP.
 
 ## Como conferir a qualidade da hospedeira
 

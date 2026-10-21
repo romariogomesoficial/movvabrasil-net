@@ -20,10 +20,16 @@ export const CRIATIVOS = [
     chave: 'portabilidade',
     chapeu: 'Portabilidade',
     titulo: 'Seu número continua o mesmo',
-    // O "teto de R$ 4,00 da Anatel" circula em muito site, mas o dispositivo
-    // que o estabeleca nao foi localizado — o post trata o valor como nao
-    // confirmado. Peca paga nao pode afirmar o que o proprio site desautoriza.
-    apoio: 'Levar o número para outra operadora leva até 3 dias úteis e, para você, não tem custo — o art. 92 do RGST põe a despesa fora do usuário.',
+    // ATENCAO ao mexer nesta frase. O art. 92 do RGST veda a cobranca pela
+    // prestadora DOADORA, e so isso. O art. 70 do mesmo RGST permite que a
+    // prestadora RECEPTORA cobre do usuario, com teto em Ato do Conselho
+    // Diretor, e o § 3º a autoriza a dispensar a cobranca — e o que acontece na
+    // pratica, por escolha comercial, nao por direito do usuario. Dizer "nao
+    // tem custo" numa peca paga e afirmar direito que a norma nao da.
+    // O "teto de R$ 4,00 da Anatel" tambem segue nao confirmado: o Ato exigido
+    // pelo art. 70, § 1º nao foi aberto. Peca paga nao pode afirmar o que o
+    // proprio site desautoriza.
+    apoio: 'Levar o número para outra operadora leva até 3 dias úteis e quem você deixa não pode cobrar pela saída — é o art. 92 do RGST.',
     formatos: ['quadrado', 'story', 'miniatura'],
   },
   {

@@ -4,8 +4,10 @@ description: "Não achei regra da Anatel que obrigue acumular giga. Veja o que e
 resposta: "Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta."
 cluster: diferencial
 publicado: 2026-10-20
-atualizado: 2026-10-20
+atualizado: 2026-10-21
 fontes:
+  - rotulo: "Anatel — Panorama Econômico-Financeiro de Telecomunicações, 2º trimestre/2026 (PDF aberto em 21/10/2026: 6,80 GB por usuário, 5,82 GB no 2T25, +16,84%)"
+    url: "https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/7b63cdad45a26c0fd6a9bf8487206df1"
   - rotulo: "Anatel — RGC, anexo à Resolução nº 765/2023, art. 51"
     url: "https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765"
   - rotulo: "Anatel — RGST, anexo à Resolução nº 777/2025"
@@ -67,10 +69,10 @@ saldo vencido.
 
 Falta ainda uma camada, e ela importa justamente para operadora virtual: o
 art. 90 do RGC lista quais dispositivos se aplicam a prestadora de pequeno
-porte, enquadramento comum entre as virtuais. **Não confirmei se o art. 51 está
-nessa lista** — expliquei o mecanismo em [o que a regra garante sobre
-fidelidade](/blog/operadora-sem-fidelidade). Se a sua operadora é de pequeno
-porte, confirme no 1331.
+porte, enquadramento comum entre as virtuais. **O art. 51 está nessa lista**, nas
+duas redações que a Anatel mantém publicadas do art. 90 — então a regra de
+validade do crédito alcança também a operadora pequena. O mecanismo da lista está
+em [o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade).
 
 O detalhe que muda tudo é uma palavra: o dispositivo fala em créditos, não em
 franquia de dados. Não achei dispositivo dizendo que gigabyte é crédito, então não
@@ -129,9 +131,11 @@ pico: ele move sobra de um mês fraco para um mês forte. Quem estoura todo mês
 ganha nada. Quem sobra todo mês e nunca estoura também não. O valor está na
 variação — mês de viagem, mês com wi-fi em casa, mês inteiro trabalhando na rua.
 
-Para referência: o consumo médio por usuário móvel no Brasil foi de 6,80 GB por
-mês no 2º trimestre de 2026, alta de 16,8% em um ano (Panorama da Anatel de
-outubro de 2026, que conheço por reportagem).
+Para referência: o consumo médio por usuário móvel no Brasil foi de 6,80 GB no
+2º trimestre de 2026, alta de 16,84% em um ano — percentual que o próprio
+documento publica, não que eu derivei (Panorama Econômico-Financeiro da Anatel,
+2º trimestre de 2026, PDF aberto em 21/10/2026). O documento não rotula se o
+indicador é mensal ou trimestral. Leio como mensal, e essa leitura é minha.
 
 ## E numa operadora virtual?
 
@@ -144,9 +148,6 @@ fidelidade e multa](/blog/operadora-sem-fidelidade).
 
 ## O que eu não consegui confirmar
 
-- Se o art. 51 do RGC consta da lista do art. 90, que define o que se aplica a
-  prestadora de pequeno porte. Se não constar, a proteção pode não alcançar a
-  operadora virtual que você está avaliando.
 - Se a revalidação do art. 51, § 4º, do RGC alcança franquia em GB ou só crédito
   em reais.
 - Se existe regra que proteja franquia não usada no pós-pago. Ali não há créditos

@@ -18,6 +18,8 @@ fontes:
     url: "https://informacoes.anatel.gov.br/legislacao/component/content/article/9-decretos/1247-decreto-9612"
   - rotulo: "Anatel — Compromissos de Abrangência do Leilão do 5G"
     url: "https://www.gov.br/anatel/pt-br/regulado/universalizacao/compromissos-do-leilao-do-5g"
+  - rotulo: "Minuta de Edital do Leilão do 5G, SEI/ANATEL 6605739 (março de 2021), Anexo de Compromissos de Abrangência — critérios de município e de localidade atendidos"
+    url: "https://telesintese.com.br/wp-content/uploads/2021/03/SEI-ANATEL-6605739-Minuta-de-Edital.pdf"
   - rotulo: "Anatel — Apresentação do Edital 700 MHz (relatoria, SEI nº 53500.055271/2024-11)"
     url: "https://www.gov.br/anatel/pt-br/assuntos/noticias/regras-do-edital-de-700-mhz-sao-aprovadas-pelo-conselho-diretor-da-anatel/apresentacao-700-mhz.pdf/@@download/file"
   - rotulo: "Anatel — Painel de Acompanhamento e Controle, 5G (Acórdão nº 39/2024)"
@@ -97,8 +99,14 @@ caso os recursos disponíveis assim permitam, rodovias federais sem 4G. Tudo at�
   Se a renúncia também extingue os compromissos de abrangência do lote, e quem
   responde hoje por essas localidades e esses trechos, é o que eu não consegui
   confirmar: li o painel do Acórdão nº 39/2024, não o acórdão.
-- **Coberta não quer dizer inteira:** só conta como coberta a localidade com mais
-  de 95% da área coberta.
+- **Coberta não quer dizer inteira:** no anexo de compromissos, atendido é
+  critério de município e de área urbana — a cobertura tem de alcançar 95% da
+  área urbana do distrito sede, e o resto do município, zona rural inclusive,
+  fica fora da conta. Para localidade o critério é outro: pelo menos uma estação
+  rádio base dentro do polígono do setor censitário. Li os dois na minuta do
+  edital (março de 2021), não no edital publicado, e o critério muda de lote para
+  lote — por isso não cito número de item. E nada disso é critério do painel de
+  cobertura: a nota técnica do painel não traz percentual de corte nenhum.
 
 ## Existe meta de universalização para celular?
 

@@ -115,11 +115,14 @@ afirma para a operadora responder reclamação encaminhada pela agência.
 O pedido pode ser feito a qualquer tempo, pelos canais disponíveis para a oferta
 contratada, mesmo em atraso (art. 82). Com atendente, o efeito é imediato (art.
 83). Em canal automatizado, vale depois de 2 dias úteis, e nesse prazo você paga
-pelo uso e pode desistir (art. 84).
+pelo uso e pode desistir (art. 84) — **esse artigo, porém, não está na lista do
+art. 90**, então em operadora de pequeno porte os 2 dias úteis não são exigíveis.
 
 A saída não pode ficar escondida: o primeiro menu do telefone tem que oferecer
-rescisão automatizada (art. 18, I), e o canal digital, cancelamento sem atendente
-(art. 13, § 3º).
+rescisão automatizada (art. 18, I), que está na lista. Já o cancelamento sem
+atendente no canal digital (art. 13, § 3º) **fica fora da lista** e só alcança
+operadora pequena em oferta contratada e atendida exclusivamente por meio
+digital, pela via do art. 24, § 4º.
 
 Alternativa: suspensão temporária, uma vez a cada 12 meses, de 30 a 120 dias, sem
 cobrança, com o número mantido e a fidelidade congelada (art. 81). Só para quem
@@ -127,8 +130,12 @@ está em dia.
 
 ## Levar o número e desistir em 7 dias
 
-Portar o número é gratuito para você (RGST, art. 92) e leva até 3 dias úteis.
-Detalhei no [post sobre portabilidade](/blog/portabilidade-sem-perder-o-numero).
+A operadora que você deixa não pode cobrar pela saída (RGST, art. 92), e a
+portabilidade leva até 3 dias úteis (art. 103, I). Isso não é o mesmo que
+gratuidade: pelo art. 70, a operadora de destino pode cobrar, com valor máximo
+fixado pela Anatel em Ato do Conselho Diretor, e pode dispensar a cobrança —
+é o que costuma acontecer, por escolha dela. Detalhei no [post sobre
+portabilidade](/blog/portabilidade-sem-perder-o-numero).
 E quem contratou pela internet ou por telefone tem 7 dias para desistir, pelo
 art. 49 do Código de Defesa do Consumidor, com ou sem fidelidade, com devolução
 imediata e corrigida.
@@ -141,8 +148,10 @@ pesa. O art. 90 do RGC lista os dispositivos aplicáveis a elas: os arts. 36, 37
 teto de 12 meses e a multa proporcional valem, mas a obrigação de oferecer a
 mesma oferta sem fidelidade pode não alcançar a operadora pequena.
 
-Mantenho a cautela porque a página da Anatel exibe duas versões do art. 90. Se a
-sua operadora é pequena, confirme no 1331.
+A página da Anatel exibe duas redações do art. 90, a original e a retificada no
+DOU de 26/12/2023. Comparei as duas: diferem pela inclusão do art. 2º, e nenhum
+dos artigos citados aqui muda entre elas. Se a sua operadora é pequena, confirme
+o enquadramento no 1331.
 
 ## O que eu não confirmei
 

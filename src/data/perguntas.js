@@ -46,7 +46,7 @@ export const PERGUNTAS = [
     paginas: ['/', '/movva-e-confiavel'],
     tema: 'A empresa',
     p: 'A MOVVA tem autorização da Anatel?',
-    r: `Sim. O ${EMPRESA.atoAnatel} autorizou a MOVVA a explorar Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito, por prazo indeterminado, em todo o território nacional. O processo é o ${EMPRESA.processoSei} e pode ser consultado publicamente no sistema SEI da Anatel. Uma ressalva que importa: esse ato autoriza serviços de telecomunicações, mas não diz, por si, em qual dos dois modelos de rede virtual da Resolução 777/2025 a empresa opera — credenciada ou autorizada. Isso eu não confirmei.`,
+    r: `Sim. O ${EMPRESA.atoAnatel} autorizou a MOVVA a explorar Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito, por prazo indeterminado, em todo o território nacional. "Em todo o território nacional" é o alcance da autorização, não mancha de cobertura: o ato diz onde a empresa pode prestar o serviço, não onde há sinal. O processo é o ${EMPRESA.processoSei} e pode ser consultado publicamente no sistema SEI da Anatel. Uma ressalva que importa: esse ato autoriza serviços de telecomunicações, mas não diz, por si, em qual dos dois modelos de rede virtual da Resolução 777/2025 a empresa opera — credenciada ou autorizada. Isso eu não confirmei.`,
   },
   {
     paginas: ['/movva-e-confiavel'],
