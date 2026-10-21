@@ -1,24 +1,44 @@
-/* Identidade editorial: serifa de leitura para titulos, sans neutra para corpo.
-   Deliberadamente diferente do preto-e-verde-neon da marca MOVVA, porque este
-   site e de distribuidor independente e nao pode parecer canal oficial. */
+/* Identidade: verde e preto, a da marca.
+   O site passou por três direções até aqui — papel editorial, depois
+   instrumento ciano — e as duas primeiras evitavam o verde da MOVVA de
+   propósito. O dono do site decidiu o contrário: o logotipo está no
+   cabeçalho e a paleta acompanha. A frase de vínculo no rodapé é o que
+   mantém a distinção, não a cor.
 
-/* Direção: painel de instrumento, não página de enciclopédia.
-   Neutros puxados para o azul, como vidro e metal, em vez do bege de papel.
-   O acento é ciano-telecom: lê como sinal, e é inconfundivelmente diferente do
-   verde #00D500 da MOVVA, que o site não pode imitar. */
+   Mas verde de marca e verde de interface não são a mesma coisa. Veja a
+   nota sobre --marca e --accent logo abaixo: é a decisão que mais afeta o
+   resultado desta folha. */
 :root {
   --paper:      #F6F9F7;
   --surface:    #FFFFFF;
   --ink:        #0B1410;
   --muted:      #566B60;
   --rule:       #DCE5DF;
-  /* O verde oficial da marca, #00D500, da 2:1 sobre branco — longe do minimo
-     de 4,5 de WCAG AA, e esta e a cor de todo link, do selo "verificado" e do
-     anel de foco. Aqui ele entra escurecido ate 5,49:1, na mesma matiz. No
-     tema escuro o accent volta a ser o #00D500 puro, que la da 10,3:1. */
+  /* ---------------------------------------------------------------
+     Dois verdes, não um.
+     O #00D500 do logotipo tem saturação 0,257 em OKLCH — é um verde de
+     marca, feito para uma marca de 2cm, não para forrar interface. Sobre
+     preto ele vibra. O site de referência usa 0,220, 15% menos, e guarda
+     o verde da marca só para o logotipo. É o que se faz: a marca assina,
+     a interface conversa.
+     --marca  = só o logotipo e o que precisa casar com ele.
+     --accent = tudo o resto.
+     --------------------------------------------------------------- */
+  --marca:      #00D500;
   --accent:     #077A28;
   --accent-ink: #065E1F;
   --accent-soft:#E3F7E7;
+  /* Tinta de cima do botão: o acento é escuro no claro e aceso no escuro,
+     então o que vai por cima dele troca junto. */
+  --btn-ink:    #FFFFFF;
+
+  /* Os véus. O site de referência usa verde a 5%, 10%, 15% e 20% em 71
+     elementos, e verde cheio só nos botões de ação — é daí que vem a calma
+     dele. Sem esta escala só existe "verde no talo ou nada". */
+  --veu-1:      rgba(7, 122, 40, 0.06);
+  --veu-2:      rgba(7, 122, 40, 0.12);
+  --veu-3:      rgba(7, 122, 40, 0.18);
+  --borda-verde:rgba(7, 122, 40, 0.28);
   --warn:       #8A5A00;
   --warn-soft:  #FDF4E3;
   --good:       #1C6B4A;
@@ -27,22 +47,19 @@
   --alerta:     #9B1C23;
 
   /* ---------------------------------------------------------------
-     Rampa de espectro
-     O assunto é rede: frequência, sinal, banda. A rampa sobe de ciano
-     para violeta como uma faixa de espectro — é daí que vem a sensação
-     de luz e energia, e não de um degradê posto por enfeite.
-     As três paradas ficam longe do verde #00D500 da MOVVA de propósito:
-     o site não pode parecer a marca dela.
+     Rampa
+     Três paradas da família do --accent, do mais aceso ao mais fundo.
+     Ela existe para os poucos lugares que ainda pedem degradê — o fio do
+     cabeçalho, o número do passo, o selo do plano. Botão NÃO usa: botão é
+     verde chapado, como no site de referência. Degradê em tudo foi o que
+     fez a página gritar.
      --------------------------------------------------------------- */
-  /* A rampa é a família do verde oficial, do mais aceso ao mais fundo. Ela
-     fica clara nos dois temas porque serve de FUNDO, sempre com tinta escura
-     por cima — quem precisa escurecer no tema claro é o --accent, que é texto. */
-  --g1: #00F600;
-  --g2: #00D500;
-  --g3: #00A83F;
+  --g1: #0A8C2E;
+  --g2: #077A28;
+  --g3: #056B36;
   --grad-sinal: linear-gradient(100deg, var(--g1) 0%, var(--g2) 48%, var(--g3) 100%);
   /* Luz ambiente atrás da primeira tela. Sem borda, sem forma: só claridade. */
-  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.16), rgba(0, 168, 63, 0.10) 46%, transparent 74%);
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(25, 198, 60, 0.09), rgba(14, 138, 58, 0.05) 46%, transparent 74%);
 
   /* Sistema tipográfico de engenharia, não de editora. O assunto é telecom:
      especificação, frequência, registro de rede, número de protocolo. */
@@ -62,18 +79,24 @@
     --ink:        #F5F5F5;
     --muted:      #7F92A0;
     --rule:       #18222C;
-    --accent:     #00D500;
-    --accent-ink: #00F600;
-    --accent-soft:#052A08;
+    --marca:      #00D500;
+    --accent:     #19C63C;
+    --accent-ink: #4FE06A;
+    --accent-soft:#07240C;
+    --btn-ink:    #04121A;
+    --veu-1:      rgba(25, 198, 60, 0.06);
+    --veu-2:      rgba(25, 198, 60, 0.12);
+    --veu-3:      rgba(25, 198, 60, 0.18);
+    --borda-verde:rgba(25, 198, 60, 0.30);
     --warn:       #FDC700;
     --warn-soft:  #231C00;
     --good:       #00F600;
     --alerta:     #F08E8E;
     /* No escuro o accent volta a ser o verde oficial: ali ele da 10,3:1. */
-    --g1: #00F600;
-    --g2: #00D500;
-    --g3: #00A83F;
-    --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.18), rgba(0, 246, 0, 0.10) 46%, transparent 74%);
+    --g1: #4FE06A;
+    --g2: #19C63C;
+    --g3: #0E8A3A;
+    --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(25, 198, 60, 0.10), rgba(79, 224, 106, 0.05) 46%, transparent 74%);
     color-scheme: dark;
   }
 }
@@ -83,17 +106,23 @@
   --ink:        #F5F5F5;
   --muted:      #7F92A0;
   --rule:       #18222C;
-  --accent:     #00D500;
-  --accent-ink: #00F600;
-  --accent-soft:#052A08;
+  --marca:      #00D500;
+    --accent:     #19C63C;
+  --accent-ink: #4FE06A;
+  --accent-soft:#07240C;
+    --btn-ink:    #04121A;
+    --veu-1:      rgba(25, 198, 60, 0.06);
+    --veu-2:      rgba(25, 198, 60, 0.12);
+    --veu-3:      rgba(25, 198, 60, 0.18);
+    --borda-verde:rgba(25, 198, 60, 0.30);
   --warn:       #FDC700;
   --warn-soft:  #231C00;
   --good:       #00F600;
   --alerta:     #F08E8E;
-  --g1: #00F600;
-  --g2: #00D500;
-  --g3: #00A83F;
-  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.18), rgba(0, 246, 0, 0.10) 46%, transparent 74%);
+  --g1: #0A8C2E;
+  --g2: #077A28;
+  --g3: #056B36;
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(25, 198, 60, 0.10), rgba(79, 224, 106, 0.05) 46%, transparent 74%);
   color-scheme: dark;
 }
 
@@ -122,17 +151,23 @@
   --ink:        #F5F5F5;
   --muted:      #7F92A0;
   --rule:       #18222C;
-  --accent:     #00D500;
-  --accent-ink: #00F600;
-  --accent-soft:#052A08;
+  --marca:      #00D500;
+    --accent:     #19C63C;
+  --accent-ink: #4FE06A;
+  --accent-soft:#07240C;
+    --btn-ink:    #04121A;
+    --veu-1:      rgba(25, 198, 60, 0.06);
+    --veu-2:      rgba(25, 198, 60, 0.12);
+    --veu-3:      rgba(25, 198, 60, 0.18);
+    --borda-verde:rgba(25, 198, 60, 0.30);
   --warn:       #FDC700;
   --warn-soft:  #231C00;
   --good:       #00F600;
   --alerta:     #F08E8E;
-  --g1: #00F600;
-  --g2: #00D500;
-  --g3: #00A83F;
-  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.20), rgba(0, 246, 0, 0.11) 46%, transparent 74%);
+  --g1: #0A8C2E;
+  --g2: #077A28;
+  --g3: #056B36;
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(25, 198, 60, 0.11), rgba(79, 224, 106, 0.05) 46%, transparent 74%);
   color-scheme: dark;
   background: var(--paper);
   color: var(--ink);
@@ -153,13 +188,12 @@
   }
 }
 
-/* Borda em gradiente sem truque de pseudo-elemento: o fundo pinta o miolo
-   até a borda (padding-box) e a rampa pinta só a moldura (border-box). */
+/* Era uma borda em gradiente. Virou linha verde de uma cor só: moldura em
+   degradê chama atenção para a moldura, e o que precisa de atenção no cartão
+   é o preço dentro dele. */
 .borda-luz {
-  border: 1px solid transparent;
-  background:
-    linear-gradient(var(--surface), var(--surface)) padding-box,
-    var(--grad-sinal) border-box;
+  border: 1px solid var(--borda-verde);
+  background: var(--surface);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -298,9 +332,10 @@ strong { font-weight: 600; }
 .card--accent { border-left: 3px solid var(--accent); background: var(--accent-soft); }
 .card--warn   { border-left: 3px solid var(--warn);   background: var(--warn-soft); }
 
-/* O botão é o objeto mais claro da página: a rampa inteira, com um halo da
-   própria cor embaixo. Tinta escura em cima, porque a rampa é luminosa nos
-   dois temas — é o que dispensa as três regras de override que havia aqui. */
+/* Verde chapado, não a rampa. Botão com degradê e halo é bonito sozinho e
+   insuportável em série: esta página tem oito. O site de referência usa
+   verde cheio só no botão de ação, e é de lá que vem a calma dele.
+   A tinta de cima troca com o tema porque o acento também troca. */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -308,18 +343,16 @@ strong { font-weight: 600; }
   gap: 0.5rem;
   padding: 0.8rem 1.5rem;
   border-radius: 10px;
-  background: var(--grad-sinal);
-  color: #04121A;
+  background: var(--accent);
+  color: var(--btn-ink);
   font-weight: 600;
   text-decoration: none;
   border: 1px solid transparent;
-  box-shadow: 0 10px 26px -14px var(--g2);
-  transition: filter 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  transition: background 0.18s ease, transform 0.18s ease;
 }
 .btn:hover {
-  color: #04121A;
-  filter: brightness(1.07) saturate(1.05);
-  box-shadow: 0 14px 32px -14px var(--g2);
+  background: var(--accent-ink);
+  color: var(--btn-ink);
   transform: translateY(-1px);
 }
 /* Botão menor, para onde ele não é a chamada principal: no cabeçalho e ao pé

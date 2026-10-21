@@ -120,7 +120,11 @@ const BENEFICIOS = [
              dois comandos seguidos, sendo o segundo uma ordem para pagar, que é
              o avesso do que uma primeira tela deve fazer.
              Agora: constatação na primeira linha, oferta concreta na segunda. -->
-        <h1>Você muda de operadora, não de número.<br /><span class="brilho">Chip MOVVA: 25&nbsp;GB por R$&nbsp;79,90.</span></h1>
+        <h1>
+          Você muda de operadora, não de número.<br />Chip MOVVA:
+          <span class="destaque">25&nbsp;GB</span> por
+          <span class="destaque">R$&nbsp;79,90</span>.
+        </h1>
 
         <!-- Não repete "chip MOVVA", que o título acabou de dizer duas linhas
              acima: título e subtítulo não podem gastar o mesmo argumento. -->
@@ -320,7 +324,7 @@ const BENEFICIOS = [
           <article class={`plano${p.destaque ? ' plano--destaque borda-luz' : ''}`}>
             {p.destaque && <span class="plano__selo">Eu recomendo</span>}
             <p class="plano__nome">MOVVA {p.nome}</p>
-            <p class={`plano__gb${p.destaque ? ' brilho' : ''}`}>{p.gb} GB</p>
+            <p class={`plano__gb${p.destaque ? ' destaque' : ''}`}>{p.gb} GB</p>
             <p class="plano__preco">R$ <strong>{p.preco}</strong><small>/mês</small></p>
             <p class="plano__nota">{p.nota}</p>
             <a
@@ -421,6 +425,10 @@ const BENEFICIOS = [
     letter-spacing: -0.03em;
     line-height: 1.04;
   }
+  /* Verde só nos dois números, não na linha inteira. A linha toda em verde
+     era a coisa mais barulhenta da página — e, pior, dava o mesmo peso ao
+     "Chip MOVVA:" e ao preço, que é o que a pessoa veio ver. */
+  .destaque { color: var(--accent); }
   .hero__sub { font-size: clamp(1.05rem, 2.1vw, 1.26rem); color: var(--muted); max-width: 42ch; }
   .hero__sub strong { color: var(--ink); }
   /* A declaração de comissão saiu daqui de propósito: ela interrompia a oferta
@@ -439,9 +447,9 @@ const BENEFICIOS = [
     line-height: 1.45;
     color: var(--muted);
     padding: 0.4rem 0.85rem;
-    border: 1px solid var(--rule);
+    border: 1px solid var(--borda-verde);
     border-radius: 999px;
-    background: var(--surface);
+    background: var(--veu-2);
   }
   .selo__ponto {
     width: 7px; height: 7px; flex: none;
@@ -515,7 +523,7 @@ const BENEFICIOS = [
     content: "";
     width: 6px; height: 6px; flex: none;
     border-radius: 50%;
-    background: var(--grad-sinal);
+    background: var(--accent);
     transform: translateY(-0.15em);
   }
   .oferta .btn { justify-content: center; }
@@ -552,9 +560,10 @@ const BENEFICIOS = [
     display: inline-flex; align-items: center; justify-content: center;
     width: 1.9rem; height: 1.9rem;
     border-radius: 50%;
-    font-family: var(--mono); font-size: 0.85rem; font-weight: 500;
-    color: #04121A;
-    background: var(--grad-sinal);
+    font-family: var(--mono); font-size: 0.85rem; font-weight: 600;
+    color: var(--accent);
+    background: var(--veu-3);
+    border: 1px solid var(--borda-verde);
   }
   .passo h3 { font-size: 1.05rem; }
   .passo p { font-size: 0.92rem; color: var(--muted); }
@@ -635,7 +644,7 @@ const BENEFICIOS = [
   .plano__selo {
     position: absolute; top: -0.62rem; left: 1rem;
     font-family: var(--mono); font-size: 0.62rem;
-    background: var(--grad-sinal); color: #04121A;
+    background: var(--accent); color: var(--btn-ink);
     padding: 0.18rem 0.5rem; border-radius: 999px;
   }
   .plano__nome { font-size: 0.84rem; color: var(--muted); }
