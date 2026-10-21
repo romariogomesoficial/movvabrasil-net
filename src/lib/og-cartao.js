@@ -4,9 +4,10 @@
 // SVG com o texto ja convertido em curva (nao fica dependendo de fonte na hora
 // de rasterizar); sharp transforma esse SVG em PNG. Os dois rodam so no build.
 //
-// Paleta e tipografia sao as mesmas do global.css, de proposito: o cartao tem
-// que parecer do mesmo site. Fundo solido claro, porque no WhatsApp em tema
-// escuro a imagem nao e invertida e precisa continuar legivel.
+// Paleta e tipografia sao as mesmas do bloco .escuro do global.css, de
+// proposito: o cartao tem que parecer do mesmo site. O fundo e escuro porque o
+// site e escuro — e no WhatsApp, que mostra a previa sobre um balao claro, o
+// cartao escuro se destaca em vez de sumir no fundo.
 
 import { createRequire } from 'node:module';
 import { readFileSync } from 'node:fs';
@@ -20,34 +21,51 @@ const arquivoDeFonte = (especificador) => readFileSync(require.resolve(especific
 // Carregado uma vez por build, nao uma vez por imagem.
 const FONTES = [
   {
-    name: 'Newsreader',
-    data: arquivoDeFonte('@fontsource/newsreader/files/newsreader-latin-600-normal.woff'),
-    weight: 600,
-    style: 'normal',
-  },
-  {
-    name: 'Source Sans 3',
-    data: arquivoDeFonte('@fontsource/source-sans-3/files/source-sans-3-latin-400-normal.woff'),
+    name: 'IBM Plex Sans',
+    data: arquivoDeFonte('@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff'),
     weight: 400,
     style: 'normal',
   },
   {
-    name: 'Source Sans 3',
-    data: arquivoDeFonte('@fontsource/source-sans-3/files/source-sans-3-latin-600-normal.woff'),
+    name: 'IBM Plex Sans',
+    data: arquivoDeFonte('@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-600-normal.woff'),
     weight: 600,
+    style: 'normal',
+  },
+  {
+    name: 'IBM Plex Sans',
+    data: arquivoDeFonte('@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-700-normal.woff'),
+    weight: 700,
+    style: 'normal',
+  },
+  {
+    name: 'IBM Plex Mono',
+    data: arquivoDeFonte('@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff'),
+    weight: 400,
+    style: 'normal',
+  },
+  {
+    name: 'IBM Plex Mono',
+    data: arquivoDeFonte('@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-500-normal.woff'),
+    weight: 500,
     style: 'normal',
   },
 ];
 
-// Mesmos valores do :root do global.css, tema claro.
+// Mesmos valores do bloco .escuro do global.css.
 const COR = {
-  papel: '#FBFAF8',
-  tinta: '#16202B',
-  mudo: '#5A6873',
-  regua: '#E2E0DB',
-  acento: '#0B6B63',
-  aviso: '#8A5A00',
+  papel: '#070C12',
+  superficie: '#101A24',
+  tinta: '#EAF4FA',
+  mudo: '#93A9B9',
+  regua: '#1D2D3A',
+  acento: '#35DDF2',
 };
+
+// A rampa de espectro do site. Em satori vai como backgroundImage: borda em
+// gradiente nao existe aqui, entao cada filete e uma div com o degrade dentro.
+const RAMPA = 'linear-gradient(180deg, #2BFFA8 0%, #35DDF2 50%, #7C9FFF 100%)';
+const RAMPA_H = 'linear-gradient(90deg, #2BFFA8 0%, #35DDF2 48%, #7C9FFF 100%)';
 
 export const LARGURA = 1200;
 export const ALTURA = 630;
@@ -80,11 +98,11 @@ function layout({ titulo, chapeu, resumo }) {
       height: `${ALTURA}px`,
       display: 'flex',
       backgroundColor: COR.papel,
-      fontFamily: 'Source Sans 3',
+      fontFamily: 'IBM Plex Sans',
     },
     [
-      // Filete de acento na lateral, a mesma marca visual do .answer e do .card--accent.
-      bloco({ width: '14px', backgroundColor: COR.acento }, []),
+      // Filete de espectro na lateral: a mesma rampa do cabecalho do site.
+      bloco({ width: '14px', backgroundImage: RAMPA }, []),
       bloco(
         {
           display: 'flex',
@@ -95,24 +113,24 @@ function layout({ titulo, chapeu, resumo }) {
         },
         [
           bloco({ display: 'flex', flexDirection: 'column' }, [
+            // Em mono e em caixa normal: le como etiqueta de secao, nao como
+            // rotulo decorativo em versal espacado.
             bloco(
               {
-                fontSize: '22px',
-                fontWeight: 600,
-                letterSpacing: '0.12em',
-                textTransform: 'uppercase',
-                color: COR.mudo,
-                marginBottom: '28px',
+                fontFamily: 'IBM Plex Mono',
+                fontSize: '21px',
+                fontWeight: 500,
+                color: COR.acento,
+                marginBottom: '26px',
               },
               chapeu
             ),
             bloco(
               {
-                fontFamily: 'Newsreader',
-                fontWeight: 600,
+                fontWeight: 700,
                 fontSize: `${corpoDoTitulo(titulo)}px`,
-                lineHeight: 1.14,
-                letterSpacing: '-0.012em',
+                lineHeight: 1.1,
+                letterSpacing: '-0.03em',
                 color: COR.tinta,
               },
               titulo
@@ -121,38 +139,41 @@ function layout({ titulo, chapeu, resumo }) {
               ? [
                   bloco(
                     {
-                      fontSize: '27px',
-                      lineHeight: 1.45,
-                      color: COR.mudo,
-                      marginTop: '26px',
-                      maxWidth: '880px',
-                      borderLeft: `3px solid ${COR.acento}`,
-                      paddingLeft: '20px',
+                      display: 'flex',
+                      marginTop: '28px',
+                      maxWidth: '900px',
                     },
-                    resumoVisivel
+                    [
+                      bloco({ width: '3px', backgroundImage: RAMPA, marginRight: '20px' }, []),
+                      bloco(
+                        { fontSize: '27px', lineHeight: 1.45, color: COR.mudo, flexGrow: 1 },
+                        resumoVisivel
+                      ),
+                    ]
                   ),
                 ]
               : []),
           ]),
           bloco({ display: 'flex', flexDirection: 'column' }, [
-            bloco({ height: '1px', backgroundColor: COR.regua, marginBottom: '22px' }, []),
+            bloco({ height: '1px', backgroundImage: RAMPA_H, opacity: 0.5, marginBottom: '22px' }, []),
             bloco({ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }, [
               bloco({ display: 'flex', flexDirection: 'column' }, [
                 bloco(
-                  { fontSize: '25px', fontWeight: 600, color: COR.tinta },
+                  { fontFamily: 'IBM Plex Mono', fontSize: '25px', fontWeight: 500, color: COR.tinta },
                   SITE.url.replace(/^https?:\/\//, '')
                 ),
                 bloco(
-                  { fontSize: '21px', color: COR.mudo, marginTop: '4px' },
+                  { fontSize: '21px', color: COR.mudo, marginTop: '6px' },
                   `${AUTOR.nome} · ${AUTOR.papel}`
                 ),
               ]),
+              // Fica, e fica discreto: o cartao e a superficie que mais parece
+              // canal oficial quando cai num grupo de WhatsApp sem contexto.
               bloco(
                 {
-                  fontSize: '19px',
-                  fontWeight: 600,
-                  color: COR.aviso,
-                  maxWidth: '430px',
+                  fontSize: '18px',
+                  color: COR.mudo,
+                  maxWidth: '400px',
                   textAlign: 'right',
                   lineHeight: 1.35,
                 },
