@@ -30,6 +30,15 @@ RewriteRule ^\.well-known/ - [L]
 RewriteRule ^\.git(/|$) - [F,L]
 RewriteRule ^\.github(/|$) - [F,L]
 
+# /blog existe como arquivo (blog.html) E como pasta (blog/, com os posts).
+# A Hostinger troca a maquina da hospedagem compartilhada, e em algumas delas o
+# mod_dir roda ANTES do mod_rewrite. Quando isso acontece, /blog recebe a barra
+# de volta e as duas regras entram em laco.
+# Tratar as duas formas aqui, sem redirecionar, elimina a briga de ordem: se o
+# mod_rewrite vier primeiro, /blog ja serve direto; se o mod_dir vier primeiro,
+# /blog/ cai nesta regra e serve igual. Nunca entra em laco, nunca da 403.
+RewriteRule ^blog/?$ blog.html [L]
+
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://movvabrasil.net/$1 [R=301,L]
