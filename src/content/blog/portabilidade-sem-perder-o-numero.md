@@ -98,7 +98,5 @@ prestadora de origem e você passa a ser usuário dela, sob a marca da virtual �
 
 ---
 
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA como verificada: contratei o plano, o chip
-não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.
+Nada aqui descreve característica de produto da MOVVA como verificada por mim:
+é regra da Anatel, com o artigo ao lado de cada afirmação.

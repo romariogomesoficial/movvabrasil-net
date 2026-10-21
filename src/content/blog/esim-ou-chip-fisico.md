@@ -36,8 +36,6 @@ Regra de decisão, antes da explicação:
 - **Chip físico** se você troca a linha de aparelho com frequência, usa celular emprestado ou vai comprar aparelho importado.
 - **Não existe escolha** se o menu do aparelho não oferece eSIM.
 
-Sou distribuidor independente da MOVVA Brasil Ltda e este site não é canal oficial da empresa. Contratei o plano, o chip ainda não chegou e não testei nada em campo. Quando testar, atualizo.
-
 ## O que é eSIM
 
 É um SIM gravado dentro do aparelho, no lugar do cartão da bandeja. Na definição da Apple, é um SIM digital com padrão de indústria, embutido no iPhone, que dispensa o cartão físico. Em vez de receber um chip, você baixa da operadora o perfil da sua linha.

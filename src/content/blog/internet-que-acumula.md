@@ -39,10 +39,6 @@ o 1331.
 O indício mais forte não é a minha busca. É que as próprias empresas publicam
 regras opostas entre si.
 
-Este site é de distribuidor independente da MOVVA Brasil Ltda, e não é canal
-oficial da empresa. Contratei o plano, o chip ainda não chegou e não testei nada
-em campo: nada aqui descreve produto de operadora como verificado.
-
 ## O STF já derrubou uma lei que obrigava o acúmulo
 
 Em 2020. O Supremo derrubou lei catarinense de 2019 que obrigava operadora de
@@ -171,7 +167,4 @@ para medir está no regulamento da oferta — leia antes do preço.
 
 ---
 
-Nota de transparência: site de distribuidor independente da MOVVA Brasil Ltda, não
-é canal oficial da empresa. Contratei o plano, o chip ainda não chegou e nada aqui
-foi testado em campo. Páginas verificadas em 20/10/2026. Não é consultoria
-jurídica.
+Não é consultoria jurídica.

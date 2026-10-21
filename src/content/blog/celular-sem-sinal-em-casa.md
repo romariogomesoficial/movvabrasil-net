@@ -53,9 +53,6 @@ Da mais barata para a mais drástica:
 
 Repetidor de sinal não entra na lista: o motivo tem artigo de lei.
 
-Transparência: sou distribuidor independente da MOVVA Brasil Ltda, este site não
-é canal oficial, e meu chip não chegou — não testei nada em campo.
-
 ## Por que o sinal morre dentro de casa?
 
 Porque cobertura é declarada por área externa, não por imóvel.

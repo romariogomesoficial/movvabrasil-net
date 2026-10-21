@@ -59,9 +59,6 @@ fontes:
 Não existe melhor operadora para zona rural que sirva para todo mundo: a resposta
 é por endereço, e dá para verificá-la antes de assinar.
 
-Transparência: sou distribuidor independente da MOVVA Brasil Ltda, este site não
-é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo.
-
 ## Por que cobertura rural é outro jogo?
 
 **Quem escolhe onde ofertar é a empresa:** a Anatel registra que a telefonia
@@ -200,7 +197,5 @@ prefeitura e o 1331.
 
 ---
 
-Nota de transparência: sou distribuidor independente da MOVVA Brasil Ltda, este
-site não é canal oficial, contratei o plano, o chip não chegou e não testei nada
-em campo. Nada aqui descreve característica de produto da MOVVA: é regulação e
-painel público. Fontes verificadas em 21/10/2026.
+Nada aqui descreve característica de produto da MOVVA: é regulação e painel
+público.

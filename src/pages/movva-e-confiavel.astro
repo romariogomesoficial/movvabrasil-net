@@ -2,7 +2,14 @@
 import Base from '../layouts/Base.astro';
 import ProximoPasso from '../components/ProximoPasso.astro';
 import ComposicaoComissao from '../components/diagramas/ComposicaoComissao.astro';
-import { EMPRESA } from '../data/site.js';
+import { EMPRESA, CHIP } from '../data/site.js';
+
+// O estado do chip vem de CHIP, no site.js, e não escrito à mão aqui: ele
+// aparece nesta página em dois lugares e no site inteiro em mais de dez.
+const fmtData = (iso) =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', {
+    day: '2-digit', month: 'long', year: 'numeric',
+  });
 
 const atualizadoEm = '2026-10-20';
 const title = 'A MOVVA é confiável? É pirâmide? O que dá e o que não dá para verificar';
@@ -20,7 +27,7 @@ const faq = [
   },
   {
     p: 'A MOVVA é uma pirâmide financeira?',
-    r: 'A MOVVA vende plano de celular, que é serviço regulado pela Anatel — isso a diferencia de um esquema sem produto. Ressalva: eu ainda não recebi o chip, então não testei o serviço. O ponto de atenção não é a existência do produto, e sim de onde vem o dinheiro das comissões: se a maior parte nasce de pessoas entrando e pagando licença, e não de contas de celular sendo pagas mês a mês, a estrutura se aproxima do que a Lei 1.521/51 trata como cadeia. Isso é mensurável, e nesta página eu publico a minha própria medição.',
+    r: 'A MOVVA vende plano de celular, que é serviço regulado pela Anatel — isso a diferencia de um esquema sem produto. Ressalva: ' + CHIP.frase + ' O ponto de atenção não é a existência do produto, e sim de onde vem o dinheiro das comissões: se a maior parte nasce de pessoas entrando e pagando licença, e não de contas de celular sendo pagas mês a mês, a estrutura se aproxima do que a Lei 1.521/51 trata como cadeia. Isso é mensurável, e nesta página eu publico a minha própria medição.',
   },
   {
     p: 'Quanto custa entrar na MOVVA?',
@@ -164,11 +171,11 @@ const schemaFaq = {
       </div>
 
       <div class="card card--warn">
-        <h3>4. O produto ainda não chegou na minha mão</h3>
+        <h3>4. {CHIP.chegou ? 'O produto chegou, e agora dá para medir' : 'O produto ainda não chegou na minha mão'}</h3>
         <p>
-          Contratei o plano e, até 20 de outubro de 2026, o chip continuava em
-          "ativação em andamento". Enquanto o serviço não roda, não existe consumo
-          mensal — e sem consumo não existe a recorrência que sustenta a tese inteira.
+          {CHIP.frase} Enquanto o serviço não roda, não existe consumo mensal — e
+          sem consumo não existe a recorrência que sustenta a tese inteira. Pedi o
+          chip em {fmtData(CHIP.pedidoEm)}.
         </p>
       </div>
     </section>

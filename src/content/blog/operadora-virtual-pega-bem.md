@@ -42,10 +42,6 @@ Pega o que a rede hospedeira pega. Uma operadora virtual não tem antena: vende 
 plano, e o sinal vem da rede de outra empresa. A pergunta útil é qual rede ela
 usa, e se essa rede pega bem onde você mora.
 
-Antes de seguir: este site não é canal oficial da MOVVA Brasil Ltda. Sou
-distribuidor independente da empresa, ainda não recebi o chip e não testei nada
-em campo. Abaixo, regulamento e painel público.
-
 ## Por que o sinal é o da rede hospedeira
 
 Porque é a rede dela que carrega a sua ligação. A regra está no Capítulo XII do

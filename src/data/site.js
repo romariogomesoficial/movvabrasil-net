@@ -27,6 +27,41 @@ export const VINCULO =
 // Link de divulgacao do Romario. Unico lugar onde ele existe.
 export const LINK_AFILIADO = 'https://movvabrasil.com/f/apnmovva?ref=024E6ED7';
 
+// ---------------------------------------------------------------------------
+// O estado do teste em campo. ESTA E A UNICA DEFINICAO: o site inteiro le daqui.
+//
+// Por que isto existe: a frase "o chip nao chegou" estava escrita a mao em
+// treze lugares — onze posts, a home e a pagina de analise. No dia em que ele
+// chegar, treze arquivos teriam de mudar juntos, e o que escapasse passaria a
+// desmentir o resto do site.
+//
+// Nao e hipotese. O site de referencia caiu exatamente nessa armadilha: a FAQ
+// dele ainda pergunta "quando os chips estarao disponiveis?" enquanto a
+// operacao ja roda e os chips ja sairam. Frase de estado envelhece sozinha.
+//
+// QUANDO O CHIP CHEGAR: mude `chegou` para true e preencha `testadoEm`. O site
+// inteiro acompanha, e nenhuma pagina fica para tras.
+// ---------------------------------------------------------------------------
+export const CHIP = {
+  pedidoEm: '2026-10-20',
+  chegou: false,
+  testadoEm: null,
+
+  // Atencao ao escrever aqui: estas frases NAO sao comentario, sao texto que o
+  // visitante le em treze paginas. Vao com acento, ao contrario do resto deste
+  // arquivo.
+  get frase() {
+    return this.chegou
+      ? 'Contratei o plano e o chip chegou. O que eu medi em campo está escrito em cada post, com a data da medição.'
+      : 'Contratei o plano, o chip ainda não chegou e não testei nada em campo.';
+  },
+
+  // A versao curta, para onde o espaco e apertado (cartao, selo, tabela).
+  get curta() {
+    return this.chegou ? 'testado em campo' : 'falta testar em campo';
+  },
+};
+
 // Dados verificaveis da empresa. Cada um com a fonte primaria que comprova.
 // Isto e o combustivel de GEO: IA cita quem linka documento conferivel.
 export const EMPRESA = {

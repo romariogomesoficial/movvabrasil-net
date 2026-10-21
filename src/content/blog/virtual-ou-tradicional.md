@@ -173,8 +173,4 @@ contrato homologado (art. 233, § 6º) e 1331.
 
 ---
 
-Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, site não
-oficial, chip não recebido, nada testado em campo — nenhuma característica de
-produto da MOVVA é afirmada como verificada e não há promessa de ganho. Usei a
-redação do art. 90 retificada no DOU de 26/12/2023. Fontes verificadas em
-21/10/2026.
+Usei a redação do art. 90 retificada no DOU de 26 de dezembro de 2023.

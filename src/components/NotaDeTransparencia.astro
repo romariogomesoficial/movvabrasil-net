@@ -1,0 +1,60 @@
+---
+// A nota de transparência de todo post.
+//
+// Antes ela era escrita à mão no corpo de cada arquivo, com redação levemente
+// diferente em cada um e a mesma afirmação de estado repetida treze vezes. Dois
+// problemas: o leitor que lia dois posts lia duas versões da mesma declaração,
+// e o dia em que o chip chegasse exigiria treze correções simultâneas.
+//
+// Agora é um componente só, alimentado por CHIP no site.js. A declaração passa
+// a ser idêntica em toda página, e muda em um lugar.
+//
+// `fontes` recebe a data em que as fontes daquele post foram conferidas, que é
+// informação do post e não do site — por isso continua vindo de fora.
+// `extra` recebe a ressalva específica de um post, quando existe (por exemplo,
+// qual redação de um artigo foi usada).
+// EMPRESA não entra aqui: AUTOR.papel já é "Distribuidor independente MOVVA",
+// e acrescentar a razão social produzia "Distribuidor independente MOVVA da
+// MOVVA BRASIL LTDA".
+import { AUTOR, CHIP } from '../data/site.js';
+
+const { fontes = null, extra = null } = Astro.props;
+
+const fmt = (iso) =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric',
+  });
+---
+
+<aside class="nota">
+  <p>
+    <strong>Nota de transparência.</strong> Escrito por {AUTOR.nome}, {AUTOR.papel}.
+    Recebo comissão se você contratar um plano pelos links daqui. {CHIP.frase}
+    Nada nesta página descreve característica de produto da MOVVA como
+    verificada por mim, e não há promessa de ganho.
+  </p>
+  {extra && <p>{extra}</p>}
+  {fontes && <p>Fontes verificadas em {fmt(fontes)}.</p>}
+</aside>
+
+<style>
+  /* Tracejada e recuada: é o mesmo tratamento de "em aberto" que o site usa
+     nas seções não confirmadas. A nota não é conteúdo do post, é o rótulo de
+     quem o escreveu — e precisa se ler como rótulo. */
+  .nota {
+    border: 1px dashed var(--rule);
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+  .nota strong { color: var(--ink); font-weight: 600; }
+  .nota p { margin: 0; }
+</style>

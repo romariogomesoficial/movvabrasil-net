@@ -26,7 +26,7 @@ import ProximoPasso from '../components/ProximoPasso.astro';
 import CadeiaDeRede from '../components/diagramas/CadeiaDeRede.astro';
 import { Image } from 'astro:assets';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
-import { EMPRESA } from '../data/site.js';
+import { EMPRESA, CHIP } from '../data/site.js';
 import { linkWhatsApp } from '../data/contato.js';
 
 const atualizadoEm = '2026-10-21';
@@ -63,8 +63,8 @@ const PLANOS = [
 // distribuidor: é fonte, e fonte se cita.
 //
 // O que continua sendo meu, e não dela: os prazos de portabilidade, que são
-// regra da Anatel, e a observação de que não testei o chip — essa vive na
-// análise, que é a página feita para ela.
+// regra da Anatel. O estado do meu teste em campo vem de CHIP, no site.js:
+// é uma definição só para o site inteiro, e a análise é a página que a explica.
 const BENEFICIOS = [
   {
     titulo: 'Dupla conectividade',
@@ -377,9 +377,9 @@ const BENEFICIOS = [
              material oficial. É o estado do MEU teste, que é outra coisa — e é
              o que me permite dizer, quando o chip chegar, como foi de verdade. -->
         <div class="prova prova--aberta">
-          <span class="estado estado--aberto">Falta eu testar</span>
+          <span class="estado estado--aberto">{CHIP.chegou ? 'Testado' : 'Falta eu testar'}</span>
           <span class="prova__dado">A dupla conectividade TIM + Vivo em campo</span>
-          <span class="prova__onde">Contratei o plano e o chip ainda não chegou. Publico o teste aqui quando chegar</span>
+          <span class="prova__onde">{CHIP.frase}</span>
         </div>
       </div>
 

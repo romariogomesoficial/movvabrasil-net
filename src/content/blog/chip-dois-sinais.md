@@ -36,8 +36,6 @@ fontes:
 
 Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
 
-Transparência, no alto: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo. Abaixo há norma e método.
-
 ## As quatro coisas vendidas com esse nome
 
 | O que é | Números | Quem troca | O que muda para você |
@@ -75,7 +73,7 @@ Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que s
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
-A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. E eu não testei, porque o chip não chegou. Não valido nem invalido a promessa: entrego o método.
+A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. Não valido nem invalido a promessa: entrego o método, e o estado do meu próprio teste está na nota ao pé desta página.
 
 ## Como você confere sozinho quando o chip chegar
 

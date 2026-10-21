@@ -46,9 +46,8 @@ fontes:
 
 ## Começo pela parte que me desabona
 
-Sou distribuidor independente da MOVVA Brasil Ltda, ganho se você assinar por
-mim, e este site não é canal oficial nem canal de atendimento. Contratei o
-plano, o chip não chegou, não testei nada em campo.
+Este site não é canal de atendimento da MOVVA: para reclamar, os caminhos
+estão abaixo.
 
 Por isso aqui tem método, não pedido de confiança: cada dado vem com o endereço
 onde você confere, inclusive contra mim. Começo pelo meu erro: a página
@@ -208,8 +207,6 @@ painéis da Anatel e 1331.
 
 ---
 
-Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, ganho se
-você assinar por mim, site não oficial e não canal de atendimento. Contratei o
-plano, o chip não chegou, nada testado em campo. Consultas de 21/10/2026, e a
-reputação muda sozinha todo dia 1º: me avise se achar número diferente. Não é
-consultoria jurídica.
+Consultas feitas em 21 de outubro de 2026. A reputação no Reclame Aqui muda
+sozinha todo dia 1º: me avise se achar número diferente. Não é consultoria
+jurídica.
