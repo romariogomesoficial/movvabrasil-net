@@ -79,6 +79,14 @@ A Apple afirma que o eSIM é mais seguro porque não pode ser removido em caso d
 
 Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A nota de rodapé registra o mesmo para o iPhone Duo.
 
+## Quantos perfis e quantas redes cabem no aparelho?
+
+Perfil não é rede. Ter dois perfis de eSIM no aparelho não põe você em duas
+redes ao mesmo tempo: o aparelho se registra numa rede por vez, e o que varia é
+quantas linhas ficam ativas. É a confusão que mais aparece em anúncio de
+telefonia, e eu separei as quatro coisas vendidas com esse nome em
+[chip que pega em duas operadoras](/blog/chip-dois-sinais).
+
 ## eSIM em operadora virtual funciona?
 
 Não confirmei. Não localizei fonte primária dizendo se operadora virtual pode oferecer eSIM no Brasil. Pela lógica do modelo, dependeria da rede hospedeira e do contrato entre as duas empresas, mas é leitura minha, não norma. Operadora virtual vende plano usando a rede de outra, e [detalhei o modelo aqui](/blog/o-que-e-operadora-virtual).

@@ -69,6 +69,13 @@ validade dos créditos não utilizados, mesmo já expirados, segue a maior valid
 entre os recém-inseridos e os que ainda não foram usados. Recarregar revalida
 saldo vencido.
 
+Falta ainda uma camada, e ela importa justamente para operadora virtual: o
+art. 90 do RGC lista quais dispositivos se aplicam a prestadora de pequeno
+porte, enquadramento comum entre as virtuais. **Não confirmei se o art. 51 está
+nessa lista** — expliquei o mecanismo em [o que a regra garante sobre
+fidelidade](/blog/operadora-sem-fidelidade). Se a sua operadora é de pequeno
+porte, confirme no 1331.
+
 O detalhe que muda tudo é uma palavra: o dispositivo fala em créditos, não em
 franquia de dados. Não achei dispositivo dizendo que gigabyte é crédito, então não
 afirmo que essa revalidação alcance a sua franquia em GB.
@@ -135,11 +142,15 @@ outubro de 2026, que conheço por reportagem).
 Quem define o acúmulo é o regulamento da oferta, e isso depende do modelo da
 empresa — expliquei os dois em [o que é operadora
 virtual](/blog/o-que-e-operadora-virtual). Peça o regulamento por escrito. Se o
-acúmulo não estiver ali, não conte com ele. E, se não servir, [sair não deve
-custar multa](/blog/operadora-sem-fidelidade).
+acúmulo não estiver ali, não conte com ele. E, se não servir, o que define a
+saída é existir ou não prazo de permanência — veja [o que a regra garante sobre
+fidelidade e multa](/blog/operadora-sem-fidelidade).
 
 ## O que eu não consegui confirmar
 
+- Se o art. 51 do RGC consta da lista do art. 90, que define o que se aplica a
+  prestadora de pequeno porte. Se não constar, a proteção pode não alcançar a
+  operadora virtual que você está avaliando.
 - Se a revalidação do art. 51, § 4º, do RGC alcança franquia em GB ou só crédito
   em reais.
 - Se existe regra que proteja franquia não usada no pós-pago. Ali não há créditos

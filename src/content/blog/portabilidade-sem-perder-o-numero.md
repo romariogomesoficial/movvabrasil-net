@@ -71,9 +71,13 @@ Quando eu conseguir a referência normativa, atualizo esta seção.
 
 ## Portabilidade para operadora virtual
 
-Operadoras móveis virtuais, as MVNOs, participam da portabilidade como qualquer
-outra operadora. O processo é o mesmo: você pede na operadora de destino, que
-cuida do resto junto à sua operadora atual.
+Para você, o pedido é igual: você solicita na operadora de destino, que cuida do
+resto junto à sua operadora atual.
+
+A diferença é jurídica, e vale saber. No modelo de credenciamento, a numeração é
+da prestadora de origem (art. 221) e quem contrata passa a ser usuário dela
+(art. 237). Na prática, quem recebe o seu número é a rede hospedeira, com a marca
+da virtual na fatura.
 
 O ponto de atenção não é a portabilidade em si, e sim o que vem depois: confirme
 a cobertura da rede que aquela MVNO utiliza na região onde você mais usa o

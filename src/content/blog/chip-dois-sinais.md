@@ -18,13 +18,13 @@ fontes:
     url: "https://www.etsi.org/deliver/etsi_ts/102200_102299/102223/18.03.00_60/ts_102223v180300p.pdf"
   - rotulo: "GSMA — eSIM Specification (tabela de versões e datas, consultada em 20/10/2026)"
     url: "https://www.gsma.com/solutions-and-impact/technologies/esim/esim-specification/"
-  - rotulo: "GSMA SGP.31 — eSIM IoT Architecture and Requirements V1.3 (22/05/2026), seções 1.1, 1.2 e 1.4 e requisitos EUICCF22 a EUICCF26"
+  - rotulo: "GSMA SGP.31 — eSIM IoT Architecture and Requirements V1.3 (22/05/2026), seções 1.1, 1.2 e 1.4"
     url: "https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2026/05/SGP.31-v1.3.pdf"
   - rotulo: "Anatel — Ato nº 12712, de 4 de setembro de 2024, Anexo 1, item 16.1 (MNC)"
     url: "https://informacoes.anatel.gov.br/legislacao/component/content/article/154-atos-de-numera%C3%A7%C3%A3o/2140-ato-12712"
   - rotulo: "Anatel — Resolução nº 777/2025, Anexo (RGST), arts. 217, 226, 235 e 241"
     url: "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777"
-  - rotulo: "Anatel — Resolução nº 783/2025, Anexo (PGMC), arts. 36 e 66"
+  - rotulo: "Anatel — Resolução nº 783/2025, Anexo (PGMC), art. 66 — vedação do roaming permanente"
     url: "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783"
   - rotulo: "Apple Support — Using Dual SIM with an eSIM (consultada em 20/10/2026)"
     url: "https://support.apple.com/en-us/109317"
@@ -34,81 +34,72 @@ fontes:
 
 ## Chip que pega em duas operadoras existe?
 
-Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só. O anúncio junta as duas coisas.
+Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
 
-Transparência, no alto: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial da empresa, contratei o plano, o chip não chegou e não testei nada em campo. Abaixo há norma, especificação técnica e método. Não é teste de produto.
+Transparência, no alto: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo. Abaixo há norma e método.
 
 ## As quatro coisas vendidas com esse nome
 
 | O que é | Números | Quem troca | O que muda para você |
 | --- | --- | --- | --- |
-| **Multi-IMSI**: o cartão guarda várias identidades e ativa uma | 1 | o cartão, avisando o aparelho | troca de rede sem você mexer |
-| **Lista de equivalentes (EHPLMN)**: um IMSI e uma lista de redes tratadas como de casa | 1 | o aparelho, pela lista do chip | a segunda rede entra na escolha automática |
+| **Multi-IMSI**: várias identidades no cartão, uma ativa | 1 | o cartão, avisando o aparelho | troca de rede sem você mexer |
+| **eSIM com vários perfis**: perfis de operadora baixados no aparelho | 1 por perfil | você, nas configurações | troca de operadora sem trocar de chip ([o que é eSIM e quais aparelhos aceitam](/blog/esim-ou-chip-fisico)) |
 | **Roaming ou acordo de visitante**: outra rede te atende por contrato | 1 | a rede, pelo contrato | cobertura fora da área da sua operadora |
 | **Dual SIM**: dois chips, duas assinaturas | 2 | você, nas configurações | dois planos, dados numa linha por vez |
 
+Das quatro, dual SIM é a que existe em qualquer loja — e não é "um chip, duas redes". A Apple registra que o iPhone usa uma rede de dados por vez, com SIM físico mais eSIM ou dois eSIM (iPhone 13 em diante). No Android, o DSDS do Google mantém duas linhas em uso e só uma como padrão de dados.
+
 ## Por que o aparelho fica numa rede por vez
 
-A identidade gravada no chip aponta para uma rede. É o IMSI: MCC, três dígitos de país; MNC, dois ou três dígitos da rede naquele país; e o MSIN. No máximo 15 dígitos, um por assinante.
+A identidade gravada no chip aponta para uma rede. É o IMSI: MCC, três dígitos de país; MNC, dois ou três dígitos da rede; e o MSIN. No máximo 15 dígitos, um por assinante.
 
-Os MCC são administrados pela ITU, e os MNC designados país por país. A norma recomenda, sem proibir, que o mesmo MNC não vá para mais de uma rede: o par MCC+MNC identifica uma rede, não uma marca.
-
-No modo automático, o aparelho percorre uma lista de redes em ordem de prioridade e fica na de maior prioridade disponível e permitida. Duas redes no chip nunca significam duas redes ao mesmo tempo.
+O par MCC+MNC identifica uma rede, não uma marca. E a escolha é por fila: no modo automático, o aparelho percorre uma lista de redes em ordem de prioridade e fica na primeira disponível e permitida. Duas redes no chip nunca significam duas redes ao mesmo tempo.
 
 ## O que acontece dentro do cartão
 
-No multi-IMSI, o cartão guarda mais de uma identidade, ativa uma por vez e avisa o aparelho pelo comando REFRESH. Seu número não muda. Não localizei especificação da GSMA de multi-IMSI, e a norma admite que o aparelho recuse a troca durante uma chamada: trocar de rede no meio de uma ligação não é garantido.
+No multi-IMSI, o cartão guarda mais de uma identidade, ativa uma por vez e avisa o aparelho pelo comando REFRESH. Seu número não muda. Não localizei especificação da GSMA de multi-IMSI, e a norma admite que o aparelho recuse a troca durante uma chamada: troca no meio de uma ligação não é garantida.
 
-A outra via é padronizada: a lista de HPLMN equivalentes. Com um IMSI só, as redes dessa lista substituem, na seleção de rede, o código derivado do IMSI, e o aparelho fica na equivalente de maior prioridade disponível. É um arquivo do cartão, o EF-EHPLMN (6FD9), marcado como opcional — nem todo chip tem.
-
-A volta não é instantânea: de uma rede visitada, em automático, a primeira tentativa sai entre 2 minutos e T, o tempo configurado, com o aparelho em repouso.
+Há uma quinta via, padronizada e pouco explicada: a lista de HPLMN equivalentes. Com um IMSI só, as redes dessa lista substituem o código derivado do IMSI na seleção de rede, e vale a equivalente de maior prioridade. É um arquivo opcional do cartão, o EF-EHPLMN (6FD9) — nem todo chip tem.
 
 ## O "SIM resiliente" está na norma de IoT
 
-As especificações de eSIM da GSMA são dois conjuntos: SGP.21 e SGP.22, de consumo; SGP.31 e SGP.32, de IoT — a V1.3 da SGP.32 saiu em 22/05/2026.
+As especificações de eSIM da GSMA são dois conjuntos: SGP.21 e SGP.22, de consumo; SGP.31 e SGP.32, de IoT, cuja V1.3 saiu em 22/05/2026.
 
-O mecanismo que troca de rede quando a atual falha existe como norma, do lado de IoT. A GSMA define o Fallback Mechanism como mecanismo do eUICC que habilita o perfil marcado com o Atributo de Fallback quando o perfil habilitado perde conectividade. O escopo declarado é dispositivo de IoT com restrição de rede e/ou de interface de usuário, não o celular de consumo.
+O mecanismo que troca de rede quando a atual falha existe como norma, do lado de IoT: a GSMA define o Fallback Mechanism como mecanismo do eUICC que habilita um perfil marcado com o Atributo de Fallback quando o perfil habilitado perde conectividade. O escopo declarado é dispositivo de IoT, não o celular de consumo.
 
-## Dual SIM: dois chips, dois números
+## O que a regra brasileira permite
 
-É a opção que existe hoje em qualquer loja, e não é "um chip, duas redes". A Apple registra que o iPhone usa uma rede de dados por vez, que o dual SIM se dá com SIM físico mais eSIM e que do iPhone 13 em diante também valem dois eSIM, com o aparelho desbloqueado pela operadora ou os dois planos na mesma empresa. No Android, o DSDS do Google tem duas linhas em uso e só uma como padrão para dados; dois eSIM pedem Pixel 7 ou posterior, e chamadas nos dois chips ao mesmo tempo aparecem a partir do Pixel 8a.
+Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada também pode, com mais de um contrato de compartilhamento (Art. 241, § 2º); o acordo de visitante tem base própria (Art. 226). A diferença entre credenciada e autorizada está [neste post](/blog/o-que-e-operadora-virtual).
 
-## O que a regra brasileira permite, e o que roaming não é
-
-Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada de rede virtual também pode ter contrato de compartilhamento com mais de uma prestadora de origem na mesma área (Art. 241, § 2º). Credenciada representa outra prestadora; autorizada tem outorga própria — [os dois modelos estão neste post](/blog/o-que-e-operadora-virtual).
-
-Daí vem um dever útil: com mais de uma origem, o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Há ainda um quarto caminho, sem tecnologia nova no chip: usar os acordos de atendimento a Usuários Visitantes da prestadora de origem, ou firmar os próprios (Art. 226).
-
-Roaming nacional é outra coisa: um mercado de atacado, a oferta de conectividade a usuários de outras redes móveis fora da área de prestação de quem contrata. E ele não serve para estacionar cliente na segunda rede, porque é vedado o roaming permanente, caracterizado por mais de 90 dias corridos fora da área de prestação — regra que vincula as prestadoras na oferta regulada, não você. Em qualquer arranjo, a cobertura é da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
+Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado acima de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
-A empresa anuncia, em material comercial, dupla conectividade TIM e Vivo num único chip. Eu não testei, o chip não chegou, e não localizei página pública dela que sustente essa afirmação técnica — as páginas que a repetem são blogs de afiliado, que não são fonte aqui. Não valido nem invalido a promessa, e não sei qual dos quatro mecanismos seria usado, se algum. O que eu entrego é o método.
+A empresa anuncia, em material comercial, dupla conectividade TIM e Vivo num único chip. Eu não testei, o chip não chegou, e não localizei página pública dela que sustente essa afirmação técnica — quem a repete são blogs de afiliado, que não são fonte aqui. Não valido nem invalido a promessa: entrego o método.
 
 ## Como você confere sozinho quando o chip chegar
 
-1. **Desconfie do nome na tela.** Por norma, ao menos 10 identificações de rede (MCC+MNC) podem exibir o mesmo nome de prestador, e o nome gravado no chip tem prioridade sobre o do aparelho e o da rede.
-2. **Procure o código numérico.** Não publico tabela por empresa: a lista oficial que abri é um retrato de 15/11/2023. E credenciada não tem código próprio, porque o MNC vai só para quem tem outorga de Serviço Móvel Pessoal.
-3. **Aviso de roaming é indício, não prova** — a exibição depende das regras gravadas no chip e do fabricante.
-4. **Desligue a seleção automática** e veja em quais redes o chip aceita registrar.
+1. **Desconfie do nome na tela.** Por norma, ao menos 10 redes (MCC+MNC) podem exibir o mesmo nome, e o nome gravado no chip tem prioridade sobre o da rede.
+2. **Procure o código numérico.** Não publico tabela por empresa: a lista da ITU que abri é de 15/11/2023. E credenciada não tem código próprio, porque o MNC vai só para quem tem outorga de SMP.
+3. **Aviso de roaming é indício, não prova:** a exibição depende do chip e do fabricante.
+4. **Desligue a seleção automática** e veja onde o chip aceita registrar.
 5. **Conte linhas e perfis:** um número ou dois separa dual SIM de troca dentro do chip.
-6. **Vá até onde uma das redes não pega e cronometre,** parado: a volta leva de 2 minutos a T.
+6. **Cronometre a volta** num ponto onde uma das redes não pega: pela norma, a primeira tentativa sai entre 2 minutos e T, o tempo configurado, e só com o aparelho em repouso.
 7. **Peça por escrito, com protocolo, qual prestadora de origem suporta o seu acesso.**
 
 ## O que eu não consegui confirmar
 
-Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": a regulação trata de contrato entre prestadoras e de numeração, não do que há dentro do cartão. Em aberto também:
+Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
 
-- **A afirmação da MOVVA em documento público dela.** O site que testei em 20/10/2026 não mostra conteúdo a quem não está logado. Peça a oferta por escrito, com protocolo.
-- **Qual mecanismo seria usado, e se a empresa é credenciada ou autorizada** — autorizada pode ter código de rede próprio. Pergunte a ela e veja o painel de outorga da Anatel.
+- **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
+- **Qual mecanismo seria usado, e se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. Pergunte a ela e veja o painel da Anatel.
 - **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
-- **Quem detém cada código de rede brasileiro hoje, e de qual origem sai o seu número quando a credenciada tem duas.** Boletim da ITU, oferta e 1331.
-- **Se o seu aparelho aceita o REFRESH, e se existe plano de consumo no Brasil com multi-IMSI.** Pergunte ao fabricante; a cobertura de telecom que achei trata de IoT e M2M.
+- **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
 
 ## O que isso muda na sua escolha
 
-Troque a pergunta. Não é "esse chip pega duas operadoras?", e sim: quais são as duas redes, qual delas suporta o meu acesso, e o que acontece quando a principal cai. As respostas estão na oferta e no atendimento, não no nome na tela. Trocar de operadora virtual não cria cobertura nova, e levar o número é outro assunto — veja [como funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
+Troque a pergunta: quais são as duas redes, qual delas suporta o meu acesso, e o que acontece quando a principal cai. Trocar de virtual não cria cobertura nova; levar o número é outro assunto — veja [como funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
 
 ---
 
-Nota de transparência: site mantido por distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial com a empresa. Nada aqui descreve característica de produto da MOVVA como verificada: contratei o plano, o chip não chegou e não testei em campo. Fontes verificadas em 20/10/2026, nas versões indicadas.
+Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial. Nada aqui descreve característica de produto da MOVVA como verificada. Fontes de 20/10/2026.
