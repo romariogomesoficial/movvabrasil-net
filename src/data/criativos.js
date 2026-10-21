@@ -20,14 +20,17 @@ export const CRIATIVOS = [
     chave: 'portabilidade',
     chapeu: 'Portabilidade',
     titulo: 'Seu número continua o mesmo',
-    apoio: 'Levar o número para outra operadora leva até 3 dias úteis e custa no máximo R$ 4,00, pela regra da Anatel.',
+    // O "teto de R$ 4,00 da Anatel" circula em muito site, mas o dispositivo
+    // que o estabeleca nao foi localizado — o post trata o valor como nao
+    // confirmado. Peca paga nao pode afirmar o que o proprio site desautoriza.
+    apoio: 'Levar o número para outra operadora leva até 3 dias úteis e, para você, não tem custo — o art. 92 do RGST põe a despesa fora do usuário.',
     formatos: ['quadrado', 'story', 'miniatura'],
   },
   {
     chave: 'liberty-preco',
     chapeu: 'Plano Liberty',
     titulo: '25 GB por R$ 79,90 por mês',
-    apoio: 'Sem fidelidade. Confira a cobertura na sua região antes de contratar.',
+    apoio: 'Portabilidade inclusa. A empresa anuncia plano sem fidelidade. Confira a cobertura na sua região antes de contratar.',
     formatos: ['quadrado', 'story'],
   },
   {
@@ -40,8 +43,8 @@ export const CRIATIVOS = [
   {
     chave: 'sem-fidelidade',
     chapeu: 'Sem fidelidade',
-    titulo: 'Sair sem multa, quando quiser',
-    apoio: 'Fidelidade tem teto de 12 meses e exige benefício. Sem prazo de permanência, não há multa.',
+    titulo: 'Sem prazo de permanência',
+    apoio: 'A empresa anuncia planos sem fidelidade e sem multa. A lei dá teto de 12 meses e exige benefício em troca: peça o contrato por escrito.',
     formatos: ['quadrado', 'story', 'miniatura'],
   },
   {

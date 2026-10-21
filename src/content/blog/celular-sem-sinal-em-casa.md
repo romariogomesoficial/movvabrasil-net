@@ -159,8 +159,9 @@ três perguntas:
 
 ## Antes de trocar, confira a cobertura declarada
 
-O RQUAL (Resolução nº 717/2019) obriga a operadora a publicar mapa de cobertura
-por tecnologia. A Anatel lista os endereços oficiais e mantém consulta de sinal e
+O RQUAL (Resolução nº 717/2019, art. 28, IV) obriga a operadora a informar a
+cobertura por tecnologia e a dar acesso ao mapa da Anatel — não a publicar mapa
+próprio. A Anatel lista os endereços oficiais e mantém consulta de sinal e
 painel de cobertura.
 
 Com um porém que importa justamente para operadora virtual: prestadora de

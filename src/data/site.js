@@ -15,8 +15,12 @@ export const AUTOR = {
   perfis: [],
 };
 
-// Frase de vinculo. Aparece no topo de toda pagina e no rodape.
-// E o que separa divulgacao legitima de representacao enganosa.
+// Frase de vinculo. E o que separa divulgacao legitima de representacao
+// enganosa, por isso vale conferir onde ela realmente aparece antes de mexer:
+// no rodape de toda pagina (Base.astro, .rodape), na description do WebSite no
+// JSON-LD, no cartao de compartilhamento (lib/og-cartao.js) e nos arquivos
+// llms.txt e llms-full.txt. O cabecalho nao a exibe mais — la o logotipo com
+// ".net" e marca, nao aviso. Tirar o rodape deixa a frase fora do HTML.
 export const VINCULO =
   'Site de distribuidor independente. Não é canal oficial da MOVVA Brasil Ltda.';
 

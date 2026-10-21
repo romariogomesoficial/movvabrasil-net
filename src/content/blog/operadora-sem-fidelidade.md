@@ -105,8 +105,10 @@ Mesmo sem multa, as parcelas vincendas de aparelho comprado da operadora
 continuam devidas (§ 3º).
 
 Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
-Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). A operadora tem dez dias
-corridos para responder.
+Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). Direto na operadora, a
+reclamação tem de ser resolvida em até 7 dias corridos (RGC, art. 10, caput, que
+está na lista do art. 90). Os dez dias são outro balcão: é o prazo que a Anatel
+afirma para a operadora responder reclamação encaminhada pela agência.
 
 ## Como cancelar, na prática
 
