@@ -19,12 +19,6 @@ export const PAGINAS_OG = [
     resumo: 'O que dá para confirmar em registro público e o que ainda não dá.',
   },
   {
-    path: '/correcoes',
-    chapeu: 'Correções',
-    titulo: 'O que mudou neste site, e quando',
-    resumo: 'O registro do que foi corrigido, com a data e a página. Nenhuma por reclamação de leitor.',
-  },
-  {
     path: '/movva-e-confiavel',
     chapeu: 'Análise',
     titulo: 'A MOVVA é confiável? É pirâmide?',

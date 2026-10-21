@@ -7,12 +7,15 @@
 // desatualizar: ela é efeito do conteúdo, não afirmação sobre ele.
 //
 // O que cada número conta:
-//   fontes    — endereços distintos no frontmatter dos posts. Distintos, não
-//               totais: a mesma resolução citada em cinco posts é uma fonte.
-//   emAberto  — itens da seção "o que eu não consegui confirmar" de cada post.
-//   correcoes — entradas de correcoes.js.
+//   fontes   — endereços distintos no frontmatter dos posts. Distintos, não
+//              totais: a mesma resolução citada em cinco posts é uma fonte.
+//   emAberto — itens da seção "o que eu não consegui confirmar" de cada post.
+//
+// Houve um terceiro, "correções", e ele saiu em 21/10/2026. A razão vale como
+// regra, e está em CORRECOES.md: incerteza sobre o ASSUNTO constrói confiança,
+// porque fala da MOVVA; erro do AUTOR a destrói, porque fala de quem escreve.
+// Os dois números que ficaram são do primeiro tipo.
 import { getCollection } from 'astro:content';
-import { CORRECOES } from './correcoes.js';
 
 // Os posts usam três redações para o mesmo título, porque foram escritos em
 // momentos diferentes: "não consegui confirmar", "não confirmei" e "não
@@ -41,15 +44,13 @@ export async function conferencia() {
     emAberto += (trecho.match(/^- /gm) ?? []).length;
   }
 
-  const datas = [
-    ...posts.map((p) => (p.data.atualizado ?? p.data.publicado)),
-    ...CORRECOES.map((c) => new Date(`${c.data}T12:00:00`)),
-  ].sort((a, b) => b - a);
+  const datas = posts
+    .map((p) => p.data.atualizado ?? p.data.publicado)
+    .sort((a, b) => b - a);
 
   return {
     fontes: fontes.size,
     emAberto,
-    correcoes: CORRECOES.length,
     posts: posts.length,
     conferidoEm: datas[0] ?? new Date(),
   };

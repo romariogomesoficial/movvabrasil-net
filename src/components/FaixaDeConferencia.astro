@@ -1,16 +1,17 @@
 ---
 // A faixa de conferência, no alto de toda página.
 //
-// O que ela faz, e por que é a coisa mais difícil de copiar deste site: ela
-// não afirma que o site é cuidadoso, ela mostra a conta. Fontes distintas,
-// itens em aberto e correções assumidas, contados do próprio conteúdo no
-// build. Um concorrente copia uma seção de benefícios numa tarde; para copiar
-// esta faixa ele precisa ter feito o trabalho que ela conta.
+// Ela não afirma que o site é cuidadoso, mostra a conta: quantas fontes
+// primárias o conteúdo cita e quantos pontos continuam sem confirmação.
+//
+// Os dois números falam da MOVVA, não do autor. Houve um terceiro, "correções
+// assumidas", e ele saiu: incerteza sobre o assunto constrói confiança, erro
+// do autor a destrói — o leitor não conclui "é rigoroso", conclui "erra".
 //
 // Nenhum número aqui é escrito à mão — ver src/data/conferencia.js.
 import { conferencia } from '../data/conferencia.js';
 
-const { fontes, emAberto, correcoes, conferidoEm } = await conferencia();
+const { fontes, emAberto, conferidoEm } = await conferencia();
 
 // Data curta: por extenso ela empurrava a faixa para duas linhas, e faixa de
 // duas linhas deixa de ser faixa.
@@ -23,11 +24,7 @@ const dia = conferidoEm.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
     <span class="faixa__sep" aria-hidden="true">·</span>
     <span class="faixa__item"><strong>{fontes}</strong> fontes primárias</span>
     <span class="faixa__sep" aria-hidden="true">·</span>
-    <span class="faixa__item"><strong>{emAberto}</strong> em aberto</span>
-    <span class="faixa__sep" aria-hidden="true">·</span>
-    <a class="faixa__item faixa__item--link" href="/correcoes">
-      <strong>{correcoes}</strong> correções
-    </a>
+    <span class="faixa__item"><strong>{emAberto}</strong> pontos em aberto</span>
   </div>
 </div>
 
