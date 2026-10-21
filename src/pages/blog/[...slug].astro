@@ -27,8 +27,10 @@ const schemaArtigo = {
   mainEntityOfPage: new URL(path, SITE.url).href,
 };
 
+// timeZone UTC e obrigatorio: a data do frontmatter vira meia-noite UTC, e sem
+// isso o Brasil, tres horas atras, mostra o dia anterior.
 const fmt = (d) =>
-  d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+  d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric', timeZone: 'UTC' });
 ---
 
 <Base
