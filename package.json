@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/conferir-acentos.mjs",
+    "build": "astro build && npm run conferir",
     "preview": "astro preview",
-    "conferir": "node scripts/conferir-acentos.mjs"
+    "conferir": "node scripts/conferir-acentos.mjs && node scripts/conferir-links.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.6.0",
