@@ -125,7 +125,67 @@ const fmt = (d) =>
 
 <style>
   .prosa { display: flex; flex-direction: column; gap: 1.1rem; }
-  .prosa :global(h2) { margin-top: 1.2rem; }
+  .prosa :global(h2) { margin-top: 1.4rem; }
   .prosa :global(h3) { margin-top: 0.6rem; }
   .prosa :global(ul), .prosa :global(ol) { padding-left: 1.2rem; }
+
+  /* Tabelas dentro do texto: a largura é do conteúdo, e número é dado. */
+  .prosa :global(table) {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.93rem;
+    display: block;
+    overflow-x: auto;
+  }
+  .prosa :global(th), .prosa :global(td) {
+    text-align: left;
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  .prosa :global(th) {
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--surface);
+    white-space: nowrap;
+  }
+  .prosa :global(code) {
+    font-family: var(--mono);
+    font-size: 0.88em;
+    background: var(--accent-soft);
+    padding: 0.08em 0.32em;
+    border-radius: 3px;
+  }
+
+  /* -----------------------------------------------------------------
+     "O que eu não consegui confirmar"
+     É a seção que mais distingue este site, e em Markdown era um ## igual
+     aos outros. O plugin de build a marca; aqui ela ganha o tratamento de
+     "em aberto": tracejado, porque nada ali está resolvido.
+     ----------------------------------------------------------------- */
+  .prosa :global(.secao-aberta__titulo) {
+    margin-top: 2.2rem;
+    padding-top: 1.4rem;
+    border-top: 1px dashed var(--rule);
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .prosa :global(.secao-aberta__titulo)::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    flex: none;
+    border: 1px dashed var(--muted);
+    border-radius: 50%;
+    transform: translateY(-0.15em);
+  }
+  .prosa :global(.secao-aberta) {
+    border-left: 1px dashed var(--rule);
+    padding-left: 1.1rem;
+    margin-left: 0.1rem;
+    color: var(--muted);
+  }
+  .prosa :global(.secao-aberta strong) { color: var(--ink); }
 </style>

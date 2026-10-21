@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { marcarSecoes } from './src/lib/marcar-secoes.js';
 
 // Site estatico: todo o HTML sai pronto no build, porque crawler de IA
 // (GPTBot, ClaudeBot, PerplexityBot) nao executa JavaScript.
@@ -8,6 +9,11 @@ export default defineConfig({
   trailingSlash: 'never',
   build: {
     format: 'file',
+  },
+  markdown: {
+    // Marca "o que eu não consegui confirmar" nos posts, para a seção receber
+    // o tratamento de "em aberto" sem depender de ninguém lembrar.
+    rehypePlugins: [marcarSecoes],
   },
   integrations: [
     sitemap({
