@@ -48,11 +48,6 @@ que resolva.
 
 ## Blog
 
-### Análise da empresa
-
-- [MOVVA no Reclame Aqui: o que existe hoje e como conferir](https://movvabrasil.net/blog/movva-reclame-aqui): Em 21/10/2026 não localizei página da operadora no Reclame Aqui: a que aparece é de outra empresa, com outro CNPJ. Veja como checar em quinze minutos.
-  Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
-
 ### Guias práticos
 
 - [Melhor operadora para zona rural: como checar a cobertura real](https://movvabrasil.net/blog/cobertura-zona-rural): Não existe meta de universalização para celular. Veja como conferir a cobertura declarada por prestadora, localidade por localidade, antes de contratar.
@@ -65,6 +60,11 @@ que resolva.
   Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
 - [Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante](https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero): Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada.
   Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
+
+### Análise da empresa
+
+- [MOVVA no Reclame Aqui: o que existe hoje e como conferir](https://movvabrasil.net/blog/movva-reclame-aqui): Em 21/10/2026 não localizei página da operadora no Reclame Aqui: a que aparece é de outra empresa, com outro CNPJ. Veja como checar em quinze minutos.
+  Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
 
 ### Comparações
 
