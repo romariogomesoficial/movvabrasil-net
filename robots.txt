@@ -55,5 +55,9 @@ Disallow: /
 
 User-agent: *
 Allow: /
+# Ferramenta de trabalho, nao conteudo: as pecas prontas para publicar nas
+# redes nao precisam competir em busca de imagem.
+Disallow: /criativo/
+Disallow: /criativos
 
 Sitemap: https://movvabrasil.net/sitemap-index.xml
