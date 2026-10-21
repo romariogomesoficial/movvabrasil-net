@@ -73,17 +73,17 @@ que resolva.
 
 ### Tecnologia e características de plano
 
-- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
-  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
 - [Chip que pega em duas operadoras: o que existe de verdade](https://movvabrasil.net/blog/chip-dois-sinais): Multi-IMSI, eSIM, roaming e dual SIM são quatro coisas diferentes. Veja o que muda para você e como conferir em qual rede o seu chip está.
   Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
+- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
+  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
 
 ### Como funciona uma operadora virtual
 
-- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
-  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
 - [O que é operadora virtual (MVNO) e como funciona no Brasil](https://movvabrasil.net/blog/o-que-e-operadora-virtual): Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar.
   Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre a infraestrutura de uma operadora com antenas e espectro, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
+- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
+  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
 
 ## Números reais do autor como afiliado
 
