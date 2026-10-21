@@ -75,7 +75,7 @@ Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que s
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
-A empresa anuncia, em material comercial, dupla conectividade TIM e Vivo num único chip. Eu não testei, o chip não chegou, e não localizei página pública dela que sustente essa afirmação técnica — quem a repete são blogs de afiliado, que não são fonte aqui. Não valido nem invalido a promessa: entrego o método.
+A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. E eu não testei, porque o chip não chegou. Não valido nem invalido a promessa: entrego o método.
 
 ## Como você confere sozinho quando o chip chegar
 

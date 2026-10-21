@@ -157,8 +157,9 @@ fidelidade e multa](/blog/operadora-sem-fidelidade).
   a revalidar.
 - Qual é o teto de acúmulo em cada operadora, e o que acontece num atraso de
   fatura.
-- Se a MOVVA Brasil acumula franquia e sob quais condições. Não localizei
-  regulamento de oferta em fonte primária; o que a empresa anuncia é da empresa.
+- Sob quais condições a MOVVA acumula. O material oficial da empresa diz
+  "gigas acumulativos infinitos", sem teto e sem ressalva; o regulamento da
+  oferta, que é onde as condições de verdade ficam, eu não localizei.
 
 Onde confirmar: o regulamento da oferta, por escrito, e o 1331.
 
