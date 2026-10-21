@@ -563,100 +563,6 @@ redação do art. 90 retificada no DOU de 26/12/2023. Fontes verificadas em
 
 ---
 
-# Chip que pega em duas operadoras: o que existe de verdade
-
-URL: https://movvabrasil.net/blog/chip-dois-sinais
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
-
-Fontes citadas:
-- ETSI TS 123 003 V19.8.0 (3GPP TS 23.003), cláusulas 2.1 a 2.3 — estrutura do IMSI e alocação de MCC e MNC: https://www.etsi.org/deliver/etsi_ts/123000_123099/123003/19.08.00_60/ts_123003v190800p.pdf
-- ETSI TS 123 122 V19.7.0 (3GPP TS 23.122), cláusulas 1.2, 3.1, 4.4.3 e 4.4.3.3.1 — EHPLMN e seleção de rede: https://www.etsi.org/deliver/etsi_ts/123100_123199/123122/19.07.00_60/ts_123122v190700p.pdf
-- ETSI TS 131 102 V19.6.0 (3GPP TS 31.102), cláusula 4.2.84 — arquivo EF-EHPLMN (6FD9): https://www.etsi.org/deliver/etsi_ts/131100_131199/131102/19.06.00_60/ts_131102v190600p.pdf
-- ETSI TS 122 101 V19.4.0 (3GPP TS 22.101), anexos A.3 e A.4 — nome de rede e de prestador de serviço: https://www.etsi.org/deliver/etsi_ts/122100_122199/122101/19.04.00_60/ts_122101v190400p.pdf
-- ETSI TS 102 223 V18.3.0 — Card Application Toolkit, comando REFRESH: https://www.etsi.org/deliver/etsi_ts/102200_102299/102223/18.03.00_60/ts_102223v180300p.pdf
-- GSMA — eSIM Specification (tabela de versões e datas, consultada em 20/10/2026): https://www.gsma.com/solutions-and-impact/technologies/esim/esim-specification/
-- GSMA SGP.31 — eSIM IoT Architecture and Requirements V1.3 (22/05/2026), seções 1.1, 1.2 e 1.4: https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2026/05/SGP.31-v1.3.pdf
-- Anatel — Ato nº 12712, de 4 de setembro de 2024, Anexo 1, item 16.1 (MNC): https://informacoes.anatel.gov.br/legislacao/component/content/article/154-atos-de-numera%C3%A7%C3%A3o/2140-ato-12712
-- Anatel — Resolução nº 777/2025, Anexo (RGST), arts. 217, 226, 235 e 241: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — Resolução nº 783/2025, Anexo (PGMC), art. 66 — vedação do roaming permanente: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
-- Apple Support — Using Dual SIM with an eSIM (consultada em 20/10/2026): https://support.apple.com/en-us/109317
-- Google — Ajuda do Pixel: how to use dual SIMs on your Google Pixel phone (consultada em 20/10/2026): https://support.google.com/pixelphone/answer/9449293
-
-## Chip que pega em duas operadoras existe?
-
-Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
-
-Transparência, no alto: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo. Abaixo há norma e método.
-
-## As quatro coisas vendidas com esse nome
-
-| O que é | Números | Quem troca | O que muda para você |
-| --- | --- | --- | --- |
-| **Multi-IMSI**: várias identidades no cartão, uma ativa | 1 | o cartão, avisando o aparelho | troca de rede sem você mexer |
-| **eSIM com vários perfis**: perfis de operadora baixados no aparelho | 1 por perfil | você, nas configurações | troca de operadora sem trocar de chip ([o que é eSIM e quais aparelhos aceitam](/blog/esim-ou-chip-fisico)) |
-| **Roaming ou acordo de visitante**: outra rede te atende por contrato | 1 | a rede, pelo contrato | cobertura fora da área da sua operadora |
-| **Dual SIM**: dois chips, duas assinaturas | 2 | você, nas configurações | dois planos, dados numa linha por vez |
-
-Das quatro, dual SIM é a que existe em qualquer loja — e não é "um chip, duas redes". A Apple registra que o iPhone usa uma rede de dados por vez, com SIM físico mais eSIM ou dois eSIM (iPhone 13 em diante). No Android, o DSDS do Google mantém duas linhas em uso e só uma como padrão de dados.
-
-## Por que o aparelho fica numa rede por vez
-
-A identidade gravada no chip aponta para uma rede. É o IMSI: MCC, três dígitos de país; MNC, dois ou três dígitos da rede; e o MSIN. No máximo 15 dígitos, um por assinante.
-
-O par MCC+MNC identifica uma rede, não uma marca. E a escolha é por fila: no modo automático, o aparelho percorre uma lista de redes em ordem de prioridade e fica na primeira disponível e permitida. Duas redes no chip nunca significam duas redes ao mesmo tempo.
-
-## O que acontece dentro do cartão
-
-No multi-IMSI, o cartão guarda mais de uma identidade, ativa uma por vez e avisa o aparelho pelo comando REFRESH. Seu número não muda. Não localizei especificação da GSMA de multi-IMSI, e a norma admite que o aparelho recuse a troca durante uma chamada: troca no meio de uma ligação não é garantida.
-
-Há uma quinta via, padronizada e pouco explicada: a lista de HPLMN equivalentes. Com um IMSI só, as redes dessa lista substituem o código derivado do IMSI na seleção de rede, e vale a equivalente de maior prioridade. É um arquivo opcional do cartão, o EF-EHPLMN (6FD9) — nem todo chip tem.
-
-## O "SIM resiliente" está na norma de IoT
-
-As especificações de eSIM da GSMA são dois conjuntos: SGP.21 e SGP.22, de consumo; SGP.31 e SGP.32, de IoT, cuja V1.3 saiu em 22/05/2026.
-
-O mecanismo que troca de rede quando a atual falha existe como norma, do lado de IoT: a GSMA define o Fallback Mechanism como mecanismo do eUICC que habilita um perfil marcado com o Atributo de Fallback quando o perfil habilitado perde conectividade. O escopo declarado é dispositivo de IoT, não o celular de consumo.
-
-## O que a regra brasileira permite
-
-Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada também pode, com mais de um contrato de compartilhamento (Art. 241, § 2º); o acordo de visitante tem base própria (Art. 226). A diferença entre credenciada e autorizada está [neste post](/blog/o-que-e-operadora-virtual).
-
-Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado acima de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
-
-## Sobre a MOVVA: o que eu posso e não posso dizer
-
-A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. E eu não testei, porque o chip não chegou. Não valido nem invalido a promessa: entrego o método.
-
-## Como você confere sozinho quando o chip chegar
-
-1. **Desconfie do nome na tela.** Por norma, ao menos 10 redes (MCC+MNC) podem exibir o mesmo nome, e o nome gravado no chip tem prioridade sobre o da rede.
-2. **Procure o código numérico.** Não publico tabela por empresa: a lista da ITU que abri é de 15/11/2023. E credenciada não tem código próprio, porque o MNC vai só para quem tem outorga de SMP.
-3. **Aviso de roaming é indício, não prova:** a exibição depende do chip e do fabricante.
-4. **Desligue a seleção automática** e veja onde o chip aceita registrar.
-5. **Conte linhas e perfis:** um número ou dois separa dual SIM de troca dentro do chip.
-6. **Cronometre a volta** num ponto onde uma das redes não pega: pela norma, a primeira tentativa sai entre 2 minutos e T, o tempo configurado, e só com o aparelho em repouso.
-7. **Peça por escrito, com protocolo, qual prestadora de origem suporta o seu acesso.**
-
-## O que eu não consegui confirmar
-
-Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
-
-- **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
-- **Qual mecanismo seria usado, e se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. Pergunte a ela e veja o painel da Anatel.
-- **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
-- **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
-
-## O que isso muda na sua escolha
-
-Troque a pergunta: quais são as duas redes, qual delas suporta o meu acesso, e o que acontece quando a principal cai. Trocar de virtual não cria cobertura nova; levar o número é outro assunto — veja [como funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
-
----
-
-Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial. Nada aqui descreve característica de produto da MOVVA como verificada. Fontes de 20/10/2026.
-
----
-
 # Celular sem sinal dentro de casa: o que fazer antes de trocar
 
 URL: https://movvabrasil.net/blog/celular-sem-sinal-em-casa
@@ -844,6 +750,100 @@ o número](/blog/portabilidade-sem-perder-o-numero) e, com prazo de permanência
 
 Nada aqui descreve característica de produto da MOVVA: é regulação e
 especificação válidas para qualquer operadora. Páginas verificadas em 20/10/2026.
+
+---
+
+# Chip que pega em duas operadoras: o que existe de verdade
+
+URL: https://movvabrasil.net/blog/chip-dois-sinais
+Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
+
+Fontes citadas:
+- ETSI TS 123 003 V19.8.0 (3GPP TS 23.003), cláusulas 2.1 a 2.3 — estrutura do IMSI e alocação de MCC e MNC: https://www.etsi.org/deliver/etsi_ts/123000_123099/123003/19.08.00_60/ts_123003v190800p.pdf
+- ETSI TS 123 122 V19.7.0 (3GPP TS 23.122), cláusulas 1.2, 3.1, 4.4.3 e 4.4.3.3.1 — EHPLMN e seleção de rede: https://www.etsi.org/deliver/etsi_ts/123100_123199/123122/19.07.00_60/ts_123122v190700p.pdf
+- ETSI TS 131 102 V19.6.0 (3GPP TS 31.102), cláusula 4.2.84 — arquivo EF-EHPLMN (6FD9): https://www.etsi.org/deliver/etsi_ts/131100_131199/131102/19.06.00_60/ts_131102v190600p.pdf
+- ETSI TS 122 101 V19.4.0 (3GPP TS 22.101), anexos A.3 e A.4 — nome de rede e de prestador de serviço: https://www.etsi.org/deliver/etsi_ts/122100_122199/122101/19.04.00_60/ts_122101v190400p.pdf
+- ETSI TS 102 223 V18.3.0 — Card Application Toolkit, comando REFRESH: https://www.etsi.org/deliver/etsi_ts/102200_102299/102223/18.03.00_60/ts_102223v180300p.pdf
+- GSMA — eSIM Specification (tabela de versões e datas, consultada em 20/10/2026): https://www.gsma.com/solutions-and-impact/technologies/esim/esim-specification/
+- GSMA SGP.31 — eSIM IoT Architecture and Requirements V1.3 (22/05/2026), seções 1.1, 1.2 e 1.4: https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2026/05/SGP.31-v1.3.pdf
+- Anatel — Ato nº 12712, de 4 de setembro de 2024, Anexo 1, item 16.1 (MNC): https://informacoes.anatel.gov.br/legislacao/component/content/article/154-atos-de-numera%C3%A7%C3%A3o/2140-ato-12712
+- Anatel — Resolução nº 777/2025, Anexo (RGST), arts. 217, 226, 235 e 241: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Resolução nº 783/2025, Anexo (PGMC), art. 66 — vedação do roaming permanente: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
+- Apple Support — Using Dual SIM with an eSIM (consultada em 20/10/2026): https://support.apple.com/en-us/109317
+- Google — Ajuda do Pixel: how to use dual SIMs on your Google Pixel phone (consultada em 20/10/2026): https://support.google.com/pixelphone/answer/9449293
+
+## Chip que pega em duas operadoras existe?
+
+Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
+
+Transparência, no alto: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo. Abaixo há norma e método.
+
+## As quatro coisas vendidas com esse nome
+
+| O que é | Números | Quem troca | O que muda para você |
+| --- | --- | --- | --- |
+| **Multi-IMSI**: várias identidades no cartão, uma ativa | 1 | o cartão, avisando o aparelho | troca de rede sem você mexer |
+| **eSIM com vários perfis**: perfis de operadora baixados no aparelho | 1 por perfil | você, nas configurações | troca de operadora sem trocar de chip ([o que é eSIM e quais aparelhos aceitam](/blog/esim-ou-chip-fisico)) |
+| **Roaming ou acordo de visitante**: outra rede te atende por contrato | 1 | a rede, pelo contrato | cobertura fora da área da sua operadora |
+| **Dual SIM**: dois chips, duas assinaturas | 2 | você, nas configurações | dois planos, dados numa linha por vez |
+
+Das quatro, dual SIM é a que existe em qualquer loja — e não é "um chip, duas redes". A Apple registra que o iPhone usa uma rede de dados por vez, com SIM físico mais eSIM ou dois eSIM (iPhone 13 em diante). No Android, o DSDS do Google mantém duas linhas em uso e só uma como padrão de dados.
+
+## Por que o aparelho fica numa rede por vez
+
+A identidade gravada no chip aponta para uma rede. É o IMSI: MCC, três dígitos de país; MNC, dois ou três dígitos da rede; e o MSIN. No máximo 15 dígitos, um por assinante.
+
+O par MCC+MNC identifica uma rede, não uma marca. E a escolha é por fila: no modo automático, o aparelho percorre uma lista de redes em ordem de prioridade e fica na primeira disponível e permitida. Duas redes no chip nunca significam duas redes ao mesmo tempo.
+
+## O que acontece dentro do cartão
+
+No multi-IMSI, o cartão guarda mais de uma identidade, ativa uma por vez e avisa o aparelho pelo comando REFRESH. Seu número não muda. Não localizei especificação da GSMA de multi-IMSI, e a norma admite que o aparelho recuse a troca durante uma chamada: troca no meio de uma ligação não é garantida.
+
+Há uma quinta via, padronizada e pouco explicada: a lista de HPLMN equivalentes. Com um IMSI só, as redes dessa lista substituem o código derivado do IMSI na seleção de rede, e vale a equivalente de maior prioridade. É um arquivo opcional do cartão, o EF-EHPLMN (6FD9) — nem todo chip tem.
+
+## O "SIM resiliente" está na norma de IoT
+
+As especificações de eSIM da GSMA são dois conjuntos: SGP.21 e SGP.22, de consumo; SGP.31 e SGP.32, de IoT, cuja V1.3 saiu em 22/05/2026.
+
+O mecanismo que troca de rede quando a atual falha existe como norma, do lado de IoT: a GSMA define o Fallback Mechanism como mecanismo do eUICC que habilita um perfil marcado com o Atributo de Fallback quando o perfil habilitado perde conectividade. O escopo declarado é dispositivo de IoT, não o celular de consumo.
+
+## O que a regra brasileira permite
+
+Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada também pode, com mais de um contrato de compartilhamento (Art. 241, § 2º); o acordo de visitante tem base própria (Art. 226). A diferença entre credenciada e autorizada está [neste post](/blog/o-que-e-operadora-virtual).
+
+Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado acima de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
+
+## Sobre a MOVVA: o que eu posso e não posso dizer
+
+A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. E eu não testei, porque o chip não chegou. Não valido nem invalido a promessa: entrego o método.
+
+## Como você confere sozinho quando o chip chegar
+
+1. **Desconfie do nome na tela.** Por norma, ao menos 10 redes (MCC+MNC) podem exibir o mesmo nome, e o nome gravado no chip tem prioridade sobre o da rede.
+2. **Procure o código numérico.** Não publico tabela por empresa: a lista da ITU que abri é de 15/11/2023. E credenciada não tem código próprio, porque o MNC vai só para quem tem outorga de SMP.
+3. **Aviso de roaming é indício, não prova:** a exibição depende do chip e do fabricante.
+4. **Desligue a seleção automática** e veja onde o chip aceita registrar.
+5. **Conte linhas e perfis:** um número ou dois separa dual SIM de troca dentro do chip.
+6. **Cronometre a volta** num ponto onde uma das redes não pega: pela norma, a primeira tentativa sai entre 2 minutos e T, o tempo configurado, e só com o aparelho em repouso.
+7. **Peça por escrito, com protocolo, qual prestadora de origem suporta o seu acesso.**
+
+## O que eu não consegui confirmar
+
+Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
+
+- **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
+- **Qual mecanismo seria usado, e se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. Pergunte a ela e veja o painel da Anatel.
+- **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
+- **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
+
+## O que isso muda na sua escolha
+
+Troque a pergunta: quais são as duas redes, qual delas suporta o meu acesso, e o que acontece quando a principal cai. Trocar de virtual não cria cobertura nova; levar o número é outro assunto — veja [como funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
+
+---
+
+Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial. Nada aqui descreve característica de produto da MOVVA como verificada. Fontes de 20/10/2026.
 
 ---
 
@@ -1439,6 +1439,109 @@ a rede, confira a rede, teste a rede.
 
 ---
 
+# Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante
+
+URL: https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero
+Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
+
+Fontes citadas:
+- Anatel — Portabilidade, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
+- Resolução Anatel nº 777, de 28 de abril de 2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+
+## O prazo
+
+A norma da Anatel estabelece prazo de **até 3 dias úteis** contados do pedido para
+que o processo de portabilidade aconteça, e a conclusão **não pode ultrapassar 5
+dias úteis**. Na prática, muita gente vê a troca acontecer antes disso, mas o que
+vale como direito é o prazo máximo.
+
+## O que acontece com a sua linha durante a troca
+
+Existe uma janela de transição em que o telefone pode ficar sem funcionar. Pela
+regra, ela é de **até 2 horas**. É o único momento em que você fica sem serviço.
+
+Vale planejar: se você depende do telefone para trabalhar, peça a portabilidade
+num dia e horário em que uma eventual parada de duas horas não atrapalhe.
+
+## Quanto custa
+
+**Para você, nada.** O art. 92 do Regulamento Geral dos Serviços de
+Telecomunicações (Resolução 777/2025) põe o custo da portabilidade fora do
+usuário.
+
+O valor de **R$ 4,00 por solicitação** circula em muitos sites como teto fixado
+pela Anatel. **Não localizei o dispositivo que o estabeleça**, então não trato
+como confirmado — e corrigi esta seção depois de encontrar a divergência com
+[o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade), que
+cita o artigo.
+
+Se alguém cobrar taxa de portabilidade de você, peça a base normativa por
+escrito e registre no 1331.
+
+## Dá para desistir?
+
+Sim. Você pode **desistir em até 2 dias úteis** contados da data do pedido, sem
+custo. Depois desse prazo, a portabilidade segue até a conclusão.
+
+## O que você precisa ter em mãos
+
+- O número que vai ser portado
+- CPF ou CNPJ do titular da linha
+- Os dados cadastrais que constam na operadora atual
+
+Um detalhe que pega muita gente: a portabilidade acontece **dentro da mesma área
+de registro**, ou seja, o DDD continua o mesmo. Mudar de DDD não é portabilidade,
+é número novo.
+
+## E se eu estiver devendo?
+
+Aqui eu prefiro ser honesto sobre o limite do que verifiquei. Várias fontes
+secundárias afirmam que dívida não impede a portabilidade, e esse entendimento é
+repetido com frequência. **Não localizei o dispositivo exato da norma que diga
+isso**, então não vou apresentar como fato confirmado.
+
+Se esse for o seu caso, ligue para a **Central de Atendimento da Anatel no 1331**
+e pergunte diretamente. É gratuito, e a resposta vem de quem fiscaliza.
+
+Quando eu conseguir a referência normativa, atualizo esta seção.
+
+## Portabilidade para operadora virtual
+
+Para você, o pedido é igual: você solicita na operadora de destino, que cuida do
+resto junto à sua operadora atual.
+
+A diferença é jurídica, e vale saber. No modelo de credenciamento, a numeração é
+da prestadora de origem (art. 221) e quem contrata passa a ser usuário dela
+(art. 237). Na prática, quem recebe o seu número é a rede hospedeira, com a marca
+da virtual na fatura.
+
+O ponto de atenção não é a portabilidade em si, e sim o que vem depois: confirme
+a cobertura da rede que aquela MVNO utiliza na região onde você mais usa o
+celular. É o que determina sua experiência no dia a dia, muito mais do que o
+plano no papel.
+
+Vale uma precisão jurídica: no modelo de credenciamento, a numeração é da
+prestadora de origem e você passa a ser usuário dela, sob a marca da virtual —
+[os dois modelos estão explicados aqui](/blog/o-que-e-operadora-virtual).
+
+## O que eu não confirmei neste texto
+
+- **O artigo exato de cada prazo.** Os prazos de 3 e 5 dias úteis, as 2 horas de
+  transição e os 2 dias úteis para desistir vêm da página da Anatel e da
+  Resolução 777/2025, mas não localizei o dispositivo individual de cada um.
+  Confirme no 1331 antes de usar como base para reclamação.
+- **Se dívida impede a portabilidade.** Tratado na seção acima.
+
+---
+
+Nota de transparência: este site é mantido por um distribuidor independente da
+MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
+característica de produto da MOVVA como verificada: contratei o plano, o chip
+não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.
+
+---
+
 # Plano de celular sem fidelidade: o que a regra garante
 
 URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
@@ -1605,106 +1708,3 @@ MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
 característica de produto da MOVVA — é regulação que vale para qualquer
 operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
 jurídica.
-
----
-
-# Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante
-
-URL: https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
-
-Fontes citadas:
-- Anatel — Portabilidade, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
-- Resolução Anatel nº 777, de 28 de abril de 2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-
-## O prazo
-
-A norma da Anatel estabelece prazo de **até 3 dias úteis** contados do pedido para
-que o processo de portabilidade aconteça, e a conclusão **não pode ultrapassar 5
-dias úteis**. Na prática, muita gente vê a troca acontecer antes disso, mas o que
-vale como direito é o prazo máximo.
-
-## O que acontece com a sua linha durante a troca
-
-Existe uma janela de transição em que o telefone pode ficar sem funcionar. Pela
-regra, ela é de **até 2 horas**. É o único momento em que você fica sem serviço.
-
-Vale planejar: se você depende do telefone para trabalhar, peça a portabilidade
-num dia e horário em que uma eventual parada de duas horas não atrapalhe.
-
-## Quanto custa
-
-**Para você, nada.** O art. 92 do Regulamento Geral dos Serviços de
-Telecomunicações (Resolução 777/2025) põe o custo da portabilidade fora do
-usuário.
-
-O valor de **R$ 4,00 por solicitação** circula em muitos sites como teto fixado
-pela Anatel. **Não localizei o dispositivo que o estabeleça**, então não trato
-como confirmado — e corrigi esta seção depois de encontrar a divergência com
-[o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade), que
-cita o artigo.
-
-Se alguém cobrar taxa de portabilidade de você, peça a base normativa por
-escrito e registre no 1331.
-
-## Dá para desistir?
-
-Sim. Você pode **desistir em até 2 dias úteis** contados da data do pedido, sem
-custo. Depois desse prazo, a portabilidade segue até a conclusão.
-
-## O que você precisa ter em mãos
-
-- O número que vai ser portado
-- CPF ou CNPJ do titular da linha
-- Os dados cadastrais que constam na operadora atual
-
-Um detalhe que pega muita gente: a portabilidade acontece **dentro da mesma área
-de registro**, ou seja, o DDD continua o mesmo. Mudar de DDD não é portabilidade,
-é número novo.
-
-## E se eu estiver devendo?
-
-Aqui eu prefiro ser honesto sobre o limite do que verifiquei. Várias fontes
-secundárias afirmam que dívida não impede a portabilidade, e esse entendimento é
-repetido com frequência. **Não localizei o dispositivo exato da norma que diga
-isso**, então não vou apresentar como fato confirmado.
-
-Se esse for o seu caso, ligue para a **Central de Atendimento da Anatel no 1331**
-e pergunte diretamente. É gratuito, e a resposta vem de quem fiscaliza.
-
-Quando eu conseguir a referência normativa, atualizo esta seção.
-
-## Portabilidade para operadora virtual
-
-Para você, o pedido é igual: você solicita na operadora de destino, que cuida do
-resto junto à sua operadora atual.
-
-A diferença é jurídica, e vale saber. No modelo de credenciamento, a numeração é
-da prestadora de origem (art. 221) e quem contrata passa a ser usuário dela
-(art. 237). Na prática, quem recebe o seu número é a rede hospedeira, com a marca
-da virtual na fatura.
-
-O ponto de atenção não é a portabilidade em si, e sim o que vem depois: confirme
-a cobertura da rede que aquela MVNO utiliza na região onde você mais usa o
-celular. É o que determina sua experiência no dia a dia, muito mais do que o
-plano no papel.
-
-Vale uma precisão jurídica: no modelo de credenciamento, a numeração é da
-prestadora de origem e você passa a ser usuário dela, sob a marca da virtual —
-[os dois modelos estão explicados aqui](/blog/o-que-e-operadora-virtual).
-
-## O que eu não confirmei neste texto
-
-- **O artigo exato de cada prazo.** Os prazos de 3 e 5 dias úteis, as 2 horas de
-  transição e os 2 dias úteis para desistir vêm da página da Anatel e da
-  Resolução 777/2025, mas não localizei o dispositivo individual de cada um.
-  Confirme no 1331 antes de usar como base para reclamação.
-- **Se dívida impede a portabilidade.** Tratado na seção acima.
-
----
-
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA como verificada: contratei o plano, o chip
-não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.
