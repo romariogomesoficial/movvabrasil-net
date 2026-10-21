@@ -11,7 +11,8 @@
 // conta de celular paga.
 import { linkWhatsApp, ATENDIMENTO, WHATSAPP_VISIVEL } from '../data/contato.js';
 
-const { contexto = 'duvida', mostrarPrograma = true } = Astro.props;
+// mostrarPlanos sai em /planos: cartão que linka para a própria página é ruído.
+const { contexto = 'duvida', mostrarPrograma = true, mostrarPlanos = true } = Astro.props;
 const temHorario = ATENDIMENTO.linhas.length > 0;
 ---
 
@@ -38,16 +39,34 @@ const temHorario = ATENDIMENTO.linhas.length > 0;
     </p>
   </div>
 
-  {mostrarPrograma && (
-    <div class="proximo__secundario">
-      <h3>Veio pelo programa de afiliados?</h3>
-      <p>
-        A página tem a composição da remuneração e os meus números reais, incluindo
-        os meses em que ganhei zero.
-      </p>
-      <p><a href="/oportunidade">Ver o programa e os números</a></p>
-    </div>
-  )}
+  <div class="proximo__secundario">
+    {/* Duas saídas no mesmo cartão, e a ordem importa: quem acabou de ler um
+        texto sobre plano de celular quer preço, não programa de indicação.
+        Antes só existia a segunda, e nenhum post levava à tabela de preços —
+        a página mais comercial do site não recebia um link interno sequer. */}
+    {mostrarPlanos && (
+      <>
+        <h3>Ver preço e franquia</h3>
+        <p>
+          Os cinco planos lado a lado, com preço por giga e o que eu ainda não
+          consegui confirmar sobre cada um.
+        </p>
+        <p><a href="/planos">Ver os planos</a></p>
+      </>
+    )}
+
+    {mostrarPrograma && (
+      <>
+        {mostrarPlanos && <hr class="proximo__risco" />}
+        <h3>Veio pelo programa de afiliados?</h3>
+        <p>
+          A página tem a composição da remuneração e os meus números reais, incluindo
+          os meses em que ganhei zero.
+        </p>
+        <p><a href="/oportunidade">Ver o programa e os números</a></p>
+      </>
+    )}
+  </div>
 </aside>
 
 <style>
@@ -76,4 +95,12 @@ const temHorario = ATENDIMENTO.linhas.length > 0;
   .proximo h2 { font-size: 1.5rem; }
   .proximo h3 { font-size: 1.02rem; }
   .proximo p { margin: 0; }
+  /* Separa as duas saídas sem virar uma segunda caixa: duas caixas lado a lado
+     empurrariam o bloco inteiro para baixo do texto no celular. */
+  .proximo__risco {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 0.3rem 0;
+  }
 </style>
