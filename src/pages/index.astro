@@ -16,11 +16,11 @@ const description =
       <p class="eyebrow">Operadora móvel virtual · Brasil</p>
       <h1>MOVVA Brasil, explicada com documento na mão</h1>
       <p class="answer">
-        A MOVVA Brasil é uma operadora móvel virtual (MVNO) que vende planos de
-        celular e remunera afiliados por indicação. A empresa tem CNPJ ativo desde
+        A MOVVA Brasil se apresenta como operadora móvel virtual e vende planos de
+        celular, remunerando afiliados por indicação. A empresa tem CNPJ ativo desde
         2017 e recebeu autorização da Anatel em julho de 2026 para explorar serviços
-        de telecomunicações em todo o país. O serviço roda sobre infraestrutura de
-        terceiros, por contrato de parceria.
+        de telecomunicações em todo o país. Esse ato não diz, por si, em qual modelo
+        de rede virtual ela opera — isso eu ainda não confirmei.
       </p>
     </header>
 
@@ -42,8 +42,6 @@ const description =
             <tr><td>Autorização Anatel</td><td>{EMPRESA.atoAnatel}</td></tr>
             <tr><td>Processo SEI</td><td class="num">{EMPRESA.processoSei}</td></tr>
             <tr><td>Alteração na Junta Comercial</td><td class="num">JUCESP {EMPRESA.jucesp}</td></tr>
-            <tr><td>Parceiro de rede móvel</td><td>{EMPRESA.parceiroSmp}</td></tr>
-            <tr><td>Infraestrutura</td><td>{EMPRESA.infraestrutura}</td></tr>
           </tbody>
         </table>
       </div>
@@ -67,6 +65,12 @@ const description =
         <li><strong>Sem fidelidade</strong> — sem multa por cancelamento.</li>
         <li><strong>Portabilidade</strong> — possibilidade de levar o número atual.</li>
         <li><strong>MOVVA Club</strong> — clube de benefícios e descontos.</li>
+        <li>
+          <strong>A cadeia de rede</strong> — o dossiê da empresa cita contrato com a
+          {' '}{EMPRESA.parceiroSmp}, sobre infraestrutura da {EMPRESA.infraestrutura}.
+          Isso está no documento dela, não em registro público que eu tenha conseguido
+          abrir. E o material comercial fala em TIM e Vivo, que é outra coisa.
+        </li>
       </ul>
       <div class="card card--warn">
         <h3>Por que eu não afirmo nada disso ainda</h3>

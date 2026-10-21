@@ -29,9 +29,18 @@ num dia e horário em que uma eventual parada de duas horas não atrapalhe.
 
 ## Quanto custa
 
-A Anatel fixa um **valor máximo de R$ 4,00 por solicitação**, e boa parte das
-operadoras isenta o consumidor dessa cobrança. Se alguém tentar te cobrar um
-valor maior por "taxa de portabilidade", isso está fora da norma.
+**Para você, nada.** O art. 92 do Regulamento Geral dos Serviços de
+Telecomunicações (Resolução 777/2025) põe o custo da portabilidade fora do
+usuário.
+
+O valor de **R$ 4,00 por solicitação** circula em muitos sites como teto fixado
+pela Anatel. **Não localizei o dispositivo que o estabeleça**, então não trato
+como confirmado — e corrigi esta seção depois de encontrar a divergência com
+[o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade), que
+cita o artigo.
+
+Se alguém cobrar taxa de portabilidade de você, peça a base normativa por
+escrito e registre no 1331.
 
 ## Dá para desistir?
 
@@ -70,3 +79,22 @@ O ponto de atenção não é a portabilidade em si, e sim o que vem depois: conf
 a cobertura da rede que aquela MVNO utiliza na região onde você mais usa o
 celular. É o que determina sua experiência no dia a dia, muito mais do que o
 plano no papel.
+
+Vale uma precisão jurídica: no modelo de credenciamento, a numeração é da
+prestadora de origem e você passa a ser usuário dela, sob a marca da virtual —
+[os dois modelos estão explicados aqui](/blog/o-que-e-operadora-virtual).
+
+## O que eu não confirmei neste texto
+
+- **O artigo exato de cada prazo.** Os prazos de 3 e 5 dias úteis, as 2 horas de
+  transição e os 2 dias úteis para desistir vêm da página da Anatel e da
+  Resolução 777/2025, mas não localizei o dispositivo individual de cada um.
+  Confirme no 1331 antes de usar como base para reclamação.
+- **Se dívida impede a portabilidade.** Tratado na seção acima.
+
+---
+
+Nota de transparência: este site é mantido por um distribuidor independente da
+MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
+característica de produto da MOVVA como verificada: contratei o plano, o chip
+não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.

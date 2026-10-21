@@ -1,16 +1,20 @@
 ---
 import Base from '../layouts/Base.astro';
 import { AUTOR, SITE } from '../data/site.js';
+import { MEDINDO } from '../data/medicao.js';
 
 const atualizadoEm = '2026-10-20';
 const title = 'Política de privacidade';
 const description =
   'Quais dados este site coleta, por que coleta e como exercer seus direitos sob a LGPD.';
 
-// ATENCAO: esta politica descreve o site como ele esta HOJE - estatico, sem
-// formulario e sem analytics. Se voce adicionar captura de e-mail, WhatsApp,
-// pixel do Meta ou Google Analytics, ATUALIZE esta pagina ANTES de publicar o
-// formulario. Politica desatualizada e passivo sob a LGPD.
+// A secao de medicao le a mesma variavel que liga o script, em
+// src/data/medicao.js. Entao a politica nunca fica defasada: no instante em que
+// a medicao e ligada, o texto correspondente passa a aparecer aqui, no mesmo
+// build. Isso cumpre a promessa feita no fim desta pagina.
+//
+// ATENCAO: isso cobre a medicao. Se voce adicionar captura de e-mail,
+// formulario ou pixel de anuncio, ATUALIZE esta pagina ANTES de publicar.
 ---
 
 <Base {title} {description} path="/politica-de-privacidade" {atualizadoEm}>
@@ -49,6 +53,35 @@ const description =
         navegador faz uma requisição aos servidores do Google, que pode registrar seu
         endereço IP.
       </p>
+    </section>
+
+    <section class="stack">
+      <h2>Medição de audiência</h2>
+      {MEDINDO ? (
+        <>
+          <p>
+            Este site mede quantas pessoas visitam cada página, usando o
+            <strong> Cloudflare Web Analytics</strong>. Ele foi escolhido por um motivo
+            específico: <strong>não usa cookie</strong>, não guarda identificador do
+            visitante e não cruza o seu comportamento com o de outros sites.
+          </p>
+          <p>
+            O que é registrado é agregado: página acessada, de onde veio o acesso,
+            tipo de dispositivo e país. Não há como, a partir disso, identificar você
+            nem reconhecê-lo numa próxima visita.
+          </p>
+          <p>
+            Por não usar cookie nem tratar dado pessoal para essa finalidade, não há
+            consentimento a pedir — e é por isso que este site não exibe banner.
+          </p>
+        </>
+      ) : (
+        <p>
+          <strong>Nenhuma ferramenta de medição está ativa.</strong> Este site não conta
+          visitas, não usa cookie e não carrega script de análise de audiência. Se isso
+          mudar, esta seção passa a descrever a ferramenta antes de a coleta começar.
+        </p>
+      )}
     </section>
 
     <section class="stack">

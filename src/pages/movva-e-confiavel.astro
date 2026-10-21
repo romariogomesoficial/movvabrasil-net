@@ -15,11 +15,11 @@ const faq = [
   },
   {
     p: 'A MOVVA tem autorização da Anatel?',
-    r: `Sim. O ${EMPRESA.atoAnatel} autorizou a MOVVA a explorar Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito, por prazo indeterminado, em todo o território nacional. O processo é o ${EMPRESA.processoSei} e pode ser consultado publicamente no sistema SEI da Anatel.`,
+    r: `Sim. O ${EMPRESA.atoAnatel} autorizou a MOVVA a explorar Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito, por prazo indeterminado, em todo o território nacional. O processo é o ${EMPRESA.processoSei} e pode ser consultado publicamente no sistema SEI da Anatel. Uma ressalva que importa: esse ato autoriza serviços de telecomunicações, mas não diz, por si, em qual dos dois modelos de rede virtual da Resolução 777/2025 a empresa opera — credenciada ou autorizada. Isso eu não confirmei.`,
   },
   {
     p: 'A MOVVA é uma pirâmide financeira?',
-    r: 'A MOVVA vende um produto real e regulado, o que a diferencia de um esquema sem produto. O ponto de atenção não é a existência do produto, e sim de onde vem o dinheiro das comissões: se a maior parte nasce de pessoas entrando e pagando licença, e não de contas de celular sendo pagas mês a mês, a estrutura se aproxima do que a Lei 1.521/51 trata como cadeia. Isso é mensurável, e nesta página eu publico a minha própria medição.',
+    r: 'A MOVVA vende plano de celular, que é serviço regulado pela Anatel — isso a diferencia de um esquema sem produto. Ressalva: eu ainda não recebi o chip, então não testei o serviço. O ponto de atenção não é a existência do produto, e sim de onde vem o dinheiro das comissões: se a maior parte nasce de pessoas entrando e pagando licença, e não de contas de celular sendo pagas mês a mês, a estrutura se aproxima do que a Lei 1.521/51 trata como cadeia. Isso é mensurável, e nesta página eu publico a minha própria medição.',
   },
   {
     p: 'Quanto custa entrar na MOVVA?',
@@ -80,8 +80,24 @@ const schemaFaq = {
         <li><strong>Autorização regulatória:</strong> {EMPRESA.atoAnatel}, para serviços de interesse coletivo e restrito, prazo indeterminado, território nacional.</li>
         <li><strong>Processo público:</strong> {EMPRESA.processoSei}, consultável no SEI da Anatel por qualquer cidadão.</li>
         <li><strong>Alteração societária:</strong> registrada na Junta Comercial de São Paulo sob JUCESP {EMPRESA.jucesp}.</li>
-        <li><strong>Operação de rede:</strong> contrato de parceria com a {EMPRESA.parceiroSmp}, credenciada para comercializar Serviço Móvel Pessoal sobre infraestrutura da {EMPRESA.infraestrutura}.</li>
       </ul>
+      <div class="card card--warn">
+        <h3>O que eu tirei desta lista, e por quê</h3>
+        <p>
+          A cadeia de rede — contrato com a {EMPRESA.parceiroSmp} sobre infraestrutura
+          da {EMPRESA.infraestrutura} — <strong>saiu daqui</strong>. Ela consta no dossiê
+          da própria empresa, e eu não consegui abrir registro público que a comprove.
+          Documento da empresa sobre ela mesma não é registro verificável, e manter isso
+          numa lista chamada "o que é verificável" seria o erro que este site existe
+          para apontar.
+        </p>
+        <p>
+          Some-se a isso que o material comercial anuncia <strong>TIM e Vivo</strong>,
+          que não é a mesma cadeia. As duas versões não fecham, e eu não tenho documento
+          que resolva. Peça por escrito, com protocolo, qual prestadora de origem suporta
+          o seu acesso.
+        </p>
+      </div>
       <p>
         Isso coloca a MOVVA numa categoria concreta: operadora móvel virtual. É um
         mercado real e em expansão no Brasil — segundo a Teleco, os chips de MVNOs

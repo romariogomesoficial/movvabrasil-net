@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
 import { urlDoCartao } from '../data/og.js';
+import { CLOUDFLARE_TOKEN, MEDINDO } from '../data/medicao.js';
 
 const {
   title,
@@ -121,6 +122,15 @@ const dataLegivel = atualizadoEm
   {schemas.map((s) => (
     <script type="application/ld+json" set:html={JSON.stringify(s)} />
   ))}
+
+  {/* Medicao sem cookie. Nao carrega nada enquanto o token estiver vazio. */}
+  {MEDINDO && (
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon={JSON.stringify({ token: CLOUDFLARE_TOKEN })}
+    />
+  )}
 </head>
 <body>
 
