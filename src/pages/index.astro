@@ -47,9 +47,14 @@ const PLANOS = [
   { nome: 'Ultra',   gb: 50, preco: '126,90', nota: 'Para quem consome muito dado' },
 ];
 
-// Os seis diferenciais que a MOVVA publica no documento oficial "Diferenciais
-// planos de telefonia MOVVA". São seis, exatamente estes, e estão escritos aqui
-// como a empresa os publica — sem selo de dúvida.
+// Os diferenciais que a MOVVA publica no documento oficial "Diferenciais
+// planos de telefonia MOVVA", escritos aqui como a empresa os publica — sem
+// selo de dúvida.
+//
+// O documento lista seis. Aqui ficam os cinco de PRODUTO. O sexto, "cliente
+// pode zerar a conta de celular", é o programa de indicação: ele mora em
+// /oportunidade, com os números reais, e fora da home de propósito — esta
+// página fala de plano de celular, e é isso que a mantém anunciável no Meta.
 //
 // Uma versão anterior marcava cinco deles com "A empresa anuncia". Era excesso
 // de zelo que virava defeito: cinco avisos de dúvida seguidos fazem o leitor
@@ -88,12 +93,6 @@ const BENEFICIOS = [
   {
     titulo: 'MOVVA Club',
     texto: 'Clube de benefícios incluído no plano, com descontos e cashback, sem custo separado.',
-  },
-  {
-    titulo: 'Dá para zerar a conta',
-    texto: 'Indicando outras pessoas, o desconto pode cobrir a sua mensalidade inteira. É diferencial de plano, não promessa de renda.',
-    link: '/oportunidade',
-    linkRotulo: 'Como funciona, com os meus números reais',
   },
 ];
 ---
@@ -231,8 +230,8 @@ const BENEFICIOS = [
       <header class="cabeca">
         <h2>O que vem no plano</h2>
         <p class="lede">
-          Os seis diferenciais que a MOVVA publica no material oficial de planos.
-          Valem em todos — entre um plano e outro muda só a franquia de dados.
+          Os diferenciais de produto que a MOVVA publica no material oficial de
+          planos. Valem em todos — entre um plano e outro muda só a franquia de dados.
         </p>
       </header>
 
@@ -561,10 +560,26 @@ const BENEFICIOS = [
   .passo p { font-size: 0.92rem; color: var(--muted); }
 
   /* ---------------- 3. benefícios ---------------- */
+  /* Colunas explícitas em vez de auto-fit, porque com cinco cartões o número
+     de colunas decide se o último fica sozinho — e isso precisa ser previsível
+     para o CSS poder corrigir. */
   .beneficios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  @media (min-width: 34rem) {
+    .beneficios { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    /* Em duas colunas são 2 + 2 + 1: o último sobra sozinho e o vão ao lado
+       dele lê como se um cartão não tivesse carregado. Ocupando a linha
+       inteira, a falta vira decisão. */
+    .beneficio:last-child { grid-column: 1 / -1; }
+  }
+  @media (min-width: 58rem) {
+    .beneficios { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    /* Em três colunas são 3 + 2: o último divide a linha com o quarto e não
+       precisa de tratamento. */
+    .beneficio:last-child { grid-column: auto; }
   }
   .beneficio {
     display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start;
