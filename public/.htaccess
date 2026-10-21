@@ -55,9 +55,14 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# Tira a barra final, exceto na raiz.
-# Sem condicao de diretorio de proposito: /blog/ precisa virar /blog, e /blog
-# tambem e uma pasta.
+# A pasta _astro guarda so os CSS, que sao pedidos pelo caminho completo.
+# Sem isto, /_astro entra em laco de redirecionamento com o mod_dir.
+RewriteRule ^_astro/?$ - [F,L]
+
+# Tira a barra final, mas SO quando existe a pagina correspondente.
+# Sem a condicao, /_astro/ virava /_astro, o Apache devolvia a barra, e os dois
+# ficavam se redirecionando em laco infinito.
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # Serve o arquivo .html sem mostrar a extensao.
