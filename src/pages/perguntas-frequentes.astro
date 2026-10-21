@@ -84,10 +84,13 @@ const schemaExtra = schemaFaq(TODAS);
               <summary>{q.p}</summary>
               <div class="qa__corpo">
                 <p>{q.r}</p>
-                {(q.onde ?? q.paginas?.[0]) && (
+                {/* O destino é a página que trata o assunto a fundo, nunca a
+                    home: cinco destas perguntas também aparecem lá, e mandar o
+                    leitor da central para a home é devolvê-lo ao começo. */}
+                {(q.onde ?? q.paginas?.find((p) => p !== '/')) && (
                   <p class="qa__onde">
-                    <a href={q.onde ?? q.paginas[0]}>
-                      {q.ondeRotulo ?? ROTULO_PAGINA[q.paginas?.[0]] ?? 'Ver a página'}
+                    <a href={q.onde ?? q.paginas.find((p) => p !== '/')}>
+                      {q.ondeRotulo ?? ROTULO_PAGINA[q.paginas?.find((p) => p !== '/')] ?? 'Ver a página'}
                     </a>
                   </p>
                 )}

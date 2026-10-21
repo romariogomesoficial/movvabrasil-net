@@ -28,6 +28,12 @@ const porGiga = (p) => (p.precoNumero / p.gb).toFixed(2).replace('.', ',');
 // nao um valor so, porque "quanto se ganha" cabe tanto na analise da empresa
 // quanto na pagina do programa, e duplicar a entrada traria de volta
 // exatamente o problema que este arquivo resolve.
+//
+// A ORDEM da lista importa: a central manda o leitor para a primeira pagina
+// que nao seja a home. Por isso as perguntas de dinheiro comecam por
+// /oportunidade, que e onde estao os numeros, e nao pela analise da empresa.
+// A home aparece em algumas, sempre na frente, e e justamente a que a central
+// pula — mandar da central para a home e devolver o leitor ao comeco.
 export const PERGUNTAS = [
   // ---------------------------------------------------------------- empresa
   {
@@ -37,7 +43,7 @@ export const PERGUNTAS = [
     r: `Sim. ${EMPRESA.razaoSocial}, CNPJ ${EMPRESA.cnpj}, constituída em ${EMPRESA.constituicao}, com situação cadastral ativa na Receita Federal. A empresa existe formalmente desde antes de entrar no setor de telecomunicações.`,
   },
   {
-    paginas: ['/movva-e-confiavel'],
+    paginas: ['/', '/movva-e-confiavel'],
     tema: 'A empresa',
     p: 'A MOVVA tem autorização da Anatel?',
     r: `Sim. O ${EMPRESA.atoAnatel} autorizou a MOVVA a explorar Serviços de Telecomunicações de Interesse Coletivo e de Interesse Restrito, por prazo indeterminado, em todo o território nacional. O processo é o ${EMPRESA.processoSei} e pode ser consultado publicamente no sistema SEI da Anatel. Uma ressalva que importa: esse ato autoriza serviços de telecomunicações, mas não diz, por si, em qual dos dois modelos de rede virtual da Resolução 777/2025 a empresa opera — credenciada ou autorizada. Isso eu não confirmei.`,
@@ -57,7 +63,7 @@ export const PERGUNTAS = [
 
   // ------------------------------------------------------------------ plano
   {
-    paginas: ['/planos'],
+    paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Quanto custa o plano da MOVVA?',
     r: `Os planos da MOVVA vão de R$ ${MENOR.preco} por ${MENOR.gb} GB a R$ ${MAIOR.preco} por ${MAIOR.gb} GB, em cinco faixas. O ${RECOMENDADO.nome}, de ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco}, é o que eu mais indico. Valores conferidos em ${fmtData(CONFERIDO_EM)} em material de divulgação da rede de distribuidores, não em documento da própria MOVVA; confirme o preço vigente na página de contratação antes de pagar.`,
@@ -69,7 +75,7 @@ export const PERGUNTAS = [
     r: `O ${MAIOR.nome}, de ${MAIOR.gb} GB, sai a R$ ${porGiga(MAIOR)} por giga — o menor da tabela. Mas preço por giga só importa se você usar a franquia: um plano de ${MAIOR.gb} GB para quem gasta ${MENOR.gb} GB é mais caro na prática, não mais barato.`,
   },
   {
-    paginas: ['/planos'],
+    paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Os planos da MOVVA têm fidelidade?',
     r: 'Não. O documento oficial de diferenciais da MOVVA lista "não tem fidelidade" entre as características dos planos, sem prazo mínimo de permanência nem multa para sair.',
@@ -81,13 +87,13 @@ export const PERGUNTAS = [
     r: 'O documento oficial da MOVVA lista "gigas acumulativos infinitos" entre os diferenciais dos planos. O que eu não consegui confirmar é por quanto tempo o saldo acumulado fica válido — não localizei o contrato que fixe esse prazo.',
   },
   {
-    paginas: ['/planos'],
+    paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Qual rede o chip da MOVVA usa?',
     r: 'O documento oficial descreve dupla conectividade: duas redes num chip só, TIM e VIVO, com o aparelho usando a que estiver melhor no local. ' + CHIP.frase,
   },
   {
-    paginas: ['/planos'],
+    paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Dá para levar o meu número para a MOVVA?',
     r: 'Dá. A portabilidade numérica é direito garantido pela Anatel e vale para qualquer operadora, inclusive as virtuais. O número continua seu; muda a empresa que presta o serviço.',
@@ -95,25 +101,25 @@ export const PERGUNTAS = [
 
   // --------------------------------------------------------------- programa
   {
-    paginas: ['/movva-e-confiavel', '/oportunidade'],
+    paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quanto custa entrar na MOVVA?',
     r: 'Existe um cadastro de afiliado e uma licença VIP paga, que dobra as comissões e a pontuação do plano de carreira. Além disso, para ter o serviço, você contrata um plano mensal e paga o chip mais o frete. Peça os valores vigentes por escrito, com protocolo, e confira na própria página de contratação antes de pagar — eles já mudaram desde o material de lançamento.',
   },
   {
-    paginas: ['/movva-e-confiavel', '/oportunidade'],
+    paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quanto se ganha na MOVVA?',
     r: 'Não existe ganho garantido. Nos meus primeiros três meses e meio como afiliado VIP, com oito pessoas na rede, eu gerei R$ 146,08 em comissões e recebi R$ 115,43 líquidos após a taxa de saque. Em outubro meu ganho foi R$ 0,00, contra um custo de plano de R$ 159,80 por mês. Desconfie de qualquer número de projeção baseado em matriz cheia.',
   },
   {
-    paginas: ['/movva-e-confiavel', '/oportunidade'],
+    paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'O plano de compensação pode mudar?',
     r: 'Pode, e já mudou. No meu próprio extrato existe uma linha identificada como "Bônus Matching (antigo)", o que indica que a regra de matching sob a qual eu entrei foi alterada. Considere isso antes de montar qualquer planejamento de longo prazo.',
   },
   {
-    paginas: ['/movva-e-confiavel', '/oportunidade'],
+    paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quantas pessoas realmente ganham dinheiro com isso?',
     r: 'O material de treinamento da própria MOVVA apresenta esta proporção: de 200 pessoas convidadas, cerca de 100 conhecem o negócio, 10 entram, 6 ficam, 3 continuam e 1 se destaca. Isso é 0,5%. Qualquer número de ganho precisa ser lido junto dessa proporção.',

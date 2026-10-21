@@ -28,7 +28,14 @@ import { Image } from 'astro:assets';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
 import { EMPRESA, CHIP } from '../data/site.js';
 import { PLANOS, RECOMENDADO } from '../data/planos.js';
+import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 import { linkWhatsApp } from '../data/contato.js';
+
+// As cinco objeções de quem está decidindo trocar de operadora: preço, rede,
+// fidelidade, portabilidade e autorização. Vêm de src/data/perguntas.js, as
+// mesmas que a central e as páginas de dentro usam — a home não tem redação
+// própria para elas, senão a mesma pergunta teria duas respostas.
+const FAQ_HOME = perguntasDe('/');
 
 const atualizadoEm = '2026-10-21';
 
@@ -104,7 +111,7 @@ const BENEFICIOS = [
 ];
 ---
 
-<Base {title} {description} path="/" {atualizadoEm} tipo="website" tema="escuro">
+<Base {title} {description} path="/" {atualizadoEm} tipo="website" tema="escuro" schemaExtra={schemaFaq(FAQ_HOME)}>
 
   <!-- ===================== 1. PRIMEIRA TELA ===================== -->
   <section class="hero">
@@ -402,6 +409,34 @@ const BENEFICIOS = [
     </div>
   </section>
 
+  <!-- ===================== 7. PERGUNTAS ===================== -->
+  <section id="perguntas">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>O que me perguntam antes de trocar</h2>
+        <p class="lede">
+          As cinco dúvidas que aparecem em toda conversa. A resposta inteira de
+          cada uma, sem rodeio.
+        </p>
+      </header>
+
+      <div class="perguntas">
+        {FAQ_HOME.map((i) => (
+          <details class="qa">
+            <summary>{i.p}</summary>
+            <p>{i.r}</p>
+          </details>
+        ))}
+      </div>
+
+      <p class="meta-line">
+        <a href="/perguntas-frequentes">Ver as 25 perguntas</a> — empresa, preço,
+        cobertura, portabilidade e programa de afiliados, cada uma com o link de
+        onde a resposta foi conferida.
+      </p>
+    </div>
+  </section>
+
   <section>
     <div class="wrap wrap--wide">
       <ProximoPasso contexto="plano" />
@@ -628,6 +663,18 @@ const BENEFICIOS = [
   /* O link precisa de elemento próprio: dentro da string de texto o Astro
      escaparia a tag e a pessoa leria o HTML cru. */
   .beneficio__link { font-size: 0.86rem; margin-top: auto; padding-top: 0.2rem; }
+
+  /* ---------------- 7. perguntas ---------------- */
+  .perguntas { display: grid; gap: 0.6rem; }
+  .qa {
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0.9rem 1.1rem;
+  }
+  .qa summary { cursor: pointer; font-weight: 600; }
+  .qa[open] summary { color: var(--accent); margin-bottom: 0.55rem; }
+  .qa p { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
   /* ---------------- 5. planos ---------------- */
   /* A reserva para o cabeçalho sticky é o scroll-padding-top do html, no
