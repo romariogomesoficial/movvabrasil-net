@@ -261,14 +261,16 @@ const dataLegivel = atualizadoEm
       backdrop-filter: saturate(1.6) blur(14px);
     }
   }
-  /* O fio de espectro embaixo da barra: a única linha colorida do cabeçalho. */
+  /* O fio verde embaixo da barra: a única linha colorida do cabeçalho. Era
+     degradê; virou cor chapada porque um degradê de 1px não se lê como
+     degradê — só soma mais um gradiente à página. */
   .cabecalho::after {
     content: "";
     position: absolute;
     inset: auto 0 -1px;
     height: 1px;
-    background: var(--grad-sinal);
-    opacity: 0.55;
+    background: var(--accent);
+    opacity: 0.5;
   }
   .cabecalho__linha {
     display: flex;
@@ -288,7 +290,11 @@ const dataLegivel = atualizadoEm
   }
   .marca__logo { height: 26px; width: auto; display: block; }
   /* O ".net" é pequeno e em mono: lê como o fim de um endereço, que é o que
-     é — e é o que separa este site do movvabrasil.com, o oficial. */
+     é — e é o que separa este site do movvabrasil.com, o oficial.
+     É o único texto da interface que usa o verde do LOGOTIPO, e só onde ele
+     passa em contraste: colado no logotipo, uma tonalidade diferente se nota.
+     No tema claro o #00D500 daria 2:1 sobre branco, então ali vale o verde de
+     interface — longe o bastante do logotipo preto para ninguém comparar. */
   .marca__tld {
     font-family: var(--mono);
     font-size: 0.82rem;
@@ -300,10 +306,13 @@ const dataLegivel = atualizadoEm
   /* Logotipo preto no tema claro, branco no escuro. Na home, que leva
      body.escuro, é sempre o branco: ali o escuro é decisão de direção e não
      depende da preferência de quem lê. */
+  body.escuro .marca__tld { color: var(--marca); }
+
   .marca__logo--escuro { display: none; }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) .marca__logo--claro { display: none; }
     :root:not([data-theme="light"]) .marca__logo--escuro { display: block; }
+    :root:not([data-theme="light"]) .marca__tld { color: var(--marca); }
   }
   :root[data-theme="dark"] .marca__logo--claro { display: none; }
   :root[data-theme="dark"] .marca__logo--escuro { display: block; }

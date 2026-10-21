@@ -174,9 +174,9 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
      (5,5 a 6,2 para o rótulo branco) e acende no escuro (9 a 13,9), mantendo
      as três faixas legíveis nos dois temas. */
   .figura { --b1: #077A28; --b2: #0A6E2E; --b3: #06603C; }
-  :global(body.escuro) .figura { --b1: #00F600; --b2: #00D500; --b3: #00A83F; }
+  :global(body.escuro) .figura { --b1: #4FE06A; --b2: #19C63C; --b3: #0E8A3A; }
   @media (prefers-color-scheme: dark) {
-    :global(:root:not([data-theme="light"])) .figura { --b1: #00F600; --b2: #00D500; --b3: #00A83F; }
+    :global(:root:not([data-theme="light"])) .figura { --b1: #4FE06A; --b2: #19C63C; --b3: #0E8A3A; }
   }
 
   /* As tres faixas correm sobre a mesma rampa, que atravessa a barra inteira,

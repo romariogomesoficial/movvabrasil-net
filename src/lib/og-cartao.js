@@ -59,13 +59,16 @@ const COR = {
   tinta: '#F5F5F5',
   mudo: '#7F92A0',
   regua: '#18222C',
-  acento: '#00D500',
+  /* O verde de interface, nao o do logotipo: o #00D500 tem saturacao 0,257 em
+     OKLCH e sobre preto ele vibra. O logotipo da MOVVA nao entra neste cartao,
+     entao nao ha com o que casar. */
+  acento: '#19C63C',
 };
 
 // A rampa de espectro do site. Em satori vai como backgroundImage: borda em
 // gradiente nao existe aqui, entao cada filete e uma div com o degrade dentro.
-const RAMPA = 'linear-gradient(180deg, #00F600 0%, #00D500 50%, #00A83F 100%)';
-const RAMPA_H = 'linear-gradient(90deg, #00F600 0%, #00D500 48%, #00A83F 100%)';
+const RAMPA = 'linear-gradient(180deg, #4FE06A 0%, #19C63C 50%, #0E8A3A 100%)';
+const RAMPA_H = 'linear-gradient(90deg, #4FE06A 0%, #19C63C 48%, #0E8A3A 100%)';
 
 export const LARGURA = 1200;
 export const ALTURA = 630;
