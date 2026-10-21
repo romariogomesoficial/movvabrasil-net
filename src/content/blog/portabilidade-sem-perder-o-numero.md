@@ -6,8 +6,8 @@ cluster: dor
 publicado: 2026-10-20
 atualizado: 2026-10-20
 fontes:
-  - rotulo: "Anatel — Portabilidade, direitos do consumidor"
-    url: "https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade"
+  - rotulo: "Anatel — Portabilidade na telefonia móvel, direitos do consumidor"
+    url: "https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/portabilidade"
   - rotulo: "Resolução Anatel nº 777, de 28 de abril de 2025"
     url: "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777"
 ---
