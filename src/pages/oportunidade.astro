@@ -3,6 +3,15 @@ import Base from '../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { LINK_AFILIADO } from '../data/site.js';
 import { perguntasDe, schemaFaq } from '../data/perguntas.js';
+import { PLANOS, CONFERIDO_EM } from '../data/planos.js';
+
+// A data da conferência da tabela de preços vem de planos.js, como o preço:
+// esta página cita o valor do plano, e citar o número sem a data de quando ele
+// foi conferido é o que faz preço virar promessa.
+const fmtData = (iso) =>
+  new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', {
+    day: '2-digit', month: 'long', year: 'numeric',
+  });
 
 // Os treze PINs oficiais de graduação, na ordem da escada. Os nomes vêm dos
 // próprios medalhões, que são material da empresa — por isso os nomes entram
@@ -90,18 +99,120 @@ const description =
 
     <section class="stack">
       <h2>Como a remuneração é composta</h2>
-      <ul>
-        <li><strong>Bônus de adesão</strong> — percentual sobre a entrada de quem você indica.</li>
-        <li><strong>Bônus de recorrência</strong> — percentual sobre a mensalidade, enquanto a pessoa continua pagando.</li>
-        <li><strong>Bônus de matriz</strong> — percentual sobre movimentação nos níveis da sua matriz.</li>
-        <li><strong>Matching</strong> — percentual sobre o que seus diretos ganham.</li>
-        <li><strong>Licença VIP</strong> — licença paga que dobra os ganhos e a pontuação do plano de carreira.</li>
-        <li><strong>GoldPoints</strong> — pontuação que destrava graduações e premiações.</li>
-      </ul>
-      <p class="meta-line">
-        Os percentuais e os valores mudam. Confirme sempre no material oficial e
-        vigente da empresa, não em PDF antigo circulando em grupo de WhatsApp.
+      <p>
+        A empresa publica três valores, e eles dobram para quem paga a licença
+        VIP. Estão no documento oficial “Diferenciais planos de telefonia
+        MOVVA”, que é material da própria MOVVA — não é dado meu nem boato de
+        grupo.
       </p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>De onde vem</th>
+              <th class="num">Sem licença</th>
+              <th class="num">Com licença VIP</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Indicação direta, por plano indicado</td>
+              <td class="num">R$ 5,00</td>
+              <td class="num">R$ 10,00</td>
+            </tr>
+            <tr>
+              <td>Matriz global, sobre os planos da sua matriz</td>
+              <td class="num">0,5%</td>
+              <td class="num">1%</td>
+            </tr>
+            <tr>
+              <td>Matching, sobre o que o seu direto ganha na matriz</td>
+              <td class="num">50%</td>
+              <td class="num">100%</td>
+            </tr>
+            <tr>
+              <td>Pontuação do plano de carreira</td>
+              <td class="num">normal</td>
+              <td class="num">dobrada</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Repare no que a primeira linha significa: a indicação direta é
+        <strong>por plano de telefonia</strong>, e ela só começa a pagar quando
+        a pessoa indicada está de fato pagando uma conta de celular. É por isso
+        que a minha linha de recorrência está em R$ 0,00 na tabela mais abaixo
+        — a rede existe, os planos ainda não estavam rodando.
+      </p>
+
+      <p class="meta-line">
+        A empresa cita ainda <strong>bônus de adesão</strong> e
+        <strong>GoldPoints</strong>, que destravam graduações e premiações. Os
+        valores desses dois eu não localizei em documento, então não publico
+        número. Percentual e valor mudam: confirme sempre no material oficial e
+        vigente, não em PDF antigo circulando em grupo de WhatsApp.
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Quanto custa entrar, e o que eu não consegui documentar</h2>
+      <p>
+        Esta é a conta que quase nenhum site de divulgação abre. Vou abrir a
+        minha, inclusive as linhas em que eu não tenho papel para mostrar.
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>O que é</th><th>Quanto</th><th>De onde eu sei</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>O plano de celular</td>
+              <td>a partir de R$ {PLANOS[0].preco}/mês</td>
+              <td>Material de divulgação da rede, conferido em {fmtData(CONFERIDO_EM)}. Não é documento da MOVVA.</td>
+            </tr>
+            <tr>
+              <td>Cadastro de afiliado</td>
+              <td>não documentado</td>
+              <td>Existe, e eu fiz o meu. Não localizei documento que fixe valor.</td>
+            </tr>
+            <tr>
+              <td>Licença VIP</td>
+              <td>não documentado</td>
+              <td>O documento oficial diz o que ela <em>faz</em> — dobra tudo na tabela acima — e não diz quanto custa.</td>
+            </tr>
+            <tr>
+              <td>Chip e entrega</td>
+              <td>não documentado</td>
+              <td>Não achei em documento nenhum se vêm à parte ou na primeira mensalidade.</td>
+            </tr>
+            <tr>
+              <td>Taxa sobre o saque</td>
+              <td>existe</td>
+              <td>Aparece no meu próprio extrato: gerei R$ 146,08 e recebi R$ 115,43.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card card--warn">
+        <p>
+          <strong>Três linhas de cinco estão em branco</strong>, e isso é a
+          informação, não a falta dela. Peça cada valor por escrito, com
+          protocolo, e confira na própria página de contratação antes de pagar.
+          Quem não consegue te mandar o preço por escrito está te vendendo
+          outra coisa.
+        </p>
+        <p class="meta-line">
+          Do lado do cliente, a conta do primeiro mês está aberta em
+          {' '}<a href="/blog/quanto-custa-o-primeiro-mes">o que você paga no primeiro mês</a>,
+          com as mesmas linhas marcadas como não documentadas.
+        </p>
+      </div>
     </section>
 
     <section class="stack">
