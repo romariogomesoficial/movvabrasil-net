@@ -43,7 +43,16 @@ export const CRIATIVOS = [
     chave: 'gigas-acumulam',
     chapeu: 'Franquia',
     titulo: 'O que sobra fica para o mês seguinte',
-    apoio: 'Gigas acumulativos infinitos: o que você não usou no mês fica para o ciclo seguinte, em vez de virar pó.',
+    // "Infinitos" saiu daqui. A palavra esta no documento oficial de
+    // diferenciais da empresa, mas o site nao a afirma: ele a atribui ("a MOVVA
+    // anuncia") e registra que nao achou contrato fixando o prazo do saldo.
+    // Peca paga nao pode afirmar como fato o que o proprio site marca como nao
+    // confirmado — e o mesmo erro que a frase da portabilidade cometia.
+    //
+    // O que ficou e o que as duas versoes sustentam: o saldo passa para o ciclo
+    // seguinte. Se o saldo morre depois de um mes ou rola indefinidamente e
+    // justamente o que esta em aberto, entao a peca nao toca nisso.
+    apoio: 'Gigas acumulativos: o que você não usou no mês fica para o ciclo seguinte, em vez de virar pó.',
     formatos: ['quadrado', 'story'],
   },
   {
