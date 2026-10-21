@@ -3,8 +3,434 @@
 Site de distribuidor independente. Não é canal oficial da MOVVA Brasil Ltda.
 Autor: Romário Gomes de Paula, Distribuidor independente MOVVA.
 
-Este arquivo traz o texto integral dos 11 artigos do blog, para
+Este arquivo traz o texto integral dos 15 artigos do blog, para
 leitura em uma única requisição. O índice do site está em https://movvabrasil.net/llms.txt
+
+---
+
+# 25 GB dá para quê? O que cada giga rende em horas de uso
+
+URL: https://movvabrasil.net/blog/25-gb-da-para-que
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média — ou 8 em HD, ou 23 de chamada de vídeo em 720p. São alternativas: cada uma gasta os 25 GB inteiros. O piso vem do teto por hora da Netflix e do requisito de banda do Zoom, que leio como teto.
+
+Fontes citadas:
+- Netflix — Como controlar o uso de dados do Netflix (consumo por hora por aparelho, publicado como "até"; consultado em 21/10/2026): https://help.netflix.com/pt/node/87
+- Spotify — Qualidade do áudio (bitrates publicados como aproximados; podcast a ~96 kbit/s e 128 kbit/s no web player; consultado em 21/10/2026): https://support.spotify.com/pt/article/audio-quality/
+- Zoom — Requisitos de sistema e largura de banda recomendada para vídeo (requisito de banda, não consumo medido; consultado em 21/10/2026): https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060748
+- YouTube — Configurações de codificação recomendadas para envios: "as taxas de bits abaixo são recomendações para envios" (consultado em 21/10/2026): https://support.google.com/youtube/answer/1722171?hl=pt-BR
+- HTTP Archive — relatório Page Weight (consultado em 21/10/2026): https://httparchive.org/reports/page-weight
+- HTTP Archive — série de dados do relatório: mediana no celular de 2.624,63 KB no crawl de 01/10/2026 (série consultada em 21/10/2026): https://cdn.httparchive.org/reports/bytesTotal.json
+- Anatel — Panorama Econômico-Financeiro de Telecomunicações, 2º trimestre/2026 (PDF aberto e extraído em 21/10/2026: 6,80 GB por usuário, 5,82 GB no 2T25, +16,84%, 4,36 bilhões de GB, proxy de R$ 5,36 por GB; 5 páginas, sem recorte de consumo por estado): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/7b63cdad45a26c0fd6a9bf8487206df1
+- Anatel — Panorama Econômico-Financeiro de Telecomunicações, 2º trimestre/2025 (PDF aberto e extraído em 21/10/2026: 5,56 GB por usuário no 2T25, contra 5,63 GB no 2T24; traz tabela "Consumo SMP por usuário (em GB)" por estado, com o Brasil em 5,56): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/702ee617d28e0d972d1b4e95f6eac4a5
+- Anatel — Panorama Econômico-Financeiro - Retificação Dados UF (PDF aberto e extraído em 21/10/2026: 5 páginas, "Série Histórica Indicadores | 1T23 - 1T25", com "Consumo SMP por usuário (em GB)" por estado e o Brasil em 4,58 GB no 1T25 — série que não alcança o 2T25): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/950483014cdc8016c0b129a1e3708579
+- Anatel — Panorama Econômico-Financeiro, página da publicação trimestral (aberta em 21/10/2026: lista a edição do 2º trimestre de 2026 como "(NOVO - 06/10/2026)", com última modificação em 06/10/2026, sob o título "PANORAMA ECONÔMICO-FINANCEIRO (concessionárias e não-PPPs)"; as prestadoras de pequeno porte têm seção separada na mesma página): https://www.gov.br/anatel/pt-br/regulado/competicao/panorama-economico-financeiro/
+- TELETIME — Preço médio do GB móvel cai 13% em um ano, aponta Anatel (07/10/2026): https://teletime.com.br/07/10/2026/preco-medio-gb-movel-cai-anatel/
+- TELETIME — Serviço móvel fica mais caro e banda larga mais barata, mostra Anatel (07/10/2025; informa que o levantamento considera apenas operadoras que não são Prestadora de Pequeno Porte): https://teletime.com.br/07/10/2025/servico-movel-fica-mais-caro-e-banda-larga-mais-barata-mostra-anatel/
+- TELETIME — Mercado móvel, chips de junho de 2026 (03/08/2026: 219,83 milhões de linhas de celular e 277,8 milhões de acessos com IoT): https://teletime.com.br/03/08/2026/mercado-movel-chips-junho-2026/
+- Anatel — RGC, Anexo da Resolução nº 765/2023, art. 90 (filtro de prestadora de pequeno porte; página canônica, que respondeu HTTP 520 em 21/10/2026): https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Resolução Anatel nº 765/2023 — espelho do ato no DataLegis, com o Anexo integral; usado para conferir a lista do art. 90 em 21/10/2026, porque a página canônica estava fora: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000765&seqAto=000&valorAno=2023&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&desItem=&desItemFim=&cod_modulo=644&cod_menu=9486
+- Resolução Anatel nº 765/2023 — cópia independente na LegisWeb, conferida contra o espelho acima: as duas coincidem caractere a caractere na lista do art. 90 (21/10/2026): https://www.legisweb.com.br/legislacao/?id=451747
+- WhatsApp — Sobre as cobranças do WhatsApp (remete o consumo de dados à operadora): https://faq.whatsapp.com/494964175875406/
+
+## Giga é vendido em número e gasto em hora
+
+Toda operadora vende franquia em gigabyte. Ninguém usa o celular em gigabyte: a pessoa usa em horas de vídeo, em músicas no caminho do trabalho, em chamadas de vídeo que não dava para ser áudio.
+
+Entre as duas coisas existe uma tradução, e é ela que esta página faz.
+
+Quatro advertências antes dos números, porque elas mudam a leitura de tudo o que vem depois:
+
+**As quantidades desta página são alternativas, não somas.** Quando eu escrevo que 25 GB dão no mínimo 35 horas de vídeo em qualidade média ou cerca de 350 horas de música, cada um desses números consome os 25 GB inteiros. Somar duas linhas de uma tabela daria duas franquias; somar quatro daria quatro. Quem quiser o mês somado tem uma seção só para isso, a dos três perfis, onde cada item recebe a sua própria fatia do mês.
+
+**O consumo varia por aparelho, aplicativo e configuração.** A mesma hora de vídeo pode gastar 0,3 GB ou 7 GB dependendo só da qualidade que o app escolheu — e muitos apps escolhem sozinhos, conforme a velocidade da conexão.
+
+**Quase todo número desta página é teto, não média.** A Netflix publica "até 0,3 GB" e "até 3 GB" por hora. O Zoom publica requisito de banda, que é outra coisa: é o que a conexão precisa ter, e tratá-lo como teto de consumo é leitura minha, não afirmação da empresa. Teto dividido na franquia devolve **piso** de horas: onde eu escrevo "no mínimo 35 h", o real pode ser mais, nunca menos — desde que a qualidade seja a da linha. Se o aplicativo subir a qualidade sozinho, ou se o sinal ruim fizer o aparelho repetir o que já baixou, você saiu da linha: o piso que vale passa a ser o da qualidade entregue, não o da que você escolheu. Nas linhas de chamada de vídeo, o piso vale na medida em que o requisito do Zoom sirva de teto. Onde o insumo é aproximado e não teto — os bitrates da Spotify, a mediana de página do HTTP Archive —, eu escrevo "cerca de", e aí o real pode passar. Não inventei valor típico para nenhum deles.
+
+**Nada aqui foi medido por mim.** São contas feitas sobre números que as próprias plataformas publicam. Medição em campo na rede da MOVVA é outra coisa, e depende do chip que eu pedi em 20 de outubro de 2026 e que ainda não chegou.
+
+## Quanto cada atividade gasta por hora
+
+A Netflix é a única destas plataformas que publica consumo por hora de reprodução, e publica como teto: "até" 0,3, 0,7, 1, 3 ou 7 GB por hora, por aparelho. Spotify e Zoom publicam outra coisa — **bitrate aproximado** e **requisito de banda** —, e eu converto abaixo, mostrando a conta.
+
+A conversão usada em toda a página é decimal: `Mbps × 3600 ÷ 8 ÷ 1000 = GB por hora`. Um giga aqui são 1.000 MB, não 1.024.
+
+A última linha da tabela é a única que não se mede por hora: navegação se conta por página aberta, que é como o HTTP Archive publica.
+
+Regra de arredondamento, declarada uma vez: **arredondo a saída, nunca o insumo**. Quando a saída entra em outra conta, a conta roda com o valor cheio, e o valor cheio fica no cabeçalho da linha — é por isso que a música Normal aparece como 43,2 MB por hora, e não 43. A navegação segue a mesma regra: a conta roda com os 2,62463 MB que saem da mediana publicada de 2.624,63 KB, não com 2,6. E a semana roda com 30 ÷ 7 = 4,2857, não com 4,3. Nas linhas de piso, arredondo **para baixo**: escrever 36 onde a divisão dá 35,71 quebraria o "no mínimo".
+
+Um detalhe que muda a conta da chamada de vídeo: ela sobe e desce ao mesmo tempo. O requisito publicado pelo Zoom é por direção, então somei subida e descida — é o que sai da sua franquia.
+
+Nos podcasts, a Spotify publica cerca de 96 kbit/s em todos os aparelhos, menos no web player, onde são 128 kbit/s — cerca de 57,6 MB por hora.
+
+| Atividade | Consumo por hora (na navegação, por página) | De onde vem o número |
+|---|---|---|
+| Vídeo, qualidade Baixa | até 0,3 GB | Netflix publica, por aparelho |
+| Vídeo, qualidade Média | até 0,7 GB | Netflix publica |
+| Vídeo, Alta em definição padrão (SD) | até 1 GB | Netflix publica |
+| Vídeo, Alta em alta definição (HD) | até 3 GB | Netflix publica |
+| Vídeo, Alta em 4K (UHD) | até 7 GB | Netflix publica |
+| Música, qualidade Baixa (~24 kbit/s) | ~10,8 MB | bitrate aproximado da Spotify, convertido |
+| Música, Normal (~96 kbit/s) | ~43,2 MB | bitrate aproximado da Spotify, convertido |
+| Música, Alta (~160 kbit/s) | ~72 MB | bitrate aproximado da Spotify, convertido |
+| Música, Muito alta (~320 kbit/s) | ~144 MB | bitrate aproximado da Spotify, convertido |
+| Podcast (~96 kbit/s) | ~43,2 MB | bitrate aproximado da Spotify, convertido |
+| Chamada de vídeo 1:1, qualidade alta | até 0,54 GB | Zoom: requisito de 0,6 + 0,6 Mbps, lido por mim como teto |
+| Chamada de vídeo 1:1 em 720p | até 1,08 GB | Zoom: requisito de 1,2 + 1,2 Mbps, lido por mim como teto |
+| Chamada de vídeo 1:1 em 1080p | até 3,06 GB | Zoom: requisito de 3,8 + 3,0 Mbps, lido por mim como teto |
+| Chamada de vídeo em grupo, 720p | até 1,98 GB | Zoom: requisito de 2,6 + 1,8 Mbps, lido por mim como teto |
+| Navegação | ~2,62 MB por página | HTTP Archive, mediana no celular de 2.624,63 KB, crawl de 01/10/2026 |
+
+## O que o YouTube publica, e o que ele não publica
+
+O YouTube **não publica** quanto a reprodução consome por hora. O que ele publica é a taxa de bits recomendada para quem **envia** vídeo, e a página diz isso com estas palavras: "as taxas de bits abaixo são recomendações para envios". Ela não diz quanto a reprodução consome, e também não diz que esses números não valham para ela — tratá-los como teto de referência é leitura minha, não afirmação da fonte.
+
+Entrega costuma ser mais econômica que recomendação de envio: compare o 4K do YouTube abaixo, de 15,75 a 20,25 GB por hora, com os até 7 GB por hora que a Netflix publica para 4K. A diferença entre as duas colunas é a diferença entre recomendar um envio e medir um consumo.
+
+Os valores abaixo são de SDR em taxa de quadros padrão (24, 25 ou 30). Em taxa alta (48, 50 ou 60) e em HDR, as recomendações do YouTube são maiores.
+
+Use esta tabela para saber em que ordem de grandeza você está pisando, e a tabela da Netflix para planejar a franquia.
+
+| Resolução | Bitrate recomendado para envio | Equivale, por hora, a |
+|---|---|---|
+| 360p | 1 Mbps | 0,45 GB |
+| 480p | 2,5 Mbps | 1,13 GB |
+| 720p | 5 Mbps | 2,25 GB |
+| 1080p | 8 Mbps | 3,60 GB |
+| 1440p | 16 Mbps | 7,20 GB |
+| 2160p (4K) | 35 a 45 Mbps | 15,75 a 20,25 GB |
+
+## Quantas horas cabem em cada plano MOVVA
+
+Esta é a tabela que responde à pergunta do título. Cada célula é a franquia dividida pelo consumo por hora da linha — nada além disso. A última linha é a exceção: navegação se mede por página, então ali a divisão devolve páginas, não horas.
+
+**De onde vêm os cinco nomes e as cinco franquias:** material de divulgação da rede de distribuidores, conferido em 21 de outubro de 2026. Não é documento da própria MOVVA. O documento oficial que eu tenho, "Diferenciais planos de telefonia MOVVA", lista os diferenciais dos planos e não traz tabela de franquia nem de preço. Confirme na página de contratação antes de pagar.
+
+**Como ler:** nas linhas marcadas como *piso*, o insumo é teto — teto publicado, nas de vídeo; nas de chamada, o requisito de banda do Zoom lido por mim como teto —, então a célula é mínimo: "35 h" ali quer dizer "no mínimo 35 h", com a qualidade travada na da linha. Nas linhas de música e de páginas, o insumo é aproximado, e a célula vai com "~".
+
+Leia uma linha de cada vez, não a tabela toda: as linhas são alternativas, não somas. As 35 horas de vídeo em qualidade média e as cerca de 350 horas de música em alta qualidade da coluna do Liberty usam, cada uma, os 25 GB inteiros. Ninguém usa o mês inteiro só ouvindo música — para o mês somado, a seção seguinte.
+
+| Atividade | Start, 10 GB | Plus, 15 GB | Liberty, 25 GB | Max, 35 GB | Ultra, 50 GB |
+|---|---|---|---|---|---|
+| Vídeo, Baixa (até 0,3 GB/h) — piso | 33 h | 50 h | 83 h | 116 h | 166 h |
+| Vídeo, Média (até 0,7 GB/h) — piso | 14 h | 21 h | 35 h | 50 h | 71 h |
+| Vídeo, Alta em SD (até 1 GB/h) — piso | 10 h | 15 h | 25 h | 35 h | 50 h |
+| Vídeo, Alta em HD (até 3 GB/h) — piso | 3,3 h | 5 h | 8,3 h | 11,6 h | 16,6 h |
+| Vídeo, Alta em 4K (até 7 GB/h) — piso | 1,4 h | 2,1 h | 3,5 h | 5 h | 7,1 h |
+| Música, Normal (~43,2 MB/h) | ~230 h | ~350 h | ~580 h | ~810 h | ~1.160 h |
+| Música, Alta (~72 MB/h) | ~140 h | ~210 h | ~350 h | ~490 h | ~690 h |
+| Música, Muito alta (~144 MB/h) | ~70 h | ~100 h | ~170 h | ~240 h | ~350 h |
+| Chamada 1:1 em 720p (até 1,08 GB/h) — piso | 9,2 h | 13,8 h | 23,1 h | 32,4 h | 46,2 h |
+| Páginas de ~2,62 MB (mediana de 2.624,63 KB) | ~3.800 | ~5.700 | ~9.500 | ~13.300 | ~19.100 |
+
+## Três perfis somados, com a conta aberta
+
+Uma linha isolada não decide plano nenhum. Ninguém só assiste, ou só ouve: o mês é a soma. Esta é a única seção em que as quantidades se somam, e elas se somam aqui porque cada item recebe a sua própria fatia do mês, e não a franquia inteira.
+
+Montei três perfis. Os parâmetros de cada um são escolha minha e estão escritos na célula — inclusive a qualidade da chamada de vídeo, que muda entre os perfis —, para você trocar pelos seus. Dia contado em 30 dias no mês; semana, em 30 ÷ 7 = 4,2857 semanas.
+
+Os itens de vídeo entram pelo teto publicado; os de chamada, pelo requisito de banda do Zoom, que leio como teto; música e navegação, por valor aproximado. Por isso o total não é ponto nem limite: na parte de vídeo e de chamada, o mês real tende a não encostar nele; na parte de música e de navegação, pode passar. Ele serve para ordenar os perfis, não para cravar o mês. E é a soma das quatro células da coluna, como elas aparecem — que dá o mesmo resultado de rodar a conta com os valores cheios.
+
+O terceiro perfil não fecha em nenhum plano, nem no maior. Mantive assim porque a conta deu assim. Se a entrega real ficar bem abaixo do teto, ele pode caber no Ultra — mas isso é torcida, não planejamento.
+
+| O que entra na conta | Quase tudo no wi-fi | Metade do dia na rua | O celular é o escritório |
+|---|---|---|---|
+| Vídeo | 15 min/dia, Baixa (até 0,3 GB/h) → até 2,25 GB | 30 min/dia, Média (até 0,7 GB/h) → até 10,50 GB | 1 h/dia, Média (até 0,7 GB/h) → até 21,00 GB |
+| Música | 1 h/dia, Normal (~43,2 MB/h) → ~1,30 GB | 1 h/dia, Alta (~72 MB/h) → ~2,16 GB | 2 h/dia, Alta (~72 MB/h) → ~4,32 GB |
+| Navegação | 20 páginas/dia de ~2,62 MB → ~1,57 GB | 40 páginas/dia → ~3,15 GB | 80 páginas/dia → ~6,30 GB |
+| Chamada de vídeo | 10 min/semana, 1:1 alta qualidade (até 0,54 GB/h) → até 0,39 GB | 20 min/semana, 720p (até 1,08 GB/h) → até 1,54 GB | 5 h/semana, 720p (até 1,08 GB/h) → até 23,14 GB |
+| **Total no mês** | **~5,51 GB** | **~17,35 GB** | **~54,76 GB** |
+| Plano que cobre esse total | Start, de 10 GB, com folga | Liberty, de 25 GB — o Plus, de 15 GB, fica abaixo dos 17,35 GB | Nenhum: 54,76 GB passa do Ultra, de 50 GB |
+
+## O que pesa é vídeo — e chamada de vídeo, quando ela vira horas
+
+Olhe a tabela dos perfis por coluna e repare onde está o peso. No perfil do meio, o vídeo é 10,50 dos 17,35 GB. No terceiro, a chamada de vídeo sozinha é 23,14 dos 54,76 GB.
+
+A música é o menor item do perfil mais pesado, e em nenhum dos três ela é o maior. Nos dois primeiros, o menor item é a chamada de vídeo — até 0,39 GB e até 1,54 GB —, porque ali ela entra em minutos por semana. No terceiro, em que ela vira cinco horas por semana, passa a ser o maior item de todos. É o parâmetro que muda, não a natureza do app.
+
+A música inteira de um mês — uma hora por dia, em alta qualidade — são cerca de 2,16 GB: menos do que uma única hora de vídeo em HD pode consumir (até 3 GB).
+
+Daí sai o número mais útil desta página inteira:
+
+**Vídeo em HD, todo dia, no plano de 50 GB, dá no mínimo 33 minutos por dia.** No Liberty, de 25 GB, no mínimo 16 minutos. No Start, de 10 GB, no mínimo 6 minutos.
+
+Uma hora por dia a até 3 GB por hora são até 90 GB no mês. Nenhuma das cinco franquias da tabela de planos tem folga para esse hábito no teto publicado: o Ultra, de 50 GB, só fecharia se a hora de HD ficasse em 1,66 GB, pouco mais da metade do teto. Não é limitação da MOVVA: é aritmética. Franquia de outras operadoras eu não levantei, então não falo delas.
+
+O que isso quer dizer na prática, e é o oposto do que um vendedor diria: antes de subir de plano, abra a configuração de qualidade de vídeo do aplicativo que você mais usa. Entre "Média" e "Alta em HD", o teto publicado é mais de quatro vezes maior, e em tela de celular muita gente não distingue as duas. Baixar série e podcast no wi-fi, para ver depois, resolve mais que 25 GB extras.
+
+Se o seu mês é irregular — um mês de viagem, um mês inteiro em casa —, o que decide não é o tamanho da franquia: é se a sobra acumula. A MOVVA **anuncia** gigas acumulativos no documento oficial de diferenciais dos planos, sem teto e sem ressalva; o regulamento da oferta, que é onde as condições ficam, eu não localizei. [O que eu consegui e o que não consegui confirmar sobre acúmulo está aqui](/blog/internet-que-acumula).
+
+## 25 GB comparados ao que o Brasil consome
+
+O número que dá escala a tudo isto vem da Anatel. Abri o PDF do Panorama Econômico-Financeiro de Telecomunicações do 2º trimestre de 2026 em 21 de outubro de 2026. Ele traz o consumo médio de dados do SMP em **6,80 GB por usuário**, contra 5,82 GB um ano antes, com alta de **16,84%** — percentual que o próprio documento publica, não que eu derivei. O consumo total do trimestre aparece como 4,36 bilhões de GB.
+
+A data de divulgação não está no PDF nem na reportagem que o noticiou. Está na página da publicação trimestral da Anatel: ela lista a edição do 2º trimestre de 2026 marcada como "(NOVO - 06/10/2026)" e registra 6 de outubro de 2026 como a sua última modificação. Abri essa página em 21/10/2026.
+
+Comparado com as franquias, e lendo os 6,80 GB como média mensal — leitura minha, não rótulo do documento, como explico na segunda ressalva abaixo:
+
+- **Start, 10 GB** — 1,5 vez a média
+- **Liberty, 25 GB** — 3,7 vezes a média
+- **Ultra, 50 GB** — 7,4 vezes a média
+
+Quatro ressalvas que mudam o sentido desse 6,80 GB, e por isso não ficam em nota de pé:
+
+**É consumo medido, não contratado.** Quem tem 25 GB e usa 9 entra na conta da Anatel como 9. A média não diz o que as pessoas compram; diz o que elas gastam — inclusive quem ficou sem franquia no dia 20.
+
+**O documento não rotula o período.** O gráfico se chama "Consumo por usuário do SMP (GB)" e o quadro, "Consumo médio de dados (GB por usuário)". Nenhum dos dois diz se é mês ou trimestre. Leio como mensal, e essa leitura é minha, não do rótulo. Se o indicador for trimestral, a média mensal seria cerca de 2,27 GB e os três múltiplos acima triplicam — o do Liberty iria de 3,7 para cerca de 11 vezes.
+
+**O denominador, nomeado.** Dividindo os 4,36 bilhões de GB por três meses chega-se a 1,45 bilhão de GB por mês. Para dar 6,80 GB por usuário, a base teria de ter cerca de 214 milhões de usuários. Em junho de 2026, último mês do trimestre, a imprensa especializada noticiou 219,83 milhões de linhas de celular e 277,8 milhões de acessos móveis contando IoT (TELETIME, 03/08/2026). Pela base de celular a divisão dá 6,6 GB; pela base com IoT, 5,2 GB. A leitura mensal fecha na ordem de grandeza da base de celular e não na base com IoT — mas qual das duas o relatório usa ele não diz, então isso fica em aberto.
+
+**A amostra deixa de fora prestadora de pequeno porte.** Quem nomeia esse recorte é a própria Anatel: na página da publicação, que abri em 21/10/2026, a edição de onde saem os 6,80 GB está listada sob o título "PANORAMA ECONÔMICO-FINANCEIRO (concessionárias e não-PPPs)", e as prestadoras de pequeno porte têm painel próprio, em outra seção da mesma página. Dentro do PDF essa nota de método não aparece — ele traz só os gráficos. Enquadrar-se como prestadora de pequeno porte é comum entre as operadoras virtuais, então a média é do mercado sem elas.
+
+E uma divergência que eu não resolvo: o Panorama do 2º trimestre de 2026 traz 5,82 GB para o 2T25, enquanto o Panorama do próprio 2º trimestre de 2025, que eu também abri, traz 5,56 GB — ali comparado com 5,63 GB do 2T24, em queda de 1,25%. Naquele documento os 5,56 GB aparecem duas vezes, no gráfico e na tabela por unidade da federação, que abre com o Brasil em 5,56. Ou a série foi revista, ou um dos dois documentos está errado. Nenhum dos dois PDFs traz nota de revisão. A página da publicação lista, entre as edições do 3º e do 2º trimestre de 2025, um documento chamado "Panorama Econômico-Financeiro - Retificação Dados UF": abri e extraí em 21/10/2026, são cinco páginas de série histórica de 1T23 a 1T25, com o consumo do SMP por usuário por estado e o Brasil terminando em 4,58 GB no 1T25. Quer dizer que essa série é retificada — mas a retificação para no 1T25 e não alcança o trimestre em divergência. Registro os dois números e fico com o que o documento de 2026 publica, sem cravar a variação anual por fora dele.
+
+## Quanto custa o giga em cada plano
+
+Se a franquia é o que você está comprando, vale ver o preço dela. Isto é só o preço dividido pelos gigas.
+
+**De onde vêm os cinco preços:** o mesmo material de divulgação da rede de distribuidores, conferido em 21 de outubro de 2026. Não é documento da própria MOVVA, que não traz tabela de preços. Confirme o valor vigente antes de pagar.
+
+O giga fica mais barato quanto maior o plano, e o salto maior está entre o Plus e o Liberty: R$ 6,00 a mais no mês por 10 GB a mais. Entre o Max e o Ultra, 15 GB a mais custam R$ 30,00.
+
+Um aviso sobre comparação: **não dá para comparar esta coluna com o preço por GB da Anatel**, que o Panorama do 2º trimestre de 2026 publica como R$ 5,36 e chama de *proxy* de preço do GB no SMP. Ele sai de receita dividida por giga efetivamente consumido; a tabela abaixo divide preço por giga contratado. São dois indicadores diferentes com o mesmo nome, e misturá-los dá conclusão errada.
+
+| Plano | Franquia | Preço | Preço por GB contratado |
+|---|---|---|---|
+| Start | 10 GB | R$ 58,90 | R$ 5,89 |
+| Plus | 15 GB | R$ 73,90 | R$ 4,93 |
+| Liberty | 25 GB | R$ 79,90 | R$ 3,20 |
+| Max | 35 GB | R$ 96,90 | R$ 2,77 |
+| Ultra | 50 GB | R$ 126,90 | R$ 2,54 |
+
+## Onde esses números podem errar
+
+Esta seção existe porque sem ela a página seria mais bonita e menos verdadeira.
+
+**Requisito de banda não é consumo medido.** As chamadas de vídeo da tabela vêm do requisito publicado pelo Zoom: é o que a conexão precisa ter, e o aplicativo pode entregar abaixo disso quando a rede aperta. Trate como teto, sabendo que o teto é meu, não dele.
+
+**A mediana de página não é a sua página.** Os ~2,62 MB são a mediana no celular do relatório Page Weight do HTTP Archive, crawl de 01/10/2026, em que a mediana publicada é de 2.624,63 KB — consultei a série em 21/10/2026. O relatório mede os sites que o projeto rastreia, não os que você abre. E a mediana não conta o vídeo que começa a tocar sozinho dentro de um feed, que é o que de fato gasta.
+
+**Giga decimal e giga binário não são o mesmo giga.** Converti tudo a 1.000 MB por GB. Se a franquia for contada a 1.024, todas as horas da tabela ficam cerca de 7% maiores.
+
+**A qualidade quem escolhe é o app, não você.** No ajuste automático, o aplicativo sobe a qualidade quando a rede está boa. Você pode estar no 4G e consumindo como se fosse wi-fi — e aí saiu da linha da tabela em que você se apoiou.
+
+**O número da Netflix é por aparelho.** Dois celulares no mesmo plano, assistindo ao mesmo tempo, somam.
+
+**Cobertura muda consumo.** Sinal fraco gera retransmissão, e vídeo em rede ruim renegocia qualidade o tempo todo. Antes do plano, confira a cobertura no seu endereço: [eu mostro em quais painéis da Anatel olhar, e por que o teste que vale mais é usar um chip no seu trajeto](/blog/operadora-virtual-pega-bem). Se o problema é dentro de casa, [tem um caminho diferente](/blog/celular-sem-sinal-em-casa).
+
+## Como medir o seu consumo antes de escolher
+
+Toda esta página é estimativa. O seu consumo real está no seu aparelho agora, de graça, e ele vale mais que qualquer tabela minha.
+
+1. **Veja o ciclo fechado no seu celular.** Android e iPhone têm uma tela de consumo de dados móveis nas configurações, com o total e a lista por aplicativo. O caminho exato muda com a versão do sistema, então procure por "dados móveis" ou "uso de dados" nos ajustes.
+2. **Olhe o aplicativo da sua operadora atual.** Ele mostra o consumido no ciclo. Anote três meses, não um: o mês de viagem engana.
+3. **Confira o WhatsApp separado.** Ele tem contador próprio, em Armazenamento e dados, na tela de uso da rede.
+4. **Compare com a tabela dos planos.** Pegue o maior dos três meses, não a média. Franquia se dimensiona pelo pico, porque é no pico que ela falta.
+
+Se depois disso você ainda ficar entre dois planos, a pergunta certa não é qual tem mais giga. É se existe prazo de permanência preso ao plano escolhido — e se a regra em que você está confiando alcança prestadora de pequeno porte, enquadramento comum entre as virtuais. Esse filtro é o art. 90 do RGC, o Anexo da Resolução Anatel 765/2023: o que ele faz é listar quais dispositivos do regulamento se aplicam a essas prestadoras, e nem todos estão na lista. Conferi a lista no texto do artigo: os arts. 36, 37, 81 e 82 estão; os arts. 31, 38 e 84 não. O portal de legislação da Anatel respondeu com erro (HTTP 520) em 21/10/2026, então a conferência saiu do espelho do ato no DataLegis e de uma cópia independente do mesmo artigo, que coincidem caractere a caractere na lista. A página da Anatel exibe duas redações do art. 90, a original e a retificada: as duas diferem pela inclusão do art. 2º, que tira do regulamento os acessos destinados só a dispositivos de IoT, e nenhum dos artigos citados aqui muda entre elas. [O que a regra garante sobre fidelidade e multa está aqui](/blog/operadora-sem-fidelidade).
+
+## O que isso muda na sua escolha
+
+Resumindo o que as tabelas mostram:
+
+- **25 GB dão, no mínimo, 35 horas de vídeo em qualidade média no mês** — ou 8 horas em HD, ou 23 horas de chamada de vídeo em 720p, cada uma gastando os 25 GB inteiros. Música em alta qualidade dá cerca de 350 horas, por aproximação e não por piso. E são 3,7 vezes o consumo médio por usuário que a Anatel publica para o 2º trimestre de 2026, se esse indicador for mensal: o documento não rotula o período, a leitura é minha, e o levantamento sai do painel das concessionárias e não-PPPs, sem as prestadoras de pequeno porte.
+- **25 GB não cobrem vídeo em HD como hábito diário.** Nem 50 GB cobrem, no teto publicado. Quem quer isso precisa de wi-fi, não de plano maior.
+- **Quem vive no wi-fi está pagando por giga que não usa** em qualquer plano acima do Start — e aí o que importa é se a sobra acumula, que é justamente o que eu não consegui fechar no regulamento da oferta.
+- **Quem faz chamada de vídeo por trabalho tem o maior item da conta ali**, e quase nunca sabe disso: no terceiro perfil, ela sozinha passa de 23 GB no mês.
+
+O melhor plano não é o que tem mais giga nem o que tem o giga mais barato. É o que cobre o seu maior mês dos últimos três. Esse número você já tem no celular; os outros desta página são só a tradução.
+
+## O que eu não consegui confirmar
+
+- **Quanto o YouTube consome por hora na reprodução.** O YouTube publica taxa de bits recomendada para envios, com estas palavras, e não publica consumo de reprodução. Tratar o número de envio como teto de referência é leitura minha, não afirmação da fonte.
+- **Quanto uma hora de rede social consome.** Nenhuma das plataformas publica esse número. Estruturalmente, feed de vídeo cai na mesma faixa do vídeo (entre 0,3 e 3 GB por hora conforme a qualidade), mas qual qualidade cada app entrega ao seu aparelho não é publicado por nenhuma delas.
+- **Quanto uma chamada de vídeo do WhatsApp consome.** O WhatsApp não publica número por minuto: a página de cobranças manda consultar a operadora. Usei o requisito de banda do Zoom como referência de ordem de grandeza, que é outra empresa e outro aplicativo.
+- **Quanto mapas e navegação GPS consomem por hora.** Não localizei número publicado pelo Google. Os blocos de mapa são imagens que se baixam uma vez por área, então repetir o mesmo trajeto não repete o consumo — mas isso é raciocínio, não dado.
+- **Quanto um jogo online consome por hora.** Não localizei número publicado. A partida em si troca pacotes pequenos; o que pesa é a atualização, que vem em gigabytes e não tem periodicidade publicada.
+- **Se os 6,80 GB da Anatel são média mensal ou do trimestre.** Abri o PDF do Panorama do 2T26 em 21/10/2026 e o documento não rotula o período em nenhum dos dois lugares onde traz o indicador. A divisão do total por três meses indica mensal, mas a conta é minha — e os múltiplos de franquia desta página dependem dessa leitura.
+- **Qual base de "usuário" o Panorama usa.** Para os 6,80 GB fecharem como média mensal, a base teria de ter cerca de 214 milhões de usuários — perto dos 219,83 milhões de linhas de celular de junho de 2026 e longe dos 277,8 milhões de acessos com IoT. O relatório não diz se exclui M2M/IoT.
+- **Se a MOVVA se enquadra como prestadora de pequeno porte.** Que a média da Anatel exclui esse porte, a própria agência diz no título da seção em que publica a edição, aberta em 21/10/2026. O que eu não tenho é documento que diga em que porte a MOVVA está — é enquadramento comum entre as virtuais, e é o mesmo filtro que decide quais artigos do RGC são exigíveis dela, pelo art. 90. Confirme no 1331.
+- **A divergência do consumo do 2T25.** O Panorama do 2T26 traz 5,82 GB para o 2T25; o Panorama do 2T25, que eu também abri, traz 5,56 GB, no gráfico e na tabela por estado. Nenhum dos dois PDFs traz nota de revisão de série. A página da publicação lista, entre as edições do 3T25 e do 2T25, um documento chamado "Panorama Econômico-Financeiro - Retificação Dados UF": abri em 21/10/2026, são cinco páginas de série histórica de 1T23 a 1T25, com o Brasil terminando em 4,58 GB no 1T25. Ou seja, a Anatel retifica essa série — mas a retificação não alcança o trimestre em divergência.
+- **O recorte por estado do consumo médio, na edição mais nova.** Extraí o texto dos dois PDFs em 21/10/2026. O Panorama do 2T26 não traz consumo por unidade da federação: as suas duas páginas por estado trazem proxy-preço e ARPU, de SMP e de SCM. Quem traz é o Panorama do 2T25, em tabela com texto legível — "Consumo SMP por usuário (em GB)", com o Brasil em 5,56 GB — e também a Retificação Dados UF, que vai de 1T23 a 1T25. O recorte por estado existe, portanto, mas não na edição de que esta página tira os 6,80 GB, e por isso não comparo franquia com média estadual.
+- **A origem dos preços e das franquias dos cinco planos.** Os cinco nomes, as cinco franquias e os cinco preços eu confiro em material de divulgação da rede de distribuidores, não em documento da própria MOVVA: o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela. Confirme na página de contratação antes de pagar.
+- **O que acontece quando a franquia acaba.** Se a velocidade é reduzida, se o acesso é bloqueado ou se há pacote extra pago, e a que preço, não consta do material de planos que eu li. Está no regulamento da oferta, que eu não localizei. Pergunte por escrito antes de contratar — é o custo de errar o plano para baixo.
+- **Sob quais condições a MOVVA acumula a franquia.** A empresa anuncia gigas acumulativos no documento oficial de diferenciais, sem teto e sem ressalva. O regulamento da oferta, onde ficariam prazo, teto e ordem de consumo, eu não localizei.
+- **Se o GB da franquia MOVVA é contado a 1.000 MB ou a 1.024 MB.** Isso muda todas as horas desta página em cerca de 7%. Não localizei a definição no material da empresa.
+- **Se existe qualquer gestão de qualidade de vídeo na rede usada pela MOVVA.** Operadora pode limitar resolução de streaming por política de oferta, e isso mudaria o consumo por hora na prática. Não localizei o regulamento da oferta que trate disso.
+- **Nenhum número desta página foi medido por mim na rede da MOVVA.** São contas sobre o que as plataformas publicam. O chip que eu pedi em 20 de outubro de 2026 ainda não chegou, e medição em campo é outra coisa.
+
+---
+
+# Cobertura no seu endereço: confira antes de pagar
+
+URL: https://movvabrasil.net/blog/cobertura-no-meu-endereco
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
+
+Fontes citadas:
+- Anatel — Cobertura, Telefonia Móvel (mapas das prestadoras e os painéis de cobertura): https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/mapa-cobertura
+- Anatel — Nota Técnica dos Dados de Cobertura Móvel, versão gerada em 09/09/2025 (Mosaico, ITU-R P.1812-5, duas parametrizações): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
+- Anatel — Nota Técnica dos Dados de Cobertura Móvel, versão gerada em 31/03/2021 (4G a −110 dBm, sem linha de 5G): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/0d4458a0e4a1084e87e263b5acc7f2ce
+- Anatel — Painel Percentuais de cobertura: https://informacoes.anatel.gov.br/paineis/infraestrutura/panorama
+- Anatel — Painel Mancha de cobertura (Áreas Cobertas): https://informacoes.anatel.gov.br/paineis/infraestrutura/areas-cobertas
+- Anatel — Consulta de Nível de Sinal em determinado local: https://sistemas.anatel.gov.br/se/public/cmap.php
+- Anatel — Intensidade do Sinal (ressalvas da consulta): https://www.gov.br/anatel/pt-br/consumidor/intensidade-do-sinal
+- Anatel — Consulta a Compromissos: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/consulta-a-compromissos
+- Anatel — Painel de Dados, Cobertura Móvel (painel a que a nota técnica se refere): https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
+- Anatel — Painel Estações do SMP: https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento/estacoes-do-smp
+- Anatel — RGST, Anexo da Resolução nº 777/2025 (arts. 103, II, 218, 219, 223, 226, 237, 240 e 241): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — RQUAL, Anexo I da Resolução nº 717/2019 (art. 1º, §§ 1º e 2º, e art. 28, IV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
+- Anatel — PGMC, Anexo da Resolução nº 783/2025 (art. 66, vedação do roaming permanente): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
+- Minuta de Edital do Leilão do 5G, SEI/ANATEL 6605739 (março de 2021), Anexo de Compromissos de Abrangência — município atendido e localidade atendida: https://telesintese.com.br/wp-content/uploads/2021/03/SEI-ANATEL-6605739-Minuta-de-Edital.pdf
+- Anatel — Pesquisa Pública do SEI (onde consultar o processo 53500.063559/2026-13, do Ato nº 9021/2026): https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0
+- Recomendação ITU-R P.1812 (modelo de propagação da predição): https://www.itu.int/rec/R-REC-P.1812/en
+- Claro — Mapa de cobertura (endereço listado pela Anatel): https://www.claro.com.br/cobertura
+- TIM — Mapa de cobertura, alertas de rede e histórico de ocorrências: https://www.tim.com.br/para-voce/cobertura-e-roaming/mapa-de-cobertura
+- Vivo — Mapa de cobertura (endereço listado pela Anatel): https://www.vivo.com.br/cobertura
+- Algar — Cobertura celular (endereço listado pela Anatel): https://algartelecom.com.br/para-voce/celular/cobertura-celular
+- Sercomtel — Mapa de cobertura: https://www2.sercomtel.com.br/mapa-cobertura
+- Anatel — Canais de atendimento (aplicativo Anatel Consumidor e 1331): https://www.gov.br/anatel/pt-br/canais_atendimento
+- Página de captação da rede de distribuidores MOVVA (material comercial, não documento da empresa), consultada em 21/10/2026: https://meumovvabrasil.com.br/
+
+## O que ter em mãos antes de abrir qualquer painel
+
+Três coisas, e a segunda é a que quase ninguém tem.
+
+1. **O endereço completo, com CEP.** Você vai precisar dele no mapa da hospedeira e na consulta que a Anatel publica como nível de sinal em determinado local. Até onde cada uma desce — ponto, CEP ou município — eu não confirmei: não consegui operar nenhuma das duas.
+2. **O nome da rede que atende aquele ponto.** Em operadora virtual, a marca do plano não é a rede do sinal — quem carrega a sua ligação é a rede hospedeira. [Por que o sinal é o da hospedeira está explicado em outro post](/blog/operadora-virtual-pega-bem); aqui eu só uso a conclusão.
+3. **A tecnologia que você precisa.** 4G resolve a maior parte do uso. 5G é outra pergunta, e pode ter resposta diferente no mesmo endereço.
+
+O resto é gratuito e abre no navegador. Esta página é o procedimento; o contexto está nos posts que ela linka.
+
+## Autorização em todo o território nacional não diz onde há sinal
+
+É a confusão que faz a pessoa pagar sem conferir: ler alcance de autorização como mancha de cobertura.
+
+A MOVVA tem o Ato Anatel nº 9021, de 08 de julho de 2026 (processo SEI 53500.063559/2026-13), para explorar serviços de telecomunicações de interesse coletivo e de interesse restrito, por prazo indeterminado, em todo o território nacional. É documento público, e o caminho de conferência está em fontes: a Pesquisa Pública do SEI da Anatel, onde o processo se consulta pelo número — o link é do sistema de busca, não do documento. Autorização é título habilitante: diz que a empresa pode prestar o serviço e em que área pode prestá-lo. **Não diz onde há sinal.** Mancha de cobertura não se lê em ato de outorga — se lê em painel de cobertura, que é o assunto daqui para baixo.
+
+E no modelo virtual existe uma camada a mais, que depende de qual dos dois modelos do Capítulo XII do RGST, anexo à Resolução Anatel nº 777/2025, a empresa opera. Se for credenciada, a área fica limitada à área de prestação da hospedeira (art. 219, § 1º). Se for autorizada, o alcance vem do próprio ato e dos contratos de compartilhamento que ela tiver (art. 241, § 2º). Em qual dos dois a MOVVA opera eu não confirmei: o ato não diz, e o registro dessa dúvida está em [A MOVVA é confiável?](/movva-e-confiavel).
+
+A própria Anatel resume o efeito na página de cobertura: as prestadoras virtuais compartilham da cobertura das detentoras de rede com as quais têm contrato de compartilhamento. Com uma exceção que o regulamento abre: a virtual pode atender área sem infraestrutura da hospedeira, por alternativa tecnológica própria (art. 219, § 3º; art. 240, caput) — e aí a mancha pode não ser idêntica à dela. Fora dessa hipótese, quem define a mancha é a rede, não a marca.
+
+Vale para qualquer texto, inclusive este: a autorização alcança todo o território nacional e não diz nada sobre sinal. Quando o número do ato aparece ao lado da palavra "nacional", o que está sendo descrito é o alcance da autorização, não a área onde o celular pega. É outra coisa, e é por isso que esta página existe.
+
+## Passo 1 — descubra qual rede atende o endereço
+
+Isso não sai de painel. Sai de documento da empresa, e a norma dá dois lugares para procurar — os dois no modelo de credenciamento, que é justamente o que eu não confirmei sobre a MOVVA.
+
+**Nos documentos de contratação.** No credenciamento, eles têm de trazer com clareza o nome da credenciada e o da prestadora de origem (RGST, art. 223, § 2º, e art. 237, § 2º).
+
+**No site da hospedeira.** No credenciamento, a prestadora de origem é obrigada a publicar a lista atualizada das suas credenciadas (art. 218). Procure a marca ali.
+
+Os dois dispositivos valem se o arranjo for credenciamento. Se a empresa for autorizada, e não credenciada, eles não se aplicam: aí não achar os dois nomes no contrato, nem a marca na lista, não quer dizer documento faltando — quer dizer que você está procurando no lugar errado. Nos dois casos o nome da rede continua sendo pergunta para a empresa, por escrito.
+
+Sobre a MOVVA, o que existe é anúncio da empresa: o material oficial de planos lista entre os diferenciais a **dupla conectividade TIM e Vivo num chip**. É o que a empresa publica, não o que eu verifiquei.
+
+E a cadeia de rede não fecha. O dossiê da própria empresa cita contrato com a ISPS do Brasil S.A. (TIP Brasil) sobre infraestrutura da ARQIA (Grupo Datora), que não é a mesma cadeia que o material comercial anuncia. As duas versões convivem, e eu não achei registro público que resolva — essa divergência está registrada em [A MOVVA é confiável?](/movva-e-confiavel). Então TIM e Vivo são as redes que a empresa anuncia, não uma lista fechada de candidatas: ARQIA e Datora não aparecem entre as cinco prestadoras com rede que a Anatel lista, que são as do Passo 3. Confira as duas que a empresa anuncia e peça o nome da prestadora de origem por escrito antes de pagar.
+
+Uma distinção que muda a conferência: *duas redes contratadas* e *uma rede com roaming na outra* não são a mesma coisa. Roaming é condição negociada entre prestadoras (art. 226), e contrato pode limitar tecnologia e uso. Material de divulgação da rede de distribuidores já descreveu a característica das duas formas — duas redes em um único chip e rede TIM com roaming na Vivo —, e material de distribuidor não é documento da empresa. Qual é o arranjo, eu não achei documento que feche. A pergunta exata para fazer está na lista do fim desta página.
+
+## Passo 2 — as três consultas da Anatel, e o que cada uma não mostra
+
+A página de cobertura da Anatel reúne quatro links de dados da própria Agência: três consultas de cobertura — percentuais, mancha e nível de sinal em determinado local — e a Consulta a Compromissos. Na mesma página estão os endereços das cinco prestadoras com rede, que são o Passo 3. Fora dela há o painel Estações do SMP, para ver antena licenciada perto de casa. Abra as três de cobertura na ordem, do município para o local.
+
+As três e o painel Cobertura Móvel do Painel de Dados têm a mesma origem declarada: a Anatel descreve essas informações como geradas a partir do licenciamento das estações rádio base, e a metodologia publicada é a nota técnica dos dados de cobertura móvel desse painel. É o painel que [o post sobre cobertura de operadora virtual](/blog/operadora-virtual-pega-bem) manda abrir — nome diferente, origem declarada igual. Se é literalmente o mesmo processamento eu não confirmei: não abri nenhum dos painéis no dia. Os endereços em informacoes.anatel.gov.br responderam erro em todas as minhas tentativas, e da consulta de nível de sinal ficou só uma cópia da madrugada, que eu não operei.
+
+A nota técnica manda usar o campo **Medida**, no painel de filtros, para alternar entre *Moradores Cobertos*, *Domicílios Cobertos* e *Área Coberta* — é esse campo que decide o que você está vendo. Em que aba ele aparece eu não confirmei: não consegui abrir os painéis.
+
+Dois avisos antes de abrir. O primeiro: tudo ali é cálculo, e a própria Anatel registra que os dados, "por tratarem de uma estimativa, podem eventualmente não representar com exatidão a cobertura móvel real". O segundo: esses endereços nem sempre respondem. Se não abrir para você, tente mais tarde — pode não ser você. O que eu encontrei no dia está na seção final.
+
+| Consulta | O que mostra | O que ela não mostra |
+| --- | --- | --- |
+| **Percentuais de cobertura** | Percentual de área, de moradores e de domicílios cobertos, por município e por tecnologia | O seu ponto. É número agregado: a cobertura de um município é a soma dos setores censitários, e a sua rua pode estar justamente no pedaço descoberto |
+| **Mancha de cobertura** | O desenho da área coberta sobre o mapa | Intensidade. A borda da mancha e o miolo dela aparecem iguais |
+| **Nível de sinal em determinado local** | A intensidade provável do sinal no local consultado. A aplicação descreve o próprio resultado como referência para conhecer a intensidade provável "em um determinado ponto de interesse" | Medição. A Anatel avisa que são resultados de cálculos teóricos, que podem variar da experiência percebida, principalmente em interiores de edificações, porque os cálculos usam ambientes abertos como referência — e que servem apenas como referência, "não constituindo, portanto, informação para efeito de compromissos de cobertura ou qualidade" |
+
+## Passo 3 — o mapa da rede hospedeira, no site dela
+
+Painel da Anatel e mapa de prestadora não são a mesma fonte, e vale olhar os dois — mas a diferença não é cálculo contra medição. Os dois são predição. O painel calcula a partir da base de estações licenciadas, com o modelo ITU-R P.1812-5 e os parâmetros que a nota técnica publica; o mapa da prestadora sai do cálculo de engenharia da própria empresa, e os parâmetros desse cálculo eu não achei publicados nos mapas que abriram para mim. O que muda é quem faz a conta e com que régua. Medição no seu portão, nenhum dos dois é.
+
+A Anatel publica os links de cinco prestadoras com rede e descreve esses mapas como demonstração teórica de presença de sinal, baseada em cálculos de predição — acrescentando que a cobertura efetiva depende de fatores como relevo, construções, tipo de ambiente e altura do usuário em relação ao solo. A mesma página registra que não há obrigação específica de oferta de cobertura indoor imposta às prestadoras, por ser limitação física do próprio serviço. Ou seja: mapa nenhum promete sinal dentro da sua casa.
+
+Na página de cobertura, a agência resume o RQUAL assim: o regulamento determina que as operadoras disponibilizem mapa de cobertura detalhado por tecnologia ofertada. O texto do inciso é mais estreito que o resumo — ele pede, na página da prestadora, informações sobre a sua cobertura do SMP por tecnologia e acesso ao mapa de cobertura da página da Agência (Resolução nº 717/2019, Anexo I, art. 28, IV). Onde os dois diferem, eu fico com o regulamento. Para você, a consequência é prática: procure 4G e 5G separados, e não conte com mapa próprio da marca.
+
+Os endereços que a Anatel lista não levam todos ao mesmo lugar hoje. Três dos cinco redirecionam — e o da Algar, depois de redirecionar, respondeu erro no meu acesso. Um recusou o meu acesso e um abre no próprio endereço. Os links continuam valendo como ponto de partida; o endereço final mudou.
+
+Numa dessas páginas, a de cobertura e roaming da TIM, há também atividades programadas, alertas de rede e o histórico das ocorrências dos últimos doze meses. Vale olhar: endereço com queda recorrente aparece ali, e não aparece em mapa de predição. Não conferi se as outras publicam o equivalente.
+
+| Rede | Endereço que a Anatel lista | Onde cai hoje (21/10/2026) |
+| --- | --- | --- |
+| Claro | claro.com.br/cobertura | Redireciona para claro.com.br/mapa-de-cobertura |
+| TIM | tim.com.br/cobertura | Redireciona para tim.com.br/para-voce/cobertura-e-roaming/mapa-de-cobertura |
+| Vivo | vivo.com.br/cobertura | Recusou o meu acesso (HTTP 403) |
+| Algar | algartelecom.com.br/para-voce/celular/cobertura-celular | Redireciona para algar.com.br e respondeu erro no meu acesso (HTTP 500) |
+| Sercomtel | www2.sercomtel.com.br/mapa-cobertura | Abre no próprio endereço |
+
+## Onde a predição engana
+
+Painel de cobertura não é medição no seu portão: é conta. A nota técnica dos dados de cobertura móvel do Painel de Dados da Anatel diz com que parâmetros a conta é feita, e cada parâmetro é uma armadilha pequena. Estão todos abaixo, como a nota os registra.
+
+Três deles merecem atenção na hora de decidir. **Altura da antena: 1,7 m** — na minha leitura, é altura de pessoa, não de torre: a predição vale para o aparelho ao ar livre, na mão, e dentro de casa é outro cenário. **Tempo: 50%** e **Localização: 90%** — a predição é estatística, não promessa: vale em metade do tempo e em nove de cada dez posições consideradas.
+
+E o que a nota **não** traz: percentual de corte. Ela não classifica localidade em coberta ou não coberta. Diz que a cobertura de localidades, municípios, UFs, regiões e Brasil foi calculada agregando os valores dos setores censitários, e o que sai é percentual de moradores, de domicílios ou de área. Os 95% que circulam são de outro lugar: no anexo de compromissos de abrangência do edital do 5G, município atendido é o que tem pelo menos 95% da área urbana do distrito sede coberta, a −110 dBm de RSRP; para localidade, o mesmo anexo pede uma estação rádio base dentro do polígono do setor censitário. Li os dois na minuta do edital, de março de 2021, não no edital publicado, e o critério varia conforme o lote — por isso não cito número de item. Critério de compromisso de leilão não é critério de painel, e é nesse contexto que [a página de zona rural](/blog/cobertura-zona-rural) usa o número.
+
+Uma ressalva sobre a própria nota: há duas versões no ar hoje, no mesmo sistema da Anatel. A que eu uso aqui é a mais recente das duas, gerada em 09/09/2025 pelos metadados do arquivo, e traz duas parametrizações. A outra, gerada em 31/03/2021, traz uma só, com 4G a −110 dBm e sem linha de 5G. Nenhuma das duas tem percentual de corte — isso eu conferi nas duas. Qual delas descreve o dado que o painel serve hoje, eu não sei: não consegui abrir o painel.
+
+| Parâmetro | O que a nota técnica registra | O que isso muda na sua leitura |
+| --- | --- | --- |
+| Origem dos dados | Sistema Mosaico, sobre a base de estações licenciadas | É o que está licenciado, não o que foi medido na rua |
+| Modelo de propagação | ITU-R P.1812-5 | Conta de rádio. Nenhum aparelho foi ligado no seu endereço |
+| Distância máxima de cálculo | 7 km | Estação mais distante não entra na conta, ainda que o sinal dela chegue |
+| Altura da antena | 1,7 m | Celular na mão, ao ar livre. Dentro de casa é outro cenário |
+| Tempo | 50% | Vale em metade do tempo, não no momento em que você olha |
+| Localização | 90% | Vale em 90% das posições. A sua pode estar nos 10% |
+| Limiar de sinal | Duas parametrizações: até 06/2024, 2G −95 dBm, 3G −102 dBm, 4G e 5G −110 dBm; a partir de 09/2024, 4G e 5G a −90 dBm | Número antigo e número novo não se comparam. O que valeu em julho e agosto de 2024 a nota não diz |
+| Moradores e domicílios | Distribuídos uniformemente dentro de cada setor censitário | Em setor grande, "moradores cobertos" diz pouco sobre o seu ponto |
+| Base populacional | Censo de 2010 até 2024; Censo 2022 a partir de 2025 | A série tem degrau. Comparar anos exige cuidado |
+| Classificação de localidade | A nota não traz nenhuma: a cobertura dos recortes é a agregação dos setores censitários | Não existe nota de corte. O painel devolve percentual, não um selo de "coberta" |
+
+## O que pedir por escrito, antes de pagar
+
+Painel é estimativa. Resposta por escrito é compromisso, e é de graça pedir.
+
+1. **Qual é a rede hospedeira que atende este CEP** — e, se forem duas, qual carrega o tráfego e qual entra como roaming. Pergunte pelo nome da prestadora de origem, porque as duas versões da cadeia que eu achei não fecham entre si. No credenciamento, os documentos de contratação têm de trazer com clareza o nome da credenciada e o da prestadora de origem (RGST, arts. 223, § 2º, e 237, § 2º). Em qual modelo a empresa opera eu não confirmei, então pergunte: o nome da rede você precisa ter antes de pagar.
+2. **A cobertura neste endereço, por tecnologia**, com 4G e 5G separados. O RQUAL (Resolução nº 717/2019, Anexo I, art. 28, IV) manda a prestadora publicar, na página dela, informações sobre a sua cobertura do SMP por tecnologia e dar acesso ao mapa de cobertura da página da Anatel. Nada ali obriga resposta por endereço, e nada ali obriga mapa próprio. E há um limite de alcance: o regulamento se aplica também a quem presta na modalidade de Autorizada de Rede Virtual (art. 1º, § 1º), mas as obrigações alcançam os Grupos que não se enquadram como Prestadora de Pequeno Porte (art. 1º, § 2º). Então a pergunta vale como pedido, não como direito exigível, e de quem é o dever no caso da marca que você está contratando depende desse enquadramento — que eu não confirmei.
+3. **Se o plano libera 5G**, e em quais faixas. A rede ter 5G e o plano entregar 5G são coisas diferentes.
+4. **Se há roaming**, e com qual limite de uso ou de tecnologia. Roaming é condição negociada entre prestadoras (art. 226), e o que foi negociado você não vê no mapa. Vale saber o limite: o PGMC (Resolução nº 783/2025, art. 66) veda roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você, mas que ajuda a ler a resposta que vier.
+5. **O que acontece se não houver sinal no endereço**: prazo para desistir, como devolver o chip, se há estorno e em quanto tempo.
+6. **Protocolo da resposta.** WhatsApp ou e-mail serve. Guarde. Resposta sem protocolo não sustenta reclamação depois.
+
+Se a realidade divergir da resposta, o caminho é a prestadora primeiro, com protocolo, e depois a Anatel — pelo aplicativo Anatel Consumidor ou pelo 1331.
+
+## A ordem que evita prejuízo
+
+A sequência importa mais do que a escolha.
+
+1. **Confira os painéis e o mapa da hospedeira.** É rápido e não custa nada. Para a consulta de nível de sinal e para o mapa da hospedeira você vai precisar do endereço completo, com CEP — por isso ele está no começo desta página.
+2. **Peça a resposta por escrito, com protocolo.** Se não vier, isso já é informação.
+3. **Use o chip no trajeto real** — casa, trabalho, o caminho — antes de mexer no seu número. Para ver em qual rede ele aceita registrar, [desligue a seleção automática](/blog/chip-dois-sinais).
+4. **Só então faça a portabilidade.** Ela tem volta, mas tem janela: o RGST dá 2 dias úteis para cancelar o processo, contados da solicitação (art. 103, II). Depois disso, segue até a conclusão. [Os prazos da portabilidade estão aqui](/blog/portabilidade-sem-perder-o-numero).
+
+Invertendo essa ordem, você descobre o sinal depois de já ter levado o número para lá.
+
+Plano sem prazo de permanência ajuda, porque sair não custa multa — mas não devolve o mês sem sinal. [O que a lei garante sobre fidelidade está aqui](/blog/operadora-sem-fidelidade).
+
+---
+
+Nota de transparência: escrevo como distribuidor independente da MOVVA Brasil Ltda, e este site não é canal oficial da empresa. Pedi o chip em 20/10/2026 e ele não chegou: não há nesta página nenhuma medição minha em campo, nem relato de uso próprio. Característica de produto da MOVVA entra aqui como anúncio da empresa, nunca como fato verificado por mim. Páginas e endereços consultados em 21/10/2026 — os que não abriram para mim estão identificados um a um na tabela do Passo 3 e nos pontos em aberto.
+
+## O que eu não consegui confirmar
+
+- **Em qual dos dois modelos do Capítulo XII do RGST a MOVVA opera** — credenciada ou autorizada. O ato da Anatel não diz, e a diferença muda quais artigos valem: no credenciamento a área segue a da hospedeira (art. 219, § 1º) e os documentos de contratação e a lista do art. 218 têm de trazer o nome da rede; na autorização, o alcance vem do próprio ato e dos contratos de compartilhamento (art. 241, § 2º), e esses dois dispositivos não se aplicam. O registro dessa dúvida está em [A MOVVA é confiável?](/movva-e-confiavel). Onde confirmar: o painel da Anatel, a lista do art. 218 no site da hospedeira e a resposta por escrito da empresa.
+- **Se a MOVVA se enquadra como Prestadora de Pequeno Porte**, e portanto quais obrigações do RQUAL a alcançam. O regulamento se aplica a quem presta como Autorizada de Rede Virtual (art. 1º, § 1º), mas as obrigações são dos Grupos que não se enquadram como Prestadora de Pequeno Porte (art. 1º, § 2º), conceito buscado no Plano Geral de Metas de Competição. Não achei documento que feche; o mesmo item já está aberto em [melhor operadora para zona rural](/blog/cobertura-zona-rural). Onde confirmar: o PGMC, os painéis da Anatel e a resposta por escrito.
+- **Qual rede atende cada endereço, e em que condição.** A MOVVA anuncia, no material oficial de planos, dupla conectividade TIM e Vivo num chip — é anúncio da empresa, não verificação minha. Duas coisas ficam abertas. A cadeia: o dossiê da empresa cita contrato com a ISPS do Brasil S.A. (TIP Brasil) sobre infraestrutura da ARQIA (Grupo Datora), que não é a mesma cadeia do material comercial, e não achei registro público que resolva. E o arranjo: duas redes contratadas e uma rede com roaming na outra levam a conferências diferentes, e material de divulgação da rede de distribuidores já descreveu a característica das duas formas — duas redes em um único chip e rede TIM com roaming na Vivo. Em 21/10/2026, a página de captação que consultei (meumovvabrasil.com.br) trazia a primeira forma, sem mencionar roaming; material de distribuidor não é documento da empresa de todo modo. Onde confirmar: a lista do art. 218 no site da hospedeira, os documentos de contratação (art. 223, § 2º) e a oferta por escrito, com protocolo.
+- **Se as consultas da Anatel estavam no ar.** Em 21/10/2026 o endereço dos painéis respondeu erro 520 em todas as minhas tentativas, inclusive às 14h40 e às 14h48, e seguia em 520 no fim da tarde. Como o host informacoes.anatel.gov.br respondeu 520 por inteiro, inclusive em páginas de legislação que não têm relação com os painéis, a leitura mais provável é indisponibilidade do servidor, e não bloqueio do meu navegador. A consulta de nível de sinal está em outro host (sistemas.anatel.gov.br) e respondeu HTTP 423, por volta das 14h38 e de novo no fim da tarde: para esse caso eu não tenho explicação, e o 520 não serve de evidência. Quanto tempo durou, não sei. Onde confirmar: a página de cobertura da Anatel e o 1331.
+- **Quais campos a consulta de nível de sinal exige** — endereço completo, CEP ou coordenada — e se ela separa resultado por prestadora e por tecnologia. A própria aplicação descreve o resultado como referência para conhecer a intensidade provável "em um determinado ponto de interesse", mas na cópia da aplicação Mosaico: SMP que ficou salva da minha coleta da madrugada de 21/10/2026 havia seleção de UF e de município e arquivos de mapa por tecnologia e por prestadora para download, não um campo de endereço visível. Não operei a interface, que roda por script, e de tarde o endereço passou a recusar o acesso. Então continuo sem saber se ela desce ao ponto.
+- **Se os mapas das prestadoras aceitam endereço completo.** Não consegui chegar à busca desses mapas, então não sei se ela desce ao número da casa ou para no município e no CEP. Dois dos cinco endereços não abriram para mim em 21/10/2026 — Vivo (HTTP 403) e Algar (HTTP 500), como está na tabela do Passo 3. Onde confirmar: o próprio mapa da hospedeira e a resposta por escrito.
+- **A data de referência dos dados do painel.** A nota técnica descreve o método, não a data do último processamento. Os arquivos de mapa daquela cópia da aplicação da Anatel traziam datas de criação entre 27/06/2026 e 10/10/2026, mas são os arquivos para download, não a data do dado que alimenta os painéis. Sem abrir o painel, não dá para dizer de quando é a mancha que você vai olhar.
+- **Qual das duas notas técnicas é a corrente.** Há duas no ar no mesmo sistema da Anatel: a que eu cito, gerada em 09/09/2025 pelos metadados do arquivo, com duas parametrizações e linha de 5G; e outra, gerada em 31/03/2021, com uma parametrização, 4G a −110 dBm e sem 5G. A de 09/09/2025 é a mais recente das duas, mas as datas vêm do metadado do PDF, não do texto do documento. Qual delas descreve o dado que o painel serve hoje, eu não sei, porque não consegui abrir o painel.
+- **Se o edital publicado do 5G manteve a redação e a numeração da minuta.** Os dois critérios que cito — 95% da área urbana do distrito sede para município, uma estação rádio base no polígono do setor censitário para localidade — eu li na minuta de março de 2021 (SEI/ANATEL 6605739), e o critério varia conforme o lote de radiofrequência. Não abri o texto final. Por isso não cito número de item. Onde confirmar: o Edital nº 1/2021-SOR/SPR/CD-ANATEL publicado em 27/09/2021.
+- **Por que a página de cobertura da Anatel descreve um dever mais largo que o inciso.** A página diz que o RQUAL determina mapa de cobertura detalhado por tecnologia ofertada; o art. 28, IV do Anexo I pede informações de cobertura por tecnologia e acesso ao mapa da própria Agência. Se existe outro dispositivo por trás do resumo da página, eu não achei. Onde confirmar: o Manual Operacional do RQUAL e o restante do Anexo I.
 
 ---
 
@@ -194,6 +620,241 @@ público.
 
 ---
 
+# Como contratar o chip MOVVA — e como cancelar, portar o número e reclamar
+
+URL: https://movvabrasil.net/blog/contratar-chip-movva
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Cancelar: pedido a qualquer tempo (RGC, art. 82), efeito imediato com atendente (art. 83) e comprovante (art. 85). Reclamação, 7 dias corridos (art. 10); senão, 1331. Portar: até 3 dias úteis, efetivação nunca acima de 5 (RGST, arts. 103 e 104). Arrependimento: 7 dias (CDC, art. 49). O que o checkout da MOVVA exige, não confirmei em documento da empresa.
+
+Fontes citadas:
+- Anatel — RGC, anexo à Resolução nº 765/2023 (arts. 7º, 9º, 10, 13, 14, 15, 16, 17, 18, 21, 22, 24, 32, 36, 37, 40, 42, 46, 58, 64 a 69, 70 a 76, 81 a 86, 87 a 89, 90, 91 e 93) — e o art. 84 da própria Resolução, que revoga dispositivos da Resolução 632/2014: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Guia das obrigações das Prestadoras de Telecomunicações de Pequeno Porte (PPPs), 5ª edição, revisão 2 (abril de 2026) — itens 4.4.1, 4.4.2, 4.4.3, 4.4.7, 4.4.12, 4.4.13.1, 4.4.14, 4.7.1 e 4.7.3: https://www.gov.br/anatel/pt-br/regulado/prestadoras-de-pequeno-porte/guia-das-ppps
+- Anatel — Manual Operacional do RGC, versão 1 (agosto de 2024), PDF servido pelo sistema da Anatel — itens 2.4.1, 2.6.1, 3.1.1, 3.4.1, 3.6.1, 3.6.2, 4.5.2, 4.7.3 e 4.7.4: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/462fd3ce384263570966a0f01970e89d
+- Manual Operacional do RGC, versão 4 (junho de 2025) — cópia hospedada por operadora; dela vêm o capítulo 4.9 (rescisão sem intervenção de atendente) e a regra de transição do item 3.4.1 sobre ofertas comercializadas a partir de 01/09/2025, que não existem na versão 1: https://www.claro.com.br/files/104379/x/e94cf9c977/manual-operacional-do-rgc-consolidado_versaojunho_2025.pdf
+- Anatel — RGST, anexo à Resolução nº 777/2025 (arts. 69, II, "c", 70, 71, 92, 93, 94, 103 e 104: custo, prazos e efeito contratual da portabilidade): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Cancelamento (telefonia móvel), página modificada em 31/08/2025, conferida em 21/10/2026: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/cancelamento
+- Código de Defesa do Consumidor (Lei 8.078/1990), art. 49 e parágrafo único — texto compilado: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+- Anatel — Portabilidade na telefonia móvel, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/portabilidade
+- Anatel — Registrar reclamação (1331 e Anatel Consumidor): https://www.gov.br/anatel/pt-br/consumidor/reclamacao
+
+## Por que a saída vem na mesma página da entrada
+
+A primeira metade desta página explica o que a contratação pede de você. A segunda explica como cancelar, como levar o número embora e o que guardar para reclamar.
+
+O motivo é de método: esta página só afirma o que tem documento público ao lado, e isso vale nas duas metades. Na entrada, o que eles devem te entregar tem artigo — contrato e Etiqueta Padrão pelo art. 42, I, do RGC, e o canal alternativo do art. 24, § 1º, se a oferta for só digital. Na saída, também — pedido a qualquer tempo pelo art. 82, efeito imediato com atendente pelo art. 83, comprovante pelo art. 85.
+
+O que fica sem documento é o que só a MOVVA pode responder: o que o checkout exige, quando ele cobra, quanto custam o chip e o frete, quanto tempo a entrega leva. Contratei um plano em 20/10/2026 e escrevo isto em 21/10/2026: um dia depois, o chip não chegou. Um dia de espera não diz nada sobre o prazo da operadora, e é por isso que esta página não publica prazo de entrega. Vale também uma regra desta casa: o que eu vi no meu próprio pedido é experiência minha, não documento da empresa — e experiência própria não vira linha de tabela nem direito seu.
+
+E tem um filtro que vale para tudo o que vem depois. O **art. 90 do RGC** lista, um por um, os dispositivos que alcançam **Prestadora de Pequeno Porte** — o enquadramento de muita operadora virtual. Dispositivo fora dessa lista não é obrigação exigível dessa operadora. Por isso, em cada direito abaixo, eu digo o que a lista alcança e o que ela não alcança. Se a MOVVA é de pequeno porte, eu não confirmei: é o primeiro item da lista do fim.
+
+## O que a contratação pede de você
+
+Do seu lado, a lista é a de qualquer compra remota: CPF, um documento de identificação, endereço para o chip chegar e a forma de pagamento. **Não confirmei em documento da MOVVA a lista exata que o checkout dela exige** — e o meu próprio pedido não serve de prova aqui, porque relato de experiência não é documento da empresa e pode não ser o que você vai ver na tela. Vai como item em aberto no fim.
+
+Se você vai trazer o seu número, a lista é outra e ela é da portabilidade, não da MOVVA: está em [o que a portabilidade exige e quanto tempo leva](/blog/portabilidade-sem-perder-o-numero). Um detalhe de lá que decide o resto: a portabilidade acontece dentro da mesma área de registro, ou seja, o DDD continua o mesmo.
+
+E tem o custo, com a origem declarada. Pelo material de divulgação da rede de distribuidores, a estrutura é um plano mensal mais o chip e o frete. **Isso não é documento da própria MOVVA**: o documento oficial que eu tenho lista os diferenciais dos planos e nenhum preço. Material de distribuidor não é documento da empresa, e é só o que eu tenho sobre valores. Se o chip e o frete são cobrados à parte ou já entram na primeira mensalidade, não localizei documento que diga. A estrutura e os riscos que eu encontrei estão na [análise](/movva-e-confiavel). Peça os valores vigentes por escrito, com protocolo, e confira na própria página de contratação antes de pagar.
+
+## As etapas, e o prazo de cada uma
+
+Duas das seis etapas têm prazo em norma. Três eu não sei, e estão marcadas como não sei. A primeira é conversa, e não tem prazo normativo nenhum.
+
+É a diferença entre a tabela abaixo e um cronograma de vendas.
+
+| Etapa | Prazo | Onde isso está escrito | Estado |
+| --- | --- | --- | --- |
+| Escolher o plano e falar comigo | minutos | nada normativo: é conversa | — |
+| Pagar o plano, o chip e o frete | **não sei** | a estrutura de custo está na [análise](/movva-e-confiavel), vinda de material de distribuidor; o momento do pagamento não está em norma nem em documento que eu tenha aberto | em aberto |
+| Receber o contrato e a Etiqueta Padrão | no momento da contratação | RGC, art. 42, I — na lista do art. 90 | verificado |
+| O chip ser enviado e chegar | **não sei** | não localizei prazo de envio ou de entrega em norma nem em documento da MOVVA | em aberto |
+| Portabilidade do número | até 3 dias úteis; a efetivação, em nenhum caso, acima de 5 dias úteis | RGST, art. 103, I, e art. 104, II | verificado |
+| Ativar e usar | **não sei** | falta eu testar em campo | em aberto |
+
+## O que eles são obrigados a te entregar no ato — e o que não dá para exigir
+
+Aqui a norma trabalha a seu favor, e esta é a parte que passa o filtro de porte.
+
+Pelo **art. 42, I**, do RGC, no momento da contratação a prestadora deve entregar o contrato de prestação de serviço **e a Etiqueta Padrão**, na forma que você escolher. O inciso II manda fornecer as informações para o seu primeiro acesso ao atendimento digital, onde esses dois documentos ficam disponíveis. O art. 42 está na lista do art. 90, e o Guia das obrigações das PPPs da Anatel repete a obrigação para prestadora de pequeno porte (item 4.4.7). Esses dois você cobra.
+
+A Etiqueta Padrão resume preço, acesso e fruição da oferta. É o que você guarda para conferir, seis meses depois, se o que foi cobrado é o que foi vendido.
+
+O contrato tem conteúdo definido. Pelo **art. 40** — também na lista —, ele traz as condições de preço, acesso e fruição do § 3º do art. 21 e mais a lista do próprio art. 40: prazos de instalação e reparo, canais de atendimento, como contestar cobrança, como suspender e como rescindir, condições de fruição e restrições, facilidades incluídas.
+
+Se a contratação é remota, há prazo para os documentos aparecerem na área logada: o Manual Operacional do RGC (item 2.4.1) manda disponibilizar ali, **em até 48 horas**, os documentos do art. 13, inciso I — e o inciso I é um dos poucos do art. 13 que alcançam prestadora de pequeno porte.
+
+Se a contratação é por telefone, o **parágrafo único do art. 42** manda apresentar todas as informações do art. 40 e manter **à sua disposição a gravação da formalização do contrato por 90 dias**. Peça a gravação se algo divergir.
+
+Agora o outro lado, que é o inverso do que uma leitura corrida do RGC sugere:
+
+- **Art. 22** — repositório permanente de ofertas na página da prestadora por 3 anos após o fim da vigência, com atalho na página inicial, identificação por nome comercial e por código único e Etiqueta Padrão acompanhando cada oferta. Ele **não está na lista do art. 90**: não é exigível de prestadora de pequeno porte. O Manual Operacional, na versão de junho de 2025, registra que as ofertas com comercialização iniciada a partir de 01/09/2025 seguem a regra do art. 22 (item 3.4.1) — a versão de agosto de 2024, que é a que o sistema da Anatel serve, traz outra regra de transição no mesmo item. De todo modo, isso vale para quem o art. 22 alcança.
+- **Art. 21** — registro da oferta em sistema da Anatel antes da comercialização, com código de identificação único pelo § 2º. Também **fora da lista**. Para a prestadora de pequeno porte é faculdade: o **art. 90, § 1º**, permite submeter as ofertas à ferramenta comparadora do art. 32, caso em que ela passa a observar o art. 21, e o § 2º diz que a submissão é gratuita. O **§ 4º** guarda a volta: a Anatel pode, a qualquer tempo e de forma motivada, determinar que a pequena passe a observar o art. 21. O Guia das PPPs diz o mesmo nos itens 4.7.1 e 4.7.3. E o Manual descreve o sistema de registro, o Busca Ofertas, como em desenvolvimento pela Anatel (item 3.1.1).
+
+O pedido prático, com a diferença que importa no balcão: **peça o contrato e a Etiqueta Padrão antes de pagar** — esses dois o art. 42 garante, inclusive em operadora pequena. O **código único da oferta só existe se a prestadora registrou a oferta** no sistema da Anatel; em prestadora de pequeno porte isso é faculdade, e o art. 40, I, pede o código no contrato "quando for o caso". O Guia das PPPs escreve a condição com todas as letras: "Código de identificação da oferta (caso a PPP opte por cadastrar no sistema para registro das Ofertas estabelecido pela Anatel)". Então pergunte, não exija.
+
+## Se a contratação é só digital, eles te devem mais — e aí o porte pesa menos
+
+Operadora virtual costuma vender sem loja. O RGC tem uma figura para isso, e ela é das boas notícias desta página: o **art. 24 está na lista do art. 90**, inteiro.
+
+Pelo art. 24, a prestadora pode comercializar ofertas com contratação e atendimento exclusivamente por meio digital. Em troca:
+
+- **§ 1º**: a oferta tem de prever canal alternativo de contato para o caso de indisponibilidade do serviço. Se o aplicativo cair, tem de existir outro caminho.
+- **§ 2º**: é vedado cobrar pela disponibilização eletrônica do documento de cobrança e do relatório detalhado.
+- **§ 3º**: o contrato e a Etiqueta Padrão têm de informar esse canal alternativo, a vedação do § 2º e os canais de acesso à Ouvidoria.
+- **§ 4º**: as regras do atendimento por meio digital se aplicam **em sua integralidade** a essa oferta.
+
+Atrito honesto no § 3º, III. Ele fala em canais da Ouvidoria, mas os **arts. 87 a 89**, que criam a Ouvidoria, **não estão na lista do art. 90**. E o Guia das PPPs da Anatel, ao descrever a mesma obrigação para prestadora de pequeno porte (item 4.4.3), troca a palavra: o contrato e a Etiqueta Padrão devem informar "o canal alternativo, a proibição de cobrança eletrônica e os canais de atendimento". Se a sua prestadora é pequena, pode não haver Ouvidoria para informar. Registro a divergência entre as duas fontes; não sei qual leitura prevalece.
+
+O § 4º é o que pesa na hora de sair, e ele não puxa um dispositivo só. Em oferta exclusivamente digital, as regras do canal digital valem por inteiro: o Guia das PPPs escreve, no item 4.4.3, que "as regras do 'Atendimento por Meio Digital' se aplicam integralmente a essas ofertas (Art. 13 e 14)", e o Manual Operacional (item 3.6.1) diz que a prestadora de pequeno porte que optar por essa oferta deve atender aos arts. 7º, 9º, inciso I, 13, 14 e 24. Nessa hipótese voltam os dois parágrafos do art. 13 que mais importam na saída: o **§ 3º**, da rescisão processada de forma automatizada, sem intervenção de atendente, e o **§ 1º**, do acesso ao atendimento digital por no mínimo 6 meses depois da rescisão. Fora dessa via, do art. 13 a lista do art. 90 só traz os incisos I e II e os §§ 2º, 4º e 5º. O mesmo capítulo do Manual registra que essas ofertas não podem ser contratadas por telefone nem presencialmente (item 3.6.2).
+
+O **art. 14** vale sempre: está na lista e veda condicionamento ou restrição ao acesso ao atendimento digital — com a ressalva do parágrafo único, segundo o qual exigir identificação prévia não é a restrição vedada.
+
+Então isto não fecha como conclusão, e sim como condição. **Se** a oferta for exclusivamente digital, o art. 24, § 4º puxa as regras do canal digital por inteiro e nem operadora pequena escapa do cancelamento sem atendente. Se não for, esse caminho não existe para ela. **Não confirmei se a oferta da MOVVA é exclusivamente digital** — pergunte, e peça a resposta com protocolo.
+
+## A sua linha antiga, e a multa que a portabilidade não apaga
+
+Trazer o número não apaga o que você já assinou na outra operadora. São dois contratos, e a norma trata deles em lugares diferentes.
+
+Se você está em prazo de permanência na operadora atual, a multa continua devida — com os dois limites do **art. 37, § 1º**, do RGC: proporcional ao tempo restante e nunca acima do valor do benefício concedido. Os arts. 36 e 37 estão na lista do art. 90. As exceções estão em [o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade), inclusive o caso em que a multa não pode ser cobrada.
+
+Sobre encerrar a linha antiga, o dispositivo é do RGST, não do RGC. Pelo **art. 94** do RGST, anexo à Resolução 777/2025, a portabilidade implica a cessação da relação contratual com a prestadora doadora e a celebração de outra com a receptora; e o parágrafo único diz que a denúncia do contrato na doadora é feita **com a solicitação de portabilidade**, concretizando-se com o seu efetivo atendimento. O **parágrafo único do art. 92** do mesmo RGST fecha a conta: concluída a portabilidade, a doadora não pode emitir documento de cobrança ao usuário portado, salvo quando existam obrigações contratuais a cumprir ou serviços já prestados.
+
+Ou seja: portar é pedir a saída. O que sobra de cobrança é o que você já devia, não mensalidade nova.
+
+Um aviso que é raciocínio meu, não dispositivo: **não cancele a linha antiga antes de a portabilidade concluir**. Quem pede a portabilidade é a operadora de destino, e ela precisa encontrar o número ativo na origem.
+
+E peça o comprovante — pelo artigo certo, porque aqui errar o número custa o pedido. O **art. 85** do RGC é o da saída a pedido do consumidor: "em qualquer hipótese, o comprovante do pedido de rescisão deverá ser disponibilizado ao Consumidor por correspondência ou por meio eletrônico à sua escolha". Está na lista do art. 90, e o Guia das PPPs o repete no item 4.4.14.
+
+O **art. 76** é outro endereço. Ele fica no capítulo da suspensão e rescisão **por falta de pagamento** (arts. 70 a 80) e trata da rescisão por inadimplência em oferta pós-paga: aí a prestadora deve enviar comprovante de rescisão em até 7 dias, informando a possibilidade de registro do débito em sistemas de proteção ao crédito — registro que, pelo parágrafo único, precisa ser precedido de notificação. O Guia das PPPs o põe exatamente ali, no item 4.4.13.1, sob o título "Rescisão do contrato (Artigos 73 e 76)".
+
+## Como cancelar a MOVVA
+
+Esta é a seção que decide o sim, então ela vai com artigo em cada linha — e com o filtro de porte em cada linha também.
+
+**O que alcança operadora de pequeno porte:**
+
+- **art. 82** — o pedido de rescisão pode ser feito **a qualquer tempo** e por todos os canais de atendimento disponíveis para a oferta contratada, independentemente de você estar em dia. No pedido, a prestadora informa condições aplicáveis, débitos remanescentes e multa de permanência.
+- **art. 83** — feito **com atendente**, o efeito é **imediato**, ainda que o processamento técnico precise de prazo; e a prestadora não pode cobrar serviços prestados depois do pedido.
+- **art. 85** — o comprovante do pedido de rescisão, por correspondência ou meio eletrônico, à sua escolha.
+- **art. 18, I** — no primeiro menu do atendimento telefônico tem de estar disponível a rescisão de forma automatizada, sem intervenção de atendente. Os incisos I, II e III do art. 18 estão na lista, e o Guia das PPPs confirma os três no item 4.4.2.
+- **art. 15, I e II, e art. 17** — o atendimento telefônico é gratuito e recebe chamada de celular e de fixo; e, se a ligação cair antes do fim do atendimento, a prestadora tem de retornar imediatamente.
+- **art. 81** — suspensão temporária a pedido, uma vez a cada 12 meses, de 30 a 120 dias, sem ônus e com o prazo de permanência pausado. Com uma condição que o caput impõe e que vale ler ao lado do art. 82: quem pode requerer é o **Consumidor adimplente**, e requerimento em condições diversas **poderá ter caráter oneroso** (§ 2º). Para sair, estar em dia não importa; para só pausar, importa.
+
+**O que não alcança operadora de pequeno porte:**
+
+- **art. 84** — é ele que diz que os pedidos processados sem intervenção de atendente "deverão ser processados automaticamente e terão efeitos após 2 (dois) dias úteis do pleito", que você paga pelos serviços usufruídos nesses dois dias (§ 1º) e que pode cancelar o próprio pedido de rescisão dentro do prazo (§ 2º). Ele **não aparece na lista do art. 90**: a lista pula do art. 83 para o art. 85, nas duas redações publicadas. E o Guia das PPPs, ao descrever a rescisão para prestadora de pequeno porte (item 4.4.14), cita os arts. 82, 83, 85 e 86 — e não menciona o art. 84.
+- **art. 13, § 3º** — a rescisão automatizada no canal digital. Também fora da lista, e só volta pela via do art. 24, § 4º, em oferta exclusivamente digital — que é justamente o que eu não confirmei na MOVVA.
+- **art. 15, III e IV** — o atendimento 24 horas por dia, 7 dias por semana, e o atendente humano em horário amplo. Da lista do art. 90, do art. 15 constam só os incisos I e II. No lugar deles entra o **art. 91**: "O Atendimento Telefônico das Prestadoras de Pequeno Porte funcionará, no mínimo, pelo período de 8 (oito) horas, ininterruptamente, nos dias úteis". O Guia das PPPs diz o mesmo no item 4.4.2. Isso muda o conselho prático: o efeito imediato com atendente continua valendo, mas o telefone pode existir só oito horas, em dia útil — ligue cedo, e não conte com fim de semana.
+
+Então, numa operadora de pequeno porte: o cancelamento a qualquer tempo e o efeito imediato com atendente você cobra; a opção automatizada no primeiro menu do telefone você cobra; o comprovante você cobra. Os **2 dias úteis do canal sem atendente, não** — o art. 84 está fora da lista do art. 90, e esse prazo não é exigível dela. O mecanismo da lista é o que está no começo desta página.
+
+E onde o cancelamento automatizado existe, o Manual Operacional do RGC desenha o fluxo com detalhes que valem guardar para quando a retenção tentar segurar você. O capítulo é o 4.9, e ele está na versão de junho de 2025 do Manual — não na de agosto de 2024, que é a que o sistema da Anatel serve hoje (item 4.9.1):
+
+- no cancelamento automatizado, no telefone ou no digital, **não deve existir qualquer interação humana**;
+- qualquer abordagem — confirmação do pedido ou renegociação — **só pode ocorrer depois da entrega do protocolo** do cancelamento;
+- é admitido perguntar, sem intervenção humana, se você quer ouvir ofertas alternativas antes de confirmar; no telefone, **se você não responder, o fluxo deve seguir para o cancelamento**;
+- a mensagem tem de deixar claro que se trata de rescisão contratual de toda a oferta;
+- o número de origem do pedido não estar cadastrado **não pode impedir** o cancelamento sem atendente;
+- pedir pelo canal digital usando outra conexão que não a contratada **também não pode impedir**.
+
+Uma ressalva de fonte, que eu não escondo. A página da Anatel sobre cancelamento de telefonia móvel, modificada em 31/08/2025 e conferida em 21/10/2026, descreve o efeito imediato com atendente e os 2 dias úteis sem atendente, mas apoia o texto nos arts. 14 e 15 combinados com os arts. 57 a 59 da Resolução 632/2014. Esses dispositivos estão revogados: o art. 84 **da Resolução 765/2023** — artigo da resolução, não do RGC, que é o anexo dela, e não o art. 84 do RGC citado acima — revoga os arts. 1º a 39, 41 a 48, 50 a 64 e 66 a 114 do Anexo I da 632/2014, e o Acórdão nº 228/2024 fixou a revogação em 1º de setembro de 2025. Registro a divergência entre as fontes e uso o RGC, Anexo da Resolução 765/2023.
+
+## Os 7 dias do arrependimento, e de quando eles contam
+
+Contratação remota tem uma saída que não depende de regulamento setorial nenhum, nem de porte de operadora: o **art. 49 do Código de Defesa do Consumidor**. Você pode desistir do contrato no prazo de 7 dias "a contar de sua assinatura ou do ato de recebimento do produto ou serviço", sempre que a contratação ocorrer fora do estabelecimento comercial, especialmente por telefone ou a domicílio. É o caso de quem contrata chip pela internet.
+
+O parágrafo único é a parte que paga: exercido o arrependimento, os valores eventualmente pagos **"a qualquer título"** durante o prazo de reflexão são devolvidos **de imediato, monetariamente atualizados**.
+
+Num plano de celular que vem com chip pelo correio, a frase da lei abre duas datas possíveis: a da compra e a da chegada do chip. **Não localizei decisão nem dispositivo que diga qual delas prevalece** nesse arranjo de serviço mais produto, nem se o frete está dentro do "a qualquer título". Os dois pontos vão para a lista do fim.
+
+Na prática: se você desistir, desista por escrito, guarde o protocolo e a data, e registre no 1331 se a devolução não vier.
+
+## O que acontece com o que você já pagou
+
+Cancelar não significa perder o mês — quando a oferta é pós-paga. E é aqui que falta um dado meu.
+
+Pelo **art. 46** do RGC, a forma de pagamento da oferta pode ser pós-paga, pré-paga ou uma combinação das duas. **Não confirmei em qual delas o plano da MOVVA se enquadra**, e os dados que eu publico sobre os planos não registram isso. Disso depende qual linha da tabela se aplica a você: o art. 58 é escrito para a forma pós-paga, o art. 65 muda de rota entre os incisos I e II conforme a forma, e o art. 76 é pós-paga. Vai como item em aberto.
+
+A boa notícia é o porte: **todos os artigos desta tabela estão na lista do art. 90** — arts. 58, 64, 65, 66, 67 e 68 alcançam prestadora de pequeno porte.
+
+| Situação | O que a norma manda | Dispositivo |
+| --- | --- | --- |
+| Cancelou no meio do ciclo, **em oferta pós-paga** | cobrança proporcional ao período usufruído até a rescisão; vale também para cobrança antecipada | RGC, art. 58 e parágrafo único |
+| Pagou valor cobrado indevidamente | devolução do dobro do que foi pago em excesso, com correção monetária e juros de 1% ao mês, proporcional ao dia | RGC, art. 64 |
+| A forma e o prazo dessa devolução | pós-pago: abatimento na fatura seguinte; pré-pago: créditos com validade mínima de 90 dias e prazo máximo de 10 dias para devolver; via sistema bancário: até 30 dias; **e outras formas definidas pelo Grupo de Implantação, em especial para prestadora de pequeno porte** | RGC, art. 65, I a IV |
+| Pagou a mesma fatura duas vezes | abatimento na fatura seguinte ou devolução pelo sistema bancário em até 30 dias, se você preferir | RGC, art. 67 |
+| O serviço ficou indisponível, por interrupção ou reparo | ressarcimento automático e proporcional, até o segundo mês subsequente ao evento | RGC, art. 66 |
+| Você já saiu e sobrou crédito no seu nome | mecanismo de consulta em destaque na página inicial, notificação ao ex-cliente e **1 ano** para pedir, a contar da notificação | RGC, art. 68, caput e §§ 1º, 3º, 4º e 5º — a consulta pelo CPF/CNPJ é exigência do Manual Operacional, item 4.7.4, não do artigo |
+
+## Depois de sair, o dinheiro que sobrou tem endereço — e prazo
+
+O art. 68 é pouco conhecido e resolve um problema real: ex-cliente que não sabe que tem crédito a receber. Ele está na lista do art. 90.
+
+A prestadora tem de informar você sobre a existência e o valor do crédito, a forma e o prazo para solicitá-lo, e manter essas informações num mecanismo de consulta exibido em destaque na página inicial (caput e § 1º). Que a consulta funcione **pelo CPF ou CNPJ** não está no artigo: o § 2º remete o funcionamento do mecanismo ao Grupo de Implantação, e a exigência está no Manual Operacional, item 4.7.4. O Manual recomenda até a fraseologia na página: "Devolução de valores a ex-cliente" (item 4.7.3). E o § 3º obriga a notificar você do crédito por meio eletrônico, postal ou outro definido pelo **Grupo de Implantação** — que, pelo **art. 93 do RGC**, é composto pela Anatel e pelas prestadoras sujeitas ao Regulamento, inclusive as de pequeno porte, ou pelas entidades que as representem (§ 1º), sendo **facultada** a participação do Sistema Nacional de Defesa do Consumidor e do CDUST (§ 2º). Não é a agência sozinha.
+
+O prazo é a parte que custa dinheiro, e é a que quase nunca aparece. Pelo **§ 4º do art. 68**, o crédito deve permanecer disponível para consulta e solicitação **pelo período de 1 ano, a contar da sua notificação**. Se não foi possível notificar você, o prazo começa com a disponibilização da informação no mecanismo de consulta (§ 5º). Passado o ano sem você pedir, o **art. 69, II** manda a prestadora recolher o valor ao Fundo de Defesa de Direitos Difusos.
+
+E aqui vem a parte que também não aparece: o depósito no Fundo **não encerra o seu direito**. Pelo **art. 69, § 2º**, você continua podendo pleitear o ressarcimento à prestadora, que tem 30 dias, a contar da solicitação, para devolver; e, pelo § 3º, ela desconta esse valor do próximo recolhimento ao Fundo. O Guia das PPPs resume numa linha, no item 4.4.12: mesmo após o depósito no FDD, o consumidor ainda pode pedir o ressarcimento.
+
+Uma ressalva de porte, desta vez escrita na própria norma: o **art. 65, IV**, admite "outras formas definidas pelo Grupo de Implantação, em especial para as Prestadoras de Pequeno Porte". O Manual acrescenta (item 4.5.2) que a prestadora interessada em usar forma alternativa de restituição precisa de autorização prévia da Superintendência da Anatel responsável pelo tema, e que isso não vale para casos que não se caracterizam como cobrança indevida. Se te oferecerem uma devolução fora das três primeiras formas do art. 65, peça a autorização.
+
+E o que não é dinheiro, é giga: franquia não usada é outro assunto, com outra regra. Está em [o que muda quando a franquia acumula](/blog/internet-que-acumula), e o problema de lá é de uma palavra: o dispositivo de saldo do RGC fala em crédito, não em gigabyte.
+
+## Levar o número para outra operadora
+
+Sair da MOVVA mantendo o número é o mesmo processo de entrar nela, ao contrário: quem pede é a operadora de destino, e ela cuida do resto junto à atual.
+
+Os prazos têm dispositivo, e é o RGST, anexo à Resolução 777/2025. Pelo **art. 103**: até 3 dias úteis para a duração do processo de portabilidade, 2 dias úteis para cancelar o pedido, 1 dia útil para a recusa, e 2 horas de período de transição em 99% dos casos, nunca acima de 24 horas. Pelo **art. 104, II**, a efetivação, em nenhum caso, deve se dar em mais de 5 dias úteis. A janela de indisponibilidade e até quando dá para desistir estão em [portabilidade: prazo, janela de transição e como desistir](/blog/portabilidade-sem-perder-o-numero).
+
+O custo precisa de precisão, porque é fácil prometer demais aqui. O **art. 92** do RGST veda à **prestadora doadora** — a que você está deixando — instituir cobrança a você em função da portabilidade, e o art. 93 veda que ela cobre da receptora. Isso não é o mesmo que portabilidade grátis. Pelo **art. 70**, a portabilidade **pode ser onerosa ao usuário portado**, por valor cobrado pela **prestadora receptora**, de uma vez ou parcelado, destinado a recuperar parte dos custos de implantação, operação e manutenção da Entidade Administradora. O valor máximo é definido pela Anatel em Ato do Conselho Diretor (§ 1º), tem de ser repassado integralmente à Entidade (§ 2º), e a receptora **pode dispensar** a cobrança assumindo o pagamento (§ 3º). O art. 71 lista os casos em que a portabilidade não é onerosa — mudança de oferta na mesma prestadora e troca de endereço dentro de uma área local — e nenhum deles é troca de operadora. **Não abri o Ato que fixa esse valor máximo**: vai para a lista do fim. Pergunte à operadora de destino se ela cobra: informar **o valor a ser pago pela portabilidade e a forma de pagamento** é dever dela, pelo **art. 69, II, alínea "c"**, do mesmo RGST.
+
+Um detalhe que só aparece em operadora virtual e muda contra quem você fala: no modelo de credenciamento, a numeração é da prestadora de origem e quem contrata passa a ser usuário dela, sob a marca da virtual. Os dois modelos estão em [o que é operadora virtual](/blog/o-que-e-operadora-virtual), e a consequência para reclamação está em [contra quem você reclama numa virtual](/blog/movva-reclame-aqui).
+
+Ordem prática, que é raciocínio meu: peça a portabilidade primeiro, confirme que o número já funciona na nova operadora e só então trate das pendências com a antiga.
+
+## Se der errado: o que guardar, e por quanto tempo
+
+O caminho de reclamação — protocolo, prestadora, ouvidoria, Anatel — já está aberto, com os prazos e a coluna de porte ao lado de cada degrau, em [o que existe hoje sobre a MOVVA e como conferir](/blog/movva-reclame-aqui). Não repito aqui. O que falta nessa conta é a prova, e é disso que esta seção trata.
+
+O protocolo é obrigação, com um recorte que importa. Pelo **art. 9º**, todo atendimento recebe um protocolo, que deve ser informado a você no início do atendimento. Só que a lista do art. 90 traz do art. 9º apenas o **caput e o inciso I**. O inciso II, da rastreabilidade, e o inciso III — o que manda enviar o protocolo por meio eletrônico escolhido por você, em até 1 dia, com data e hora do registro — **não alcançam prestadora de pequeno porte**. O Guia das PPPs confirma o recorte no item 4.4.1. Peça por escrito de todo jeito; só não conte com o artigo se a operadora for pequena.
+
+Prazos de resposta, pelo **art. 10**, caput e § 1º — e os dois estão na lista: reclamações resolvidas em **até 7 dias corridos**; solicitações e pedidos de informação respondidos durante o atendimento e, quando não puderem ser atendidos de imediato, em **até 10 dias corridos**. São duas coisas diferentes, e confundi-las é o que faz muita gente achar que o prazo da operadora é maior do que é.
+
+O que guardar, e por que guardar **antes** de ir embora:
+
+- o **art. 13, § 1º**, garante acesso ao atendimento digital por no mínimo 6 meses após a rescisão — e ele **não está na lista do art. 90**. Em operadora de pequeno porte, ele só alcança por uma via: a do art. 24, § 4º, em oferta contratada e atendida exclusivamente por meio digital, hipótese em que as regras do canal digital valem por inteiro. Como eu não confirmei se a oferta da MOVVA é dessa espécie, a premissa está aberta e a conclusão também: trate a janela como incerta e resolva por conta própria — baixe fatura, relatório detalhado e histórico enquanto você ainda é cliente;
+- o **§ 2º** do mesmo artigo **está** na lista: no atendimento digital têm de existir as opções de salvar cópia das informações e documentos e de remetê-los para o meio eletrônico da sua escolha. Use isso hoje;
+- o **§ 5º**, também na lista, proíbe cobrar ou descontar da franquia os dados gastos para acessar os canais de atendimento, ainda que o conteúdo esteja hospedado em site de terceiro — então não existe desculpa de "acabou meu pacote";
+- gravações, com a distinção que a lista impõe: o que o art. 90 garante é o **art. 42, parágrafo único** — a gravação da formalização do contrato por telefone fica à sua disposição por 90 dias. A regra mais ampla, de manter **todas** as gravações por no mínimo 90 dias (Manual Operacional, item 2.6.1), e a cópia das interações do canal digital em até 48 horas do encerramento apoiam-se nos arts. 16 e 13, V, que **não** estão na lista. Em operadora pequena, peça; não conte como garantido;
+- o comprovante do pedido de rescisão do **art. 85**, que está na lista — e, se a saída for por inadimplência em oferta pós-paga, o comprovante do art. 76 em até 7 dias.
+
+Um detalhe de horário, para quem vai reclamar por telefone em operadora pequena: pelo art. 91, esse canal pode funcionar só oito horas por dia, em dias úteis. O prazo de 7 dias corridos do art. 10 corre de todo jeito, mas a janela para falar é mais estreita do que a de uma operadora grande.
+
+Com protocolo, contrato, Etiqueta Padrão e fatura na mão, a reclamação deixa de ser versão contra versão.
+
+## O que eu ganho se você contratar
+
+Os links de contratação deste site levam ao meu WhatsApp e eu recebo comissão se você contratar. É por isso que cada afirmação desta página vem com o artigo ao lado: a comissão explica o meu interesse, e o documento público é o que permite você conferir sem depender de mim. Onde não existe documento, a página diz que não existe.
+
+Este é um site de distribuidor independente da MOVVA Brasil Ltda, não é canal oficial da empresa e não é canal de atendimento: para reclamar, os caminhos são os das seções acima. Nada aqui é consultoria jurídica.
+
+Nenhuma afirmação sobre a MOVVA nesta página vem de teste em campo: contratei o plano, o chip ainda não chegou e não testei nada em campo. O que eu vi no meu próprio pedido não entra como prova — é experiência minha, não documento da empresa. Os valores e a estrutura de custo vêm de material de divulgação da rede de distribuidores, também não de documento da empresa. O RGC, o RGST, o Guia das obrigações das PPPs, o Manual Operacional do RGC nas duas versões que eu localizei — a 1, de agosto de 2024, no sistema da Anatel, e a 4, de junho de 2025, em cópia hospedada por operadora —, as páginas da Anatel e o texto do Código de Defesa do Consumidor foram consultados em 21 de outubro de 2026. Se você encontrar número diferente, me avise que eu corrijo com a fonte ao lado.
+
+## O que eu não consegui confirmar
+
+- **Se a MOVVA é Prestadora de Pequeno Porte.** É o item do qual depende metade desta página: o art. 90 do RGC decide quais dos direitos acima são exigíveis dela. Não confirmei o enquadramento. Pergunte, e peça com protocolo.
+- **Se a oferta da MOVVA é contratada e atendida exclusivamente por meio digital (art. 24).** É a via pela qual as regras do atendimento digital alcançam prestadora de pequeno porte por inteiro — inclusive o art. 13, § 3º, da rescisão sem atendente, e o art. 13, § 1º, dos 6 meses de acesso depois da rescisão.
+- **Se a oferta da MOVVA é pós-paga, pré-paga ou combinação das duas (art. 46).** Disso dependem a cobrança proporcional do art. 58, qual inciso do art. 65 rege a sua devolução e o comprovante do art. 76. Os dados que eu publico sobre os planos não registram isso.
+- **O prazo de envio e de entrega do chip, e o de ativação.** Contratei em 20/10/2026 e escrevo um dia depois, com o chip ainda não entregue — um dia não é prazo medido. Enquanto ele não chegar, não tenho prazo para informar, e não vou estimar.
+- **Em que momento o checkout da MOVVA cobra, a lista exata de documentos que ele exige e os valores vigentes do chip e do frete** — inclusive se chip e frete são cobrados à parte ou já entram na primeira mensalidade. O que eu tenho sobre valores é material de divulgação da rede de distribuidores, não documento da empresa; e o meu próprio pedido é experiência minha, não documento.
+- **Se a MOVVA aceita eSIM.** Não encontrei menção a eSIM no material que eu tenho, e isso muda o "quando ativa": [eSIM ou chip físico](/blog/esim-ou-chip-fisico) explica a diferença.
+- **De quando contam os 7 dias do art. 49 do CDC** quando o serviço vem acompanhado de chip pelo correio — da compra ou da chegada —, e se o frete está dentro dos valores pagos "a qualquer título" que o parágrafo único manda devolver. Não localizei decisão nem dispositivo que feche a questão.
+- **O Ato do Conselho Diretor da Anatel que fixa o valor máximo da portabilidade** cobrável pela prestadora receptora (RGST, art. 70, § 1º). Não abri o Ato, então não sei quanto é nem se há valor fixado hoje.
+- **Qual leitura prevalece no art. 24, § 3º, III**, que manda o contrato e a Etiqueta Padrão informarem os canais da Ouvidoria, quando os arts. 87 a 89 não alcançam prestadora de pequeno porte e o Guia das PPPs reescreve o mesmo dever como "canais de atendimento".
+- **Por que a Anatel mantém publicadas duas redações do art. 90.** A página do anexo exibe a redação original e a retificada no DOU de 26/12/2023. Comparei as duas: diferem pela inclusão do art. 2º, e nenhum dispositivo citado nesta página muda entre elas. Usei a retificada. Não sei por que as duas seguem no ar.
+- **O endereço oficial da versão mais nova do Manual Operacional do RGC.** Conferi em 21/10/2026: o PDF que o sistema da Anatel serve é a versão 1, de agosto de 2024, e nela não existe o capítulo 4.9, do cancelamento sem atendente. A versão 4, de junho de 2025, que traz esse capítulo, eu só consegui abrir em cópia hospedada por uma operadora — o conteúdo é o documento oficial, mas o endereço não é da agência.
+
+---
+
 # MOVVA no Reclame Aqui: o que existe hoje e como conferir
 
 URL: https://movvabrasil.net/blog/movva-reclame-aqui
@@ -329,9 +990,11 @@ degrau.
 | Ouvidoria | 10 dias corridos | art. 87, § 7º | Não aparece |
 | Levar à Anatel | remetido a Portaria | art. 89 | Não aparece |
 
-Três prazos de dez dias convivem sem se confundir: a ouvidoria, o que a Anatel
-afirma para a operadora responder reclamação encaminhada pela agência, e o do
-consumidor.gov.br. Direto na operadora, são 7 dias.
+Quatro prazos de dez dias convivem sem se confundir: a solicitação ou o pedido
+de informação que a própria operadora não atende de imediato (art. 10, § 1º, que
+está na lista do art. 90), a ouvidoria, o que a Anatel afirma para a operadora
+responder reclamação encaminhada pela agência, e o do consumidor.gov.br.
+Reclamação direto na operadora é outra coisa: 7 dias.
 
 A ressalva pesa aqui: pela lista do art. 90, nas duas versões que a página da
 Anatel exibe, os arts. 9º e 10 alcançam Prestadora de Pequeno Porte e os
@@ -375,8 +1038,8 @@ Anatel](/blog/operadora-virtual-pega-bem).
   associam a um nome anterior; a ponte é inferência minha.
 - **Por que o histórico ainda exibe "Sem índice"**, de que volume a regra dos
   50% derruba reputação, e os cortes de AR.
-- **Arts. 87 e 89 fora do art. 90**, se a operadora é Prestadora de Pequeno
-  Porte, e qual norma fixa os dez dias na Anatel.
+- **Se a operadora é Prestadora de Pequeno Porte**, e qual norma fixa os dez
+  dias na Anatel.
 
 Onde confirmar: Reclame Aqui pelo CNPJ, manual de reputação, Resolução 765/2023,
 painéis da Anatel e 1331.
@@ -386,6 +1049,130 @@ painéis da Anatel e 1331.
 Consultas feitas em 21 de outubro de 2026. A reputação no Reclame Aqui muda
 sozinha todo dia 1º: me avise se achar número diferente. Não é consultoria
 jurídica.
+
+---
+
+# O que você paga no primeiro mês, somado
+
+URL: https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — conferida em material de divulgação da rede de distribuidores, não em documento da MOVVA. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
+
+Fontes citadas:
+- MOVVA — plataforma de contratação, onde o valor vigente deve ser conferido antes de pagar. Eu não abri este endereço para escrever esta página: o preço citado aqui vem de material de divulgação da rede de distribuidores: https://movvabrasil.com
+- RGST, anexo à Resolução Anatel nº 777/2025 — arts. 69, 70, 71, 82, 92, 93, 100, 103, 104 e 115 lidos literalmente no DataLegis, o sistema federal de legislação, em 21/10/2026, com o ato marcado "Vigente". O endereço fica em subdomínio da ANVISA, que hospeda o sistema; o conteúdo é o ato oficial, com o anexo integral: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000777&seqAto=000&valorAno=2025&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486
+- Resolução Anatel nº 777/2025 no portal da Anatel — respondeu HTTP 520 em 21/10/2026; não foi possível conferir o texto ali: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- RGC, anexo à Resolução Anatel nº 765/2023 — arts. 15, 90 e 91 lidos no DataLegis em 21/10/2026 (a lista dos dispositivos do RGC aplicáveis à Prestadora de Pequeno Porte). Mesmo sistema, mesmo subdomínio da ANVISA: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000765&seqAto=000&valorAno=2023&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486
+- Resolução Anatel nº 765/2023 no portal da Anatel — é a página que exibe as duas redações do art. 90; respondeu HTTP 520 em 21/10/2026, igual ao endereço do RGST, e a comparação foi feita em cópia dela capturada mais cedo no mesmo dia: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Portabilidade, em Telefonia Fixa: migração em até 3 dias úteis, sem menção a custo; funda-se no art. 49, I do Anexo à Resolução nº 73/1998, revogada pelo art. 2º, II da Resolução nº 777/2025: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
+- DECON/MPCE — Entenda como funciona a portabilidade numérica: cobrança máxima de R$ 4,00, que a prestadora pode dispensar, e a receptora como responsável por eventual cobrança: https://mpce.mp.br/decon/duvidas/telefonia/entenda-como-funciona-portabilidade-numerica/
+- Idec — Entenda a portabilidade numérica: a regulamentação da Anatel permite a cobrança, e eventual cobrança deve ser feita pela prestadora receptora: https://idec.org.br/consultas/dicas-e-direitos/entenda-a-portabilidade-numerica
+- Código de Defesa do Consumidor, Lei nº 8.078/1990, arts. 30 e 31 — vinculação da oferta e informação de preço: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+- Apple Brasil — iPhone Air, especificações técnicas (aparelho sem compatibilidade com cartão SIM físico): https://www.apple.com/br/iphone-air/specs/
+- Apple Brasil — iPhone Duo, especificações técnicas (seção de cartão SIM e nota de rodapé 14: ativação por eSIM, sem cartão SIM físico): https://www.apple.com/br/iphone-duo/specs/
+
+## A conta do primeiro mês, somada
+
+Antes do botão de contratar, a conta somada. Quem vai pagar precisa ver o total antes de decidir, e não depois.
+
+Esta é a conta do **Liberty, 25 GB**, que é o plano que eu mais indico. Cada linha diz de onde saiu o número e com que peso: documento público, documento da própria MOVVA, material de divulgação da rede de distribuidores, ou nada. As linhas sem número estão aqui porque eu não encontrei o documento — não porque eu esqueci de preencher.
+
+São quatro linhas sem valor, e todas as quatro entram no total: o chip, a entrega, a eventual taxa de ativação e a portabilidade, que a norma da Anatel permite cobrar.
+
+| Componente | Valor | De onde vem |
+|---|---|---|
+| Mensalidade do Liberty, 25 GB | R$ 79,90/mês | material de divulgação da rede de distribuidores, conferido em 21/10/2026 — não é documento da MOVVA |
+| Portabilidade do seu número | pode ser cobrada; valor não confirmado | RGST, art. 70, lido em 21/10/2026: quem pode cobrar é a operadora de destino, e ela pode dispensar (§ 3º). A MOVVA é a operadora de destino quando você porta para ela, e eu não localizei documento da MOVVA dizendo se cobra ou dispensa |
+| Chip, o SIM card em si | não localizei valor | nenhum documento que eu tenha em arquivo traz o valor |
+| Entrega do chip no seu endereço | não localizei valor | idem — e, se houver ativação por eSIM, pode não haver entrega |
+| Taxa de ativação, adesão ou habilitação | não localizei documento — nem que institua, nem que afaste | em aberto |
+| **Total do primeiro mês** | **R$ 79,90 + chip + entrega + eventual taxa de ativação + eventual portabilidade** | soma parcial, de propósito: quatro das cinco linhas acima não têm valor |
+
+## O que eu consegui conferir, e com que peso
+
+**R$ 79,90 por mês, 25 GB — conferido, mas não em documento da empresa.** Eu confiro esse valor em material de divulgação da rede de distribuidores, em 21 de outubro de 2026. O documento oficial da MOVVA que eu tenho em arquivo, "Diferenciais planos de telefonia MOVVA", lista os seis diferenciais dos planos e não traz tabela de preços. Então este número não tem o peso de documento da empresa: confirme o valor vigente na própria página de contratação antes de pagar. Preço de telefonia muda.
+
+Uma reconciliação, porque o meu próprio site publica outro número. Em [os meus números, abertos](/oportunidade) eu declaro R$ 159,80 de custo mensal do meu plano, e a mesma cifra aparece na minha resposta sobre quanto se ganha, que também sai em [a análise da empresa](/movva-e-confiavel) e em [as perguntas frequentes](/perguntas-frequentes). É o dobro desta mensalidade. Eu não abri a minha fatura para escrever esta página, então não digo aqui o que esse valor cobre: fica em aberto. A conta desta página é a de quem contrata um Liberty de 25 GB hoje, não a minha.
+
+**A portabilidade pode ser cobrada, e quem pode cobrar é a operadora de destino.** O art. 92 do Regulamento Geral dos Serviços de Telecomunicações, anexo à Resolução Anatel nº 777/2025, veda à Prestadora Doadora — a operadora de onde você sai — instituir cobrança em função da portabilidade, e o art. 93 veda que ela cobre da operadora de destino. Isso não é o mesmo que gratuidade. Quem pode cobrar de você é a Prestadora Receptora: "A portabilidade pode ser onerosa ao Usuário Portado, por meio de valor cobrado pela Prestadora Receptora" (art. 70, caput). O § 3º do mesmo artigo deixa a receptora dispensar a cobrança e pagar a Entidade Administradora no seu lugar — é dispensa da operadora, não direito seu. E o art. 71 garante gratuidade em dois casos só, os dois dentro da mesma prestadora: mudança de oferta e troca de endereço de instalação dentro de uma Área Local, em telefonia fixa ou SCM. Trocar de operadora não está na lista. O detalhe artigo por artigo está em [o post de portabilidade](/blog/portabilidade-sem-perder-o-numero).
+
+Quando você porta o seu número para a MOVVA, é a MOVVA que ocupa o lugar de receptora. Se ela cobra ou dispensa, eu não sei: não localizei documento da MOVVA que trate disso. Em aberto.
+
+Sobre o valor, existe teto e eu não o achei na norma. O art. 70, § 1º manda a Anatel fixar valor máximo e forma de pagamento por Ato do Conselho Diretor, publicado no Diário Oficial. Eu não localizei esse Ato. O DECON do MPCE publica que "somente é permitida uma cobrança máxima de R$4,00", que a prestadora pode dispensar, e o Idec publica que eventual cobrança deve ser feita pela prestadora receptora, atribuindo o valor de R$ 4 ao Conselho Diretor. É teto publicado por fonte de defesa do consumidor, não número que eu tenha lido no Ato — e teto não é preço.
+
+**Onde eu li, e onde não consegui ler.** A página de legislação da Anatel respondeu com erro de servidor (HTTP 520) em 21/10/2026 nos dois endereços que eu uso, o do RGST e o do RGC. Os artigos acima eu li no DataLegis, o sistema federal de legislação, onde a Resolução 777/2025 aparece marcada como "Vigente", em 21/10/2026. O endereço do DataLegis fica em subdomínio da ANVISA, que hospeda o sistema: o que está lá é o ato oficial, com o anexo integral. As duas fontes estão na lista, com o estado de cada uma. Vale reconferir no portal da Anatel quando ele voltar.
+
+**E o prazo, para fechar a linha da portabilidade.** O art. 103, I fixa **até 3 dias úteis** para o processo; o art. 104, II diz que a efetivação não passa de 5 dias úteis; o art. 103, II dá 2 dias úteis para desistir. A página de consumidor da Anatel que está na lista abaixo é a de telefonia fixa: ela diz que a migração deve ocorrer em até 3 dias úteis, não menciona custo em lugar nenhum e se funda no art. 49, I do Anexo à Resolução nº 73/1998, que o art. 2º, II da própria Resolução 777/2025 revogou. Por isso o prazo aqui está pendurado no artigo, não na página.
+
+**O filtro de porte, e o que ele alcança.** Neste site, regra de consumidor só vira direito exigível depois do filtro de porte. O art. 90 do RGC, anexo à Resolução nº 765/2023, arrola um a um dispositivos **do próprio RGC** aplicáveis à Prestadora de Pequeno Porte. A Anatel mantém publicadas duas redações desse artigo, a original e a retificada; comparei as duas, elas diferem pela inclusão do art. 2º, e nenhum dos dispositivos citados aqui muda entre elas. A página que exibe as duas respondeu HTTP 520 hoje, e a comparação foi feita em cópia dela, capturada mais cedo no mesmo dia.
+
+Um exemplo do que essa lista faz. Do art. 15, que trata do Atendimento Telefônico, ela traz apenas os incisos I e II — ficam de fora o inciso III, que exige atendimento ininterrupto 24 horas por dia, 7 dias por semana, e o inciso IV, que fixa as horas de atendente humano. Para a pequena vale o art. 91: o Atendimento Telefônico dela "funcionará, no mínimo, pelo período de 8 (oito) horas, ininterruptamente, nos dias úteis". A troca sai do recorte da lista do art. 90, não do art. 91. E isso alcança atendimento, não preço de portabilidade.
+
+O preço da portabilidade está em outra resolução, o RGST. Na seção de portabilidade dele, que vai do art. 62 ao art. 115, "Prestadora de Pequeno Porte" aparece em um artigo só, o art. 82, no caput e no § 2º, e para outra coisa: quem **não** se enquadra como pequeno porte tem de implantar BDO **nas áreas geográficas onde detém poder de mercado**. Então, no assunto desta página: o que o porte muda é essa obrigação de BDO; o que o porte **não** muda é o art. 70 (a receptora pode cobrar), o art. 92 (a doadora não pode) e o art. 103 (prazos) — esses alcançam a operadora seja ela pequena ou não. Os arts. 30 e 31 do Código de Defesa do Consumidor também alcançam: são lei federal, e a lista do art. 90 é de dispositivos do RGC.
+
+O que continua em aberto é o enquadramento: eu não confirmei se a MOVVA é Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" que aparece no dossiê da própria empresa é classificação da Receita Federal, que é outra coisa — a da Anatel vai por acessos. Isso pesa no pacote de atendimento do RGC, não na linha da portabilidade.
+
+Se cobrarem portabilidade de você, há alavanca antes da reclamação: o art. 69, II, "c" do RGST obriga a prestadora a informar, nas condições da oferta, o valor a ser pago pela portabilidade e a forma de pagamento. Pergunte antes, peça por escrito e, se a cobrança aparecer sem ter sido informada, registre no 1331.
+
+Um número desta conta eu conferi: a mensalidade — e em material de distribuidor, não em documento da empresa. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
+
+## O chip e a entrega, que eu não achei
+
+Nenhum documento que eu tenha em arquivo publica o valor do chip nem o da entrega.
+
+O material de lançamento da MOVVA, de julho de 2026, fala do chip entrando na fila de produção com entrega em casa. Era a fila do lançamento, para quem já estava cadastrado, não a contratação de hoje — e ali não há valor de chip nem de entrega. Material de divulgação da rede de distribuidores descreve o envio do chip para o endereço do cliente, e material de distribuidor não é documento da empresa.
+
+Então são quatro coisas que eu não sei, e que eu prefiro escrever a estimar:
+
+- quanto custa o chip;
+- quanto custa a entrega;
+- se os dois são cobrados do cliente ou já vêm embutidos na primeira mensalidade;
+- se existe ativação por eSIM, que dispensaria a entrega. Eu não confirmei se a MOVVA oferece eSIM — [o que dá e o que não dá para afirmar sobre eSIM está neste post](/blog/esim-ou-chip-fisico). O dossiê da própria empresa cita o fornecimento de SIM Cards e eSIMs no contrato com a parceira de rede: isso mostra que o eSIM existe na operação, não que ele está na oferta ao cliente.
+
+Eu não vou chutar um valor para a tabela fechar bonito. Chute arredondado vira preço na cabeça de quem lê, e aí a conta que eu publiquei para proteger a pessoa é a mesma que a enganou.
+
+Pedi o meu chip em 20 de outubro de 2026 e ele ainda não chegou. Eu não abri o meu pedido para escrever esta página, então não publico nenhum número tirado dele. Quando eu tiver documento com os dois valores, eles entram na tabela acima com a fonte ao lado.
+
+## O que não entra nesta conta
+
+**SKY+ Light.** Existe um complemento de TV, e eu recebo comissão sobre ele: são R$ 8,66 no meu extrato, de 7 de julho a 30 de setembro de 2026 — o mesmo período sob o qual esse número está publicado em [o extrato aberto](/movva-e-confiavel). Lá ele aparece como linha de produto própria, separada da linha do plano de celular. Isso é a forma do meu extrato de comissão, não a forma da oferta ao cliente: se o pacote é vendido à parte ou embutido na mensalidade, eu não localizei documento que diga. Ele fica fora deste total porque o total aqui é o do plano Liberty, e eu não tenho documento pondo o SKY+ dentro dele — se aparecer documento que ponha, ele entra como mais uma linha. Preço e descrição do pacote eu também não localizei: estão na lista de em aberto.
+
+**Multa de cancelamento.** O documento oficial da MOVVA lista "não tem fidelidade" entre os seis diferenciais dos planos. Isso é anúncio da empresa, não contrato que eu tenha lido: eu não vi cláusula fixando multa zero. De todo modo, é custo de sair, não de entrar.
+
+**Aparelho.** O chip físico vai no celular que você já tem, e não existe compra de aparelho nesta conta. A exceção são os aparelhos só-eSIM, que não aceitam cartão SIM físico. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM e registra que o aparelho não é compatível com cartão SIM físico; a ficha do iPhone Duo diz o mesmo, na seção de cartão SIM e na nota de rodapé 14. As duas fichas estão na lista de fontes, cada uma com o seu endereço. Nesses aparelhos, a conta depende de existir eSIM na oferta, o que eu não confirmei.
+
+## As perguntas que fecham a conta
+
+Antes de qualquer pagamento, peça isto por escrito — no chat da plataforma ou no meu WhatsApp, tanto faz, desde que fique registrado:
+
+1. Qual o valor do chip e qual o valor do frete para o meu CEP?
+2. Existe taxa de ativação, de adesão ou de habilitação? Se existe, quanto é?
+3. Se eu portar o meu número, vai haver cobrança de portabilidade? De quanto?
+4. Qual é o valor total que vai ser cobrado hoje, somando tudo?
+
+A pergunta 3 não é desconfiança: é o art. 69, II, "c" do RGST, que manda a prestadora informar o valor da portabilidade e a forma de pagamento nas condições da oferta.
+
+Eu recebo comissão se você contratar pelo meu link ou pelo meu WhatsApp. É por isso que esta conta está somada e não arredondada.
+
+Guarde a resposta. O art. 31 do Código de Defesa do Consumidor obriga que a oferta traga informação correta, clara, precisa e ostensiva sobre o preço antes da contratação. E o que foi dito também vale: o art. 30 vincula o fornecedor a qualquer informação suficientemente precisa veiculada por qualquer meio, inclusive a falada, e ela integra o contrato. O que o escrito resolve é a prova — por isso peça no chat ou no WhatsApp, e guarde o protocolo.
+
+E se a resposta que você receber for diferente do que está nesta página, a resposta ganha. Me mande, que eu corrijo a tabela.
+
+## O que eu não consegui confirmar
+
+- O preço do chip. Não localizei valor em nenhum documento que eu tenha em arquivo.
+- O valor da entrega do chip, e se ela é cobrada do cliente.
+- Se existe taxa de ativação, adesão ou habilitação para cliente. Não localizei documento que institua nenhuma — e também não localizei documento que afaste a cobrança por escrito.
+- Se o chip e a entrega são cobrados à parte ou já vêm embutidos na primeira mensalidade. O material de lançamento, de julho de 2026, não fecha isso: ali "ativar cadastro" não tem preço — a ação põe o chip na fila de produção, com entrega em casa — e o pagamento de R$ 79,90 que aparece no mesmo material é da licença VIP de afiliado, outra coisa, fora desta conta.
+- Se a MOVVA cobra ou dispensa a portabilidade. A norma permite as duas: o art. 70 do RGST deixa a operadora de destino cobrar do usuário portado, e o § 3º deixa ela dispensar a cobrança e pagar a Entidade Administradora no lugar dele. Quando você porta para a MOVVA, é ela que ocupa esse lugar, e eu não localizei documento da MOVVA dizendo o que ela faz.
+- O teto da cobrança de portabilidade. O art. 70, § 1º do RGST remete o valor máximo a Ato do Conselho Diretor publicado no Diário Oficial, e eu não localizei esse Ato. Os R$ 4,00 vêm do DECON/MPCE e do Idec, que são fonte de defesa do consumidor, não o Ato — e são teto, não preço.
+- Se a MOVVA se enquadra como Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" do dossiê da empresa é classificação da Receita Federal, outra coisa. Isso pesa no pacote de atendimento do RGC, cuja lista está no art. 90, e não na linha da portabilidade, que é do RGST.
+- A origem do preço de R$ 79,90. Ele vem de material de divulgação da rede de distribuidores, não de documento da MOVVA: o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela de preços.
+- O preço do SKY+ Light, o que o pacote inclui e se ele é vendido à parte ou embutido na mensalidade. Eu só tenho a linha de comissão no meu próprio extrato, de R$ 8,66, no período de 7 de julho a 30 de setembro de 2026 — e linha de comissão não diz como o pacote é vendido ao cliente.
+- Se a MOVVA oferece ativação por eSIM, o que mudaria a linha da entrega. Não achei material da empresa que afirme nem que negue; o dossiê cita SIM Cards e eSIMs no contrato com a parceira de rede, e isso não é a oferta ao cliente.
+- Quanto eu mesmo paguei. Pedi o chip em 20 de outubro de 2026, ele não chegou, e eu não abri o pedido para escrever esta página. E eu publico um custo mensal de R$ 159,80 do meu plano, em /oportunidade e na minha resposta sobre quanto se ganha: é o dobro desta mensalidade, não abri a minha fatura, então não digo aqui o que esse valor cobre.
+- O texto oficial no portal da Anatel. Os endereços do RGST e do RGC em informacoes.anatel.gov.br responderam HTTP 520 em 21/10/2026. Os artigos citados aqui eu li no DataLegis, o sistema federal de legislação, no mesmo dia. Reconferir no portal da Anatel quando ele voltar.
+- Os documentos da MOVVA citados aqui não têm endereço público. São arquivos que eu tenho em pasta — "Diferenciais planos de telefonia MOVVA", o dossiê da empresa, o material de lançamento de julho de 2026 e as páginas de divulgação da rede de distribuidores. Por isso eles aparecem nomeados, e não linkados: nenhum deles entra na lista de fontes, que é de endereço público.
 
 ---
 
@@ -452,9 +1239,11 @@ art. 91 e as leis de fora dele. Não é acusação a ninguém.
 
 Caminho oficial: operadora, Ouvidoria dela e Anatel Consumidor — sempre com
 protocolo. Direto na operadora, a reclamação tem de ser resolvida em até 7 dias
-corridos (RGC, art. 10, caput, na lista do art. 90). Os dez dias são outro
-balcão: é o prazo que a Anatel afirma para a operadora responder reclamação
-encaminhada pela agência. O 1331 atende em dias úteis, das 8h às 20h.
+corridos (RGC, art. 10, caput, na lista do art. 90). Dez dias é outro prazo, e
+vale para outra coisa: solicitação ou pedido de informação que não puder ser
+atendido de imediato tem de ser atendido em até 10 dias corridos (art. 10, § 1º,
+também na lista). É também o prazo que a Anatel afirma para a operadora responder
+reclamação encaminhada pela agência. O 1331 atende em dias úteis, das 8h às 20h.
 
 O atrito: a Ouvidoria dos arts. 87 a 89 não entra na lista do art. 90, então a
 pequena não é obrigada a mantê-la. E a inversão que ninguém conta: no
@@ -606,7 +1395,10 @@ como referência.
 
 A TIM afirma que um município conta como atendido com 80% da área urbana do
 distrito sede coberta, e que pode faltar sinal dentro da casa — material de
-operadora. Mapa verde na sua rua não é promessa de sinal no seu quarto.
+operadora, que não diz a qual compromisso esse percentual se refere. O critério
+muda de compromisso para compromisso, então não leia esse número como definição
+geral de município coberto. Mapa verde na sua rua não é promessa de sinal no seu
+quarto.
 
 ## Ligar por Wi-Fi resolve?
 
@@ -902,7 +1694,7 @@ A Apple afirma que o eSIM é mais seguro porque não pode ser removido em caso d
 
 ## E se o aparelho não tem bandeja?
 
-Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A nota de rodapé registra o mesmo para o iPhone Duo.
+Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A ficha do iPhone Duo diz o mesmo, na seção de cartão SIM e na nota de rodapé 14 — são duas fichas, cada uma na lista de fontes com o seu endereço.
 
 ## Quantos perfis e quantas redes cabem no aparelho?
 
@@ -1366,8 +2158,11 @@ continuam devidas (§ 3º).
 Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
 Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). Direto na operadora, a
 reclamação tem de ser resolvida em até 7 dias corridos (RGC, art. 10, caput, que
-está na lista do art. 90). Os dez dias são outro balcão: é o prazo que a Anatel
-afirma para a operadora responder reclamação encaminhada pela agência.
+está na lista do art. 90). Dez dias é outro prazo, e vale para outra coisa:
+solicitação ou pedido de informação que não puder ser atendido de imediato tem
+de ser atendido em até 10 dias corridos (art. 10, § 1º, também na lista). É
+também o prazo que a Anatel afirma para a operadora responder reclamação
+encaminhada pela agência.
 
 ## Como cancelar, na prática
 
@@ -1599,7 +2394,7 @@ a rede, confira a rede, teste a rede.
 
 URL: https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero
 Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A linha fica indisponível por 2 horas em 99% dos casos, com teto de 24 horas.
+Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A janela de transição é de 2 horas em 99% dos casos, com teto de 24 horas.
 
 Fontes citadas:
 - Anatel — Portabilidade na telefonia móvel, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/portabilidade
@@ -1616,9 +2411,10 @@ disso, mas o que vale como direito é o prazo máximo.
 ## O que acontece com a sua linha durante a troca
 
 Existe uma janela de transição em que o telefone pode ficar sem funcionar. Pelo
-**art. 103, IV**, ela é de **2 horas em 99% dos casos** — e, no caso restante, a
-norma admite **até 24 horas**. Ou seja: duas horas é o que a regra garante na
-quase totalidade das portabilidades, não um teto absoluto.
+**art. 103, IV**, ela é de **2 horas em 99% dos casos** e, em nenhum caso, pode
+passar de **24 horas**. O que a norma põe aí é teto para a janela, com a ordem
+de minimizar a interrupção dentro dela (art. 100, § 2º) — não a garantia de que
+a linha fica muda as duas horas inteiras.
 
 Vale planejar: se você depende do telefone para trabalhar, peça a portabilidade
 num dia e horário em que uma parada de algumas horas não atrapalhe.
