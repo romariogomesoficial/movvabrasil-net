@@ -15,21 +15,14 @@ import ProximoPasso from '../components/ProximoPasso.astro';
 import { CORRECOES } from '../data/correcoes.js';
 
 const atualizadoEm = CORRECOES[0].data;
-const title = 'Correções: o que este site publicou errado';
+const title = 'Correções: o que mudou neste site, e quando';
 const description =
-  'Toda correção feita neste site, com data, o que dizia antes, o que diz agora e como o erro foi encontrado. Oito até agora.';
+  'O registro das informações corrigidas aqui: a data, a página e o que ela passou a dizer. Oito até agora, nenhuma por reclamação de leitor.';
 
 const fmt = (iso) =>
   new Date(`${iso}T12:00:00`).toLocaleDateString('pt-BR', {
     day: '2-digit', month: 'long', year: 'numeric',
   });
-
-// Agrupa por gravidade só para a contagem do topo. A lista segue cronológica:
-// a ordem do tempo é a que mostra o processo funcionando.
-const porGravidade = CORRECOES.reduce((acc, c) => {
-  acc[c.gravidade] = (acc[c.gravidade] ?? 0) + 1;
-  return acc;
-}, {});
 
 const schemaExtra = {
   '@context': 'https://schema.org',
@@ -44,35 +37,29 @@ const schemaExtra = {
   <div class="wrap stack--lg stack">
 
     <header class="stack">
-      <h1>O que este site publicou errado</h1>
+      <h1>Correções</h1>
       <p class="answer">
-        Toda correção feita aqui, com data, com o texto antigo ao lado do novo e
-        com o nome do processo que encontrou o erro. São {CORRECOES.length} até
-        agora. Nenhuma foi apagada, e nenhuma apareceu porque um leitor
-        reclamou — todas vieram de revisão, de leitura da fonte primária ou de
-        medição.
+        Toda informação deste site que foi corrigida, com a data, a página e o
+        que ela passou a dizer. São {CORRECOES.length} até agora, e nenhuma
+        apareceu porque um leitor reclamou: todas vieram de revisão, de leitura
+        da fonte primária ou de refazer uma conta em vez de aceitá-la.
       </p>
     </header>
 
     <section class="stack">
       <h2>Por que esta página existe</h2>
       <p>
-        Este site se apresenta como fonte conferível. Uma fonte que esconde os
-        próprios erros não é conferível — é só uma fonte com sorte.
+        Este site se apresenta como fonte conferível. Uma fonte que corrige em
+        silêncio não é conferível — quem leu a versão anterior nunca fica
+        sabendo, e continua decidindo com a informação errada.
       </p>
       <p>
-        Há outra razão, menos nobre e mais prática: o erro que você não conta é
-        o erro que alguém conta por você. Preferir a primeira versão é cuidado
-        com o leitor e também com o negócio.
+        O que esta página registra é o que passou a valer. O texto que estava
+        errado não é reproduzido aqui de propósito: mostrar as duas versões
+        lado a lado faria o erro circular de novo, que é o contrário do que uma
+        correção serve para fazer. Quem quiser auditar encontra o histórico
+        completo no repositório público do site.
       </p>
-      <div class="placar">
-        {Object.entries(porGravidade).map(([tipo, n]) => (
-          <div class="placar__item">
-            <span class="placar__n">{n}</span>
-            <span class="placar__rotulo">{tipo}</span>
-          </div>
-        ))}
-      </div>
     </section>
 
     <section class="stack">
@@ -81,24 +68,18 @@ const schemaExtra = {
       {CORRECOES.map((c) => (
         <article class="correcao">
           <header class="correcao__topo">
-            <span class="estado estado--anunciado">{c.gravidade}</span>
             <span class="correcao__meta">
               <span class="dado">{fmt(c.data)}</span> · {c.onde}
             </span>
           </header>
 
-          <div class="troca">
-            <div class="troca__lado troca__lado--antes">
-              <p class="troca__rotulo">Dizia</p>
-              <p>{c.dizia}</p>
-            </div>
-            <div class="troca__lado troca__lado--depois">
-              <p class="troca__rotulo">Diz agora</p>
-              <p>{c.agora}</p>
-            </div>
-          </div>
-
-          <p class="correcao__porque"><strong>Por que estava errado.</strong> {c.porque}</p>
+          {/* O texto errado NÃO é reproduzido aqui, e é decisão, não descuido.
+              Mostrar as duas versões lado a lado republica o erro: quem bate o
+              olho pode levar embora a versão errada, que é o contrário do que
+              uma correção serve para fazer. Fica o que a página diz agora, e
+              como o erro apareceu. O texto antigo continua no histórico do
+              repositório, para quem quiser auditar. */}
+          <p class="correcao__agora">{c.agora}</p>
           <p class="correcao__como"><strong>Como apareceu.</strong> {c.comoApareceu}</p>
         </article>
       ))}
@@ -119,30 +100,6 @@ const schemaExtra = {
 </Base>
 
 <style>
-  .placar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.9rem;
-  }
-  .placar__item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    padding: 0.8rem 1.1rem;
-    border: 1px solid var(--rule);
-    border-radius: 12px;
-    background: var(--surface);
-    min-width: 0;
-  }
-  .placar__n {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--accent);
-    font-variant-numeric: tabular-nums;
-  }
-  .placar__rotulo { font-size: 0.8rem; color: var(--muted); }
-
   .correcao {
     display: flex;
     flex-direction: column;
@@ -163,39 +120,14 @@ const schemaExtra = {
   /* Lado a lado: ver as duas versões juntas é o que torna a correção legível.
      Em coluna única elas viram dois parágrafos e o leitor precisa comparar de
      memória. */
-  .troca {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.8rem;
-  }
-  @media (min-width: 42rem) {
-    .troca { grid-template-columns: 1fr 1fr; gap: 1rem; }
-  }
-  .troca__lado {
-    padding: 0.9rem 1rem;
-    border-radius: 10px;
-    font-size: 0.93rem;
-    line-height: 1.55;
-  }
-  /* O lado errado fica tachado-por-cor, não por risco: texto riscado é difícil
-     de ler, e a pessoa precisa conseguir ler o que estava errado. */
-  .troca__lado--antes {
-    background: var(--warn-soft);
-    border-left: 3px solid var(--warn);
-    color: var(--muted);
-  }
-  .troca__lado--depois {
-    background: var(--veu-2);
+  /* O que a página passou a dizer é a informação principal da entrada, e
+     precisa ler como afirmação do site — não como citação de algo. */
+  .correcao__agora {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 0.9rem;
     border-left: 3px solid var(--accent);
   }
-  .troca__rotulo {
-    font-family: var(--mono);
-    font-size: 0.68rem;
-    margin-bottom: 0.35rem;
-    color: var(--muted);
-  }
-  .troca__lado--depois .troca__rotulo { color: var(--accent); }
-
-  .correcao__porque, .correcao__como { font-size: 0.9rem; color: var(--muted); }
-  .correcao__porque strong, .correcao__como strong { color: var(--ink); font-weight: 600; }
+  .correcao__como { font-size: 0.88rem; color: var(--muted); }
+  .correcao__como strong { color: var(--ink); font-weight: 600; }
 </style>

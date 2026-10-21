@@ -21,8 +21,8 @@ export const PAGINAS_OG = [
   {
     path: '/correcoes',
     chapeu: 'Correções',
-    titulo: 'O que este site publicou errado',
-    resumo: 'Cada correção com data, o texto antigo ao lado do novo e como o erro apareceu.',
+    titulo: 'O que mudou neste site, e quando',
+    resumo: 'O registro do que foi corrigido, com a data e a página. Nenhuma por reclamação de leitor.',
   },
   {
     path: '/movva-e-confiavel',
