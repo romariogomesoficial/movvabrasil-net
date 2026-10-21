@@ -168,14 +168,15 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
   .figura svg { width: 100%; max-width: 100%; height: auto; display: block; }
   figcaption { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
 
-  /* A barra tem rampa própria, e não a do site, por uma razão de dado: sobre
-     papel branco o verde da rampa dá 1,6:1, e num gráfico isso deixaria a
-     faixa mais importante como a menos visível. Aqui a rampa escurece no
-     claro e acende no escuro, mantendo as três faixas legíveis nos dois. */
-  .figura { --b1: #0B7681; --b2: #1766A8; --b3: #4F46E5; }
-  :global(body.escuro) .figura { --b1: #2BFFA8; --b2: #35DDF2; --b3: #7C9FFF; }
+  /* A barra tem rampa própria, e não a do site, por uma razão de dado: o verde
+     da marca dá 2,29:1 sobre papel claro, e num gráfico isso deixaria a faixa
+     mais importante como a menos visível. Aqui a rampa escurece no claro
+     (5,5 a 6,2 para o rótulo branco) e acende no escuro (9 a 13,9), mantendo
+     as três faixas legíveis nos dois temas. */
+  .figura { --b1: #077A28; --b2: #0A6E2E; --b3: #06603C; }
+  :global(body.escuro) .figura { --b1: #00F600; --b2: #00D500; --b3: #00A83F; }
   @media (prefers-color-scheme: dark) {
-    :global(:root:not([data-theme="light"])) .figura { --b1: #2BFFA8; --b2: #35DDF2; --b3: #7C9FFF; }
+    :global(:root:not([data-theme="light"])) .figura { --b1: #00F600; --b2: #00D500; --b3: #00A83F; }
   }
 
   /* As tres faixas correm sobre a mesma rampa, que atravessa a barra inteira,

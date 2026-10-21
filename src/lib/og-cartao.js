@@ -54,18 +54,18 @@ const FONTES = [
 
 // Mesmos valores do bloco .escuro do global.css.
 const COR = {
-  papel: '#070C12',
-  superficie: '#101A24',
-  tinta: '#EAF4FA',
-  mudo: '#93A9B9',
-  regua: '#1D2D3A',
-  acento: '#35DDF2',
+  papel: '#000408',
+  superficie: '#070E16',
+  tinta: '#F5F5F5',
+  mudo: '#7F92A0',
+  regua: '#18222C',
+  acento: '#00D500',
 };
 
 // A rampa de espectro do site. Em satori vai como backgroundImage: borda em
 // gradiente nao existe aqui, entao cada filete e uma div com o degrade dentro.
-const RAMPA = 'linear-gradient(180deg, #2BFFA8 0%, #35DDF2 50%, #7C9FFF 100%)';
-const RAMPA_H = 'linear-gradient(90deg, #2BFFA8 0%, #35DDF2 48%, #7C9FFF 100%)';
+const RAMPA = 'linear-gradient(180deg, #00F600 0%, #00D500 50%, #00A83F 100%)';
+const RAMPA_H = 'linear-gradient(90deg, #00F600 0%, #00D500 48%, #00A83F 100%)';
 
 export const LARGURA = 1200;
 export const ALTURA = 630;

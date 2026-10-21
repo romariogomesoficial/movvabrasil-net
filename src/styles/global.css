@@ -7,17 +7,18 @@
    O acento é ciano-telecom: lê como sinal, e é inconfundivelmente diferente do
    verde #00D500 da MOVVA, que o site não pode imitar. */
 :root {
-  --paper:      #F5F8FA;
+  --paper:      #F6F9F7;
   --surface:    #FFFFFF;
-  --ink:        #0C1A23;
-  --muted:      #536874;
-  --rule:       #D7E2E8;
-  /* Era #0FA3B1, que dava 3,05:1 sobre branco — reprovado em WCAG AA, e esta é
-     a cor de todo link do site, do selo "verificado" e do anel de foco. Este
-     tom dá 5,35:1 sobre branco e 5,02:1 sobre o papel, sem sair da família. */
-  --accent:     #0B7681;
-  --accent-ink: #076670;
-  --accent-soft:#E2F4F6;
+  --ink:        #0B1410;
+  --muted:      #566B60;
+  --rule:       #DCE5DF;
+  /* O verde oficial da marca, #00D500, da 2:1 sobre branco — longe do minimo
+     de 4,5 de WCAG AA, e esta e a cor de todo link, do selo "verificado" e do
+     anel de foco. Aqui ele entra escurecido ate 5,49:1, na mesma matiz. No
+     tema escuro o accent volta a ser o #00D500 puro, que la da 10,3:1. */
+  --accent:     #077A28;
+  --accent-ink: #065E1F;
+  --accent-soft:#E3F7E7;
   --warn:       #8A5A00;
   --warn-soft:  #FDF4E3;
   --good:       #1C6B4A;
@@ -33,12 +34,15 @@
      As três paradas ficam longe do verde #00D500 da MOVVA de propósito:
      o site não pode parecer a marca dela.
      --------------------------------------------------------------- */
-  --g1: #00E58C;
-  --g2: #00C9E0;
-  --g3: #4F7FFF;
+  /* A rampa é a família do verde oficial, do mais aceso ao mais fundo. Ela
+     fica clara nos dois temas porque serve de FUNDO, sempre com tinta escura
+     por cima — quem precisa escurecer no tema claro é o --accent, que é texto. */
+  --g1: #00F600;
+  --g2: #00D500;
+  --g3: #00A83F;
   --grad-sinal: linear-gradient(100deg, var(--g1) 0%, var(--g2) 48%, var(--g3) 100%);
   /* Luz ambiente atrás da primeira tela. Sem borda, sem forma: só claridade. */
-  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 229, 140, 0.16), rgba(79, 127, 255, 0.10) 46%, transparent 74%);
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.16), rgba(0, 168, 63, 0.10) 46%, transparent 74%);
 
   /* Sistema tipográfico de engenharia, não de editora. O assunto é telecom:
      especificação, frequência, registro de rede, número de protocolo. */
@@ -53,43 +57,43 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper:      #091219;
-    --surface:    #0F1C25;
-    --ink:        #E6F1F6;
-    --muted:      #8CA4B2;
-    --rule:       #1C2C37;
-    --accent:     #3FD0DE;
-    --accent-ink: #7BE3ED;
-    --accent-soft:#082028;
-    --warn:       #E0A94A;
-    --warn-soft:  #271F0F;
-    --good:       #6FCFA4;
+    --paper:      #000408;
+    --surface:    #070E16;
+    --ink:        #F5F5F5;
+    --muted:      #7F92A0;
+    --rule:       #18222C;
+    --accent:     #00D500;
+    --accent-ink: #00F600;
+    --accent-soft:#052A08;
+    --warn:       #FDC700;
+    --warn-soft:  #231C00;
+    --good:       #00F600;
     --alerta:     #F08E8E;
-    /* No escuro a rampa não muda de matiz, só de brilho: ela emite. */
-    --g1: #2BFFA8;
-    --g2: #35DDF2;
-    --g3: #7C9FFF;
-    --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(43, 255, 168, 0.16), rgba(124, 159, 255, 0.12) 46%, transparent 74%);
+    /* No escuro o accent volta a ser o verde oficial: ali ele da 10,3:1. */
+    --g1: #00F600;
+    --g2: #00D500;
+    --g3: #00A83F;
+    --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.18), rgba(0, 246, 0, 0.10) 46%, transparent 74%);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper:      #091219;
-  --surface:    #0F1C25;
-  --ink:        #E6F1F6;
-  --muted:      #8CA4B2;
-  --rule:       #1C2C37;
-  --accent:     #3FD0DE;
-  --accent-ink: #7BE3ED;
-  --accent-soft:#082028;
-  --warn:       #E0A94A;
-  --warn-soft:  #271F0F;
-  --good:       #6FCFA4;
+  --paper:      #000408;
+  --surface:    #070E16;
+  --ink:        #F5F5F5;
+  --muted:      #7F92A0;
+  --rule:       #18222C;
+  --accent:     #00D500;
+  --accent-ink: #00F600;
+  --accent-soft:#052A08;
+  --warn:       #FDC700;
+  --warn-soft:  #231C00;
+  --good:       #00F600;
   --alerta:     #F08E8E;
-  --g1: #2BFFA8;
-  --g2: #35DDF2;
-  --g3: #7C9FFF;
-  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(43, 255, 168, 0.16), rgba(124, 159, 255, 0.12) 46%, transparent 74%);
+  --g1: #00F600;
+  --g2: #00D500;
+  --g3: #00A83F;
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.18), rgba(0, 246, 0, 0.10) 46%, transparent 74%);
   color-scheme: dark;
 }
 
@@ -109,22 +113,26 @@
    precisar saber que está num bloco escuro.
    --------------------------------------------------------------- */
 .escuro {
-  --paper:      #070C12;
-  --surface:    #101A24;
-  --ink:        #EAF4FA;
-  --muted:      #93A9B9;
-  --rule:       #1D2D3A;
-  --accent:     #35DDF2;
-  --accent-ink: #7BEAF7;
-  --accent-soft:#0A202B;
-  --warn:       #E0A94A;
-  --warn-soft:  #241D10;
-  --good:       #2BFFA8;
+  /* Os valores vieram do site de referência, lidos pelo próprio navegador:
+     fundo #000408, texto #F5F5F5 e apagado #7F92A0. O verde de la, #19C63C,
+     nao foi aproveitado: o logotipo da MOVVA fica no cabecalho e usa #00D500,
+     e acento diferente do logotipo ao lado dele se nota. */
+  --paper:      #000408;
+  --surface:    #070E16;
+  --ink:        #F5F5F5;
+  --muted:      #7F92A0;
+  --rule:       #18222C;
+  --accent:     #00D500;
+  --accent-ink: #00F600;
+  --accent-soft:#052A08;
+  --warn:       #FDC700;
+  --warn-soft:  #231C00;
+  --good:       #00F600;
   --alerta:     #F08E8E;
-  --g1: #2BFFA8;
-  --g2: #35DDF2;
-  --g3: #7C9FFF;
-  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(43, 255, 168, 0.18), rgba(124, 159, 255, 0.13) 46%, transparent 74%);
+  --g1: #00F600;
+  --g2: #00D500;
+  --g3: #00A83F;
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 213, 0, 0.20), rgba(0, 246, 0, 0.11) 46%, transparent 74%);
   color-scheme: dark;
   background: var(--paper);
   color: var(--ink);
