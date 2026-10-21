@@ -2,15 +2,22 @@
    Deliberadamente diferente do preto-e-verde-neon da marca MOVVA, porque este
    site e de distribuidor independente e nao pode parecer canal oficial. */
 
+/* Direção: painel de instrumento, não página de enciclopédia.
+   Neutros puxados para o azul, como vidro e metal, em vez do bege de papel.
+   O acento é ciano-telecom: lê como sinal, e é inconfundivelmente diferente do
+   verde #00D500 da MOVVA, que o site não pode imitar. */
 :root {
-  --paper:      #FBFAF8;
+  --paper:      #F5F8FA;
   --surface:    #FFFFFF;
-  --ink:        #16202B;
-  --muted:      #5A6873;
-  --rule:       #E2E0DB;
-  --accent:     #0B6B63;
-  --accent-ink: #064A44;
-  --accent-soft:#E8F2F0;
+  --ink:        #0C1A23;
+  --muted:      #536874;
+  --rule:       #D7E2E8;
+  /* Era #0FA3B1, que dava 3,05:1 sobre branco — reprovado em WCAG AA, e esta é
+     a cor de todo link do site, do selo "verificado" e do anel de foco. Este
+     tom dá 5,35:1 sobre branco e 5,02:1 sobre o papel, sem sair da família. */
+  --accent:     #0B7681;
+  --accent-ink: #076670;
+  --accent-soft:#E2F4F6;
   --warn:       #8A5A00;
   --warn-soft:  #FDF4E3;
   --good:       #1C6B4A;
@@ -18,48 +25,148 @@
      de propósito: num site sobre verificação, vermelho gasto não significa nada. */
   --alerta:     #9B1C23;
 
-  --display: "Newsreader", Georgia, "Times New Roman", serif;
-  --body:    "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* ---------------------------------------------------------------
+     Rampa de espectro
+     O assunto é rede: frequência, sinal, banda. A rampa sobe de ciano
+     para violeta como uma faixa de espectro — é daí que vem a sensação
+     de luz e energia, e não de um degradê posto por enfeite.
+     As três paradas ficam longe do verde #00D500 da MOVVA de propósito:
+     o site não pode parecer a marca dela.
+     --------------------------------------------------------------- */
+  --g1: #00E58C;
+  --g2: #00C9E0;
+  --g3: #4F7FFF;
+  --grad-sinal: linear-gradient(100deg, var(--g1) 0%, var(--g2) 48%, var(--g3) 100%);
+  /* Luz ambiente atrás da primeira tela. Sem borda, sem forma: só claridade. */
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(0, 229, 140, 0.16), rgba(79, 127, 255, 0.10) 46%, transparent 74%);
+
+  /* Sistema tipográfico de engenharia, não de editora. O assunto é telecom:
+     especificação, frequência, registro de rede, número de protocolo. */
+  --display: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --body:    "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* Reservado para identificador de verdade: CNPJ, ato, processo, artigo,
+     código de rede. Nunca para rótulo decorativo. */
+  --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper:      #11161B;
-    --surface:    #181F26;
-    --ink:        #E6EAEE;
-    --muted:      #98A5B0;
-    --rule:       #29323B;
-    --accent:     #4FC2B3;
-    --accent-ink: #8BD9CE;
-    --accent-soft:#102723;
+    --paper:      #091219;
+    --surface:    #0F1C25;
+    --ink:        #E6F1F6;
+    --muted:      #8CA4B2;
+    --rule:       #1C2C37;
+    --accent:     #3FD0DE;
+    --accent-ink: #7BE3ED;
+    --accent-soft:#082028;
     --warn:       #E0A94A;
     --warn-soft:  #271F0F;
     --good:       #6FCFA4;
     --alerta:     #F08E8E;
+    /* No escuro a rampa não muda de matiz, só de brilho: ela emite. */
+    --g1: #2BFFA8;
+    --g2: #35DDF2;
+    --g3: #7C9FFF;
+    --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(43, 255, 168, 0.16), rgba(124, 159, 255, 0.12) 46%, transparent 74%);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper:      #11161B;
-  --surface:    #181F26;
-  --ink:        #E6EAEE;
-  --muted:      #98A5B0;
-  --rule:       #29323B;
-  --accent:     #4FC2B3;
-  --accent-ink: #8BD9CE;
-  --accent-soft:#102723;
+  --paper:      #091219;
+  --surface:    #0F1C25;
+  --ink:        #E6F1F6;
+  --muted:      #8CA4B2;
+  --rule:       #1C2C37;
+  --accent:     #3FD0DE;
+  --accent-ink: #7BE3ED;
+  --accent-soft:#082028;
   --warn:       #E0A94A;
   --warn-soft:  #271F0F;
   --good:       #6FCFA4;
   --alerta:     #F08E8E;
+  --g1: #2BFFA8;
+  --g2: #35DDF2;
+  --g3: #7C9FFF;
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(43, 255, 168, 0.16), rgba(124, 159, 255, 0.12) 46%, transparent 74%);
   color-scheme: dark;
+}
+
+/* A home vai escura para todo mundo, e a barra de rolagem e o canvas são
+   decididos pelo color-scheme da RAIZ, não do body: sem esta marca no <html>,
+   a página quase preta ganha barra de rolagem clara do lado em sistema no
+   claro. Só o color-scheme vive aqui; os tokens continuam no .escuro do body.
+   A posição importa: esta regra e o :root lá em cima empatam em
+   especificidade, então ela precisa vir depois para ganhar. */
+.raiz-escura { color-scheme: dark; }
+
+/* ---------------------------------------------------------------
+   Bloco escuro
+   A home é página de vendas, e ali o escuro é decisão de direção, não
+   preferência do sistema: vale para todo mundo. Só redefine os mesmos
+   tokens, então cada componente dentro dele continua funcionando sem
+   precisar saber que está num bloco escuro.
+   --------------------------------------------------------------- */
+.escuro {
+  --paper:      #070C12;
+  --surface:    #101A24;
+  --ink:        #EAF4FA;
+  --muted:      #93A9B9;
+  --rule:       #1D2D3A;
+  --accent:     #35DDF2;
+  --accent-ink: #7BEAF7;
+  --accent-soft:#0A202B;
+  --warn:       #E0A94A;
+  --warn-soft:  #241D10;
+  --good:       #2BFFA8;
+  --alerta:     #F08E8E;
+  --g1: #2BFFA8;
+  --g2: #35DDF2;
+  --g3: #7C9FFF;
+  --grad-luz: radial-gradient(58rem 28rem at 8% -18%, rgba(43, 255, 168, 0.18), rgba(124, 159, 255, 0.13) 46%, transparent 74%);
+  color-scheme: dark;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* Texto que vira luz. Gasto em um lugar por tela, no número ou na palavra
+   que a pessoa precisa levar embora — espalhado, vira papel de parede.
+   A cor sólida vem primeiro e o gradiente só entra sob @supports: o modo de
+   falha de background-clip:text é texto transparente, e aqui ele carrega o
+   preço do plano. Preço que some é pior do que preço sem gradiente. */
+.brilho { color: var(--accent); }
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .brilho {
+    background: var(--grad-sinal);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Borda em gradiente sem truque de pseudo-elemento: o fundo pinta o miolo
+   até a borda (padding-box) e a rampa pinta só a moldura (border-box). */
+.borda-luz {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    var(--grad-sinal) border-box;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
+/* O cabeçalho é sticky e chega a duas linhas quando o menu quebra. Sem esta
+   reserva, tanto o salto de âncora quanto a rolagem que o navegador faz ao
+   mover o foco com Tab param o alvo em top: 0 — debaixo da barra. Fica fora do
+   prefers-reduced-motion porque vale também para o salto seco. */
+html { scroll-padding-top: 7rem; }
+/* Rolagem suave só para os links internos da home; quem pediu menos movimento
+   no sistema continua com o salto seco. */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   margin: 0;
@@ -174,7 +281,7 @@ strong { font-weight: 600; }
 .card {
   background: var(--surface);
   border: 1px solid var(--rule);
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 1.35rem;
   display: flex;
   flex-direction: column;
@@ -183,41 +290,63 @@ strong { font-weight: 600; }
 .card--accent { border-left: 3px solid var(--accent); background: var(--accent-soft); }
 .card--warn   { border-left: 3px solid var(--warn);   background: var(--warn-soft); }
 
+/* O botão é o objeto mais claro da página: a rampa inteira, com um halo da
+   própria cor embaixo. Tinta escura em cima, porque a rampa é luminosa nos
+   dois temas — é o que dispensa as três regras de override que havia aqui. */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.4rem;
-  border-radius: 4px;
-  background: var(--accent);
-  color: #FFFFFF;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  background: var(--grad-sinal);
+  color: #04121A;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid var(--accent);
+  border: 1px solid transparent;
+  box-shadow: 0 10px 26px -14px var(--g2);
+  transition: filter 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
-.btn:hover { background: var(--accent-ink); color: #FFFFFF; }
-.btn--ghost { background: transparent; color: var(--accent); }
-.btn--ghost:hover { background: var(--accent-soft); color: var(--accent-ink); }
+.btn:hover {
+  color: #04121A;
+  filter: brightness(1.07) saturate(1.05);
+  box-shadow: 0 14px 32px -14px var(--g2);
+  transform: translateY(-1px);
+}
+/* Botão menor, para onde ele não é a chamada principal: no cabeçalho e ao pé
+   de cada plano. Fica no global porque o CSS do Astro é escopado por
+   componente — definido só no layout, não alcançaria os cartões da home. */
+.btn--sm { padding: 0.5rem 1rem; font-size: 0.9rem; border-radius: 8px; }
 
-/* No tema escuro o accent clareia, entao o texto do botao precisa escurecer */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .btn { color: #0B1416; }
-  :root:not([data-theme="light"]) .btn:hover { color: #0B1416; }
-  :root:not([data-theme="light"]) .btn--ghost,
-  :root:not([data-theme="light"]) .btn--ghost:hover { color: var(--accent); background: transparent; }
+.btn--ghost {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--rule);
+  box-shadow: none;
 }
-:root[data-theme="dark"] .btn,
-:root[data-theme="dark"] .btn:hover { color: #0B1416; }
-:root[data-theme="dark"] .btn--ghost,
-:root[data-theme="dark"] .btn--ghost:hover { color: var(--accent); background: transparent; }
+.btn--ghost:hover {
+  color: var(--accent-ink);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  filter: none;
+}
 
 .table-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 5px; background: var(--surface); }
 table { border-collapse: collapse; width: 100%; font-size: 0.95rem; min-width: 32rem; }
 th, td { text-align: left; padding: 0.65rem 0.85rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
 th { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); background: var(--paper); }
 tbody tr:last-child td { border-bottom: none; }
-td.num, th.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* Identificador é dado, não prosa: CNPJ, número de ato, processo, artigo,
+   código de rede. Em mono e com algarismo de largura fixa, ele para de se
+   confundir com a frase em volta e passa a ser conferível de relance. */
+td.num, th.num, .dado {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.92em;
+  white-space: nowrap;
+}
+.dado { color: var(--ink); }
 
 /* A resposta direta no topo de cada página.
    É aqui que o site gasta a ousadia: "a resposta vem antes do contexto" é a

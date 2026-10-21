@@ -3,6 +3,10 @@ import '../styles/global.css';
 import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
 import { urlDoCartao } from '../data/og.js';
 import { CLOUDFLARE_TOKEN, MEDINDO } from '../data/medicao.js';
+import { linkWhatsApp } from '../data/contato.js';
+import { Image } from 'astro:assets';
+import logoClaro from '../assets/logo-movva-preta-verde.png';
+import logoEscuro from '../assets/logo-movva-branca-verde.png';
 
 const {
   title,
@@ -12,6 +16,9 @@ const {
   tipo = 'article',
   schemaExtra = null,
   naoIndexar = false,
+  // A home é página de vendas e vai escura para todo mundo, não só para quem
+  // tem o sistema no escuro. As outras páginas seguem a preferência de quem lê.
+  tema = null,
 } = Astro.props;
 
 const canonical = new URL(path, SITE.url).href;
@@ -26,6 +33,7 @@ const schemaBase = {
       '@id': `${SITE.url}/#site`,
       url: SITE.url,
       name: SITE.name,
+      description: VINCULO,
       inLanguage: SITE.locale,
       publisher: { '@id': `${SITE.url}/#autor` },
     },
@@ -43,6 +51,12 @@ const schemaBase = {
       name: EMPRESA.razaoSocial,
       alternateName: 'MOVVA',
       taxID: EMPRESA.cnpj,
+      // O endereco oficial da empresa e outro dominio. Sem url e sameAs, o
+      // grafo deixava um Organization com CNPJ e endereco identificado por um
+      // @id neste host — que e exatamente o conjunto de propriedades que um
+      // buscador usa para concluir que o site e da propria empresa.
+      url: 'https://movvabrasil.com',
+      sameAs: ['https://movvabrasil.com'],
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Avenida Paulista, 1842, Conjunto 178',
@@ -61,6 +75,9 @@ const schemaBase = {
       inLanguage: SITE.locale,
       isPartOf: { '@id': `${SITE.url}/#site` },
       author: { '@id': `${SITE.url}/#autor` },
+      // "about" e o que fecha a leitura do grafo: diz que esta pagina FALA
+      // SOBRE a MOVVA, enquanto author e publisher continuam na Person.
+      about: { '@id': `${SITE.url}/#movva` },
       image: ogImagem,
       ...(atualizadoEm ? { dateModified: atualizadoEm } : {}),
     },
@@ -83,7 +100,7 @@ const dataLegivel = atualizadoEm
   : null;
 ---
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" class={tema === 'escuro' ? 'raiz-escura' : undefined}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -114,9 +131,12 @@ const dataLegivel = atualizadoEm
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- IBM Plex: família desenhada para uma empresa de tecnologia, com Sans e
+       Mono que foram feitos juntos. O Mono não é enfeite aqui: ele marca
+       identificador real — CNPJ, número de ato, processo, código de rede. -->
   <link
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
   />
 
   {schemas.map((s) => (
@@ -132,20 +152,20 @@ const dataLegivel = atualizadoEm
     />
   )}
 </head>
-<body>
+<body class={tema === 'escuro' ? 'escuro' : undefined}>
 
-  <!-- Declaracao de vinculo no TOPO, nao no rodape. Exigencia de politica e de honestidade. -->
-  <div class="vinculo-barra">
-    <div class="wrap wrap--wide">
-      <p>{VINCULO}</p>
-    </div>
-  </div>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="cabecalho">
     <div class="wrap wrap--wide cabecalho__linha">
-      <a href="/" class="marca">
-        <strong>Movva Brasil</strong>
-        <span>.net</span>
+      <!-- O logotipo é da MOVVA; o ".net" ao lado é o que diz de quem é o site.
+           Os dois juntos são a marca do cabeçalho: a empresa que eu represento,
+           e o endereço que é meu. As duas versões ficam no HTML e o CSS escolhe
+           pelo tema — alt vazio nas duas, senão o leitor de tela lê duas vezes. -->
+      <a href="/" class="marca" aria-label="Movva Brasil .net — início">
+        <Image src={logoClaro} alt="" width={200} densities={[1, 2]} class="marca__logo marca__logo--claro" />
+        <Image src={logoEscuro} alt="" width={200} densities={[1, 2]} class="marca__logo marca__logo--escuro" />
+        <span class="marca__tld" aria-hidden="true">.net</span>
       </a>
       <nav aria-label="Principal">
         <ul class="nav">
@@ -154,16 +174,29 @@ const dataLegivel = atualizadoEm
           ))}
         </ul>
       </nav>
+      <a
+        class="btn btn--sm cabecalho__cta"
+        href={linkWhatsApp('plano')}
+        rel="nofollow sponsored noopener"
+        target="_blank"
+      >Assinar</a>
     </div>
   </header>
 
-  <main id="conteudo">
+  <main id="conteudo" tabindex="-1">
     <slot />
   </main>
 
   <footer class="rodape">
     <div class="wrap wrap--wide stack">
-      <p><strong>{VINCULO}</strong></p>
+      <p class="meta-line">{VINCULO}</p>
+      <!-- A relação já está na linha acima; esta declara o INCENTIVO, que é
+           outra coisa e é o que o CDC art. 36 e o CONAR pedem junto da oferta.
+           A home repete a frase no alto, perto dos botões. -->
+      <p class="meta-line">
+        Recebo comissão se você contratar um plano ou se cadastrar pelos links
+        daqui. <a href="/avisos-legais">Como eu ganho</a>.
+      </p>
       <p class="meta-line">
         Publicado por {AUTOR.nome}, {AUTOR.papel}. As informações sobre a empresa citadas
         aqui vêm de registros públicos e podem ser conferidas de forma independente na
@@ -189,26 +222,93 @@ const dataLegivel = atualizadoEm
 </html>
 
 <style>
-  .vinculo-barra {
-    background: var(--warn-soft);
-    border-bottom: 1px solid var(--rule);
-    padding-block: 0.5rem;
-    font-size: 0.82rem;
-    color: var(--warn);
-    font-weight: 600;
+  /* Primeira parada do teclado. Sem ela, seis elementos do cabeçalho — a
+     marca, os quatro itens de menu e o botão — ficavam entre a pessoa e o
+     texto, em toda página. Fora da tela por padrão, volta ao receber foco. */
+  .pular {
+    position: absolute;
+    left: 0.5rem;
+    top: -4rem;
+    z-index: 30;
+    padding: 0.55rem 0.9rem;
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: top 120ms ease-out;
   }
-  .vinculo-barra p { margin: 0; }
+  .pular:focus, .pular:focus-visible { top: 0.5rem; }
+  /* O <main> recebe foco programático pelo salto; sem isto o navegador
+     desenharia o anel em volta da página inteira. */
+  main:focus { outline: none; }
 
-  .cabecalho { border-bottom: 1px solid var(--rule); padding-block: 1rem; }
+  /* Fica no topo enquanto a pessoa rola: numa página de vendas o botão de
+     assinar não pode depender de ela voltar lá em cima para encontrá-lo. */
+  .cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding-block: 0.85rem;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+  }
+  /* Onde o navegador aceita, o fundo fica translúcido e desfoca o conteúdo
+     que passa por baixo — é o que faz a barra parecer vidro e não um bloco. */
+  @supports (backdrop-filter: blur(1px)) {
+    .cabecalho {
+      background: color-mix(in srgb, var(--paper) 78%, transparent);
+      backdrop-filter: saturate(1.6) blur(14px);
+    }
+  }
+  /* O fio de espectro embaixo da barra: a única linha colorida do cabeçalho. */
+  .cabecalho::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 -1px;
+    height: 1px;
+    background: var(--grad-sinal);
+    opacity: 0.55;
+  }
   .cabecalho__linha {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem 1.5rem;
+    gap: 0.6rem 1.5rem;
   }
-  .marca { font-family: var(--display); font-size: 1.22rem; text-decoration: none; color: var(--ink); }
-  .marca span { color: var(--accent); }
+  .marca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: var(--ink);
+    line-height: 1.1;
+    margin-right: auto;
+  }
+  .marca__logo { height: 26px; width: auto; display: block; }
+  /* O ".net" é pequeno e em mono: lê como o fim de um endereço, que é o que
+     é — e é o que separa este site do movvabrasil.com, o oficial. */
+  .marca__tld {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: -0.01em;
+  }
+
+  /* Logotipo preto no tema claro, branco no escuro. Na home, que leva
+     body.escuro, é sempre o branco: ali o escuro é decisão de direção e não
+     depende da preferência de quem lê. */
+  .marca__logo--escuro { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .marca__logo--claro { display: none; }
+    :root:not([data-theme="light"]) .marca__logo--escuro { display: block; }
+  }
+  :root[data-theme="dark"] .marca__logo--claro { display: none; }
+  :root[data-theme="dark"] .marca__logo--escuro { display: block; }
+  body.escuro .marca__logo--claro { display: none; }
+  body.escuro .marca__logo--escuro { display: block; }
 
   /* flex-direction: row é obrigatório aqui. O global.css transforma todo ul do
      site em coluna, para o espaçamento de listas de texto, e o menu herdava
@@ -229,16 +329,17 @@ const dataLegivel = atualizadoEm
   /* No celular o menu ao lado da marca empilhava em coluna e o cabeçalho
      comia 156px — 27% da primeira tela antes do título aparecer. Empilhando
      marca e menu, o menu volta a ser uma linha e o cabeçalho cai pela metade. */
-  @media (max-width: 34rem) {
-    .cabecalho { padding-block: 0.7rem; }
-    .cabecalho__linha { flex-direction: column; align-items: flex-start; gap: 0.45rem; }
-    /* Sem largura total o <nav> encolhe para o item mais largo e a lista
-       quebra uma linha por item — foi o que fez o cabeçalho crescer em vez
-       de diminuir na primeira tentativa. */
-    .cabecalho__linha > nav { width: 100%; }
-    .nav { gap: 0.25rem 1.1rem; font-size: 0.88rem; }
-    .marca { font-size: 1.1rem; }
-    .vinculo-barra { font-size: 0.74rem; padding-block: 0.4rem; }
+  /* No celular a marca e o botão dividem a primeira linha e o menu desce
+     inteiro para a segunda. Sem o width: 100% o <nav> encolhe até o item
+     mais largo e a lista quebra uma linha por item — foi o que já fez este
+     cabeçalho comer 27% da primeira tela. */
+  @media (max-width: 40rem) {
+    .cabecalho { padding-block: 0.65rem; }
+    .cabecalho__linha { gap: 0.5rem 0.9rem; }
+    .cabecalho__linha > nav { order: 3; width: 100%; }
+    .nav { gap: 0.25rem 1.05rem; font-size: 0.86rem; }
+    .marca__logo { height: 22px; }
+    .btn--sm { padding: 0.45rem 0.85rem; font-size: 0.85rem; }
   }
 
   .rodape {
