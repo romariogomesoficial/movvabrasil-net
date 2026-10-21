@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import ProximoPasso from '../components/ProximoPasso.astro';
 import { EMPRESA } from '../data/site.js';
 
 const atualizadoEm = '2026-10-20';
@@ -204,6 +205,8 @@ const schemaFaq = {
         projeção de matriz cheia em vez do próprio extrato.
       </p>
     </section>
+
+    <ProximoPasso contexto="programa" mostrarPrograma={false} />
 
   </article>
 </Base>

@@ -1,0 +1,77 @@
+---
+// O que vem depois de a pessoa terminar de ler.
+//
+// Duas saidas, porque sao duas intencoes diferentes, e misturar as duas e o
+// erro que faz o leitor de produto achar que caiu numa isca de oportunidade:
+//   - quem quer o servico vai para a conversa
+//   - quem quer o programa vai para a pagina que abre os numeros reais
+//
+// Nunca ha promessa de ganho aqui. A chamada do programa leva para a pagina que
+// comeca dizendo que a maior parte da minha comissao veio de entrada, nao de
+// conta de celular paga.
+import { linkWhatsApp, ATENDIMENTO, WHATSAPP_VISIVEL } from '../data/contato.js';
+
+const { contexto = 'duvida', mostrarPrograma = true } = Astro.props;
+const temHorario = ATENDIMENTO.linhas.length > 0;
+---
+
+<aside class="proximo">
+  <div class="proximo__principal">
+    <p class="eyebrow">Próximo passo</p>
+    <h2>Ficou com dúvida?</h2>
+    <p>
+      Me manda no WhatsApp. Respondo eu mesmo, e se não souber a resposta eu digo
+      que não sei em vez de inventar.
+    </p>
+    <p>
+      <a class="btn" href={linkWhatsApp(contexto)} rel="nofollow noopener" target="_blank">
+        Falar comigo no WhatsApp
+      </a>
+    </p>
+    <p class="meta-line">
+      {WHATSAPP_VISIVEL}
+      {temHorario
+        ? ATENDIMENTO.linhas.map((l) => <><br />{l}</>)
+        : <><br />{ATENDIMENTO.semHorario}</>}
+    </p>
+  </div>
+
+  {mostrarPrograma && (
+    <div class="proximo__secundario">
+      <h3>Veio pelo programa de afiliados?</h3>
+      <p>
+        A página tem a composição da remuneração e os meus números reais, incluindo
+        os meses em que ganhei zero.
+      </p>
+      <p><a href="/oportunidade">Ver o programa e os números</a></p>
+    </div>
+  )}
+</aside>
+
+<style>
+  .proximo {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--rule);
+  }
+  @media (max-width: 38rem) { .proximo { grid-template-columns: 1fr; } }
+
+  .proximo__principal, .proximo__secundario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    min-width: 0;
+  }
+  .proximo__secundario {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    padding: 1.2rem;
+  }
+  .proximo h2 { font-size: 1.5rem; }
+  .proximo h3 { font-size: 1.02rem; }
+  .proximo p { margin: 0; }
+</style>

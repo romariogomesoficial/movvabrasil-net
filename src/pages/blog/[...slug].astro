@@ -1,7 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ProximoPasso from '../../components/ProximoPasso.astro';
 import { getCollection, render } from 'astro:content';
 import { SITE, AUTOR } from '../../data/site.js';
+
+// A mensagem que ja vai escrita no WhatsApp muda conforme o assunto do post,
+// para voce saber de onde a pessoa veio sem precisar perguntar.
+const CONTEXTO_POR_CLUSTER = {
+  categoria: 'cobertura',
+  diferencial: 'plano',
+  dor: 'duvida',
+  marca: 'programa',
+  comparacao: 'plano',
+};
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -71,6 +82,12 @@ const fmt = (d) =>
       Achou um erro? Escreva e eu corrijo, com nota de correção na página.
       Veja os <a href="/avisos-legais">avisos legais</a>.
     </p>
+
+    <ProximoPasso
+      contexto={post.id === 'portabilidade-sem-perder-o-numero'
+        ? 'portabilidade'
+        : (CONTEXTO_POR_CLUSTER[post.data.cluster] ?? 'duvida')}
+    />
 
   </article>
 </Base>
