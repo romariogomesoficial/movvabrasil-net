@@ -151,6 +151,57 @@ redirecionamento. Nada aparecia quebrado em conferência nenhuma. Fonte que abre
 parece fonte certa, e nenhum conferidor automático compara o *assunto* da fonte
 com o assunto do texto.
 
+### Três páginas e um anúncio — “a portabilidade é grátis”
+
+**Passou a dizer:** em `/blog/portabilidade-sem-perder-o-numero`, em negrito,
+“**Para você, nada.** O art. 92 do RGST põe o custo da portabilidade fora do
+usuário”. Em `/blog/operadora-sem-fidelidade`, “portar o número é gratuito para
+você (RGST, art. 92)”. E em `src/data/criativos.js`, no texto de apoio de uma
+peça **paga**: “para você, não tem custo — o art. 92 do RGST põe a despesa fora
+do usuário”.
+
+**O erro:** o art. 92 não diz isso. Ele veda a cobrança pela prestadora
+**doadora** — a que você deixa — e só. Quem pode cobrar é a **receptora**, pelo
+art. 70 do mesmo RGST: “A portabilidade pode ser onerosa ao Usuário Portado, por
+meio de valor cobrado pela Prestadora Receptora”. O § 3º permite que ela
+dispense a cobrança, e é o que costuma acontecer — mas dispensa é escolha
+comercial, não direito. O art. 71 lista as duas hipóteses em que a portabilidade
+não é onerosa, e trocar de operadora não é nenhuma delas.
+
+**O agravante:** uma das três superfícies era anúncio pago. Peça paga afirmando
+direito que a norma não dá é outro patamar de risco — não é só o leitor que
+confia errado, é a plataforma que pode derrubar a conta por alegação enganosa.
+
+**Como apareceu:** não por revisão deste texto. Uma página nova, sobre contratar
+e cancelar, citou o art. 70 ao tratar do custo de sair — e o conferidor dela
+reparou que o site dizia o contrário em outro lugar. Três leitores independentes
+foram às fontes primárias, inclusive um instruído a *defender* a gratuidade, e
+os três voltaram com o mesmo texto literal, por caminhos diferentes: o site de
+legislação da Anatel respondia erro 520, e eles foram pelo DataLegis e pelo DOU.
+
+### Dois posts — o “critério de 95%” da cobertura
+
+**Passou a dizer:** “uma localidade entra como coberta com mais de 95% da área
+coberta”, em `/blog/operadora-virtual-pega-bem`, no meio de dois fatos reais da
+nota técnica da Anatel — o que fazia o número parecer vir dela. E, em
+`/blog/cobertura-zona-rural`, “só conta como coberta a localidade com mais de
+95% da área coberta”.
+
+**O erro:** a nota técnica do painel de cobertura não traz percentual de corte
+nenhum. Ela agrega setores censitários e devolve um percentual; o painel não
+classifica localidade em coberta ou não coberta. O único “95” do arquivo é o
+limiar de −95 dBm do 2G.
+
+**De onde o número veio, de verdade:** do anexo de compromissos de abrangência
+do leilão do 5G, onde **município** atendido é o que tem 95% da **área urbana do
+distrito sede** coberta, a −110 dBm. Para **localidade** — a palavra que o site
+usava — o critério do mesmo anexo é o oposto: pelo menos uma ERB. Ou seja, o
+número estava certo e aplicado à unidade errada, ao universo errado e ao
+documento errado.
+
+**Como apareceu:** um verificador extraiu o PDF da nota técnica inteiro para
+conferir outra coisa e reparou que o número não estava lá.
+
 ---
 
 ## Por que não é página pública
