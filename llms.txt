@@ -61,10 +61,10 @@ que resolva.
 
 ### Tecnologia e características de plano
 
-- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
-  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
 - [Chip que pega em duas operadoras: o que existe de verdade](https://movvabrasil.net/blog/chip-dois-sinais): Multi-IMSI, eSIM, roaming e dual SIM são quatro coisas diferentes. Veja o que muda para você e como conferir em qual rede o seu chip está.
   Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
+- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
+  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
 
 ### Como funciona uma operadora virtual
 
