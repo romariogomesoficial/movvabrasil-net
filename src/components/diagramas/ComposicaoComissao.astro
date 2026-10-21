@@ -27,22 +27,45 @@ const faixas = VALORES.map((v) => {
 const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
 ---
 
-<figure class="figura">
+<figure class="figura" data-grafico-comissao>
   <svg
     viewBox="0 0 620 294"
     role="img"
     aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de entrada e licença. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
   >
+    <defs>
+      {/* userSpaceOnUse para a rampa atravessar a barra inteira: com o padrão
+          cada faixa receberia o degradê completo e as três ficariam iguais. */}
+      <linearGradient id="rampaComissao" gradientUnits="userSpaceOnUse" x1={X0} y1="0" x2={X0 + L} y2="0">
+        <stop offset="0" stop-color="var(--b1)" />
+        <stop offset="0.55" stop-color="var(--b2)" />
+        <stop offset="1" stop-color="var(--b3)" />
+      </linearGradient>
+      {/* Arredonda só as pontas da barra composta. Arredondar cada faixa
+          abriria entalhes no meio e quebraria a leitura de total único. */}
+      <clipPath id="pontasBarra">
+        <rect x={X0} y="56" width={L} height="52" rx="8" />
+      </clipPath>
+    </defs>
+
     <!-- a barra, proporcional aos valores -->
-    {faixas.map((f, i) => (
-      <>
+    <g class="barras" clip-path="url(#pontasBarra)">
+      {faixas.map((f, i) => (
         <rect x={f.x} y="56" width={f.largura} height="52" class={`faixa faixa--${i}`} />
-        {f.largura > 60 && (
-          <text x={f.x + f.largura / 2} y="88" class="dentro" text-anchor="middle">
-            {f.pct.toFixed(1)}%
-          </text>
-        )}
-      </>
+      ))}
+      {/* Fio na cor do papel em cada emenda: sem ele as faixas vizinhas se
+          encostam e a rampa as faz parecer uma só. */}
+      {faixas.slice(1).map((f) => (
+        <line x1={f.x} y1="56" x2={f.x} y2="108" class="emenda" />
+      ))}
+    </g>
+
+    {faixas.map((f) => (
+      f.largura > 60 && (
+        <text x={f.x + f.largura / 2} y="88" class="dentro" text-anchor="middle">
+          {f.pct.toFixed(1)}%
+        </text>
+      )
     ))}
 
     <!-- Rotulo de cada faixa. O ultimo e estreito demais para caber um rotulo
@@ -88,7 +111,7 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
     <text x={X0} y="192" class="nota nota--forte">
       E quanto veio de conta de celular paga, mês a mês?
     </text>
-    <rect x={X0} y="204" width={L} height="34" class="trilho" />
+    <rect x={X0} y="204" width={L} height="34" rx="8" class="trilho" />
     <line x1={X0} y1="221" x2={X0 + 3} y2="221" class="zero" />
     <text x={X0 + 22} y="228" class="zero-rotulo">R$ 0,00</text>
     {/* Em duas linhas porque texto em SVG nao quebra sozinho: numa linha so,
@@ -107,6 +130,37 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
   </figcaption>
 </figure>
 
+<script is:inline>
+  // A barra cresce quando o gráfico entra na tela, e o trilho de baixo fica
+  // vazio. É a única animação da página, e ela existe porque é o argumento do
+  // gráfico: você vê o dinheiro chegar de um lado e NÃO chegar do outro. Numa
+  // imagem parada as duas barras já nascem decididas e a ausência vira só um
+  // espaço em branco.
+  //
+  // A classe de animação é posta pelo próprio script: sem JavaScript, ou com
+  // "reduzir movimento" ligado, o gráfico aparece inteiro e correto, que é o
+  // estado que importa.
+  (() => {
+    const fig = document.querySelector('[data-grafico-comissao]');
+    if (!fig) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+
+    fig.classList.add('anima');
+    const obs = new IntersectionObserver(
+      (entradas) => {
+        for (const e of entradas) {
+          if (!e.isIntersecting) continue;
+          e.target.classList.add('visivel');
+          obs.unobserve(e.target);
+        }
+      },
+      { threshold: 0.35 }
+    );
+    obs.observe(fig);
+  })();
+</script>
+
 <style>
   /* Sem vazar para fora do container: esta figura vive dentro de um card, e
      ultrapassar a coluna faria ela furar a borda da caixa. */
@@ -114,15 +168,31 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
   .figura svg { width: 100%; max-width: 100%; height: auto; display: block; }
   figcaption { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
 
-  /* As tres faixas: a primeira e a que carrega o argumento, entao e a mais
-     saturada. As outras duas recuam. */
-  .faixa--0 { fill: var(--accent); }
-  .faixa--1 { fill: var(--accent); opacity: 0.55; }
-  .faixa--2 { fill: var(--accent); opacity: 0.28; }
+  /* A barra tem rampa própria, e não a do site, por uma razão de dado: sobre
+     papel branco o verde da rampa dá 1,6:1, e num gráfico isso deixaria a
+     faixa mais importante como a menos visível. Aqui a rampa escurece no
+     claro e acende no escuro, mantendo as três faixas legíveis nos dois. */
+  .figura { --b1: #0B7681; --b2: #1766A8; --b3: #4F46E5; }
+  :global(body.escuro) .figura { --b1: #2BFFA8; --b2: #35DDF2; --b3: #7C9FFF; }
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme="light"])) .figura { --b1: #2BFFA8; --b2: #35DDF2; --b3: #7C9FFF; }
+  }
+
+  /* As tres faixas correm sobre a mesma rampa, que atravessa a barra inteira,
+     e cada uma pega um trecho diferente dela — e o que as separa.
+     Sem degrau de opacidade, de propósito: com opacity 0.6 a faixa do meio
+     virava #70A0C9 no tema claro e o rótulo branco em cima dela caía para
+     2,60:1, abaixo do mínimo de 4,5. Num gráfico a hierarquia já vem da
+     largura, que é o dado; escurecer faixa é enfeite que custou legibilidade. */
+  .faixa { fill: url(#rampaComissao); }
+  .emenda { stroke: var(--paper); stroke-width: 2; }
 
   /* Tamanhos pensados para sobreviver a reducao: a figura e desenhada em 768
      de largura e renderiza por volta de 500px numa coluna de leitura, ou seja,
      a uns 65%. Texto de 13px viraria 8px na tela. */
+  /* var(--paper) porque a barra inverte com o tema: no claro ela é escura e
+     pede texto claro, no escuro ela acende e pede texto escuro. O papel é
+     justamente o oposto da barra nos dois casos. */
   .dentro { font-size: 19px; font-weight: 600; fill: var(--paper); font-family: var(--body); }
   .rotulo { font-size: 17px; fill: var(--ink); font-family: var(--body); }
   .chamada { stroke: var(--rule); stroke-width: 1.5; }
@@ -133,12 +203,46 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
   /* O trilho mostra a mesma largura da barra de cima. O que preenche ele e
      quase nada, e e isso que o leitor precisa ver. */
   .trilho { fill: none; stroke: var(--rule); stroke-width: 1.5; stroke-dasharray: 3 4; }
+  /* linecap: butt, nunca round. Com ponta arredondada esta linha de 3px vira
+     uma pílula de 37px e o zero passa a parecer um valor — num gráfico, o
+     arredondamento mentiria sobre o dado. É o único canto da figura que não
+     foi arredondado, e é de propósito. */
   .zero { stroke: var(--alerta); stroke-width: 34; stroke-linecap: butt; }
   .zero-rotulo {
     font-size: 26px;
     font-weight: 600;
     fill: var(--alerta);
     font-family: var(--display);
+  }
+
+  /* ---------------------------------------------------------------
+     A revelação
+     Um movimento só, em três tempos: a barra cresce da esquerda, os
+     percentuais aparecem quando já há onde pousá-los, e o R$ 0,00 entra
+     por último — depois que a barra de cima terminou, para o contraste
+     cair no tempo certo em vez de competir.
+     O grupo é escalado em X; os textos ficam fora dele, senão esticariam
+     junto e os percentuais entrariam deformados.
+     --------------------------------------------------------------- */
+  .barras { transform-box: fill-box; transform-origin: left center; }
+
+  .anima .barras { transform: scaleX(0); }
+  .anima .dentro,
+  .anima .zero,
+  .anima .zero-rotulo { opacity: 0; }
+
+  .anima.visivel .barras {
+    transform: scaleX(1);
+    transition: transform 1.05s cubic-bezier(0.22, 0.68, 0.24, 1);
+  }
+  .anima.visivel .dentro {
+    opacity: 1;
+    transition: opacity 0.45s ease 0.55s;
+  }
+  .anima.visivel .zero,
+  .anima.visivel .zero-rotulo {
+    opacity: 1;
+    transition: opacity 0.5s ease 1.2s;
   }
 
   @media (max-width: 34rem) {
