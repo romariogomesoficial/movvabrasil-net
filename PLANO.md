@@ -74,7 +74,29 @@ Transforma o "atualizada em" que o site já tem num contador visível. Um juiz
 chamou de a ideia mais valiosa do conjunto inteiro, porque promessa de revisão
 é promessa, e contador é fato gerado.
 
-### A página `/correcoes`
+### A página `/correcoes` — DESCARTADA em 21/10/2026
+
+**Chegou a existir e saiu do ar, por decisão do dono do site.** A razão vale
+como regra para tudo o que vier depois, e está em `CORRECOES.md`:
+
+> Deixar explícito um erro causa desconfiança **na pessoa**. O leitor não
+> conclui "essa pessoa é rigorosa", conclui "essa pessoa erra" — e num site de
+> vendas quem escreve é justamente quem precisa de confiança.
+
+A linha que separa os dois casos é **de quem o fato fala**:
+
+- **Incerteza sobre o ASSUNTO** (a MOVVA, a norma, a cobertura) → publicar.
+  Fala do produto, e assumir que algo não foi confirmado constrói confiança.
+  É o que sustenta os pontos em aberto da faixa e as seções "o que eu não
+  consegui confirmar" dos posts.
+- **Erro do AUTOR** → corrigir em silêncio e registrar em `CORRECOES.md`, que
+  é documento de trabalho, não página.
+
+A faixa de conferência ficou, sem o contador de correções: os dois números que
+sobraram — fontes primárias e pontos em aberto — são do primeiro tipo.
+
+O argumento abaixo, que a defendia, fica registrado porque estava errado sobre
+um leitor real, não sobre um leitor ideal.
 
 O material já existe, escrito, dentro do código:
 
@@ -91,6 +113,43 @@ vê — e eles valem muito mais na página do que no commit.
 **Por que isto é a vantagem:** qualquer concorrente copia seção de benefício em
 uma tarde. Ninguém copia um histórico de correções sem ter cometido os erros e
 assumido em público.
+
+---
+
+## Fase 2.5 — O que o site de referência tinha e este não
+
+Não estava no plano original. Saiu da comparação seção a seção com o site do
+patrocinador: das quinze seções que ele tem, seis eu não reproduzo de propósito
+(simulador de ganhos, "qual é a sua desculpa?", depoimentos, acelerador de
+vendas, planos empresariais sem dado, e as três telas de persuasão "de qual
+lado você quer estar"). Das outras, três faltavam de verdade.
+
+- [x] **`/planos`** — a página comercial central. Os cinco planos lado a lado,
+      preço por giga, para quem cada um serve, e o que eu não confirmei sobre
+      eles. Os preços viviam escritos à mão dentro da home.
+- [x] **`/perguntas-frequentes`** — 25 perguntas. Catorze vêm de
+      `src/data/perguntas.js`, que as páginas de dentro também leem, e onze são
+      geradas do campo `resposta` de cada post. Nenhuma escrita à mão duas vezes.
+- [x] **`/sobre`** — quem escreve e o método editorial. O site de referência tem
+      seção de pessoa; o meu não tinha nenhuma, e é o que sustenta E-E-A-T.
+- [x] **Seção de perguntas na home**, com as cinco objeções de quem está
+      decidindo trocar, antes do último botão.
+- [x] **A escada de treze graduações** em `/oportunidade`, com os medalhões
+      oficiais: doze apagados e um aceso. O contraste é o argumento.
+
+### As travas que entraram junto
+
+Cada uma nasceu de um erro real cometido no mesmo dia:
+
+- [x] `conferir-acentos.mjs` — frase de tela escrita sem acento dentro de
+      arquivo de dados, que leva comentário sem acento de propósito. Já tinha
+      quase acontecido com a frase do chip; aconteceu com os textos dos planos.
+- [x] `conferir-links.mjs` — dezenas de links internos novos, nenhum conferido.
+- [x] `role="list"` em dez listas sem marcador, que o VoiceOver parava de
+      anunciar como lista.
+- [x] `BreadcrumbList` derivado do caminho, e trilha visível nos posts.
+- [x] Fonte única para menu e `llms.txt`: três páginas novas entraram e o
+      `llms.txt` não soube de nenhuma.
 
 ---
 
