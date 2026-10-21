@@ -1,0 +1,150 @@
+---
+// De onde veio a comissao do autor. Dados reais do extrato, 07/07 a 20/10/2026.
+//
+// A barra e proporcional de verdade: as larguras saem dos valores, nao de
+// estimativa visual. Total R$ 146,08.
+const VALORES = [
+  { rotulo: 'Licença VIP', valor: 92.70, tipo: 'entrada' },
+  { rotulo: 'Plano Liberty', valor: 44.72, tipo: 'misto' },
+  { rotulo: 'SKY+', valor: 8.66, tipo: 'misto' },
+];
+const TOTAL = VALORES.reduce((s, v) => s + v.valor, 0);
+
+// A figura e desenhada estreita de proposito: ela vive dentro de um card, e um
+// quadro largo obrigaria o navegador a reduzir muito, deixando o texto ilegivel.
+// Com 620 de largura ela renderiza perto de 1 para 1.
+const L = 598;      // largura util da barra
+const X0 = 11;      // margem esquerda
+
+let acumulado = 0;
+const faixas = VALORES.map((v) => {
+  const largura = (v.valor / TOTAL) * L;
+  const faixa = { ...v, x: X0 + acumulado, largura, pct: (v.valor / TOTAL) * 100 };
+  acumulado += largura;
+  return faixa;
+});
+
+const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
+---
+
+<figure class="figura">
+  <svg
+    viewBox="0 0 620 294"
+    role="img"
+    aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de entrada e licença. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
+  >
+    <!-- a barra, proporcional aos valores -->
+    {faixas.map((f, i) => (
+      <>
+        <rect x={f.x} y="56" width={f.largura} height="52" class={`faixa faixa--${i}`} />
+        {f.largura > 60 && (
+          <text x={f.x + f.largura / 2} y="88" class="dentro" text-anchor="middle">
+            {f.pct.toFixed(1)}%
+          </text>
+        )}
+      </>
+    ))}
+
+    <!-- Rotulo de cada faixa. O ultimo e estreito demais para caber um rotulo
+         centrado, entao ele ancora na borda direita da barra e a linha de
+         chamada sobe em L ate ele. -->
+    {faixas.map((f, i) => {
+      const ultimo = i === faixas.length - 1;
+      const cx = f.x + f.largura / 2;
+      const y = ultimo ? 26 : 42;
+      return (
+        <>
+          {ultimo ? (
+            <>
+              <line x1={cx} y1="54" x2={cx} y2="34" class="chamada" />
+              <line x1={cx} y1="34" x2={X0 + L} y2="34" class="chamada" />
+              <text x={X0 + L} y={y} class="rotulo" text-anchor="end">
+                {f.rotulo} · {brl(f.valor)}
+              </text>
+            </>
+          ) : (
+            <>
+              <line x1={cx} y1={y + 5} x2={cx} y2="54" class="chamada" />
+              <text x={cx} y={y} class="rotulo" text-anchor="middle">
+                {f.rotulo} · {brl(f.valor)}
+              </text>
+            </>
+          )}
+        </>
+      );
+    })}
+
+    <!-- colchete: o que nasceu de entrada -->
+    <line x1={X0} y1="126" x2={X0 + (141.28 / TOTAL) * L} y2="126" class="colchete" />
+    <line x1={X0} y1="120" x2={X0} y2="132" class="colchete" />
+    <line x1={X0 + (141.28 / TOTAL) * L} y1="120" x2={X0 + (141.28 / TOTAL) * L} y2="132" class="colchete" />
+    <text x={X0 + 10} y="152" class="nota">
+      R$ 141,28 — 96,7% nasceu de alguém entrando: licença e adesão
+    </text>
+
+    <!-- A parte que a tese do negocio prometia. E o ponto do grafico inteiro,
+         entao ganha uma barra propria, na mesma escala da de cima: a ausencia
+         de largura e a informacao. -->
+    <text x={X0} y="192" class="nota nota--forte">
+      E quanto veio de conta de celular paga, mês a mês?
+    </text>
+    <rect x={X0} y="204" width={L} height="34" class="trilho" />
+    <line x1={X0} y1="221" x2={X0 + 3} y2="221" class="zero" />
+    <text x={X0 + 22} y="228" class="zero-rotulo">R$ 0,00</text>
+    {/* Em duas linhas porque texto em SVG nao quebra sozinho: numa linha so,
+        a frase passava da largura do quadro e era cortada na borda. */}
+    <text x={X0} y="262" class="nota">
+      Bônus de recorrência sobre o plano de telefonia,
+    </text>
+    <text x={X0} y="280" class="nota">
+      em três meses e meio. Nenhum lançamento.
+    </text>
+  </svg>
+
+  <figcaption>
+    Extrato do autor, 7 de julho a 20 de outubro de 2026, com licença VIP e oito
+    pessoas na rede. 17 lançamentos, R$ 146,08 no total.
+  </figcaption>
+</figure>
+
+<style>
+  /* Sem vazar para fora do container: esta figura vive dentro de um card, e
+     ultrapassar a coluna faria ela furar a borda da caixa. */
+  .figura { margin: 2rem 0; display: flex; flex-direction: column; gap: 0.7rem; }
+  .figura svg { width: 100%; max-width: 100%; height: auto; display: block; }
+  figcaption { font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+
+  /* As tres faixas: a primeira e a que carrega o argumento, entao e a mais
+     saturada. As outras duas recuam. */
+  .faixa--0 { fill: var(--accent); }
+  .faixa--1 { fill: var(--accent); opacity: 0.55; }
+  .faixa--2 { fill: var(--accent); opacity: 0.28; }
+
+  /* Tamanhos pensados para sobreviver a reducao: a figura e desenhada em 768
+     de largura e renderiza por volta de 500px numa coluna de leitura, ou seja,
+     a uns 65%. Texto de 13px viraria 8px na tela. */
+  .dentro { font-size: 19px; font-weight: 600; fill: var(--paper); font-family: var(--body); }
+  .rotulo { font-size: 17px; fill: var(--ink); font-family: var(--body); }
+  .chamada { stroke: var(--rule); stroke-width: 1.5; }
+  .colchete { stroke: var(--muted); stroke-width: 1.5; }
+  .nota { font-size: 16px; fill: var(--muted); font-family: var(--body); }
+  .nota--forte { fill: var(--ink); font-weight: 600; font-size: 18px; }
+
+  /* O trilho mostra a mesma largura da barra de cima. O que preenche ele e
+     quase nada, e e isso que o leitor precisa ver. */
+  .trilho { fill: none; stroke: var(--rule); stroke-width: 1.5; stroke-dasharray: 3 4; }
+  .zero { stroke: var(--alerta); stroke-width: 34; stroke-linecap: butt; }
+  .zero-rotulo {
+    font-size: 26px;
+    font-weight: 600;
+    fill: var(--alerta);
+    font-family: var(--display);
+  }
+
+  @media (max-width: 34rem) {
+    .rotulo { font-size: 21px; }
+    .nota { font-size: 20px; }
+    .nota--forte { font-size: 22px; }
+    .zero-rotulo { font-size: 32px; }
+  }
+</style>

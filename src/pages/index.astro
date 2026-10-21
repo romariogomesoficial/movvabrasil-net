@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProximoPasso from '../components/ProximoPasso.astro';
+import CadeiaDeRede from '../components/diagramas/CadeiaDeRede.astro';
 import { EMPRESA } from '../data/site.js';
 
 const atualizadoEm = '2026-10-20';
@@ -81,6 +82,23 @@ const description =
           teste de cobertura, velocidade e o comportamento real da troca de rede.
         </p>
       </div>
+    </section>
+
+    <section class="stack">
+      <h2>De onde vem o sinal</h2>
+      <p>
+        Operadora virtual não tem antena. Ela vende sobre a rede de quem tem, e a
+        Resolução 777/2025 da Anatel prevê dois jeitos de fazer isso. A diferença
+        muda de quem você é cliente — e não muda a cobertura.
+      </p>
+
+      <CadeiaDeRede />
+
+      <p class="meta-line">
+        Em qual dos dois modelos a MOVVA opera é uma das coisas que eu ainda não
+        confirmei. O detalhe de cada um está em
+        {' '}<a href="/blog/o-que-e-operadora-virtual">o que é uma operadora virtual</a>.
+      </p>
     </section>
 
     <section class="stack">

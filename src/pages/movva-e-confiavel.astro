@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import ProximoPasso from '../components/ProximoPasso.astro';
+import ComposicaoComissao from '../components/diagramas/ComposicaoComissao.astro';
 import { EMPRESA } from '../data/site.js';
 
 const atualizadoEm = '2026-10-20';
@@ -126,6 +127,8 @@ const schemaFaq = {
             </tbody>
           </table>
         </div>
+        <ComposicaoComissao />
+
         <p>
           E dentro dos R$ 44,72 do plano de celular, <strong>R$ 39,92 foram bônus de
           adesão</strong>, ou seja, comissão sobre alguém entrando. Bônus de

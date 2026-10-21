@@ -14,6 +14,9 @@
   --warn:       #8A5A00;
   --warn-soft:  #FDF4E3;
   --good:       #1C6B4A;
+  /* Usado onde um número ou um fato contraria a expectativa. Aparece pouco,
+     de propósito: num site sobre verificação, vermelho gasto não significa nada. */
+  --alerta:     #9B1C23;
 
   --display: "Newsreader", Georgia, "Times New Roman", serif;
   --body:    "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -34,6 +37,7 @@
     --warn:       #E0A94A;
     --warn-soft:  #271F0F;
     --good:       #6FCFA4;
+    --alerta:     #F08E8E;
     color-scheme: dark;
   }
 }
@@ -49,6 +53,7 @@
   --warn:       #E0A94A;
   --warn-soft:  #271F0F;
   --good:       #6FCFA4;
+  --alerta:     #F08E8E;
   color-scheme: dark;
 }
 
