@@ -7,6 +7,19 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# ---------------------------------------------------------------
+# 0. Passa antes de tudo
+# ---------------------------------------------------------------
+# O Let's Encrypt valida o dominio por este caminho. Precisa responder em HTTP
+# puro, sem redirecionamento, senao a emissao do certificado pode falhar.
+RewriteRule ^\.well-known/ - [L]
+
+# O deploy via Git da Hostinger cria um .git dentro do public_html. Sem esta
+# regra, o historico inteiro do repositorio fica acessivel pela web, e o
+# Google chega a indexar esses arquivos.
+RewriteRule ^\.git(/|$) - [F,L]
+RewriteRule ^\.github(/|$) - [F,L]
+
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://movvabrasil.net/$1 [R=301,L]
