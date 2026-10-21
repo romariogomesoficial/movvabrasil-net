@@ -73,7 +73,13 @@ Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que s
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
-A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. Não valido nem invalido a promessa: entrego o método, e o estado do meu próprio teste está na nota ao pé desta página.
+Por um tempo eu só pude dizer que a MOVVA publicava "dupla conectividade TIM e Vivo num único chip" sem dizer **como** — e o como é o que muda a sua vida, porque roaming, multi-IMSI e credenciamento com mais de uma origem são três coisas diferentes.
+
+O deck institucional da empresa responde, e é específico: **"Rede TIM + Roaming da VIVO"**. Não são duas redes contratadas. A principal é a da TIM; a Vivo entra por roaming.
+
+Isso tem uma consequência que vale conhecer antes de contratar, e ela está na seção acima: o **art. 66 do PGMC** veda o roaming permanente acima de 90 dias corridos. É regra que vincula as prestadoras, não você — mas uma característica vendida como permanente do plano convive com um limite que a norma trata como temporário, e eu não achei documento que explique como. Pode haver enquadramento que eu desconheça; pode não haver.
+
+Não valido nem invalido a promessa: entrego o método para você conferir sozinho, e o estado do meu próprio teste está na nota ao pé desta página.
 
 ## Como você confere sozinho quando o chip chegar
 
@@ -90,7 +96,8 @@ A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro
 Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
 
 - **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
-- **Qual mecanismo seria usado, e se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. Pergunte a ela e veja o painel da Anatel.
+- **Como um roaming vendido como permanente convive com o teto de 90 dias do art. 66 do PGMC.** O deck da empresa descreve a Vivo como roaming; a norma trata roaming permanente como vedado acima desse prazo. Não achei documento que resolva, e é o ponto que eu mais gostaria de ver respondido por escrito.
+- **Se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. O dossiê institucional dela descreve a operação por outra cadeia, citando contrato com a ISPS do Brasil (TIP Brasil) sobre infraestrutura da ARQIA, sem mencionar TIM nem Vivo. Os dois documentos são da empresa e não fecham entre si.
 - **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
 - **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
 

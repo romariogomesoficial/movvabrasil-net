@@ -137,6 +137,27 @@ documento publica, não que eu derivei (Panorama Econômico-Financeiro da Anatel
 2º trimestre de 2026, PDF aberto em 21/10/2026). O documento não rotula se o
 indicador é mensal ou trimestral. Leio como mensal, e essa leitura é minha.
 
+## O que a MOVVA diz, e o que isso quer dizer
+
+Duas frases da própria empresa, e elas não dizem a mesma coisa.
+
+O documento de diferenciais dela lista **"gigas acumulativos infinitos"**. O deck
+institucional, na página sobre o assunto, é mais específico: *"Pagando até a data
+do vencimento, seus gigas não utilizados permanecem disponíveis **no próximo
+mês**"*. O exemplo é da própria empresa: 25 GB contratados, 15 GB usados em
+janeiro, e fevereiro começa com 35 GB.
+
+São duas coisas diferentes, e a diferença importa. "Infinitos" sugere que o
+saldo nunca morre. "Permanecem disponíveis no próximo mês" descreve um salto de
+um mês — e o exemplo mostra exatamente um salto, de janeiro para fevereiro, não
+uma pilha que cresce o ano inteiro.
+
+Reparei também na condição, que o material mais curto não traz: **pagando até a
+data do vencimento**. Atraso mexe no saldo, e quanto mexe eu não sei.
+
+A pergunta que nenhum dos dois documentos responde é a única que decide:
+**o que sobrou em janeiro ainda está lá em março?**
+
 ## E numa operadora virtual?
 
 Quem define o acúmulo é o regulamento da oferta, e isso depende do modelo da
@@ -154,9 +175,9 @@ fidelidade e multa](/blog/operadora-sem-fidelidade).
   a revalidar.
 - Qual é o teto de acúmulo em cada operadora, e o que acontece num atraso de
   fatura.
-- Sob quais condições a MOVVA acumula. O material oficial da empresa diz
-  "gigas acumulativos infinitos", sem teto e sem ressalva; o regulamento da
-  oferta, que é onde as condições de verdade ficam, eu não localizei.
+- O regulamento da oferta da MOVVA, que é onde as condições de verdade ficam.
+  O deck institucional dela fecha a condição e o horizonte — ver a seção acima —
+  mas regulamento de oferta é outro documento, e é ele que vale numa reclamação.
 
 Onde confirmar: o regulamento da oferta, por escrito, e o 1331.
 
