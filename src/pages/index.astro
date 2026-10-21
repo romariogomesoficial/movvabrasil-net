@@ -1,185 +1,662 @@
 ---
+// Home no formato de página de vendas, na ordem do deck de apresentação da
+// empresa: quem chega, chega pelo produto — preço, cobertura, portabilidade.
+//
+// A primeira versão desta página foi escrita a partir do material de vendas e
+// afirmava como fato, em voz própria, seis cláusulas de contrato que ninguém
+// leu: giga acumulativo, ligação ilimitada, WhatsApp fora da franquia, clube de
+// vantagens, ausência de fidelidade e de multa. Uma revisão apanhou todas.
+// Agora cada uma leva `anunciado: true` e o selo "A empresa anuncia".
+//
+// Isso não enfraquece a venda — é a venda. Todo site de distribuidor repete o
+// material da empresa; o que distingue este é mostrar onde está a prova e onde
+// ela falta. Para quem desconfia, e quem procura "MOVVA é confiável" desconfia,
+// essa é a razão de continuar lendo.
+//
+// Duas decisões que são de conteúdo e de conformidade ao mesmo tempo:
+//
+// 1. Oportunidade de renda não entra aqui. É o que mantém a página anunciável
+//    no Meta e no Google, e também o que converte melhor — quem procura plano
+//    de celular não quer ouvir sobre rede de afiliados.
+// 2. A comparação é entre MODELOS (virtual x tradicional), não entre a MOVVA e
+//    concorrentes nomeados. Tabela de "nós temos, eles não" é propaganda
+//    comparativa: exige prova de cada linha, e eu não tenho.
 import Base from '../layouts/Base.astro';
 import ProximoPasso from '../components/ProximoPasso.astro';
 import CadeiaDeRede from '../components/diagramas/CadeiaDeRede.astro';
-import { EMPRESA } from '../data/site.js';
+import { Image } from 'astro:assets';
+import logoEscuro from '../assets/logo-movva-branca-verde.png';
+import { EMPRESA, AUTOR } from '../data/site.js';
+import { linkWhatsApp } from '../data/contato.js';
 
-const atualizadoEm = '2026-10-20';
-const title = 'MOVVA Brasil: o que é a operadora, explicado sem promessa de renda';
+const atualizadoEm = '2026-10-21';
+const title = 'Chip MOVVA: 25 GB por R$ 79,90 com portabilidade inclusa';
 const description =
-  'O que é a MOVVA Brasil, qual autorização ela tem na Anatel, sobre qual rede o chip funciona e o que ainda não dá para confirmar. Escrito por um distribuidor independente, com as fontes públicas linkadas.';
+  'Planos MOVVA de 10 a 50 GB, a partir de R$ 58,90. A empresa anuncia planos sem prazo de permanência e com giga acumulativo; aqui está o que dá para conferir em registro público e o que não dá.';
+
+// Os links de contratação são remunerados: levam ao meu WhatsApp e eu recebo
+// comissão. rel="sponsored" é o que o Google pede para link pago, e sem ele a
+// frase que já está publicada em /avisos-legais seria falsa.
+const REL_PAGO = 'nofollow sponsored noopener';
+
+const PLANOS = [
+  { nome: 'Start',   gb: 10, preco: '58,90',  nota: 'Para quem usa pouco dado' },
+  { nome: 'Plus',    gb: 15, preco: '73,90',  nota: 'Uso leve com folga' },
+  { nome: 'Liberty', gb: 25, preco: '79,90',  nota: 'O que eu mais indico', destaque: true },
+  { nome: 'Max',     gb: 35, preco: '96,90',  nota: 'Para quem trabalha no celular' },
+  { nome: 'Ultra',   gb: 50, preco: '126,90', nota: 'Para quem consome muito dado' },
+];
+
+// A ordem é a do deck: o que a pessoa ganha vem antes de quanto custa.
+//
+// `anunciado: true` marca o que é a empresa afirmando. Cinco dos seis itens
+// aqui são cláusula do regulamento da oferta, que eu não li — trocar a marca
+// por um check seria afirmar no lugar dela, e é o erro que este site existe
+// para não cometer. A portabilidade é a exceção: é regra pública, não cláusula,
+// e marcá-la como "anunciada" devolveria à empresa um direito que é de norma.
+const BENEFICIOS = [
+  {
+    titulo: 'Dupla conectividade',
+    texto: 'A empresa anuncia dupla conectividade TIM e Vivo no mesmo chip. Qual mecanismo seria usado é algo que eu não confirmei, e eu não testei.',
+    anunciado: true,
+    link: '/blog/chip-dois-sinais',
+    linkRotulo: 'O que existe de verdade em "chip de duas redes"',
+  },
+  {
+    titulo: 'Gigas acumulativos',
+    texto: 'A empresa informa que o que você não usou passa para o ciclo seguinte, desde que a fatura seja paga até o vencimento. Não localizei o regulamento da oferta em fonte primária.',
+    anunciado: true,
+    link: '/blog/internet-que-acumula',
+    linkRotulo: 'O que eu verifiquei sobre franquia que acumula',
+  },
+  {
+    titulo: 'Portabilidade inclusa',
+    texto: 'Você mantém o número que já tem. Pela regra da Anatel, o processo tem prazo de até 3 dias úteis e a conclusão não pode passar de 5, com até 2 horas de linha indisponível na troca. Para você, não há custo.',
+    link: '/blog/portabilidade-sem-perder-o-numero',
+    linkRotulo: 'Prazo, custo e como desistir',
+  },
+  {
+    titulo: 'Sem fidelidade',
+    texto: 'A empresa anuncia planos sem prazo de permanência e sem multa de cancelamento. Eu não li o contrato: peça por escrito qual é o prazo em meses, qual o benefício em troca e como a multa é calculada.',
+    anunciado: true,
+    link: '/blog/operadora-sem-fidelidade',
+    linkRotulo: 'Por que isso não é garantia do modelo',
+  },
+  {
+    titulo: 'Ligações e WhatsApp',
+    texto: 'A empresa anuncia chamadas ilimitadas para qualquer operadora e WhatsApp fora da franquia. Peça a política de uso justo por escrito antes de contratar.',
+    anunciado: true,
+  },
+  {
+    titulo: 'MOVVA Club',
+    texto: 'A empresa anuncia clube de descontos e cashback incluído no plano, sem custo separado. Não conferi as condições.',
+    anunciado: true,
+  },
+];
 ---
 
-<Base {title} {description} path="/" {atualizadoEm} tipo="website">
-  <article class="wrap stack--lg stack">
+<Base {title} {description} path="/" {atualizadoEm} tipo="website" tema="escuro">
 
-    <header class="hero">
-      <p class="eyebrow">Verificado em 21 de outubro de 2026</p>
-      <h1>MOVVA Brasil, explicada com documento na mão</h1>
-      <p class="answer">
-        A MOVVA Brasil se apresenta como operadora móvel virtual e vende planos de
-        celular, remunerando afiliados por indicação. A empresa tem CNPJ ativo desde
-        2017 e recebeu autorização da Anatel em julho de 2026 para explorar serviços
-        de telecomunicações em todo o país. Esse ato não diz, por si, em qual modelo
-        de rede virtual ela opera — isso eu ainda não confirmei.
-      </p>
-
-      <!-- A prova logo abaixo da resposta: e o elemento mais caracteristico
-           deste assunto. Cada item leva ao registro que o sustenta. -->
-      <div class="provas">
-        <a class="prova" href={EMPRESA.fontes.receita} rel="nofollow noopener">
-          <span class="estado estado--verificado">Registro público</span>
-          <span class="prova__dado">CNPJ {EMPRESA.cnpj}</span>
-          <span class="prova__onde">Receita Federal</span>
-        </a>
-        <a class="prova" href={EMPRESA.fontes.anatel} rel="nofollow noopener">
-          <span class="estado estado--verificado">Registro público</span>
-          <span class="prova__dado">{EMPRESA.atoAnatel}</span>
-          <span class="prova__onde">Processo {EMPRESA.processoSei} no SEI</span>
-        </a>
-        <div class="prova prova--aberta">
-          <span class="estado estado--aberto">Em aberto</span>
-          <span class="prova__dado">Em qual modelo de rede virtual a empresa opera</span>
-          <span class="prova__onde">Não confirmei</span>
-        </div>
-      </div>
-    </header>
-
-    <section class="stack">
-      <h2>O que dá para verificar hoje</h2>
-      <p>
-        Cada item abaixo veio de registro público e pode ser conferido por qualquer
-        pessoa, sem depender da minha palavra nem da apresentação da empresa.
-      </p>
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr><th>Informação</th><th>Registro</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Razão social</td><td>{EMPRESA.razaoSocial}</td></tr>
-            <tr><td>CNPJ</td><td class="num">{EMPRESA.cnpj}</td></tr>
-            <tr><td>Constituição</td><td>{EMPRESA.constituicao}</td></tr>
-            <tr><td>Autorização Anatel</td><td>{EMPRESA.atoAnatel}</td></tr>
-            <tr><td>Processo SEI</td><td class="num">{EMPRESA.processoSei}</td></tr>
-            <tr><td>Alteração na Junta Comercial</td><td class="num">JUCESP {EMPRESA.jucesp}</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="meta-line">
-        Confira você mesmo: <a href={EMPRESA.fontes.receita} rel="nofollow noopener">consulta de CNPJ na Receita Federal</a>
-        · <a href={EMPRESA.fontes.anatel} rel="nofollow noopener">consulta de processo no SEI da Anatel</a>.
-      </p>
-    </section>
-
-    <section class="stack">
-      <h2>O que a empresa anuncia, e que eu ainda estou testando</h2>
-      <p>
-        Faço questão de separar as duas coisas. O que está abaixo é o que o material
-        oficial da MOVVA promete. Eu contratei o plano e estou com a ativação em
-        andamento; conforme eu conseguir medir cada ponto, publico o resultado aqui,
-        inclusive se for ruim.
-      </p>
-      <ul>
-        <li><strong>Dupla conectividade</strong> — um único chip que usaria duas redes. Ainda não testei na prática.</li>
-        <li><strong>Internet acumulativa</strong> — gigas não usados passariam para o mês seguinte.</li>
-        <li><strong>Sem fidelidade</strong> — sem multa por cancelamento.</li>
-        <li><strong>Portabilidade</strong> — possibilidade de levar o número atual.</li>
-        <li><strong>MOVVA Club</strong> — clube de benefícios e descontos.</li>
-        <li>
-          <strong>A cadeia de rede</strong> — o dossiê da empresa cita contrato com a
-          {' '}{EMPRESA.parceiroSmp}, sobre infraestrutura da {EMPRESA.infraestrutura}.
-          Isso está no documento dela, não em registro público que eu tenha conseguido
-          abrir. E o material comercial fala em TIM e Vivo, que é outra coisa.
-        </li>
-      </ul>
-      <div class="card card--warn">
-        <h3>Por que eu não afirmo nada disso ainda</h3>
-        <p>
-          Porque eu não medi. Repetir a promessa da empresa como se fosse fato
-          verificado é o que a maior parte do conteúdo sobre a MOVVA faz hoje, e é
-          exatamente o que eu não quero fazer aqui. Quando o chip ativar, eu publico
-          teste de cobertura, velocidade e o comportamento real da troca de rede.
+  <!-- ===================== 1. PRIMEIRA TELA ===================== -->
+  <section class="hero">
+    <div class="wrap wrap--wide hero__grade">
+      <div class="hero__texto">
+        <!-- O selo precisa de sujeito. Sem ele, o sujeito passa a ser quem fala
+             — e logo abaixo do logotipo da MOVVA isso credenciaria ESTE site
+             com a autorização e o CNPJ da empresa. O conserto é de três
+             palavras. O texto vai dentro de um span: solto, ele virava um item
+             flex anônimo e no celular o CNPJ pulava para o canto da primeira
+             linha enquanto o rótulo quebrava embaixo. -->
+        <p class="selo">
+          <span class="selo__ponto" aria-hidden="true"></span>
+          <span>MOVVA Brasil Ltda, autorizada pela Anatel · CNPJ <span class="dado">{EMPRESA.cnpj}</span></span>
         </p>
-      </div>
-    </section>
 
-    <section class="stack">
-      <h2>De onde vem o sinal</h2>
-      <p>
-        Operadora virtual não tem antena. Ela vende sobre a rede de quem tem, e a
-        Resolução 777/2025 da Anatel prevê dois jeitos de fazer isso. A diferença
-        muda de quem você é cliente — e não muda a cobertura.
-      </p>
+        <h1>Leve o seu número.<br /><span class="brilho">Pague R$ 79,90 por 25 GB.</span></h1>
+
+        <p class="hero__sub">
+          Chip MOVVA com portabilidade inclusa. A empresa anuncia plano sem fidelidade
+          e com giga acumulativo — e eu marco na página o que confirmei e o que não.
+        </p>
+
+        <!-- Conexão material, antes dos botões e acima da dobra: o CDC art. 36
+             pede que a publicidade seja identificável "fácil e imediatamente",
+             e esta página tem oito botões de contratação. Fica depois da
+             promessa, não entre o título e ela, para não cortar o fôlego do
+             hero — continua sendo a última coisa lida antes do clique. -->
+        <p class="hero__assinatura">
+          Por {AUTOR.nome}, {AUTOR.papel}. Recebo comissão se você contratar por mim.
+          <a href="/avisos-legais">Como eu ganho</a>.
+        </p>
+
+        <div class="hero__acoes">
+          <a class="btn btn--grande" href={linkWhatsApp('plano')} rel={REL_PAGO} target="_blank">
+            Falar comigo e contratar
+          </a>
+          <a class="btn btn--ghost btn--grande" href="#planos">Ver planos e preços</a>
+        </div>
+
+        <ul class="pilulas">
+          <li>Portabilidade inclusa</li>
+          <li>De 10 a 50 GB</li>
+          <li>Registros públicos à mão</li>
+        </ul>
+      </div>
+
+      <!-- O cartão de oferta é o objeto mais luminoso da página. Tudo o que
+           vem depois é mais quieto, de propósito. A lista inteira é o que a
+           empresa anuncia, e o chapéu da lista diz isso uma vez, em vez de
+           repetir a ressalva em cada item. -->
+      <aside class="oferta borda-luz">
+        <p class="oferta__chapeu">A minha recomendação</p>
+        <p class="oferta__nome">MOVVA Liberty</p>
+        <p class="oferta__gb brilho">25 GB</p>
+        <p class="oferta__preco">
+          <span>R$</span><strong>79</strong><span>,90</span><small>/mês</small>
+        </p>
+        <p class="oferta__fonte">O que a empresa anuncia no plano:</p>
+        <ul class="oferta__itens">
+          <li>Ligações e WhatsApp ilimitados</li>
+          <li>Portabilidade inclusa</li>
+          <li>Gigas acumulativos</li>
+          <li>Sem prazo de permanência</li>
+        </ul>
+        <a class="btn" href={linkWhatsApp('plano')} rel={REL_PAGO} target="_blank">
+          Quero este plano
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== 2. COMO FUNCIONA ===================== -->
+  <section class="faixa">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Como a MOVVA entrega sinal sem ter antena</h2>
+        <!-- A analogia é da empresa e fica marcada como analogia. A versão
+             anterior fechava com "e isso é previsto em lei", o que a
+             transformava em descrição do arranjo regulatório — e citava a lei
+             errada. O fundamento aparece uma vez só, no passo 1. -->
+        <p class="lede">
+          A empresa explica o modelo com uma analogia: a Uber não tem carros, o
+          iFood não tem restaurantes, a MOVVA não tem antenas. Serve como imagem,
+          não como descrição técnica — o arranjo real está nos três passos abaixo.
+        </p>
+      </header>
+
+      <ol class="passos">
+        <li class="passo">
+          <span class="passo__n">1</span>
+          <h3>A antena é das grandes redes</h3>
+          <p>
+            A infraestrutura de rádio continua com as operadoras que construíram
+            torre. O <a
+              href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777"
+              rel="nofollow noopener"
+              target="_blank">Capítulo XII do RGST</a>, anexo à Resolução Anatel
+            nº 777/2025, regula esse arranjo: quem recebe pedido de
+            compartilhamento de rede tem 60 dias corridos para responder e
+            justificar a recusa, e o preço de atacado é de livre negociação.
+          </p>
+        </li>
+        <li class="passo">
+          <span class="passo__n">2</span>
+          <h3>A MOVVA opera por cima</h3>
+          <p>
+            Ela cuida do plano, da franquia, da fatura e do atendimento, usando a
+            rede hospedeira por meio de parceiro autorizado pela Anatel.
+          </p>
+        </li>
+        <li class="passo">
+          <span class="passo__n">3</span>
+          <h3>O sinal chega igual</h3>
+          <p>
+            A cobertura é a da rede que carrega o tráfego. O que pode variar é a
+            prioridade em horário de pico, o suporte e o roaming.
+          </p>
+        </li>
+      </ol>
 
       <CadeiaDeRede />
 
       <p class="meta-line">
-        Em qual dos dois modelos a MOVVA opera é uma das coisas que eu ainda não
-        confirmei. O detalhe de cada um está em
-        {' '}<a href="/blog/o-que-e-operadora-virtual">o que é uma operadora virtual</a>.
+        Antes de contratar, vale conferir a cobertura no seu endereço.
+        <a href="/blog/operadora-virtual-pega-bem">Eu explico como fazer isso em cinco minutos</a>.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section class="stack">
-      <h2>Comece por aqui</h2>
-      <div class="card card--accent">
-        <h3><a href="/movva-e-confiavel">A MOVVA é confiável? É pirâmide?</a></h3>
-        <p>
-          A pergunta que todo mundo faz antes de decidir. Respondo com os documentos
-          que existem, os riscos que existem, e os meus números reais de ganho.
+  <!-- ===================== 3. BENEFÍCIOS ===================== -->
+  <section>
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>O que vem no plano</h2>
+        <p class="lede">
+          Os mesmos itens em todos os planos; entre eles muda só a franquia de
+          dados. O que leva o selo <span class="estado estado--anunciado">A empresa anuncia</span>
+          é cláusula do regulamento da oferta, que eu ainda não li.
         </p>
+      </header>
+
+      <div class="beneficios">
+        {BENEFICIOS.map((b) => (
+          <article class="beneficio">
+            <h3>{b.titulo}</h3>
+            <p>{b.texto}</p>
+            {b.link && <a class="beneficio__link" href={b.link}>{b.linkRotulo}</a>}
+            {b.anunciado && <span class="estado estado--anunciado">A empresa anuncia</span>}
+          </article>
+        ))}
       </div>
-      <div class="card">
-        <h3><a href="/oportunidade">Programa de afiliados</a></h3>
-        <p>
-          Como funciona a remuneração, quanto custa entrar, e o que os números
-          realmente mostram sobre quanto se ganha. Sem projeção de matriz cheia.
+    </div>
+  </section>
+
+  <!-- ===================== 4. VIRTUAL x TRADICIONAL ===================== -->
+  <section class="faixa">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Operadora virtual ou tradicional?</h2>
+        <p class="lede">A diferença não está no sinal — está em quem cuida do quê.</p>
+      </header>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">No dia a dia</th>
+              <th scope="col">Virtual (MOVVA)</th>
+              <th scope="col">Tradicional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cobertura</th>
+              <td>A da rede hospedeira</td>
+              <td>A da própria rede</td>
+            </tr>
+            <tr>
+              <th scope="row">Prioridade em horário de pico</th>
+              <td>Pode ficar atrás do tráfego da hospedeira</td>
+              <td>Tráfego próprio</td>
+            </tr>
+            <tr>
+              <!-- Fidelidade é cláusula de contrato, não propriedade do modelo:
+                   os arts. 36 e 37 do RGC valem para os dois lados, e o teto de
+                   12 meses é limite legal, não média levantada. -->
+              <th scope="row">Fidelidade</th>
+              <td>
+                Depende do contrato. A MOVVA anuncia sem prazo de permanência — eu não li o contrato.
+              </td>
+              <td>Pode ter prazo: teto de 12 meses e multa proporcional ao tempo restante (RGC, arts. 36 e 37) — regra que vale para os dois modelos</td>
+            </tr>
+            <tr>
+              <th scope="row">Loja física</th>
+              <td>Atendimento remoto</td>
+              <td>Rede de lojas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="meta-line">
+        Comparo modelos, não marcas: dizer que uma operadora específica é pior
+        exigiria prova de cada linha, e eu não tenho. Franquia que acumula não
+        entra na tabela porque não é diferença de modelo — é o regulamento de
+        cada oferta, e há oferta tradicional que acumula.
+        <a href="/blog/virtual-ou-tradicional">Abro a conta inteira aqui</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== 5. PLANOS ===================== -->
+  <section id="planos">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Escolha a franquia</h2>
+        <p class="lede">
+          Preços conferidos no material oficial em 21 de outubro de 2026 —
+          confirme o valor vigente antes de pagar. Destaco o Liberty porque é
+          onde a franquia para de ser apertada sem o preço dobrar: é escolha
+          minha, não dado de vendas da empresa.
         </p>
+      </header>
+
+      <div class="planos">
+        {PLANOS.map((p) => (
+          <article class={`plano${p.destaque ? ' plano--destaque borda-luz' : ''}`}>
+            {p.destaque && <span class="plano__selo">Eu recomendo</span>}
+            <p class="plano__nome">MOVVA {p.nome}</p>
+            <p class={`plano__gb${p.destaque ? ' brilho' : ''}`}>{p.gb} GB</p>
+            <p class="plano__preco">R$ <strong>{p.preco}</strong><small>/mês</small></p>
+            <p class="plano__nota">{p.nota}</p>
+            <a
+              class={`btn btn--sm${p.destaque ? '' : ' btn--ghost'}`}
+              href={linkWhatsApp('plano')}
+              rel={REL_PAGO}
+              target="_blank"
+            >Contratar</a>
+          </article>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
 
-    <ProximoPasso contexto="plano" />
+  <!-- ===================== 6. CREDIBILIDADE ===================== -->
+  <section class="faixa">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Quem é a empresa por trás do chip</h2>
+        <p class="lede">
+          Em vez de pedir que você acredite, deixo os registros públicos à mão —
+          e marco o que eu ainda não consegui confirmar.
+        </p>
+      </header>
 
-  </article>
+      <div class="ficha">
+        <div class="ficha__marca">
+          <Image src={logoEscuro} alt="Logotipo da MOVVA" width={300} densities={[1, 2]} />
+        </div>
+        <dl class="ficha__dados">
+          <div><dt>Razão social</dt><dd>{EMPRESA.razaoSocial}</dd></div>
+          <div><dt>CNPJ</dt><dd class="dado">{EMPRESA.cnpj}</dd></div>
+          <div><dt>Ativa desde</dt><dd>{EMPRESA.constituicao}</dd></div>
+          <div><dt>Autorização</dt><dd>{EMPRESA.atoAnatel}</dd></div>
+        </dl>
+      </div>
+
+      <div class="provas">
+        <a class="prova" href={EMPRESA.fontes.receita} rel="nofollow noopener">
+          <span class="estado estado--verificado">Registro público</span>
+          <span class="prova__dado">CNPJ <span class="dado">{EMPRESA.cnpj}</span></span>
+          <span class="prova__onde">Conferir na Receita Federal</span>
+        </a>
+        <a class="prova" href={EMPRESA.fontes.anatel} rel="nofollow noopener">
+          <span class="estado estado--verificado">Registro público</span>
+          <span class="prova__dado">Ato Anatel <span class="dado">nº 9021</span></span>
+          <span class="prova__onde">Processo <span class="dado">{EMPRESA.processoSei}</span></span>
+        </a>
+        <div class="prova prova--aberta">
+          <span class="estado estado--aberto">Em aberto</span>
+          <span class="prova__dado">A dupla conectividade TIM + VIVO que a empresa anuncia</span>
+          <span class="prova__onde">Contratei o plano, o chip não chegou e eu não testei</span>
+        </div>
+      </div>
+
+      <p>
+        <a href="/movva-e-confiavel">Leia a análise completa</a>, com os riscos que
+        eu encontrei e os meus próprios números — inclusive os ruins.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap wrap--wide">
+      <ProximoPasso contexto="plano" />
+    </div>
+  </section>
+
 </Base>
 
 <style>
-  .hero { display: flex; flex-direction: column; gap: 1.3rem; padding-block-end: 0.6rem; }
-  .hero h1 { max-width: 20ch; }
+  /* ---------------- ritmo entre seções ---------------- */
+  /* Uma faixa sim, uma não: a alternância de fundo marca a troca de assunto
+     sem precisar de linha divisória em lugar nenhum. */
+  section { padding-block: 3.4rem; }
+  .faixa { background: var(--surface); border-block: 1px solid var(--rule); }
+  .cabeca { display: flex; flex-direction: column; gap: 0.7rem; max-width: 42rem; }
+  /* O selo dentro do lede explica o que ele significa, mostrando-o. */
+  .cabeca .estado { vertical-align: middle; }
 
-  .provas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    gap: 0.9rem;
-    margin-top: 0.4rem;
+  /* ---------------- 1. primeira tela ---------------- */
+  .hero {
+    background: var(--grad-luz);
+    padding-block: 3.2rem 3.8rem;
   }
-  .prova {
+  .hero__grade {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.9fr);
+    gap: 2.8rem;
+    align-items: center;
+  }
+  .hero__texto { display: flex; flex-direction: column; gap: 1.15rem; min-width: 0; }
+  .hero h1 {
+    font-size: clamp(2.4rem, 5.6vw, 3.9rem);
+    letter-spacing: -0.03em;
+    line-height: 1.04;
+  }
+  .hero__sub { font-size: clamp(1.05rem, 2.1vw, 1.26rem); color: var(--muted); max-width: 42ch; }
+  .hero__sub strong { color: var(--ink); }
+  /* Entre a promessa e os botões: quem lê a oferta lê também de quem ela é e
+     que eu ganho com ela, sem precisar rolar. Pequena, não escondida. */
+  .hero__assinatura { font-size: 0.86rem; color: var(--muted); max-width: 48ch; }
+
+  /* Selo de credencial. O ponto pisca uma vez a cada três segundos: é o único
+     movimento da página que ninguém precisou clicar para disparar. */
+  .selo {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: flex-start;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: var(--muted);
+    padding: 0.4rem 0.85rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--surface);
+  }
+  .selo__ponto {
+    width: 7px; height: 7px; flex: none;
+    margin-top: 0.45em;
+    border-radius: 50%;
+    background: var(--g1);
+    animation: pulso 3s ease-out infinite;
+  }
+  @keyframes pulso {
+    0%, 70%, 100% { box-shadow: 0 0 0 0 rgba(43, 255, 168, 0.5); }
+    35%           { box-shadow: 0 0 0 7px rgba(43, 255, 168, 0); }
+  }
+
+  .hero__acoes { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 0.25rem; }
+  .btn--grande { padding: 0.95rem 1.7rem; font-size: 1.02rem; }
+
+  /* O ul global é coluna; esta lista precisa voltar a ser linha. */
+  .pilulas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.3rem;
+  }
+  .pilulas li {
+    font-size: 0.82rem;
+    color: var(--muted);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 0.3rem 0.75rem;
+    background: var(--surface);
+  }
+
+  .oferta {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.45rem;
-    padding: 0.9rem 1rem;
+    gap: 0.3rem;
+    padding: 1.7rem;
+    border-radius: 16px;
+    min-width: 0;
+    box-shadow: 0 24px 60px -30px var(--g2);
+  }
+  .oferta__chapeu { font-family: var(--mono); font-size: 0.7rem; color: var(--accent); }
+  .oferta__nome { font-size: 1.12rem; font-weight: 600; }
+  .oferta__gb { font-size: 2.3rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1; }
+  .oferta__preco {
+    display: flex; align-items: baseline; gap: 0.12rem;
+    font-variant-numeric: tabular-nums;
+    margin-top: 0.25rem;
+  }
+  .oferta__preco strong { font-size: 2.8rem; font-weight: 700; letter-spacing: -0.045em; line-height: 1; }
+  .oferta__preco span { font-size: 1.1rem; font-weight: 600; }
+  .oferta__preco small { font-size: 0.85rem; color: var(--muted); margin-left: 0.3rem; }
+  /* Atribui a lista inteira de uma vez, em vez de repetir a ressalva em cada
+     item e transformar o cartão num aviso. */
+  .oferta__fonte {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--muted);
+    margin-top: 0.9rem;
+  }
+  .oferta__itens {
+    list-style: none; padding: 0; gap: 0.35rem;
+    margin: 0.45rem 0 1.1rem;
+    font-size: 0.9rem; color: var(--muted);
+  }
+  .oferta__itens li { display: flex; gap: 0.5rem; align-items: baseline; }
+  .oferta__itens li::before {
+    content: "";
+    width: 6px; height: 6px; flex: none;
+    border-radius: 50%;
+    background: var(--grad-sinal);
+    transform: translateY(-0.15em);
+  }
+  .oferta .btn { justify-content: center; }
+
+  @media (max-width: 54rem) {
+    .hero__grade { grid-template-columns: 1fr; gap: 2rem; }
+  }
+  /* No celular os dois botões ocupam a largura toda: empilhados com larguras
+     diferentes, o secundário parecia um erro de alinhamento. */
+  @media (max-width: 30rem) {
+    .hero__acoes { flex-direction: column; align-items: stretch; }
+    .hero__acoes .btn { width: 100%; }
+  }
+
+  /* ---------------- 2. passos ---------------- */
+  /* Numerados porque é mesmo uma sequência: o sinal passa por três mãos antes
+     de chegar ao aparelho, e a ordem é o que explica a cobertura. */
+  .passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  .passo {
+    display: flex; flex-direction: column; gap: 0.55rem;
+    padding: 1.3rem;
     border: 1px solid var(--rule);
-    border-radius: 4px;
-    background: var(--surface);
-    text-decoration: none;
-    color: var(--ink);
+    border-radius: 12px;
+    background: var(--paper);
     min-width: 0;
   }
-  a.prova:hover { border-color: var(--accent); }
-  /* O item em aberto atravessa a linha inteira em vez de sobrar sozinho numa
-     coluna. Não é só arrumação: ele é de outra natureza, e a largura diz isso. */
-  .prova--aberta {
-    background: transparent;
-    border-style: dashed;
-    grid-column: 1 / -1;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem 0.9rem;
+  .passo__n {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.9rem; height: 1.9rem;
+    border-radius: 50%;
+    font-family: var(--mono); font-size: 0.85rem; font-weight: 500;
+    color: #04121A;
+    background: var(--grad-sinal);
   }
-  .prova--aberta .prova__onde { margin-left: auto; }
+  .passo h3 { font-size: 1.05rem; }
+  .passo p { font-size: 0.92rem; color: var(--muted); }
+
+  /* ---------------- 3. benefícios ---------------- */
+  .beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+  .beneficio {
+    display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start;
+    padding: 1.3rem;
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    background: var(--surface);
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  /* Fio de luz no topo do cartão, só no hover: a página responde ao ponteiro
+     em vez de se mexer sozinha. */
+  .beneficio::before {
+    content: "";
+    position: absolute; inset: 0 0 auto;
+    height: 2px;
+    background: var(--grad-sinal);
+    opacity: 0;
+    transition: opacity 0.22s ease;
+  }
+  .beneficio:hover::before { opacity: 1; }
+  .beneficio h3 { font-size: 1.05rem; }
+  .beneficio p { font-size: 0.92rem; color: var(--muted); }
+  /* O link precisa de elemento próprio: dentro da string de texto o Astro
+     escaparia a tag e a pessoa leria o HTML cru. */
+  .beneficio__link { font-size: 0.86rem; margin-top: auto; padding-top: 0.2rem; }
+
+  /* ---------------- 5. planos ---------------- */
+  /* A reserva para o cabeçalho sticky é o scroll-padding-top do html, no
+     global.css. Um scroll-margin-top aqui somaria com ele e abriria um vão
+     morto de 200px no salto para #planos. */
+
+  /* Larguras explícitas em vez de auto-fit: com cinco planos o auto-fit
+     resolvia 4 + 1, e a última linha sozinha lia como erro de carregamento. */
+  .planos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+  @media (min-width: 44rem) { .planos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 64rem) { .planos { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+  .plano {
+    position: relative;
+    display: flex; flex-direction: column; gap: 0.25rem;
+    padding: 1.3rem 1.1rem 1.1rem;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--surface);
+    min-width: 0;
+  }
+  .plano--destaque { box-shadow: 0 20px 48px -28px var(--g2); }
+  .plano__selo {
+    position: absolute; top: -0.62rem; left: 1rem;
+    font-family: var(--mono); font-size: 0.62rem;
+    background: var(--grad-sinal); color: #04121A;
+    padding: 0.18rem 0.5rem; border-radius: 999px;
+  }
+  .plano__nome { font-size: 0.84rem; color: var(--muted); }
+  .plano__gb { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.035em; line-height: 1.1; }
+  .plano__preco { font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+  .plano__preco strong { font-size: 1.38rem; font-weight: 700; letter-spacing: -0.025em; }
+  .plano__preco small { color: var(--muted); font-size: 0.8rem; }
+  .plano__nota { font-size: 0.8rem; color: var(--muted); margin: 0.25rem 0 0.9rem; }
+  .plano .btn { margin-top: auto; justify-content: center; }
+
+  /* ---------------- 6. credibilidade ---------------- */
+  .provas { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 0.9rem; }
+  .prova {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 0.45rem;
+    padding: 1rem;
+    border: 1px solid var(--rule); border-radius: 12px;
+    background: var(--paper); text-decoration: none; color: var(--ink); min-width: 0;
+  }
+  a.prova:hover { border-color: var(--accent); }
+  .prova--aberta { background: transparent; border-style: dashed; grid-column: 1 / -1; }
   .prova__dado { font-weight: 600; font-size: 0.95rem; line-height: 1.35; }
   .prova__onde { font-size: 0.82rem; color: var(--muted); }
+
+  .ficha {
+    display: grid; grid-template-columns: auto 1fr; gap: 1rem 2.2rem; align-items: center;
+    padding: 1.5rem 1.7rem;
+    border: 1px solid var(--rule); border-radius: 14px; background: var(--paper);
+  }
+  .ficha__marca img { width: 100%; max-width: 170px; height: auto; display: block; }
+  .ficha__dados { margin: 0; display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; }
+  .ficha__dados > div { display: flex; flex-wrap: wrap; gap: 0.2rem 0.7rem; align-items: baseline; }
+  .ficha__dados dt { font-size: 0.78rem; color: var(--muted); min-width: 6.5rem; }
+  .ficha__dados dd { margin: 0; font-weight: 600; font-size: 0.93rem; }
+
+  @media (max-width: 34rem) {
+    .ficha { grid-template-columns: 1fr; }
+  }
 </style>
