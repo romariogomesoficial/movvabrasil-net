@@ -134,6 +134,23 @@ todos os três liam do mesmo módulo.
 três lugares, e a origem do preço virou o primeiro item dos pontos em aberto da
 página de planos — ponto em aberto fala do assunto, e isso cabe na tela.
 
+### /blog/portabilidade-sem-perder-o-numero — a fonte era de outro serviço
+
+**Passou a dizer:** “Anatel — Portabilidade, direitos do consumidor”, apontando
+para `/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade`.
+
+**O erro:** o texto trata de levar o número do **celular**, e a única fonte da
+Anatel listada era a página da portabilidade da telefonia **fixa**. Os dois
+serviços têm página própria no portal da agência.
+
+**Como apareceu:** abrindo a fonte para conferir outra coisa — o custo da
+portabilidade — e reparando que o endereço dizia `telefonia-fixa`.
+
+**Por que sobreviveu tanto tempo:** o endereço antigo ainda responde, por
+redirecionamento. Nada aparecia quebrado em conferência nenhuma. Fonte que abre
+parece fonte certa, e nenhum conferidor automático compara o *assunto* da fonte
+com o assunto do texto.
+
 ---
 
 ## Por que não é página pública
