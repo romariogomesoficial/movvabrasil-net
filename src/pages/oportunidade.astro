@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { Image } from 'astro:assets';
 import { LINK_AFILIADO } from '../data/site.js';
 import { perguntasDe, schemaFaq } from '../data/perguntas.js';
-import { PLANOS, CONFERIDO_EM } from '../data/planos.js';
+import { RECOMENDADO, CONFERIDO_EM } from '../data/planos.js';
 
 // A data da conferência da tabela de preços vem de planos.js, como o preço:
 // esta página cita o valor do plano, e citar o número sem a data de quando ele
@@ -171,19 +171,27 @@ const description =
           </thead>
           <tbody>
             <tr>
-              <td>O plano de celular</td>
-              <td>a partir de R$ {PLANOS[0].preco}/mês</td>
-              <td>Material de divulgação da rede, conferido em {fmtData(CONFERIDO_EM)}. Não é documento da MOVVA.</td>
+              <td>Cadastro de afiliado</td>
+              <td>grátis</td>
+              <td>O deck institucional pergunta “quanto custa para abrir seu negócio na MOVVA?” e responde “Nada! Comece sem colocar a mão no bolso”.</td>
             </tr>
             <tr>
-              <td>Cadastro de afiliado</td>
-              <td>não documentado</td>
-              <td>Existe, e eu fiz o meu. Não localizei documento que fixe valor.</td>
+              <td>O plano de celular</td>
+              <td>a partir de R$ {RECOMENDADO.preco}/mês</td>
+              <td>
+                Aqui mora uma pegadinha: a tarja <strong>“direito ao programa de
+                afiliados”</strong> só aparece nos cards do Liberty, do Max e do
+                Ultra. Start e Plus não dão. O mínimo real para ser afiliado é o
+                Liberty, não o plano mais barato.
+              </td>
             </tr>
             <tr>
               <td>Licença VIP</td>
-              <td>não documentado</td>
-              <td>O documento oficial diz o que ela <em>faz</em> — dobra tudo na tabela acima — e não diz quanto custa.</td>
+              <td>R$ 497 à vista, ou 12× R$ 51,13</td>
+              <td>
+                Deck institucional. Dobra tudo o que está na tabela acima. Repare
+                que o parcelado soma R$ 613,56 — R$ 116,56 a mais que à vista.
+              </td>
             </tr>
             <tr>
               <td>Chip e entrega</td>
@@ -201,11 +209,16 @@ const description =
 
       <div class="card card--warn">
         <p>
-          <strong>Três linhas de cinco estão em branco</strong>, e isso é a
-          informação, não a falta dela. Peça cada valor por escrito, com
-          protocolo, e confira na própria página de contratação antes de pagar.
-          Quem não consegue te mandar o preço por escrito está te vendendo
-          outra coisa.
+          <strong>Uma linha de cinco continua em branco</strong>, e são duas
+          contas que ninguém faz em voz alta. A primeira: a licença VIP à vista
+          custa <strong>mais de seis mensalidades do Liberty</strong>. A
+          segunda: parcelada, ela custa R$ 116,56 a mais — e o deck não chama
+          isso de juros.
+        </p>
+        <p>
+          Peça o valor do chip e da entrega por escrito, com protocolo, antes de
+          pagar. Quem não consegue te mandar um preço por escrito está te
+          vendendo outra coisa.
         </p>
         <p class="meta-line">
           Do lado do cliente, a conta do primeiro mês está aberta em

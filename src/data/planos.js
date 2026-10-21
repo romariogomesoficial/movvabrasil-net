@@ -6,18 +6,27 @@
 // acabar com duas tabelas que se desmentem — foi o que aconteceu com a frase
 // do chip, e a licao ja esta em CHIP, no site.js.
 //
-// DE ONDE VEM, e esta parte importa mais do que parece: os cinco nomes, as
-// cinco franquias e os cinco precos eu conferi em 21/10/2026 em material de
-// DIVULGACAO DA REDE DE DISTRIBUIDORES. Nao em documento da propria MOVVA.
+// DE ONDE VEM: a tabela esta na pagina 31 do deck institucional da MOVVA, sob
+// o titulo "Nossos Planos — Sem pegadinhas. Sem asteriscos. Preto no branco.",
+// com os cinco cards nomeados, a franquia e o preco de cada um. Conferido na
+// propria imagem em 21/10/2026, e bate com os cinco valores abaixo.
 //
-// A primeira versao deste arquivo dizia "tabela publicada no material da
-// empresa". Nao e verdade: o documento oficial que eu tenho na pasta,
-// "Diferenciais planos de telefonia MOVVA", tem doze paginas e nenhum preco.
-// Atribuir a tabela a ele seria dar a um numero de divulgacao o peso de
-// documento — exatamente o que este site existe para nao fazer.
+// Este arquivo ja errou nos DOIS sentidos, e vale guardar como foi:
 //
-// Por isso a pagina pede, na tela, que o leitor confira o valor vigente antes
-// de pagar, e o assunto esta em EM_ABERTO.
+//   1. A primeira versao dizia "tabela publicada no material da empresa", sem
+//      ter aberto documento nenhum. Era chute que acertou.
+//   2. A segunda corrigiu para "material de DIVULGACAO DA REDE, nao documento
+//      da MOVVA", porque o unico documento oficial aberto ate ali era o de
+//      diferenciais, que tem doze paginas e nenhum preco. Era rigor com
+//      informacao incompleta — e deixou a atribuicao errada para o outro lado.
+//   3. Esta ve a tabela, na pagina, no deck da empresa.
+//
+// A licao nao e "o rigor atrapalhou". E que afirmar a origem de um numero sem
+// ter aberto a fonte erra nos dois sentidos, e o unico jeito de parar de errar
+// e abrir o documento — foram 66 paginas de imagem, sem camada de texto, que
+// nenhuma busca por palavra encontrava.
+//
+// O deck NAO traz data de emissao nem numero de versao. Isso esta em EM_ABERTO.
 //
 // O que e MEU, e nao da MOVVA nem da rede, esta marcado campo a campo abaixo.
 //
@@ -86,42 +95,61 @@ export const PLANOS = [
 
 export const RECOMENDADO = PLANOS.find((p) => p.destaque);
 
-// Os seis diferenciais do documento oficial "Diferenciais planos de telefonia
-// MOVVA", na ordem em que a empresa os numera. Sao dela, nao meus: por isso o
-// texto fica proximo do original e nao ganha adjetivo de vendedor.
+// O que vem em todo plano, lido nos cinco cards da pagina 31 do deck
+// institucional. Cada card lista OITO itens, identicos entre os cinco — o que
+// e util: nao ha diferenca de beneficio entre os planos, so de franquia.
 //
-// O sexto — "cliente pode zerar a conta de celular" — e o programa de
-// indicacao. Ele mora em /oportunidade, com os meus numeros reais, e fica
-// FORA da home e da pagina de planos de proposito: estas duas paginas falam de
-// plano de celular, e e isso que as mantem anunciaveis no Meta e no Google.
+// O texto fica proximo do original e nao ganha adjetivo de vendedor: isto e
+// afirmacao da empresa sobre o proprio produto, nao verificacao minha.
+//
+// A versao anterior desta lista vinha do documento de diferenciais e tinha
+// cinco itens. Faltavam tres que o deck lista e o site nunca publicou:
+// ligacoes ilimitadas, WhatsApp ilimitado e ausencia de multa de cancelamento.
+//
+// Fica FORA daqui, de proposito, o "cashback para cliente" que os cards tambem
+// trazem: e o programa de indicacao, mora em /oportunidade com os numeros
+// reais, e manter a home e a pagina de planos falando so de plano de celular e
+// o que as mantem anunciaveis no Meta e no Google.
 export const DIFERENCIAIS = [
   {
     n: 1,
     titulo: 'Dupla conectividade',
-    texto: 'Duas redes num chip só: TIM e VIVO. O aparelho usa a que estiver melhor no lugar onde você está.',
+    texto: 'Rede TIM mais roaming da Vivo, num chip só — é assim que o deck da empresa descreve.',
     emTodos: true,
   },
   {
     n: 2,
     titulo: 'Gigas acumulativos',
-    texto: 'O que sobra da franquia não vira pó no fim do mês: acumula.',
+    texto: 'Pagando até a data do vencimento, o que sobrou fica disponível no mês seguinte.',
+    emTodos: true,
+  },
+  {
+    n: 3,
+    titulo: 'Ligações ilimitadas',
+    texto: 'Sem contagem de minutos, em todos os cinco planos.',
     emTodos: true,
   },
   {
     n: 4,
-    titulo: 'MOVVA Club',
-    texto: 'Clube de benefícios incluído no plano.',
+    titulo: 'WhatsApp ilimitado',
+    texto: 'Mensagens, áudios e arquivos fora da franquia de dados.',
     emTodos: true,
   },
   {
     n: 5,
-    titulo: 'Sem fidelidade',
-    texto: 'Não há prazo mínimo de permanência nem multa para sair.',
+    titulo: 'MOVVA Club',
+    texto: 'Clube de descontos e cashback em mais de 30 mil estabelecimentos, incluído no plano.',
     emTodos: true,
   },
   {
     n: 6,
-    titulo: 'Portabilidade',
+    titulo: 'Sem fidelidade',
+    texto: 'Sem prazo mínimo de permanência e sem multa de cancelamento.',
+    emTodos: true,
+  },
+  {
+    n: 7,
+    titulo: 'Portabilidade inclusa',
     texto: 'Dá para levar o número que você já tem, de qualquer operadora.',
     emTodos: true,
   },
@@ -129,11 +157,13 @@ export const DIFERENCIAIS = [
 
 // O que eu AINDA NAO consegui confirmar sobre os planos. Isto fala do produto,
 // nao de mim — e por isso vai para a tela, e conta na faixa de conferencia.
+// Quatro itens sairam daqui em 21/10/2026, fechados pelo deck institucional:
+// a origem dos precos, o mecanismo da dupla conectividade, o prazo do saldo
+// acumulado e o que o MOVVA Club oferece. Dois entraram no lugar.
 export const EM_ABERTO = [
-  'A origem dos preços. Eu confiro os cinco valores em material de divulgação da rede de distribuidores, não em documento da própria MOVVA — o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela de preços. Confirme o valor vigente na página de contratação antes de pagar.',
-  'Se a dupla conectividade são duas redes contratadas ou uma rede com roaming na outra. O documento oficial da MOVVA descreve "duas redes em um único chip: TIM e VIVO"; uma página de divulgação da rede descrevia a mesma característica como "rede TIM + roaming VIVO". As duas coisas se conferem de formas diferentes, e eu não achei documento que feche qual é.',
-  'A velocidade depois que a franquia acaba. O material que eu tenho não diz se o plano reduz a velocidade ou corta os dados.',
-  'O limite dos gigas acumulativos. O documento oficial diz "infinitos"; eu não achei o contrato que fixe por quanto tempo o saldo fica válido.',
-  'O que exatamente o MOVVA Club oferece. Eu tenho o nome do benefício, não a lista de parceiros.',
-  'Quais aparelhos aceitam a dupla conectividade em eSIM, e se ela funciona igual no chip físico.',
+  'A data do deck. Os preços, a franquia e os benefícios desta página saem do deck institucional da MOVVA, que não traz data de emissão nem número de versão. Ele é a melhor fonte que eu tenho e ainda assim não se data sozinho — então confirme o valor vigente na página de contratação antes de pagar.',
+  'Por quanto tempo a Vivo pode entrar por roaming. O deck descreve a dupla conectividade como "Rede TIM + Roaming da VIVO". O art. 66 do PGMC, anexo da Resolução 783/2025, veda o roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você. Eu não achei documento que explique como a característica permanente do plano convive com esse limite.',
+  'A velocidade depois que a franquia acaba. O deck não diz se o plano reduz a velocidade, corta os dados ou vende pacote extra, nem a que preço.',
+  'Quais aparelhos aceitam a dupla conectividade em eSIM, e se ela funciona igual no chip físico. O deck não trata de eSIM.',
+  'O preço do chip e da entrega para o cliente, e se entram à parte ou na primeira mensalidade. O deck só diz "adquira seu chip e ative o plano".',
 ];

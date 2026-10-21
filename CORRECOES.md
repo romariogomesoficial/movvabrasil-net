@@ -247,6 +247,53 @@ do parágrafo que descrevia a ficha do iPhone Air.
 documento próprio, já estava na lista de fontes do post, e a nota de rodapé 14 é
 dela. Correção de redação, não de pesquisa.
 
+### A origem dos preços — a correção que foi para o lado errado
+
+Esta entrada registra uma correção **minha, feita hoje, que piorou o site** — e
+que foi desfeita no mesmo dia.
+
+**De manhã**, o arquivo dizia que a tabela de preços vinha “do material da
+empresa”, sem que ninguém tivesse aberto documento nenhum. Era chute.
+
+**À tarde**, um verificador reparou que o único documento oficial aberto até ali,
+o de diferenciais, tem doze páginas e **nenhum preço**. A atribuição foi
+corrigida para “material de divulgação da rede de distribuidores, não documento
+da MOVVA”, em três lugares, e a origem virou ponto em aberto.
+
+**À noite**, o deck institucional de 66 páginas foi aberto. A tabela está na
+**página 31**, sob o título “Nossos Planos — Sem pegadinhas. Sem asteriscos.
+Preto no branco.”, com os cinco cards nomeados, a franquia e o preço de cada um.
+Os cinco valores batem exatamente com os que o site publica.
+
+**O erro:** a correção da tarde estava errada. Ela afirmou a origem de um número
+— desta vez *negando* a empresa — sem ter aberto a fonte que a tinha.
+
+**Por que ninguém a tinha aberto:** o deck tem 66 páginas e **zero texto
+extraível**. Todas são imagem. Nenhuma busca por palavra encontrava nada nele, e
+por isso ele ficou na pasta do projeto sem ser lido enquanto cinco rodadas de
+verificação procuravam exatamente o que estava dentro dele. Só foi lido depois
+de extrair as páginas como imagem e olhar uma por uma.
+
+**A lição, e ela não é “o rigor atrapalhou”:** afirmar a origem de um número sem
+abrir a fonte erra nos dois sentidos, para afirmar e para negar. Quando a busca
+por palavra não acha, o documento pode estar ali mesmo assim — e PDF de
+apresentação quase sempre está.
+
+### “Portabilidade inclusa” — retirada por excesso de zelo
+
+**Passou a dizer:** a expressão foi **removida** do título da home, da meta
+description, do cartão de oferta e das pílulas, por raciocínio meu de que
+“inclusa” afirmava que a portabilidade não é cobrada — e o art. 70 do RGST
+permite que a operadora de destino cobre.
+
+**O erro:** o raciocínio sobre a norma estava certo e a conclusão, errada. Os
+cinco cards da página 31 do deck listam **“Portabilidade INCLUSA”**. Não é
+afirmação do site sobre a norma: é a MOVVA declarando que não cobra, que é
+exatamente a dispensa que o art. 70, § 3º permite. Atribuída à empresa, a
+expressão é publicável — e voltou à lista de benefícios.
+
+**Como apareceu:** junto da anterior, ao ler o deck.
+
 ---
 
 ## Por que não é página pública

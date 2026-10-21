@@ -84,13 +84,13 @@ export const PERGUNTAS = [
     paginas: ['/planos'],
     tema: 'O plano e o preço',
     p: 'Os gigas que sobram acumulam?',
-    r: 'O documento oficial da MOVVA lista "gigas acumulativos infinitos" entre os diferenciais dos planos. O que eu não consegui confirmar é por quanto tempo o saldo acumulado fica válido — não localizei o contrato que fixe esse prazo.',
+    r: 'Acumulam, com uma condição. O deck institucional da MOVVA diz, com estas palavras: "Pagando até a data do vencimento, seus gigas não utilizados permanecem disponíveis no próximo mês". O exemplo da própria empresa mostra 25 GB contratados e 15 GB usados em janeiro virando 35 GB em fevereiro. Um outro material da empresa fala em "infinitos", que é palavra mais larga do que o deck sustenta.',
   },
   {
     paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Qual rede o chip da MOVVA usa?',
-    r: 'O documento oficial descreve dupla conectividade: duas redes num chip só, TIM e VIVO, com o aparelho usando a que estiver melhor no local. ' + CHIP.frase,
+    r: 'O deck institucional da MOVVA descreve assim: "Rede TIM + Roaming da VIVO", num chip só. A rede principal é a da TIM, e a Vivo entra por roaming — não são duas redes contratadas, e as duas coisas se conferem de formas diferentes. ' + CHIP.frase,
   },
   {
     paginas: ['/', '/planos'],
@@ -104,7 +104,7 @@ export const PERGUNTAS = [
     paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quanto custa entrar na MOVVA?',
-    r: 'Existe um cadastro de afiliado e uma licença VIP paga, que dobra as comissões e a pontuação do plano de carreira. Além disso, para ter o serviço, você contrata um plano mensal. Se o chip e o frete são cobrados à parte ou já vêm na primeira mensalidade, eu não localizei documento que diga, e também não localizei os valores. Peça tudo por escrito, com protocolo, e confira na própria página de contratação antes de pagar.',
+    r: 'O cadastro de afiliado é gratuito — o deck da empresa diz "Nada! Comece sem colocar a mão no bolso". O que custa é o plano, e aqui há uma pegadinha: só o Liberty, o Max e o Ultra dão direito ao programa, então o mínimo real é R$ 79,90 por mês, não R$ 58,90. A licença VIP, que dobra as comissões, sai por R$ 497 à vista ou 12× R$ 51,13. O preço do chip e da entrega eu não localizei.',
   },
   {
     paginas: ['/oportunidade', '/movva-e-confiavel'],
