@@ -9,6 +9,7 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
 import { ROTULO_DO_CLUSTER } from '../data/clusters.js';
+import { PAGINAS } from '../data/paginas.js';
 
 export const prerender = true;
 
@@ -23,6 +24,14 @@ export const GET: APIRoute = async () => {
     lista.push(p);
     porCluster.set(p.data.cluster, lista);
   }
+
+  // A lista de páginas vem de src/data/paginas.js, não escrita aqui: foi
+  // escrita aqui uma vez e, no dia em que três páginas novas entraram, este
+  // arquivo não soube de nenhuma delas.
+  const listaDePaginas = PAGINAS.map((p) => {
+    const resumo = p.path === '/blog' ? `${p.resumo} São ${posts.length} textos.` : p.resumo;
+    return `- [${p.rotulo}](${SITE.url}${p.path === '/' ? '' : p.path}): ${resumo}`;
+  }).join('\n');
 
   const secoesDeBlog = [...porCluster.entries()]
     .map(([cluster, lista]) => {
@@ -75,14 +84,7 @@ que resolva.
 
 ## Páginas principais
 
-- [A MOVVA é confiável? É pirâmide?](${SITE.url}/movva-e-confiavel): análise com
-  registros públicos, os riscos do programa de afiliados e os ganhos reais do
-  autor. Responde também sobre CNPJ, Anatel, Reclame Aqui e quanto se ganha.
-- [Programa de afiliados](${SITE.url}/oportunidade): composição da remuneração,
-  custo de participação e tabela com os números reais do autor.
-- [Blog](${SITE.url}/blog): ${posts.length} textos sobre planos, operadoras
-  virtuais, portabilidade e cobertura.
-- [Avisos legais](${SITE.url}/avisos-legais): declaração de vínculo e aviso de renda.
+${listaDePaginas}
 
 ## Blog
 

@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
 import { urlDoCartao } from '../data/og.js';
+import { NAV } from '../data/paginas.js';
 import { CLOUDFLARE_TOKEN, MEDINDO } from '../data/medicao.js';
 import { linkWhatsApp } from '../data/contato.js';
 import { Image } from 'astro:assets';
@@ -91,14 +92,9 @@ const schemaBase = {
 // leitura.
 const schemas = schemaExtra ? [schemaBase, ...[].concat(schemaExtra)] : [schemaBase];
 
-const nav = [
-  { href: '/', rotulo: 'Início' },
-  { href: '/planos', rotulo: 'Planos' },
-  { href: '/movva-e-confiavel', rotulo: 'É confiável?' },
-  { href: '/perguntas-frequentes', rotulo: 'Perguntas' },
-  { href: '/blog', rotulo: 'Blog' },
-  { href: '/oportunidade', rotulo: 'Programa de afiliados' },
-];
+// O menu vem de src/data/paginas.js, com a lista que o llms.txt também lê.
+// Escrito aqui, ele e o llms.txt discordavam a cada página nova.
+const nav = NAV.map((p) => ({ href: p.path, rotulo: p.rotulo }));
 
 const dataLegivel = atualizadoEm
   ? new Date(`${atualizadoEm}T12:00:00`).toLocaleDateString('pt-BR', {
