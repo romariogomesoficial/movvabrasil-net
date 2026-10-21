@@ -48,13 +48,6 @@ que resolva.
 
 ## Blog
 
-### Tecnologia e características de plano
-
-- [Chip que pega em duas operadoras: o que existe de verdade](https://movvabrasil.net/blog/chip-dois-sinais): Multi-IMSI, eSIM, roaming e dual SIM são quatro coisas diferentes. Veja o que muda para você e como conferir em qual rede o seu chip está.
-  Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
-- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
-  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
-
 ### Guias práticos
 
 - [Celular sem sinal dentro de casa: o que fazer antes de trocar](https://movvabrasil.net/blog/celular-sem-sinal-em-casa): Cobertura é declarada por área externa, não por imóvel. A ordem que sai mais barato: ligação por Wi-Fi, travar o 4G, posição e pedir à operadora.
@@ -65,6 +58,13 @@ que resolva.
   Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
 - [Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante](https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero): Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada.
   Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
+
+### Tecnologia e características de plano
+
+- [Internet que acumula: como funciona o giga que não expira](https://movvabrasil.net/blog/internet-que-acumula): Não achei regra da Anatel que obrigue acumular giga. Veja o que empresa e regulamento dizem, e as cinco perguntas antes de contratar.
+  Resposta curta: Não encontrei, nas normas da Anatel que li, regra que obrigue operadora a acumular franquia de dados. Acumular é decisão comercial de cada empresa, escrita no regulamento da oferta. A norma que fala de saldo não usado trata de crédito pré-pago em reais, não de gigabyte. Confirme no 1331 e no regulamento da oferta.
+- [Chip que pega em duas operadoras: o que existe de verdade](https://movvabrasil.net/blog/chip-dois-sinais): Multi-IMSI, eSIM, roaming e dual SIM são quatro coisas diferentes. Veja o que muda para você e como conferir em qual rede o seu chip está.
+  Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
 
 ### Como funciona uma operadora virtual
 
