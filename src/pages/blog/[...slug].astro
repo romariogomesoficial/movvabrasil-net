@@ -72,7 +72,20 @@ const fmt = (d) =>
 >
   <article class="wrap stack--lg stack">
 
+    {/* Trilha visível, com o mesmo conteúdo do BreadcrumbList que o Base põe
+        no JSON-LD. O Google aceita a marcação sem trilha na tela, mas um post
+        só era alcançável descendo pelo menu até o blog — e o leitor que cai
+        aqui pela busca não tem como subir um nível. */}
+    <nav class="trilha" aria-label="Você está em">
+      <a href="/">Início</a>
+      <span aria-hidden="true">›</span>
+      <a href="/blog">Blog</a>
+    </nav>
+
     <header class="stack">
+      {/* O tema fica aqui, e não na trilha: trilha é caminho, e não existe
+          página de tema para onde um degrau de tema levaria. */}
+      <p class="eyebrow">{ROTULO_DO_CLUSTER[post.data.cluster] ?? 'Blog'}</p>
       <h1>{post.data.title}</h1>
       <p class="answer">{post.data.resposta}</p>
       <p class="meta-line">
@@ -130,6 +143,18 @@ const fmt = (d) =>
 </Base>
 
 <style>
+  .trilha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  .trilha a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--rule); }
+  .trilha a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
   .prosa { display: flex; flex-direction: column; gap: 1.1rem; }
   .prosa :global(h2) { margin-top: 1.4rem; }
   .prosa :global(h3) { margin-top: 0.6rem; }

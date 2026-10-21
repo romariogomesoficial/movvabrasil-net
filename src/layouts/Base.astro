@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
 import { urlDoCartao } from '../data/og.js';
-import { NAV } from '../data/paginas.js';
+import { NAV, PAGINAS } from '../data/paginas.js';
 import { CLOUDFLARE_TOKEN, MEDINDO } from '../data/medicao.js';
 import { linkWhatsApp } from '../data/contato.js';
 import { Image } from 'astro:assets';
@@ -26,6 +26,36 @@ const {
 const canonical = new URL(path, SITE.url).href;
 const ogImagem = await urlDoCartao(path);
 const tituloCompleto = path === '/' ? title : `${title} — ${SITE.name}`;
+
+// A trilha, derivada do caminho — não escrita página por página.
+//
+// Para que serve: com BreadcrumbList o buscador mostra "Início > Blog > título"
+// no lugar da URL crua, e um assistente entende onde a página mora no site em
+// vez de tratar vinte e três páginas como vinte e três ilhas.
+//
+// Um post é /blog/slug, então a trilha tem três degraus; uma página fixa tem
+// dois; a home não tem trilha nenhuma, porque ela É o primeiro degrau.
+const trilha = (() => {
+  if (path === '/') return null;
+  const degraus = [{ nome: 'Início', url: SITE.url }];
+  if (path.startsWith('/blog/')) {
+    degraus.push({ nome: 'Blog', url: `${SITE.url}/blog` });
+  }
+  // O último degrau é a própria página: leva nome, não link — é onde o leitor
+  // já está, e schema.org pede que o item final não aponte para lugar nenhum.
+  const aqui = PAGINAS.find((p) => p.path === path);
+  degraus.push({ nome: aqui?.rotulo ?? title });
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: degraus.map((d, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: d.nome,
+      ...(d.url ? { item: d.url } : {}),
+    })),
+  };
+})();
 
 const schemaBase = {
   '@context': 'https://schema.org',
@@ -90,7 +120,7 @@ const schemaBase = {
 // aceitava só um objeto, e uma página com dois schemas publicava o segundo
 // aninhado dentro do primeiro — JSON-LD válido na sintaxe e invisível na
 // leitura.
-const schemas = schemaExtra ? [schemaBase, ...[].concat(schemaExtra)] : [schemaBase];
+const schemas = [schemaBase, ...(trilha ? [trilha] : []), ...(schemaExtra ? [].concat(schemaExtra) : [])];
 
 // O menu vem de src/data/paginas.js, com a lista que o llms.txt também lê.
 // Escrito aqui, ele e o llms.txt discordavam a cada página nova.
