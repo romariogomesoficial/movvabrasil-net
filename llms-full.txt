@@ -3,8 +3,563 @@
 Site de distribuidor independente. Não é canal oficial da MOVVA Brasil Ltda.
 Autor: Romário Gomes de Paula, Distribuidor independente MOVVA.
 
-Este arquivo traz o texto integral dos 8 artigos do blog, para
+Este arquivo traz o texto integral dos 11 artigos do blog, para
 leitura em uma única requisição. O índice do site está em https://movvabrasil.net/llms.txt
+
+---
+
+# MOVVA no Reclame Aqui: o que existe hoje e como conferir
+
+URL: https://movvabrasil.net/blog/movva-reclame-aqui
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
+
+Fontes citadas:
+- Reclame Aqui — página da empresa “Movva”: https://www.reclameaqui.com.br/empresa/movva/
+- Reclame Aqui — aba Sobre de “Movva”: https://www.reclameaqui.com.br/empresa/movva/sobre/
+- Reclame Aqui — busca por “movva”: https://www.reclameaqui.com.br/busca/?q=movva
+- Reclame Aqui — página da empresa “movvabroker”: https://www.reclameaqui.com.br/empresa/movvabroker/
+- Reclame Aqui — página da empresa “Grupo Mova”: https://www.reclameaqui.com.br/empresa/grupo-mova/
+- Reclame Aqui — Manual de Reputação (oficial): https://manual.reclameaqui.com.br/reputacao-no-reclame-aqui
+- Blog Reclame Aqui — “Sem reputação no Reclame AQUI” (22/02/2024, atualizado 24/07/2026): https://blog.reclameaqui.com.br/sem-reputacao-no-reclame-aqui/
+- Receita Federal — Consulta CNPJ (fonte oficial): https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp
+- Consulta via BrasilAPI, que espelha a base pública da Receita — CNPJ 16.896.559/0001-81: https://brasilapi.com.br/api/cnpj/v1/16896559000181
+- Consulta via BrasilAPI, que espelha a base pública da Receita — CNPJ 28.450.689/0001-75: https://brasilapi.com.br/api/cnpj/v1/28450689000175
+- Consumidor.gov.br — Senacon, página institucional (Decreto nº 8.573/2015): https://www.consumidor.gov.br/pages/conteudo/publico/5
+- Consumidor.gov.br — Como aderir (empresas): https://www.consumidor.gov.br/pages/conteudo/publico/2
+- Consumidor.gov.br — Não encontrei a empresa para registrar minha reclamação: https://www.consumidor.gov.br/pages/conteudo/publico/41
+- Anatel — Registrar reclamação (página modificada em 01/10/2026): https://www.gov.br/anatel/pt-br/consumidor/reclamacao
+- Anatel — RGC, anexo à Resolução nº 765/2023, arts. 9º, 10, 87, 89 e 90: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Painéis de Dados, Consumidor: https://informacoes.anatel.gov.br/paineis/consumidor
+- Anatel — Painéis de Dados, Consumidor, aba Reclamações: https://informacoes.anatel.gov.br/paineis/consumidor/reclamacoes
+- TELETIME — “Pós-pago e banda larga puxam alta de reclamações na Anatel em 2025” (19/03/2026), sobre dados da Anatel: https://teletime.com.br/19/03/2026/reclamacoes-anatel-2025/
+
+## Começo pela parte que me desabona
+
+Sou distribuidor independente da MOVVA Brasil Ltda, ganho se você assinar por
+mim, e este site não é canal oficial nem canal de atendimento. Contratei o
+plano, o chip não chegou, não testei nada em campo.
+
+Por isso aqui tem método, não pedido de confiança: cada dado vem com o endereço
+onde você confere, inclusive contra mim. Começo pelo meu erro: a página
+/movva-e-confiavel dizia que havia uma página da Movva no Reclame Aqui. É de
+outra empresa, com outro CNPJ, e a frase está sendo corrigida.
+
+## O que aparece quando você digita MOVVA no Reclame Aqui
+
+A operadora, não. Em 21/10/2026, a página reclameaqui.com.br/empresa/movva/
+exibe "Sem reputação definida", selo "Não verificada", 0 reclamações recebidas,
+0% respondidas, 0 aguardando e 0 avaliadas, no período de 01/04/2026 a
+30/09/2026, com histórico "Sem índice" nos seis meses, de abril a setembro de
+2026.
+
+Os dados cadastrais da própria página explicam por quê: CNPJ 16.896.559/0001-81,
+razão social Movva, site mgovbrasil.com.br, telefone 31813974. Nenhum é da
+operadora, cujo CNPJ é 28.450.689/0001-75.
+
+## Três empresas de nome parecido, e nenhuma é a operadora
+
+| Nome na busca | CNPJ | Atividade na base da Receita | Reputação em 21/10/2026 |
+| --- | --- | --- | --- |
+| Movva | 16.896.559/0001-81 | MOVVA S.A., consultoria em gestão, CNAE 7020-4/00, Av. Paulista 171 | Sem reputação definida |
+| movvabroker | não informado | corretora, app.movvabroker.com | Não recomendada |
+| Grupo Mova | 20.465.898/0001-80 | contact center, grupomova.com.br | Sem reputação definida |
+| MOVVA BRASIL LTDA | 28.450.689/0001-75 | telecom sem fio, CNAE 6120-5/99, Av. Paulista 1842 | sem página localizada |
+
+O telefone 11 3181-3974 da MOVVA S.A. é o da página: duas empresas, dois
+endereços na mesma avenida. E CNAE é autodeclarado, não é outorga — a
+autorização que este site cita é o Ato nº 9021, de 08/07/2026.
+
+A busca por "movva" devolveu "50 empresas e 65 reclamações", e das 48 que
+carreguei antes de a lista travar nenhuma é operadora de celular. Não falo pelas
+duas que faltaram.
+
+Nome não identifica empresa. CNPJ identifica.
+
+## Página sem reclamação é sinal de qualidade?
+
+Não. E também não é sinal de defeito: é falta de dado.
+
+O limite é de 10 avaliações, não de 10 reclamações. Sem esse mínimo, a empresa
+fica automaticamente "Sem Reputação Definida" — rótulo que substituiu "Sem
+Índice" em 21/02/2024 e que o blog oficial atribui a falta de dados, não a
+julgamento.
+
+A plataforma ainda avisa, na aba Sobre de página não verificada, que "não
+podemos assegurar que ela existe ou que é confiável" (Reclame Aqui).
+
+Nem atestado, nem acusação.
+
+## Como o Reclame Aqui calcula reputação, em português
+
+Quatro indicadores: reclamações respondidas (IR), voltaria a fazer negócio (IN),
+solução (IS) e nota do consumidor (MA). A fórmula do manual é
+AR = ((IR × 2) + (MA × 10 × 3) + (IS × 3) + (IN × 2)) / 100 — três dos quatro
+dependem de o consumidor voltar para avaliar.
+
+As abas vão de 6 meses, a padrão, até a geral, de 3 anos; as de 6 e 12 meses
+ignoram o mês vigente, e a nota muda sozinha todo dia 1º.
+
+O RA1000 exige 50 avaliações, IR e IS de 90%, nota 7, IN de 70% e auditoria. Na
+outra ponta, "Em Análise" e "Reputação Suspensa" vão de 30 a 90 dias.
+
+## O caso movvabroker mostra a regra ao contrário
+
+A página movvabroker, segundo resultado da busca, está "NÃO RECOMENDADA": 10
+reclamações, 0% respondidas, 9 aguardando e 1 avaliada, com aviso de menos de
+50% respondidas. Tratam de saque retido em corretora, não de telefonia.
+
+O manual diz que responder a menos da metade já põe a empresa como "Não
+Recomendada", mesmo abaixo de 10 avaliações. Mas o Grupo Mova, com 1 reclamação
+e 0% de resposta, segue "Sem reputação definida": há um volume mínimo que o
+manual não mostra.
+
+Duas lições: nota de homônimo não diz nada sobre a operadora, e silêncio pesa
+mais do que volume.
+
+## Por que, em telecom, a agência diz mais
+
+O consumidor.gov.br é público e gratuito, da Senacon, institucionalizado pelo
+Decreto nº 8.573/2015. A adesão é voluntária, e quem adere se compromete a
+responder em até 10 dias. Sem cadastro não dá para reclamar ali: sobram Procon,
+Defensoria e Juizado, e dá para sugerir o cadastro pelo CNPJ.
+
+Na Anatel há o 1331, gratuito em dias úteis das 8h às 20h, o Anatel Consumidor e
+o Painel de Dados do Consumidor, com registros desde 2015 e organizado também
+pela dimensão "Marca" — então marca pequena aparece nominalmente.
+
+Escala, de fonte secundária: o TELETIME noticiou em 19/03/2026, sobre dados da
+Anatel, cerca de 1,35 milhão de casos em 2025, 490 mil no pós-pago. Plataforma
+privada não tem poder de fiscalizar, prazo em norma nem base aberta.
+
+## Qual é o caminho que a norma manda seguir?
+
+Protocolo, prestadora, ouvidoria, Anatel — com o recorte de porte colado em cada
+degrau.
+
+| Degrau | Prazo | RGC | Na lista do art. 90? |
+| --- | --- | --- | --- |
+| Protocolo no atendimento | imediato | art. 9º, caput e I | Sim |
+| Reclamação na prestadora | 7 dias corridos | art. 10, caput | Sim |
+| Ouvidoria | 10 dias corridos | art. 87, § 7º | Não aparece |
+| Levar à Anatel | remetido a Portaria | art. 89 | Não aparece |
+
+Três prazos de dez dias convivem sem se confundir: a ouvidoria, o que a Anatel
+afirma para a operadora responder reclamação encaminhada pela agência, e o do
+consumidor.gov.br. Direto na operadora, são 7 dias.
+
+A ressalva pesa aqui: pela lista do art. 90, nas duas versões que a página da
+Anatel exibe, os arts. 9º e 10 alcançam Prestadora de Pequeno Porte e os
+arts. 87 e 89 não. Protocolo e os 7 dias você cobra; ouvidoria em 10 dias e ida
+direta à agência, não dá para prometer. É o mesmo recorte do [post sobre
+fidelidade, em que o art. 90 define quais regras do RGC alcançam prestadora de
+pequeno porte](/blog/operadora-sem-fidelidade). E porte na Receita é tributário,
+não a Prestadora de Pequeno Porte da Anatel, que vai por acessos.
+
+Aqui é site de distribuidor independente, não canal de atendimento.
+
+## Em operadora virtual, contra quem você reclama?
+
+Contra a prestadora de origem, se contratou por uma credenciada: quem assina
+passa a ser usuário da operadora que tem a rede. Então olhe também a rede
+hospedeira, não só a marca. O modelo está em [o que é operadora virtual, onde
+a Resolução 777/2025 põe o cliente da credenciada como usuário da prestadora de
+origem](/blog/o-que-e-operadora-virtual), e os painéis em [como conferir a
+cobertura e a qualidade da rede hospedeira na
+Anatel](/blog/operadora-virtual-pega-bem).
+
+## Como checar uma operadora em quinze minutos
+
+1. Pegue o CNPJ na oferta ou no contrato.
+2. Confirme razão social e CNAE na consulta da Receita.
+3. Procure no Reclame Aqui pelo CNPJ, não pelo nome.
+4. Abra a aba de 12 meses e a geral, não só a de 6 meses.
+5. Olhe o índice de resposta antes do volume.
+6. Veja se a empresa aderiu ao consumidor.gov.br.
+7. Consulte o painel da Anatel pela marca e pela rede hospedeira, com o ano ao
+   lado do número.
+8. Ligue 1331 com a dúvida que sobrar.
+
+## O que eu não consegui confirmar
+
+- **Página da operadora sob outro nome, e a marca no painel da Anatel.** A busca
+  travou em 48 das 50, e não filtrei a tabela sem aceitar cookies.
+- **Se ela aderiu ao consumidor.gov.br.** A consulta exige login gov.br, e eu
+  não entrei na conta de ninguém.
+- **O site mgovbrasil.com.br na página da MOVVA S.A.** Bases de terceiros a
+  associam a um nome anterior; a ponte é inferência minha.
+- **Por que o histórico ainda exibe "Sem índice"**, de que volume a regra dos
+  50% derruba reputação, e os cortes de AR.
+- **Arts. 87 e 89 fora do art. 90**, se a operadora é Prestadora de Pequeno
+  Porte, e qual norma fixa os dez dias na Anatel.
+
+Onde confirmar: Reclame Aqui pelo CNPJ, manual de reputação, Resolução 765/2023,
+painéis da Anatel e 1331.
+
+---
+
+Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, ganho se
+você assinar por mim, site não oficial e não canal de atendimento. Contratei o
+plano, o chip não chegou, nada testado em campo. Consultas de 21/10/2026, e a
+reputação muda sozinha todo dia 1º: me avise se achar número diferente. Não é
+consultoria jurídica.
+
+---
+
+# Melhor operadora para zona rural: como checar a cobertura real
+
+URL: https://movvabrasil.net/blog/cobertura-zona-rural
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
+
+Fontes citadas:
+- Anatel — Cobertura, Telefonia Móvel (Qualidade dos Serviços): https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/mapa-cobertura
+- Anatel — Plano Estrutural de Redes de Telecomunicações (PERT), Edição 2026: https://www.gov.br/anatel/pt-br/dados/infraestrutura/pert
+- Lei nº 9.472/1997 (LGT), arts. 63, 79 e 135: https://informacoes.anatel.gov.br/legislacao/leis/8-1997/2-lei-9472
+- Anatel — RGST, Anexo da Resolução nº 777/2025 (art. 14; art. 2º, XXV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Decreto nº 9.612, de 17/12/2018, art. 9º, II: https://informacoes.anatel.gov.br/legislacao/component/content/article/9-decretos/1247-decreto-9612
+- Anatel — Compromissos de Abrangência do Leilão do 5G: https://www.gov.br/anatel/pt-br/regulado/universalizacao/compromissos-do-leilao-do-5g
+- Anatel — Apresentação do Edital 700 MHz (relatoria, SEI nº 53500.055271/2024-11): https://www.gov.br/anatel/pt-br/assuntos/noticias/regras-do-edital-de-700-mhz-sao-aprovadas-pelo-conselho-diretor-da-anatel/apresentacao-700-mhz.pdf/@@download/file
+- Anatel — Painel de Acompanhamento e Controle, 5G (Acórdão nº 39/2024): https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/5g
+- Anatel — Painel de Acompanhamento e Controle, 700 MHz: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/700-mhz
+- Anatel — Painel Consulta a Compromissos: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/consulta-a-compromissos
+- Anatel — Painel Compromissos de Investimento: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/compromissos-de-investimento
+- Anatel — Painel de Dados, Cobertura Móvel: https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
+- Anatel — Nota Técnica de Dados de Cobertura Móvel (Mosaico, ITU-R P.1812-5): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
+- Anatel — RQUAL, Anexo I da Resolução nº 717/2019 (art. 1º, § 2º; art. 28, IV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
+- Anatel — Intensidade do Sinal (consulta de nível de sinal): https://www.gov.br/anatel/pt-br/consumidor/intensidade-do-sinal
+- Anatel — Orientações para aquisição de aparelhos celulares (banda 28): https://www.gov.br/anatel/pt-br/regulado/certificacao/orientacoes-para-aquisicao-de-aparelhos-celulares
+- Recomendação ITU-R P.525-3 (09/2016), Anexo 1, equação (4): https://itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.525-3-201611-S!!MSW-E.docx
+- Anatel — Sandbox Regulatório (Projetos Piloto I e II): https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/sandbox-regulatorio
+- Anatel — Sandbox: repetidores e reforçadores por entidades municipais: https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/sandbox-repetidor
+- Anatel — Redes Comunitárias (GT-RCom, Portaria nº 2597/2023): https://www.gov.br/anatel/pt-br/regulado/universalizacao/redes-comunitarias
+- Anatel — Índice de Resoluções de 2013 (Resolução nº 617/2013, revogada): https://informacoes.anatel.gov.br/legislacao/resolucoes/2013
+- Anatel — Plano Geral de Metas de Universalização (PGMU V): https://www.gov.br/anatel/pt-br/regulado/universalizacao/plano-geral-de-metas-de-universalizacao
+- Seja Digital / Gired — Leilão 04 de Atendimento a Localidades com SMP: https://sejadigital.com.br/leilao04/
+
+## A resposta em uma linha
+
+Não existe melhor operadora para zona rural que sirva para todo mundo: a resposta
+é por endereço, e dá para verificá-la antes de assinar.
+
+Transparência: sou distribuidor independente da MOVVA Brasil Ltda, este site não
+é canal oficial, contratei o plano, o chip não chegou e não testei nada em campo.
+
+## Por que cobertura rural é outro jogo?
+
+**Quem escolhe onde ofertar é a empresa:** a Anatel registra que a telefonia
+móvel é prestada por empresas privadas com, em geral, liberdade para escolher
+onde ofertar. **A física cobra pela frequência:** faixa alta leva mais dados e
+alcança menos chão. **E a cobertura é calculada, não medida no seu portão.**
+
+## Qual é o tamanho do buraco?
+
+Grande. O PERT 2026 da Anatel resume o desafio em 26.442 localidades sem
+cobertura e sem obrigação de atendimento de ninguém — nem por edital, nem por
+TAC, nem por Obrigação de Fazer.
+
+## O que os compromissos de abrangência obrigam
+
+Obrigam a vencedora do leilão. A base é o art. 135 da LGT e o Decreto nº
+9.612/2018, que prioriza no art. 9º, II a cobertura móvel em vilas, aglomerados
+rurais e rodovias federais.
+
+Do **leilão do 5G**: 5G nas 5.570 sedes municipais e 4G ou superior em 7.430
+localidades — 6.805 delas pela faixa de 2,3 GHz, até 31/12/2028. As outras 625,
+de 700 MHz, são caso à parte.
+
+Do **leilão de 700 MHz de 2026**, pela apresentação da relatoria: prioridade nº 1
+para 4G nas localidades não sedes com mais de 600 habitantes desassistidas e,
+caso os recursos disponíveis assim permitam, rodovias federais sem 4G. Tudo até
+31/12/2030.
+
+## O que eles não obrigam
+
+- **Não cobrem todo mundo.** São as 26.442 localidades do PERT 2026, que nenhum
+  dos compromissos acima alcança.
+- **Compromisso é da vencedora, e pode acabar.** O de 4G nas rodovias federais,
+  no Edital 5G, foi vencido pela Winity II Telecom Ltda — o lote de 700 MHz, das
+  625 localidades e dos 2.349 trechos —, e a empresa renunciou às autorizações.
+  Se a renúncia também extingue os compromissos de abrangência do lote, e quem
+  responde hoje por essas localidades e esses trechos, é o que eu não consegui
+  confirmar: li o painel do Acórdão nº 39/2024, não o acórdão.
+- **Coberta não quer dizer inteira:** só conta como coberta a localidade com mais
+  de 95% da área coberta.
+
+## Existe meta de universalização para celular?
+
+Não. Universalização, na LGT, é obrigação de quem presta em regime público
+(art. 79), e regime público é concessão ou permissão (art. 63, parágrafo único).
+O celular é regime privado, por autorização, pelo art. 14 do RGST, e os planos de
+metas, até o PGMU V, alcançaram a telefonia fixa. Se disserem que a lei obriga a
+operadora a atender a sua casa, peça o artigo.
+
+## Por que 700 MHz, e a pegadinha da banda 28
+
+Pela equação de espaço livre da ITU-R P.525-3, de 2016, a mesma distância custa
+cerca de 14 dB a mais em 3,5 GHz do que em 700 MHz — conta minha, em espaço
+livre, e a UIT já lista a P.525-5.
+
+E 700 MHz é a banda 28 do 3GPP. A Anatel avisa que aparelho sem uma ou mais das
+faixas usadas no país pode não funcionar ou funcionar com limitações: um
+importado sem a banda 28 não vê a torre do compromisso de 700 MHz.
+
+## Como conferir cobertura e compromisso no seu endereço
+
+Comece pelo painel Cobertura Móvel da Anatel, que desce ao setor censitário.
+Alterne a medida para **Área Coberta** — num setor rural enorme, moradores
+cobertos diz pouco sobre o seu ponto — e procure o seu povoado.
+
+O limite está na nota técnica: a predição usa estações licenciadas, com **cálculo
+máximo de 7 km**, e considera moradores uniformemente distribuídos no setor — com
+a população concentrada num povoado, isso pode esconder ou inventar cobertura no
+seu endereço.
+
+Veja também o que a prestadora é obrigada a publicar pelo art. 28, IV do RQUAL —
+informações sobre a própria cobertura de SMP por tecnologia e acesso ao mapa de
+cobertura da página da Anatel —, e a consulta de sinal em
+sistemas.anatel.gov.br/se/public/cmap.php, cuja ressalva vale citar: os
+resultados servem apenas como referência, "não constituindo [...] informação
+para efeito de compromissos de cobertura ou qualidade".
+
+Em operadora virtual vale a rede hospedeira, porque a virtual não tem antena —
+veja [como funciona a cobertura de operadora
+virtual](/blog/operadora-virtual-pega-bem). E pelo art. 1º, § 2º do RQUAL, as
+obrigações do regulamento só alcançam os Grupos que não se enquadram como
+Prestadora de Pequeno Porte — conceito que o próprio § 2º busca no Plano Geral de
+Metas de Competição.
+
+Para saber se alguém está obrigado a atender a sua localidade: **Consulta a
+Compromissos**, que só mostra obrigação de 80% ou mais; **Compromissos de
+Investimento**, que reflete o compromisso original, não a entrega de hoje;
+**Painel do 700 MHz**; e o **Leilão 04** de localidades com SMP, cuja lista está
+no Anexo II do edital.
+
+## O que fazer quando ninguém declara cobertura
+
+1. **Teste um chip de cada rede no ponto**, no horário em que você usa —
+   [desligue a seleção automática e veja em qual rede o chip aceita
+   registrar](/blog/chip-dois-sinais).
+2. **Ligação por Wi-Fi**, se a internet fixa chega: [a ordem do que tentar quando
+   o sinal morre dentro de casa, e por que repetidor de sinal é de uso das
+   prestadoras](/blog/celular-sem-sinal-em-casa) está noutro post.
+3. **Pergunta sobre usuário visitante** à vencedora do 700 MHz: a apresentação da
+   Anatel lista atendimento obrigatório de visitantes de outras autorizadas que
+   não prestem serviço no local. Não achei o dispositivo do edital — pergunte por
+   escrito, com protocolo, e reclame no 1331.
+4. **Caminhos que não passam por você:** o sandbox que permite a entidades
+   municipais usar repetidor sob outorga de Serviço Limitado Privado (Ato nº
+   2062/2024), as redes comunitárias do GT-RCom e o satélite ao celular, ainda
+   piloto.
+
+Antes de assinar, pergunte por escrito: qual rede atende o seu endereço e com
+qual cobertura por tecnologia; se há compromisso para a sua localidade; e qual o
+prazo se não houver cobertura.
+
+## O que eu não consegui confirmar
+
+- **No edital de 700 MHz:** li a apresentação da relatoria, não o edital. Daí não
+  afirmar o dispositivo da prioridade nº 1, o critério de 600 habitantes, o dever
+  de atender usuário visitante nem o artigo da Portaria MCom nº 18.902/2025.
+- **No Edital 5G:** quem responde hoje pelas 625 localidades e pelos 2.349
+  trechos do lote da Winity, e se os marcos de 2025 e 2026 saíram.
+- **No PERT 2026:** a abertura das 26.442 localidades por categoria — setores
+  censitários do IBGE e localidades identificadas por prospecção — e a seção do
+  documento onde o próprio total aparece. Não abri o PERT: o número vem da
+  página do plano no site da Anatel.
+- **Nos percentuais do PERT:** os índices de localidades sem 4G e de área com 4G,
+  rural e urbano. Não consegui amarrá-los a seção ou página do documento, e é
+  por isso que esta página não traz a tabela que eles formariam.
+- **Nas normas:** qual ato rege as redes comunitárias, já que o PERT aponta a
+  revogada Resolução nº 617/2013.
+- **Nos programas:** um ato da Anatel homologando o Leilão 04 (o portal fala em
+  104 localidades; a imprensa, em 112) e se há oferta comercial de satélite.
+- **Na sua operadora:** o enquadramento como Prestadora de Pequeno Porte, o da
+  MOVVA inclusive, e a rede hospedeira dela. E se alguma marca resolve o seu
+  endereço: sem resposta a distância.
+
+Onde confirmar: as licitações e os processos SEI das fontes, o Diário Oficial, a
+prefeitura e o 1331.
+
+---
+
+Nota de transparência: sou distribuidor independente da MOVVA Brasil Ltda, este
+site não é canal oficial, contratei o plano, o chip não chegou e não testei nada
+em campo. Nada aqui descreve característica de produto da MOVVA: é regulação e
+painel público. Fontes verificadas em 21/10/2026.
+
+---
+
+# Operadora virtual ou tradicional: o que muda de verdade
+
+URL: https://movvabrasil.net/blog/virtual-ou-tradicional
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Muda quem responde por você, não a antena. Na credenciada, você é usuário da rede hospedeira, que responde pelos seus direitos, e a credenciada responde solidariamente. Na autorizada de rede virtual, ela mesma é a prestadora. A tradicional tem outorga e espectro. A cobertura é sempre da rede que carrega a linha.
+
+Fontes citadas:
+- Anatel — RGST, Anexo da Resolução nº 777, de 28/04/2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — RGC, Anexo da Resolução nº 765, de 06/11/2023: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Glossário do Setor de Telecomunicações, Anexo da Resolução nº 779, de 28/04/2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2029-resolucao-779
+- Anatel — PGMC, Anexo da Resolução nº 783, de 03/09/2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
+- Anatel — RQUAL, Anexo I da Resolução nº 717, de 23/12/2019: https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
+- Anatel — Lei Geral de Telecomunicações (Lei nº 9.472, de 16/07/1997): https://informacoes.anatel.gov.br/legislacao/leis/2-lei-9472
+- Anatel — Registrar reclamação (consumidor): https://www.gov.br/anatel/pt-br/consumidor/reclamacao
+- Anatel — Prestadoras de Pequeno Porte: https://www.gov.br/anatel/pt-br/regulado/competicao/prestadoras-de-pequeno-porte
+
+## Duas perguntas diferentes
+
+Transparência primeiro: sou distribuidor independente da MOVVA Brasil Ltda, este
+site não é canal oficial e o chip que contratei não chegou — nada foi testado em
+campo. Não comparo empresas: não comprovo alegação sobre concorrente.
+
+A comparação possível é de modelo. "Qual é melhor" depende de preço e da sua rua;
+"o que muda" está na norma, e muda conforme o arranjo. Na autorizada de rede
+virtual, plano, preço e contrato são da própria empresa; no credenciamento, as
+ofertas são da Prestadora Origem (RGST, art. 223, caput) e quem contrata é
+usuário dela (art. 237, caput). Veja [os dois modelos
+previstos na Resolução 777/2025, credenciamento e
+autorização](/blog/o-que-e-operadora-virtual).
+
+## Quem responde pelo serviço?
+
+Na **tradicional**, a prestadora tem outorga e espectro, e responde direto.
+
+Na **credenciada**, o credenciado é representante da Prestadora Origem e compõe a
+oferta do serviço em conjunto com ela (RGST, art. 216); a figura não se confunde
+com a representação comercial da Lei 4.886/1965 (parágrafo único). Definição de
+Credenciado no Glossário, art. 1º, CVIII. Você é usuário da Origem (RGST, art. 237), que
+responde pelos direitos do contrato, do RGC e da Lei 8.078/1990; o credenciado
+responde solidariamente, fora as obrigações exclusivas dela (art. 235, §§ 2º e
+3º). Perante a Anatel, ela responde integralmente (arts. 230 e 231); com mais de
+uma hospedeira, quem te atende é a que suporta o acesso (§ 1º).
+
+Na **autorizada de rede virtual**, a prestação do SMP constitui Serviço de
+Telecomunicações e a empresa é Prestador Autorizado do SMP, com os direitos e
+obrigações das autorizadas (RGST, arts. 239, 244 e 255): ninguém responde por
+ela.
+
+## Atendimento: onde a diferença aparece
+
+| Obrigação | Regra geral | Pequeno porte |
+| --- | --- | --- |
+| Telefone | 24h/7; humano 24h no urgente, 6h–22h no resto (art. 15, III e IV) | só I e II; 8h em dias úteis (art. 91) |
+| Canal digital | relatório de 6 meses, gravações, histórico (art. 13, III a IX e § 3º) | só I e II e §§ 2º, 4º e 5º |
+
+É o recorte do art. 90 do RGC, que arrola um por um os dispositivos aplicáveis à
+Prestadora de Pequeno Porte: o que não está na lista não a alcança, ressalvados o
+art. 91 e as leis de fora dele. Não é acusação a ninguém.
+
+## Reclamação: mesmo caminho, outro balcão
+
+Caminho oficial: operadora, Ouvidoria dela e Anatel Consumidor — sempre com
+protocolo. Direto na operadora, a reclamação tem de ser resolvida em até 7 dias
+corridos (RGC, art. 10, caput, na lista do art. 90). Os dez dias são outro
+balcão: é o prazo que a Anatel afirma para a operadora responder reclamação
+encaminhada pela agência. O 1331 atende em dias úteis, das 8h às 20h.
+
+O atrito: a Ouvidoria dos arts. 87 a 89 não entra na lista do art. 90, então a
+pequena não é obrigada a mantê-la. E a inversão que ninguém conta: no
+credenciamento a prestadora é a hospedeira, então o seu balcão depende do
+enquadramento da prestadora concreta, não do rótulo "virtual". Cláusula exigível:
+o contrato deve dizer como reclamações serão respondidas (RGST, art. 237, § 3º).
+
+## Preço: por que não é mágica
+
+"O preço dos serviços será livre, ressalvado o disposto no § 2º do art. 136 desta
+Lei", diz a Lei Geral de Telecomunicações (art. 129), reprimindo-se prática
+prejudicial à competição e abuso do poder econômico. Nem tradicional nem virtual
+têm preço tabelado: preço baixo não é característica regulatória do modelo virtual.
+
+A virtual não paga espectro nem rede; paga atacado, de livre negociação nos dois
+modelos (arts. 232, § 1º, e 253). Permite preço diferente, não preço menor — e
+aqui não há projeção de economia.
+
+## Portabilidade e numeração: o que é "seu"
+
+No credenciamento, a numeração é a atribuída à Origem (RGST, art. 221) e a
+chamada integra a rede dela (art. 222, parágrafo único): a faixa é da rede. O
+número é seu pelo direito à portabilidade, no mesmo RGST: pedido a qualquer
+tempo (art. 66), na mesma Área de Registro (art. 64, I), sem a doadora cobrar de
+você ou da receptora (arts. 92 e 93). Portar cessa a relação com a doadora e
+inicia outra com a receptora (art. 94): pesa em fidelidade e multa na origem.
+Prazos no art. 103 e aferição mensal no art. 104 — os números estão em [prazo,
+custo e desistência da portabilidade](/blog/portabilidade-sem-perder-o-numero).
+
+## O que não muda: a cobertura
+
+A área do credenciado é limitada à da hospedeira (art. 219, § 1º), que deve manter
+as condições para originar e receber chamadas onde presta serviço (art. 228), com
+a qualidade mantida (arts. 225 e 236). Obrigação não é medição, e há exceção: os
+dois modelos podem atender área sem infraestrutura da hospedeira (arts. 219, § 3º,
+e 240). Detalhei [por que o sinal é o da rede hospedeira e como conferir a
+cobertura dela no painel da Anatel](/blog/operadora-virtual-pega-bem).
+
+## As desvantagens reais do modelo virtual
+
+Não é a tecnologia, é o enquadramento: Prestadora de Pequeno Porte é o grupo com
+participação nacional inferior a 5% em cada mercado de varejo em que atua (PGMC,
+art. 5º, XXII).
+
+Ficam fora da lista do art. 90: Ouvidoria (arts. 87 a 89), avisos de prazo,
+oferta, reajuste, franquia e créditos (arts. 31, 50 e 53), oferta sem fidelidade
+(art. 38), histórico de demandas e Código de Práticas (arts. 11 e 12), registro e
+repositório de ofertas (arts. 21 e 22), canais terceirizados (art. 34) e rescisão
+automatizada (art. 84). O RQUAL só obriga Grupos que não são pequeno porte (art.
+1º, § 2º), e as medições são facultativas às pequenas (art. 3º): selo pode não
+existir. Com até 5.000 acessos, valem só dois capítulos do RGC (art. 90, § 5º).
+
+Nada disso afasta o CDC nem o RGST, e segue valendo o que está na lista, do prazo
+de resposta ao teto de fidelidade com multa proporcional: arts. 10, 18 (I a III),
+36, 37, 39, 81, 82, 83, 85 e 86.
+
+## O que só o credenciamento dá
+
+- Fim da representação: a Origem passa a te atender com o mesmo número, e a
+  rescisão aí não lhe acarreta ônus (arts. 238 e 227, III).
+- Nome do credenciado e da hospedeira obrigatórios na oferta (arts. 223, § 2º, e
+  237, § 2º), lista de credenciados no site dela (art. 218) e contrato válido só se
+  homologado (arts. 232 e 233).
+
+## Como decidir, em cinco perguntas
+
+1. Credenciada ou autorizada de rede virtual?
+2. Qual é a rede hospedeira — e a oferta diz isso?
+3. A prestadora do meu acesso é de pequeno porte?
+4. Tem Ouvidoria? Qual o horário do telefone?
+5. Como o contrato responde reclamações?
+
+Checklist meu, não da norma. A escolha não é entre "virtual" e "tradicional": é
+entre arranjos de responsabilidade sobre uma cobertura que já existe.
+
+## O que eu não consegui confirmar
+
+- **Numeração própria da autorizada**: não localizei o dispositivo.
+- **Qual Ato declara os grupos de pequeno porte**: a página da Anatel cita o Ato
+  nº 6539/2019; não abri o Ato (PGMC, art. 7º).
+- **Se a MOVVA é credenciada ou autorizada, e se é de pequeno porte** (art. 218 e
+  painel de outorga).
+- **O art. 23 do RGC para a pequena**: protege oferta registrada pelo art. 21, que
+  não está na lista — leitura minha.
+- **Que o credenciado não detenha outorga de SMP**: nenhuma norma que abri afirma
+  isso em letra; é o que decorre do contraste entre os arts. 216 e 239 do RGST —
+  leitura minha.
+- **O art. 262 e a migração entre os dois modelos**: não localizei o dispositivo.
+  Eu o citava para dizer que migrar de autorizada para credenciada depende da sua
+  concordância; tirei a afirmação até conseguir ler o artigo.
+- **Se o Capítulo XII do RGST está todo em vigor**, se as duas redações do art. 90
+  divergem além do art. 2º, a quem os painéis computam a reclamação e se há
+  despriorização em pico.
+
+Onde confirmar: Manual Operacional do RGC, Atos de Numeração, painéis da Anatel,
+contrato homologado (art. 233, § 6º) e 1331.
+
+---
+
+Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, site não
+oficial, chip não recebido, nada testado em campo — nenhuma característica de
+produto da MOVVA é afirmada como verificada e não há promessa de ganho. Usei a
+redação do art. 90 retificada no DOU de 26/12/2023. Fontes verificadas em
+21/10/2026.
 
 ---
 
@@ -151,8 +706,9 @@ três perguntas:
 
 ## Antes de trocar, confira a cobertura declarada
 
-O RQUAL (Resolução nº 717/2019) obriga a operadora a publicar mapa de cobertura
-por tecnologia. A Anatel lista os endereços oficiais e mantém consulta de sinal e
+O RQUAL (Resolução nº 717/2019, art. 28, IV) obriga a operadora a informar a
+cobertura por tecnologia e a dar acesso ao mapa da Anatel — não a publicar mapa
+próprio. A Anatel lista os endereços oficiais e mantém consulta de sinal e
 painel de cobertura.
 
 Com um porém que importa justamente para operadora virtual: prestadora de
@@ -288,111 +844,6 @@ Troque a pergunta: quais são as duas redes, qual delas suporta o meu acesso, e 
 ---
 
 Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial. Nada aqui descreve característica de produto da MOVVA como verificada. Fontes de 20/10/2026.
-
----
-
-# eSIM ou chip físico: qual escolher e quais celulares aceitam
-
-URL: https://movvabrasil.net/blog/esim-ou-chip-fisico
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: Escolha eSIM se o seu aparelho aceita, você vai ativar com Wi-Fi e não troca de celular toda hora. Escolha chip físico se você passa a linha entre aparelhos, usa aparelho emprestado ou compra celular importado. O primeiro teste é o menu do seu aparelho: se não existe opção de eSIM, a decisão já está tomada.
-
-Fontes citadas:
-- Apple — Configurar o eSIM no iPhone (19/09/2026): https://support.apple.com/pt-br/118669
-- Apple — Sobre o eSIM (17/05/2024): https://support.apple.com/pt-br/119606
-- Apple Brasil — iPhone Air, especificações técnicas: https://www.apple.com/br/iphone-air/specs/
-- Apple Brasil — iPhone Duo, especificações técnicas: https://www.apple.com/br/iphone-duo/specs/
-- Samsung Brasil — eSIM Galaxy e operadoras de rede suportadas (23/09/2026): https://www.samsung.com/br/support/mobile-devices/esim-galaxy-e-operadoras-de-rede-suportadas/
-- Google — Configurar um eSIM novo (Ajuda do Smartphone Pixel): https://support.google.com/pixelphone/answer/16115470?hl=pt-BR
-- Motorola — Instruções para ativação do eSIM, razr: https://pt-br.support.motorola.com/app/answers/detail/a_id/148386/~/instru%C3%A7%C3%B5es-para-ativa%C3%A7%C3%A3o-do-esim---razr
-- TIM — eSIM: dúvidas frequentes: https://www.tim.com.br/ajuda/perguntas-frequentes/celular/chip-e-esim/esim
-- Claro — Como habilitar o eSIM da Claro no meu dispositivo?: https://www.claro.com.br/faq/esim/como-habilitar-o-esim-da-claro-no-meu-dispositivo
-- Anatel — Orientações para aquisição de aparelhos celulares: https://www.gov.br/anatel/pt-br/regulado/certificacao/orientacoes-para-aquisicao-de-aparelhos-celulares
-
-## eSIM ou chip físico: qual escolher?
-
-Regra de decisão, antes da explicação:
-
-- **eSIM** se o aparelho aceita, você tem Wi-Fi para ativar e raramente passa a linha para outro celular.
-- **Chip físico** se você troca a linha de aparelho com frequência, usa celular emprestado ou vai comprar aparelho importado.
-- **Não existe escolha** se o menu do aparelho não oferece eSIM.
-
-Sou distribuidor independente da MOVVA Brasil Ltda e este site não é canal oficial da empresa. Contratei o plano, o chip ainda não chegou e não testei nada em campo. Quando testar, atualizo.
-
-## O que é eSIM
-
-É um SIM gravado dentro do aparelho, no lugar do cartão da bandeja. Na definição da Apple, é um SIM digital com padrão de indústria, embutido no iPhone, que dispensa o cartão físico. Em vez de receber um chip, você baixa da operadora o perfil da sua linha.
-
-Sinal não muda: quem carrega a chamada é a rede. Em operadora virtual, [a cobertura é a da rede hospedeira](/blog/operadora-virtual-pega-bem).
-
-E você precisa de internet antes de ter linha: a Apple orienta conectar o aparelho a uma rede Wi-Fi ou a um ponto de acesso para instalar o eSIM, e registra que em alguns países os modelos só eSIM podem ser ativados sem Wi-Fi.
-
-## Como testar se o seu aparelho aceita eSIM?
-
-Procure a opção no menu. É o teste confiável, e muda por marca.
-
-| Marca | Caminho | Ressalva da marca |
-| --- | --- | --- |
-| Samsung | Configurações > Conexões > Gerenciador de SIM > Adicionar eSIM | pode falhar conforme o país de origem do aparelho |
-| Pixel | Configurações > Rede e Internet > Chips > Adicionar chip > Configurar um eSIM | se não detectar, talvez a operadora precise ativar antes |
-| iPhone | Ajustes > Celular > Dados celulares > Adicionar eSIM | caminho publicado pela Claro, com QR Code |
-| Motorola razr | Configurar > Rede e internet > Rede móvel > Avançadas > Operadora | caminho pela Claro; a Motorola diz que o razr usa eSIM no lugar do chip comum |
-
-## Por que o nome do modelo não garante nada
-
-O que decide é a variante vendida no Brasil.
-
-A Samsung Brasil publica lista de Galaxy com eSIM e marca restrição por região: o A35 e o A54 aparecem como disponíveis só em Europa, América do Norte e Coreia. E avisa que o eSIM pode não funcionar num aparelho da lista, a depender do país de origem dele. Dá para cruzar com operadora: a lista da TIM não traz o A54, mas traz o A55.
-
-Falta o lado regulatório. A Anatel informa que, em regra, celular só pode ser comercializado ou usado no Brasil depois de homologado, e que modelo importado sem homologação pode não conseguir ativação junto a operadora móvel. A agência "recomenda fortemente que não sejam utilizados equipamentos não homologados".
-
-Se um vendedor disser que a origem do aparelho não importa, peça por escrito.
-
-## Trocar, perder ou restaurar o aparelho
-
-É aqui que o chip físico ganha.
-
-A transferência rápida entre iPhones exige iOS 18.4 ou posterior nos dois aparelhos, a mesma Conta Apple, Bluetooth ligado e os dois perto um do outro. Entre Galaxy, a Samsung pede bloqueio de tela no novo, Wi-Fi e Bluetooth nos dois, e um código de 6 dígitos exibido no novo. A partir do iOS 26, segundo a Apple, algumas operadoras e fabricantes permitem transferir eSIM entre Android e iPhone. Tudo isso supõe os dois aparelhos funcionando e na sua mão.
-
-A Apple afirma que o eSIM é mais seguro porque não pode ser removido em caso de perda ou roubo — palavra do fabricante, não teste independente. A reposição é o outro lado: a TIM orienta bloquear a linha e depois ir a uma loja física, com validação, para receber QR Code novo com o mesmo número. Restaurar o aparelho com o eSIM instalado também obriga a pedir outro na loja. O custo escondido aparece justo quando você está sem aparelho.
-
-## E se o aparelho não tem bandeja?
-
-Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A nota de rodapé registra o mesmo para o iPhone Duo.
-
-## Quantos perfis e quantas redes cabem no aparelho?
-
-Perfil não é rede. Ter dois perfis de eSIM no aparelho não põe você em duas
-redes ao mesmo tempo: o aparelho se registra numa rede por vez, e o que varia é
-quantas linhas ficam ativas. É a confusão que mais aparece em anúncio de
-telefonia, e eu separei as quatro coisas vendidas com esse nome em
-[chip que pega em duas operadoras](/blog/chip-dois-sinais).
-
-## eSIM em operadora virtual funciona?
-
-Não confirmei. Não localizei fonte primária dizendo se operadora virtual pode oferecer eSIM no Brasil. Pela lógica do modelo, dependeria da rede hospedeira e do contrato entre as duas empresas, mas é leitura minha, não norma. Operadora virtual vende plano usando a rede de outra, e [detalhei o modelo aqui](/blog/o-que-e-operadora-virtual).
-
-O eSIM depende de a operadora ter feito a parte dela: a Samsung lista Claro, TIM e Vivo com suporte. A MOVVA não aparece nessa lista nem na da TIM, e ausência em lista de terceiro não é afirmação sobre a MOVVA, em nenhuma das duas direções. Também não encontrei material da empresa sobre eSIM nas buscas que fiz em 20/10/2026: não afirmo que oferece nem que não oferece. O que a MOVVA anunciar sobre eSIM, cobertura, preço ou ativação entra aqui como anúncio da empresa, nunca como fato verificado por mim.
-
-## O que eu não consegui confirmar
-
-- **Norma da Anatel só sobre eSIM.** Nos textos que abri, os termos eSIM e cartão SIM não aparecem: vale a regra geral de habilitação, cadastro e portabilidade, igual para os dois. Confirme na legislação da Anatel e no 1331.
-- **O custo.** A TIM ressalva que o eSIM pode ser gratuito ou ter custo conforme a forma de instalação, e a página da Claro que li não traz valor. Peça por escrito, com protocolo.
-- **Lista oficial da Motorola e da Xiaomi para o Brasil.** Não localizei nas páginas que consultei. Confirme na ficha do modelo exato.
-- **Transferir perfil de uma operadora para outra.** Não achei previsão nas fontes que li, e trato como ausência de previsão, não como proibição. O que se leva é o número, por [portabilidade](/blog/portabilidade-sem-perder-o-numero).
-- **Se a MOVVA oferece eSIM.** Confirme na própria oferta, na hora de contratar.
-
-## Como decidir, em três perguntas
-
-1. O menu do aparelho oferece eSIM, e a variante é a vendida no Brasil?
-2. A operadora implementou eSIM, e cobra quanto? Peça por escrito.
-3. Com que frequência eu passo a linha para outro aparelho?
-
-Se a resposta da terceira for toda semana, chip físico ainda é mais prático.
-
----
-
-Nota de transparência: site mantido por distribuidor independente da MOVVA Brasil Ltda, não é canal oficial da empresa. Nada aqui descreve característica de produto da MOVVA. Páginas consultadas em 20/10/2026; a lista da Samsung é de 23/09/2026. Ficha técnica e lista de operadora mudam sem aviso.
 
 ---
 
@@ -563,6 +1014,280 @@ jurídica.
 
 ---
 
+# eSIM ou chip físico: qual escolher e quais celulares aceitam
+
+URL: https://movvabrasil.net/blog/esim-ou-chip-fisico
+Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Resposta curta: Escolha eSIM se o seu aparelho aceita, você vai ativar com Wi-Fi e não troca de celular toda hora. Escolha chip físico se você passa a linha entre aparelhos, usa aparelho emprestado ou compra celular importado. O primeiro teste é o menu do seu aparelho: se não existe opção de eSIM, a decisão já está tomada.
+
+Fontes citadas:
+- Apple — Configurar o eSIM no iPhone (19/09/2026): https://support.apple.com/pt-br/118669
+- Apple — Sobre o eSIM (17/05/2024): https://support.apple.com/pt-br/119606
+- Apple Brasil — iPhone Air, especificações técnicas: https://www.apple.com/br/iphone-air/specs/
+- Apple Brasil — iPhone Duo, especificações técnicas: https://www.apple.com/br/iphone-duo/specs/
+- Samsung Brasil — eSIM Galaxy e operadoras de rede suportadas (23/09/2026): https://www.samsung.com/br/support/mobile-devices/esim-galaxy-e-operadoras-de-rede-suportadas/
+- Google — Configurar um eSIM novo (Ajuda do Smartphone Pixel): https://support.google.com/pixelphone/answer/16115470?hl=pt-BR
+- Motorola — Instruções para ativação do eSIM, razr: https://pt-br.support.motorola.com/app/answers/detail/a_id/148386/~/instru%C3%A7%C3%B5es-para-ativa%C3%A7%C3%A3o-do-esim---razr
+- TIM — eSIM: dúvidas frequentes: https://www.tim.com.br/ajuda/perguntas-frequentes/celular/chip-e-esim/esim
+- Claro — Como habilitar o eSIM da Claro no meu dispositivo?: https://www.claro.com.br/faq/esim/como-habilitar-o-esim-da-claro-no-meu-dispositivo
+- Anatel — Orientações para aquisição de aparelhos celulares: https://www.gov.br/anatel/pt-br/regulado/certificacao/orientacoes-para-aquisicao-de-aparelhos-celulares
+
+## eSIM ou chip físico: qual escolher?
+
+Regra de decisão, antes da explicação:
+
+- **eSIM** se o aparelho aceita, você tem Wi-Fi para ativar e raramente passa a linha para outro celular.
+- **Chip físico** se você troca a linha de aparelho com frequência, usa celular emprestado ou vai comprar aparelho importado.
+- **Não existe escolha** se o menu do aparelho não oferece eSIM.
+
+Sou distribuidor independente da MOVVA Brasil Ltda e este site não é canal oficial da empresa. Contratei o plano, o chip ainda não chegou e não testei nada em campo. Quando testar, atualizo.
+
+## O que é eSIM
+
+É um SIM gravado dentro do aparelho, no lugar do cartão da bandeja. Na definição da Apple, é um SIM digital com padrão de indústria, embutido no iPhone, que dispensa o cartão físico. Em vez de receber um chip, você baixa da operadora o perfil da sua linha.
+
+Sinal não muda: quem carrega a chamada é a rede. Em operadora virtual, [a cobertura é a da rede hospedeira](/blog/operadora-virtual-pega-bem).
+
+E você precisa de internet antes de ter linha: a Apple orienta conectar o aparelho a uma rede Wi-Fi ou a um ponto de acesso para instalar o eSIM, e registra que em alguns países os modelos só eSIM podem ser ativados sem Wi-Fi.
+
+## Como testar se o seu aparelho aceita eSIM?
+
+Procure a opção no menu. É o teste confiável, e muda por marca.
+
+| Marca | Caminho | Ressalva da marca |
+| --- | --- | --- |
+| Samsung | Configurações > Conexões > Gerenciador de SIM > Adicionar eSIM | pode falhar conforme o país de origem do aparelho |
+| Pixel | Configurações > Rede e Internet > Chips > Adicionar chip > Configurar um eSIM | se não detectar, talvez a operadora precise ativar antes |
+| iPhone | Ajustes > Celular > Dados celulares > Adicionar eSIM | caminho publicado pela Claro, com QR Code |
+| Motorola razr | Configurar > Rede e internet > Rede móvel > Avançadas > Operadora | caminho pela Claro; a Motorola diz que o razr usa eSIM no lugar do chip comum |
+
+## Por que o nome do modelo não garante nada
+
+O que decide é a variante vendida no Brasil.
+
+A Samsung Brasil publica lista de Galaxy com eSIM e marca restrição por região: o A35 e o A54 aparecem como disponíveis só em Europa, América do Norte e Coreia. E avisa que o eSIM pode não funcionar num aparelho da lista, a depender do país de origem dele. Dá para cruzar com operadora: a lista da TIM não traz o A54, mas traz o A55.
+
+Falta o lado regulatório. A Anatel informa que, em regra, celular só pode ser comercializado ou usado no Brasil depois de homologado, e que modelo importado sem homologação pode não conseguir ativação junto a operadora móvel. A agência "recomenda fortemente que não sejam utilizados equipamentos não homologados".
+
+Se um vendedor disser que a origem do aparelho não importa, peça por escrito.
+
+## Trocar, perder ou restaurar o aparelho
+
+É aqui que o chip físico ganha.
+
+A transferência rápida entre iPhones exige iOS 18.4 ou posterior nos dois aparelhos, a mesma Conta Apple, Bluetooth ligado e os dois perto um do outro. Entre Galaxy, a Samsung pede bloqueio de tela no novo, Wi-Fi e Bluetooth nos dois, e um código de 6 dígitos exibido no novo. A partir do iOS 26, segundo a Apple, algumas operadoras e fabricantes permitem transferir eSIM entre Android e iPhone. Tudo isso supõe os dois aparelhos funcionando e na sua mão.
+
+A Apple afirma que o eSIM é mais seguro porque não pode ser removido em caso de perda ou roubo — palavra do fabricante, não teste independente. A reposição é o outro lado: a TIM orienta bloquear a linha e depois ir a uma loja física, com validação, para receber QR Code novo com o mesmo número. Restaurar o aparelho com o eSIM instalado também obriga a pedir outro na loja. O custo escondido aparece justo quando você está sem aparelho.
+
+## E se o aparelho não tem bandeja?
+
+Aí a decisão não existe. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM, com dois ativos e armazenamento de oito ou mais perfis, e diz que o aparelho não é compatível com cartões SIM físicos. A nota de rodapé registra o mesmo para o iPhone Duo.
+
+## Quantos perfis e quantas redes cabem no aparelho?
+
+Perfil não é rede. Ter dois perfis de eSIM no aparelho não põe você em duas
+redes ao mesmo tempo: o aparelho se registra numa rede por vez, e o que varia é
+quantas linhas ficam ativas. É a confusão que mais aparece em anúncio de
+telefonia, e eu separei as quatro coisas vendidas com esse nome em
+[chip que pega em duas operadoras](/blog/chip-dois-sinais).
+
+## eSIM em operadora virtual funciona?
+
+Não confirmei. Não localizei fonte primária dizendo se operadora virtual pode oferecer eSIM no Brasil. Pela lógica do modelo, dependeria da rede hospedeira e do contrato entre as duas empresas, mas é leitura minha, não norma. Operadora virtual vende plano usando a rede de outra, e [detalhei o modelo aqui](/blog/o-que-e-operadora-virtual).
+
+O eSIM depende de a operadora ter feito a parte dela: a Samsung lista Claro, TIM e Vivo com suporte. A MOVVA não aparece nessa lista nem na da TIM, e ausência em lista de terceiro não é afirmação sobre a MOVVA, em nenhuma das duas direções. Também não encontrei material da empresa sobre eSIM nas buscas que fiz em 20/10/2026: não afirmo que oferece nem que não oferece. O que a MOVVA anunciar sobre eSIM, cobertura, preço ou ativação entra aqui como anúncio da empresa, nunca como fato verificado por mim.
+
+## O que eu não consegui confirmar
+
+- **Norma da Anatel só sobre eSIM.** Nos textos que abri, os termos eSIM e cartão SIM não aparecem: vale a regra geral de habilitação, cadastro e portabilidade, igual para os dois. Confirme na legislação da Anatel e no 1331.
+- **O custo.** A TIM ressalva que o eSIM pode ser gratuito ou ter custo conforme a forma de instalação, e a página da Claro que li não traz valor. Peça por escrito, com protocolo.
+- **Lista oficial da Motorola e da Xiaomi para o Brasil.** Não localizei nas páginas que consultei. Confirme na ficha do modelo exato.
+- **Transferir perfil de uma operadora para outra.** Não achei previsão nas fontes que li, e trato como ausência de previsão, não como proibição. O que se leva é o número, por [portabilidade](/blog/portabilidade-sem-perder-o-numero).
+- **Se a MOVVA oferece eSIM.** Confirme na própria oferta, na hora de contratar.
+
+## Como decidir, em três perguntas
+
+1. O menu do aparelho oferece eSIM, e a variante é a vendida no Brasil?
+2. A operadora implementou eSIM, e cobra quanto? Peça por escrito.
+3. Com que frequência eu passo a linha para outro aparelho?
+
+Se a resposta da terceira for toda semana, chip físico ainda é mais prático.
+
+---
+
+Nota de transparência: site mantido por distribuidor independente da MOVVA Brasil Ltda, não é canal oficial da empresa. Nada aqui descreve característica de produto da MOVVA. Páginas consultadas em 20/10/2026; a lista da Samsung é de 23/09/2026. Ficha técnica e lista de operadora mudam sem aviso.
+
+---
+
+# Plano de celular sem fidelidade: o que a regra garante
+
+URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
+Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
+
+Fontes citadas:
+- Anatel — Resolução nº 765/2023 (RGC, Regulamento Geral de Direitos do Consumidor): https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Resolução nº 777/2025 (RGST, Regulamento Geral dos Serviços de Telecomunicações): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Fidelização (telefonia móvel): https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/fidelizacao
+- Anatel — Dúvidas frequentes sobre os Selos de Qualidade: https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/duvidas-frequentes
+- Anatel — Registrar reclamação: https://www.gov.br/anatel/pt-br/consumidor/reclamacao
+- Código de Defesa do Consumidor (Lei 8.078/1990), art. 49: https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html
+
+## Fidelidade é obrigatória?
+
+Não. Quem vende plano com prazo de permanência tem que oferecer também a versão
+sem esse vínculo. É o art. 38 do RGC, o regulamento de direitos do consumidor da
+Anatel.
+
+Detalhe importante: a norma fala em "condições de fruição equivalentes".
+Equivalente no serviço, não no preço. O desconto costuma ser justamente o
+benefício que a fidelidade paga.
+
+Peça as duas versões e anote o protocolo.
+
+## Qual norma vale hoje (e por que muitos citam a errada)
+
+Vale o RGC, Anexo da Resolução Anatel 765/2023, em vigor desde 1º de setembro de
+2025. Ele substituiu a Resolução 632/2014, hoje revogada. A Resolução 777/2025 é
+outra coisa: aprova o regulamento de serviços, o RGST.
+
+Não consegui confirmar um ponto. O art. 2º, XLI, da 777/2025 revoga os arts. 2º a
+38 da Resolução 765 sem dizer se são os do corpo ou os do Anexo. Leio como corpo,
+e a Anatel segue citando os arts. 36 a 38 do Anexo como vigentes. Mas a norma não
+esclarece: não afirmo.
+
+A própria agência erra a referência. A página dela sobre fidelização, modificada
+em 31/08/2025, ainda cita a Resolução 632/2014, que ela mesma marca como
+revogada. Cite os arts. 36 a 38 do RGC.
+
+## Quanto tempo a fidelidade pode durar?
+
+No máximo 12 meses. O art. 36 do RGC limita o prazo de permanência a 12 meses e
+exige, em troca, um benefício concedido pela prestadora. Prazo maior só para
+pessoa jurídica (§ 1º), e nunca além da vigência da oferta (§ 3º).
+
+O § 2º veda renovação automática, mas o Acórdão 389/2024 da Anatel reinterpretou
+o dispositivo: a vedação alcança só o que não teve consentimento expresso. Não
+afirmo, então, que uma nova fidelidade aceita por você seja proibida.
+
+A operadora tem que avisar o fim do prazo, o fim da oferta e os reajustes com 30
+dias de antecedência (art. 31).
+
+## O que perguntar antes de assinar
+
+Três perguntas:
+
+1. Qual é o prazo de permanência, em meses?
+2. Qual é o benefício e quanto ele vale em reais?
+3. Qual é a multa se eu sair antes, e como ela é calculada?
+
+Peça por escrito ou, no mínimo, o protocolo. O art. 36, § 4º, remete as condições
+gerais do prazo de permanência ao Código de Defesa do Consumidor; não localizei
+nele a lista dessas três informações. Então é checklist meu, não obrigação citada
+na norma.
+
+## Como a multa tem que ser calculada
+
+Dois limites ao mesmo tempo: proporcional ao tempo que falta e nunca acima do
+valor do benefício concedido (art. 37, § 1º).
+
+Hipotético, só para ilustrar, com benefício de R$ 240 em 12 meses:
+
+| Mês da saída | Meses restantes | Leitura proporcional |
+| --- | --- | --- |
+| 3 | 9 | R$ 180 |
+| 6 | 6 | R$ 120 |
+| 11 | 1 | R$ 20 |
+
+Não é fórmula oficial. A conta de dividir o benefício por 12 e multiplicar pelos
+meses restantes aparece em blogs, não na norma. Peça a memória de cálculo por
+escrito.
+
+## Quando a multa não pode ser cobrada
+
+Quando a operadora descumpriu obrigação contratual ou legal. O art. 37, § 2º, II,
+veda a cobrança e dá à prestadora o ônus de provar que a sua alegação não
+procede.
+
+Queda de nota também conta: o § 5º considera descumprimento contratual o
+rebaixamento do Selo de Qualidade para D ou E num município depois da
+contratação, e a Anatel confirma o direito na pergunta 21 das dúvidas frequentes
+sobre qualidade. Não diz em quanto tempo exercer, nem qual nível do selo conta.
+
+Mesmo sem multa, as parcelas vincendas de aparelho comprado da operadora
+continuam devidas (§ 3º).
+
+Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
+Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). Direto na operadora, a
+reclamação tem de ser resolvida em até 7 dias corridos (RGC, art. 10, caput, que
+está na lista do art. 90). Os dez dias são outro balcão: é o prazo que a Anatel
+afirma para a operadora responder reclamação encaminhada pela agência.
+
+## Como cancelar, na prática
+
+O pedido pode ser feito a qualquer tempo, pelos canais disponíveis para a oferta
+contratada, mesmo em atraso (art. 82). Com atendente, o efeito é imediato (art.
+83). Em canal automatizado, vale depois de 2 dias úteis, e nesse prazo você paga
+pelo uso e pode desistir (art. 84).
+
+A saída não pode ficar escondida: o primeiro menu do telefone tem que oferecer
+rescisão automatizada (art. 18, I), e o canal digital, cancelamento sem atendente
+(art. 13, § 3º).
+
+Alternativa: suspensão temporária, uma vez a cada 12 meses, de 30 a 120 dias, sem
+cobrança, com o número mantido e a fidelidade congelada (art. 81). Só para quem
+está em dia.
+
+## Levar o número e desistir em 7 dias
+
+Portar o número é gratuito para você (RGST, art. 92) e leva até 3 dias úteis.
+Detalhei no [post sobre portabilidade](/blog/portabilidade-sem-perder-o-numero).
+E quem contratou pela internet ou por telefone tem 7 dias para desistir, pelo
+art. 49 do Código de Defesa do Consumidor, com ou sem fidelidade, com devolução
+imediata e corrigida.
+
+## Operadora de pequeno porte não segue tudo
+
+Muita operadora virtual se enquadra como prestadora de pequeno porte, e isso
+pesa. O art. 90 do RGC lista os dispositivos aplicáveis a elas: os arts. 36, 37,
+81 e 82 estão na lista; os arts. 31, 38 e 84 não. Pela leitura dessa lista, o
+teto de 12 meses e a multa proporcional valem, mas a obrigação de oferecer a
+mesma oferta sem fidelidade pode não alcançar a operadora pequena.
+
+Mantenho a cautela porque a página da Anatel exibe duas versões do art. 90. Se a
+sua operadora é pequena, confirme no 1331.
+
+## O que eu não confirmei
+
+Além do que marquei acima:
+
+- O teto de fidelidade para pessoa jurídica.
+- Se o prazo de permanência alcança prestadora com até 5.000 acessos (art. 90,
+  § 5º).
+- Como fica fidelidade em plano pré-pago.
+- O prazo para a operadora estornar multa indevida.
+- Sob qual figura regulatória cada operadora virtual opera.
+- A taxa de portabilidade de cerca de R$ 4,00 que sites citam.
+
+Caminho: o texto da norma nas fontes abaixo e o 1331.
+
+## O que isso muda numa operadora virtual
+
+Fidelidade é assunto de contrato, não de tecnologia. Uma operadora móvel virtual
+usa a rede de uma das grandes, então o que decide o seu dia a dia é a cobertura
+onde você usa o celular, o preço sem desconto condicionado e a existência de
+prazo de permanência. Confirme também se ela é de pequeno porte.
+
+---
+
+Nota de transparência: este site é mantido por um distribuidor independente da
+MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
+característica de produto da MOVVA — é regulação que vale para qualquer
+operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
+jurídica.
+
+---
+
 # O que é operadora virtual (MVNO) e como funciona no Brasil
 
 URL: https://movvabrasil.net/blog/o-que-e-operadora-virtual
@@ -727,276 +1452,6 @@ Fontes da Anatel verificadas em 20/10/2026.
 
 ---
 
-# Plano de celular sem fidelidade: o que a regra garante
-
-URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
-
-Fontes citadas:
-- Anatel — Resolução nº 765/2023 (RGC, Regulamento Geral de Direitos do Consumidor): https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
-- Anatel — Resolução nº 777/2025 (RGST, Regulamento Geral dos Serviços de Telecomunicações): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — Fidelização (telefonia móvel): https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/fidelizacao
-- Anatel — Dúvidas frequentes sobre os Selos de Qualidade: https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/duvidas-frequentes
-- Anatel — Registrar reclamação: https://www.gov.br/anatel/pt-br/consumidor/reclamacao
-- Código de Defesa do Consumidor (Lei 8.078/1990), art. 49: https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html
-
-## Fidelidade é obrigatória?
-
-Não. Quem vende plano com prazo de permanência tem que oferecer também a versão
-sem esse vínculo. É o art. 38 do RGC, o regulamento de direitos do consumidor da
-Anatel.
-
-Detalhe importante: a norma fala em "condições de fruição equivalentes".
-Equivalente no serviço, não no preço. O desconto costuma ser justamente o
-benefício que a fidelidade paga.
-
-Peça as duas versões e anote o protocolo.
-
-## Qual norma vale hoje (e por que muitos citam a errada)
-
-Vale o RGC, Anexo da Resolução Anatel 765/2023, em vigor desde 1º de setembro de
-2025. Ele substituiu a Resolução 632/2014, hoje revogada. A Resolução 777/2025 é
-outra coisa: aprova o regulamento de serviços, o RGST.
-
-Não consegui confirmar um ponto. O art. 2º, XLI, da 777/2025 revoga os arts. 2º a
-38 da Resolução 765 sem dizer se são os do corpo ou os do Anexo. Leio como corpo,
-e a Anatel segue citando os arts. 36 a 38 do Anexo como vigentes. Mas a norma não
-esclarece: não afirmo.
-
-A própria agência erra a referência. A página dela sobre fidelização, modificada
-em 31/08/2025, ainda cita a Resolução 632/2014, que ela mesma marca como
-revogada. Cite os arts. 36 a 38 do RGC.
-
-## Quanto tempo a fidelidade pode durar?
-
-No máximo 12 meses. O art. 36 do RGC limita o prazo de permanência a 12 meses e
-exige, em troca, um benefício concedido pela prestadora. Prazo maior só para
-pessoa jurídica (§ 1º), e nunca além da vigência da oferta (§ 3º).
-
-O § 2º veda renovação automática, mas o Acórdão 389/2024 da Anatel reinterpretou
-o dispositivo: a vedação alcança só o que não teve consentimento expresso. Não
-afirmo, então, que uma nova fidelidade aceita por você seja proibida.
-
-A operadora tem que avisar o fim do prazo, o fim da oferta e os reajustes com 30
-dias de antecedência (art. 31).
-
-## O que perguntar antes de assinar
-
-Três perguntas:
-
-1. Qual é o prazo de permanência, em meses?
-2. Qual é o benefício e quanto ele vale em reais?
-3. Qual é a multa se eu sair antes, e como ela é calculada?
-
-Peça por escrito ou, no mínimo, o protocolo. O art. 36, § 4º, remete as condições
-gerais do prazo de permanência ao Código de Defesa do Consumidor; não localizei
-nele a lista dessas três informações. Então é checklist meu, não obrigação citada
-na norma.
-
-## Como a multa tem que ser calculada
-
-Dois limites ao mesmo tempo: proporcional ao tempo que falta e nunca acima do
-valor do benefício concedido (art. 37, § 1º).
-
-Hipotético, só para ilustrar, com benefício de R$ 240 em 12 meses:
-
-| Mês da saída | Meses restantes | Leitura proporcional |
-| --- | --- | --- |
-| 3 | 9 | R$ 180 |
-| 6 | 6 | R$ 120 |
-| 11 | 1 | R$ 20 |
-
-Não é fórmula oficial. A conta de dividir o benefício por 12 e multiplicar pelos
-meses restantes aparece em blogs, não na norma. Peça a memória de cálculo por
-escrito.
-
-## Quando a multa não pode ser cobrada
-
-Quando a operadora descumpriu obrigação contratual ou legal. O art. 37, § 2º, II,
-veda a cobrança e dá à prestadora o ônus de provar que a sua alegação não
-procede.
-
-Queda de nota também conta: o § 5º considera descumprimento contratual o
-rebaixamento do Selo de Qualidade para D ou E num município depois da
-contratação, e a Anatel confirma o direito na pergunta 21 das dúvidas frequentes
-sobre qualidade. Não diz em quanto tempo exercer, nem qual nível do selo conta.
-
-Mesmo sem multa, as parcelas vincendas de aparelho comprado da operadora
-continuam devidas (§ 3º).
-
-Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
-Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). A operadora tem dez dias
-corridos para responder.
-
-## Como cancelar, na prática
-
-O pedido pode ser feito a qualquer tempo, pelos canais disponíveis para a oferta
-contratada, mesmo em atraso (art. 82). Com atendente, o efeito é imediato (art.
-83). Em canal automatizado, vale depois de 2 dias úteis, e nesse prazo você paga
-pelo uso e pode desistir (art. 84).
-
-A saída não pode ficar escondida: o primeiro menu do telefone tem que oferecer
-rescisão automatizada (art. 18, I), e o canal digital, cancelamento sem atendente
-(art. 13, § 3º).
-
-Alternativa: suspensão temporária, uma vez a cada 12 meses, de 30 a 120 dias, sem
-cobrança, com o número mantido e a fidelidade congelada (art. 81). Só para quem
-está em dia.
-
-## Levar o número e desistir em 7 dias
-
-Portar o número é gratuito para você (RGST, art. 92) e leva até 3 dias úteis.
-Detalhei no [post sobre portabilidade](/blog/portabilidade-sem-perder-o-numero).
-E quem contratou pela internet ou por telefone tem 7 dias para desistir, pelo
-art. 49 do Código de Defesa do Consumidor, com ou sem fidelidade, com devolução
-imediata e corrigida.
-
-## Operadora de pequeno porte não segue tudo
-
-Muita operadora virtual se enquadra como prestadora de pequeno porte, e isso
-pesa. O art. 90 do RGC lista os dispositivos aplicáveis a elas: os arts. 36, 37,
-81 e 82 estão na lista; os arts. 31, 38 e 84 não. Pela leitura dessa lista, o
-teto de 12 meses e a multa proporcional valem, mas a obrigação de oferecer a
-mesma oferta sem fidelidade pode não alcançar a operadora pequena.
-
-Mantenho a cautela porque a página da Anatel exibe duas versões do art. 90. Se a
-sua operadora é pequena, confirme no 1331.
-
-## O que eu não confirmei
-
-Além do que marquei acima:
-
-- O teto de fidelidade para pessoa jurídica.
-- Se o prazo de permanência alcança prestadora com até 5.000 acessos (art. 90,
-  § 5º).
-- Como fica fidelidade em plano pré-pago.
-- O prazo para a operadora estornar multa indevida.
-- Sob qual figura regulatória cada operadora virtual opera.
-- A taxa de portabilidade de cerca de R$ 4,00 que sites citam.
-
-Caminho: o texto da norma nas fontes abaixo e o 1331.
-
-## O que isso muda numa operadora virtual
-
-Fidelidade é assunto de contrato, não de tecnologia. Uma operadora móvel virtual
-usa a rede de uma das grandes, então o que decide o seu dia a dia é a cobertura
-onde você usa o celular, o preço sem desconto condicionado e a existência de
-prazo de permanência. Confirme também se ela é de pequeno porte.
-
----
-
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA — é regulação que vale para qualquer
-operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
-jurídica.
-
----
-
-# Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante
-
-URL: https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
-
-Fontes citadas:
-- Anatel — Portabilidade, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
-- Resolução Anatel nº 777, de 28 de abril de 2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-
-## O prazo
-
-A norma da Anatel estabelece prazo de **até 3 dias úteis** contados do pedido para
-que o processo de portabilidade aconteça, e a conclusão **não pode ultrapassar 5
-dias úteis**. Na prática, muita gente vê a troca acontecer antes disso, mas o que
-vale como direito é o prazo máximo.
-
-## O que acontece com a sua linha durante a troca
-
-Existe uma janela de transição em que o telefone pode ficar sem funcionar. Pela
-regra, ela é de **até 2 horas**. É o único momento em que você fica sem serviço.
-
-Vale planejar: se você depende do telefone para trabalhar, peça a portabilidade
-num dia e horário em que uma eventual parada de duas horas não atrapalhe.
-
-## Quanto custa
-
-**Para você, nada.** O art. 92 do Regulamento Geral dos Serviços de
-Telecomunicações (Resolução 777/2025) põe o custo da portabilidade fora do
-usuário.
-
-O valor de **R$ 4,00 por solicitação** circula em muitos sites como teto fixado
-pela Anatel. **Não localizei o dispositivo que o estabeleça**, então não trato
-como confirmado — e corrigi esta seção depois de encontrar a divergência com
-[o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade), que
-cita o artigo.
-
-Se alguém cobrar taxa de portabilidade de você, peça a base normativa por
-escrito e registre no 1331.
-
-## Dá para desistir?
-
-Sim. Você pode **desistir em até 2 dias úteis** contados da data do pedido, sem
-custo. Depois desse prazo, a portabilidade segue até a conclusão.
-
-## O que você precisa ter em mãos
-
-- O número que vai ser portado
-- CPF ou CNPJ do titular da linha
-- Os dados cadastrais que constam na operadora atual
-
-Um detalhe que pega muita gente: a portabilidade acontece **dentro da mesma área
-de registro**, ou seja, o DDD continua o mesmo. Mudar de DDD não é portabilidade,
-é número novo.
-
-## E se eu estiver devendo?
-
-Aqui eu prefiro ser honesto sobre o limite do que verifiquei. Várias fontes
-secundárias afirmam que dívida não impede a portabilidade, e esse entendimento é
-repetido com frequência. **Não localizei o dispositivo exato da norma que diga
-isso**, então não vou apresentar como fato confirmado.
-
-Se esse for o seu caso, ligue para a **Central de Atendimento da Anatel no 1331**
-e pergunte diretamente. É gratuito, e a resposta vem de quem fiscaliza.
-
-Quando eu conseguir a referência normativa, atualizo esta seção.
-
-## Portabilidade para operadora virtual
-
-Para você, o pedido é igual: você solicita na operadora de destino, que cuida do
-resto junto à sua operadora atual.
-
-A diferença é jurídica, e vale saber. No modelo de credenciamento, a numeração é
-da prestadora de origem (art. 221) e quem contrata passa a ser usuário dela
-(art. 237). Na prática, quem recebe o seu número é a rede hospedeira, com a marca
-da virtual na fatura.
-
-O ponto de atenção não é a portabilidade em si, e sim o que vem depois: confirme
-a cobertura da rede que aquela MVNO utiliza na região onde você mais usa o
-celular. É o que determina sua experiência no dia a dia, muito mais do que o
-plano no papel.
-
-Vale uma precisão jurídica: no modelo de credenciamento, a numeração é da
-prestadora de origem e você passa a ser usuário dela, sob a marca da virtual —
-[os dois modelos estão explicados aqui](/blog/o-que-e-operadora-virtual).
-
-## O que eu não confirmei neste texto
-
-- **O artigo exato de cada prazo.** Os prazos de 3 e 5 dias úteis, as 2 horas de
-  transição e os 2 dias úteis para desistir vêm da página da Anatel e da
-  Resolução 777/2025, mas não localizei o dispositivo individual de cada um.
-  Confirme no 1331 antes de usar como base para reclamação.
-- **Se dívida impede a portabilidade.** Tratado na seção acima.
-
----
-
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA como verificada: contratei o plano, o chip
-não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.
-
----
-
 # Operadora virtual pega bem? Como funciona a cobertura
 
 URL: https://movvabrasil.net/blog/operadora-virtual-pega-bem
@@ -1149,3 +1604,106 @@ teste de campo. Trabalho com o que dá para verificar: norma e documento públic
 Escolher uma operadora virtual não é escolher uma cobertura nova; é escolher
 plano, atendimento e contrato sobre uma cobertura que já existe. Pergunte qual é
 a rede, confira a rede, teste a rede.
+
+---
+
+# Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante
+
+URL: https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero
+Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
+
+Fontes citadas:
+- Anatel — Portabilidade, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
+- Resolução Anatel nº 777, de 28 de abril de 2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+
+## O prazo
+
+A norma da Anatel estabelece prazo de **até 3 dias úteis** contados do pedido para
+que o processo de portabilidade aconteça, e a conclusão **não pode ultrapassar 5
+dias úteis**. Na prática, muita gente vê a troca acontecer antes disso, mas o que
+vale como direito é o prazo máximo.
+
+## O que acontece com a sua linha durante a troca
+
+Existe uma janela de transição em que o telefone pode ficar sem funcionar. Pela
+regra, ela é de **até 2 horas**. É o único momento em que você fica sem serviço.
+
+Vale planejar: se você depende do telefone para trabalhar, peça a portabilidade
+num dia e horário em que uma eventual parada de duas horas não atrapalhe.
+
+## Quanto custa
+
+**Para você, nada.** O art. 92 do Regulamento Geral dos Serviços de
+Telecomunicações (Resolução 777/2025) põe o custo da portabilidade fora do
+usuário.
+
+O valor de **R$ 4,00 por solicitação** circula em muitos sites como teto fixado
+pela Anatel. **Não localizei o dispositivo que o estabeleça**, então não trato
+como confirmado — e corrigi esta seção depois de encontrar a divergência com
+[o que a regra garante sobre fidelidade](/blog/operadora-sem-fidelidade), que
+cita o artigo.
+
+Se alguém cobrar taxa de portabilidade de você, peça a base normativa por
+escrito e registre no 1331.
+
+## Dá para desistir?
+
+Sim. Você pode **desistir em até 2 dias úteis** contados da data do pedido, sem
+custo. Depois desse prazo, a portabilidade segue até a conclusão.
+
+## O que você precisa ter em mãos
+
+- O número que vai ser portado
+- CPF ou CNPJ do titular da linha
+- Os dados cadastrais que constam na operadora atual
+
+Um detalhe que pega muita gente: a portabilidade acontece **dentro da mesma área
+de registro**, ou seja, o DDD continua o mesmo. Mudar de DDD não é portabilidade,
+é número novo.
+
+## E se eu estiver devendo?
+
+Aqui eu prefiro ser honesto sobre o limite do que verifiquei. Várias fontes
+secundárias afirmam que dívida não impede a portabilidade, e esse entendimento é
+repetido com frequência. **Não localizei o dispositivo exato da norma que diga
+isso**, então não vou apresentar como fato confirmado.
+
+Se esse for o seu caso, ligue para a **Central de Atendimento da Anatel no 1331**
+e pergunte diretamente. É gratuito, e a resposta vem de quem fiscaliza.
+
+Quando eu conseguir a referência normativa, atualizo esta seção.
+
+## Portabilidade para operadora virtual
+
+Para você, o pedido é igual: você solicita na operadora de destino, que cuida do
+resto junto à sua operadora atual.
+
+A diferença é jurídica, e vale saber. No modelo de credenciamento, a numeração é
+da prestadora de origem (art. 221) e quem contrata passa a ser usuário dela
+(art. 237). Na prática, quem recebe o seu número é a rede hospedeira, com a marca
+da virtual na fatura.
+
+O ponto de atenção não é a portabilidade em si, e sim o que vem depois: confirme
+a cobertura da rede que aquela MVNO utiliza na região onde você mais usa o
+celular. É o que determina sua experiência no dia a dia, muito mais do que o
+plano no papel.
+
+Vale uma precisão jurídica: no modelo de credenciamento, a numeração é da
+prestadora de origem e você passa a ser usuário dela, sob a marca da virtual —
+[os dois modelos estão explicados aqui](/blog/o-que-e-operadora-virtual).
+
+## O que eu não confirmei neste texto
+
+- **O artigo exato de cada prazo.** Os prazos de 3 e 5 dias úteis, as 2 horas de
+  transição e os 2 dias úteis para desistir vêm da página da Anatel e da
+  Resolução 777/2025, mas não localizei o dispositivo individual de cada um.
+  Confirme no 1331 antes de usar como base para reclamação.
+- **Se dívida impede a portabilidade.** Tratado na seção acima.
+
+---
+
+Nota de transparência: este site é mantido por um distribuidor independente da
+MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
+característica de produto da MOVVA como verificada: contratei o plano, o chip
+não chegou e não testei nada em campo. Fontes verificadas em 20/10/2026.
