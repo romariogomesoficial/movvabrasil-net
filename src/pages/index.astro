@@ -26,7 +26,7 @@ import ProximoPasso from '../components/ProximoPasso.astro';
 import CadeiaDeRede from '../components/diagramas/CadeiaDeRede.astro';
 import { Image } from 'astro:assets';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
-import { EMPRESA, AUTOR } from '../data/site.js';
+import { EMPRESA } from '../data/site.js';
 import { linkWhatsApp } from '../data/contato.js';
 
 const atualizadoEm = '2026-10-21';
@@ -128,16 +128,6 @@ const BENEFICIOS = [
         <p class="hero__sub">
           Portabilidade inclusa, gigas que acumulam e sem prazo de permanência.
           E os registros públicos da empresa à mão, para você conferir.
-        </p>
-
-        <!-- Conexão material, antes dos botões e acima da dobra: o CDC art. 36
-             pede que a publicidade seja identificável "fácil e imediatamente",
-             e esta página tem oito botões de contratação. Fica depois da
-             promessa, não entre o título e ela, para não cortar o fôlego do
-             hero — continua sendo a última coisa lida antes do clique. -->
-        <p class="hero__assinatura">
-          Por {AUTOR.nome}, {AUTOR.papel}. Recebo comissão se você contratar por mim.
-          <a href="/avisos-legais">Como eu ganho</a>.
         </p>
 
         <div class="hero__acoes">
@@ -434,9 +424,10 @@ const BENEFICIOS = [
   }
   .hero__sub { font-size: clamp(1.05rem, 2.1vw, 1.26rem); color: var(--muted); max-width: 42ch; }
   .hero__sub strong { color: var(--ink); }
-  /* Entre a promessa e os botões: quem lê a oferta lê também de quem ela é e
-     que eu ganho com ela, sem precisar rolar. Pequena, não escondida. */
-  .hero__assinatura { font-size: 0.86rem; color: var(--muted); max-width: 48ch; }
+  /* A declaração de comissão saiu daqui de propósito: ela interrompia a oferta
+     com aviso jurídico antes de a pessoa querer alguma coisa. Continua no
+     rodapé de toda página e no alto da /movva-e-confiavel, que é onde a
+     afirmação de independência é feita e onde, portanto, ela precisa estar. */
 
   /* Selo de credencial. O ponto pisca uma vez a cada três segundos: é o único
      movimento da página que ninguém precisou clicar para disparar. */
