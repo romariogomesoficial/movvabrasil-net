@@ -2,14 +2,24 @@
 # Este arquivo vai junto com o conteudo de dist/ para dentro de public_html.
 
 # ---------------------------------------------------------------
-# 1. HTTPS obrigatorio
+# 0. Comportamento de diretorio
+# ---------------------------------------------------------------
+# Nunca listar o conteudo de uma pasta.
+Options -Indexes
+
+# /blog existe como arquivo (blog.html) E como pasta (blog/, com os posts).
+# Por padrao o Apache redireciona /blog para /blog/ antes das regras abaixo
+# rodarem, e a pagina do blog responde 403. Desligar isto resolve.
+<IfModule mod_dir.c>
+DirectorySlash Off
+</IfModule>
+
+# ---------------------------------------------------------------
+# 1. Regras que passam antes de tudo
 # ---------------------------------------------------------------
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-# ---------------------------------------------------------------
-# 0. Passa antes de tudo
-# ---------------------------------------------------------------
 # O Let's Encrypt valida o dominio por este caminho. Precisa responder em HTTP
 # puro, sem redirecionamento, senao a emissao do certificado pode falhar.
 RewriteRule ^\.well-known/ - [L]
@@ -45,14 +55,17 @@ RewriteRule ^index\.html$ / [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# Serve o arquivo .html sem mostrar a extensao
-RewriteCond %{REQUEST_FILENAME} !-d
+# Tira a barra final, exceto na raiz.
+# Sem condicao de diretorio de proposito: /blog/ precisa virar /blog, e /blog
+# tambem e uma pasta.
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# Serve o arquivo .html sem mostrar a extensao.
+# NAO acrescente "!-d" aqui. Era isso que quebrava o /blog: a condicao falhava
+# porque existe uma pasta blog/, a regra era pulada, e o Apache redirecionava
+# para /blog/, que nao tem index e responde 403.
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
-
-# Tira a barra final, exceto na raiz
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ /$1 [R=301,L]
 </IfModule>
 
 # ---------------------------------------------------------------
