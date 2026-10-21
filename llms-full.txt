@@ -1585,7 +1585,7 @@ Publicado: 2026-10-20 · Atualizado: 2026-10-20
 Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a conclusão não pode passar de 5 dias úteis. Você mantém o mesmo número, pode desistir em até 2 dias úteis sem custo, e a linha fica indisponível por no máximo 2 horas durante a troca.
 
 Fontes citadas:
-- Anatel — Portabilidade, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
+- Anatel — Portabilidade na telefonia móvel, direitos do consumidor: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/portabilidade
 - Resolução Anatel nº 777, de 28 de abril de 2025: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
 
 ## O prazo
