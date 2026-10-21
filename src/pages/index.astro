@@ -13,8 +13,8 @@ const description =
 <Base {title} {description} path="/" {atualizadoEm} tipo="website">
   <article class="wrap stack--lg stack">
 
-    <header class="stack">
-      <p class="eyebrow">Operadora móvel virtual · Brasil</p>
+    <header class="hero">
+      <p class="eyebrow">Verificado em 21 de outubro de 2026</p>
       <h1>MOVVA Brasil, explicada com documento na mão</h1>
       <p class="answer">
         A MOVVA Brasil se apresenta como operadora móvel virtual e vende planos de
@@ -23,6 +23,26 @@ const description =
         de telecomunicações em todo o país. Esse ato não diz, por si, em qual modelo
         de rede virtual ela opera — isso eu ainda não confirmei.
       </p>
+
+      <!-- A prova logo abaixo da resposta: e o elemento mais caracteristico
+           deste assunto. Cada item leva ao registro que o sustenta. -->
+      <div class="provas">
+        <a class="prova" href={EMPRESA.fontes.receita} rel="nofollow noopener">
+          <span class="estado estado--verificado">Registro público</span>
+          <span class="prova__dado">CNPJ {EMPRESA.cnpj}</span>
+          <span class="prova__onde">Receita Federal</span>
+        </a>
+        <a class="prova" href={EMPRESA.fontes.anatel} rel="nofollow noopener">
+          <span class="estado estado--verificado">Registro público</span>
+          <span class="prova__dado">{EMPRESA.atoAnatel}</span>
+          <span class="prova__onde">Processo {EMPRESA.processoSei} no SEI</span>
+        </a>
+        <div class="prova prova--aberta">
+          <span class="estado estado--aberto">Em aberto</span>
+          <span class="prova__dado">Em qual modelo de rede virtual a empresa opera</span>
+          <span class="prova__onde">Não confirmei</span>
+        </div>
+      </div>
     </header>
 
     <section class="stack">
@@ -123,3 +143,43 @@ const description =
 
   </article>
 </Base>
+
+<style>
+  .hero { display: flex; flex-direction: column; gap: 1.3rem; padding-block-end: 0.6rem; }
+  .hero h1 { max-width: 20ch; }
+
+  .provas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 0.9rem;
+    margin-top: 0.4rem;
+  }
+  .prova {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--ink);
+    min-width: 0;
+  }
+  a.prova:hover { border-color: var(--accent); }
+  /* O item em aberto atravessa a linha inteira em vez de sobrar sozinho numa
+     coluna. Não é só arrumação: ele é de outra natureza, e a largura diz isso. */
+  .prova--aberta {
+    background: transparent;
+    border-style: dashed;
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+  }
+  .prova--aberta .prova__onde { margin-left: auto; }
+  .prova__dado { font-weight: 600; font-size: 0.95rem; line-height: 1.35; }
+  .prova__onde { font-size: 0.82rem; color: var(--muted); }
+</style>
