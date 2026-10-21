@@ -816,7 +816,7 @@ Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que s
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
-A empresa anuncia, em material comercial, dupla conectividade TIM e Vivo num único chip. Eu não testei, o chip não chegou, e não localizei página pública dela que sustente essa afirmação técnica — quem a repete são blogs de afiliado, que não são fonte aqui. Não valido nem invalido a promessa: entrego o método.
+A MOVVA publica a dupla conectividade TIM e Vivo num único chip como o primeiro dos seis diferenciais do plano, no material oficial "Diferenciais planos de telefonia MOVVA". O documento afirma o quê, não o como: não diz se o arranjo é roaming, multi-IMSI ou credenciamento com mais de uma prestadora de origem, que são coisas diferentes e com consequências diferentes para você. E eu não testei, porque o chip não chegou. Não valido nem invalido a promessa: entrego o método.
 
 ## Como você confere sozinho quando o chip chegar
 
@@ -1099,8 +1099,9 @@ fidelidade e multa](/blog/operadora-sem-fidelidade).
   a revalidar.
 - Qual é o teto de acúmulo em cada operadora, e o que acontece num atraso de
   fatura.
-- Se a MOVVA Brasil acumula franquia e sob quais condições. Não localizei
-  regulamento de oferta em fonte primária; o que a empresa anuncia é da empresa.
+- Sob quais condições a MOVVA acumula. O material oficial da empresa diz
+  "gigas acumulativos infinitos", sem teto e sem ressalva; o regulamento da
+  oferta, que é onde as condições de verdade ficam, eu não localizei.
 
 Onde confirmar: o regulamento da oferta, por escrito, e o 1331.
 
