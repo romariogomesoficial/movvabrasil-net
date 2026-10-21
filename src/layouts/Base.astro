@@ -210,9 +210,36 @@ const dataLegivel = atualizadoEm
   .marca { font-family: var(--display); font-size: 1.22rem; text-decoration: none; color: var(--ink); }
   .marca span { color: var(--accent); }
 
-  .nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; list-style: none; padding: 0; margin: 0; font-size: 0.94rem; }
+  /* flex-direction: row é obrigatório aqui. O global.css transforma todo ul do
+     site em coluna, para o espaçamento de listas de texto, e o menu herdava
+     isso — ficava uma linha por item, em toda largura de tela. */
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.94rem;
+  }
   .nav a { color: var(--muted); text-decoration: none; }
   .nav a:hover, .nav a[aria-current="page"] { color: var(--accent); }
+
+  /* No celular o menu ao lado da marca empilhava em coluna e o cabeçalho
+     comia 156px — 27% da primeira tela antes do título aparecer. Empilhando
+     marca e menu, o menu volta a ser uma linha e o cabeçalho cai pela metade. */
+  @media (max-width: 34rem) {
+    .cabecalho { padding-block: 0.7rem; }
+    .cabecalho__linha { flex-direction: column; align-items: flex-start; gap: 0.45rem; }
+    /* Sem largura total o <nav> encolhe para o item mais largo e a lista
+       quebra uma linha por item — foi o que fez o cabeçalho crescer em vez
+       de diminuir na primeira tentativa. */
+    .cabecalho__linha > nav { width: 100%; }
+    .nav { gap: 0.25rem 1.1rem; font-size: 0.88rem; }
+    .marca { font-size: 1.1rem; }
+    .vinculo-barra { font-size: 0.74rem; padding-block: 0.4rem; }
+  }
 
   .rodape {
     margin-top: 4rem;
