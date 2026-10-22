@@ -1,7 +1,7 @@
 ---
 title: "O que você paga no primeiro mês, somado"
 description: "Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 em material de distribuidor, três valores que eu não achei e a portabilidade."
-resposta: "No Liberty de 25 GB, a mensalidade é R$ 79,90 — conferida em material de divulgação da rede de distribuidores, não em documento da MOVVA. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas."
+resposta: "No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas."
 cluster: marca
 publicado: 2026-10-21
 atualizado: 2026-10-21
@@ -34,13 +34,13 @@ fontes:
 
 Antes do botão de contratar, a conta somada. Quem vai pagar precisa ver o total antes de decidir, e não depois.
 
-Esta é a conta do **Liberty, 25 GB**, que é o plano que eu mais indico. Cada linha diz de onde saiu o número e com que peso: documento público, documento da própria MOVVA, material de divulgação da rede de distribuidores, ou nada. As linhas sem número estão aqui porque eu não encontrei o documento — não porque eu esqueci de preencher.
+Esta é a conta do **Liberty, 25 GB**, que é o plano que eu mais indico. Cada linha diz de onde saiu o número e com que peso: documento público, documento da própria MOVVA, ou nada. As linhas sem número estão aqui porque eu não encontrei o documento — não porque eu esqueci de preencher.
 
 São quatro linhas sem valor, e todas as quatro entram no total: o chip, a entrega, a eventual taxa de ativação e a portabilidade, que a norma da Anatel permite cobrar.
 
 | Componente | Valor | De onde vem |
 |---|---|---|
-| Mensalidade do Liberty, 25 GB | R$ 79,90/mês | material de divulgação da rede de distribuidores, conferido em 21/10/2026 — não é documento da MOVVA |
+| Mensalidade do Liberty, 25 GB | R$ 79,90/mês | deck institucional da MOVVA, página 31, conferido em 21/10/2026 — documento da empresa, sem data de emissão |
 | Portabilidade do seu número | pode ser cobrada; valor não confirmado | RGST, art. 70, lido em 21/10/2026: quem pode cobrar é a operadora de destino, e ela pode dispensar (§ 3º). A MOVVA é a operadora de destino quando você porta para ela, e eu não localizei documento da MOVVA dizendo se cobra ou dispensa |
 | Chip, o SIM card em si | não localizei valor | nenhum documento que eu tenha em arquivo traz o valor |
 | Entrega do chip no seu endereço | não localizei valor | idem — e, se houver ativação por eSIM, pode não haver entrega |
@@ -49,7 +49,7 @@ São quatro linhas sem valor, e todas as quatro entram no total: o chip, a entre
 
 ## O que eu consegui conferir, e com que peso
 
-**R$ 79,90 por mês, 25 GB — conferido, mas não em documento da empresa.** Eu confiro esse valor em material de divulgação da rede de distribuidores, em 21 de outubro de 2026. O documento oficial da MOVVA que eu tenho em arquivo, "Diferenciais planos de telefonia MOVVA", lista os seis diferenciais dos planos e não traz tabela de preços. Então este número não tem o peso de documento da empresa: confirme o valor vigente na própria página de contratação antes de pagar. Preço de telefonia muda.
+**R$ 79,90 por mês, 25 GB — conferido em documento da empresa.** A página 31 do deck institucional da MOVVA traz os cinco planos com nome, franquia e preço, sob o título "Nossos Planos — Sem pegadinhas. Sem asteriscos. Preto no branco."; eu conferi na própria página em 21 de outubro de 2026. O que esse documento não tem é endereço público nem data de emissão: confirme o valor vigente na própria página de contratação antes de pagar. Preço de telefonia muda.
 
 Uma reconciliação, porque o meu próprio site publica outro número. Em [os meus números, abertos](/oportunidade) eu declaro R$ 159,80 de custo mensal do meu plano, e a mesma cifra aparece na minha resposta sobre quanto se ganha, que também sai em [a análise da empresa](/movva-e-confiavel) e em [as perguntas frequentes](/perguntas-frequentes). É o dobro desta mensalidade. Eu não abri a minha fatura para escrever esta página, então não digo aqui o que esse valor cobre: fica em aberto. A conta desta página é a de quem contrata um Liberty de 25 GB hoje, não a minha.
 
@@ -126,9 +126,9 @@ E se a resposta que você receber for diferente do que está nesta página, a re
 - Se a MOVVA cobra ou dispensa a portabilidade. A norma permite as duas: o art. 70 do RGST deixa a operadora de destino cobrar do usuário portado, e o § 3º deixa ela dispensar a cobrança e pagar a Entidade Administradora no lugar dele. Quando você porta para a MOVVA, é ela que ocupa esse lugar, e eu não localizei documento da MOVVA dizendo o que ela faz.
 - O teto da cobrança de portabilidade. O art. 70, § 1º do RGST remete o valor máximo a Ato do Conselho Diretor publicado no Diário Oficial, e eu não localizei esse Ato. Os R$ 4,00 vêm do DECON/MPCE e do Idec, que são fonte de defesa do consumidor, não o Ato — e são teto, não preço.
 - Se a MOVVA se enquadra como Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" do dossiê da empresa é classificação da Receita Federal, outra coisa. Isso pesa no pacote de atendimento do RGC, cuja lista está no art. 90, e não na linha da portabilidade, que é do RGST.
-- A origem do preço de R$ 79,90. Ele vem de material de divulgação da rede de distribuidores, não de documento da MOVVA: o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela de preços.
+- A data do deck. O preço de R$ 79,90 sai da página 31 do deck institucional da MOVVA, que não traz data de emissão nem número de versão. É a melhor fonte que eu tenho sobre preço e ainda assim não se data sozinha.
 - O preço do SKY+ Light, o que o pacote inclui e se ele é vendido à parte ou embutido na mensalidade. Eu só tenho a linha de comissão no meu próprio extrato, de R$ 8,66, no período de 7 de julho a 30 de setembro de 2026 — e linha de comissão não diz como o pacote é vendido ao cliente.
 - Se a MOVVA oferece ativação por eSIM, o que mudaria a linha da entrega. Não achei material da empresa que afirme nem que negue; o dossiê cita SIM Cards e eSIMs no contrato com a parceira de rede, e isso não é a oferta ao cliente.
 - Quanto eu mesmo paguei. Pedi o chip em 20 de outubro de 2026, ele não chegou, e eu não abri o pedido para escrever esta página. E eu publico um custo mensal de R$ 159,80 do meu plano, em /oportunidade e na minha resposta sobre quanto se ganha: é o dobro desta mensalidade, não abri a minha fatura, então não digo aqui o que esse valor cobre.
 - O texto oficial no portal da Anatel. Os endereços do RGST e do RGC em informacoes.anatel.gov.br responderam HTTP 520 em 21/10/2026. Os artigos citados aqui eu li no DataLegis, o sistema federal de legislação, no mesmo dia. Reconferir no portal da Anatel quando ele voltar.
-- Os documentos da MOVVA citados aqui não têm endereço público. São arquivos que eu tenho em pasta — "Diferenciais planos de telefonia MOVVA", o dossiê da empresa, o material de lançamento de julho de 2026 e as páginas de divulgação da rede de distribuidores. Por isso eles aparecem nomeados, e não linkados: nenhum deles entra na lista de fontes, que é de endereço público.
+- Os documentos da MOVVA citados aqui não têm endereço público. São arquivos que eu tenho em pasta — o deck institucional, "Diferenciais planos de telefonia MOVVA", o dossiê da empresa, o material de lançamento de julho de 2026 e as páginas de divulgação da rede de distribuidores. Por isso eles aparecem nomeados, e não linkados: nenhum deles entra na lista de fontes, que é de endereço público.

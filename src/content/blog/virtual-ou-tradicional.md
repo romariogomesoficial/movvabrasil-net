@@ -140,6 +140,17 @@ de resposta ao teto de fidelidade com multa proporcional: arts. 10, 18 (I a III)
   237, § 2º), lista de credenciados no site dela (art. 218) e contrato válido só se
   homologado (arts. 232 e 233).
 
+## Se a empresa trocar de modelo
+
+A troca depende de você, nos dois sentidos. De credenciado para autorizada do
+SMP, a migração do usuário "depende de sua prévia comunicação e concordância" e,
+sem ela, implica garantia de adesão a uma das ofertas da Prestadora Origem ou
+rescisão sem qualquer ônus, se você assim optar (RGST, art. 261, parágrafo
+único). No caminho inverso, de autorizada para credenciado de rede virtual, a
+migração também depende de comunicação prévia e concordância e, sem ela, implica
+"na rescisão do contrato de prestação do SMP sem qualquer ônus ao usuário" (art.
+262).
+
 ## Como decidir, em cinco perguntas
 
 1. Credenciada ou autorizada de rede virtual?
@@ -163,9 +174,6 @@ entre arranjos de responsabilidade sobre uma cobertura que já existe.
 - **Que o credenciado não detenha outorga de SMP**: nenhuma norma que abri afirma
   isso em letra; é o que decorre do contraste entre os arts. 216 e 239 do RGST —
   leitura minha.
-- **O art. 262 e a migração entre os dois modelos**: não localizei o dispositivo.
-  Eu o citava para dizer que migrar de autorizada para credenciada depende da sua
-  concordância; tirei a afirmação até conseguir ler o artigo.
 - **Se o Capítulo XII do RGST está todo em vigor**, se as duas redações do art. 90
   divergem além do art. 2º, a quem os painéis computam a reclamação e se há
   despriorização em pico.

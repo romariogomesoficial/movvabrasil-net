@@ -66,7 +66,7 @@ export const PERGUNTAS = [
     paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Quanto custa o plano da MOVVA?',
-    r: `Os planos da MOVVA vão de R$ ${MENOR.preco} por ${MENOR.gb} GB a R$ ${MAIOR.preco} por ${MAIOR.gb} GB, em cinco faixas. O ${RECOMENDADO.nome}, de ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco}, é o que eu mais indico. Valores conferidos em ${fmtData(CONFERIDO_EM)} em material de divulgação da rede de distribuidores, não em documento da própria MOVVA; confirme o preço vigente na página de contratação antes de pagar.`,
+    r: `Os planos da MOVVA vão de R$ ${MENOR.preco} por ${MENOR.gb} GB a R$ ${MAIOR.preco} por ${MAIOR.gb} GB, em cinco faixas. O ${RECOMENDADO.nome}, de ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco}, é o que eu mais indico. Valores publicados pela empresa na página 31 do deck institucional dela e conferidos em ${fmtData(CONFERIDO_EM)}; o deck não traz data de emissão, então confirme o preço vigente na página de contratação antes de pagar.`,
   },
   {
     paginas: ['/planos'],

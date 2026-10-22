@@ -1,13 +1,15 @@
 ---
 title: "O que é operadora virtual (MVNO) e como funciona no Brasil"
 description: "Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar."
-resposta: "Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre a infraestrutura de uma operadora com antenas e espectro, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem."
+resposta: "Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem."
 cluster: categoria
 publicado: 2026-10-20
-atualizado: 2026-10-20
+atualizado: 2026-10-21
 fontes:
   - rotulo: "Anatel — MVNO (Regulado > Outorga > Telefonia Móvel)"
     url: "https://www.gov.br/anatel/pt-br/regulado/outorga/telefonia-movel/mvno"
+  - rotulo: "Anatel — Glossário do Setor de Telecomunicações, Anexo da Resolução nº 779, de 28/04/2025 (Prestadora Origem, art. 1º, CCCLXVIII)"
+    url: "https://www.in.gov.br/web/dou/-/resolucao-anatel-n-779-de-28-de-abril-de-2025-626968487"
   - rotulo: "Anatel — Resolução nº 777, de 28 de abril de 2025 (RGST)"
     url: "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777"
   - rotulo: "Anatel — Resolução nº 550, de 22 de novembro de 2010 (REVOGADA)"
@@ -34,8 +36,16 @@ fontes:
 Mobile Virtual Network Operator.
 
 "Virtual" não quer dizer digital, nem pequena: quer dizer que a rede não é dela.
-A dona da rede é o que a Anatel chama de prestadora de origem, quem tem as
-antenas e o espectro. A virtual opera sobre essa infraestrutura, por contrato.
+Ela opera, por contrato, sobre a infraestrutura da prestadora de origem — que o
+Glossário da Anatel define como a autorizada do SMP com quem a credenciada ou a
+autorizada de rede virtual tem relação para explorar o SMP por meio de rede
+virtual (Anexo da Resolução 779/2025, art. 1º, CCCLXVIII).
+
+Na prática a origem costuma ser dona de rede, mas a norma não exige isso: o
+RGST, art. 258, admite que uma autorizada de rede virtual seja prestadora de
+origem de credenciados na mesma região geográfica — só não pode ser origem de
+outras autorizadas de rede virtual. Quem carrega a sua linha é a origem; quem
+tem antena e espectro é uma pergunta à parte, e vale fazer por escrito.
 
 ## Quais são os dois modelos no Brasil?
 
@@ -62,7 +72,7 @@ página da Anatel marca o título como REVOGADA e aponta a revogação pela 777,
 
 Da prestadora de origem, se contratou por uma credenciada. É o Art. 237, o ponto
 mais importante do modelo para o consumidor: a relação formal de usuário do SMP
-é com a operadora que tem a rede.
+é com a prestadora de origem, não com a marca que vendeu.
 
 Isso não dilui responsabilidade: a existência de um credenciado não desobriga a
 prestadora de origem do que ela assumiu, e a qualidade do serviço dela deve ser

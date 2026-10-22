@@ -362,57 +362,67 @@ const BENEFICIOS = [
     </div>
   </section>
 
-  <!-- ===================== 4. VIRTUAL x TRADICIONAL ===================== -->
+  <!-- ===================== COMPARAÇÃO =====================
+       Substitui "Operadora virtual ou tradicional?", que comparava MODELOS de
+       forma abstrata. Esta compara OPERADORAS com nome e número.
+       A ideia que a torna útil, e que a página inteira segue: separar o que é
+       foto do dia — preço, promoção, bônus com prazo — do que é estrutural.
+       Preço muda toda semana; quem responde por você não muda.
+       E ela diz onde a MOVVA perde. Comparação em que o lado de quem escreve
+       ganha em tudo não convence ninguém, e aqui seria falsa: a aritmética da
+       TIM é a que é. -->
   <section class="faixa">
     <div class="wrap wrap--wide stack">
       <header class="cabeca">
-        <h2>Operadora virtual ou tradicional?</h2>
-        <p class="lede">A diferença não está no sinal — está em quem cuida do quê.</p>
+        <h2>MOVVA, Vivo, Claro e TIM</h2>
+        <p class="lede">
+          Duas coisas diferentes são vendidas na mesma tabela por aí. Aqui elas
+          ficam separadas: o que muda toda semana, e o que a norma garante.
+        </p>
       </header>
 
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">No dia a dia</th>
-              <th scope="col">Virtual (MOVVA)</th>
-              <th scope="col">Tradicional</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Cobertura</th>
-              <td>A da rede hospedeira</td>
-              <td>A da própria rede</td>
-            </tr>
-            <tr>
-              <th scope="row">Prioridade em horário de pico</th>
-              <td>Pode ficar atrás do tráfego da hospedeira</td>
-              <td>Tráfego próprio</td>
-            </tr>
-            <tr>
-              <!-- Fidelidade é cláusula de contrato, não propriedade do modelo:
-                   os arts. 36 e 37 do RGC valem para os dois lados, e o teto de
-                   12 meses é limite legal, não média levantada. -->
-              <th scope="row">Fidelidade</th>
-              <td>A MOVVA publica que não tem prazo de permanência</td>
-              <td>Pode ter prazo: teto de 12 meses e multa proporcional ao tempo restante (RGC, arts. 36 e 37) — regra que vale para os dois modelos</td>
-            </tr>
-            <tr>
-              <th scope="row">Loja física</th>
-              <td>Atendimento remoto</td>
-              <td>Rede de lojas</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="comparo">
+        <article class="comparo__bloco">
+          <p class="comparo__chapeu">Foto do dia</p>
+          <p>
+            Preço, promoção e bônus com prazo. O número grande no card das
+            grandes raramente é a franquia de uso livre: na TIM, a
+            etiqueta-padrão da Anatel registra <strong>15 GB</strong> onde o
+            card anuncia 25 — o resto é bônus de 12 meses.
+          </p>
+          <p class="meta-line">
+            E a conta honesta: no preço por giga lido em 21/10/2026, as três
+            ofertas Fit da TIM saem <strong>abaixo</strong> dos cinco planos da
+            MOVVA. Está na tabela, com a conta aberta.
+          </p>
+        </article>
+
+        <article class="comparo__bloco">
+          <p class="comparo__chapeu">Estrutural</p>
+          <p>
+            De quem é a rede, quem responde pelos seus direitos, qual
+            atendimento a norma exige e o que acontece se a marca sair do ar.
+            Isso está em resolução da Anatel e não muda com a promoção do mês.
+          </p>
+          <p class="meta-line">
+            É onde a diferença entre operadora virtual e tradicional realmente
+            aparece — e onde ela nem sempre favorece a maior.
+          </p>
+        </article>
       </div>
 
+      <p>
+        <a class="btn btn--ghost" href="/blog/movva-vivo-claro-tim">
+          Ver as duas tabelas, lado a lado
+        </a>
+      </p>
+
       <p class="meta-line">
-        Comparo modelos, não marcas: dizer que uma operadora específica é pior
-        exigiria prova de cada linha, e eu não tenho. Franquia que acumula não
-        entra na tabela porque não é diferença de modelo — é o regulamento de
-        cada oferta, e há oferta tradicional que acumula.
-        <a href="/blog/virtual-ou-tradicional">Abro a conta inteira aqui</a>.
+        Cada número de concorrente vem com link para a página dela e a data em
+        que eu li. Os da MOVVA são anunciados pela empresa, no deck
+        institucional. Nada aqui foi medido por mim:
+        {' '}<a href="/blog/virtual-ou-tradicional">o que muda entre os dois
+        modelos está neste texto</a>.
       </p>
     </div>
   </section>
@@ -838,6 +848,24 @@ const BENEFICIOS = [
   /* O link precisa de elemento próprio: dentro da string de texto o Astro
      escaparia a tag e a pessoa leria o HTML cru. */
   .beneficio__link { font-size: 0.86rem; margin-top: auto; padding-top: 0.2rem; }
+
+  /* ---------------- comparação ---------------- */
+  .comparo { display: grid; gap: 1rem; }
+  @media (min-width: 46rem) { .comparo { grid-template-columns: 1fr 1fr; } }
+  .comparo__bloco {
+    padding: 1.2rem;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--surface);
+    min-width: 0;
+  }
+  .comparo__chapeu {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin: 0 0 0.6rem;
+  }
+  .comparo__bloco p { font-size: 0.95rem; }
 
   /* ---------------- cobertura ---------------- */
   /* Os três passos numerados: aqui a numeração é informação, não enfeite —

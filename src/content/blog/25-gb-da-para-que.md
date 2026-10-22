@@ -113,7 +113,7 @@ Use esta tabela para saber em que ordem de grandeza você está pisando, e a tab
 
 Esta é a tabela que responde à pergunta do título. Cada célula é a franquia dividida pelo consumo por hora da linha — nada além disso. A última linha é a exceção: navegação se mede por página, então ali a divisão devolve páginas, não horas.
 
-**De onde vêm os cinco nomes e as cinco franquias:** material de divulgação da rede de distribuidores, conferido em 21 de outubro de 2026. Não é documento da própria MOVVA. O documento oficial que eu tenho, "Diferenciais planos de telefonia MOVVA", lista os diferenciais dos planos e não traz tabela de franquia nem de preço. Confirme na página de contratação antes de pagar.
+**De onde vêm os cinco nomes e as cinco franquias:** da página 31 do deck institucional da MOVVA, sob o título "Nossos Planos — Sem pegadinhas. Sem asteriscos. Preto no branco.", onde os cinco planos aparecem com nome, franquia e preço. Conferida em 21 de outubro de 2026. É documento da empresa, sem endereço público e sem data de emissão — confirme na página de contratação antes de pagar.
 
 **Como ler:** nas linhas marcadas como *piso*, o insumo é teto — teto publicado, nas de vídeo; nas de chamada, o requisito de banda do Zoom lido por mim como teto —, então a célula é mínimo: "35 h" ali quer dizer "no mínimo 35 h", com a qualidade travada na da linha. Nas linhas de música e de páginas, o insumo é aproximado, e a célula vai com "~".
 
@@ -167,7 +167,7 @@ Uma hora por dia a até 3 GB por hora são até 90 GB no mês. Nenhuma das cinco
 
 O que isso quer dizer na prática, e é o oposto do que um vendedor diria: antes de subir de plano, abra a configuração de qualidade de vídeo do aplicativo que você mais usa. Entre "Média" e "Alta em HD", o teto publicado é mais de quatro vezes maior, e em tela de celular muita gente não distingue as duas. Baixar série e podcast no wi-fi, para ver depois, resolve mais que 25 GB extras.
 
-Se o seu mês é irregular — um mês de viagem, um mês inteiro em casa —, o que decide não é o tamanho da franquia: é se a sobra acumula. A MOVVA **anuncia** gigas acumulativos no documento oficial de diferenciais dos planos, sem teto e sem ressalva; o regulamento da oferta, que é onde as condições ficam, eu não localizei. [O que eu consegui e o que não consegui confirmar sobre acúmulo está aqui](/blog/internet-que-acumula).
+Se o seu mês é irregular — um mês de viagem, um mês inteiro em casa —, o que decide não é o tamanho da franquia: é se a sobra acumula. A MOVVA **anuncia** gigas acumulativos, e o deck institucional dela fecha a condição e o horizonte: "Pagando até a data do vencimento, seus gigas não utilizados permanecem disponíveis no próximo mês". O regulamento da oferta, que é onde o teto e a ordem de consumo ficariam, eu não localizei. [O que eu consegui e o que não consegui confirmar sobre acúmulo está aqui](/blog/internet-que-acumula).
 
 ## 25 GB comparados ao que o Brasil consome
 
@@ -197,7 +197,7 @@ E uma divergência que eu não resolvo: o Panorama do 2º trimestre de 2026 traz
 
 Se a franquia é o que você está comprando, vale ver o preço dela. Isto é só o preço dividido pelos gigas.
 
-**De onde vêm os cinco preços:** o mesmo material de divulgação da rede de distribuidores, conferido em 21 de outubro de 2026. Não é documento da própria MOVVA, que não traz tabela de preços. Confirme o valor vigente antes de pagar.
+**De onde vêm os cinco preços:** a mesma página 31 do deck institucional da MOVVA, conferida em 21 de outubro de 2026. É documento da empresa, sem endereço público e sem data de emissão — confirme o valor vigente antes de pagar.
 
 O giga fica mais barato quanto maior o plano, e o salto maior está entre o Plus e o Liberty: R$ 6,00 a mais no mês por 10 GB a mais. Entre o Max e o Ultra, 15 GB a mais custam R$ 30,00.
 
@@ -261,9 +261,9 @@ O melhor plano não é o que tem mais giga nem o que tem o giga mais barato. É 
 - **Se a MOVVA se enquadra como prestadora de pequeno porte.** Que a média da Anatel exclui esse porte, a própria agência diz no título da seção em que publica a edição, aberta em 21/10/2026. O que eu não tenho é documento que diga em que porte a MOVVA está — é enquadramento comum entre as virtuais, e é o mesmo filtro que decide quais artigos do RGC são exigíveis dela, pelo art. 90. Confirme no 1331.
 - **A divergência do consumo do 2T25.** O Panorama do 2T26 traz 5,82 GB para o 2T25; o Panorama do 2T25, que eu também abri, traz 5,56 GB, no gráfico e na tabela por estado. Nenhum dos dois PDFs traz nota de revisão de série. A página da publicação lista, entre as edições do 3T25 e do 2T25, um documento chamado "Panorama Econômico-Financeiro - Retificação Dados UF": abri em 21/10/2026, são cinco páginas de série histórica de 1T23 a 1T25, com o Brasil terminando em 4,58 GB no 1T25. Ou seja, a Anatel retifica essa série — mas a retificação não alcança o trimestre em divergência.
 - **O recorte por estado do consumo médio, na edição mais nova.** Extraí o texto dos dois PDFs em 21/10/2026. O Panorama do 2T26 não traz consumo por unidade da federação: as suas duas páginas por estado trazem proxy-preço e ARPU, de SMP e de SCM. Quem traz é o Panorama do 2T25, em tabela com texto legível — "Consumo SMP por usuário (em GB)", com o Brasil em 5,56 GB — e também a Retificação Dados UF, que vai de 1T23 a 1T25. O recorte por estado existe, portanto, mas não na edição de que esta página tira os 6,80 GB, e por isso não comparo franquia com média estadual.
-- **A origem dos preços e das franquias dos cinco planos.** Os cinco nomes, as cinco franquias e os cinco preços eu confiro em material de divulgação da rede de distribuidores, não em documento da própria MOVVA: o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela. Confirme na página de contratação antes de pagar.
+- **A data do deck.** Os cinco nomes, as cinco franquias e os cinco preços saem da página 31 do deck institucional da MOVVA, conferida em 21 de outubro de 2026. O deck não traz data de emissão nem número de versão: é a melhor fonte que eu tenho sobre preço e ainda assim não se data sozinha. Confirme na página de contratação antes de pagar.
 - **O que acontece quando a franquia acaba.** Se a velocidade é reduzida, se o acesso é bloqueado ou se há pacote extra pago, e a que preço, não consta do material de planos que eu li. Está no regulamento da oferta, que eu não localizei. Pergunte por escrito antes de contratar — é o custo de errar o plano para baixo.
-- **Sob quais condições a MOVVA acumula a franquia.** A empresa anuncia gigas acumulativos no documento oficial de diferenciais, sem teto e sem ressalva. O regulamento da oferta, onde ficariam prazo, teto e ordem de consumo, eu não localizei.
+- **Até quando vale o saldo acumulado da MOVVA.** O deck institucional fecha a condição — pagar até a data do vencimento — e o horizonte — o próximo mês. O regulamento da oferta, onde ficariam teto e ordem de consumo, eu não localizei, e o que sobrou em janeiro ainda estar lá em março é a pergunta que nenhum material da empresa responde.
 - **Se o GB da franquia MOVVA é contado a 1.000 MB ou a 1.024 MB.** Isso muda todas as horas desta página em cerca de 7%. Não localizei a definição no material da empresa.
 - **Se existe qualquer gestão de qualidade de vídeo na rede usada pela MOVVA.** Operadora pode limitar resolução de streaming por política de oferta, e isso mudaria o consumo por hora na prática. Não localizei o regulamento da oferta que trate disso.
 - **Nenhum número desta página foi medido por mim na rede da MOVVA.** São contas sobre o que as plataformas publicam. O chip que eu pedi em 20 de outubro de 2026 ainda não chegou, e medição em campo é outra coisa.
