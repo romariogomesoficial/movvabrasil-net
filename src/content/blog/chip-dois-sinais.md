@@ -69,7 +69,7 @@ O mecanismo que troca de rede quando a atual falha existe como norma, do lado de
 
 Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada também pode, com mais de um contrato de compartilhamento (Art. 241, § 2º); o acordo de visitante tem base própria (Art. 226). A diferença entre credenciada e autorizada está [neste post](/blog/o-que-e-operadora-virtual).
 
-Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado acima de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
+Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado: o art. 66, § 4º o define como acampamento fora da área de prestação por mais de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
 
 ## Sobre a MOVVA: o que eu posso e não posso dizer
 
@@ -77,7 +77,11 @@ Por um tempo eu só pude dizer que a MOVVA publicava "dupla conectividade TIM e 
 
 O deck institucional da empresa responde, e é específico: **"Rede TIM + Roaming da VIVO"**. Não são duas redes contratadas. A principal é a da TIM; a Vivo entra por roaming.
 
-Isso tem uma consequência que vale conhecer antes de contratar, e ela está na seção acima: o **art. 66 do PGMC** veda o roaming permanente acima de 90 dias corridos. É regra que vincula as prestadoras, não você — mas uma característica vendida como permanente do plano convive com um limite que a norma trata como temporário, e eu não achei documento que explique como. Pode haver enquadramento que eu desconheça; pode não haver.
+Isso tem uma consequência que vale conhecer antes de contratar. O **art. 66, § 4º, do PGMC** veda o roaming permanente, e define a prática como o acampamento de usuário **fora da área de prestação** por mais de 90 dias corridos. É regra de atacado: as consequências que a norma prevê, no § 5º, são multa ou rescisão do contrato de Roaming Nacional entre as prestadoras, com um ano de impedimento para novo contrato regulado. Nada no artigo autoriza bloquear, desconectar ou penalizar você.
+
+Duas precisões mudam a leitura, e as duas estão no próprio texto da norma. A primeira: o limite se mede pela **área de prestação**, que é o alcance da outorga, e não pelo mapa de antenas — conectividade dentro da área da prestadora contratante não é roaming nacional, por definição do art. 36, IV do mesmo Plano. A segunda: a regra brasileira permite, por escrito, que uma operadora virtual tenha contrato com **mais de uma prestadora de origem** na mesma área de registro (RGST, arts. 217, parágrafo único, e 241, § 2º), e manda considerar como parte da rede da própria autorizada os recursos contratados em exploração industrial (art. 242). Nesses desenhos não existe acampamento fora da área, a segunda rede não é o Roaming Nacional de que trata o art. 66, e o teto de 90 dias não entra na conta.
+
+Então o que falta aqui não é explicação para uma contradição: é um documento que diga **sob qual instrumento a Vivo entra**. O deck chama de "roaming", mas é peça comercial, não contrato — e a palavra numa peça de venda não decide o enquadramento.
 
 Não valido nem invalido a promessa: entrego o método para você conferir sozinho, e o estado do meu próprio teste está na nota ao pé desta página.
 
@@ -96,7 +100,7 @@ Não valido nem invalido a promessa: entrego o método para você conferir sozin
 Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
 
 - **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
-- **Como um roaming vendido como permanente convive com o teto de 90 dias do art. 66 do PGMC.** O deck da empresa descreve a Vivo como roaming; a norma trata roaming permanente como vedado acima desse prazo. Não achei documento que resolva, e é o ponto que eu mais gostaria de ver respondido por escrito.
+- **Sob qual instrumento a Vivo entra no chip.** Não achei documento da empresa dizendo qual é a prestadora de origem, qual é a área de prestação, e se a Vivo entra por contrato de Roaming Nacional, por acordo de atendimento a usuário visitante (RGST, art. 226), por exploração industrial ou por compartilhamento com uma segunda origem. Sem isso não dá para afirmar que o art. 66 alcança este plano, nem que não alcança. É o ponto que eu mais gostaria de ver respondido por escrito, com protocolo.
 - **Se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. O dossiê institucional dela descreve a operação por outra cadeia, citando contrato com a ISPS do Brasil (TIP Brasil) sobre infraestrutura da ARQIA, sem mencionar TIM nem Vivo. Os dois documentos são da empresa e não fecham entre si.
 - **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
 - **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
