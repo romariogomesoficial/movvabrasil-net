@@ -3,8 +3,513 @@
 Site de distribuidor independente. Não é canal oficial da MOVVA Brasil Ltda.
 Autor: Romário Gomes de Paula, Distribuidor independente MOVVA.
 
-Este arquivo traz o texto integral dos 16 artigos do blog, para
+Este arquivo traz o texto integral dos 19 artigos do blog, para
 leitura em uma única requisição. O índice do site está em https://movvabrasil.net/llms.txt
+
+---
+
+# Licença VIP da MOVVA vale a pena? A conta de quanto ela precisa devolver
+
+URL: https://movvabrasil.net/blog/licenca-vip-vale-a-pena
+Publicado: 2026-10-22 · Atualizado: 2026-10-22
+Resposta curta: O deck institucional da MOVVA publica a licença VIP a R$ 497 à vista ou 12× R$ 51,13, e lista o que ela dobra: indicação direta, percentual da matriz, matching e pontuação. Parcelada, soma R$ 613,56. Eu paguei a minha, e os números que ela me devolveu em três meses e meio estão abertos aqui.
+
+Fontes citadas:
+- MOVVA — plataforma oficial, onde o valor vigente da licença deve ser conferido antes de pagar. O preço, o parcelamento e o que a licença dobra foram lidos no deck institucional da empresa e no documento de diferenciais, nenhum dos dois com endereço público que eu possa linkar: https://movvabrasil.com
+- Receita Federal — consulta de CNPJ, para conferir a empresa antes de pagar qualquer licença: https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp
+
+Eu paguei esta licença. Isso significa que eu tenho interesse em que você também
+pague, porque eu recebo sobre isso — e é exatamente por isso que esta página
+abre a conta inteira, inclusive a parte em que eu estou no prejuízo.
+
+## Quanto custa, e de onde sai esse número
+
+O deck institucional da MOVVA publica dois valores para a licença VIP: **R$ 497
+à vista** ou **12× R$ 51,13**.
+
+A primeira coisa a fazer com esses dois números é multiplicar o segundo. Doze
+vezes R$ 51,13 dá **R$ 613,56** — ou seja, **R$ 116,56 a mais** que o valor à
+vista, o equivalente a 23,4%. O deck apresenta as duas formas lado a lado e não
+chama essa diferença de nada.
+
+Não é ilegal nem incomum cobrar mais no parcelado. Mas é informação que muda a
+decisão, e ela não aparece no slide: aparece quando alguém faz a conta.
+
+## O que ela dobra
+
+O material da empresa lista quatro linhas que a licença duplica:
+
+| De onde vem | Sem licença | Com licença VIP |
+|---|---|---|
+| Indicação direta, por plano indicado | R$ 5,00 | R$ 10,00 |
+| Matriz global, sobre os planos da sua matriz | 0,5% | 1% |
+| Matching, sobre o que o seu direto ganha na matriz | 50% | 100% |
+| Pontuação do plano de carreira | normal | dobrada |
+
+E há uma quinta linha, que não é duplicação e sim acesso exclusivo. A página 45
+do deck traz um ganho de **R$ 10,40 por cada licença VIP** na sua matriz, com a
+restrição escrita ao lado: *exclusivo para VIPs, somente VIP ganha sobre VIP*.
+
+Quem não compra a licença não recebe essa linha. É a única do plano que paga **no
+ato da adesão** — todas as outras da matriz, segundo a mesma página, são pagas
+"da 2ª fatura em diante".
+
+Guarde isso, porque é o que faz a conta abaixo funcionar como funciona.
+
+## Quantas pessoas a licença precisa, para se pagar
+
+Esta é a pergunta que eu queria ter visto antes de pagar, e que eu nunca vi
+ninguém fazer em voz alta. Vou fazer por três caminhos, com os números do
+documento.
+
+**Caminho 1 — por licenças VIP abaixo de você.** R$ 497 dividido por R$ 10,40 dá
+47,8. São **48 pessoas comprando a mesma licença** dentro da sua matriz. Se você
+parcelou, R$ 613,56 dividido por R$ 10,40 dá **59 pessoas**.
+
+Este é o caminho mais rápido, porque paga no ato. Também é aquele em que o seu
+retorno depende inteiramente de outras pessoas gastarem R$ 497 — e não de
+ninguém usar celular.
+
+**Caminho 2 — pela matriz de telefonia.** A licença leva o seu percentual de
+0,5% para 1%. Sobre um Liberty de R$ 79,90, isso é a diferença entre R$ 0,40 e
+R$ 0,80 por mês. O **ganho extra** da licença é, portanto, cerca de R$ 0,40 por
+plano ativo por mês.
+
+Para recuperar R$ 497 assim são **1.244 plano-meses**. Na prática: com 100
+planos ativos na sua matriz, pouco mais de **12 meses**. Com 50, mais de **dois
+anos**. E só começando a contar a partir da segunda fatura de cada um.
+
+**Caminho 3 — pela indicação direta.** A licença leva o bônus de R$ 5,00 para
+R$ 10,00 por plano indicado. O extra é R$ 5,00. Para cobrir R$ 497 são **100
+planos indicados diretamente por você** — se o bônus for pagamento único. Se ele
+se repetir a cada mês, são menos; o documento que eu tenho não diz qual dos dois
+é, e isso está nos pontos em aberto no fim da página.
+
+Os três caminhos somam, claro. Ninguém percorre só um. Mas repare no que a
+comparação mostra: **o caminho que paga mais rápido é o que depende de gente
+comprando licença, não de gente usando telefone.** Essa é a observação central
+deste site, e aqui ela aparece como aritmética, não como opinião.
+
+## O que a minha licença me devolveu
+
+Eu paguei a licença. Período de 7 de julho a 20 de outubro de 2026 — três meses
+e meio, com oito pessoas na rede.
+
+| Indicador | Valor |
+|---|---|
+| Comissão bruta gerada no período | R$ 146,08 |
+| Recebido líquido, após taxa de saque de 16% | R$ 115,43 |
+| Parcela originada de licença VIP | R$ 92,70 (63,5%) |
+| Bônus de recorrência sobre plano de telefonia | R$ 0,00 |
+| Comissão em outubro de 2026 | R$ 0,00 |
+
+Então a conta honesta é esta: paguei R$ 497 e recebi **R$ 115,43 líquidos** em
+três meses e meio. Estou **77% abaixo do que paguei**, e isso sem contar a
+mensalidade do plano, que é custo mensal e segue correndo.
+
+E tem a parte que me incomoda mais: dos R$ 146,08 que eu gerei, **63,5% vieram
+de licença**. Quer dizer que o pouco que eu recuperei da minha licença veio, em
+boa parte, de outras pessoas comprando a licença delas. O caminho 1, acontecendo
+comigo, em escala pequena.
+
+A linha que deveria sustentar o negócio — recorrência sobre conta de celular —
+está em **R$ 0,00**. Nenhum lançamento em três meses e meio.
+
+## Então vale a pena?
+
+Depende de uma coisa só, e não é a sua disposição de trabalhar.
+
+**Se a sua tese é telefonia** — gente usando celular, pagando conta, mês após
+mês —, a licença só se paga no caminho 2, e o caminho 2 pede cerca de 100 planos
+ativos na matriz por um ano para devolver R$ 497. É possível. É lento. E a
+regra da segunda fatura torna cada plano mais lento ainda do que parece.
+
+**Se a sua tese é licença** — gente comprando licença abaixo de você —, ela se
+paga com 48 pessoas e paga rápido. Mas aí a pergunta que você precisa responder
+não é financeira: é se você quer construir uma coisa cujo motor é a entrada de
+participantes. Essa estrutura tem limite matemático, e quem entra por último
+não encontra mais ninguém para entrar depois.
+
+Eu paguei a minha com a primeira tese e estou, até aqui, sendo pago pela
+segunda. Publico isso porque considero desonesto recrutar alguém mostrando só o
+cenário bom.
+
+## Antes de pagar, peça por escrito
+
+Com protocolo, e guarde a resposta:
+
+1. A licença tem prazo de validade? Renova? Quanto custa renovar?
+2. Se eu cancelar, há devolução? Em que prazo?
+3. O bônus de indicação direta é pagamento único ou se repete a cada mês?
+4. O que conta como "direto ativo" para destravar nível de matriz?
+5. Qual é a taxa de saque, e o que a justifica? (A minha foi de 16% sobre
+   R$ 137,42, pagos por PIX.)
+
+Quem não consegue te responder isso por escrito está te vendendo outra coisa.
+
+## O que eu não consegui confirmar
+
+- **Se a licença tem validade ou renovação.** Não achei documento que fixe
+  prazo, nem valor de renovação.
+- **Se há devolução em caso de desistência**, e em que prazo.
+- **Se o bônus de indicação direta é único ou recorrente.** Isso muda o caminho
+  3 por um fator grande, e o material que eu tenho não resolve.
+- **O que justifica a taxa de saque de 16%**, num pagamento feito por PIX.
+- **A data do deck.** Não traz data de emissão nem número de versão, e o meu
+  extrato tem lançamentos rotulados "Bônus Matching (antigo)" — a regra sob a
+  qual eu entrei já foi alterada uma vez.
+
+A estrutura inteira em que essa licença opera está em
+[como funciona a matriz](/blog/matriz-movva-como-funciona), e os degraus que ela
+destrava em [o plano de carreira](/blog/plano-de-carreira-movva).
+
+---
+
+# A matriz da MOVVA: como funciona, e a regra de data que quase ninguém mostra
+
+URL: https://movvabrasil.net/blog/matriz-movva-como-funciona
+Publicado: 2026-10-22 · Atualizado: 2026-10-22
+Resposta curta: A MOVVA usa uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Os níveis destravam de três em três, conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP. O deck paga esse ganho só a partir da segunda fatura.
+
+Fontes citadas:
+- MOVVA — plataforma oficial, onde as regras vigentes devem ser conferidas. A mecânica da matriz desta página foi lida nas páginas 45 a 48 do deck institucional da empresa, que não tem endereço público que eu possa linkar: https://movvabrasil.com
+- Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular o ganho obtido por meio de cadeias e bolas de neve. É o dispositivo que define o critério usado no fim desta página: https://www.planalto.gov.br/ccivil_03/leis/l1521.htm
+
+Esta página descreve o que a MOVVA **anuncia** sobre a matriz dela, lido no deck
+institucional da empresa. Não é verificação minha e não é promessa de ganho.
+
+Tem uma coisa aqui que eu não tinha encontrado antes de ler o documento inteiro,
+e que mudou a forma como eu entendo o meu próprio extrato. Está na página 45, em
+corpo miúdo, embaixo dos números grandes.
+
+## O formato: 3×12, forçada
+
+Três posições de largura, doze níveis de profundidade. "Forçada" quer dizer que
+as posições se preenchem numa ordem definida pela estrutura, e não por você: se
+a sua primeira linha já tem três, o quarto cadastro desce para o nível seguinte,
+abaixo de alguém.
+
+Isso tem um efeito que vale dizer em voz alta, porque é o argumento de venda
+mais comum do modelo: **pode entrar gente abaixo de você que você não indicou.**
+Vinda de cima, derramada pela estrutura. É verdade, acontece, e é exatamente por
+isso que o modelo atrai. Também é por isso que ele precisa ser lido com a regra
+de destrave ao lado.
+
+## Os níveis não vêm de graça
+
+Você não ganha nos doze níveis desde o começo. O deck destrava de três em três,
+e a moeda é diretos ativos — gente que **você** indicou e que está pagando.
+
+| Diretos ativos | Níveis que destravam | Soma dos níveis |
+|---|---|---|
+| 3 diretos | 3 | 3% |
+| 6 diretos | 6 | 6% |
+| 9 diretos | 9 | 9% |
+| 12 diretos | 12 | 12% |
+
+A leitura honesta dessa tabela é esta: o derramamento de cima só te paga nos
+níveis que os seus próprios indicados destravaram. Quem entra e não indica
+ninguém não recebe pelo que cai abaixo dele, porque não abriu nível nenhum.
+
+E tem a **compressão dinâmica**, que o deck descreve assim: se o patrocinador
+não estiver apto a receber — por não estar ativo ou por não ter destravado a
+matriz —, o ganho sobe para o próximo ascendente que tenha no mínimo 3 diretos
+ativos e seja VIP.
+
+Ou seja: o que você não destravou não fica parado esperando você. Sobe.
+
+## As duas linhas pequenas, que são o ponto desta página
+
+A página 45 lista dois ganhos sobre a matriz. Embaixo de cada um, em letra bem
+menor que o número, há uma linha dizendo **quando** ele é pago. São regras
+diferentes, e a diferença explica muita coisa.
+
+| O ganho | Quanto | Quando é pago |
+|---|---|---|
+| Sobre planos de telefonia da sua matriz | 0,5%, ou 1% para VIP | **"Pago da 2ª fatura em diante"** |
+| Sobre licenças VIP da sua matriz | R$ 10,40 | **"Pago no ato da adesão do VIP"** |
+
+Leia as duas colunas da direita juntas.
+
+A licença entra **no ato**. É dinheiro que cai quando alguém assina. A
+telefonia entra **a partir da segunda fatura** — de uma conta que a pessoa
+precisa continuar pagando, mês após mês, para seguir gerando.
+
+Não é acusação. É o documento da empresa, descrevendo o próprio desenho. E ele
+explica, sozinho, o que o meu extrato mostra: de 7 de julho a 20 de outubro de
+2026 eu gerei R$ 146,08, dos quais **63,5% vieram de licença VIP** e **R$ 0,00
+de recorrência sobre plano de telefonia**. Nenhum lançamento.
+
+Eu publicava esse fato desde o começo deste site, sem saber explicá-lo. O deck
+me deu o mecanismo: a estrutura paga rápido o que vem de alguém entrando, e
+devagar o que vem de alguém consumindo.
+
+Há ainda a restrição que fecha o desenho: o ganho sobre licença é **exclusivo
+para VIPs**. Somente VIP ganha sobre VIP. Quem não comprou a licença não recebe
+a linha que paga no ato — recebe só a que paga a partir da segunda fatura.
+
+## O "potencial de ganhos", e quanta gente ele exige
+
+As páginas 46 e 47 do deck somam o dinheiro de uma matriz 3×12 inteiramente
+preenchida. Os números são grandes: **R$ 637.728,00 por mês** sobre telefonia, e
+**mais de R$ 8 milhões por ano** sobre licenças.
+
+O que essas páginas somam é o dinheiro. O que elas não somam é a gente. Então eu
+somo.
+
+Uma matriz 3×12 cheia tem 3 pessoas no primeiro nível, 9 no segundo, 27 no
+terceiro, e assim por diante até **531.441 no décimo segundo**. O total é
+**797.160 pessoas** — todas com plano ativo e pago, todas abaixo de uma só.
+
+Vale comparar com o tamanho do mercado em que isso teria de caber. Segundo a
+Teleco, os chips de operadoras virtuais voltadas ao consumidor final somavam
+**2,2 milhões de acessos no Brasil inteiro** no segundo trimestre de 2025.
+
+A matriz cheia do deck pede, portanto, **cerca de 36% de todo o mercado
+brasileiro de operadoras virtuais de consumo, dentro de uma única rede
+pessoal.** A sua.
+
+Isso não quer dizer que o número seja mentira: ele é aritmética correta sobre
+uma hipótese. Quer dizer que a hipótese é o teto teórico do modelo, e não um
+cenário. Quem te apresentar R$ 637 mil por mês sem dizer 797.160 pessoas está
+te mostrando a conta pela metade.
+
+Para calibrar: o material de treinamento da própria MOVVA apresenta a proporção
+de que, de 200 pessoas convidadas, cerca de 1 se destaca. É 0,5%.
+
+## O Mega Bônus
+
+A página 48 traz o terceiro ganho, chamado **Mega Bônus**: 50%, ou 100% para
+VIP, do valor que os seus diretos ganharem na matriz.
+
+O deck ilustra com dez diretos ganhando R$ 1.000 cada, chegando a R$ 10.000 por
+mês. Embaixo do número grande, em corpo miúdo, está escrito "simulação comissão
+VIP" — e é simulação mesmo: pressupõe dez diretos já ganhando mil reais por mês
+cada um, o que é a conclusão, não o ponto de partida.
+
+A compressão dinâmica vale aqui também.
+
+## A pergunta que decide
+
+A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
+popular a obtenção de ganho por meio de cadeias e bolas de neve. O que separa
+venda direta legítima de cadeia não é existir ou não um produto — é se a
+remuneração deriva principalmente **da venda real do produto a consumidores** ou
+**do ingresso de novos participantes**.
+
+A matriz desta página é o lugar onde essa pergunta se responde com número, e a
+métrica é uma só: **bônus de recorrência sobre plano de telefonia.**
+
+Se ele crescer mês a mês, o desenho se sustenta sobre consumo real, e a estrutura
+tem de onde vir. Se continuar em zero enquanto o ganho vem de licença e adesão,
+a estrutura depende de entrada de gente — e isso tem um limite matemático
+conhecido, que é a conta das 797.160 pessoas lá em cima.
+
+No meu caso, hoje, ele está em zero. A regra da segunda fatura é parte da
+explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
+[a página dos meus números](/oportunidade) quando mudar, para qualquer lado.
+
+## O que eu não consegui confirmar
+
+- **O que significa VME.** A sigla aparece em todos os degraus do plano de
+  carreira e em todas as premiações, com um percentual ao lado, e o deck não a
+  define em nenhuma das 66 páginas.
+- **O valor do bônus de adesão.** Existe no meu extrato, com valor. A tabela que
+  o fixe por plano eu não localizei.
+- **O que conta como "ativo"** para efeito de destravar nível. O deck usa
+  "diretos ativos" em toda a escada sem definir o critério de atividade.
+- **Quanto tempo a compressão dinâmica leva** para devolver a posição, se é que
+  devolve, quando o ascendente volta a ficar apto.
+- **A data do deck.** O documento não traz data de emissão nem número de versão,
+  e o meu extrato tem lançamentos rotulados "Bônus Matching (antigo)" — prova de
+  que essas regras já mudaram pelo menos uma vez.
+
+---
+
+# Plano de carreira da MOVVA: os doze degraus e o que cada um exige
+
+URL: https://movvabrasil.net/blog/plano-de-carreira-movva
+Publicado: 2026-10-22 · Atualizado: 2026-10-22
+Resposta curta: O plano de carreira da MOVVA tem doze graduações, de Consultor a Embaixador, publicadas na página 56 do deck institucional da empresa. As quatro primeiras exigem diretos ativos e destravam níveis da matriz; da quinta em diante a exigência vira pontuação acumulada, sempre com doze diretos ativos e, a partir da sétima, licença VIP.
+
+Fontes citadas:
+- MOVVA — plataforma oficial, onde o plano vigente deve ser conferido antes de decidir qualquer coisa. Os degraus, as exigências e as premiações desta página foram lidos nas páginas 45 a 57 do deck institucional da empresa, que não tem endereço público que eu possa linkar: https://movvabrasil.com
+- Receita Federal — consulta de CNPJ, para conferir que a empresa existe e está ativa antes de olhar qualquer plano de carreira: https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp
+
+Esta página descreve o que a MOVVA **anuncia** sobre o plano de carreira dela.
+Não é verificação minha, e não é promessa de ganho: é a leitura de um documento
+da empresa, com a página de onde cada número saiu.
+
+Até 22 de outubro de 2026 este site publicava uma escada de **treze** degraus,
+montada a partir dos medalhões oficiais. O deck publica **doze**, em outra
+ordem. A diferença está resolvida no fim desta página, e não no silêncio.
+
+## Os doze degraus, e o que o deck exige em cada um
+
+A página 56 do deck agrupa as graduações em três blocos: Fundação, Construção e
+Liberdade. A lógica muda no meio do caminho — e essa mudança é a informação mais
+útil aqui.
+
+Nos **quatro primeiros**, a exigência é gente: diretos ativos. Cada faixa de
+três diretos destrava mais três níveis de ganho na matriz.
+
+| # | Graduação | Exige | Destrava |
+|---|---|---|---|
+| 1 | Consultor | 3 diretos ativos | até o 3º nível da matriz |
+| 2 | Empreendedor | 6 diretos ativos | até o 6º nível |
+| 3 | Especialista | 9 diretos ativos | até o 9º nível |
+| 4 | Supervisor | 12 diretos ativos | até o 12º nível |
+
+Do **quinto em diante**, a exigência vira pontuação acumulada, e os doze diretos
+ativos passam a ser piso fixo em todos eles. A partir do sétimo, entra também a
+licença VIP como requisito.
+
+| # | Graduação | Exige | O que vem junto |
+|---|---|---|---|
+| 5 | Gestor | 100 Pts (PG) · 12 diretos | ganha 3 chips |
+| 6 | Executivo | 300 Pts (PG) · 12 diretos | ganha 10 chips |
+| 7 | Diretor | 700 Pts (PG) · 12 diretos · ser VIP | cruzeiro |
+| 8 | Diretor Sênior | 2.500 Pts (PG) · 12 diretos · ser VIP | Caribe · liderança +0,1% |
+| 9 | Acionista | 10.000 Pts (PG) · 12 diretos · ser VIP | Europa · liderança +0,2% · divisão de lucros |
+| 10 | Vice-Presidente | 30.000 Pts (PG) · 12 diretos · ser VIP | Dubai · liderança +0,3% · divisão de lucros |
+| 11 | Presidente | 75.000 Pts (PG) · 12 diretos · ser VIP | Bora Bora · liderança +0,4% · divisão de lucros |
+| 12 | Embaixador | 150.000 Pts (PG) · 12 diretos · ser VIP | Mercedes · liderança +0,5% · divisão de lucros |
+
+Repare no salto entre o oitavo e o nono: de 2.500 para 10.000 pontos. É
+quadruplicar. Entre o décimo e o décimo primeiro, de 30.000 para 75.000. A
+escada não sobe em degraus iguais, e o material de divulgação que a desenha como
+uma rampa suave está desenhando outra coisa.
+
+## O que significa VME, e por que eu não respondo
+
+Em todos os degraus da tabela acima, e em todas as seis premiações, o deck
+imprime a sigla **VME** com um percentual ao lado. Ela cai conforme se sobe: 50%
+nos primeiros, 40% no Acionista, 30% no Vice-Presidente, 20% no Presidente e no
+Embaixador.
+
+O deck **não define a sigla** em nenhuma das 66 páginas. Eu reproduzo o número
+como está impresso e não traduzo. Em plano de carreira de marketing de rede,
+uma regra com esse formato costuma limitar quanto da pontuação pode vir de uma
+mesma perna — mas "costuma" não é documento, e este site não publica o que
+"costuma".
+
+Pergunte por escrito, com protocolo, o que VME significa e como ela é calculada
+na sua conta. É a pergunta que separa quem leu o plano de quem decorou o slide.
+
+## Como se faz ponto
+
+A pontuação vem dos planos ativos na sua rede. A mesma tabela aparece duas vezes
+no deck, nas páginas 49 e 56, com os mesmos valores — e ela dobra para quem tem
+a licença VIP.
+
+| Produto ativo | Sem licença | Com licença VIP |
+|---|---|---|
+| Plano Start | 0,35 pt | 0,70 pt |
+| Plano Plus | 0,45 pt | 0,90 pt |
+| Plano Liberty | 0,50 pt | 1 pt |
+| Plano Max | 0,60 pt | 1,20 pt |
+| Plano Ultra | 0,80 pt | 1,60 pt |
+| SKY+ avulso | 0,20 pt | 0,40 pt |
+| SKY+ com plano | 0,12 pt | 0,25 pt |
+
+Sobre a validade, o deck diz, na página 49: "Enquanto você pagar seu plano em
+dia, seus pontos nunca zeram."
+
+É uma frase que responde a hipótese boa e deixa a ruim em aberto. O que acontece
+com o ponto se o plano **deixar** de ser pago — se zera, quando zera, se zera só
+o ponto daquele plano ou a conta toda — o documento não diz.
+
+## As premiações, e o que elas custam em gente
+
+Aqui está o número que vale a página inteira, e ele **não é cálculo meu**: é o
+que o próprio deck imprime, em cada uma das seis páginas de premiação, na tarja
+escura do canto.
+
+| Prêmio | GoldPoints | Planos Liberty ativos por 12 meses |
+|---|---|---|
+| Cruzeiro | 4.000 | 333 |
+| Caribe, resort all inclusive | 15.000 | 1.250 |
+| Europa | 40.000 | 3.333 |
+| Dubai | 80.000 | 6.666 |
+| Bora Bora | 150.000 | 12.500 |
+| Mercedes | 300.000 | 25.000 |
+
+A conta fecha, e é simples de conferir: o Liberty vale 1 ponto por mês para
+quem é VIP, então 12 pontos por ano por plano ativo. 4.000 dividido por 12 dá
+333. 300.000 dividido por 12 dá 25.000.
+
+Quer dizer: **o cruzeiro custa 333 pessoas pagando conta de celular durante um
+ano inteiro.** A Mercedes custa 25.000. Quem te mostrar a foto do carro sem essa
+coluna está te mostrando metade do slide — e a metade que falta é a que tem
+gente dentro.
+
+As cinco viagens incluem acompanhante. A Mercedes é descrita como veículo
+quitado. O cruzeiro traz, no rodapé, a ressalva de que taxas portuárias e seguro
+viagem obrigatório não estão inclusos.
+
+## O bônus que só começa no oitavo degrau
+
+A partir de Diretor Sênior existe o **Bônus Desempenho de Liderança**. A página
+57 do deck o descreve assim: "Qualifique-se a Diretor Sênior e acima e receba
++0,1% a mais no Bônus de equipe a cada novo pin alcançado, podendo chegar a um
+total de +0,5% a mais em ganhos na Matriz."
+
+Na prática: +0,1% no Diretor Sênior, +0,2% no Acionista, +0,3% no
+Vice-Presidente, +0,4% no Presidente, +0,5% no Embaixador.
+
+Vale dizer o que isso significa para quem está começando: esse bônus não existe
+para você. Os sete primeiros degraus não o acessam.
+
+## O décimo terceiro medalhão
+
+Esta é a parte que me obriga a dizer que dois documentos da mesma empresa não
+fecham entre si.
+
+Eu tenho em arquivo **treze** medalhões oficiais de graduação. A escada da
+página 56 tem **doze**. O que sobra se chama **Embaixador Sênior**, e ele não
+aparece em nenhuma das 66 páginas do deck.
+
+Não é descuido de leitura. A página 57, que lista os pins do bônus de liderança,
+mostra cinco medalhões — Diretor Sênior, Acionista, Vice-Presidente, Presidente
+e Embaixador — e também termina em Embaixador. Duas partes diferentes do mesmo
+documento concordam entre si e discordam do medalhão.
+
+Publico os doze porque o deck é o documento mais recente que eu tenho. Deixo o
+décimo terceiro à vista porque apagá-lo seria escolher uma versão e esconder que
+houve escolha.
+
+Se você tiver o documento que resolve — um plano de carreira datado, um
+regulamento, qualquer coisa com versão —, me mande. Eu corrijo esta página e
+digo que corrigi.
+
+## O que eu não consegui confirmar
+
+- **Quantos degraus a escada tem de verdade.** Dois materiais da empresa
+  divergem, e está explicado acima.
+- **O que significa VME.** A sigla aparece em dezoito lugares do deck e não é
+  definida em nenhum.
+- **Se "Pts (PG)" e "GoldPoints" são a mesma contagem.** O deck usa um termo na
+  escada e outro nas premiações, com a mesma tabela de pontos por plano nas duas
+  seções. Isso sugere uma contagem só, mas o documento não diz isso com todas as
+  letras — e a diferença importa, porque uma coisa é 150.000 pontos para
+  graduar, outra é 150.000 para ganhar a viagem.
+- **O valor do bônus de adesão.** Ele existe: o meu extrato tem R$ 39,92 sob
+  esse rótulo. A tabela que o fixe por plano eu não localizei.
+- **Em quanto tempo o ponto expira** se o plano deixar de ser pago.
+- **A data do deck.** O documento não traz data de emissão nem número de versão.
+  Tudo nesta página pode ter mudado sem que eu saiba.
+
+## Antes de usar esta página para decidir
+
+Nenhum número aqui é previsão do que vai acontecer com você. São as regras que o
+documento publica, e regras mudam — o meu próprio extrato tem lançamentos sob o
+rótulo "Bônus Matching (antigo)", o que significa que a regra sob a qual eu
+entrei foi alterada depois.
+
+O que eu ganhei de verdade em três meses e meio, com a licença paga, está aberto
+em [quanto eu realmente ganhei](/oportunidade), com a taxa de saque e a linha de
+recorrência que continua em zero. Leia os dois juntos: esta página é o que a
+empresa promete, aquela é o que aconteceu comigo.
 
 ---
 
@@ -290,7 +795,6 @@ Fontes citadas:
 - Algar — Cobertura celular (endereço listado pela Anatel): https://algartelecom.com.br/para-voce/celular/cobertura-celular
 - Sercomtel — Mapa de cobertura: https://www2.sercomtel.com.br/mapa-cobertura
 - Anatel — Canais de atendimento (aplicativo Anatel Consumidor e 1331): https://www.gov.br/anatel/pt-br/canais_atendimento
-- Página de captação da rede de distribuidores MOVVA (material comercial, não documento da empresa), consultada em 21/10/2026: https://meumovvabrasil.com.br/
 
 ## O que ter em mãos antes de abrir qualquer painel
 
@@ -884,15 +1388,14 @@ Fontes citadas:
 - Anatel — Painéis de Dados, Consumidor, aba Reclamações: https://informacoes.anatel.gov.br/paineis/consumidor/reclamacoes
 - TELETIME — “Pós-pago e banda larga puxam alta de reclamações na Anatel em 2025” (19/03/2026), sobre dados da Anatel: https://teletime.com.br/19/03/2026/reclamacoes-anatel-2025/
 
-## Começo pela parte que me desabona
+## Antes de procurar: este site não é canal de atendimento
 
-Este site não é canal de atendimento da MOVVA: para reclamar, os caminhos
-estão abaixo.
+Para reclamar da MOVVA, os caminhos estão abaixo, e nenhum deles passa por
+aqui.
 
-Por isso aqui tem método, não pedido de confiança: cada dado vem com o endereço
-onde você confere, inclusive contra mim. Começo pelo meu erro: a página
-/movva-e-confiavel dizia que havia uma página da Movva no Reclame Aqui. É de
-outra empresa, com outro CNPJ, e a frase está sendo corrigida.
+Aqui tem método, não pedido de confiança: cada dado desta página vem com o
+endereço onde você confere sozinho, e com a data em que eu olhei. É o que
+permite a você discordar de mim sem precisar da minha permissão.
 
 ## O que aparece quando você digita MOVVA no Reclame Aqui
 
@@ -1397,7 +1900,7 @@ O que continua em aberto é o enquadramento: eu não confirmei se a MOVVA é Pre
 
 Se cobrarem portabilidade de você, há alavanca antes da reclamação: o art. 69, II, "c" do RGST obriga a prestadora a informar, nas condições da oferta, o valor a ser pago pela portabilidade e a forma de pagamento. Pergunte antes, peça por escrito e, se a cobrança aparecer sem ter sido informada, registre no 1331.
 
-Um número desta conta eu conferi: a mensalidade — e em material de distribuidor, não em documento da empresa. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
+Um número desta conta eu conferi: a mensalidade — e em documento da empresa, a página 31 do deck institucional, conferida em 21 de outubro de 2026. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
 
 ## O chip e a entrega, que eu não achei
 
@@ -1420,7 +1923,7 @@ Pedi o meu chip em 20 de outubro de 2026 e ele ainda não chegou. Eu não abri o
 
 **SKY+ Light.** Existe um complemento de TV, e eu recebo comissão sobre ele: são R$ 8,66 no meu extrato, de 7 de julho a 30 de setembro de 2026 — o mesmo período sob o qual esse número está publicado em [o extrato aberto](/movva-e-confiavel). Lá ele aparece como linha de produto própria, separada da linha do plano de celular. Isso é a forma do meu extrato de comissão, não a forma da oferta ao cliente: se o pacote é vendido à parte ou embutido na mensalidade, eu não localizei documento que diga. Ele fica fora deste total porque o total aqui é o do plano Liberty, e eu não tenho documento pondo o SKY+ dentro dele — se aparecer documento que ponha, ele entra como mais uma linha. Preço e descrição do pacote eu também não localizei: estão na lista de em aberto.
 
-**Multa de cancelamento.** O documento oficial da MOVVA lista "não tem fidelidade" entre os seis diferenciais dos planos. Isso é anúncio da empresa, não contrato que eu tenha lido: eu não vi cláusula fixando multa zero. De todo modo, é custo de sair, não de entrar.
+**Multa de cancelamento.** Os cinco cards de plano da página 31 do deck institucional da MOVVA listam "sem fidelidade" e "sem multa de cancelamento" entre as características de todos eles. Isso é anúncio da empresa, não contrato que eu tenha lido: eu não vi cláusula fixando multa zero. De todo modo, é custo de sair, não de entrar.
 
 **Aparelho.** O chip físico vai no celular que você já tem, e não existe compra de aparelho nesta conta. A exceção são os aparelhos só-eSIM, que não aceitam cartão SIM físico. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM e registra que o aparelho não é compatível com cartão SIM físico; a ficha do iPhone Duo diz o mesmo, na seção de cartão SIM e na nota de rodapé 14. As duas fichas estão na lista de fontes, cada uma com o seu endereço. Nesses aparelhos, a conta depende de existir eSIM na oferta, o que eu não confirmei.
 
@@ -1831,7 +2334,7 @@ especificação válidas para qualquer operadora. Páginas verificadas em 20/10/
 # Chip que pega em duas operadoras: o que existe de verdade
 
 URL: https://movvabrasil.net/blog/chip-dois-sinais
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Publicado: 2026-10-20 · Atualizado: 2026-10-21
 Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
 
 Fontes citadas:
@@ -2573,7 +3076,7 @@ jurídica.
 # Operadora virtual pega bem? Como funciona a cobertura
 
 URL: https://movvabrasil.net/blog/operadora-virtual-pega-bem
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Publicado: 2026-10-20 · Atualizado: 2026-10-22
 Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
 
 Fontes citadas:
@@ -2707,9 +3210,17 @@ número](/blog/portabilidade-sem-perder-o-numero).
 - **5G em plano de operadora virtual.** Um índice setorial privado afirma que
   nenhuma virtual reportou conexões 5G, sem cruzar com dado da Anatel.
   Onde confirmar: os termos do plano e a oferta de atacado da hospedeira.
-- **Qual rede a MOVVA Brasil usa.** Não localizei fonte primária. A empresa não
-  apareceu nas listas que eu abri em 20/10/2026, e isso não prova o modelo dela.
-  Onde confirmar: a lista do art. 218 e a própria oferta.
+- **Qual é a cadeia de rede da MOVVA Brasil.** Aqui a dúvida mudou de lugar, e
+  vale dizer como. O deck institucional da empresa anuncia, em letra, "Rede TIM
+  + Roaming da VIVO" — rede principal da TIM, com a Vivo entrando por roaming,
+  e não duas redes contratadas. Isso é anúncio da empresa, não verificação
+  minha. O que continua aberto é o instrumento: eu não achei a lista do art.
+  218 nem documento que diga qual prestadora de origem suporta o acesso. E há
+  um problema a mais: o dossiê de transparência da mesma empresa descreve outra
+  cadeia, com contrato com a ISPS do Brasil sobre infraestrutura da ARQIA, sem
+  mencionar TIM nem Vivo. São dois documentos da MOVVA que
+  [não fecham entre si](/movva-e-confiavel). Onde confirmar: a lista do art.
+  218, e a própria oferta — por escrito, com protocolo.
 
 ## Quem escreve, e o que isso muda na sua escolha
 

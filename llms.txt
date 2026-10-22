@@ -31,22 +31,36 @@ chip não chegou e nada foi testado em campo. Nenhuma projeção de ganho é pub
 Ressalva registrada no site: o ato da Anatel autoriza serviços de telecomunicações,
 mas não diz em qual dos dois modelos de rede virtual da Resolução 777/2025 a
 empresa opera. O dossiê dela cita contrato com a ISPS do Brasil S.A. (TIP Brasil) sobre
-infraestrutura da ARQIA (Grupo Datora), enquanto o material comercial anuncia
-TIM e Vivo. As duas versões não fecham, e o autor não localizou documento público
-que resolva.
+infraestrutura da ARQIA (Grupo Datora), enquanto o deck institucional da
+mesma empresa anuncia "Rede TIM + Roaming da VIVO". São dois documentos da
+própria MOVVA, as duas versões não fecham, e o autor não localizou documento
+público que resolva.
 
 ## Páginas principais
 
 - [Início](https://movvabrasil.net): Página inicial: a oferta do plano, os diferenciais que a empresa publica, os registros públicos dela e o estado do teste em campo do autor.
-- [Planos](https://movvabrasil.net/planos): Os cinco planos de celular lado a lado, com franquia, preço, preço por giga e para quem cada um serve. Traz também o que o autor não conseguiu confirmar sobre os planos, incluindo a origem dos preços.
+- [Planos](https://movvabrasil.net/planos): Os cinco planos de celular lado a lado, com franquia, preço, preço por giga e para quem cada um serve. O preço é atribuído ao deck institucional da empresa, com a data da conferência. Traz também os pontos que o autor não conseguiu confirmar sobre os planos.
 - [É confiável?](https://movvabrasil.net/movva-e-confiavel): Análise com registros públicos, os riscos do programa de afiliados e os ganhos reais do autor. Responde também sobre CNPJ, Anatel, Reclame Aqui e quanto se ganha.
 - [Perguntas](https://movvabrasil.net/perguntas-frequentes): Central de perguntas sobre a empresa, o preço dos planos, cobertura, portabilidade e o programa de afiliados, com resposta curta em cada uma e o link de onde ela foi conferida.
-- [Blog](https://movvabrasil.net/blog): Textos sobre planos de celular, operadoras virtuais, portabilidade e cobertura, cada um com as fontes usadas e uma seção do que não foi confirmado. São 16 textos.
+- [Blog](https://movvabrasil.net/blog): Textos sobre planos de celular, operadoras virtuais, portabilidade e cobertura, cada um com as fontes usadas e uma seção do que não foi confirmado. São 19 textos.
 - [Programa de afiliados](https://movvabrasil.net/oportunidade): Composição da remuneração, custo de participação, o plano de carreira de treze graduações e a tabela com os números reais do autor, inclusive os meses de ganho zero.
 - [Quem escreve](https://movvabrasil.net/sobre): Quem mantém o site e o método editorial: o que entra como verificado, o que é atribuído à empresa, o que fica em aberto, e o que o autor ganha com isso.
 - [Avisos legais](https://movvabrasil.net/avisos-legais): Declaração de vínculo, aviso de renda e limites de responsabilidade.
 
 ## Blog
+
+### Análise da empresa
+
+- [Licença VIP da MOVVA vale a pena? A conta de quanto ela precisa devolver](https://movvabrasil.net/blog/licenca-vip-vale-a-pena): Quanto custa a licença VIP da MOVVA segundo o deck institucional, o que ela dobra, quantas pessoas são necessárias para recuperá-la e o que ela me devolveu em três meses e meio.
+  Resposta curta: O deck institucional da MOVVA publica a licença VIP a R$ 497 à vista ou 12× R$ 51,13, e lista o que ela dobra: indicação direta, percentual da matriz, matching e pontuação. Parcelada, soma R$ 613,56. Eu paguei a minha, e os números que ela me devolveu em três meses e meio estão abertos aqui.
+- [A matriz da MOVVA: como funciona, e a regra de data que quase ninguém mostra](https://movvabrasil.net/blog/matriz-movva-como-funciona): Como funciona a matriz 3×12 da MOVVA: quando os níveis destravam, quanto cada um paga, a compressão dinâmica e por que a licença paga na hora e a telefonia só a partir da segunda fatura.
+  Resposta curta: A MOVVA usa uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Os níveis destravam de três em três, conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP. O deck paga esse ganho só a partir da segunda fatura.
+- [Plano de carreira da MOVVA: os doze degraus e o que cada um exige](https://movvabrasil.net/blog/plano-de-carreira-movva): Os doze degraus do plano de carreira da MOVVA, com a exigência de cada um lida na página 56 do deck institucional, a tabela de pontos e o que cada premiação custa em planos ativos.
+  Resposta curta: O plano de carreira da MOVVA tem doze graduações, de Consultor a Embaixador, publicadas na página 56 do deck institucional da empresa. As quatro primeiras exigem diretos ativos e destravam níveis da matriz; da quinta em diante a exigência vira pontuação acumulada, sempre com doze diretos ativos e, a partir da sétima, licença VIP.
+- [MOVVA no Reclame Aqui: o que existe hoje e como conferir](https://movvabrasil.net/blog/movva-reclame-aqui): Em 21/10/2026 não localizei página da operadora no Reclame Aqui: a que aparece é de outra empresa, com outro CNPJ. Veja como checar em quinze minutos.
+  Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
+- [O que você paga no primeiro mês, somado](https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes): Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 publicada pela empresa, três valores que eu não achei e a portabilidade.
+  Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
 
 ### Como funciona uma operadora virtual
 
@@ -73,13 +87,6 @@ que resolva.
   Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
 - [Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante](https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero): Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada.
   Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A janela de transição é de 2 horas em 99% dos casos, com teto de 24 horas.
-
-### Análise da empresa
-
-- [MOVVA no Reclame Aqui: o que existe hoje e como conferir](https://movvabrasil.net/blog/movva-reclame-aqui): Em 21/10/2026 não localizei página da operadora no Reclame Aqui: a que aparece é de outra empresa, com outro CNPJ. Veja como checar em quinze minutos.
-  Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
-- [O que você paga no primeiro mês, somado](https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes): Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 em material de distribuidor, três valores que eu não achei e a portabilidade.
-  Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
 
 ### Comparações
 
