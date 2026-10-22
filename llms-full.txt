@@ -43,8 +43,14 @@ O material da empresa lista quatro linhas que a licença duplica:
 |---|---|---|
 | Indicação direta, por plano indicado | R$ 5,00 | R$ 10,00 |
 | Matriz global, sobre os planos da sua matriz | 0,5% | 1% |
-| Matching — o deck o chama de Mega Bônus —, sobre o que o seu direto ganha na matriz | 50% | 100% |
+| Matching, sobre o que o seu direto ganha na matriz | 50% | 100% |
 | Pontuação do plano de carreira | normal | dobrada |
+
+Sobre a terceira linha, um aviso de leitura: a tabela acima sai do documento de
+diferenciais, que a chama de **matching**. A página 48 do deck descreve um
+**Mega Bônus** com o mesmo percentual, a mesma base e a mesma mecânica. São
+dois documentos da empresa, e eu os trato como a mesma coisa — mas essa
+identificação é minha, não está escrita em lugar nenhum.
 
 E há uma quinta linha, que não é duplicação e sim acesso exclusivo. A página 45
 do deck traz um ganho de **R$ 10,40 por cada licença VIP** na sua matriz, com a
@@ -67,10 +73,13 @@ ninguém fazer em voz alta. Vou fazer por três caminhos, com os números do
 documento.
 
 Antes, o que é "a sua matriz", porque os três caminhos dependem disso e a
-diferença muda tudo. A MOVVA usa uma matriz forçada 3×12: doze níveis abaixo de
-você, três posições de largura. Ela se enche de duas formas — com quem **você**
-cadastrou e com quem foi derramado de cima, por gente acima de você. As duas
-contam para o ganho.
+diferença muda tudo. O deck nomeia a estrutura: **matriz forçada 3×12**, doze
+níveis abaixo de você, três posições de largura.
+
+O que ele não explica é o que "forçada" significa. Pela leitura corrente do
+termo — e isto é leitura minha, não citação —, a matriz se enche de duas
+formas: com quem **você** cadastrou e com quem foi derramado de cima, por gente
+acima de você. As duas contam para o ganho.
 
 Mas só quem você cadastrou, o **direto**, destrava os níveis: três diretos
 ativos abrem três níveis, seis abrem seis, e assim até doze. Quem não indica
@@ -348,8 +357,13 @@ mínimo três diretos ativos e seja VIP.
 ## A pergunta que decide
 
 A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
-popular a obtenção de ganho ilícito por meio de bolas de neve, cadeias e
-processos equivalentes.
+popular obter ou tentar obter ganhos ilícitos **em detrimento do povo ou de
+número indeterminado de pessoas**, mediante especulações ou processos
+fraudulentos — e nomeia, entre eles, "bola de neve", "cadeias" e
+"pichardismo".
+
+Os dois elementos em destaque não são detalhe: é o que separa o tipo penal de
+qualquer negócio que simplesmente dê prejuízo.
 
 Repare no que o dispositivo faz e no que ele não faz: ele **tipifica a
 conduta**, e não enuncia o critério para distinguir uma coisa da outra. O
@@ -373,9 +387,9 @@ explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
 
 ## O que eu não consegui confirmar
 
-- **O que significa VME.** A sigla aparece em todos os degraus do plano de
-  carreira e em todas as premiações, com um percentual ao lado, e o deck não a
-  define em nenhuma das 66 páginas.
+- **O que significa VME.** A sigla aparece em catorze lugares do deck — oito
+  degraus do plano de carreira, do Gestor ao Embaixador, e as seis premiações —,
+  com um percentual ao lado, e o deck não a define em nenhuma das 66 páginas.
 - **O valor do bônus de adesão.** Existe no meu extrato, com valor. A tabela que
   o fixe por plano eu não localizei.
 - **O que conta como "ativo"** para efeito de destravar nível. O deck usa
@@ -423,10 +437,15 @@ porque a matriz derrama gente de cima para baixo — e essa gente, que você nã
 indicou, **não conta** para graduar. Está explicado em
 [como funciona a matriz](/blog/matriz-movva-como-funciona).
 
-**Ativo** é o critério que eu não sei. O deck repete "diretos ativos" na escada
-inteira e em nenhum momento diz o que torna alguém ativo: plano pago no mês,
-plano pago em dia, volume mínimo, ou outra coisa. Como a palavra aparece na
-exigência de todos os doze degraus, é a primeira pergunta a fazer por escrito.
+**Ativo** é o critério que eu não sei. O deck escreve "diretos ativos" nos
+quatro primeiros degraus e, do quinto em diante, só "12 diretos" — e em nenhum
+momento diz o que torna alguém ativo: plano pago no mês, plano pago em dia,
+volume mínimo, ou outra coisa.
+
+Se a exigência afrouxa de propósito depois do Supervisor, ou se é apenas
+economia de palavra no slide, o documento não resolve. Pergunte por escrito. É
+a diferença entre precisar de doze pessoas pagando e de doze pessoas
+cadastradas.
 
 | # | Graduação | Exige | Destrava |
 |---|---|---|---|
@@ -450,7 +469,7 @@ licença VIP como requisito.
 | 11 | Presidente | 75.000 Pts (PG) · 12 diretos · ser VIP | 20% | Bora Bora · liderança +0,4% · divisão de lucros |
 | 12 | Embaixador | 150.000 Pts (PG) · 12 diretos · ser VIP | 20% | Mercedes · liderança +0,5% · divisão de lucros |
 
-Três colunas dessa tabela precisam de explicação, e as três vêm abaixo: o que
+Três coisas dessa tabela precisam de explicação, e as três vêm abaixo: o que
 é **VME**, o que o prêmio ao lado do degrau quer dizer — porque ele **não** vem
 junto com a graduação —, e o que é **divisão de lucros**.
 
@@ -509,13 +528,13 @@ Esta é a leitura errada mais fácil de fazer na tabela lá de cima, e vale desf
 antes de seguir.
 
 Ao lado do Diretor, o deck desenha um cruzeiro. Isso **não** quer dizer que
-graduar Diretor te dá um cruzeiro. São duas contagens diferentes, e a seção
-seguinte mostra a segunda: o cruzeiro custa **4.000 GoldPoints**, e Diretor pede
-**700 Pts (PG)**. Um é quase seis vezes o outro.
+graduar Diretor te dá um cruzeiro. São duas contagens diferentes: a tabela das
+premiações, mais abaixo nesta página, cobra **4.000 GoldPoints** pelo cruzeiro,
+e Diretor pede **700 Pts (PG)**. Um é quase seis vezes o outro.
 
 O que o desenho indica é a faixa em que aquele prêmio entra no horizonte de
 quem está subindo — não um brinde que acompanha a graduação. Para ter o prêmio,
-é a conta da próxima seção que vale.
+é a conta da tabela de premiações que vale.
 
 E eu preciso dizer que **não sei se "Pts (PG)" e "GoldPoints" são a mesma
 contagem**. O deck usa um termo na escada e outro nas premiações, com a mesma
@@ -604,8 +623,9 @@ digo que corrigi.
   divergem, e está explicado acima.
 - **O que significa VME.** A sigla aparece em catorze lugares do deck — oito
   degraus e seis premiações — e não é definida em nenhum.
-- **O que torna um direto "ativo".** A palavra está na exigência dos doze
-  degraus e o deck não diz o critério.
+- **O que torna um direto "ativo"** — e por que a palavra aparece só nos quatro
+  primeiros degraus, sumindo do quinto em diante. O deck não diz o critério nem
+  explica a mudança de redação.
 - **O que é a "divisão de lucros"** que os quatro degraus de cima prometem.
   Tenho as três palavras e nada mais.
 - **Se "Pts (PG)" e "GoldPoints" são a mesma contagem.** O deck usa um termo na
@@ -3022,6 +3042,166 @@ Fontes da Anatel verificadas em 20/10/2026.
 
 ---
 
+# Operadora virtual pega bem? Como funciona a cobertura
+
+URL: https://movvabrasil.net/blog/operadora-virtual-pega-bem
+Publicado: 2026-10-20 · Atualizado: 2026-10-22
+Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
+
+Fontes citadas:
+- Anatel — Resolução nº 777/2025 e o RGST (Capítulo XII, arts. 216 a 263): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Resolução nº 783/2025 (PGMC), art. 36: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
+- Anatel — Painel de Cobertura Móvel: https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
+- Anatel — Nota técnica dos dados de cobertura móvel (Mosaico, ITU-R P.1812-5): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
+- Anatel — Painel Estações do SMP: https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento/estacoes-do-smp
+- Anatel — Painéis de Qualidade (selos, indicadores, velocidade): https://informacoes.anatel.gov.br/paineis/qualidade
+- Anatel — Painel Operadora mais veloz (RQUAL, indicador INF4): https://informacoes.anatel.gov.br/paineis/qualidade/operadora-mais-veloz
+- Anatel — Painel do Consumidor: https://informacoes.anatel.gov.br/paineis/consumidor
+- Anatel — Relatório de Monitoramento da Competição, 3T2026: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/7c9e49beaaddf69df55fdb9b6dda5de7
+- Vivo — Operadora móvel e virtual (representantes): https://vivo.com.br/para-voce/contratos-e-regulamentos/operadora-movel-e-virtual
+- Vivo — InterCel, operadora representante da Vivo: https://vivo.com.br/para-voce/contratos-e-regulamentos/operadora-movel-e-virtual/intercel
+- Claro — Regulatório (Listagem MVNO e ofertas de atacado): https://www.claro.com.br/institucional/regulatorio
+- TIM — Regulatório: como atendemos a Anatel: https://www.tim.com.br/sobre-a-tim/regulatorio
+- TELETIME — Anatel descarta regular preço de MVNO (22/09/2026): https://teletime.com.br/22/09/2026/anatel-descarta-regular-mvno-preco-iot/
+
+## Operadora virtual pega bem?
+
+Pega o que a rede hospedeira pega. Uma operadora virtual não tem antena: vende o
+plano, e o sinal vem da rede de outra empresa. A pergunta útil é qual rede ela
+usa, e se essa rede pega bem onde você mora.
+
+## Por que o sinal é o da rede hospedeira
+
+Porque é a rede dela que carrega a sua ligação. A regra está no Capítulo XII do
+RGST, anexo à Resolução Anatel nº 777/2025 (arts. 216 a 263), em vigor desde o
+fim de outubro de 2025.
+
+O Credenciado usa a rede da Prestadora Origem, nome técnico da hospedeira (art.
+219), e sua área fica limitada à área de prestação dela (§ 1º). As antenas não
+são dele: o licenciamento das estações rádio base é da hospedeira, e a virtual
+responde só pelas estações móveis (art. 240, §§ 1º e 2º). A hospedeira tem de
+manter as condições para esse cliente originar e receber chamadas em qualquer
+ponto onde ela preste serviço (art. 228), e a qualidade do serviço dela deve ser
+mantida quando contrata credenciadas (art. 225).
+
+Repare no verbo: a norma obriga. Obrigação não é garantia de sinal no seu
+quintal. Se a hospedeira pega mal na sua rua, a virtual também vai.
+
+Uma exceção que quase ninguém conta: o regulamento permite à virtual atender
+áreas sem infraestrutura da hospedeira, por alternativa tecnológica própria
+(art. 219, § 3º; art. 240, caput). A mancha pode não ser idêntica.
+
+## O que não muda, e o que pode mudar
+
+| Não muda | Pode mudar |
+| --- | --- |
+| Antenas e mancha de cobertura | Atendimento e suporte |
+| Tecnologia na torre | Roaming e visitantes (art. 226) |
+| Responsabilidade legal | Tecnologias e velocidades do plano |
+
+A responsabilidade não se dilui. A hospedeira responde perante os usuários pelos
+direitos do contrato, do regulamento de direitos do consumidor e da Lei
+8.078/1990, e a credenciada responde solidariamente, menos nas obrigações
+exclusivas da hospedeira (art. 235, §§ 2º e 3º). Quem contrata por credenciada é
+usuário da hospedeira (art. 237), e ter credenciada não a desobriga de nada
+(art. 236). Terminada a representação, ela atende o usuário com o mesmo número,
+e [sair sem multa](/blog/operadora-sem-fidelidade) é direito seu (arts. 238 e
+227, III).
+
+O resto varia porque é contrato: as condições da representação são de livre
+negociação (art. 232, § 1º), e rede virtual móvel não está entre os quatro
+mercados de atacado com regulação ex ante do PGMC (Resolução 783/2025, art. 36).
+Em 22/09/2026, o superintendente de Competição da Anatel, José Borges, disse em
+evento que a agência não pretende tabelar preço, mas avalia mexer em
+exclusividade e roaming. É declaração, não decisão.
+
+## Como descobrir qual rede ela usa
+
+Lendo a oferta. As ofertas são da hospedeira e têm de trazer com clareza o nome
+da credenciada e o da hospedeira (art. 223, § 2º), em todos os documentos de
+contratação (art. 237, § 2º).
+
+Três checagens a mais:
+
+1. A hospedeira é obrigada a publicar no site a lista atualizada das suas
+   credenciadas (art. 218).
+2. A Anatel nomeia as autorizadas no relatório de competição; ausência na lista
+   não prova o modelo.
+3. Atenção à camada dupla: na mesma região geográfica, uma autorizada de rede
+   virtual pode ser hospedeira de credenciadas, mas não de outras autorizadas
+   (art. 258). A pergunta pode ter duas respostas.
+
+Página de operadora atrasa. A da Vivo sobre a Inter Cel ainda explicava o modelo
+pela revogada Resolução 550, embora registre de quem é o serviço: "A prestação
+do Serviço Móvel Pessoal (SMP) é realizada pela prestadora (Vivo)". A Listagem
+MVNO da Claro ficava, em 20/10/2026, num bloco de regulamentos anteriores a
+setembro de 2025, sem data. Pergunte por escrito, com protocolo.
+
+## Como conferir a cobertura na sua região
+
+No painel de Cobertura Móvel da Anatel, pela hospedeira. Escolha a medida
+(moradores, domicílios ou área coberta), abra a UF, desça ao município e veja os
+setores com e sem cobertura.
+
+É predição, não medição, e a agência avisa isso: os dados saem do sistema
+Mosaico, com modelo ITU-R P.1812-5, e podem não representar com exatidão a
+cobertura real. O painel não classifica localidade em coberta ou não coberta: a
+nota técnica diz que ele agrega os setores censitários e devolve um percentual,
+sem percentual de corte. E desde setembro de 2024 o limiar de 4G e 5G passou de
+-110 dBm para -90 dBm. Para ver antena licenciada perto de casa, use o painel Estações do SMP.
+
+## Como conferir a qualidade da hospedeira
+
+Nos painéis de qualidade da Anatel: Selos por município, Mapa de Velocidade da
+Internet Móvel, Operadora mais veloz e o painel do consumidor.
+
+A ressalva é grande. A Anatel avisa que prestadoras de pequeno porte podem não
+aparecer nesses painéis, porque ainda não participam da regulamentação de
+qualidade, e que o painel de velocidade só inclui quem entra voluntariamente no
+RQUAL, no indicador INF4. Na minha leitura, o selo que interessa é o da
+hospedeira: o serviço é dela.
+
+## O teste que vale mais que painel
+
+Pedir um chip e usar no trajeto real: casa, trabalho, o caminho, o elevador.
+Painel é estimativa; o bolso é medição. Faça isso antes de [portar o
+número](/blog/portabilidade-sem-perder-o-numero).
+
+## O que eu não consegui confirmar
+
+- **Despriorização em horário de pico.** É o que mais se repete em guias de
+  internet. Não achei fonte primária nos dois sentidos. No Capítulo XII não há
+  dispositivo sobre prioridade de tráfego; o mais próximo é o art. 220, que
+  cobra da credenciada não prejudicar a rede, o que não isenta a hospedeira.
+  Onde confirmar: o contrato homologado, que fica para consulta pública no site
+  da Anatel e da hospedeira (art. 233, § 6º), e as ofertas de atacado de Claro e
+  TIM.
+- **5G em plano de operadora virtual.** Um índice setorial privado afirma que
+  nenhuma virtual reportou conexões 5G, sem cruzar com dado da Anatel.
+  Onde confirmar: os termos do plano e a oferta de atacado da hospedeira.
+- **Qual é a cadeia de rede da MOVVA Brasil.** Aqui a dúvida mudou de lugar, e
+  vale dizer como. O deck institucional da empresa anuncia, em letra, "Rede TIM
+  + Roaming da VIVO" — rede principal da TIM, com a Vivo entrando por roaming,
+  e não duas redes contratadas. Isso é anúncio da empresa, não verificação
+  minha. O que continua aberto é o instrumento: eu não achei a lista do art.
+  218 nem documento que diga qual prestadora de origem suporta o acesso. E há
+  um problema a mais: o dossiê de transparência da mesma empresa descreve outra
+  cadeia, com contrato com a ISPS do Brasil sobre infraestrutura da ARQIA, sem
+  mencionar TIM nem Vivo. São dois documentos da MOVVA que
+  [não fecham entre si](/movva-e-confiavel). Onde confirmar: a lista do art.
+  218, e a própria oferta — por escrito, com protocolo.
+
+## Quem escreve, e o que isso muda na sua escolha
+
+Escrevo como distribuidor independente da MOVVA Brasil, sem chip em mãos e sem
+teste de campo. Trabalho com o que dá para verificar: norma e documento público.
+
+Escolher uma operadora virtual não é escolher uma cobertura nova; é escolher
+plano, atendimento e contrato sobre uma cobertura que já existe. Pergunte qual é
+a rede, confira a rede, teste a rede.
+
+---
+
 # Plano de celular sem fidelidade: o que a regra garante
 
 URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
@@ -3200,166 +3380,6 @@ MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
 característica de produto da MOVVA — é regulação que vale para qualquer
 operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
 jurídica.
-
----
-
-# Operadora virtual pega bem? Como funciona a cobertura
-
-URL: https://movvabrasil.net/blog/operadora-virtual-pega-bem
-Publicado: 2026-10-20 · Atualizado: 2026-10-22
-Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
-
-Fontes citadas:
-- Anatel — Resolução nº 777/2025 e o RGST (Capítulo XII, arts. 216 a 263): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — Resolução nº 783/2025 (PGMC), art. 36: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
-- Anatel — Painel de Cobertura Móvel: https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
-- Anatel — Nota técnica dos dados de cobertura móvel (Mosaico, ITU-R P.1812-5): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
-- Anatel — Painel Estações do SMP: https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento/estacoes-do-smp
-- Anatel — Painéis de Qualidade (selos, indicadores, velocidade): https://informacoes.anatel.gov.br/paineis/qualidade
-- Anatel — Painel Operadora mais veloz (RQUAL, indicador INF4): https://informacoes.anatel.gov.br/paineis/qualidade/operadora-mais-veloz
-- Anatel — Painel do Consumidor: https://informacoes.anatel.gov.br/paineis/consumidor
-- Anatel — Relatório de Monitoramento da Competição, 3T2026: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/7c9e49beaaddf69df55fdb9b6dda5de7
-- Vivo — Operadora móvel e virtual (representantes): https://vivo.com.br/para-voce/contratos-e-regulamentos/operadora-movel-e-virtual
-- Vivo — InterCel, operadora representante da Vivo: https://vivo.com.br/para-voce/contratos-e-regulamentos/operadora-movel-e-virtual/intercel
-- Claro — Regulatório (Listagem MVNO e ofertas de atacado): https://www.claro.com.br/institucional/regulatorio
-- TIM — Regulatório: como atendemos a Anatel: https://www.tim.com.br/sobre-a-tim/regulatorio
-- TELETIME — Anatel descarta regular preço de MVNO (22/09/2026): https://teletime.com.br/22/09/2026/anatel-descarta-regular-mvno-preco-iot/
-
-## Operadora virtual pega bem?
-
-Pega o que a rede hospedeira pega. Uma operadora virtual não tem antena: vende o
-plano, e o sinal vem da rede de outra empresa. A pergunta útil é qual rede ela
-usa, e se essa rede pega bem onde você mora.
-
-## Por que o sinal é o da rede hospedeira
-
-Porque é a rede dela que carrega a sua ligação. A regra está no Capítulo XII do
-RGST, anexo à Resolução Anatel nº 777/2025 (arts. 216 a 263), em vigor desde o
-fim de outubro de 2025.
-
-O Credenciado usa a rede da Prestadora Origem, nome técnico da hospedeira (art.
-219), e sua área fica limitada à área de prestação dela (§ 1º). As antenas não
-são dele: o licenciamento das estações rádio base é da hospedeira, e a virtual
-responde só pelas estações móveis (art. 240, §§ 1º e 2º). A hospedeira tem de
-manter as condições para esse cliente originar e receber chamadas em qualquer
-ponto onde ela preste serviço (art. 228), e a qualidade do serviço dela deve ser
-mantida quando contrata credenciadas (art. 225).
-
-Repare no verbo: a norma obriga. Obrigação não é garantia de sinal no seu
-quintal. Se a hospedeira pega mal na sua rua, a virtual também vai.
-
-Uma exceção que quase ninguém conta: o regulamento permite à virtual atender
-áreas sem infraestrutura da hospedeira, por alternativa tecnológica própria
-(art. 219, § 3º; art. 240, caput). A mancha pode não ser idêntica.
-
-## O que não muda, e o que pode mudar
-
-| Não muda | Pode mudar |
-| --- | --- |
-| Antenas e mancha de cobertura | Atendimento e suporte |
-| Tecnologia na torre | Roaming e visitantes (art. 226) |
-| Responsabilidade legal | Tecnologias e velocidades do plano |
-
-A responsabilidade não se dilui. A hospedeira responde perante os usuários pelos
-direitos do contrato, do regulamento de direitos do consumidor e da Lei
-8.078/1990, e a credenciada responde solidariamente, menos nas obrigações
-exclusivas da hospedeira (art. 235, §§ 2º e 3º). Quem contrata por credenciada é
-usuário da hospedeira (art. 237), e ter credenciada não a desobriga de nada
-(art. 236). Terminada a representação, ela atende o usuário com o mesmo número,
-e [sair sem multa](/blog/operadora-sem-fidelidade) é direito seu (arts. 238 e
-227, III).
-
-O resto varia porque é contrato: as condições da representação são de livre
-negociação (art. 232, § 1º), e rede virtual móvel não está entre os quatro
-mercados de atacado com regulação ex ante do PGMC (Resolução 783/2025, art. 36).
-Em 22/09/2026, o superintendente de Competição da Anatel, José Borges, disse em
-evento que a agência não pretende tabelar preço, mas avalia mexer em
-exclusividade e roaming. É declaração, não decisão.
-
-## Como descobrir qual rede ela usa
-
-Lendo a oferta. As ofertas são da hospedeira e têm de trazer com clareza o nome
-da credenciada e o da hospedeira (art. 223, § 2º), em todos os documentos de
-contratação (art. 237, § 2º).
-
-Três checagens a mais:
-
-1. A hospedeira é obrigada a publicar no site a lista atualizada das suas
-   credenciadas (art. 218).
-2. A Anatel nomeia as autorizadas no relatório de competição; ausência na lista
-   não prova o modelo.
-3. Atenção à camada dupla: na mesma região geográfica, uma autorizada de rede
-   virtual pode ser hospedeira de credenciadas, mas não de outras autorizadas
-   (art. 258). A pergunta pode ter duas respostas.
-
-Página de operadora atrasa. A da Vivo sobre a Inter Cel ainda explicava o modelo
-pela revogada Resolução 550, embora registre de quem é o serviço: "A prestação
-do Serviço Móvel Pessoal (SMP) é realizada pela prestadora (Vivo)". A Listagem
-MVNO da Claro ficava, em 20/10/2026, num bloco de regulamentos anteriores a
-setembro de 2025, sem data. Pergunte por escrito, com protocolo.
-
-## Como conferir a cobertura na sua região
-
-No painel de Cobertura Móvel da Anatel, pela hospedeira. Escolha a medida
-(moradores, domicílios ou área coberta), abra a UF, desça ao município e veja os
-setores com e sem cobertura.
-
-É predição, não medição, e a agência avisa isso: os dados saem do sistema
-Mosaico, com modelo ITU-R P.1812-5, e podem não representar com exatidão a
-cobertura real. O painel não classifica localidade em coberta ou não coberta: a
-nota técnica diz que ele agrega os setores censitários e devolve um percentual,
-sem percentual de corte. E desde setembro de 2024 o limiar de 4G e 5G passou de
--110 dBm para -90 dBm. Para ver antena licenciada perto de casa, use o painel Estações do SMP.
-
-## Como conferir a qualidade da hospedeira
-
-Nos painéis de qualidade da Anatel: Selos por município, Mapa de Velocidade da
-Internet Móvel, Operadora mais veloz e o painel do consumidor.
-
-A ressalva é grande. A Anatel avisa que prestadoras de pequeno porte podem não
-aparecer nesses painéis, porque ainda não participam da regulamentação de
-qualidade, e que o painel de velocidade só inclui quem entra voluntariamente no
-RQUAL, no indicador INF4. Na minha leitura, o selo que interessa é o da
-hospedeira: o serviço é dela.
-
-## O teste que vale mais que painel
-
-Pedir um chip e usar no trajeto real: casa, trabalho, o caminho, o elevador.
-Painel é estimativa; o bolso é medição. Faça isso antes de [portar o
-número](/blog/portabilidade-sem-perder-o-numero).
-
-## O que eu não consegui confirmar
-
-- **Despriorização em horário de pico.** É o que mais se repete em guias de
-  internet. Não achei fonte primária nos dois sentidos. No Capítulo XII não há
-  dispositivo sobre prioridade de tráfego; o mais próximo é o art. 220, que
-  cobra da credenciada não prejudicar a rede, o que não isenta a hospedeira.
-  Onde confirmar: o contrato homologado, que fica para consulta pública no site
-  da Anatel e da hospedeira (art. 233, § 6º), e as ofertas de atacado de Claro e
-  TIM.
-- **5G em plano de operadora virtual.** Um índice setorial privado afirma que
-  nenhuma virtual reportou conexões 5G, sem cruzar com dado da Anatel.
-  Onde confirmar: os termos do plano e a oferta de atacado da hospedeira.
-- **Qual é a cadeia de rede da MOVVA Brasil.** Aqui a dúvida mudou de lugar, e
-  vale dizer como. O deck institucional da empresa anuncia, em letra, "Rede TIM
-  + Roaming da VIVO" — rede principal da TIM, com a Vivo entrando por roaming,
-  e não duas redes contratadas. Isso é anúncio da empresa, não verificação
-  minha. O que continua aberto é o instrumento: eu não achei a lista do art.
-  218 nem documento que diga qual prestadora de origem suporta o acesso. E há
-  um problema a mais: o dossiê de transparência da mesma empresa descreve outra
-  cadeia, com contrato com a ISPS do Brasil sobre infraestrutura da ARQIA, sem
-  mencionar TIM nem Vivo. São dois documentos da MOVVA que
-  [não fecham entre si](/movva-e-confiavel). Onde confirmar: a lista do art.
-  218, e a própria oferta — por escrito, com protocolo.
-
-## Quem escreve, e o que isso muda na sua escolha
-
-Escrevo como distribuidor independente da MOVVA Brasil, sem chip em mãos e sem
-teste de campo. Trabalho com o que dá para verificar: norma e documento público.
-
-Escolher uma operadora virtual não é escolher uma cobertura nova; é escolher
-plano, atendimento e contrato sobre uma cobertura que já existe. Pergunte qual é
-a rede, confira a rede, teste a rede.
 
 ---
 
