@@ -29,7 +29,7 @@ O deck institucional da MOVVA publica dois valores para a licença VIP: **R$ 497
 
 A primeira coisa a fazer com esses dois números é multiplicar o segundo. Doze
 vezes R$ 51,13 dá **R$ 613,56** — ou seja, **R$ 116,56 a mais** que o valor à
-vista, o equivalente a 23,4%. O deck apresenta as duas formas lado a lado e não
+vista, o equivalente a 23,5%. O deck apresenta as duas formas lado a lado e não
 chama essa diferença de nada.
 
 Não é ilegal nem incomum cobrar mais no parcelado. Mas é informação que muda a
@@ -43,16 +43,20 @@ O material da empresa lista quatro linhas que a licença duplica:
 |---|---|---|
 | Indicação direta, por plano indicado | R$ 5,00 | R$ 10,00 |
 | Matriz global, sobre os planos da sua matriz | 0,5% | 1% |
-| Matching, sobre o que o seu direto ganha na matriz | 50% | 100% |
+| Matching — o deck o chama de Mega Bônus —, sobre o que o seu direto ganha na matriz | 50% | 100% |
 | Pontuação do plano de carreira | normal | dobrada |
 
 E há uma quinta linha, que não é duplicação e sim acesso exclusivo. A página 45
 do deck traz um ganho de **R$ 10,40 por cada licença VIP** na sua matriz, com a
 restrição escrita ao lado: *exclusivo para VIPs, somente VIP ganha sobre VIP*.
 
-Quem não compra a licença não recebe essa linha. É a única do plano que paga **no
-ato da adesão** — todas as outras da matriz, segundo a mesma página, são pagas
-"da 2ª fatura em diante".
+Quem não compra a licença não recebe essa linha. E, **das duas linhas de matriz
+da página 45**, é a única que paga no ato da adesão: a outra, a de telefonia, é
+paga "da 2ª fatura em diante".
+
+Digo "das duas linhas da página 45" de propósito, e não "do plano inteiro".
+Sobre a indicação direta — se ela paga uma vez ou todo mês — eu não achei
+documento, e isso está nos pontos em aberto no fim desta página.
 
 Guarde isso, porque é o que faz a conta abaixo funcionar como funciona.
 
@@ -61,6 +65,18 @@ Guarde isso, porque é o que faz a conta abaixo funcionar como funciona.
 Esta é a pergunta que eu queria ter visto antes de pagar, e que eu nunca vi
 ninguém fazer em voz alta. Vou fazer por três caminhos, com os números do
 documento.
+
+Antes, o que é "a sua matriz", porque os três caminhos dependem disso e a
+diferença muda tudo. A MOVVA usa uma matriz forçada 3×12: doze níveis abaixo de
+você, três posições de largura. Ela se enche de duas formas — com quem **você**
+cadastrou e com quem foi derramado de cima, por gente acima de você. As duas
+contam para o ganho.
+
+Mas só quem você cadastrou, o **direto**, destrava os níveis: três diretos
+ativos abrem três níveis, seis abrem seis, e assim até doze. Quem não indica
+ninguém não abre nível nenhum, e então nada do que cai abaixo dele paga. A
+mecânica inteira está em
+[como funciona a matriz](/blog/matriz-movva-como-funciona).
 
 **Caminho 1 — por licenças VIP abaixo de você.** R$ 497 dividido por R$ 10,40 dá
 47,8. São **48 pessoas comprando a mesma licença** dentro da sua matriz. Se você
@@ -71,7 +87,9 @@ retorno depende inteiramente de outras pessoas gastarem R$ 497 — e não de
 ninguém usar celular.
 
 **Caminho 2 — pela matriz de telefonia.** A licença leva o seu percentual de
-0,5% para 1%. Sobre um Liberty de R$ 79,90, isso é a diferença entre R$ 0,40 e
+0,5% para 1%. Sobre um Liberty de R$ 79,90 — preço anunciado pela MOVVA na
+página 31 do deck, conferido em 21 de outubro de 2026 —, isso é a diferença
+entre R$ 0,40 e
 R$ 0,80 por mês. O **ganho extra** da licença é, portanto, cerca de R$ 0,40 por
 plano ativo por mês.
 
@@ -98,10 +116,14 @@ e meio, com oito pessoas na rede.
 | Indicador | Valor |
 |---|---|
 | Comissão bruta gerada no período | R$ 146,08 |
-| Recebido líquido, após taxa de saque de 16% | R$ 115,43 |
+| Sacado em 13 de agosto de 2026, meu único saque | R$ 137,42 |
+| Taxa de saque, 16% sobre esse saque | − R$ 21,99 |
+| Recebido líquido | R$ 115,43 |
 | Parcela originada de licença VIP | R$ 92,70 (63,5%) |
 | Bônus de recorrência sobre plano de telefonia | R$ 0,00 |
 | Comissão em outubro de 2026 | R$ 0,00 |
+
+Os R$ 8,66 que faltam entre o gerado e o sacado não entraram nesse saque.
 
 Então a conta honesta é esta: paguei R$ 497 e recebi **R$ 115,43 líquidos** em
 três meses e meio. Estou **77% abaixo do que paguei**, e isso sem contar a
@@ -160,8 +182,10 @@ Quem não consegue te responder isso por escrito está te vendendo outra coisa.
   qual eu entrei já foi alterada uma vez.
 
 A estrutura inteira em que essa licença opera está em
-[como funciona a matriz](/blog/matriz-movva-como-funciona), e os degraus que ela
-destrava em [o plano de carreira](/blog/plano-de-carreira-movva).
+[como funciona a matriz](/blog/matriz-movva-como-funciona). E a licença é
+**requisito** a partir do sétimo degrau da escada — não destrava nenhum
+sozinha, quem destrava é direto ativo —, o que está em
+[o plano de carreira](/blog/plano-de-carreira-movva).
 
 ---
 
@@ -169,11 +193,11 @@ destrava em [o plano de carreira](/blog/plano-de-carreira-movva).
 
 URL: https://movvabrasil.net/blog/matriz-movva-como-funciona
 Publicado: 2026-10-22 · Atualizado: 2026-10-22
-Resposta curta: A MOVVA usa uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Os níveis destravam de três em três, conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP. O deck paga esse ganho só a partir da segunda fatura.
+Resposta curta: O deck institucional da MOVVA descreve uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Segundo ele, os níveis destravam de três em três conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP — esse ganho só a partir da segunda fatura.
 
 Fontes citadas:
 - MOVVA — plataforma oficial, onde as regras vigentes devem ser conferidas. A mecânica da matriz desta página foi lida nas páginas 45 a 48 do deck institucional da empresa, que não tem endereço público que eu possa linkar: https://movvabrasil.com
-- Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular o ganho obtido por meio de cadeias e bolas de neve. É o dispositivo que define o critério usado no fim desta página: https://www.planalto.gov.br/ccivil_03/leis/l1521.htm
+- Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular o ganho ilícito obtido por meio de bolas de neve, cadeias e processos equivalentes. O dispositivo tipifica a conduta; ele não enuncia o teste de origem da receita que esta página usa, e a página diz isso: https://www.planalto.gov.br/ccivil_03/leis/l1521.htm
 
 Esta página descreve o que a MOVVA **anuncia** sobre a matriz dela, lido no deck
 institucional da empresa. Não é verificação minha e não é promessa de ganho.
@@ -184,16 +208,19 @@ corpo miúdo, embaixo dos números grandes.
 
 ## O formato: 3×12, forçada
 
-Três posições de largura, doze níveis de profundidade. "Forçada" quer dizer que
-as posições se preenchem numa ordem definida pela estrutura, e não por você: se
-a sua primeira linha já tem três, o quarto cadastro desce para o nível seguinte,
-abaixo de alguém.
+Três posições de largura, doze níveis de profundidade. É assim que o deck a
+nomeia, em letra: "matriz forçada 3×12".
 
-Isso tem um efeito que vale dizer em voz alta, porque é o argumento de venda
-mais comum do modelo: **pode entrar gente abaixo de você que você não indicou.**
-Vinda de cima, derramada pela estrutura. É verdade, acontece, e é exatamente por
-isso que o modelo atrai. Também é por isso que ele precisa ser lido com a regra
-de destrave ao lado.
+O que o deck **não** faz é explicar o que "forçada" significa. Então o parágrafo
+seguinte é leitura minha do termo, não citação, e vale dizer isso antes de
+você lê-lo: numa matriz forçada, as posições se preenchem numa ordem definida
+pela estrutura, e não por você — se a sua primeira linha já tem três, o quarto
+cadastro desce para o nível seguinte, abaixo de alguém.
+
+Daí vem o efeito que é o argumento de venda mais comum do modelo: **pode entrar
+gente abaixo de você que você não indicou**, derramada de cima. Peço que leia
+isso com a regra de destrave ao lado, que vem agora — porque é ela que decide se
+essa gente derramada te paga alguma coisa.
 
 ## Os níveis não vêm de graça
 
@@ -206,6 +233,16 @@ e a moeda é diretos ativos — gente que **você** indicou e que está pagando.
 | 6 diretos | 6 | 6% |
 | 9 diretos | 9 | 9% |
 | 12 diretos | 12 | 12% |
+
+A terceira coluna é a que mais engana, então leia devagar. Cada nível paga
+**1%** sobre os planos ativos daquele nível, para quem tem licença VIP — a
+tabela da próxima seção traz isso. Os 3%, 6%, 9% e 12% são a **soma dos
+percentuais dos níveis abertos**, e não um percentual aplicado uma vez.
+
+Quer dizer: com doze níveis abertos você não recebe 12% de nada. Você recebe 1%
+de cada plano em cada um dos doze níveis — e quanto isso dá depende inteiramente
+de quantos planos existem lá, que é o número que ninguém mostra. Os percentuais
+da coluna são, sem VIP, a metade disso: 0,5% por nível.
 
 A leitura honesta dessa tabela é esta: o derramamento de cima só te paga nos
 níveis que os seus próprios indicados destravaram. Quem entra e não indica
@@ -254,6 +291,11 @@ As páginas 46 e 47 do deck somam o dinheiro de uma matriz 3×12 inteiramente
 preenchida. Os números são grandes: **R$ 637.728,00 por mês** sobre telefonia, e
 **mais de R$ 8 milhões por ano** sobre licenças.
 
+A base está impressa junto, e precisa vir junto: "simulação baseada no Plano
+Liberty 25 GB, ganhando 1% (VIP) por afiliado, até o 12º nível". Ou seja, todo
+mundo da matriz com o mesmo plano, todo mundo pagando, você VIP, os doze níveis
+abertos.
+
 O que essas páginas somam é o dinheiro. O que elas não somam é a gente. Então eu
 somo.
 
@@ -261,13 +303,24 @@ Uma matriz 3×12 cheia tem 3 pessoas no primeiro nível, 9 no segundo, 27 no
 terceiro, e assim por diante até **531.441 no décimo segundo**. O total é
 **797.160 pessoas** — todas com plano ativo e pago, todas abaixo de uma só.
 
-Vale comparar com o tamanho do mercado em que isso teria de caber. Segundo a
-Teleco, os chips de operadoras virtuais voltadas ao consumidor final somavam
-**2,2 milhões de acessos no Brasil inteiro** no segundo trimestre de 2025.
+Vale comparar com o tamanho do mercado em que isso teria de caber. A Teleco, uma
+consultoria setorial privada, publica que os chips de operadoras virtuais
+voltadas ao consumidor final somavam **2,2 milhões de acessos no Brasil inteiro**
+no segundo trimestre de 2025.
 
-A matriz cheia do deck pede, portanto, **cerca de 36% de todo o mercado
-brasileiro de operadoras virtuais de consumo, dentro de uma única rede
-pessoal.** A sua.
+Preciso marcar a forma desse número antes de usá-lo: ele é de consultoria, não
+da Anatel, e eu não consegui abrir documento da agência que o confirme — é o
+mesmo motivo pelo qual
+[este site registra que a contagem de autorizadas varia conforme a fonte](/blog/o-que-e-operadora-virtual).
+Trate-o como ordem de grandeza, não como medida.
+
+Com essa ressalva: a matriz cheia do deck pediria **algo em torno de um terço de
+todo o mercado brasileiro de operadoras virtuais de consumo, dentro de uma única
+rede pessoal.** A sua.
+
+E o argumento não depende da precisão desse denominador. Mesmo que o mercado
+fosse o dobro do que a Teleco publica, a matriz cheia ainda pediria um sexto
+dele embaixo de uma pessoa só.
 
 Isso não quer dizer que o número seja mentira: ele é aritmética correta sobre
 uma hipótese. Quer dizer que a hipótese é o teto teórico do modelo, e não um
@@ -287,15 +340,24 @@ mês. Embaixo do número grande, em corpo miúdo, está escrito "simulação com
 VIP" — e é simulação mesmo: pressupõe dez diretos já ganhando mil reais por mês
 cada um, o que é a conclusão, não o ponto de partida.
 
-A compressão dinâmica vale aqui também.
+A compressão dinâmica vale aqui também, e isso está na própria página 48: se o
+patrocinador não estiver apto a receber o Mega Bônus, por não estar ativo ou não
+ter destravado a matriz, o ganho sobe para o próximo ascendente que tenha no
+mínimo três diretos ativos e seja VIP.
 
 ## A pergunta que decide
 
 A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
-popular a obtenção de ganho por meio de cadeias e bolas de neve. O que separa
-venda direta legítima de cadeia não é existir ou não um produto — é se a
-remuneração deriva principalmente **da venda real do produto a consumidores** ou
-**do ingresso de novos participantes**.
+popular a obtenção de ganho ilícito por meio de bolas de neve, cadeias e
+processos equivalentes.
+
+Repare no que o dispositivo faz e no que ele não faz: ele **tipifica a
+conduta**, e não enuncia o critério para distinguir uma coisa da outra. O
+critério que eu uso abaixo — se a remuneração deriva principalmente **da venda
+real do produto a consumidores** ou **do ingresso de novos participantes** — não
+está escrito no inciso. É o teste que se consolidou na doutrina e na atuação dos
+órgãos de defesa do consumidor, e eu o adoto por achá-lo o mais útil, não por
+ele ser lei.
 
 A matriz desta página é o lugar onde essa pergunta se responde com número, e a
 métrica é uma só: **bônus de recorrência sobre plano de telefonia.**
@@ -330,7 +392,7 @@ explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
 
 URL: https://movvabrasil.net/blog/plano-de-carreira-movva
 Publicado: 2026-10-22 · Atualizado: 2026-10-22
-Resposta curta: O plano de carreira da MOVVA tem doze graduações, de Consultor a Embaixador, publicadas na página 56 do deck institucional da empresa. As quatro primeiras exigem diretos ativos e destravam níveis da matriz; da quinta em diante a exigência vira pontuação acumulada, sempre com doze diretos ativos e, a partir da sétima, licença VIP.
+Resposta curta: A página 56 do deck institucional da MOVVA publica doze graduações, de Consultor a Embaixador. As quatro primeiras exigem diretos ativos; da quinta em diante a exigência vira pontuação, sempre com doze diretos e, a partir da sétima, licença VIP. Os medalhões oficiais, porém, são treze — dois materiais da empresa divergem.
 
 Fontes citadas:
 - MOVVA — plataforma oficial, onde o plano vigente deve ser conferido antes de decidir qualquer coisa. Os degraus, as exigências e as premiações desta página foram lidos nas páginas 45 a 57 do deck institucional da empresa, que não tem endereço público que eu possa linkar: https://movvabrasil.com
@@ -353,6 +415,19 @@ Liberdade. A lógica muda no meio do caminho — e essa mudança é a informaç�
 Nos **quatro primeiros**, a exigência é gente: diretos ativos. Cada faixa de
 três diretos destrava mais três níveis de ganho na matriz.
 
+Antes da tabela, duas palavras que decidem tudo e que o deck usa sem definir.
+
+**Direto** é quem **você** cadastrou, pessoalmente. Não é quem aparece abaixo de
+você. Essa distinção é a que mais se embaralha na conversa de recrutamento,
+porque a matriz derrama gente de cima para baixo — e essa gente, que você não
+indicou, **não conta** para graduar. Está explicado em
+[como funciona a matriz](/blog/matriz-movva-como-funciona).
+
+**Ativo** é o critério que eu não sei. O deck repete "diretos ativos" na escada
+inteira e em nenhum momento diz o que torna alguém ativo: plano pago no mês,
+plano pago em dia, volume mínimo, ou outra coisa. Como a palavra aparece na
+exigência de todos os doze degraus, é a primeira pergunta a fazer por escrito.
+
 | # | Graduação | Exige | Destrava |
 |---|---|---|---|
 | 1 | Consultor | 3 diretos ativos | até o 3º nível da matriz |
@@ -364,16 +439,20 @@ Do **quinto em diante**, a exigência vira pontuação acumulada, e os doze dire
 ativos passam a ser piso fixo em todos eles. A partir do sétimo, entra também a
 licença VIP como requisito.
 
-| # | Graduação | Exige | O que vem junto |
-|---|---|---|---|
-| 5 | Gestor | 100 Pts (PG) · 12 diretos | ganha 3 chips |
-| 6 | Executivo | 300 Pts (PG) · 12 diretos | ganha 10 chips |
-| 7 | Diretor | 700 Pts (PG) · 12 diretos · ser VIP | cruzeiro |
-| 8 | Diretor Sênior | 2.500 Pts (PG) · 12 diretos · ser VIP | Caribe · liderança +0,1% |
-| 9 | Acionista | 10.000 Pts (PG) · 12 diretos · ser VIP | Europa · liderança +0,2% · divisão de lucros |
-| 10 | Vice-Presidente | 30.000 Pts (PG) · 12 diretos · ser VIP | Dubai · liderança +0,3% · divisão de lucros |
-| 11 | Presidente | 75.000 Pts (PG) · 12 diretos · ser VIP | Bora Bora · liderança +0,4% · divisão de lucros |
-| 12 | Embaixador | 150.000 Pts (PG) · 12 diretos · ser VIP | Mercedes · liderança +0,5% · divisão de lucros |
+| # | Graduação | Exige | VME | O que o deck põe ao lado |
+|---|---|---|---|---|
+| 5 | Gestor | 100 Pts (PG) · 12 diretos | 50% | ganha 3 chips |
+| 6 | Executivo | 300 Pts (PG) · 12 diretos | 50% | ganha 10 chips |
+| 7 | Diretor | 700 Pts (PG) · 12 diretos · ser VIP | 50% | cruzeiro |
+| 8 | Diretor Sênior | 2.500 Pts (PG) · 12 diretos · ser VIP | 50% | Caribe · liderança +0,1% |
+| 9 | Acionista | 10.000 Pts (PG) · 12 diretos · ser VIP | 40% | Europa · liderança +0,2% · divisão de lucros |
+| 10 | Vice-Presidente | 30.000 Pts (PG) · 12 diretos · ser VIP | 30% | Dubai · liderança +0,3% · divisão de lucros |
+| 11 | Presidente | 75.000 Pts (PG) · 12 diretos · ser VIP | 20% | Bora Bora · liderança +0,4% · divisão de lucros |
+| 12 | Embaixador | 150.000 Pts (PG) · 12 diretos · ser VIP | 20% | Mercedes · liderança +0,5% · divisão de lucros |
+
+Três colunas dessa tabela precisam de explicação, e as três vêm abaixo: o que
+é **VME**, o que o prêmio ao lado do degrau quer dizer — porque ele **não** vem
+junto com a graduação —, e o que é **divisão de lucros**.
 
 Repare no salto entre o oitavo e o nono: de 2.500 para 10.000 pontos. É
 quadruplicar. Entre o décimo e o décimo primeiro, de 30.000 para 75.000. A
@@ -382,16 +461,21 @@ uma rampa suave está desenhando outra coisa.
 
 ## O que significa VME, e por que eu não respondo
 
-Em todos os degraus da tabela acima, e em todas as seis premiações, o deck
-imprime a sigla **VME** com um percentual ao lado. Ela cai conforme se sobe: 50%
-nos primeiros, 40% no Acionista, 30% no Vice-Presidente, 20% no Presidente e no
-Embaixador.
+A sigla aparece em **catorze lugares** do deck: nos oito degraus que exigem
+pontuação e nas seis premiações. Os quatro primeiros degraus não a trazem. O
+percentual cai conforme se sobe — 50% até o Diretor Sênior, 40% no Acionista,
+30% no Vice-Presidente, 20% no Presidente e no Embaixador.
 
-O deck **não define a sigla** em nenhuma das 66 páginas. Eu reproduzo o número
-como está impresso e não traduzo. Em plano de carreira de marketing de rede,
-uma regra com esse formato costuma limitar quanto da pontuação pode vir de uma
-mesma perna — mas "costuma" não é documento, e este site não publica o que
-"costuma".
+E o deck **não define a sigla** em nenhuma das 66 páginas.
+
+Então eu reproduzo o número como está impresso e paro aí. Não vou dizer o que
+VME significa, porque não sei: o que eu faria seria deduzir pelo formato, e
+dedução sobre a regra que decide se você graduou ou não é exatamente o tipo de
+coisa que este site existe para não publicar.
+
+O que dá para dizer com segurança é que ela **desce** conforme a exigência de
+pontos **sobe** — e, seja o que for que ela limite, limita mais nos degraus de
+cima. Isso basta para saber que é uma restrição, não um bônus.
 
 Pergunte por escrito, com protocolo, o que VME significa e como ela é calculada
 na sua conta. É a pergunta que separa quem leu o plano de quem decorou o slide.
@@ -418,6 +502,38 @@ dia, seus pontos nunca zeram."
 É uma frase que responde a hipótese boa e deixa a ruim em aberto. O que acontece
 com o ponto se o plano **deixar** de ser pago — se zera, quando zera, se zera só
 o ponto daquele plano ou a conta toda — o documento não diz.
+
+## O prêmio ao lado do degrau não vem com o degrau
+
+Esta é a leitura errada mais fácil de fazer na tabela lá de cima, e vale desfazer
+antes de seguir.
+
+Ao lado do Diretor, o deck desenha um cruzeiro. Isso **não** quer dizer que
+graduar Diretor te dá um cruzeiro. São duas contagens diferentes, e a seção
+seguinte mostra a segunda: o cruzeiro custa **4.000 GoldPoints**, e Diretor pede
+**700 Pts (PG)**. Um é quase seis vezes o outro.
+
+O que o desenho indica é a faixa em que aquele prêmio entra no horizonte de
+quem está subindo — não um brinde que acompanha a graduação. Para ter o prêmio,
+é a conta da próxima seção que vale.
+
+E eu preciso dizer que **não sei se "Pts (PG)" e "GoldPoints" são a mesma
+contagem**. O deck usa um termo na escada e outro nas premiações, com a mesma
+tabela de pontos por plano nas duas. Isso sugere uma conta só, mas o documento
+não diz. É a diferença entre precisar de 150.000 para graduar Embaixador e
+precisar de 150.000 para ganhar Bora Bora — ou precisar dos dois.
+
+## E o que é "divisão de lucros"?
+
+Ela aparece em quatro linhas da tabela, do Acionista para cima, e é a promessa
+mais pesada que a escada carrega. Lucro de quê, calculado sobre qual resultado,
+pago quando, por quanto tempo.
+
+O deck imprime as três palavras e não responde nenhuma dessas perguntas. Eu
+reproduzo porque está no documento, e deixo registrado aqui que não tenho nada
+além das três palavras. Quem te apresentar "divisão de lucros" como se fosse
+participação societária está dizendo mais do que o material da empresa diz —
+peça o documento que define.
 
 ## As premiações, e o que elas custam em gente
 
@@ -486,8 +602,12 @@ digo que corrigi.
 
 - **Quantos degraus a escada tem de verdade.** Dois materiais da empresa
   divergem, e está explicado acima.
-- **O que significa VME.** A sigla aparece em dezoito lugares do deck e não é
-  definida em nenhum.
+- **O que significa VME.** A sigla aparece em catorze lugares do deck — oito
+  degraus e seis premiações — e não é definida em nenhum.
+- **O que torna um direto "ativo".** A palavra está na exigência dos doze
+  degraus e o deck não diz o critério.
+- **O que é a "divisão de lucros"** que os quatro degraus de cima prometem.
+  Tenho as três palavras e nada mais.
 - **Se "Pts (PG)" e "GoldPoints" são a mesma contagem.** O deck usa um termo na
   escada e outro nas premiações, com a mesma tabela de pontos por plano nas duas
   seções. Isso sugere uma contagem só, mas o documento não diz isso com todas as
@@ -506,10 +626,20 @@ documento publica, e regras mudam — o meu próprio extrato tem lançamentos so
 rótulo "Bônus Matching (antigo)", o que significa que a regra sob a qual eu
 entrei foi alterada depois.
 
-O que eu ganhei de verdade em três meses e meio, com a licença paga, está aberto
-em [quanto eu realmente ganhei](/oportunidade), com a taxa de saque e a linha de
-recorrência que continua em zero. Leia os dois juntos: esta página é o que a
-empresa promete, aquela é o que aconteceu comigo.
+Esta página é a escada. Faltam as duas peças que a fazem andar, e cada uma tem
+a sua:
+
+- **De onde vem o ponto que graduou você** — a matriz, quando os níveis
+  destravam, e a regra de data que faz a licença pagar no ato e a telefonia só
+  da segunda fatura: [como funciona a matriz](/blog/matriz-movva-como-funciona).
+- **A licença VIP, que é requisito do sétimo degrau em diante** — quanto custa,
+  o que dobra e quantas pessoas ela precisa para se pagar, por três caminhos:
+  [vale a pena?](/blog/licenca-vip-vale-a-pena).
+
+E os meus números, que são o contraste: comissão de R$ 146,08 em três meses e
+meio, recorrência sobre telefonia em R$ 0,00, resultado acumulado negativo. Eles
+estão com as tabelas abertas em
+[o programa de afiliados](/oportunidade).
 
 ---
 
@@ -941,6 +1071,192 @@ Nota de transparência: escrevo como distribuidor independente da MOVVA Brasil L
 
 ---
 
+# Melhor operadora para zona rural: como checar a cobertura real
+
+URL: https://movvabrasil.net/blog/cobertura-zona-rural
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
+
+Fontes citadas:
+- Anatel — Cobertura, Telefonia Móvel (Qualidade dos Serviços): https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/mapa-cobertura
+- Anatel — Plano Estrutural de Redes de Telecomunicações (PERT), Edição 2026: https://www.gov.br/anatel/pt-br/dados/infraestrutura/pert
+- Lei nº 9.472/1997 (LGT), arts. 63, 79 e 135: https://informacoes.anatel.gov.br/legislacao/leis/8-1997/2-lei-9472
+- Anatel — RGST, Anexo da Resolução nº 777/2025 (art. 14; art. 2º, XXV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Decreto nº 9.612, de 17/12/2018, art. 9º, II: https://informacoes.anatel.gov.br/legislacao/component/content/article/9-decretos/1247-decreto-9612
+- Anatel — Compromissos de Abrangência do Leilão do 5G: https://www.gov.br/anatel/pt-br/regulado/universalizacao/compromissos-do-leilao-do-5g
+- Minuta de Edital do Leilão do 5G, SEI/ANATEL 6605739 (março de 2021), Anexo de Compromissos de Abrangência — critérios de município e de localidade atendidos: https://telesintese.com.br/wp-content/uploads/2021/03/SEI-ANATEL-6605739-Minuta-de-Edital.pdf
+- Anatel — Apresentação do Edital 700 MHz (relatoria, SEI nº 53500.055271/2024-11): https://www.gov.br/anatel/pt-br/assuntos/noticias/regras-do-edital-de-700-mhz-sao-aprovadas-pelo-conselho-diretor-da-anatel/apresentacao-700-mhz.pdf/@@download/file
+- Anatel — Painel de Acompanhamento e Controle, 5G (Acórdão nº 39/2024): https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/5g
+- Anatel — Painel de Acompanhamento e Controle, 700 MHz: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/700-mhz
+- Anatel — Painel Consulta a Compromissos: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/consulta-a-compromissos
+- Anatel — Painel Compromissos de Investimento: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/compromissos-de-investimento
+- Anatel — Painel de Dados, Cobertura Móvel: https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
+- Anatel — Nota Técnica de Dados de Cobertura Móvel (Mosaico, ITU-R P.1812-5): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
+- Anatel — RQUAL, Anexo I da Resolução nº 717/2019 (art. 1º, § 2º; art. 28, IV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
+- Anatel — Intensidade do Sinal (consulta de nível de sinal): https://www.gov.br/anatel/pt-br/consumidor/intensidade-do-sinal
+- Anatel — Orientações para aquisição de aparelhos celulares (banda 28): https://www.gov.br/anatel/pt-br/regulado/certificacao/orientacoes-para-aquisicao-de-aparelhos-celulares
+- Recomendação ITU-R P.525-3 (09/2016), Anexo 1, equação (4): https://itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.525-3-201611-S!!MSW-E.docx
+- Anatel — Sandbox Regulatório (Projetos Piloto I e II): https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/sandbox-regulatorio
+- Anatel — Sandbox: repetidores e reforçadores por entidades municipais: https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/sandbox-repetidor
+- Anatel — Redes Comunitárias (GT-RCom, Portaria nº 2597/2023): https://www.gov.br/anatel/pt-br/regulado/universalizacao/redes-comunitarias
+- Anatel — Índice de Resoluções de 2013 (Resolução nº 617/2013, revogada): https://informacoes.anatel.gov.br/legislacao/resolucoes/2013
+- Anatel — Plano Geral de Metas de Universalização (PGMU V): https://www.gov.br/anatel/pt-br/regulado/universalizacao/plano-geral-de-metas-de-universalizacao
+- Seja Digital / Gired — Leilão 04 de Atendimento a Localidades com SMP: https://sejadigital.com.br/leilao04/
+
+## A resposta em uma linha
+
+Não existe melhor operadora para zona rural que sirva para todo mundo: a resposta
+é por endereço, e dá para verificá-la antes de assinar.
+
+## Por que cobertura rural é outro jogo?
+
+**Quem escolhe onde ofertar é a empresa:** a Anatel registra que a telefonia
+móvel é prestada por empresas privadas com, em geral, liberdade para escolher
+onde ofertar. **A física cobra pela frequência:** faixa alta leva mais dados e
+alcança menos chão. **E a cobertura é calculada, não medida no seu portão.**
+
+## Qual é o tamanho do buraco?
+
+Grande. O PERT 2026 da Anatel resume o desafio em 26.442 localidades sem
+cobertura e sem obrigação de atendimento de ninguém — nem por edital, nem por
+TAC, nem por Obrigação de Fazer.
+
+## O que os compromissos de abrangência obrigam
+
+Obrigam a vencedora do leilão. A base é o art. 135 da LGT e o Decreto nº
+9.612/2018, que prioriza no art. 9º, II a cobertura móvel em vilas, aglomerados
+rurais e rodovias federais.
+
+Do **leilão do 5G**: 5G nas 5.570 sedes municipais e 4G ou superior em 7.430
+localidades — 6.805 delas pela faixa de 2,3 GHz, até 31/12/2028. As outras 625,
+de 700 MHz, são caso à parte.
+
+Do **leilão de 700 MHz de 2026**, pela apresentação da relatoria: prioridade nº 1
+para 4G nas localidades não sedes com mais de 600 habitantes desassistidas e,
+caso os recursos disponíveis assim permitam, rodovias federais sem 4G. Tudo até
+31/12/2030.
+
+## O que eles não obrigam
+
+- **Não cobrem todo mundo.** São as 26.442 localidades do PERT 2026, que nenhum
+  dos compromissos acima alcança.
+- **Compromisso é da vencedora, e pode acabar.** O de 4G nas rodovias federais,
+  no Edital 5G, foi vencido pela Winity II Telecom Ltda — o lote de 700 MHz, das
+  625 localidades e dos 2.349 trechos —, e a empresa renunciou às autorizações.
+  Se a renúncia também extingue os compromissos de abrangência do lote, e quem
+  responde hoje por essas localidades e esses trechos, é o que eu não consegui
+  confirmar: li o painel do Acórdão nº 39/2024, não o acórdão.
+- **Coberta não quer dizer inteira:** no anexo de compromissos, atendido é
+  critério de município e de área urbana — a cobertura tem de alcançar 95% da
+  área urbana do distrito sede, e o resto do município, zona rural inclusive,
+  fica fora da conta. Para localidade o critério é outro: pelo menos uma estação
+  rádio base dentro do polígono do setor censitário. Li os dois na minuta do
+  edital (março de 2021), não no edital publicado, e o critério muda de lote para
+  lote — por isso não cito número de item. E nada disso é critério do painel de
+  cobertura: a nota técnica do painel não traz percentual de corte nenhum.
+
+## Existe meta de universalização para celular?
+
+Não. Universalização, na LGT, é obrigação de quem presta em regime público
+(art. 79), e regime público é concessão ou permissão (art. 63, parágrafo único).
+O celular é regime privado, por autorização, pelo art. 14 do RGST, e os planos de
+metas, até o PGMU V, alcançaram a telefonia fixa. Se disserem que a lei obriga a
+operadora a atender a sua casa, peça o artigo.
+
+## Por que 700 MHz, e a pegadinha da banda 28
+
+Pela equação de espaço livre da ITU-R P.525-3, de 2016, a mesma distância custa
+cerca de 14 dB a mais em 3,5 GHz do que em 700 MHz — conta minha, em espaço
+livre, e a UIT já lista a P.525-5.
+
+E 700 MHz é a banda 28 do 3GPP. A Anatel avisa que aparelho sem uma ou mais das
+faixas usadas no país pode não funcionar ou funcionar com limitações: um
+importado sem a banda 28 não vê a torre do compromisso de 700 MHz.
+
+## Como conferir cobertura e compromisso no seu endereço
+
+Comece pelo painel Cobertura Móvel da Anatel, que desce ao setor censitário.
+Alterne a medida para **Área Coberta** — num setor rural enorme, moradores
+cobertos diz pouco sobre o seu ponto — e procure o seu povoado.
+
+O limite está na nota técnica: a predição usa estações licenciadas, com **cálculo
+máximo de 7 km**, e considera moradores uniformemente distribuídos no setor — com
+a população concentrada num povoado, isso pode esconder ou inventar cobertura no
+seu endereço.
+
+Veja também o que a prestadora é obrigada a publicar pelo art. 28, IV do RQUAL —
+informações sobre a própria cobertura de SMP por tecnologia e acesso ao mapa de
+cobertura da página da Anatel —, e a consulta de sinal em
+sistemas.anatel.gov.br/se/public/cmap.php, cuja ressalva vale citar: os
+resultados servem apenas como referência, "não constituindo [...] informação
+para efeito de compromissos de cobertura ou qualidade".
+
+Em operadora virtual vale a rede hospedeira, porque a virtual não tem antena —
+veja [como funciona a cobertura de operadora
+virtual](/blog/operadora-virtual-pega-bem). E pelo art. 1º, § 2º do RQUAL, as
+obrigações do regulamento só alcançam os Grupos que não se enquadram como
+Prestadora de Pequeno Porte — conceito que o próprio § 2º busca no Plano Geral de
+Metas de Competição.
+
+Para saber se alguém está obrigado a atender a sua localidade: **Consulta a
+Compromissos**, que só mostra obrigação de 80% ou mais; **Compromissos de
+Investimento**, que reflete o compromisso original, não a entrega de hoje;
+**Painel do 700 MHz**; e o **Leilão 04** de localidades com SMP, cuja lista está
+no Anexo II do edital.
+
+## O que fazer quando ninguém declara cobertura
+
+1. **Teste um chip de cada rede no ponto**, no horário em que você usa —
+   [desligue a seleção automática e veja em qual rede o chip aceita
+   registrar](/blog/chip-dois-sinais).
+2. **Ligação por Wi-Fi**, se a internet fixa chega: [a ordem do que tentar quando
+   o sinal morre dentro de casa, e por que repetidor de sinal é de uso das
+   prestadoras](/blog/celular-sem-sinal-em-casa) está noutro post.
+3. **Pergunta sobre usuário visitante** à vencedora do 700 MHz: a apresentação da
+   Anatel lista atendimento obrigatório de visitantes de outras autorizadas que
+   não prestem serviço no local. Não achei o dispositivo do edital — pergunte por
+   escrito, com protocolo, e reclame no 1331.
+4. **Caminhos que não passam por você:** o sandbox que permite a entidades
+   municipais usar repetidor sob outorga de Serviço Limitado Privado (Ato nº
+   2062/2024), as redes comunitárias do GT-RCom e o satélite ao celular, ainda
+   piloto.
+
+Antes de assinar, pergunte por escrito: qual rede atende o seu endereço e com
+qual cobertura por tecnologia; se há compromisso para a sua localidade; e qual o
+prazo se não houver cobertura.
+
+## O que eu não consegui confirmar
+
+- **No edital de 700 MHz:** li a apresentação da relatoria, não o edital. Daí não
+  afirmar o dispositivo da prioridade nº 1, o critério de 600 habitantes, o dever
+  de atender usuário visitante nem o artigo da Portaria MCom nº 18.902/2025.
+- **No Edital 5G:** quem responde hoje pelas 625 localidades e pelos 2.349
+  trechos do lote da Winity, e se os marcos de 2025 e 2026 saíram.
+- **No PERT 2026:** a abertura das 26.442 localidades por categoria — setores
+  censitários do IBGE e localidades identificadas por prospecção — e a seção do
+  documento onde o próprio total aparece. Não abri o PERT: o número vem da
+  página do plano no site da Anatel.
+- **Nos percentuais do PERT:** os índices de localidades sem 4G e de área com 4G,
+  rural e urbano. Não consegui amarrá-los a seção ou página do documento, e é
+  por isso que esta página não traz a tabela que eles formariam.
+- **Nas normas:** qual ato rege as redes comunitárias, já que o PERT aponta a
+  revogada Resolução nº 617/2013.
+- **Nos programas:** um ato da Anatel homologando o Leilão 04 (o portal fala em
+  104 localidades; a imprensa, em 112) e se há oferta comercial de satélite.
+- **Na sua operadora:** o enquadramento como Prestadora de Pequeno Porte, o da
+  MOVVA inclusive, e a rede hospedeira dela. E se alguma marca resolve o seu
+  endereço: sem resposta a distância.
+
+Onde confirmar: as licitações e os processos SEI das fontes, o Diário Oficial, a
+prefeitura e o 1331.
+
+---
+
+Nada aqui descreve característica de produto da MOVVA: é regulação e painel
+público.
+
+---
+
 # Como contratar o chip MOVVA — e como cancelar, portar o número e reclamar
 
 URL: https://movvabrasil.net/blog/contratar-chip-movva
@@ -1173,192 +1489,6 @@ Nenhuma afirmação sobre a MOVVA nesta página vem de teste em campo: contratei
 - **Qual leitura prevalece no art. 24, § 3º, III**, que manda o contrato e a Etiqueta Padrão informarem os canais da Ouvidoria, quando os arts. 87 a 89 não alcançam prestadora de pequeno porte e o Guia das PPPs reescreve o mesmo dever como "canais de atendimento".
 - **Por que a Anatel mantém publicadas duas redações do art. 90.** A página do anexo exibe a redação original e a retificada no DOU de 26/12/2023. Comparei as duas: diferem pela inclusão do art. 2º, e nenhum dispositivo citado nesta página muda entre elas. Usei a retificada. Não sei por que as duas seguem no ar.
 - **O endereço oficial da versão mais nova do Manual Operacional do RGC.** Conferi em 21/10/2026: o PDF que o sistema da Anatel serve é a versão 1, de agosto de 2024, e nela não existe o capítulo 4.9, do cancelamento sem atendente. A versão 4, de junho de 2025, que traz esse capítulo, eu só consegui abrir em cópia hospedada por uma operadora — o conteúdo é o documento oficial, mas o endereço não é da agência.
-
----
-
-# Melhor operadora para zona rural: como checar a cobertura real
-
-URL: https://movvabrasil.net/blog/cobertura-zona-rural
-Publicado: 2026-10-21 · Atualizado: 2026-10-21
-Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
-
-Fontes citadas:
-- Anatel — Cobertura, Telefonia Móvel (Qualidade dos Serviços): https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/mapa-cobertura
-- Anatel — Plano Estrutural de Redes de Telecomunicações (PERT), Edição 2026: https://www.gov.br/anatel/pt-br/dados/infraestrutura/pert
-- Lei nº 9.472/1997 (LGT), arts. 63, 79 e 135: https://informacoes.anatel.gov.br/legislacao/leis/8-1997/2-lei-9472
-- Anatel — RGST, Anexo da Resolução nº 777/2025 (art. 14; art. 2º, XXV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Decreto nº 9.612, de 17/12/2018, art. 9º, II: https://informacoes.anatel.gov.br/legislacao/component/content/article/9-decretos/1247-decreto-9612
-- Anatel — Compromissos de Abrangência do Leilão do 5G: https://www.gov.br/anatel/pt-br/regulado/universalizacao/compromissos-do-leilao-do-5g
-- Minuta de Edital do Leilão do 5G, SEI/ANATEL 6605739 (março de 2021), Anexo de Compromissos de Abrangência — critérios de município e de localidade atendidos: https://telesintese.com.br/wp-content/uploads/2021/03/SEI-ANATEL-6605739-Minuta-de-Edital.pdf
-- Anatel — Apresentação do Edital 700 MHz (relatoria, SEI nº 53500.055271/2024-11): https://www.gov.br/anatel/pt-br/assuntos/noticias/regras-do-edital-de-700-mhz-sao-aprovadas-pelo-conselho-diretor-da-anatel/apresentacao-700-mhz.pdf/@@download/file
-- Anatel — Painel de Acompanhamento e Controle, 5G (Acórdão nº 39/2024): https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/5g
-- Anatel — Painel de Acompanhamento e Controle, 700 MHz: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/700-mhz
-- Anatel — Painel Consulta a Compromissos: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/consulta-a-compromissos
-- Anatel — Painel Compromissos de Investimento: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/compromissos-de-investimento
-- Anatel — Painel de Dados, Cobertura Móvel: https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
-- Anatel — Nota Técnica de Dados de Cobertura Móvel (Mosaico, ITU-R P.1812-5): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
-- Anatel — RQUAL, Anexo I da Resolução nº 717/2019 (art. 1º, § 2º; art. 28, IV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
-- Anatel — Intensidade do Sinal (consulta de nível de sinal): https://www.gov.br/anatel/pt-br/consumidor/intensidade-do-sinal
-- Anatel — Orientações para aquisição de aparelhos celulares (banda 28): https://www.gov.br/anatel/pt-br/regulado/certificacao/orientacoes-para-aquisicao-de-aparelhos-celulares
-- Recomendação ITU-R P.525-3 (09/2016), Anexo 1, equação (4): https://itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.525-3-201611-S!!MSW-E.docx
-- Anatel — Sandbox Regulatório (Projetos Piloto I e II): https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/sandbox-regulatorio
-- Anatel — Sandbox: repetidores e reforçadores por entidades municipais: https://www.gov.br/anatel/pt-br/regulado/agenda-regulatoria/sandbox-repetidor
-- Anatel — Redes Comunitárias (GT-RCom, Portaria nº 2597/2023): https://www.gov.br/anatel/pt-br/regulado/universalizacao/redes-comunitarias
-- Anatel — Índice de Resoluções de 2013 (Resolução nº 617/2013, revogada): https://informacoes.anatel.gov.br/legislacao/resolucoes/2013
-- Anatel — Plano Geral de Metas de Universalização (PGMU V): https://www.gov.br/anatel/pt-br/regulado/universalizacao/plano-geral-de-metas-de-universalizacao
-- Seja Digital / Gired — Leilão 04 de Atendimento a Localidades com SMP: https://sejadigital.com.br/leilao04/
-
-## A resposta em uma linha
-
-Não existe melhor operadora para zona rural que sirva para todo mundo: a resposta
-é por endereço, e dá para verificá-la antes de assinar.
-
-## Por que cobertura rural é outro jogo?
-
-**Quem escolhe onde ofertar é a empresa:** a Anatel registra que a telefonia
-móvel é prestada por empresas privadas com, em geral, liberdade para escolher
-onde ofertar. **A física cobra pela frequência:** faixa alta leva mais dados e
-alcança menos chão. **E a cobertura é calculada, não medida no seu portão.**
-
-## Qual é o tamanho do buraco?
-
-Grande. O PERT 2026 da Anatel resume o desafio em 26.442 localidades sem
-cobertura e sem obrigação de atendimento de ninguém — nem por edital, nem por
-TAC, nem por Obrigação de Fazer.
-
-## O que os compromissos de abrangência obrigam
-
-Obrigam a vencedora do leilão. A base é o art. 135 da LGT e o Decreto nº
-9.612/2018, que prioriza no art. 9º, II a cobertura móvel em vilas, aglomerados
-rurais e rodovias federais.
-
-Do **leilão do 5G**: 5G nas 5.570 sedes municipais e 4G ou superior em 7.430
-localidades — 6.805 delas pela faixa de 2,3 GHz, até 31/12/2028. As outras 625,
-de 700 MHz, são caso à parte.
-
-Do **leilão de 700 MHz de 2026**, pela apresentação da relatoria: prioridade nº 1
-para 4G nas localidades não sedes com mais de 600 habitantes desassistidas e,
-caso os recursos disponíveis assim permitam, rodovias federais sem 4G. Tudo até
-31/12/2030.
-
-## O que eles não obrigam
-
-- **Não cobrem todo mundo.** São as 26.442 localidades do PERT 2026, que nenhum
-  dos compromissos acima alcança.
-- **Compromisso é da vencedora, e pode acabar.** O de 4G nas rodovias federais,
-  no Edital 5G, foi vencido pela Winity II Telecom Ltda — o lote de 700 MHz, das
-  625 localidades e dos 2.349 trechos —, e a empresa renunciou às autorizações.
-  Se a renúncia também extingue os compromissos de abrangência do lote, e quem
-  responde hoje por essas localidades e esses trechos, é o que eu não consegui
-  confirmar: li o painel do Acórdão nº 39/2024, não o acórdão.
-- **Coberta não quer dizer inteira:** no anexo de compromissos, atendido é
-  critério de município e de área urbana — a cobertura tem de alcançar 95% da
-  área urbana do distrito sede, e o resto do município, zona rural inclusive,
-  fica fora da conta. Para localidade o critério é outro: pelo menos uma estação
-  rádio base dentro do polígono do setor censitário. Li os dois na minuta do
-  edital (março de 2021), não no edital publicado, e o critério muda de lote para
-  lote — por isso não cito número de item. E nada disso é critério do painel de
-  cobertura: a nota técnica do painel não traz percentual de corte nenhum.
-
-## Existe meta de universalização para celular?
-
-Não. Universalização, na LGT, é obrigação de quem presta em regime público
-(art. 79), e regime público é concessão ou permissão (art. 63, parágrafo único).
-O celular é regime privado, por autorização, pelo art. 14 do RGST, e os planos de
-metas, até o PGMU V, alcançaram a telefonia fixa. Se disserem que a lei obriga a
-operadora a atender a sua casa, peça o artigo.
-
-## Por que 700 MHz, e a pegadinha da banda 28
-
-Pela equação de espaço livre da ITU-R P.525-3, de 2016, a mesma distância custa
-cerca de 14 dB a mais em 3,5 GHz do que em 700 MHz — conta minha, em espaço
-livre, e a UIT já lista a P.525-5.
-
-E 700 MHz é a banda 28 do 3GPP. A Anatel avisa que aparelho sem uma ou mais das
-faixas usadas no país pode não funcionar ou funcionar com limitações: um
-importado sem a banda 28 não vê a torre do compromisso de 700 MHz.
-
-## Como conferir cobertura e compromisso no seu endereço
-
-Comece pelo painel Cobertura Móvel da Anatel, que desce ao setor censitário.
-Alterne a medida para **Área Coberta** — num setor rural enorme, moradores
-cobertos diz pouco sobre o seu ponto — e procure o seu povoado.
-
-O limite está na nota técnica: a predição usa estações licenciadas, com **cálculo
-máximo de 7 km**, e considera moradores uniformemente distribuídos no setor — com
-a população concentrada num povoado, isso pode esconder ou inventar cobertura no
-seu endereço.
-
-Veja também o que a prestadora é obrigada a publicar pelo art. 28, IV do RQUAL —
-informações sobre a própria cobertura de SMP por tecnologia e acesso ao mapa de
-cobertura da página da Anatel —, e a consulta de sinal em
-sistemas.anatel.gov.br/se/public/cmap.php, cuja ressalva vale citar: os
-resultados servem apenas como referência, "não constituindo [...] informação
-para efeito de compromissos de cobertura ou qualidade".
-
-Em operadora virtual vale a rede hospedeira, porque a virtual não tem antena —
-veja [como funciona a cobertura de operadora
-virtual](/blog/operadora-virtual-pega-bem). E pelo art. 1º, § 2º do RQUAL, as
-obrigações do regulamento só alcançam os Grupos que não se enquadram como
-Prestadora de Pequeno Porte — conceito que o próprio § 2º busca no Plano Geral de
-Metas de Competição.
-
-Para saber se alguém está obrigado a atender a sua localidade: **Consulta a
-Compromissos**, que só mostra obrigação de 80% ou mais; **Compromissos de
-Investimento**, que reflete o compromisso original, não a entrega de hoje;
-**Painel do 700 MHz**; e o **Leilão 04** de localidades com SMP, cuja lista está
-no Anexo II do edital.
-
-## O que fazer quando ninguém declara cobertura
-
-1. **Teste um chip de cada rede no ponto**, no horário em que você usa —
-   [desligue a seleção automática e veja em qual rede o chip aceita
-   registrar](/blog/chip-dois-sinais).
-2. **Ligação por Wi-Fi**, se a internet fixa chega: [a ordem do que tentar quando
-   o sinal morre dentro de casa, e por que repetidor de sinal é de uso das
-   prestadoras](/blog/celular-sem-sinal-em-casa) está noutro post.
-3. **Pergunta sobre usuário visitante** à vencedora do 700 MHz: a apresentação da
-   Anatel lista atendimento obrigatório de visitantes de outras autorizadas que
-   não prestem serviço no local. Não achei o dispositivo do edital — pergunte por
-   escrito, com protocolo, e reclame no 1331.
-4. **Caminhos que não passam por você:** o sandbox que permite a entidades
-   municipais usar repetidor sob outorga de Serviço Limitado Privado (Ato nº
-   2062/2024), as redes comunitárias do GT-RCom e o satélite ao celular, ainda
-   piloto.
-
-Antes de assinar, pergunte por escrito: qual rede atende o seu endereço e com
-qual cobertura por tecnologia; se há compromisso para a sua localidade; e qual o
-prazo se não houver cobertura.
-
-## O que eu não consegui confirmar
-
-- **No edital de 700 MHz:** li a apresentação da relatoria, não o edital. Daí não
-  afirmar o dispositivo da prioridade nº 1, o critério de 600 habitantes, o dever
-  de atender usuário visitante nem o artigo da Portaria MCom nº 18.902/2025.
-- **No Edital 5G:** quem responde hoje pelas 625 localidades e pelos 2.349
-  trechos do lote da Winity, e se os marcos de 2025 e 2026 saíram.
-- **No PERT 2026:** a abertura das 26.442 localidades por categoria — setores
-  censitários do IBGE e localidades identificadas por prospecção — e a seção do
-  documento onde o próprio total aparece. Não abri o PERT: o número vem da
-  página do plano no site da Anatel.
-- **Nos percentuais do PERT:** os índices de localidades sem 4G e de área com 4G,
-  rural e urbano. Não consegui amarrá-los a seção ou página do documento, e é
-  por isso que esta página não traz a tabela que eles formariam.
-- **Nas normas:** qual ato rege as redes comunitárias, já que o PERT aponta a
-  revogada Resolução nº 617/2013.
-- **Nos programas:** um ato da Anatel homologando o Leilão 04 (o portal fala em
-  104 localidades; a imprensa, em 112) e se há oferta comercial de satélite.
-- **Na sua operadora:** o enquadramento como Prestadora de Pequeno Porte, o da
-  MOVVA inclusive, e a rede hospedeira dela. E se alguma marca resolve o seu
-  endereço: sem resposta a distância.
-
-Onde confirmar: as licitações e os processos SEI das fontes, o Diário Oficial, a
-prefeitura e o 1331.
-
----
-
-Nada aqui descreve característica de produto da MOVVA: é regulação e painel
-público.
 
 ---
 
@@ -1949,7 +2079,7 @@ E se a resposta que você receber for diferente do que está nesta página, a re
 - O preço do chip. Não localizei valor em nenhum documento que eu tenha em arquivo.
 - O valor da entrega do chip, e se ela é cobrada do cliente.
 - Se existe taxa de ativação, adesão ou habilitação para cliente. Não localizei documento que institua nenhuma — e também não localizei documento que afaste a cobrança por escrito.
-- Se o chip e a entrega são cobrados à parte ou já vêm embutidos na primeira mensalidade. O material de lançamento, de julho de 2026, não fecha isso: ali "ativar cadastro" não tem preço — a ação põe o chip na fila de produção, com entrega em casa — e o pagamento de R$ 79,90 que aparece no mesmo material é da licença VIP de afiliado, outra coisa, fora desta conta.
+- Se o chip e a entrega são cobrados à parte ou já vêm embutidos na primeira mensalidade. O material de lançamento, de julho de 2026, não fecha isso: ali "ativar cadastro" não tem preço — a ação põe o chip na fila de produção, com entrega em casa — e aparece no mesmo material um pagamento de R$ 79,90 que eu não consigo identificar com segurança. Eu já o descrevi aqui como sendo da licença VIP de afiliado, e isso não se sustenta: o deck institucional publica a licença VIP a R$ 497 à vista ou 12× R$ 51,13. R$ 79,90 é, exatamente, o preço mensal do plano Liberty — mas dizer que é o plano também seria dedução minha. Fica em aberto o que aquele pagamento cobre.
 - Se a MOVVA cobra ou dispensa a portabilidade. A norma permite as duas: o art. 70 do RGST deixa a operadora de destino cobrar do usuário portado, e o § 3º deixa ela dispensar a cobrança e pagar a Entidade Administradora no lugar dele. Quando você porta para a MOVVA, é ela que ocupa esse lugar, e eu não localizei documento da MOVVA dizendo o que ela faz.
 - O teto da cobrança de portabilidade. O art. 70, § 1º do RGST remete o valor máximo a Ato do Conselho Diretor publicado no Diário Oficial, e eu não localizei esse Ato. Os R$ 4,00 vêm do DECON/MPCE e do Idec, que são fonte de defesa do consumidor, não o Ato — e são teto, não preço.
 - Se a MOVVA se enquadra como Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" do dossiê da empresa é classificação da Receita Federal, outra coisa. Isso pesa no pacote de atendimento do RGC, cuja lista está no art. 90, e não na linha da portabilidade, que é do RGST.
@@ -2141,6 +2271,109 @@ Usei a redação do art. 90 retificada no DOU de 26 de dezembro de 2023.
 
 ---
 
+# Chip que pega em duas operadoras: o que existe de verdade
+
+URL: https://movvabrasil.net/blog/chip-dois-sinais
+Publicado: 2026-10-20 · Atualizado: 2026-10-21
+Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
+
+Fontes citadas:
+- ETSI TS 123 003 V19.8.0 (3GPP TS 23.003), cláusulas 2.1 a 2.3 — estrutura do IMSI e alocação de MCC e MNC: https://www.etsi.org/deliver/etsi_ts/123000_123099/123003/19.08.00_60/ts_123003v190800p.pdf
+- ETSI TS 123 122 V19.7.0 (3GPP TS 23.122), cláusulas 1.2, 3.1, 4.4.3 e 4.4.3.3.1 — EHPLMN e seleção de rede: https://www.etsi.org/deliver/etsi_ts/123100_123199/123122/19.07.00_60/ts_123122v190700p.pdf
+- ETSI TS 131 102 V19.6.0 (3GPP TS 31.102), cláusula 4.2.84 — arquivo EF-EHPLMN (6FD9): https://www.etsi.org/deliver/etsi_ts/131100_131199/131102/19.06.00_60/ts_131102v190600p.pdf
+- ETSI TS 122 101 V19.4.0 (3GPP TS 22.101), anexos A.3 e A.4 — nome de rede e de prestador de serviço: https://www.etsi.org/deliver/etsi_ts/122100_122199/122101/19.04.00_60/ts_122101v190400p.pdf
+- ETSI TS 102 223 V18.3.0 — Card Application Toolkit, comando REFRESH: https://www.etsi.org/deliver/etsi_ts/102200_102299/102223/18.03.00_60/ts_102223v180300p.pdf
+- GSMA — eSIM Specification (tabela de versões e datas, consultada em 20/10/2026): https://www.gsma.com/solutions-and-impact/technologies/esim/esim-specification/
+- GSMA SGP.31 — eSIM IoT Architecture and Requirements V1.3 (22/05/2026), seções 1.1, 1.2 e 1.4: https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2026/05/SGP.31-v1.3.pdf
+- Anatel — Ato nº 12712, de 4 de setembro de 2024, Anexo 1, item 16.1 (MNC): https://informacoes.anatel.gov.br/legislacao/component/content/article/154-atos-de-numera%C3%A7%C3%A3o/2140-ato-12712
+- Anatel — Resolução nº 777/2025, Anexo (RGST), arts. 217, 226, 235 e 241: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Resolução nº 783/2025, Anexo (PGMC), art. 66 — vedação do roaming permanente: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
+- Apple Support — Using Dual SIM with an eSIM (consultada em 20/10/2026): https://support.apple.com/en-us/109317
+- Google — Ajuda do Pixel: how to use dual SIMs on your Google Pixel phone (consultada em 20/10/2026): https://support.google.com/pixelphone/answer/9449293
+
+## Chip que pega em duas operadoras existe?
+
+Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
+
+## As quatro coisas vendidas com esse nome
+
+| O que é | Números | Quem troca | O que muda para você |
+| --- | --- | --- | --- |
+| **Multi-IMSI**: várias identidades no cartão, uma ativa | 1 | o cartão, avisando o aparelho | troca de rede sem você mexer |
+| **eSIM com vários perfis**: perfis de operadora baixados no aparelho | 1 por perfil | você, nas configurações | troca de operadora sem trocar de chip ([o que é eSIM e quais aparelhos aceitam](/blog/esim-ou-chip-fisico)) |
+| **Roaming ou acordo de visitante**: outra rede te atende por contrato | 1 | a rede, pelo contrato | cobertura fora da área da sua operadora |
+| **Dual SIM**: dois chips, duas assinaturas | 2 | você, nas configurações | dois planos, dados numa linha por vez |
+
+Das quatro, dual SIM é a que existe em qualquer loja — e não é "um chip, duas redes". A Apple registra que o iPhone usa uma rede de dados por vez, com SIM físico mais eSIM ou dois eSIM (iPhone 13 em diante). No Android, o DSDS do Google mantém duas linhas em uso e só uma como padrão de dados.
+
+## Por que o aparelho fica numa rede por vez
+
+A identidade gravada no chip aponta para uma rede. É o IMSI: MCC, três dígitos de país; MNC, dois ou três dígitos da rede; e o MSIN. No máximo 15 dígitos, um por assinante.
+
+O par MCC+MNC identifica uma rede, não uma marca. E a escolha é por fila: no modo automático, o aparelho percorre uma lista de redes em ordem de prioridade e fica na primeira disponível e permitida. Duas redes no chip nunca significam duas redes ao mesmo tempo.
+
+## O que acontece dentro do cartão
+
+No multi-IMSI, o cartão guarda mais de uma identidade, ativa uma por vez e avisa o aparelho pelo comando REFRESH. Seu número não muda. Não localizei especificação da GSMA de multi-IMSI, e a norma admite que o aparelho recuse a troca durante uma chamada: troca no meio de uma ligação não é garantida.
+
+Há uma quinta via, padronizada e pouco explicada: a lista de HPLMN equivalentes. Com um IMSI só, as redes dessa lista substituem o código derivado do IMSI na seleção de rede, e vale a equivalente de maior prioridade. É um arquivo opcional do cartão, o EF-EHPLMN (6FD9) — nem todo chip tem.
+
+## O "SIM resiliente" está na norma de IoT
+
+As especificações de eSIM da GSMA são dois conjuntos: SGP.21 e SGP.22, de consumo; SGP.31 e SGP.32, de IoT, cuja V1.3 saiu em 22/05/2026.
+
+O mecanismo que troca de rede quando a atual falha existe como norma, do lado de IoT: a GSMA define o Fallback Mechanism como mecanismo do eUICC que habilita um perfil marcado com o Atributo de Fallback quando o perfil habilitado perde conectividade. O escopo declarado é dispositivo de IoT, não o celular de consumo.
+
+## O que a regra brasileira permite
+
+Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada também pode, com mais de um contrato de compartilhamento (Art. 241, § 2º); o acordo de visitante tem base própria (Art. 226). A diferença entre credenciada e autorizada está [neste post](/blog/o-que-e-operadora-virtual).
+
+Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado: o art. 66, § 4º o define como acampamento fora da área de prestação por mais de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
+
+## Sobre a MOVVA: o que eu posso e não posso dizer
+
+Por um tempo eu só pude dizer que a MOVVA publicava "dupla conectividade TIM e Vivo num único chip" sem dizer **como** — e o como é o que muda a sua vida, porque roaming, multi-IMSI e credenciamento com mais de uma origem são três coisas diferentes.
+
+O deck institucional da empresa responde, e é específico: **"Rede TIM + Roaming da VIVO"**. Não são duas redes contratadas. A principal é a da TIM; a Vivo entra por roaming.
+
+Isso tem uma consequência que vale conhecer antes de contratar. O **art. 66, § 4º, do PGMC** veda o roaming permanente, e define a prática como o acampamento de usuário **fora da área de prestação** por mais de 90 dias corridos. É regra de atacado: as consequências que a norma prevê, no § 5º, são multa ou rescisão do contrato de Roaming Nacional entre as prestadoras, com um ano de impedimento para novo contrato regulado. Nada no artigo autoriza bloquear, desconectar ou penalizar você.
+
+Duas precisões mudam a leitura, e as duas estão no próprio texto da norma. A primeira: o limite se mede pela **área de prestação**, que é o alcance da outorga, e não pelo mapa de antenas — conectividade dentro da área da prestadora contratante não é roaming nacional, por definição do art. 36, IV do mesmo Plano. A segunda: a regra brasileira permite, por escrito, que uma operadora virtual tenha contrato com **mais de uma prestadora de origem** na mesma área de registro (RGST, arts. 217, parágrafo único, e 241, § 2º), e manda considerar como parte da rede da própria autorizada os recursos contratados em exploração industrial (art. 242). Nesses desenhos não existe acampamento fora da área, a segunda rede não é o Roaming Nacional de que trata o art. 66, e o teto de 90 dias não entra na conta.
+
+Então o que falta aqui não é explicação para uma contradição: é um documento que diga **sob qual instrumento a Vivo entra**. O deck chama de "roaming", mas é peça comercial, não contrato — e a palavra numa peça de venda não decide o enquadramento.
+
+Não valido nem invalido a promessa: entrego o método para você conferir sozinho, e o estado do meu próprio teste está na nota ao pé desta página.
+
+## Como você confere sozinho quando o chip chegar
+
+1. **Desconfie do nome na tela.** Por norma, ao menos 10 redes (MCC+MNC) podem exibir o mesmo nome, e o nome gravado no chip tem prioridade sobre o da rede.
+2. **Procure o código numérico.** Não publico tabela por empresa: a lista da ITU que abri é de 15/11/2023. E credenciada não tem código próprio, porque o MNC vai só para quem tem outorga de SMP.
+3. **Aviso de roaming é indício, não prova:** a exibição depende do chip e do fabricante.
+4. **Desligue a seleção automática** e veja onde o chip aceita registrar.
+5. **Conte linhas e perfis:** um número ou dois separa dual SIM de troca dentro do chip.
+6. **Cronometre a volta** num ponto onde uma das redes não pega: pela norma, a primeira tentativa sai entre 2 minutos e T, o tempo configurado, e só com o aparelho em repouso.
+7. **Peça por escrito, com protocolo, qual prestadora de origem suporta o seu acesso.**
+
+## O que eu não consegui confirmar
+
+Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
+
+- **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
+- **Sob qual instrumento a Vivo entra no chip.** Não achei documento da empresa dizendo qual é a prestadora de origem, qual é a área de prestação, e se a Vivo entra por contrato de Roaming Nacional, por acordo de atendimento a usuário visitante (RGST, art. 226), por exploração industrial ou por compartilhamento com uma segunda origem. Sem isso não dá para afirmar que o art. 66 alcança este plano, nem que não alcança. É o ponto que eu mais gostaria de ver respondido por escrito, com protocolo.
+- **Se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. O dossiê institucional dela descreve a operação por outra cadeia, citando contrato com a ISPS do Brasil (TIP Brasil) sobre infraestrutura da ARQIA, sem mencionar TIM nem Vivo. Os dois documentos são da empresa e não fecham entre si.
+- **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
+- **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
+
+## O que isso muda na sua escolha
+
+Troque a pergunta: quais são as duas redes, qual delas suporta o meu acesso, e o que acontece quando a principal cai. Trocar de virtual não cria cobertura nova; levar o número é outro assunto — veja [como funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
+
+---
+
+Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial. Nada aqui descreve característica de produto da MOVVA como verificada. Fontes de 20/10/2026.
+
+---
+
 # Celular sem sinal dentro de casa: o que fazer antes de trocar
 
 URL: https://movvabrasil.net/blog/celular-sem-sinal-em-casa
@@ -2328,109 +2561,6 @@ o número](/blog/portabilidade-sem-perder-o-numero) e, com prazo de permanência
 
 Nada aqui descreve característica de produto da MOVVA: é regulação e
 especificação válidas para qualquer operadora. Páginas verificadas em 20/10/2026.
-
----
-
-# Chip que pega em duas operadoras: o que existe de verdade
-
-URL: https://movvabrasil.net/blog/chip-dois-sinais
-Publicado: 2026-10-20 · Atualizado: 2026-10-21
-Resposta curta: Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números.
-
-Fontes citadas:
-- ETSI TS 123 003 V19.8.0 (3GPP TS 23.003), cláusulas 2.1 a 2.3 — estrutura do IMSI e alocação de MCC e MNC: https://www.etsi.org/deliver/etsi_ts/123000_123099/123003/19.08.00_60/ts_123003v190800p.pdf
-- ETSI TS 123 122 V19.7.0 (3GPP TS 23.122), cláusulas 1.2, 3.1, 4.4.3 e 4.4.3.3.1 — EHPLMN e seleção de rede: https://www.etsi.org/deliver/etsi_ts/123100_123199/123122/19.07.00_60/ts_123122v190700p.pdf
-- ETSI TS 131 102 V19.6.0 (3GPP TS 31.102), cláusula 4.2.84 — arquivo EF-EHPLMN (6FD9): https://www.etsi.org/deliver/etsi_ts/131100_131199/131102/19.06.00_60/ts_131102v190600p.pdf
-- ETSI TS 122 101 V19.4.0 (3GPP TS 22.101), anexos A.3 e A.4 — nome de rede e de prestador de serviço: https://www.etsi.org/deliver/etsi_ts/122100_122199/122101/19.04.00_60/ts_122101v190400p.pdf
-- ETSI TS 102 223 V18.3.0 — Card Application Toolkit, comando REFRESH: https://www.etsi.org/deliver/etsi_ts/102200_102299/102223/18.03.00_60/ts_102223v180300p.pdf
-- GSMA — eSIM Specification (tabela de versões e datas, consultada em 20/10/2026): https://www.gsma.com/solutions-and-impact/technologies/esim/esim-specification/
-- GSMA SGP.31 — eSIM IoT Architecture and Requirements V1.3 (22/05/2026), seções 1.1, 1.2 e 1.4: https://www.gsma.com/solutions-and-impact/technologies/esim/wp-content/uploads/2026/05/SGP.31-v1.3.pdf
-- Anatel — Ato nº 12712, de 4 de setembro de 2024, Anexo 1, item 16.1 (MNC): https://informacoes.anatel.gov.br/legislacao/component/content/article/154-atos-de-numera%C3%A7%C3%A3o/2140-ato-12712
-- Anatel — Resolução nº 777/2025, Anexo (RGST), arts. 217, 226, 235 e 241: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — Resolução nº 783/2025, Anexo (PGMC), art. 66 — vedação do roaming permanente: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
-- Apple Support — Using Dual SIM with an eSIM (consultada em 20/10/2026): https://support.apple.com/en-us/109317
-- Google — Ajuda do Pixel: how to use dual SIMs on your Google Pixel phone (consultada em 20/10/2026): https://support.google.com/pixelphone/answer/9449293
-
-## Chip que pega em duas operadoras existe?
-
-Existe chip com mais de uma identidade de rede. Não existe aparelho em duas redes ao mesmo tempo com um chip só.
-
-## As quatro coisas vendidas com esse nome
-
-| O que é | Números | Quem troca | O que muda para você |
-| --- | --- | --- | --- |
-| **Multi-IMSI**: várias identidades no cartão, uma ativa | 1 | o cartão, avisando o aparelho | troca de rede sem você mexer |
-| **eSIM com vários perfis**: perfis de operadora baixados no aparelho | 1 por perfil | você, nas configurações | troca de operadora sem trocar de chip ([o que é eSIM e quais aparelhos aceitam](/blog/esim-ou-chip-fisico)) |
-| **Roaming ou acordo de visitante**: outra rede te atende por contrato | 1 | a rede, pelo contrato | cobertura fora da área da sua operadora |
-| **Dual SIM**: dois chips, duas assinaturas | 2 | você, nas configurações | dois planos, dados numa linha por vez |
-
-Das quatro, dual SIM é a que existe em qualquer loja — e não é "um chip, duas redes". A Apple registra que o iPhone usa uma rede de dados por vez, com SIM físico mais eSIM ou dois eSIM (iPhone 13 em diante). No Android, o DSDS do Google mantém duas linhas em uso e só uma como padrão de dados.
-
-## Por que o aparelho fica numa rede por vez
-
-A identidade gravada no chip aponta para uma rede. É o IMSI: MCC, três dígitos de país; MNC, dois ou três dígitos da rede; e o MSIN. No máximo 15 dígitos, um por assinante.
-
-O par MCC+MNC identifica uma rede, não uma marca. E a escolha é por fila: no modo automático, o aparelho percorre uma lista de redes em ordem de prioridade e fica na primeira disponível e permitida. Duas redes no chip nunca significam duas redes ao mesmo tempo.
-
-## O que acontece dentro do cartão
-
-No multi-IMSI, o cartão guarda mais de uma identidade, ativa uma por vez e avisa o aparelho pelo comando REFRESH. Seu número não muda. Não localizei especificação da GSMA de multi-IMSI, e a norma admite que o aparelho recuse a troca durante uma chamada: troca no meio de uma ligação não é garantida.
-
-Há uma quinta via, padronizada e pouco explicada: a lista de HPLMN equivalentes. Com um IMSI só, as redes dessa lista substituem o código derivado do IMSI na seleção de rede, e vale a equivalente de maior prioridade. É um arquivo opcional do cartão, o EF-EHPLMN (6FD9) — nem todo chip tem.
-
-## O "SIM resiliente" está na norma de IoT
-
-As especificações de eSIM da GSMA são dois conjuntos: SGP.21 e SGP.22, de consumo; SGP.31 e SGP.32, de IoT, cuja V1.3 saiu em 22/05/2026.
-
-O mecanismo que troca de rede quando a atual falha existe como norma, do lado de IoT: a GSMA define o Fallback Mechanism como mecanismo do eUICC que habilita um perfil marcado com o Atributo de Fallback quando o perfil habilitado perde conectividade. O escopo declarado é dispositivo de IoT, não o celular de consumo.
-
-## O que a regra brasileira permite
-
-Permite duas redes atrás da mesma marca. O RGST diz: "O Credenciado pode deter contrato para representação com mais de uma Prestadora Origem em uma determinada Área de Registro" (Resolução 777/2025, Art. 217, parágrafo único). A autorizada também pode, com mais de um contrato de compartilhamento (Art. 241, § 2º); o acordo de visitante tem base própria (Art. 226). A diferença entre credenciada e autorizada está [neste post](/blog/o-que-e-operadora-virtual).
-
-Com mais de uma origem nasce um dever útil: o credenciado tem de garantir que suas demandas sejam atendidas pela prestadora de origem que suporta o seu acesso (Art. 235, § 1º). Roaming nacional é outra coisa, e nele o roaming permanente é vedado: o art. 66, § 4º o define como acampamento fora da área de prestação por mais de 90 dias corridos — regra que vincula as prestadoras, não você. A cobertura continua sendo da rede hospedeira, como está em [como funciona a cobertura de operadora virtual](/blog/operadora-virtual-pega-bem).
-
-## Sobre a MOVVA: o que eu posso e não posso dizer
-
-Por um tempo eu só pude dizer que a MOVVA publicava "dupla conectividade TIM e Vivo num único chip" sem dizer **como** — e o como é o que muda a sua vida, porque roaming, multi-IMSI e credenciamento com mais de uma origem são três coisas diferentes.
-
-O deck institucional da empresa responde, e é específico: **"Rede TIM + Roaming da VIVO"**. Não são duas redes contratadas. A principal é a da TIM; a Vivo entra por roaming.
-
-Isso tem uma consequência que vale conhecer antes de contratar. O **art. 66, § 4º, do PGMC** veda o roaming permanente, e define a prática como o acampamento de usuário **fora da área de prestação** por mais de 90 dias corridos. É regra de atacado: as consequências que a norma prevê, no § 5º, são multa ou rescisão do contrato de Roaming Nacional entre as prestadoras, com um ano de impedimento para novo contrato regulado. Nada no artigo autoriza bloquear, desconectar ou penalizar você.
-
-Duas precisões mudam a leitura, e as duas estão no próprio texto da norma. A primeira: o limite se mede pela **área de prestação**, que é o alcance da outorga, e não pelo mapa de antenas — conectividade dentro da área da prestadora contratante não é roaming nacional, por definição do art. 36, IV do mesmo Plano. A segunda: a regra brasileira permite, por escrito, que uma operadora virtual tenha contrato com **mais de uma prestadora de origem** na mesma área de registro (RGST, arts. 217, parágrafo único, e 241, § 2º), e manda considerar como parte da rede da própria autorizada os recursos contratados em exploração industrial (art. 242). Nesses desenhos não existe acampamento fora da área, a segunda rede não é o Roaming Nacional de que trata o art. 66, e o teto de 90 dias não entra na conta.
-
-Então o que falta aqui não é explicação para uma contradição: é um documento que diga **sob qual instrumento a Vivo entra**. O deck chama de "roaming", mas é peça comercial, não contrato — e a palavra numa peça de venda não decide o enquadramento.
-
-Não valido nem invalido a promessa: entrego o método para você conferir sozinho, e o estado do meu próprio teste está na nota ao pé desta página.
-
-## Como você confere sozinho quando o chip chegar
-
-1. **Desconfie do nome na tela.** Por norma, ao menos 10 redes (MCC+MNC) podem exibir o mesmo nome, e o nome gravado no chip tem prioridade sobre o da rede.
-2. **Procure o código numérico.** Não publico tabela por empresa: a lista da ITU que abri é de 15/11/2023. E credenciada não tem código próprio, porque o MNC vai só para quem tem outorga de SMP.
-3. **Aviso de roaming é indício, não prova:** a exibição depende do chip e do fabricante.
-4. **Desligue a seleção automática** e veja onde o chip aceita registrar.
-5. **Conte linhas e perfis:** um número ou dois separa dual SIM de troca dentro do chip.
-6. **Cronometre a volta** num ponto onde uma das redes não pega: pela norma, a primeira tentativa sai entre 2 minutos e T, o tempo configurado, e só com o aparelho em repouso.
-7. **Peça por escrito, com protocolo, qual prestadora de origem suporta o seu acesso.**
-
-## O que eu não consegui confirmar
-
-Nenhuma norma da Anatel que eu abri menciona multi-IMSI, lista de equivalentes ou "chip de duas redes": ela trata de contrato e numeração, não do que há no cartão. Em aberto:
-
-- **A afirmação da MOVVA em documento público dela.** O domínio institucional que abri em 20/10/2026 não exibia a oferta a quem não está logado; a página de apresentação do link de divulgação exibe, mas é material comercial, não documento. Peça a oferta por escrito, com protocolo: ela precisa trazer o nome da credenciada e o da prestadora de origem.
-- **Sob qual instrumento a Vivo entra no chip.** Não achei documento da empresa dizendo qual é a prestadora de origem, qual é a área de prestação, e se a Vivo entra por contrato de Roaming Nacional, por acordo de atendimento a usuário visitante (RGST, art. 226), por exploração industrial ou por compartilhamento com uma segunda origem. Sem isso não dá para afirmar que o art. 66 alcança este plano, nem que não alcança. É o ponto que eu mais gostaria de ver respondido por escrito, com protocolo.
-- **Se a empresa é credenciada ou autorizada** — autorizada pode ter código próprio. O dossiê institucional dela descreve a operação por outra cadeia, citando contrato com a ISPS do Brasil (TIP Brasil) sobre infraestrutura da ARQIA, sem mencionar TIM nem Vivo. Os dois documentos são da empresa e não fecham entre si.
-- **Se o eSIM de consumo tem fallback como o de IoT.** Os PDFs da SGP.21 e da SGP.22 não abriram legíveis aqui: leia no site da GSMA.
-- **Quem detém cada código de rede hoje, de qual origem sai o seu número, e se o seu aparelho aceita o REFRESH.** Boletim da ITU, oferta, 1331 e fabricante.
-
-## O que isso muda na sua escolha
-
-Troque a pergunta: quais são as duas redes, qual delas suporta o meu acesso, e o que acontece quando a principal cai. Trocar de virtual não cria cobertura nova; levar o número é outro assunto — veja [como funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
-
----
-
-Nota de transparência: distribuidor independente da MOVVA Brasil Ltda, sem vínculo oficial. Nada aqui descreve característica de produto da MOVVA como verificada. Fontes de 20/10/2026.
 
 ---
 
@@ -2716,6 +2846,187 @@ para medir está no regulamento da oferta — leia antes do preço.
 ---
 
 Não é consultoria jurídica.
+
+---
+
+# Plano de celular sem fidelidade: o que a regra garante
+
+URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
+Publicado: 2026-10-20 · Atualizado: 2026-10-20
+Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
+
+Fontes citadas:
+- Anatel — Resolução nº 765/2023 (RGC, Regulamento Geral de Direitos do Consumidor): https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Resolução nº 777/2025 (RGST, Regulamento Geral dos Serviços de Telecomunicações): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Fidelização (telefonia móvel): https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/fidelizacao
+- Anatel — Dúvidas frequentes sobre os Selos de Qualidade: https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/duvidas-frequentes
+- Anatel — Registrar reclamação: https://www.gov.br/anatel/pt-br/consumidor/reclamacao
+- Código de Defesa do Consumidor (Lei 8.078/1990), art. 49: https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html
+
+## Fidelidade é obrigatória?
+
+Não. Quem vende plano com prazo de permanência tem que oferecer também a versão
+sem esse vínculo. É o art. 38 do RGC, o regulamento de direitos do consumidor da
+Anatel.
+
+Detalhe importante: a norma fala em "condições de fruição equivalentes".
+Equivalente no serviço, não no preço. O desconto costuma ser justamente o
+benefício que a fidelidade paga.
+
+Peça as duas versões e anote o protocolo.
+
+## Qual norma vale hoje (e por que muitos citam a errada)
+
+Vale o RGC, Anexo da Resolução Anatel 765/2023, em vigor desde 1º de setembro de
+2025. Ele substituiu a Resolução 632/2014, hoje revogada. A Resolução 777/2025 é
+outra coisa: aprova o regulamento de serviços, o RGST.
+
+Não consegui confirmar um ponto. O art. 2º, XLI, da 777/2025 revoga os arts. 2º a
+38 da Resolução 765 sem dizer se são os do corpo ou os do Anexo. Leio como corpo,
+e a Anatel segue citando os arts. 36 a 38 do Anexo como vigentes. Mas a norma não
+esclarece: não afirmo.
+
+A própria agência erra a referência. A página dela sobre fidelização, modificada
+em 31/08/2025, ainda cita a Resolução 632/2014, que ela mesma marca como
+revogada. Cite os arts. 36 a 38 do RGC.
+
+## Quanto tempo a fidelidade pode durar?
+
+No máximo 12 meses. O art. 36 do RGC limita o prazo de permanência a 12 meses e
+exige, em troca, um benefício concedido pela prestadora. Prazo maior só para
+pessoa jurídica (§ 1º), e nunca além da vigência da oferta (§ 3º).
+
+O § 2º veda renovação automática, mas o Acórdão 389/2024 da Anatel reinterpretou
+o dispositivo: a vedação alcança só o que não teve consentimento expresso. Não
+afirmo, então, que uma nova fidelidade aceita por você seja proibida.
+
+A operadora tem que avisar o fim do prazo, o fim da oferta e os reajustes com 30
+dias de antecedência (art. 31).
+
+## O que perguntar antes de assinar
+
+Três perguntas:
+
+1. Qual é o prazo de permanência, em meses?
+2. Qual é o benefício e quanto ele vale em reais?
+3. Qual é a multa se eu sair antes, e como ela é calculada?
+
+Peça por escrito ou, no mínimo, o protocolo. O art. 36, § 4º, remete as condições
+gerais do prazo de permanência ao Código de Defesa do Consumidor; não localizei
+nele a lista dessas três informações. Então é checklist meu, não obrigação citada
+na norma.
+
+## Como a multa tem que ser calculada
+
+Dois limites ao mesmo tempo: proporcional ao tempo que falta e nunca acima do
+valor do benefício concedido (art. 37, § 1º).
+
+Hipotético, só para ilustrar, com benefício de R$ 240 em 12 meses:
+
+| Mês da saída | Meses restantes | Leitura proporcional |
+| --- | --- | --- |
+| 3 | 9 | R$ 180 |
+| 6 | 6 | R$ 120 |
+| 11 | 1 | R$ 20 |
+
+Não é fórmula oficial. A conta de dividir o benefício por 12 e multiplicar pelos
+meses restantes aparece em blogs, não na norma. Peça a memória de cálculo por
+escrito.
+
+## Quando a multa não pode ser cobrada
+
+Quando a operadora descumpriu obrigação contratual ou legal. O art. 37, § 2º, II,
+veda a cobrança e dá à prestadora o ônus de provar que a sua alegação não
+procede.
+
+Queda de nota também conta: o § 5º considera descumprimento contratual o
+rebaixamento do Selo de Qualidade para D ou E num município depois da
+contratação, e a Anatel confirma o direito na pergunta 21 das dúvidas frequentes
+sobre qualidade. Não diz em quanto tempo exercer, nem qual nível do selo conta.
+
+Mesmo sem multa, as parcelas vincendas de aparelho comprado da operadora
+continuam devidas (§ 3º).
+
+Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
+Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). Direto na operadora, a
+reclamação tem de ser resolvida em até 7 dias corridos (RGC, art. 10, caput, que
+está na lista do art. 90). Dez dias é outro prazo, e vale para outra coisa:
+solicitação ou pedido de informação que não puder ser atendido de imediato tem
+de ser atendido em até 10 dias corridos (art. 10, § 1º, também na lista). É
+também o prazo que a Anatel afirma para a operadora responder reclamação
+encaminhada pela agência.
+
+## Como cancelar, na prática
+
+O pedido pode ser feito a qualquer tempo, pelos canais disponíveis para a oferta
+contratada, mesmo em atraso (art. 82). Com atendente, o efeito é imediato (art.
+83). Em canal automatizado, vale depois de 2 dias úteis, e nesse prazo você paga
+pelo uso e pode desistir (art. 84) — **esse artigo, porém, não está na lista do
+art. 90**, então em operadora de pequeno porte os 2 dias úteis não são exigíveis.
+
+A saída não pode ficar escondida: o primeiro menu do telefone tem que oferecer
+rescisão automatizada (art. 18, I), que está na lista. Já o cancelamento sem
+atendente no canal digital (art. 13, § 3º) **fica fora da lista** e só alcança
+operadora pequena em oferta contratada e atendida exclusivamente por meio
+digital, pela via do art. 24, § 4º.
+
+Alternativa: suspensão temporária, uma vez a cada 12 meses, de 30 a 120 dias, sem
+cobrança, com o número mantido e a fidelidade congelada (art. 81). Só para quem
+está em dia.
+
+## Levar o número e desistir em 7 dias
+
+A operadora que você deixa não pode cobrar pela saída (RGST, art. 92), e a
+portabilidade leva até 3 dias úteis (art. 103, I). Isso não é o mesmo que
+gratuidade: pelo art. 70, a operadora de destino pode cobrar, com valor máximo
+fixado pela Anatel em Ato do Conselho Diretor, e pode dispensar a cobrança —
+é o que costuma acontecer, por escolha dela. Detalhei no [post sobre
+portabilidade](/blog/portabilidade-sem-perder-o-numero).
+E quem contratou pela internet ou por telefone tem 7 dias para desistir, pelo
+art. 49 do Código de Defesa do Consumidor, com ou sem fidelidade, com devolução
+imediata e corrigida.
+
+## Operadora de pequeno porte não segue tudo
+
+Muita operadora virtual se enquadra como prestadora de pequeno porte, e isso
+pesa. O art. 90 do RGC lista os dispositivos aplicáveis a elas: os arts. 36, 37,
+81 e 82 estão na lista; os arts. 31, 38 e 84 não. Pela leitura dessa lista, o
+teto de 12 meses e a multa proporcional valem, mas a obrigação de oferecer a
+mesma oferta sem fidelidade pode não alcançar a operadora pequena.
+
+A página da Anatel exibe duas redações do art. 90, a original e a retificada no
+DOU de 26/12/2023. Comparei as duas: diferem pela inclusão do art. 2º, e nenhum
+dos artigos citados aqui muda entre elas. Se a sua operadora é pequena, confirme
+o enquadramento no 1331.
+
+## O que eu não confirmei
+
+Além do que marquei acima:
+
+- O teto de fidelidade para pessoa jurídica.
+- Se o prazo de permanência alcança prestadora com até 5.000 acessos (art. 90,
+  § 5º).
+- Como fica fidelidade em plano pré-pago.
+- O prazo para a operadora estornar multa indevida.
+- Sob qual figura regulatória cada operadora virtual opera.
+- A taxa de portabilidade de cerca de R$ 4,00 que sites citam.
+
+Caminho: o texto da norma nas fontes abaixo e o 1331.
+
+## O que isso muda numa operadora virtual
+
+Fidelidade é assunto de contrato, não de tecnologia. Uma operadora móvel virtual
+usa a rede de uma das grandes, então o que decide o seu dia a dia é a cobertura
+onde você usa o celular, o preço sem desconto condicionado e a existência de
+prazo de permanência. Confirme também se ela é de pequeno porte.
+
+---
+
+Nota de transparência: este site é mantido por um distribuidor independente da
+MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
+característica de produto da MOVVA — é regulação que vale para qualquer
+operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
+jurídica.
 
 ---
 
@@ -3049,187 +3360,6 @@ teste de campo. Trabalho com o que dá para verificar: norma e documento públic
 Escolher uma operadora virtual não é escolher uma cobertura nova; é escolher
 plano, atendimento e contrato sobre uma cobertura que já existe. Pergunte qual é
 a rede, confira a rede, teste a rede.
-
----
-
-# Plano de celular sem fidelidade: o que a regra garante
-
-URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
-Publicado: 2026-10-20 · Atualizado: 2026-10-20
-Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
-
-Fontes citadas:
-- Anatel — Resolução nº 765/2023 (RGC, Regulamento Geral de Direitos do Consumidor): https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
-- Anatel — Resolução nº 777/2025 (RGST, Regulamento Geral dos Serviços de Telecomunicações): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — Fidelização (telefonia móvel): https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos-2/telefonia-movel/fidelizacao
-- Anatel — Dúvidas frequentes sobre os Selos de Qualidade: https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/duvidas-frequentes
-- Anatel — Registrar reclamação: https://www.gov.br/anatel/pt-br/consumidor/reclamacao
-- Código de Defesa do Consumidor (Lei 8.078/1990), art. 49: https://www2.camara.leg.br/legin/fed/lei/1990/lei-8078-11-setembro-1990-365086-normaatualizada-pl.html
-
-## Fidelidade é obrigatória?
-
-Não. Quem vende plano com prazo de permanência tem que oferecer também a versão
-sem esse vínculo. É o art. 38 do RGC, o regulamento de direitos do consumidor da
-Anatel.
-
-Detalhe importante: a norma fala em "condições de fruição equivalentes".
-Equivalente no serviço, não no preço. O desconto costuma ser justamente o
-benefício que a fidelidade paga.
-
-Peça as duas versões e anote o protocolo.
-
-## Qual norma vale hoje (e por que muitos citam a errada)
-
-Vale o RGC, Anexo da Resolução Anatel 765/2023, em vigor desde 1º de setembro de
-2025. Ele substituiu a Resolução 632/2014, hoje revogada. A Resolução 777/2025 é
-outra coisa: aprova o regulamento de serviços, o RGST.
-
-Não consegui confirmar um ponto. O art. 2º, XLI, da 777/2025 revoga os arts. 2º a
-38 da Resolução 765 sem dizer se são os do corpo ou os do Anexo. Leio como corpo,
-e a Anatel segue citando os arts. 36 a 38 do Anexo como vigentes. Mas a norma não
-esclarece: não afirmo.
-
-A própria agência erra a referência. A página dela sobre fidelização, modificada
-em 31/08/2025, ainda cita a Resolução 632/2014, que ela mesma marca como
-revogada. Cite os arts. 36 a 38 do RGC.
-
-## Quanto tempo a fidelidade pode durar?
-
-No máximo 12 meses. O art. 36 do RGC limita o prazo de permanência a 12 meses e
-exige, em troca, um benefício concedido pela prestadora. Prazo maior só para
-pessoa jurídica (§ 1º), e nunca além da vigência da oferta (§ 3º).
-
-O § 2º veda renovação automática, mas o Acórdão 389/2024 da Anatel reinterpretou
-o dispositivo: a vedação alcança só o que não teve consentimento expresso. Não
-afirmo, então, que uma nova fidelidade aceita por você seja proibida.
-
-A operadora tem que avisar o fim do prazo, o fim da oferta e os reajustes com 30
-dias de antecedência (art. 31).
-
-## O que perguntar antes de assinar
-
-Três perguntas:
-
-1. Qual é o prazo de permanência, em meses?
-2. Qual é o benefício e quanto ele vale em reais?
-3. Qual é a multa se eu sair antes, e como ela é calculada?
-
-Peça por escrito ou, no mínimo, o protocolo. O art. 36, § 4º, remete as condições
-gerais do prazo de permanência ao Código de Defesa do Consumidor; não localizei
-nele a lista dessas três informações. Então é checklist meu, não obrigação citada
-na norma.
-
-## Como a multa tem que ser calculada
-
-Dois limites ao mesmo tempo: proporcional ao tempo que falta e nunca acima do
-valor do benefício concedido (art. 37, § 1º).
-
-Hipotético, só para ilustrar, com benefício de R$ 240 em 12 meses:
-
-| Mês da saída | Meses restantes | Leitura proporcional |
-| --- | --- | --- |
-| 3 | 9 | R$ 180 |
-| 6 | 6 | R$ 120 |
-| 11 | 1 | R$ 20 |
-
-Não é fórmula oficial. A conta de dividir o benefício por 12 e multiplicar pelos
-meses restantes aparece em blogs, não na norma. Peça a memória de cálculo por
-escrito.
-
-## Quando a multa não pode ser cobrada
-
-Quando a operadora descumpriu obrigação contratual ou legal. O art. 37, § 2º, II,
-veda a cobrança e dá à prestadora o ônus de provar que a sua alegação não
-procede.
-
-Queda de nota também conta: o § 5º considera descumprimento contratual o
-rebaixamento do Selo de Qualidade para D ou E num município depois da
-contratação, e a Anatel confirma o direito na pergunta 21 das dúvidas frequentes
-sobre qualidade. Não diz em quanto tempo exercer, nem qual nível do selo conta.
-
-Mesmo sem multa, as parcelas vincendas de aparelho comprado da operadora
-continuam devidas (§ 3º).
-
-Cobrança indevida: protocolo na operadora, ouvidoria e, se não resolver, Anatel
-Consumidor ou 1331 (gratuito, dias úteis, 8h às 20h). Direto na operadora, a
-reclamação tem de ser resolvida em até 7 dias corridos (RGC, art. 10, caput, que
-está na lista do art. 90). Dez dias é outro prazo, e vale para outra coisa:
-solicitação ou pedido de informação que não puder ser atendido de imediato tem
-de ser atendido em até 10 dias corridos (art. 10, § 1º, também na lista). É
-também o prazo que a Anatel afirma para a operadora responder reclamação
-encaminhada pela agência.
-
-## Como cancelar, na prática
-
-O pedido pode ser feito a qualquer tempo, pelos canais disponíveis para a oferta
-contratada, mesmo em atraso (art. 82). Com atendente, o efeito é imediato (art.
-83). Em canal automatizado, vale depois de 2 dias úteis, e nesse prazo você paga
-pelo uso e pode desistir (art. 84) — **esse artigo, porém, não está na lista do
-art. 90**, então em operadora de pequeno porte os 2 dias úteis não são exigíveis.
-
-A saída não pode ficar escondida: o primeiro menu do telefone tem que oferecer
-rescisão automatizada (art. 18, I), que está na lista. Já o cancelamento sem
-atendente no canal digital (art. 13, § 3º) **fica fora da lista** e só alcança
-operadora pequena em oferta contratada e atendida exclusivamente por meio
-digital, pela via do art. 24, § 4º.
-
-Alternativa: suspensão temporária, uma vez a cada 12 meses, de 30 a 120 dias, sem
-cobrança, com o número mantido e a fidelidade congelada (art. 81). Só para quem
-está em dia.
-
-## Levar o número e desistir em 7 dias
-
-A operadora que você deixa não pode cobrar pela saída (RGST, art. 92), e a
-portabilidade leva até 3 dias úteis (art. 103, I). Isso não é o mesmo que
-gratuidade: pelo art. 70, a operadora de destino pode cobrar, com valor máximo
-fixado pela Anatel em Ato do Conselho Diretor, e pode dispensar a cobrança —
-é o que costuma acontecer, por escolha dela. Detalhei no [post sobre
-portabilidade](/blog/portabilidade-sem-perder-o-numero).
-E quem contratou pela internet ou por telefone tem 7 dias para desistir, pelo
-art. 49 do Código de Defesa do Consumidor, com ou sem fidelidade, com devolução
-imediata e corrigida.
-
-## Operadora de pequeno porte não segue tudo
-
-Muita operadora virtual se enquadra como prestadora de pequeno porte, e isso
-pesa. O art. 90 do RGC lista os dispositivos aplicáveis a elas: os arts. 36, 37,
-81 e 82 estão na lista; os arts. 31, 38 e 84 não. Pela leitura dessa lista, o
-teto de 12 meses e a multa proporcional valem, mas a obrigação de oferecer a
-mesma oferta sem fidelidade pode não alcançar a operadora pequena.
-
-A página da Anatel exibe duas redações do art. 90, a original e a retificada no
-DOU de 26/12/2023. Comparei as duas: diferem pela inclusão do art. 2º, e nenhum
-dos artigos citados aqui muda entre elas. Se a sua operadora é pequena, confirme
-o enquadramento no 1331.
-
-## O que eu não confirmei
-
-Além do que marquei acima:
-
-- O teto de fidelidade para pessoa jurídica.
-- Se o prazo de permanência alcança prestadora com até 5.000 acessos (art. 90,
-  § 5º).
-- Como fica fidelidade em plano pré-pago.
-- O prazo para a operadora estornar multa indevida.
-- Sob qual figura regulatória cada operadora virtual opera.
-- A taxa de portabilidade de cerca de R$ 4,00 que sites citam.
-
-Caminho: o texto da norma nas fontes abaixo e o 1331.
-
-## O que isso muda numa operadora virtual
-
-Fidelidade é assunto de contrato, não de tecnologia. Uma operadora móvel virtual
-usa a rede de uma das grandes, então o que decide o seu dia a dia é a cobertura
-onde você usa o celular, o preço sem desconto condicionado e a existência de
-prazo de permanência. Confirme também se ela é de pequeno porte.
-
----
-
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA — é regulação que vale para qualquer
-operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
-jurídica.
 
 ---
 
