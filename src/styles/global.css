@@ -221,6 +221,15 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   font-synthesis-weight: none;
+  /* Palavra que nao cabe na linha quebra em vez de empurrar a pagina.
+     Sem isto, uma unica URL escrita no meio de um paragrafo poe o site
+     inteiro a rolar de lado no telefone — foi o que
+     "informacoes.anatel.gov.br/paineis/acessos/ranking" fez em
+     o-que-e-operadora-virtual, medido em 440px numa tela de 375px.
+     Este site cita endereco de norma o tempo todo, entao a regra e
+     estrutural, nao remendo daquele post. `break-word` so age quando a
+     palavra nao cabe: texto normal nao muda. */
+  overflow-wrap: break-word;
 }
 
 img { max-width: 100%; height: auto; }
