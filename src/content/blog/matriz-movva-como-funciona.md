@@ -1,14 +1,14 @@
 ---
 title: "A matriz da MOVVA: como funciona, e a regra de data que quase ninguém mostra"
 description: "Como funciona a matriz 3×12 da MOVVA: quando os níveis destravam, quanto cada um paga, a compressão dinâmica e por que a licença paga na hora e a telefonia só a partir da segunda fatura."
-resposta: "A MOVVA usa uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Os níveis destravam de três em três, conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP. O deck paga esse ganho só a partir da segunda fatura."
+resposta: "O deck institucional da MOVVA descreve uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Segundo ele, os níveis destravam de três em três conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP — esse ganho só a partir da segunda fatura."
 cluster: marca
 publicado: 2026-10-22
 atualizado: 2026-10-22
 fontes:
   - rotulo: "MOVVA — plataforma oficial, onde as regras vigentes devem ser conferidas. A mecânica da matriz desta página foi lida nas páginas 45 a 48 do deck institucional da empresa, que não tem endereço público que eu possa linkar"
     url: "https://movvabrasil.com"
-  - rotulo: "Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular o ganho obtido por meio de cadeias e bolas de neve. É o dispositivo que define o critério usado no fim desta página"
+  - rotulo: "Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular o ganho ilícito obtido por meio de bolas de neve, cadeias e processos equivalentes. O dispositivo tipifica a conduta; ele não enuncia o teste de origem da receita que esta página usa, e a página diz isso"
     url: "https://www.planalto.gov.br/ccivil_03/leis/l1521.htm"
 ---
 
@@ -21,16 +21,19 @@ corpo miúdo, embaixo dos números grandes.
 
 ## O formato: 3×12, forçada
 
-Três posições de largura, doze níveis de profundidade. "Forçada" quer dizer que
-as posições se preenchem numa ordem definida pela estrutura, e não por você: se
-a sua primeira linha já tem três, o quarto cadastro desce para o nível seguinte,
-abaixo de alguém.
+Três posições de largura, doze níveis de profundidade. É assim que o deck a
+nomeia, em letra: "matriz forçada 3×12".
 
-Isso tem um efeito que vale dizer em voz alta, porque é o argumento de venda
-mais comum do modelo: **pode entrar gente abaixo de você que você não indicou.**
-Vinda de cima, derramada pela estrutura. É verdade, acontece, e é exatamente por
-isso que o modelo atrai. Também é por isso que ele precisa ser lido com a regra
-de destrave ao lado.
+O que o deck **não** faz é explicar o que "forçada" significa. Então o parágrafo
+seguinte é leitura minha do termo, não citação, e vale dizer isso antes de
+você lê-lo: numa matriz forçada, as posições se preenchem numa ordem definida
+pela estrutura, e não por você — se a sua primeira linha já tem três, o quarto
+cadastro desce para o nível seguinte, abaixo de alguém.
+
+Daí vem o efeito que é o argumento de venda mais comum do modelo: **pode entrar
+gente abaixo de você que você não indicou**, derramada de cima. Peço que leia
+isso com a regra de destrave ao lado, que vem agora — porque é ela que decide se
+essa gente derramada te paga alguma coisa.
 
 ## Os níveis não vêm de graça
 
@@ -43,6 +46,16 @@ e a moeda é diretos ativos — gente que **você** indicou e que está pagando.
 | 6 diretos | 6 | 6% |
 | 9 diretos | 9 | 9% |
 | 12 diretos | 12 | 12% |
+
+A terceira coluna é a que mais engana, então leia devagar. Cada nível paga
+**1%** sobre os planos ativos daquele nível, para quem tem licença VIP — a
+tabela da próxima seção traz isso. Os 3%, 6%, 9% e 12% são a **soma dos
+percentuais dos níveis abertos**, e não um percentual aplicado uma vez.
+
+Quer dizer: com doze níveis abertos você não recebe 12% de nada. Você recebe 1%
+de cada plano em cada um dos doze níveis — e quanto isso dá depende inteiramente
+de quantos planos existem lá, que é o número que ninguém mostra. Os percentuais
+da coluna são, sem VIP, a metade disso: 0,5% por nível.
 
 A leitura honesta dessa tabela é esta: o derramamento de cima só te paga nos
 níveis que os seus próprios indicados destravaram. Quem entra e não indica
@@ -91,6 +104,11 @@ As páginas 46 e 47 do deck somam o dinheiro de uma matriz 3×12 inteiramente
 preenchida. Os números são grandes: **R$ 637.728,00 por mês** sobre telefonia, e
 **mais de R$ 8 milhões por ano** sobre licenças.
 
+A base está impressa junto, e precisa vir junto: "simulação baseada no Plano
+Liberty 25 GB, ganhando 1% (VIP) por afiliado, até o 12º nível". Ou seja, todo
+mundo da matriz com o mesmo plano, todo mundo pagando, você VIP, os doze níveis
+abertos.
+
 O que essas páginas somam é o dinheiro. O que elas não somam é a gente. Então eu
 somo.
 
@@ -98,13 +116,24 @@ Uma matriz 3×12 cheia tem 3 pessoas no primeiro nível, 9 no segundo, 27 no
 terceiro, e assim por diante até **531.441 no décimo segundo**. O total é
 **797.160 pessoas** — todas com plano ativo e pago, todas abaixo de uma só.
 
-Vale comparar com o tamanho do mercado em que isso teria de caber. Segundo a
-Teleco, os chips de operadoras virtuais voltadas ao consumidor final somavam
-**2,2 milhões de acessos no Brasil inteiro** no segundo trimestre de 2025.
+Vale comparar com o tamanho do mercado em que isso teria de caber. A Teleco, uma
+consultoria setorial privada, publica que os chips de operadoras virtuais
+voltadas ao consumidor final somavam **2,2 milhões de acessos no Brasil inteiro**
+no segundo trimestre de 2025.
 
-A matriz cheia do deck pede, portanto, **cerca de 36% de todo o mercado
-brasileiro de operadoras virtuais de consumo, dentro de uma única rede
-pessoal.** A sua.
+Preciso marcar a forma desse número antes de usá-lo: ele é de consultoria, não
+da Anatel, e eu não consegui abrir documento da agência que o confirme — é o
+mesmo motivo pelo qual
+[este site registra que a contagem de autorizadas varia conforme a fonte](/blog/o-que-e-operadora-virtual).
+Trate-o como ordem de grandeza, não como medida.
+
+Com essa ressalva: a matriz cheia do deck pediria **algo em torno de um terço de
+todo o mercado brasileiro de operadoras virtuais de consumo, dentro de uma única
+rede pessoal.** A sua.
+
+E o argumento não depende da precisão desse denominador. Mesmo que o mercado
+fosse o dobro do que a Teleco publica, a matriz cheia ainda pediria um sexto
+dele embaixo de uma pessoa só.
 
 Isso não quer dizer que o número seja mentira: ele é aritmética correta sobre
 uma hipótese. Quer dizer que a hipótese é o teto teórico do modelo, e não um
@@ -124,15 +153,24 @@ mês. Embaixo do número grande, em corpo miúdo, está escrito "simulação com
 VIP" — e é simulação mesmo: pressupõe dez diretos já ganhando mil reais por mês
 cada um, o que é a conclusão, não o ponto de partida.
 
-A compressão dinâmica vale aqui também.
+A compressão dinâmica vale aqui também, e isso está na própria página 48: se o
+patrocinador não estiver apto a receber o Mega Bônus, por não estar ativo ou não
+ter destravado a matriz, o ganho sobe para o próximo ascendente que tenha no
+mínimo três diretos ativos e seja VIP.
 
 ## A pergunta que decide
 
 A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
-popular a obtenção de ganho por meio de cadeias e bolas de neve. O que separa
-venda direta legítima de cadeia não é existir ou não um produto — é se a
-remuneração deriva principalmente **da venda real do produto a consumidores** ou
-**do ingresso de novos participantes**.
+popular a obtenção de ganho ilícito por meio de bolas de neve, cadeias e
+processos equivalentes.
+
+Repare no que o dispositivo faz e no que ele não faz: ele **tipifica a
+conduta**, e não enuncia o critério para distinguir uma coisa da outra. O
+critério que eu uso abaixo — se a remuneração deriva principalmente **da venda
+real do produto a consumidores** ou **do ingresso de novos participantes** — não
+está escrito no inciso. É o teste que se consolidou na doutrina e na atuação dos
+órgãos de defesa do consumidor, e eu o adoto por achá-lo o mais útil, não por
+ele ser lei.
 
 A matriz desta página é o lugar onde essa pergunta se responde com número, e a
 métrica é uma só: **bônus de recorrência sobre plano de telefonia.**

@@ -40,7 +40,12 @@ export const PAGINAS_OG = [
     path: '/movva-e-confiavel',
     chapeu: 'Análise',
     titulo: 'A MOVVA é confiável? É pirâmide?',
-    resumo: 'CNPJ, autorização da Anatel, contrato de rede e os riscos do programa de afiliados.',
+    // "contrato de rede" saiu em 22/10/2026, pelo mesmo motivo que saiu da
+    // meta description e da peca paga: a pagina que este cartao divulga TIROU
+    // a cadeia de rede da lista do verificavel, porque nao ha registro publico
+    // que a comprove. O cartao a listava ao lado do CNPJ e da outorga, como se
+    // fosse da mesma categoria.
+    resumo: 'CNPJ e autorização da Anatel em registro público, a cadeia de rede que eu não comprovei e os riscos do programa de afiliados.',
   },
   {
     path: '/oportunidade',

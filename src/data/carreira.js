@@ -336,7 +336,73 @@ export const MEGA_BONUS = {
   // R$ 10.000/mes, sob o rotulo "SIMULACAO COMISSAO VIP" em corpo miudo.
   simulacao: 'R$ 10.000/mês',
   simulacaoComo: 'dez diretos ganhando R$ 1.000 cada',
+  // A compressao dinamica esta impressa NESTA pagina tambem, nao so na 45: o
+  // rodape da 48 a descreve com estas palavras, nomeando o Mega Bonus. Faltava
+  // aqui, e por isso a afirmacao parecia sem fonte no post da matriz.
+  compressao:
+    'Compressão dinâmica: se o patrocinador não estiver apto a receber o Mega Bônus por não estar ativo ou não ter destravado a matriz, o ganho sobe para o próximo ascendente que tenha no mínimo 3 diretos ativos e seja VIP.',
 };
+
+// ---------------------------------------------------------------------------
+// A LICENCA VIP
+// ---------------------------------------------------------------------------
+//
+// Preco e parcelamento saem do deck institucional. As quatro linhas que ela
+// dobra saem do documento "Diferenciais planos de telefonia MOVVA" — duas
+// delas o deck confirma por conta propria, e o campo `tambemNoDeck` diz qual.
+//
+// POR QUE ESTA AQUI: ate 22/10/2026 esses numeros estavam escritos a mao em
+// quatro arquivos diferentes. E o mesmo arranjo que deixou a escada divergir
+// do documento sem ninguem notar, e que a pagina /planos existe para nao
+// repetir com o preco dos planos.
+export const LICENCA_VIP = {
+  aVista: 'R$ 497',
+  aVistaNumero: 497,
+  parcelado: '12× R$ 51,13',
+  parcelaNumero: 51.13,
+  // 12 x 51,13. Calculado, nao escrito: o deck imprime as duas formas lado a
+  // lado e nao soma o parcelado nem nomeia a diferenca.
+  get totalParcelado() {
+    return this.parcelaNumero * 12;
+  },
+  get acrescimo() {
+    return this.totalParcelado - this.aVistaNumero;
+  },
+  // Ganho exclusivo de VIP sobre licenca de VIP — deck, pagina 45.
+  sobreLicencaDeOutro: 'R$ 10,40',
+  sobreLicencaDeOutroNumero: 10.4,
+};
+
+export const O_QUE_A_LICENCA_DOBRA = [
+  {
+    linha: 'Indicação direta, por plano indicado',
+    sem: 'R$ 5,00',
+    vip: 'R$ 10,00',
+  },
+  {
+    linha: 'Matriz global, sobre os planos da sua matriz',
+    sem: '0,5%',
+    vip: '1%',
+    tambemNoDeck: 'página 45',
+  },
+  {
+    linha: 'Matching, sobre o que o seu direto ganha na matriz',
+    sem: '50%',
+    vip: '100%',
+    tambemNoDeck: 'página 48, onde se chama Mega Bônus',
+  },
+  {
+    linha: 'Pontuação do plano de carreira',
+    sem: 'normal',
+    vip: 'dobrada',
+  },
+];
+
+// Em quantos lugares do deck a sigla VME aparece. CONTADO, nao escrito a mao:
+// a pagina dizia "dezoito" e o numero certo e outro, porque os quatro degraus
+// de Fundacao nao trazem VME.
+export const LUGARES_COM_VME =
+  DEGRAUS.filter((d) => d.vme).length + PREMIACOES.filter((p) => p.vme).length;
 
 export const DESEMPENHO_LIDERANCA = {
   apartirDe: 'Diretor Sênior',

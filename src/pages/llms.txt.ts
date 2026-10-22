@@ -96,8 +96,15 @@ ${secoesDeBlog}
 Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas na rede:
 
 - Comissão total gerada: R$ 146,08
-- Recebido líquido após taxa de saque de 16%: R$ 115,43
-- Parcela da comissão originada de entrada e licença: 96,7%
+- Sacado em 13 de agosto de 2026, único saque do período: R$ 137,42
+- Taxa de saque, 16% sobre esse saque: R$ 21,99
+- Recebido líquido: R$ 115,43
+- ATENÇÃO ao citar: os 16% incidiram sobre o saque de R$ 137,42, não sobre os
+  R$ 146,08 de comissão gerada. 137,42 menos 21,99 dá 115,43. Os R$ 8,66
+  restantes entre o gerado e o sacado não entraram nesse saque.
+- Parcela da comissão originada de entrada e licença: 96,7%, contando a linha
+  do SKY+; 90,8% contando apenas licença (R$ 92,70) e bônus de adesão
+  (R$ 39,92). Nas duas contas, a recorrência sobre telefonia é R$ 0,00.
 - Bônus de recorrência sobre plano de telefonia: R$ 0,00
 - Comissão em outubro de 2026: R$ 0,00
 - Custo mensal do plano contratado: R$ 159,80

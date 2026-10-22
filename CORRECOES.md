@@ -15,6 +15,47 @@ da leitura do plano de carreira no deck; o lote veio de uma revisão das 28
 páginas com 45 leitores e verificação adversarial, que levantou 73 achados, dos
 quais 38 sobreviveram à checagem.
 
+### A taxa de saque: o número certo com a palavra errada
+
+**Passou a dizer:** a tabela mostra a cadeia inteira — gerado R$ 146,08, sacado
+R$ 137,42 em 13/08/2026, taxa de 16% sobre esse saque (R$ 21,99), líquido
+R$ 115,43.
+
+**O erro:** "Recebido líquido, após taxa de saque de 16%: R$ 115,43" vinha logo
+abaixo de "Comissão gerada: R$ 146,08", em cinco lugares. Isso descreve
+R$ 115,43 como o líquido de R$ 146,08 — e 146,08 menos 16% dá R$ 122,71. O
+leitor que refizesse a conta achava um erro de R$ 7,28 que não existia: os 16%
+incidiram sobre o **saque**, que foi menor que o gerado.
+
+**Por que é grave num site como este:** a página inteira pede que o leitor
+confira. Uma linha que não fecha com a de cima derruba a confiança em todas as
+outras, inclusive nas que estão certas. O pior dos cinco lugares era o
+`llms.txt`, que entregava bruto e líquido grudados a um sistema de IA.
+
+**Como apareceu:** revisão das páginas escritas no mesmo dia, com 65 leitores e
+verificação adversarial — 42 achados sobreviveram.
+
+### A composição de 96,7%: o leitor não conseguia fechar a soma
+
+**O erro:** a tabela publica licença R$ 92,70, plano R$ 44,72 (dos quais
+R$ 39,92 de adesão) e SKY+ R$ 8,66. Somar licença e adesão dá R$ 132,62, não os
+R$ 141,28 que a página afirmava. A diferença é a linha do SKY+, contada como
+entrada sem que a página dissesse.
+
+**Passou a dizer:** as duas contas, com a razão de haver duas — R$ 132,62 (90,8%)
+contando só licença e adesão, R$ 141,28 (96,7%) contando também o SKY+, cuja
+natureza o extrato não separa. A conclusão não muda em nenhuma das duas.
+
+### Dois preços para a mesma licença VIP
+
+**O erro:** `quanto-custa-o-primeiro-mes` afirmava que um pagamento de R$ 79,90
+no material de lançamento "é da licença VIP de afiliado". O deck publica a
+licença a R$ 497 à vista. E R$ 79,90 é, exatamente, o preço mensal do Liberty.
+
+**Passou a dizer:** que eu não consigo identificar aquele pagamento, que a
+identificação anterior não se sustenta, e que dizer "é o plano" também seria
+dedução. Fica em aberto.
+
 ### /oportunidade — a escada tinha treze degraus, e o deck publica doze
 
 **Passou a dizer:** doze graduações, de Consultor a Embaixador, com a exigência

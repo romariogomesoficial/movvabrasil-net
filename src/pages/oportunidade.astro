@@ -7,8 +7,12 @@ import { RECOMENDADO, CONFERIDO_EM } from '../data/planos.js';
 import {
   DEGRAUS, PIN, PIN_ORFAO, PONTOS_POR_PLANO, PONTO_NAO_ZERA, PREMIACOES,
   MATRIZ, MATRIZ_CHEIA, MEGA_BONUS, DESEMPENHO_LIDERANCA, EM_ABERTO_CARREIRA,
+  LICENCA_VIP, O_QUE_A_LICENCA_DOBRA,
   CONFERIDO_EM as CONFERIDO_CARREIRA,
 } from '../data/carreira.js';
+
+// Real com virgula, para os valores que saem de conta e nao de texto fixo.
+const brl = (n) => n.toFixed(2).replace('.', ',');
 
 // A data da conferência da tabela de preços vem de planos.js, como o preço:
 // esta página cita o valor do plano, e citar o número sem a data de quando ele
@@ -74,9 +78,10 @@ const description =
       <p class="eyebrow">Programa de afiliados</p>
       <h1>Como funciona o programa de afiliados da MOVVA</h1>
       <p class="answer">
-        A MOVVA remunera afiliados por indicação de planos, por posição em uma matriz
-        e por bônus sobre a equipe direta. Existe uma licença paga que dobra os
-        ganhos. Não há ganho garantido, e a maior parte da minha comissão até hoje
+        Pelo material da própria MOVVA, a empresa remunera afiliados por
+        indicação de planos, por posição em uma matriz e por bônus sobre a
+        equipe direta, e há uma licença paga que dobra esses ganhos. Não há
+        ganho garantido, e a maior parte da minha comissão até hoje
         veio de pessoas entrando, não de contas de celular sendo pagas.
       </p>
     </header>
@@ -125,27 +130,25 @@ const description =
               <th class="num">Com licença VIP</th>
             </tr>
           </thead>
+          {/* As quatro linhas saem de O_QUE_A_LICENCA_DOBRA, em carreira.js.
+              Estavam escritas à mão aqui e em mais três arquivos — o mesmo
+              arranjo que deixou a escada divergir do documento sem ninguém
+              notar. `tambemNoDeck` marca as duas que o deck confirma por conta
+              própria, o que é informação útil ao leitor: são dois documentos
+              da empresa dizendo o mesmo. */}
           <tbody>
-            <tr>
-              <td>Indicação direta, por plano indicado</td>
-              <td class="num">R$ 5,00</td>
-              <td class="num">R$ 10,00</td>
-            </tr>
-            <tr>
-              <td>Matriz global, sobre os planos da sua matriz</td>
-              <td class="num">0,5%</td>
-              <td class="num">1%</td>
-            </tr>
-            <tr>
-              <td>Matching, sobre o que o seu direto ganha na matriz</td>
-              <td class="num">50%</td>
-              <td class="num">100%</td>
-            </tr>
-            <tr>
-              <td>Pontuação do plano de carreira</td>
-              <td class="num">normal</td>
-              <td class="num">dobrada</td>
-            </tr>
+            {O_QUE_A_LICENCA_DOBRA.map((l) => (
+              <tr>
+                <td>
+                  {l.linha}
+                  {l.tambemNoDeck && (
+                    <span class="meta-line"> — também no deck, {l.tambemNoDeck}</span>
+                  )}
+                </td>
+                <td class="num">{l.sem}</td>
+                <td class="num">{l.vip}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -260,12 +263,15 @@ const description =
         plano ativo e pago abaixo de você.
       </p>
       <p>
-        Vale comparar com o tamanho do mercado. Segundo a Teleco, os chips de
-        operadoras virtuais voltadas ao consumidor final somavam
-        <strong>2,2 milhões de acessos</strong> no Brasil inteiro no segundo
-        trimestre de 2025. A matriz cheia do deck pede
-        {' '}<strong>cerca de 36% desse mercado inteiro dentro de uma única
-        rede pessoal</strong> — a sua.
+        Vale comparar com o tamanho do mercado. A Teleco, consultoria setorial
+        privada, publica que os chips de operadoras virtuais voltadas ao
+        consumidor final somavam <strong>2,2 milhões de acessos</strong> no
+        Brasil inteiro no segundo trimestre de 2025 — número de consultoria,
+        não da Anatel, e eu não achei documento da agência que o confirme. Com
+        essa ressalva, a matriz cheia do deck pediria
+        {' '}<strong>algo em torno de um terço desse mercado dentro de uma única
+        rede pessoal</strong> — a sua. Mesmo que o mercado fosse o dobro, seria
+        um sexto.
       </p>
       <p class="meta-line">
         {MATRIZ_CHEIA.simulacaoBase} A soma de pessoas é minha, feita sobre os
@@ -310,10 +316,11 @@ const description =
             </tr>
             <tr>
               <td>Licença VIP</td>
-              <td>R$ 497 à vista, ou 12× R$ 51,13</td>
+              <td>{LICENCA_VIP.aVista} à vista, ou {LICENCA_VIP.parcelado}</td>
               <td>
                 Deck institucional. Dobra tudo o que está na tabela acima. Repare
-                que o parcelado soma R$ 613,56 — R$ 116,56 a mais que à vista.
+                que o parcelado soma R$ {brl(LICENCA_VIP.totalParcelado)} —
+                {' '}R$ {brl(LICENCA_VIP.acrescimo)} a mais que à vista.
                 {' '}<a href="/blog/licenca-vip-vale-a-pena">Quantas pessoas ela
                 precisa para se pagar</a>, por três caminhos diferentes.
               </td>
@@ -337,7 +344,7 @@ const description =
           <strong>Uma linha de cinco continua em branco</strong>, e são duas
           contas que ninguém faz em voz alta. A primeira: a licença VIP à vista
           custa <strong>mais de seis mensalidades do Liberty</strong>. A
-          segunda: parcelada, ela custa R$ 116,56 a mais — e o deck não chama
+          segunda: parcelada, ela custa R$ {brl(LICENCA_VIP.acrescimo)} a mais — e o deck não chama
           isso de juros.
         </p>
         <p>
@@ -410,8 +417,11 @@ const description =
         seguinte, o deck pede {PROXIMO.exige} — e eu tenho quatro.
       </p>
       <p class="meta-line">
-        Cada degrau, com o salto de pontuação entre eles e o que o deck não
-        define, está aberto em
+        Três coisas dessa tabela o deck imprime sem explicar, e eu não invento:
+        o que significa <strong>VME</strong>, que aparece em catorze lugares do
+        documento; o que é a <strong>divisão de lucros</strong> que os quatro
+        degraus de cima prometem; e se o prêmio desenhado ao lado de um degrau
+        vem com ele — não vem, são contagens diferentes. Cada uma está aberta em
         {' '}<a href="/blog/plano-de-carreira-movva">os doze degraus, um por um</a>.
       </p>
 
@@ -540,7 +550,15 @@ const description =
           <thead><tr><th>Indicador</th><th class="num">Valor</th></tr></thead>
           <tbody>
             <tr><td>Comissão gerada no período</td><td class="num">R$ 146,08</td></tr>
-            <tr><td>Recebido líquido, após taxa de saque de 16%</td><td class="num">R$ 115,43</td></tr>
+            {/* As três linhas abaixo existem separadas por um motivo: com
+                "recebido líquido" colado em "comissão gerada", o leitor refaz
+                a conta como 16% sobre R$ 146,08, chega a R$ 122,71 e acha um
+                erro de R$ 7,28 que não existe. A taxa incidiu sobre o SAQUE,
+                que foi menor que o gerado. Numa página cuja credibilidade é o
+                leitor conferir, a base precisa estar na própria tabela. */}
+            <tr><td>Sacado em 13 de agosto de 2026, único saque do período</td><td class="num">R$ 137,42</td></tr>
+            <tr><td>Taxa de saque, 16% sobre esse saque</td><td class="num">− R$ 21,99</td></tr>
+            <tr><td>Recebido líquido</td><td class="num">R$ 115,43</td></tr>
             <tr><td>Parcela originada de entrada e licença</td><td class="num">96,7%</td></tr>
             <tr><td>Bônus de recorrência sobre plano de telefonia</td><td class="num">R$ 0,00</td></tr>
             <tr><td>Comissão em outubro de 2026</td><td class="num">R$ 0,00</td></tr>

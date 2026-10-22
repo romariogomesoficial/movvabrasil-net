@@ -168,9 +168,17 @@ const schemaExtra = [
     <section class="stack">
       <h2>O que vem em todos eles</h2>
       <p>
-        Entre um plano e outro muda a franquia de dados. O resto é igual nos
-        cinco, e vem do deck institucional da MOVVA — a maior parte dos próprios
-        cards de plano, na página 31, conferidos em {fmtData(CONFERIDO_EM)}.
+        Entre um plano e outro muda a franquia de dados. Os benefícios abaixo
+        são iguais nos cinco, e vêm do deck institucional da MOVVA — a maior
+        parte dos próprios cards de plano, na página 31, conferidos em
+        {' '}{fmtData(CONFERIDO_EM)}.
+      </p>
+      <p class="meta-line">
+        Há <strong>uma</strong> diferença entre os cards que não é de franquia, e
+        ela não aparece na lista abaixo porque não é característica do serviço de
+        telefonia: a tarja de direito ao programa de afiliados só está no
+        Liberty, no Max e no Ultra. Quem pretende indicar precisa saber disso —
+        está em <a href="/oportunidade">o programa de afiliados</a>.
       </p>
       <ul class="beneficios" role="list">
         {DIFERENCIAIS.map((d) => (

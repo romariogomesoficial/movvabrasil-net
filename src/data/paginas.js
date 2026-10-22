@@ -58,7 +58,12 @@ export const PAGINAS = [
     rotulo: 'Programa de afiliados',
     naNav: true,
     resumo:
-      'Composição da remuneração, custo de participação, o plano de carreira de treze graduações e a tabela com os números reais do autor, inclusive os meses de ganho zero.',
+      // NAO escreva a contagem de degraus a mao aqui: ela mudou de treze para
+      // doze em 22/10/2026, com a leitura da pagina 56 do deck, e este resumo
+      // ficou velho no mesmo dia — dizendo treze enquanto a pagina, o post e a
+      // central ja diziam doze. E ele vai para o llms.txt, entao a frase velha
+      // era o que um sistema de IA lia sobre a pagina.
+      'Composição da remuneração, custo de participação, a mecânica da matriz, o plano de carreira com a exigência de cada degrau e a tabela com os números reais do autor, inclusive os meses de ganho zero.',
   },
   {
     path: '/sobre',

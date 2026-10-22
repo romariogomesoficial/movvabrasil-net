@@ -45,7 +45,13 @@ export const CRIATIVOS = [
     // O "teto de R$ 4,00 da Anatel" tambem segue nao confirmado: o Ato exigido
     // pelo art. 70, § 1º nao foi aberto. Peca paga nao pode afirmar o que o
     // proprio site desautoriza.
-    apoio: 'Levar o número para outra operadora leva até 3 dias úteis e quem você deixa não pode cobrar pela saída — é o art. 92 do RGST.',
+    // SEGUNDA PASSADA, 22/10/2026: a frase pendurava DUAS afirmacoes num
+    // dispositivo so, e ele sustenta uma. O prazo de ate 3 dias uteis e o art.
+    // 103, I (a efetivacao, em nenhum caso acima de 5 dias uteis, e o art. 104,
+    // II) — e assim que o site cita nos dois lugares em que cita, no post da
+    // portabilidade e na tabela do contratar-chip. O art. 92 sustenta so a
+    // segunda metade, a vedacao de cobranca pela doadora.
+    apoio: 'Levar o número para outra operadora leva até 3 dias úteis (RGST, art. 103, I) e quem você deixa não pode cobrar pela saída (art. 92).',
     formatos: ['quadrado', 'story', 'miniatura'],
   },
   {
@@ -92,7 +98,12 @@ export const CRIATIVOS = [
     chave: 'sem-fidelidade',
     chapeu: 'Sem fidelidade',
     titulo: 'Sem prazo de permanência',
-    apoio: 'Planos sem prazo de permanência e sem multa de cancelamento. Se não servir para você, é só sair.',
+    // QUARTA OCORRENCIA do padrao que este arquivo ja registra tres vezes
+    // acima ("nao tem custo", "infinitos", "contrato de rede"): afirmar como
+    // fato proprio o que o site classifica como anunciado pela empresa. Sem
+    // fidelidade e sem multa estao nos cards da pagina 31 do deck — e e tudo
+    // o que eu tenho. Contrato eu nao li, e o site diz isso.
+    apoio: 'Sem prazo de permanência e sem multa de cancelamento — é o que a MOVVA anuncia nos cards dos cinco planos.',
     formatos: ['quadrado', 'story', 'miniatura'],
   },
   {
