@@ -6,7 +6,7 @@ cluster: marca
 publicado: 2026-10-21
 atualizado: 2026-10-21
 fontes:
-  - rotulo: "MOVVA — plataforma de contratação, onde o valor vigente deve ser conferido antes de pagar. Eu não abri este endereço para escrever esta página: o preço citado aqui vem de material de divulgação da rede de distribuidores"
+  - rotulo: "MOVVA — plataforma de contratação, onde o valor vigente deve ser conferido antes de pagar. Eu não abri este endereço para escrever esta página: o preço citado aqui vem da página 31 do deck institucional da empresa"
     url: "https://movvabrasil.com"
   - rotulo: "RGST, anexo à Resolução Anatel nº 777/2025 — arts. 69, 70, 71, 82, 92, 93, 100, 103, 104 e 115 lidos literalmente no DataLegis, o sistema federal de legislação, em 21/10/2026, com o ato marcado \"Vigente\". O endereço fica em subdomínio da ANVISA, que hospeda o sistema; o conteúdo é o ato oficial, com o anexo integral"
     url: "https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000777&seqAto=000&valorAno=2025&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486"
