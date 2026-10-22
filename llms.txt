@@ -62,21 +62,12 @@ público que resolva.
 - [O que você paga no primeiro mês, somado](https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes): Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 publicada pela empresa, três valores que eu não achei e a portabilidade.
   Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
 
-### Como funciona uma operadora virtual
-
-- [25 GB dá para quê? O que cada giga rende em horas de uso](https://movvabrasil.net/blog/25-gb-da-para-que): 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média ou 8 horas em HD — alternativas, não soma. Veja quanto cada app gasta por hora, com as contas abertas.
-  Resposta curta: 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média — ou 8 em HD, ou 23 de chamada de vídeo em 720p. São alternativas: cada uma gasta os 25 GB inteiros. O piso vem do teto por hora da Netflix e do requisito de banda do Zoom, que leio como teto.
-- [O que é operadora virtual (MVNO) e como funciona no Brasil](https://movvabrasil.net/blog/o-que-e-operadora-virtual): Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar.
-  Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
-- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
-  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
-
 ### Guias práticos
 
-- [Cobertura no seu endereço: confira antes de pagar](https://movvabrasil.net/blog/cobertura-no-meu-endereco): Como conferir, antes de contratar, a cobertura declarada para o seu endereço: as três consultas da Anatel, onde a predição engana e o que pedir por escrito.
-  Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
 - [Melhor operadora para zona rural: como checar a cobertura real](https://movvabrasil.net/blog/cobertura-zona-rural): Não existe meta de universalização para celular. Veja como conferir a cobertura declarada por prestadora, localidade por localidade, antes de contratar.
   Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
+- [Cobertura no seu endereço: confira antes de pagar](https://movvabrasil.net/blog/cobertura-no-meu-endereco): Como conferir, antes de contratar, a cobertura declarada para o seu endereço: as três consultas da Anatel, onde a predição engana e o que pedir por escrito.
+  Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
 - [Como contratar o chip MOVVA — e como cancelar, portar o número e reclamar](https://movvabrasil.net/blog/contratar-chip-movva): Como contratar o chip MOVVA e como sair: cancelamento, arrependimento de 7 dias, portabilidade e reclamação, com o artigo da Anatel ao lado de cada prazo.
   Resposta curta: Cancelar: pedido a qualquer tempo (RGC, art. 82), efeito imediato com atendente (art. 83) e comprovante (art. 85). Reclamação, 7 dias corridos (art. 10); senão, 1331. Portar: até 3 dias úteis, efetivação nunca acima de 5 (RGST, arts. 103 e 104). Arrependimento: 7 dias (CDC, art. 49). O que o checkout da MOVVA exige, não confirmei em documento da empresa.
 - [Celular sem sinal dentro de casa: o que fazer antes de trocar](https://movvabrasil.net/blog/celular-sem-sinal-em-casa): Cobertura é declarada por área externa, não por imóvel. A ordem que sai mais barato: ligação por Wi-Fi, travar o 4G, posição e pedir à operadora.
@@ -87,6 +78,15 @@ público que resolva.
   Resposta curta: Nenhuma norma obriga você a aceitar fidelidade. Quando ela existe, o prazo máximo é de 12 meses e precisa ter um benefício em troca. Saindo antes, a multa tem que ser proporcional ao tempo restante e não pode passar do valor do benefício. Sem prazo de permanência, o cancelamento é a qualquer tempo, sem multa.
 - [Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante](https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero): Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada.
   Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A janela de transição é de 2 horas em 99% dos casos, com teto de 24 horas.
+
+### Como funciona uma operadora virtual
+
+- [25 GB dá para quê? O que cada giga rende em horas de uso](https://movvabrasil.net/blog/25-gb-da-para-que): 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média ou 8 horas em HD — alternativas, não soma. Veja quanto cada app gasta por hora, com as contas abertas.
+  Resposta curta: 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média — ou 8 em HD, ou 23 de chamada de vídeo em 720p. São alternativas: cada uma gasta os 25 GB inteiros. O piso vem do teto por hora da Netflix e do requisito de banda do Zoom, que leio como teto.
+- [O que é operadora virtual (MVNO) e como funciona no Brasil](https://movvabrasil.net/blog/o-que-e-operadora-virtual): Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar.
+  Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
+- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
+  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
 
 ### Comparações
 
