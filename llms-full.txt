@@ -261,6 +261,182 @@ O melhor plano não é o que tem mais giga nem o que tem o giga mais barato. É 
 
 ---
 
+# Cobertura no seu endereço: confira antes de pagar
+
+URL: https://movvabrasil.net/blog/cobertura-no-meu-endereco
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
+
+Fontes citadas:
+- Anatel — Cobertura, Telefonia Móvel (mapas das prestadoras e os painéis de cobertura): https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/mapa-cobertura
+- Anatel — Nota Técnica dos Dados de Cobertura Móvel, versão gerada em 09/09/2025 (Mosaico, ITU-R P.1812-5, duas parametrizações): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
+- Anatel — Nota Técnica dos Dados de Cobertura Móvel, versão gerada em 31/03/2021 (4G a −110 dBm, sem linha de 5G): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/0d4458a0e4a1084e87e263b5acc7f2ce
+- Anatel — Painel Percentuais de cobertura: https://informacoes.anatel.gov.br/paineis/infraestrutura/panorama
+- Anatel — Painel Mancha de cobertura (Áreas Cobertas): https://informacoes.anatel.gov.br/paineis/infraestrutura/areas-cobertas
+- Anatel — Consulta de Nível de Sinal em determinado local: https://sistemas.anatel.gov.br/se/public/cmap.php
+- Anatel — Intensidade do Sinal (ressalvas da consulta): https://www.gov.br/anatel/pt-br/consumidor/intensidade-do-sinal
+- Anatel — Consulta a Compromissos: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/consulta-a-compromissos
+- Anatel — Painel de Dados, Cobertura Móvel (painel a que a nota técnica se refere): https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
+- Anatel — Painel Estações do SMP: https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento/estacoes-do-smp
+- Anatel — RGST, Anexo da Resolução nº 777/2025 (arts. 103, II, 218, 219, 223, 226, 237, 240 e 241): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — RQUAL, Anexo I da Resolução nº 717/2019 (art. 1º, §§ 1º e 2º, e art. 28, IV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
+- Anatel — PGMC, Anexo da Resolução nº 783/2025 (art. 66, vedação do roaming permanente): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
+- Minuta de Edital do Leilão do 5G, SEI/ANATEL 6605739 (março de 2021), Anexo de Compromissos de Abrangência — município atendido e localidade atendida: https://telesintese.com.br/wp-content/uploads/2021/03/SEI-ANATEL-6605739-Minuta-de-Edital.pdf
+- Anatel — Pesquisa Pública do SEI (onde consultar o processo 53500.063559/2026-13, do Ato nº 9021/2026): https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0
+- Recomendação ITU-R P.1812 (modelo de propagação da predição): https://www.itu.int/rec/R-REC-P.1812/en
+- Claro — Mapa de cobertura (endereço listado pela Anatel): https://www.claro.com.br/cobertura
+- TIM — Mapa de cobertura, alertas de rede e histórico de ocorrências: https://www.tim.com.br/para-voce/cobertura-e-roaming/mapa-de-cobertura
+- Vivo — Mapa de cobertura (endereço listado pela Anatel): https://www.vivo.com.br/cobertura
+- Algar — Cobertura celular (endereço listado pela Anatel): https://algartelecom.com.br/para-voce/celular/cobertura-celular
+- Sercomtel — Mapa de cobertura: https://www2.sercomtel.com.br/mapa-cobertura
+- Anatel — Canais de atendimento (aplicativo Anatel Consumidor e 1331): https://www.gov.br/anatel/pt-br/canais_atendimento
+- Página de captação da rede de distribuidores MOVVA (material comercial, não documento da empresa), consultada em 21/10/2026: https://meumovvabrasil.com.br/
+
+## O que ter em mãos antes de abrir qualquer painel
+
+Três coisas, e a segunda é a que quase ninguém tem.
+
+1. **O endereço completo, com CEP.** Você vai precisar dele no mapa da hospedeira e na consulta que a Anatel publica como nível de sinal em determinado local. Até onde cada uma desce — ponto, CEP ou município — eu não confirmei: não consegui operar nenhuma das duas.
+2. **O nome da rede que atende aquele ponto.** Em operadora virtual, a marca do plano não é a rede do sinal — quem carrega a sua ligação é a rede hospedeira. [Por que o sinal é o da hospedeira está explicado em outro post](/blog/operadora-virtual-pega-bem); aqui eu só uso a conclusão.
+3. **A tecnologia que você precisa.** 4G resolve a maior parte do uso. 5G é outra pergunta, e pode ter resposta diferente no mesmo endereço.
+
+O resto é gratuito e abre no navegador. Esta página é o procedimento; o contexto está nos posts que ela linka.
+
+## Autorização em todo o território nacional não diz onde há sinal
+
+É a confusão que faz a pessoa pagar sem conferir: ler alcance de autorização como mancha de cobertura.
+
+A MOVVA tem o Ato Anatel nº 9021, de 08 de julho de 2026 (processo SEI 53500.063559/2026-13), para explorar serviços de telecomunicações de interesse coletivo e de interesse restrito, por prazo indeterminado, em todo o território nacional. É documento público, e o caminho de conferência está em fontes: a Pesquisa Pública do SEI da Anatel, onde o processo se consulta pelo número — o link é do sistema de busca, não do documento. Autorização é título habilitante: diz que a empresa pode prestar o serviço e em que área pode prestá-lo. **Não diz onde há sinal.** Mancha de cobertura não se lê em ato de outorga — se lê em painel de cobertura, que é o assunto daqui para baixo.
+
+E no modelo virtual existe uma camada a mais, que depende de qual dos dois modelos do Capítulo XII do RGST, anexo à Resolução Anatel nº 777/2025, a empresa opera. Se for credenciada, a área fica limitada à área de prestação da hospedeira (art. 219, § 1º). Se for autorizada, o alcance vem do próprio ato e dos contratos de compartilhamento que ela tiver (art. 241, § 2º). Em qual dos dois a MOVVA opera eu não confirmei: o ato não diz, e o registro dessa dúvida está em [A MOVVA é confiável?](/movva-e-confiavel).
+
+A própria Anatel resume o efeito na página de cobertura: as prestadoras virtuais compartilham da cobertura das detentoras de rede com as quais têm contrato de compartilhamento. Com uma exceção que o regulamento abre: a virtual pode atender área sem infraestrutura da hospedeira, por alternativa tecnológica própria (art. 219, § 3º; art. 240, caput) — e aí a mancha pode não ser idêntica à dela. Fora dessa hipótese, quem define a mancha é a rede, não a marca.
+
+Vale para qualquer texto, inclusive este: a autorização alcança todo o território nacional e não diz nada sobre sinal. Quando o número do ato aparece ao lado da palavra "nacional", o que está sendo descrito é o alcance da autorização, não a área onde o celular pega. É outra coisa, e é por isso que esta página existe.
+
+## Passo 1 — descubra qual rede atende o endereço
+
+Isso não sai de painel. Sai de documento da empresa, e a norma dá dois lugares para procurar — os dois no modelo de credenciamento, que é justamente o que eu não confirmei sobre a MOVVA.
+
+**Nos documentos de contratação.** No credenciamento, eles têm de trazer com clareza o nome da credenciada e o da prestadora de origem (RGST, art. 223, § 2º, e art. 237, § 2º).
+
+**No site da hospedeira.** No credenciamento, a prestadora de origem é obrigada a publicar a lista atualizada das suas credenciadas (art. 218). Procure a marca ali.
+
+Os dois dispositivos valem se o arranjo for credenciamento. Se a empresa for autorizada, e não credenciada, eles não se aplicam: aí não achar os dois nomes no contrato, nem a marca na lista, não quer dizer documento faltando — quer dizer que você está procurando no lugar errado. Nos dois casos o nome da rede continua sendo pergunta para a empresa, por escrito.
+
+Sobre a MOVVA, o que existe é anúncio da empresa: o deck institucional dela descreve **rede TIM com roaming da Vivo, num chip**. É o que a empresa publica, não o que eu verifiquei.
+
+E a cadeia de rede não fecha. O dossiê da própria empresa cita contrato com a ISPS do Brasil S.A. (TIP Brasil) sobre infraestrutura da ARQIA (Grupo Datora), que não é a mesma cadeia que o material comercial anuncia. As duas versões convivem, e eu não achei registro público que resolva — essa divergência está registrada em [A MOVVA é confiável?](/movva-e-confiavel). Então TIM e Vivo são as redes que a empresa anuncia, não uma lista fechada de candidatas: ARQIA e Datora não aparecem entre as cinco prestadoras com rede que a Anatel lista, que são as do Passo 3. Confira as duas que a empresa anuncia e peça o nome da prestadora de origem por escrito antes de pagar.
+
+Uma distinção que muda a conferência: *duas redes contratadas* e *uma rede com roaming na outra* não são a mesma coisa. Roaming é condição negociada entre prestadoras (art. 226), e contrato pode limitar tecnologia e uso.
+
+O deck institucional da empresa responde, e é específico: **"Rede TIM + Roaming da VIVO"**. A principal é a TIM. Para a sua conferência isso muda a ordem: comece pela cobertura da TIM no seu endereço, porque é ela que sustenta o seu acesso no dia a dia, e trate a Vivo como o que a empresa diz que ela é — a rede de roaming, com as condições que o contrato entre as duas fixar e que você não vê.
+
+## Passo 2 — as três consultas da Anatel, e o que cada uma não mostra
+
+A página de cobertura da Anatel reúne quatro links de dados da própria Agência: três consultas de cobertura — percentuais, mancha e nível de sinal em determinado local — e a Consulta a Compromissos. Na mesma página estão os endereços das cinco prestadoras com rede, que são o Passo 3. Fora dela há o painel Estações do SMP, para ver antena licenciada perto de casa. Abra as três de cobertura na ordem, do município para o local.
+
+As três e o painel Cobertura Móvel do Painel de Dados têm a mesma origem declarada: a Anatel descreve essas informações como geradas a partir do licenciamento das estações rádio base, e a metodologia publicada é a nota técnica dos dados de cobertura móvel desse painel. É o painel que [o post sobre cobertura de operadora virtual](/blog/operadora-virtual-pega-bem) manda abrir — nome diferente, origem declarada igual. Se é literalmente o mesmo processamento eu não confirmei: não abri nenhum dos painéis no dia. Os endereços em informacoes.anatel.gov.br responderam erro em todas as minhas tentativas, e da consulta de nível de sinal ficou só uma cópia da madrugada, que eu não operei.
+
+A nota técnica manda usar o campo **Medida**, no painel de filtros, para alternar entre *Moradores Cobertos*, *Domicílios Cobertos* e *Área Coberta* — é esse campo que decide o que você está vendo. Em que aba ele aparece eu não confirmei: não consegui abrir os painéis.
+
+Dois avisos antes de abrir. O primeiro: tudo ali é cálculo, e a própria Anatel registra que os dados, "por tratarem de uma estimativa, podem eventualmente não representar com exatidão a cobertura móvel real". O segundo: esses endereços nem sempre respondem. Se não abrir para você, tente mais tarde — pode não ser você. O que eu encontrei no dia está na seção final.
+
+| Consulta | O que mostra | O que ela não mostra |
+| --- | --- | --- |
+| **Percentuais de cobertura** | Percentual de área, de moradores e de domicílios cobertos, por município e por tecnologia | O seu ponto. É número agregado: a cobertura de um município é a soma dos setores censitários, e a sua rua pode estar justamente no pedaço descoberto |
+| **Mancha de cobertura** | O desenho da área coberta sobre o mapa | Intensidade. A borda da mancha e o miolo dela aparecem iguais |
+| **Nível de sinal em determinado local** | A intensidade provável do sinal no local consultado. A aplicação descreve o próprio resultado como referência para conhecer a intensidade provável "em um determinado ponto de interesse" | Medição. A Anatel avisa que são resultados de cálculos teóricos, que podem variar da experiência percebida, principalmente em interiores de edificações, porque os cálculos usam ambientes abertos como referência — e que servem apenas como referência, "não constituindo, portanto, informação para efeito de compromissos de cobertura ou qualidade" |
+
+## Passo 3 — o mapa da rede hospedeira, no site dela
+
+Painel da Anatel e mapa de prestadora não são a mesma fonte, e vale olhar os dois — mas a diferença não é cálculo contra medição. Os dois são predição. O painel calcula a partir da base de estações licenciadas, com o modelo ITU-R P.1812-5 e os parâmetros que a nota técnica publica; o mapa da prestadora sai do cálculo de engenharia da própria empresa, e os parâmetros desse cálculo eu não achei publicados nos mapas que abriram para mim. O que muda é quem faz a conta e com que régua. Medição no seu portão, nenhum dos dois é.
+
+A Anatel publica os links de cinco prestadoras com rede e descreve esses mapas como demonstração teórica de presença de sinal, baseada em cálculos de predição — acrescentando que a cobertura efetiva depende de fatores como relevo, construções, tipo de ambiente e altura do usuário em relação ao solo. A mesma página registra que não há obrigação específica de oferta de cobertura indoor imposta às prestadoras, por ser limitação física do próprio serviço. Ou seja: mapa nenhum promete sinal dentro da sua casa.
+
+Na página de cobertura, a agência resume o RQUAL assim: o regulamento determina que as operadoras disponibilizem mapa de cobertura detalhado por tecnologia ofertada. O texto do inciso é mais estreito que o resumo — ele pede, na página da prestadora, informações sobre a sua cobertura do SMP por tecnologia e acesso ao mapa de cobertura da página da Agência (Resolução nº 717/2019, Anexo I, art. 28, IV). Onde os dois diferem, eu fico com o regulamento. Para você, a consequência é prática: procure 4G e 5G separados, e não conte com mapa próprio da marca.
+
+Os endereços que a Anatel lista não levam todos ao mesmo lugar hoje. Três dos cinco redirecionam — e o da Algar, depois de redirecionar, respondeu erro no meu acesso. Um recusou o meu acesso e um abre no próprio endereço. Os links continuam valendo como ponto de partida; o endereço final mudou.
+
+Numa dessas páginas, a de cobertura e roaming da TIM, há também atividades programadas, alertas de rede e o histórico das ocorrências dos últimos doze meses. Vale olhar: endereço com queda recorrente aparece ali, e não aparece em mapa de predição. Não conferi se as outras publicam o equivalente.
+
+| Rede | Endereço que a Anatel lista | Onde cai hoje (21/10/2026) |
+| --- | --- | --- |
+| Claro | claro.com.br/cobertura | Redireciona para claro.com.br/mapa-de-cobertura |
+| TIM | tim.com.br/cobertura | Redireciona para tim.com.br/para-voce/cobertura-e-roaming/mapa-de-cobertura |
+| Vivo | vivo.com.br/cobertura | Recusou o meu acesso (HTTP 403) |
+| Algar | algartelecom.com.br/para-voce/celular/cobertura-celular | Redireciona para algar.com.br e respondeu erro no meu acesso (HTTP 500) |
+| Sercomtel | www2.sercomtel.com.br/mapa-cobertura | Abre no próprio endereço |
+
+## Onde a predição engana
+
+Painel de cobertura não é medição no seu portão: é conta. A nota técnica dos dados de cobertura móvel do Painel de Dados da Anatel diz com que parâmetros a conta é feita, e cada parâmetro é uma armadilha pequena. Estão todos abaixo, como a nota os registra.
+
+Três deles merecem atenção na hora de decidir. **Altura da antena: 1,7 m** — na minha leitura, é altura de pessoa, não de torre: a predição vale para o aparelho ao ar livre, na mão, e dentro de casa é outro cenário. **Tempo: 50%** e **Localização: 90%** — a predição é estatística, não promessa: vale em metade do tempo e em nove de cada dez posições consideradas.
+
+E o que a nota **não** traz: percentual de corte. Ela não classifica localidade em coberta ou não coberta. Diz que a cobertura de localidades, municípios, UFs, regiões e Brasil foi calculada agregando os valores dos setores censitários, e o que sai é percentual de moradores, de domicílios ou de área. Os 95% que circulam são de outro lugar: no anexo de compromissos de abrangência do edital do 5G, município atendido é o que tem pelo menos 95% da área urbana do distrito sede coberta, a −110 dBm de RSRP; para localidade, o mesmo anexo pede uma estação rádio base dentro do polígono do setor censitário. Li os dois na minuta do edital, de março de 2021, não no edital publicado, e o critério varia conforme o lote — por isso não cito número de item. Critério de compromisso de leilão não é critério de painel, e é nesse contexto que [a página de zona rural](/blog/cobertura-zona-rural) usa o número.
+
+Uma ressalva sobre a própria nota: há duas versões no ar hoje, no mesmo sistema da Anatel. A que eu uso aqui é a mais recente das duas, gerada em 09/09/2025 pelos metadados do arquivo, e traz duas parametrizações. A outra, gerada em 31/03/2021, traz uma só, com 4G a −110 dBm e sem linha de 5G. Nenhuma das duas tem percentual de corte — isso eu conferi nas duas. Qual delas descreve o dado que o painel serve hoje, eu não sei: não consegui abrir o painel.
+
+| Parâmetro | O que a nota técnica registra | O que isso muda na sua leitura |
+| --- | --- | --- |
+| Origem dos dados | Sistema Mosaico, sobre a base de estações licenciadas | É o que está licenciado, não o que foi medido na rua |
+| Modelo de propagação | ITU-R P.1812-5 | Conta de rádio. Nenhum aparelho foi ligado no seu endereço |
+| Distância máxima de cálculo | 7 km | Estação mais distante não entra na conta, ainda que o sinal dela chegue |
+| Altura da antena | 1,7 m | Celular na mão, ao ar livre. Dentro de casa é outro cenário |
+| Tempo | 50% | Vale em metade do tempo, não no momento em que você olha |
+| Localização | 90% | Vale em 90% das posições. A sua pode estar nos 10% |
+| Limiar de sinal | Duas parametrizações: até 06/2024, 2G −95 dBm, 3G −102 dBm, 4G e 5G −110 dBm; a partir de 09/2024, 4G e 5G a −90 dBm | Número antigo e número novo não se comparam. O que valeu em julho e agosto de 2024 a nota não diz |
+| Moradores e domicílios | Distribuídos uniformemente dentro de cada setor censitário | Em setor grande, "moradores cobertos" diz pouco sobre o seu ponto |
+| Base populacional | Censo de 2010 até 2024; Censo 2022 a partir de 2025 | A série tem degrau. Comparar anos exige cuidado |
+| Classificação de localidade | A nota não traz nenhuma: a cobertura dos recortes é a agregação dos setores censitários | Não existe nota de corte. O painel devolve percentual, não um selo de "coberta" |
+
+## O que pedir por escrito, antes de pagar
+
+Painel é estimativa. Resposta por escrito é compromisso, e é de graça pedir.
+
+1. **Qual é a rede hospedeira que atende este CEP** — e, se forem duas, qual carrega o tráfego e qual entra como roaming. Pergunte pelo nome da prestadora de origem, porque as duas versões da cadeia que eu achei não fecham entre si. No credenciamento, os documentos de contratação têm de trazer com clareza o nome da credenciada e o da prestadora de origem (RGST, arts. 223, § 2º, e 237, § 2º). Em qual modelo a empresa opera eu não confirmei, então pergunte: o nome da rede você precisa ter antes de pagar.
+2. **A cobertura neste endereço, por tecnologia**, com 4G e 5G separados. O RQUAL (Resolução nº 717/2019, Anexo I, art. 28, IV) manda a prestadora publicar, na página dela, informações sobre a sua cobertura do SMP por tecnologia e dar acesso ao mapa de cobertura da página da Anatel. Nada ali obriga resposta por endereço, e nada ali obriga mapa próprio. E há um limite de alcance: o regulamento se aplica também a quem presta na modalidade de Autorizada de Rede Virtual (art. 1º, § 1º), mas as obrigações alcançam os Grupos que não se enquadram como Prestadora de Pequeno Porte (art. 1º, § 2º). Então a pergunta vale como pedido, não como direito exigível, e de quem é o dever no caso da marca que você está contratando depende desse enquadramento — que eu não confirmei.
+3. **Se o plano libera 5G**, e em quais faixas. A rede ter 5G e o plano entregar 5G são coisas diferentes.
+4. **Se há roaming**, e com qual limite de uso ou de tecnologia. Roaming é condição negociada entre prestadoras (art. 226), e o que foi negociado você não vê no mapa. Vale saber o limite: o PGMC (Resolução nº 783/2025, art. 66) veda roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você, mas que ajuda a ler a resposta que vier.
+5. **O que acontece se não houver sinal no endereço**: prazo para desistir, como devolver o chip, se há estorno e em quanto tempo.
+6. **Protocolo da resposta.** WhatsApp ou e-mail serve. Guarde. Resposta sem protocolo não sustenta reclamação depois.
+
+Se a realidade divergir da resposta, o caminho é a prestadora primeiro, com protocolo, e depois a Anatel — pelo aplicativo Anatel Consumidor ou pelo 1331.
+
+## A ordem que evita prejuízo
+
+A sequência importa mais do que a escolha.
+
+1. **Confira os painéis e o mapa da hospedeira.** É rápido e não custa nada. Para a consulta de nível de sinal e para o mapa da hospedeira você vai precisar do endereço completo, com CEP — por isso ele está no começo desta página.
+2. **Peça a resposta por escrito, com protocolo.** Se não vier, isso já é informação.
+3. **Use o chip no trajeto real** — casa, trabalho, o caminho — antes de mexer no seu número. Para ver em qual rede ele aceita registrar, [desligue a seleção automática](/blog/chip-dois-sinais).
+4. **Só então faça a portabilidade.** Ela tem volta, mas tem janela: o RGST dá 2 dias úteis para cancelar o processo, contados da solicitação (art. 103, II). Depois disso, segue até a conclusão. [Os prazos da portabilidade estão aqui](/blog/portabilidade-sem-perder-o-numero).
+
+Invertendo essa ordem, você descobre o sinal depois de já ter levado o número para lá.
+
+Plano sem prazo de permanência ajuda, porque sair não custa multa — mas não devolve o mês sem sinal. [O que a lei garante sobre fidelidade está aqui](/blog/operadora-sem-fidelidade).
+
+---
+
+Nota de transparência: escrevo como distribuidor independente da MOVVA Brasil Ltda, e este site não é canal oficial da empresa. Pedi o chip em 20/10/2026 e ele não chegou: não há nesta página nenhuma medição minha em campo, nem relato de uso próprio. Característica de produto da MOVVA entra aqui como anúncio da empresa, nunca como fato verificado por mim. Páginas e endereços consultados em 21/10/2026 — os que não abriram para mim estão identificados um a um na tabela do Passo 3 e nos pontos em aberto.
+
+## O que eu não consegui confirmar
+
+- **Em qual dos dois modelos do Capítulo XII do RGST a MOVVA opera** — credenciada ou autorizada. O ato da Anatel não diz, e a diferença muda quais artigos valem: no credenciamento a área segue a da hospedeira (art. 219, § 1º) e os documentos de contratação e a lista do art. 218 têm de trazer o nome da rede; na autorização, o alcance vem do próprio ato e dos contratos de compartilhamento (art. 241, § 2º), e esses dois dispositivos não se aplicam. O registro dessa dúvida está em [A MOVVA é confiável?](/movva-e-confiavel). Onde confirmar: o painel da Anatel, a lista do art. 218 no site da hospedeira e a resposta por escrito da empresa.
+- **Se a MOVVA se enquadra como Prestadora de Pequeno Porte**, e portanto quais obrigações do RQUAL a alcançam. O regulamento se aplica a quem presta como Autorizada de Rede Virtual (art. 1º, § 1º), mas as obrigações são dos Grupos que não se enquadram como Prestadora de Pequeno Porte (art. 1º, § 2º), conceito buscado no Plano Geral de Metas de Competição. Não achei documento que feche; o mesmo item já está aberto em [melhor operadora para zona rural](/blog/cobertura-zona-rural). Onde confirmar: o PGMC, os painéis da Anatel e a resposta por escrito.
+- **A cadeia de rede, que dois documentos da própria empresa descrevem de formas diferentes.** O deck institucional diz "Rede TIM + Roaming da VIVO" — isso fecha o arranjo. Mas o dossiê de transparência da mesma empresa descreve a operação por outra cadeia: contrato com a ISPS do Brasil S.A. (TIP Brasil), credenciada para comercializar o SMP sobre infraestrutura da ARQIA (Grupo Datora), **sem mencionar TIM nem Vivo**. Os dois são documentos da MOVVA e não fecham entre si. Onde confirmar: a lista do art. 218 no site da hospedeira, os documentos de contratação (art. 223, § 2º) e a oferta por escrito, com protocolo.
+- **Por quanto tempo a Vivo pode entrar por roaming.** O art. 66 do PGMC veda o roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você. Como uma característica vendida como permanente do plano convive com esse limite, eu não achei documento que explique.
+- **Se as consultas da Anatel estavam no ar.** Em 21/10/2026 o endereço dos painéis respondeu erro 520 em todas as minhas tentativas, inclusive às 14h40 e às 14h48, e seguia em 520 no fim da tarde. Como o host informacoes.anatel.gov.br respondeu 520 por inteiro, inclusive em páginas de legislação que não têm relação com os painéis, a leitura mais provável é indisponibilidade do servidor, e não bloqueio do meu navegador. A consulta de nível de sinal está em outro host (sistemas.anatel.gov.br) e respondeu HTTP 423, por volta das 14h38 e de novo no fim da tarde: para esse caso eu não tenho explicação, e o 520 não serve de evidência. Quanto tempo durou, não sei. Onde confirmar: a página de cobertura da Anatel e o 1331.
+- **Quais campos a consulta de nível de sinal exige** — endereço completo, CEP ou coordenada — e se ela separa resultado por prestadora e por tecnologia. A própria aplicação descreve o resultado como referência para conhecer a intensidade provável "em um determinado ponto de interesse", mas na cópia da aplicação Mosaico: SMP que ficou salva da minha coleta da madrugada de 21/10/2026 havia seleção de UF e de município e arquivos de mapa por tecnologia e por prestadora para download, não um campo de endereço visível. Não operei a interface, que roda por script, e de tarde o endereço passou a recusar o acesso. Então continuo sem saber se ela desce ao ponto.
+- **Se os mapas das prestadoras aceitam endereço completo.** Não consegui chegar à busca desses mapas, então não sei se ela desce ao número da casa ou para no município e no CEP. Dois dos cinco endereços não abriram para mim em 21/10/2026 — Vivo (HTTP 403) e Algar (HTTP 500), como está na tabela do Passo 3. Onde confirmar: o próprio mapa da hospedeira e a resposta por escrito.
+- **A data de referência dos dados do painel.** A nota técnica descreve o método, não a data do último processamento. Os arquivos de mapa daquela cópia da aplicação da Anatel traziam datas de criação entre 27/06/2026 e 10/10/2026, mas são os arquivos para download, não a data do dado que alimenta os painéis. Sem abrir o painel, não dá para dizer de quando é a mancha que você vai olhar.
+- **Qual das duas notas técnicas é a corrente.** Há duas no ar no mesmo sistema da Anatel: a que eu cito, gerada em 09/09/2025 pelos metadados do arquivo, com duas parametrizações e linha de 5G; e outra, gerada em 31/03/2021, com uma parametrização, 4G a −110 dBm e sem 5G. A de 09/09/2025 é a mais recente das duas, mas as datas vêm do metadado do PDF, não do texto do documento. Qual delas descreve o dado que o painel serve hoje, eu não sei, porque não consegui abrir o painel.
+- **Se o edital publicado do 5G manteve a redação e a numeração da minuta.** Os dois critérios que cito — 95% da área urbana do distrito sede para município, uma estação rádio base no polígono do setor censitário para localidade — eu li na minuta de março de 2021 (SEI/ANATEL 6605739), e o critério varia conforme o lote de radiofrequência. Não abri o texto final. Por isso não cito número de item. Onde confirmar: o Edital nº 1/2021-SOR/SPR/CD-ANATEL publicado em 27/09/2021.
+- **Por que a página de cobertura da Anatel descreve um dever mais largo que o inciso.** A página diz que o RQUAL determina mapa de cobertura detalhado por tecnologia ofertada; o art. 28, IV do Anexo I pede informações de cobertura por tecnologia e acesso ao mapa da própria Agência. Se existe outro dispositivo por trás do resumo da página, eu não achei. Onde confirmar: o Manual Operacional do RQUAL e o restante do Anexo I.
+
+---
+
 # Melhor operadora para zona rural: como checar a cobertura real
 
 URL: https://movvabrasil.net/blog/cobertura-zona-rural
@@ -444,182 +620,6 @@ prefeitura e o 1331.
 
 Nada aqui descreve característica de produto da MOVVA: é regulação e painel
 público.
-
----
-
-# Cobertura no seu endereço: confira antes de pagar
-
-URL: https://movvabrasil.net/blog/cobertura-no-meu-endereco
-Publicado: 2026-10-21 · Atualizado: 2026-10-21
-Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
-
-Fontes citadas:
-- Anatel — Cobertura, Telefonia Móvel (mapas das prestadoras e os painéis de cobertura): https://www.gov.br/anatel/pt-br/dados/qualidade/qualidade-dos-servicos/mapa-cobertura
-- Anatel — Nota Técnica dos Dados de Cobertura Móvel, versão gerada em 09/09/2025 (Mosaico, ITU-R P.1812-5, duas parametrizações): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/f0b4aad9341d11740f3d4fa2c45863a6
-- Anatel — Nota Técnica dos Dados de Cobertura Móvel, versão gerada em 31/03/2021 (4G a −110 dBm, sem linha de 5G): https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/0d4458a0e4a1084e87e263b5acc7f2ce
-- Anatel — Painel Percentuais de cobertura: https://informacoes.anatel.gov.br/paineis/infraestrutura/panorama
-- Anatel — Painel Mancha de cobertura (Áreas Cobertas): https://informacoes.anatel.gov.br/paineis/infraestrutura/areas-cobertas
-- Anatel — Consulta de Nível de Sinal em determinado local: https://sistemas.anatel.gov.br/se/public/cmap.php
-- Anatel — Intensidade do Sinal (ressalvas da consulta): https://www.gov.br/anatel/pt-br/consumidor/intensidade-do-sinal
-- Anatel — Consulta a Compromissos: https://informacoes.anatel.gov.br/paineis/acompanhamento-e-controle/consulta-a-compromissos
-- Anatel — Painel de Dados, Cobertura Móvel (painel a que a nota técnica se refere): https://informacoes.anatel.gov.br/paineis/infraestrutura/cobertura-movel
-- Anatel — Painel Estações do SMP: https://informacoes.anatel.gov.br/paineis/outorga-e-licenciamento/estacoes-do-smp
-- Anatel — RGST, Anexo da Resolução nº 777/2025 (arts. 103, II, 218, 219, 223, 226, 237, 240 e 241): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — RQUAL, Anexo I da Resolução nº 717/2019 (art. 1º, §§ 1º e 2º, e art. 28, IV): https://informacoes.anatel.gov.br/legislacao/resolucoes/2019/1371-resolucao-717
-- Anatel — PGMC, Anexo da Resolução nº 783/2025 (art. 66, vedação do roaming permanente): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2060-resolucao-783
-- Minuta de Edital do Leilão do 5G, SEI/ANATEL 6605739 (março de 2021), Anexo de Compromissos de Abrangência — município atendido e localidade atendida: https://telesintese.com.br/wp-content/uploads/2021/03/SEI-ANATEL-6605739-Minuta-de-Edital.pdf
-- Anatel — Pesquisa Pública do SEI (onde consultar o processo 53500.063559/2026-13, do Ato nº 9021/2026): https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0
-- Recomendação ITU-R P.1812 (modelo de propagação da predição): https://www.itu.int/rec/R-REC-P.1812/en
-- Claro — Mapa de cobertura (endereço listado pela Anatel): https://www.claro.com.br/cobertura
-- TIM — Mapa de cobertura, alertas de rede e histórico de ocorrências: https://www.tim.com.br/para-voce/cobertura-e-roaming/mapa-de-cobertura
-- Vivo — Mapa de cobertura (endereço listado pela Anatel): https://www.vivo.com.br/cobertura
-- Algar — Cobertura celular (endereço listado pela Anatel): https://algartelecom.com.br/para-voce/celular/cobertura-celular
-- Sercomtel — Mapa de cobertura: https://www2.sercomtel.com.br/mapa-cobertura
-- Anatel — Canais de atendimento (aplicativo Anatel Consumidor e 1331): https://www.gov.br/anatel/pt-br/canais_atendimento
-- Página de captação da rede de distribuidores MOVVA (material comercial, não documento da empresa), consultada em 21/10/2026: https://meumovvabrasil.com.br/
-
-## O que ter em mãos antes de abrir qualquer painel
-
-Três coisas, e a segunda é a que quase ninguém tem.
-
-1. **O endereço completo, com CEP.** Você vai precisar dele no mapa da hospedeira e na consulta que a Anatel publica como nível de sinal em determinado local. Até onde cada uma desce — ponto, CEP ou município — eu não confirmei: não consegui operar nenhuma das duas.
-2. **O nome da rede que atende aquele ponto.** Em operadora virtual, a marca do plano não é a rede do sinal — quem carrega a sua ligação é a rede hospedeira. [Por que o sinal é o da hospedeira está explicado em outro post](/blog/operadora-virtual-pega-bem); aqui eu só uso a conclusão.
-3. **A tecnologia que você precisa.** 4G resolve a maior parte do uso. 5G é outra pergunta, e pode ter resposta diferente no mesmo endereço.
-
-O resto é gratuito e abre no navegador. Esta página é o procedimento; o contexto está nos posts que ela linka.
-
-## Autorização em todo o território nacional não diz onde há sinal
-
-É a confusão que faz a pessoa pagar sem conferir: ler alcance de autorização como mancha de cobertura.
-
-A MOVVA tem o Ato Anatel nº 9021, de 08 de julho de 2026 (processo SEI 53500.063559/2026-13), para explorar serviços de telecomunicações de interesse coletivo e de interesse restrito, por prazo indeterminado, em todo o território nacional. É documento público, e o caminho de conferência está em fontes: a Pesquisa Pública do SEI da Anatel, onde o processo se consulta pelo número — o link é do sistema de busca, não do documento. Autorização é título habilitante: diz que a empresa pode prestar o serviço e em que área pode prestá-lo. **Não diz onde há sinal.** Mancha de cobertura não se lê em ato de outorga — se lê em painel de cobertura, que é o assunto daqui para baixo.
-
-E no modelo virtual existe uma camada a mais, que depende de qual dos dois modelos do Capítulo XII do RGST, anexo à Resolução Anatel nº 777/2025, a empresa opera. Se for credenciada, a área fica limitada à área de prestação da hospedeira (art. 219, § 1º). Se for autorizada, o alcance vem do próprio ato e dos contratos de compartilhamento que ela tiver (art. 241, § 2º). Em qual dos dois a MOVVA opera eu não confirmei: o ato não diz, e o registro dessa dúvida está em [A MOVVA é confiável?](/movva-e-confiavel).
-
-A própria Anatel resume o efeito na página de cobertura: as prestadoras virtuais compartilham da cobertura das detentoras de rede com as quais têm contrato de compartilhamento. Com uma exceção que o regulamento abre: a virtual pode atender área sem infraestrutura da hospedeira, por alternativa tecnológica própria (art. 219, § 3º; art. 240, caput) — e aí a mancha pode não ser idêntica à dela. Fora dessa hipótese, quem define a mancha é a rede, não a marca.
-
-Vale para qualquer texto, inclusive este: a autorização alcança todo o território nacional e não diz nada sobre sinal. Quando o número do ato aparece ao lado da palavra "nacional", o que está sendo descrito é o alcance da autorização, não a área onde o celular pega. É outra coisa, e é por isso que esta página existe.
-
-## Passo 1 — descubra qual rede atende o endereço
-
-Isso não sai de painel. Sai de documento da empresa, e a norma dá dois lugares para procurar — os dois no modelo de credenciamento, que é justamente o que eu não confirmei sobre a MOVVA.
-
-**Nos documentos de contratação.** No credenciamento, eles têm de trazer com clareza o nome da credenciada e o da prestadora de origem (RGST, art. 223, § 2º, e art. 237, § 2º).
-
-**No site da hospedeira.** No credenciamento, a prestadora de origem é obrigada a publicar a lista atualizada das suas credenciadas (art. 218). Procure a marca ali.
-
-Os dois dispositivos valem se o arranjo for credenciamento. Se a empresa for autorizada, e não credenciada, eles não se aplicam: aí não achar os dois nomes no contrato, nem a marca na lista, não quer dizer documento faltando — quer dizer que você está procurando no lugar errado. Nos dois casos o nome da rede continua sendo pergunta para a empresa, por escrito.
-
-Sobre a MOVVA, o que existe é anúncio da empresa: o deck institucional dela descreve **rede TIM com roaming da Vivo, num chip**. É o que a empresa publica, não o que eu verifiquei.
-
-E a cadeia de rede não fecha. O dossiê da própria empresa cita contrato com a ISPS do Brasil S.A. (TIP Brasil) sobre infraestrutura da ARQIA (Grupo Datora), que não é a mesma cadeia que o material comercial anuncia. As duas versões convivem, e eu não achei registro público que resolva — essa divergência está registrada em [A MOVVA é confiável?](/movva-e-confiavel). Então TIM e Vivo são as redes que a empresa anuncia, não uma lista fechada de candidatas: ARQIA e Datora não aparecem entre as cinco prestadoras com rede que a Anatel lista, que são as do Passo 3. Confira as duas que a empresa anuncia e peça o nome da prestadora de origem por escrito antes de pagar.
-
-Uma distinção que muda a conferência: *duas redes contratadas* e *uma rede com roaming na outra* não são a mesma coisa. Roaming é condição negociada entre prestadoras (art. 226), e contrato pode limitar tecnologia e uso.
-
-O deck institucional da empresa responde, e é específico: **"Rede TIM + Roaming da VIVO"**. A principal é a TIM. Para a sua conferência isso muda a ordem: comece pela cobertura da TIM no seu endereço, porque é ela que sustenta o seu acesso no dia a dia, e trate a Vivo como o que a empresa diz que ela é — a rede de roaming, com as condições que o contrato entre as duas fixar e que você não vê.
-
-## Passo 2 — as três consultas da Anatel, e o que cada uma não mostra
-
-A página de cobertura da Anatel reúne quatro links de dados da própria Agência: três consultas de cobertura — percentuais, mancha e nível de sinal em determinado local — e a Consulta a Compromissos. Na mesma página estão os endereços das cinco prestadoras com rede, que são o Passo 3. Fora dela há o painel Estações do SMP, para ver antena licenciada perto de casa. Abra as três de cobertura na ordem, do município para o local.
-
-As três e o painel Cobertura Móvel do Painel de Dados têm a mesma origem declarada: a Anatel descreve essas informações como geradas a partir do licenciamento das estações rádio base, e a metodologia publicada é a nota técnica dos dados de cobertura móvel desse painel. É o painel que [o post sobre cobertura de operadora virtual](/blog/operadora-virtual-pega-bem) manda abrir — nome diferente, origem declarada igual. Se é literalmente o mesmo processamento eu não confirmei: não abri nenhum dos painéis no dia. Os endereços em informacoes.anatel.gov.br responderam erro em todas as minhas tentativas, e da consulta de nível de sinal ficou só uma cópia da madrugada, que eu não operei.
-
-A nota técnica manda usar o campo **Medida**, no painel de filtros, para alternar entre *Moradores Cobertos*, *Domicílios Cobertos* e *Área Coberta* — é esse campo que decide o que você está vendo. Em que aba ele aparece eu não confirmei: não consegui abrir os painéis.
-
-Dois avisos antes de abrir. O primeiro: tudo ali é cálculo, e a própria Anatel registra que os dados, "por tratarem de uma estimativa, podem eventualmente não representar com exatidão a cobertura móvel real". O segundo: esses endereços nem sempre respondem. Se não abrir para você, tente mais tarde — pode não ser você. O que eu encontrei no dia está na seção final.
-
-| Consulta | O que mostra | O que ela não mostra |
-| --- | --- | --- |
-| **Percentuais de cobertura** | Percentual de área, de moradores e de domicílios cobertos, por município e por tecnologia | O seu ponto. É número agregado: a cobertura de um município é a soma dos setores censitários, e a sua rua pode estar justamente no pedaço descoberto |
-| **Mancha de cobertura** | O desenho da área coberta sobre o mapa | Intensidade. A borda da mancha e o miolo dela aparecem iguais |
-| **Nível de sinal em determinado local** | A intensidade provável do sinal no local consultado. A aplicação descreve o próprio resultado como referência para conhecer a intensidade provável "em um determinado ponto de interesse" | Medição. A Anatel avisa que são resultados de cálculos teóricos, que podem variar da experiência percebida, principalmente em interiores de edificações, porque os cálculos usam ambientes abertos como referência — e que servem apenas como referência, "não constituindo, portanto, informação para efeito de compromissos de cobertura ou qualidade" |
-
-## Passo 3 — o mapa da rede hospedeira, no site dela
-
-Painel da Anatel e mapa de prestadora não são a mesma fonte, e vale olhar os dois — mas a diferença não é cálculo contra medição. Os dois são predição. O painel calcula a partir da base de estações licenciadas, com o modelo ITU-R P.1812-5 e os parâmetros que a nota técnica publica; o mapa da prestadora sai do cálculo de engenharia da própria empresa, e os parâmetros desse cálculo eu não achei publicados nos mapas que abriram para mim. O que muda é quem faz a conta e com que régua. Medição no seu portão, nenhum dos dois é.
-
-A Anatel publica os links de cinco prestadoras com rede e descreve esses mapas como demonstração teórica de presença de sinal, baseada em cálculos de predição — acrescentando que a cobertura efetiva depende de fatores como relevo, construções, tipo de ambiente e altura do usuário em relação ao solo. A mesma página registra que não há obrigação específica de oferta de cobertura indoor imposta às prestadoras, por ser limitação física do próprio serviço. Ou seja: mapa nenhum promete sinal dentro da sua casa.
-
-Na página de cobertura, a agência resume o RQUAL assim: o regulamento determina que as operadoras disponibilizem mapa de cobertura detalhado por tecnologia ofertada. O texto do inciso é mais estreito que o resumo — ele pede, na página da prestadora, informações sobre a sua cobertura do SMP por tecnologia e acesso ao mapa de cobertura da página da Agência (Resolução nº 717/2019, Anexo I, art. 28, IV). Onde os dois diferem, eu fico com o regulamento. Para você, a consequência é prática: procure 4G e 5G separados, e não conte com mapa próprio da marca.
-
-Os endereços que a Anatel lista não levam todos ao mesmo lugar hoje. Três dos cinco redirecionam — e o da Algar, depois de redirecionar, respondeu erro no meu acesso. Um recusou o meu acesso e um abre no próprio endereço. Os links continuam valendo como ponto de partida; o endereço final mudou.
-
-Numa dessas páginas, a de cobertura e roaming da TIM, há também atividades programadas, alertas de rede e o histórico das ocorrências dos últimos doze meses. Vale olhar: endereço com queda recorrente aparece ali, e não aparece em mapa de predição. Não conferi se as outras publicam o equivalente.
-
-| Rede | Endereço que a Anatel lista | Onde cai hoje (21/10/2026) |
-| --- | --- | --- |
-| Claro | claro.com.br/cobertura | Redireciona para claro.com.br/mapa-de-cobertura |
-| TIM | tim.com.br/cobertura | Redireciona para tim.com.br/para-voce/cobertura-e-roaming/mapa-de-cobertura |
-| Vivo | vivo.com.br/cobertura | Recusou o meu acesso (HTTP 403) |
-| Algar | algartelecom.com.br/para-voce/celular/cobertura-celular | Redireciona para algar.com.br e respondeu erro no meu acesso (HTTP 500) |
-| Sercomtel | www2.sercomtel.com.br/mapa-cobertura | Abre no próprio endereço |
-
-## Onde a predição engana
-
-Painel de cobertura não é medição no seu portão: é conta. A nota técnica dos dados de cobertura móvel do Painel de Dados da Anatel diz com que parâmetros a conta é feita, e cada parâmetro é uma armadilha pequena. Estão todos abaixo, como a nota os registra.
-
-Três deles merecem atenção na hora de decidir. **Altura da antena: 1,7 m** — na minha leitura, é altura de pessoa, não de torre: a predição vale para o aparelho ao ar livre, na mão, e dentro de casa é outro cenário. **Tempo: 50%** e **Localização: 90%** — a predição é estatística, não promessa: vale em metade do tempo e em nove de cada dez posições consideradas.
-
-E o que a nota **não** traz: percentual de corte. Ela não classifica localidade em coberta ou não coberta. Diz que a cobertura de localidades, municípios, UFs, regiões e Brasil foi calculada agregando os valores dos setores censitários, e o que sai é percentual de moradores, de domicílios ou de área. Os 95% que circulam são de outro lugar: no anexo de compromissos de abrangência do edital do 5G, município atendido é o que tem pelo menos 95% da área urbana do distrito sede coberta, a −110 dBm de RSRP; para localidade, o mesmo anexo pede uma estação rádio base dentro do polígono do setor censitário. Li os dois na minuta do edital, de março de 2021, não no edital publicado, e o critério varia conforme o lote — por isso não cito número de item. Critério de compromisso de leilão não é critério de painel, e é nesse contexto que [a página de zona rural](/blog/cobertura-zona-rural) usa o número.
-
-Uma ressalva sobre a própria nota: há duas versões no ar hoje, no mesmo sistema da Anatel. A que eu uso aqui é a mais recente das duas, gerada em 09/09/2025 pelos metadados do arquivo, e traz duas parametrizações. A outra, gerada em 31/03/2021, traz uma só, com 4G a −110 dBm e sem linha de 5G. Nenhuma das duas tem percentual de corte — isso eu conferi nas duas. Qual delas descreve o dado que o painel serve hoje, eu não sei: não consegui abrir o painel.
-
-| Parâmetro | O que a nota técnica registra | O que isso muda na sua leitura |
-| --- | --- | --- |
-| Origem dos dados | Sistema Mosaico, sobre a base de estações licenciadas | É o que está licenciado, não o que foi medido na rua |
-| Modelo de propagação | ITU-R P.1812-5 | Conta de rádio. Nenhum aparelho foi ligado no seu endereço |
-| Distância máxima de cálculo | 7 km | Estação mais distante não entra na conta, ainda que o sinal dela chegue |
-| Altura da antena | 1,7 m | Celular na mão, ao ar livre. Dentro de casa é outro cenário |
-| Tempo | 50% | Vale em metade do tempo, não no momento em que você olha |
-| Localização | 90% | Vale em 90% das posições. A sua pode estar nos 10% |
-| Limiar de sinal | Duas parametrizações: até 06/2024, 2G −95 dBm, 3G −102 dBm, 4G e 5G −110 dBm; a partir de 09/2024, 4G e 5G a −90 dBm | Número antigo e número novo não se comparam. O que valeu em julho e agosto de 2024 a nota não diz |
-| Moradores e domicílios | Distribuídos uniformemente dentro de cada setor censitário | Em setor grande, "moradores cobertos" diz pouco sobre o seu ponto |
-| Base populacional | Censo de 2010 até 2024; Censo 2022 a partir de 2025 | A série tem degrau. Comparar anos exige cuidado |
-| Classificação de localidade | A nota não traz nenhuma: a cobertura dos recortes é a agregação dos setores censitários | Não existe nota de corte. O painel devolve percentual, não um selo de "coberta" |
-
-## O que pedir por escrito, antes de pagar
-
-Painel é estimativa. Resposta por escrito é compromisso, e é de graça pedir.
-
-1. **Qual é a rede hospedeira que atende este CEP** — e, se forem duas, qual carrega o tráfego e qual entra como roaming. Pergunte pelo nome da prestadora de origem, porque as duas versões da cadeia que eu achei não fecham entre si. No credenciamento, os documentos de contratação têm de trazer com clareza o nome da credenciada e o da prestadora de origem (RGST, arts. 223, § 2º, e 237, § 2º). Em qual modelo a empresa opera eu não confirmei, então pergunte: o nome da rede você precisa ter antes de pagar.
-2. **A cobertura neste endereço, por tecnologia**, com 4G e 5G separados. O RQUAL (Resolução nº 717/2019, Anexo I, art. 28, IV) manda a prestadora publicar, na página dela, informações sobre a sua cobertura do SMP por tecnologia e dar acesso ao mapa de cobertura da página da Anatel. Nada ali obriga resposta por endereço, e nada ali obriga mapa próprio. E há um limite de alcance: o regulamento se aplica também a quem presta na modalidade de Autorizada de Rede Virtual (art. 1º, § 1º), mas as obrigações alcançam os Grupos que não se enquadram como Prestadora de Pequeno Porte (art. 1º, § 2º). Então a pergunta vale como pedido, não como direito exigível, e de quem é o dever no caso da marca que você está contratando depende desse enquadramento — que eu não confirmei.
-3. **Se o plano libera 5G**, e em quais faixas. A rede ter 5G e o plano entregar 5G são coisas diferentes.
-4. **Se há roaming**, e com qual limite de uso ou de tecnologia. Roaming é condição negociada entre prestadoras (art. 226), e o que foi negociado você não vê no mapa. Vale saber o limite: o PGMC (Resolução nº 783/2025, art. 66) veda roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você, mas que ajuda a ler a resposta que vier.
-5. **O que acontece se não houver sinal no endereço**: prazo para desistir, como devolver o chip, se há estorno e em quanto tempo.
-6. **Protocolo da resposta.** WhatsApp ou e-mail serve. Guarde. Resposta sem protocolo não sustenta reclamação depois.
-
-Se a realidade divergir da resposta, o caminho é a prestadora primeiro, com protocolo, e depois a Anatel — pelo aplicativo Anatel Consumidor ou pelo 1331.
-
-## A ordem que evita prejuízo
-
-A sequência importa mais do que a escolha.
-
-1. **Confira os painéis e o mapa da hospedeira.** É rápido e não custa nada. Para a consulta de nível de sinal e para o mapa da hospedeira você vai precisar do endereço completo, com CEP — por isso ele está no começo desta página.
-2. **Peça a resposta por escrito, com protocolo.** Se não vier, isso já é informação.
-3. **Use o chip no trajeto real** — casa, trabalho, o caminho — antes de mexer no seu número. Para ver em qual rede ele aceita registrar, [desligue a seleção automática](/blog/chip-dois-sinais).
-4. **Só então faça a portabilidade.** Ela tem volta, mas tem janela: o RGST dá 2 dias úteis para cancelar o processo, contados da solicitação (art. 103, II). Depois disso, segue até a conclusão. [Os prazos da portabilidade estão aqui](/blog/portabilidade-sem-perder-o-numero).
-
-Invertendo essa ordem, você descobre o sinal depois de já ter levado o número para lá.
-
-Plano sem prazo de permanência ajuda, porque sair não custa multa — mas não devolve o mês sem sinal. [O que a lei garante sobre fidelidade está aqui](/blog/operadora-sem-fidelidade).
-
----
-
-Nota de transparência: escrevo como distribuidor independente da MOVVA Brasil Ltda, e este site não é canal oficial da empresa. Pedi o chip em 20/10/2026 e ele não chegou: não há nesta página nenhuma medição minha em campo, nem relato de uso próprio. Característica de produto da MOVVA entra aqui como anúncio da empresa, nunca como fato verificado por mim. Páginas e endereços consultados em 21/10/2026 — os que não abriram para mim estão identificados um a um na tabela do Passo 3 e nos pontos em aberto.
-
-## O que eu não consegui confirmar
-
-- **Em qual dos dois modelos do Capítulo XII do RGST a MOVVA opera** — credenciada ou autorizada. O ato da Anatel não diz, e a diferença muda quais artigos valem: no credenciamento a área segue a da hospedeira (art. 219, § 1º) e os documentos de contratação e a lista do art. 218 têm de trazer o nome da rede; na autorização, o alcance vem do próprio ato e dos contratos de compartilhamento (art. 241, § 2º), e esses dois dispositivos não se aplicam. O registro dessa dúvida está em [A MOVVA é confiável?](/movva-e-confiavel). Onde confirmar: o painel da Anatel, a lista do art. 218 no site da hospedeira e a resposta por escrito da empresa.
-- **Se a MOVVA se enquadra como Prestadora de Pequeno Porte**, e portanto quais obrigações do RQUAL a alcançam. O regulamento se aplica a quem presta como Autorizada de Rede Virtual (art. 1º, § 1º), mas as obrigações são dos Grupos que não se enquadram como Prestadora de Pequeno Porte (art. 1º, § 2º), conceito buscado no Plano Geral de Metas de Competição. Não achei documento que feche; o mesmo item já está aberto em [melhor operadora para zona rural](/blog/cobertura-zona-rural). Onde confirmar: o PGMC, os painéis da Anatel e a resposta por escrito.
-- **A cadeia de rede, que dois documentos da própria empresa descrevem de formas diferentes.** O deck institucional diz "Rede TIM + Roaming da VIVO" — isso fecha o arranjo. Mas o dossiê de transparência da mesma empresa descreve a operação por outra cadeia: contrato com a ISPS do Brasil S.A. (TIP Brasil), credenciada para comercializar o SMP sobre infraestrutura da ARQIA (Grupo Datora), **sem mencionar TIM nem Vivo**. Os dois são documentos da MOVVA e não fecham entre si. Onde confirmar: a lista do art. 218 no site da hospedeira, os documentos de contratação (art. 223, § 2º) e a oferta por escrito, com protocolo.
-- **Por quanto tempo a Vivo pode entrar por roaming.** O art. 66 do PGMC veda o roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você. Como uma característica vendida como permanente do plano convive com esse limite, eu não achei documento que explique.
-- **Se as consultas da Anatel estavam no ar.** Em 21/10/2026 o endereço dos painéis respondeu erro 520 em todas as minhas tentativas, inclusive às 14h40 e às 14h48, e seguia em 520 no fim da tarde. Como o host informacoes.anatel.gov.br respondeu 520 por inteiro, inclusive em páginas de legislação que não têm relação com os painéis, a leitura mais provável é indisponibilidade do servidor, e não bloqueio do meu navegador. A consulta de nível de sinal está em outro host (sistemas.anatel.gov.br) e respondeu HTTP 423, por volta das 14h38 e de novo no fim da tarde: para esse caso eu não tenho explicação, e o 520 não serve de evidência. Quanto tempo durou, não sei. Onde confirmar: a página de cobertura da Anatel e o 1331.
-- **Quais campos a consulta de nível de sinal exige** — endereço completo, CEP ou coordenada — e se ela separa resultado por prestadora e por tecnologia. A própria aplicação descreve o resultado como referência para conhecer a intensidade provável "em um determinado ponto de interesse", mas na cópia da aplicação Mosaico: SMP que ficou salva da minha coleta da madrugada de 21/10/2026 havia seleção de UF e de município e arquivos de mapa por tecnologia e por prestadora para download, não um campo de endereço visível. Não operei a interface, que roda por script, e de tarde o endereço passou a recusar o acesso. Então continuo sem saber se ela desce ao ponto.
-- **Se os mapas das prestadoras aceitam endereço completo.** Não consegui chegar à busca desses mapas, então não sei se ela desce ao número da casa ou para no município e no CEP. Dois dos cinco endereços não abriram para mim em 21/10/2026 — Vivo (HTTP 403) e Algar (HTTP 500), como está na tabela do Passo 3. Onde confirmar: o próprio mapa da hospedeira e a resposta por escrito.
-- **A data de referência dos dados do painel.** A nota técnica descreve o método, não a data do último processamento. Os arquivos de mapa daquela cópia da aplicação da Anatel traziam datas de criação entre 27/06/2026 e 10/10/2026, mas são os arquivos para download, não a data do dado que alimenta os painéis. Sem abrir o painel, não dá para dizer de quando é a mancha que você vai olhar.
-- **Qual das duas notas técnicas é a corrente.** Há duas no ar no mesmo sistema da Anatel: a que eu cito, gerada em 09/09/2025 pelos metadados do arquivo, com duas parametrizações e linha de 5G; e outra, gerada em 31/03/2021, com uma parametrização, 4G a −110 dBm e sem 5G. A de 09/09/2025 é a mais recente das duas, mas as datas vêm do metadado do PDF, não do texto do documento. Qual delas descreve o dado que o painel serve hoje, eu não sei, porque não consegui abrir o painel.
-- **Se o edital publicado do 5G manteve a redação e a numeração da minuta.** Os dois critérios que cito — 95% da área urbana do distrito sede para município, uma estação rádio base no polígono do setor censitário para localidade — eu li na minuta de março de 2021 (SEI/ANATEL 6605739), e o critério varia conforme o lote de radiofrequência. Não abri o texto final. Por isso não cito número de item. Onde confirmar: o Edital nº 1/2021-SOR/SPR/CD-ANATEL publicado em 27/09/2021.
-- **Por que a página de cobertura da Anatel descreve um dever mais largo que o inciso.** A página diz que o RQUAL determina mapa de cobertura detalhado por tecnologia ofertada; o art. 28, IV do Anexo I pede informações de cobertura por tecnologia e acesso ao mapa da própria Agência. Se existe outro dispositivo por trás do resumo da página, eu não achei. Onde confirmar: o Manual Operacional do RQUAL e o restante do Anexo I.
 
 ---
 
@@ -1055,6 +1055,130 @@ jurídica.
 
 ---
 
+# O que você paga no primeiro mês, somado
+
+URL: https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — conferida em material de divulgação da rede de distribuidores, não em documento da MOVVA. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
+
+Fontes citadas:
+- MOVVA — plataforma de contratação, onde o valor vigente deve ser conferido antes de pagar. Eu não abri este endereço para escrever esta página: o preço citado aqui vem de material de divulgação da rede de distribuidores: https://movvabrasil.com
+- RGST, anexo à Resolução Anatel nº 777/2025 — arts. 69, 70, 71, 82, 92, 93, 100, 103, 104 e 115 lidos literalmente no DataLegis, o sistema federal de legislação, em 21/10/2026, com o ato marcado "Vigente". O endereço fica em subdomínio da ANVISA, que hospeda o sistema; o conteúdo é o ato oficial, com o anexo integral: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000777&seqAto=000&valorAno=2025&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486
+- Resolução Anatel nº 777/2025 no portal da Anatel — respondeu HTTP 520 em 21/10/2026; não foi possível conferir o texto ali: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- RGC, anexo à Resolução Anatel nº 765/2023 — arts. 15, 90 e 91 lidos no DataLegis em 21/10/2026 (a lista dos dispositivos do RGC aplicáveis à Prestadora de Pequeno Porte). Mesmo sistema, mesmo subdomínio da ANVISA: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000765&seqAto=000&valorAno=2023&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486
+- Resolução Anatel nº 765/2023 no portal da Anatel — é a página que exibe as duas redações do art. 90; respondeu HTTP 520 em 21/10/2026, igual ao endereço do RGST, e a comparação foi feita em cópia dela capturada mais cedo no mesmo dia: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Portabilidade, em Telefonia Fixa: migração em até 3 dias úteis, sem menção a custo; funda-se no art. 49, I do Anexo à Resolução nº 73/1998, revogada pelo art. 2º, II da Resolução nº 777/2025: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
+- DECON/MPCE — Entenda como funciona a portabilidade numérica: cobrança máxima de R$ 4,00, que a prestadora pode dispensar, e a receptora como responsável por eventual cobrança: https://mpce.mp.br/decon/duvidas/telefonia/entenda-como-funciona-portabilidade-numerica/
+- Idec — Entenda a portabilidade numérica: a regulamentação da Anatel permite a cobrança, e eventual cobrança deve ser feita pela prestadora receptora: https://idec.org.br/consultas/dicas-e-direitos/entenda-a-portabilidade-numerica
+- Código de Defesa do Consumidor, Lei nº 8.078/1990, arts. 30 e 31 — vinculação da oferta e informação de preço: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+- Apple Brasil — iPhone Air, especificações técnicas (aparelho sem compatibilidade com cartão SIM físico): https://www.apple.com/br/iphone-air/specs/
+- Apple Brasil — iPhone Duo, especificações técnicas (seção de cartão SIM e nota de rodapé 14: ativação por eSIM, sem cartão SIM físico): https://www.apple.com/br/iphone-duo/specs/
+
+## A conta do primeiro mês, somada
+
+Antes do botão de contratar, a conta somada. Quem vai pagar precisa ver o total antes de decidir, e não depois.
+
+Esta é a conta do **Liberty, 25 GB**, que é o plano que eu mais indico. Cada linha diz de onde saiu o número e com que peso: documento público, documento da própria MOVVA, material de divulgação da rede de distribuidores, ou nada. As linhas sem número estão aqui porque eu não encontrei o documento — não porque eu esqueci de preencher.
+
+São quatro linhas sem valor, e todas as quatro entram no total: o chip, a entrega, a eventual taxa de ativação e a portabilidade, que a norma da Anatel permite cobrar.
+
+| Componente | Valor | De onde vem |
+|---|---|---|
+| Mensalidade do Liberty, 25 GB | R$ 79,90/mês | material de divulgação da rede de distribuidores, conferido em 21/10/2026 — não é documento da MOVVA |
+| Portabilidade do seu número | pode ser cobrada; valor não confirmado | RGST, art. 70, lido em 21/10/2026: quem pode cobrar é a operadora de destino, e ela pode dispensar (§ 3º). A MOVVA é a operadora de destino quando você porta para ela, e eu não localizei documento da MOVVA dizendo se cobra ou dispensa |
+| Chip, o SIM card em si | não localizei valor | nenhum documento que eu tenha em arquivo traz o valor |
+| Entrega do chip no seu endereço | não localizei valor | idem — e, se houver ativação por eSIM, pode não haver entrega |
+| Taxa de ativação, adesão ou habilitação | não localizei documento — nem que institua, nem que afaste | em aberto |
+| **Total do primeiro mês** | **R$ 79,90 + chip + entrega + eventual taxa de ativação + eventual portabilidade** | soma parcial, de propósito: quatro das cinco linhas acima não têm valor |
+
+## O que eu consegui conferir, e com que peso
+
+**R$ 79,90 por mês, 25 GB — conferido, mas não em documento da empresa.** Eu confiro esse valor em material de divulgação da rede de distribuidores, em 21 de outubro de 2026. O documento oficial da MOVVA que eu tenho em arquivo, "Diferenciais planos de telefonia MOVVA", lista os seis diferenciais dos planos e não traz tabela de preços. Então este número não tem o peso de documento da empresa: confirme o valor vigente na própria página de contratação antes de pagar. Preço de telefonia muda.
+
+Uma reconciliação, porque o meu próprio site publica outro número. Em [os meus números, abertos](/oportunidade) eu declaro R$ 159,80 de custo mensal do meu plano, e a mesma cifra aparece na minha resposta sobre quanto se ganha, que também sai em [a análise da empresa](/movva-e-confiavel) e em [as perguntas frequentes](/perguntas-frequentes). É o dobro desta mensalidade. Eu não abri a minha fatura para escrever esta página, então não digo aqui o que esse valor cobre: fica em aberto. A conta desta página é a de quem contrata um Liberty de 25 GB hoje, não a minha.
+
+**A portabilidade pode ser cobrada, e quem pode cobrar é a operadora de destino.** O art. 92 do Regulamento Geral dos Serviços de Telecomunicações, anexo à Resolução Anatel nº 777/2025, veda à Prestadora Doadora — a operadora de onde você sai — instituir cobrança em função da portabilidade, e o art. 93 veda que ela cobre da operadora de destino. Isso não é o mesmo que gratuidade. Quem pode cobrar de você é a Prestadora Receptora: "A portabilidade pode ser onerosa ao Usuário Portado, por meio de valor cobrado pela Prestadora Receptora" (art. 70, caput). O § 3º do mesmo artigo deixa a receptora dispensar a cobrança e pagar a Entidade Administradora no seu lugar — é dispensa da operadora, não direito seu. E o art. 71 garante gratuidade em dois casos só, os dois dentro da mesma prestadora: mudança de oferta e troca de endereço de instalação dentro de uma Área Local, em telefonia fixa ou SCM. Trocar de operadora não está na lista. O detalhe artigo por artigo está em [o post de portabilidade](/blog/portabilidade-sem-perder-o-numero).
+
+Quando você porta o seu número para a MOVVA, é a MOVVA que ocupa o lugar de receptora. Se ela cobra ou dispensa, eu não sei: não localizei documento da MOVVA que trate disso. Em aberto.
+
+Sobre o valor, existe teto e eu não o achei na norma. O art. 70, § 1º manda a Anatel fixar valor máximo e forma de pagamento por Ato do Conselho Diretor, publicado no Diário Oficial. Eu não localizei esse Ato. O DECON do MPCE publica que "somente é permitida uma cobrança máxima de R$4,00", que a prestadora pode dispensar, e o Idec publica que eventual cobrança deve ser feita pela prestadora receptora, atribuindo o valor de R$ 4 ao Conselho Diretor. É teto publicado por fonte de defesa do consumidor, não número que eu tenha lido no Ato — e teto não é preço.
+
+**Onde eu li, e onde não consegui ler.** A página de legislação da Anatel respondeu com erro de servidor (HTTP 520) em 21/10/2026 nos dois endereços que eu uso, o do RGST e o do RGC. Os artigos acima eu li no DataLegis, o sistema federal de legislação, onde a Resolução 777/2025 aparece marcada como "Vigente", em 21/10/2026. O endereço do DataLegis fica em subdomínio da ANVISA, que hospeda o sistema: o que está lá é o ato oficial, com o anexo integral. As duas fontes estão na lista, com o estado de cada uma. Vale reconferir no portal da Anatel quando ele voltar.
+
+**E o prazo, para fechar a linha da portabilidade.** O art. 103, I fixa **até 3 dias úteis** para o processo; o art. 104, II diz que a efetivação não passa de 5 dias úteis; o art. 103, II dá 2 dias úteis para desistir. A página de consumidor da Anatel que está na lista abaixo é a de telefonia fixa: ela diz que a migração deve ocorrer em até 3 dias úteis, não menciona custo em lugar nenhum e se funda no art. 49, I do Anexo à Resolução nº 73/1998, que o art. 2º, II da própria Resolução 777/2025 revogou. Por isso o prazo aqui está pendurado no artigo, não na página.
+
+**O filtro de porte, e o que ele alcança.** Neste site, regra de consumidor só vira direito exigível depois do filtro de porte. O art. 90 do RGC, anexo à Resolução nº 765/2023, arrola um a um dispositivos **do próprio RGC** aplicáveis à Prestadora de Pequeno Porte. A Anatel mantém publicadas duas redações desse artigo, a original e a retificada; comparei as duas, elas diferem pela inclusão do art. 2º, e nenhum dos dispositivos citados aqui muda entre elas. A página que exibe as duas respondeu HTTP 520 hoje, e a comparação foi feita em cópia dela, capturada mais cedo no mesmo dia.
+
+Um exemplo do que essa lista faz. Do art. 15, que trata do Atendimento Telefônico, ela traz apenas os incisos I e II — ficam de fora o inciso III, que exige atendimento ininterrupto 24 horas por dia, 7 dias por semana, e o inciso IV, que fixa as horas de atendente humano. Para a pequena vale o art. 91: o Atendimento Telefônico dela "funcionará, no mínimo, pelo período de 8 (oito) horas, ininterruptamente, nos dias úteis". A troca sai do recorte da lista do art. 90, não do art. 91. E isso alcança atendimento, não preço de portabilidade.
+
+O preço da portabilidade está em outra resolução, o RGST. Na seção de portabilidade dele, que vai do art. 62 ao art. 115, "Prestadora de Pequeno Porte" aparece em um artigo só, o art. 82, no caput e no § 2º, e para outra coisa: quem **não** se enquadra como pequeno porte tem de implantar BDO **nas áreas geográficas onde detém poder de mercado**. Então, no assunto desta página: o que o porte muda é essa obrigação de BDO; o que o porte **não** muda é o art. 70 (a receptora pode cobrar), o art. 92 (a doadora não pode) e o art. 103 (prazos) — esses alcançam a operadora seja ela pequena ou não. Os arts. 30 e 31 do Código de Defesa do Consumidor também alcançam: são lei federal, e a lista do art. 90 é de dispositivos do RGC.
+
+O que continua em aberto é o enquadramento: eu não confirmei se a MOVVA é Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" que aparece no dossiê da própria empresa é classificação da Receita Federal, que é outra coisa — a da Anatel vai por acessos. Isso pesa no pacote de atendimento do RGC, não na linha da portabilidade.
+
+Se cobrarem portabilidade de você, há alavanca antes da reclamação: o art. 69, II, "c" do RGST obriga a prestadora a informar, nas condições da oferta, o valor a ser pago pela portabilidade e a forma de pagamento. Pergunte antes, peça por escrito e, se a cobrança aparecer sem ter sido informada, registre no 1331.
+
+Um número desta conta eu conferi: a mensalidade — e em material de distribuidor, não em documento da empresa. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
+
+## O chip e a entrega, que eu não achei
+
+Nenhum documento que eu tenha em arquivo publica o valor do chip nem o da entrega.
+
+O material de lançamento da MOVVA, de julho de 2026, fala do chip entrando na fila de produção com entrega em casa. Era a fila do lançamento, para quem já estava cadastrado, não a contratação de hoje — e ali não há valor de chip nem de entrega. Material de divulgação da rede de distribuidores descreve o envio do chip para o endereço do cliente, e material de distribuidor não é documento da empresa.
+
+Então são quatro coisas que eu não sei, e que eu prefiro escrever a estimar:
+
+- quanto custa o chip;
+- quanto custa a entrega;
+- se os dois são cobrados do cliente ou já vêm embutidos na primeira mensalidade;
+- se existe ativação por eSIM, que dispensaria a entrega. Eu não confirmei se a MOVVA oferece eSIM — [o que dá e o que não dá para afirmar sobre eSIM está neste post](/blog/esim-ou-chip-fisico). O dossiê da própria empresa cita o fornecimento de SIM Cards e eSIMs no contrato com a parceira de rede: isso mostra que o eSIM existe na operação, não que ele está na oferta ao cliente.
+
+Eu não vou chutar um valor para a tabela fechar bonito. Chute arredondado vira preço na cabeça de quem lê, e aí a conta que eu publiquei para proteger a pessoa é a mesma que a enganou.
+
+Pedi o meu chip em 20 de outubro de 2026 e ele ainda não chegou. Eu não abri o meu pedido para escrever esta página, então não publico nenhum número tirado dele. Quando eu tiver documento com os dois valores, eles entram na tabela acima com a fonte ao lado.
+
+## O que não entra nesta conta
+
+**SKY+ Light.** Existe um complemento de TV, e eu recebo comissão sobre ele: são R$ 8,66 no meu extrato, de 7 de julho a 30 de setembro de 2026 — o mesmo período sob o qual esse número está publicado em [o extrato aberto](/movva-e-confiavel). Lá ele aparece como linha de produto própria, separada da linha do plano de celular. Isso é a forma do meu extrato de comissão, não a forma da oferta ao cliente: se o pacote é vendido à parte ou embutido na mensalidade, eu não localizei documento que diga. Ele fica fora deste total porque o total aqui é o do plano Liberty, e eu não tenho documento pondo o SKY+ dentro dele — se aparecer documento que ponha, ele entra como mais uma linha. Preço e descrição do pacote eu também não localizei: estão na lista de em aberto.
+
+**Multa de cancelamento.** O documento oficial da MOVVA lista "não tem fidelidade" entre os seis diferenciais dos planos. Isso é anúncio da empresa, não contrato que eu tenha lido: eu não vi cláusula fixando multa zero. De todo modo, é custo de sair, não de entrar.
+
+**Aparelho.** O chip físico vai no celular que você já tem, e não existe compra de aparelho nesta conta. A exceção são os aparelhos só-eSIM, que não aceitam cartão SIM físico. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM e registra que o aparelho não é compatível com cartão SIM físico; a ficha do iPhone Duo diz o mesmo, na seção de cartão SIM e na nota de rodapé 14. As duas fichas estão na lista de fontes, cada uma com o seu endereço. Nesses aparelhos, a conta depende de existir eSIM na oferta, o que eu não confirmei.
+
+## As perguntas que fecham a conta
+
+Antes de qualquer pagamento, peça isto por escrito — no chat da plataforma ou no meu WhatsApp, tanto faz, desde que fique registrado:
+
+1. Qual o valor do chip e qual o valor do frete para o meu CEP?
+2. Existe taxa de ativação, de adesão ou de habilitação? Se existe, quanto é?
+3. Se eu portar o meu número, vai haver cobrança de portabilidade? De quanto?
+4. Qual é o valor total que vai ser cobrado hoje, somando tudo?
+
+A pergunta 3 não é desconfiança: é o art. 69, II, "c" do RGST, que manda a prestadora informar o valor da portabilidade e a forma de pagamento nas condições da oferta.
+
+Eu recebo comissão se você contratar pelo meu link ou pelo meu WhatsApp. É por isso que esta conta está somada e não arredondada.
+
+Guarde a resposta. O art. 31 do Código de Defesa do Consumidor obriga que a oferta traga informação correta, clara, precisa e ostensiva sobre o preço antes da contratação. E o que foi dito também vale: o art. 30 vincula o fornecedor a qualquer informação suficientemente precisa veiculada por qualquer meio, inclusive a falada, e ela integra o contrato. O que o escrito resolve é a prova — por isso peça no chat ou no WhatsApp, e guarde o protocolo.
+
+E se a resposta que você receber for diferente do que está nesta página, a resposta ganha. Me mande, que eu corrijo a tabela.
+
+## O que eu não consegui confirmar
+
+- O preço do chip. Não localizei valor em nenhum documento que eu tenha em arquivo.
+- O valor da entrega do chip, e se ela é cobrada do cliente.
+- Se existe taxa de ativação, adesão ou habilitação para cliente. Não localizei documento que institua nenhuma — e também não localizei documento que afaste a cobrança por escrito.
+- Se o chip e a entrega são cobrados à parte ou já vêm embutidos na primeira mensalidade. O material de lançamento, de julho de 2026, não fecha isso: ali "ativar cadastro" não tem preço — a ação põe o chip na fila de produção, com entrega em casa — e o pagamento de R$ 79,90 que aparece no mesmo material é da licença VIP de afiliado, outra coisa, fora desta conta.
+- Se a MOVVA cobra ou dispensa a portabilidade. A norma permite as duas: o art. 70 do RGST deixa a operadora de destino cobrar do usuário portado, e o § 3º deixa ela dispensar a cobrança e pagar a Entidade Administradora no lugar dele. Quando você porta para a MOVVA, é ela que ocupa esse lugar, e eu não localizei documento da MOVVA dizendo o que ela faz.
+- O teto da cobrança de portabilidade. O art. 70, § 1º do RGST remete o valor máximo a Ato do Conselho Diretor publicado no Diário Oficial, e eu não localizei esse Ato. Os R$ 4,00 vêm do DECON/MPCE e do Idec, que são fonte de defesa do consumidor, não o Ato — e são teto, não preço.
+- Se a MOVVA se enquadra como Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" do dossiê da empresa é classificação da Receita Federal, outra coisa. Isso pesa no pacote de atendimento do RGC, cuja lista está no art. 90, e não na linha da portabilidade, que é do RGST.
+- A origem do preço de R$ 79,90. Ele vem de material de divulgação da rede de distribuidores, não de documento da MOVVA: o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela de preços.
+- O preço do SKY+ Light, o que o pacote inclui e se ele é vendido à parte ou embutido na mensalidade. Eu só tenho a linha de comissão no meu próprio extrato, de R$ 8,66, no período de 7 de julho a 30 de setembro de 2026 — e linha de comissão não diz como o pacote é vendido ao cliente.
+- Se a MOVVA oferece ativação por eSIM, o que mudaria a linha da entrega. Não achei material da empresa que afirme nem que negue; o dossiê cita SIM Cards e eSIMs no contrato com a parceira de rede, e isso não é a oferta ao cliente.
+- Quanto eu mesmo paguei. Pedi o chip em 20 de outubro de 2026, ele não chegou, e eu não abri o pedido para escrever esta página. E eu publico um custo mensal de R$ 159,80 do meu plano, em /oportunidade e na minha resposta sobre quanto se ganha: é o dobro desta mensalidade, não abri a minha fatura, então não digo aqui o que esse valor cobre.
+- O texto oficial no portal da Anatel. Os endereços do RGST e do RGC em informacoes.anatel.gov.br responderam HTTP 520 em 21/10/2026. Os artigos citados aqui eu li no DataLegis, o sistema federal de legislação, no mesmo dia. Reconferir no portal da Anatel quando ele voltar.
+- Os documentos da MOVVA citados aqui não têm endereço público. São arquivos que eu tenho em pasta — "Diferenciais planos de telefonia MOVVA", o dossiê da empresa, o material de lançamento de julho de 2026 e as páginas de divulgação da rede de distribuidores. Por isso eles aparecem nomeados, e não linkados: nenhum deles entra na lista de fontes, que é de endereço público.
+
+---
+
 # Operadora virtual ou tradicional: o que muda de verdade
 
 URL: https://movvabrasil.net/blog/virtual-ou-tradicional
@@ -1223,130 +1347,6 @@ contrato homologado (art. 233, § 6º) e 1331.
 ---
 
 Usei a redação do art. 90 retificada no DOU de 26 de dezembro de 2023.
-
----
-
-# O que você paga no primeiro mês, somado
-
-URL: https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes
-Publicado: 2026-10-21 · Atualizado: 2026-10-21
-Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — conferida em material de divulgação da rede de distribuidores, não em documento da MOVVA. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
-
-Fontes citadas:
-- MOVVA — plataforma de contratação, onde o valor vigente deve ser conferido antes de pagar. Eu não abri este endereço para escrever esta página: o preço citado aqui vem de material de divulgação da rede de distribuidores: https://movvabrasil.com
-- RGST, anexo à Resolução Anatel nº 777/2025 — arts. 69, 70, 71, 82, 92, 93, 100, 103, 104 e 115 lidos literalmente no DataLegis, o sistema federal de legislação, em 21/10/2026, com o ato marcado "Vigente". O endereço fica em subdomínio da ANVISA, que hospeda o sistema; o conteúdo é o ato oficial, com o anexo integral: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000777&seqAto=000&valorAno=2025&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486
-- Resolução Anatel nº 777/2025 no portal da Anatel — respondeu HTTP 520 em 21/10/2026; não foi possível conferir o texto ali: https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- RGC, anexo à Resolução Anatel nº 765/2023 — arts. 15, 90 e 91 lidos no DataLegis em 21/10/2026 (a lista dos dispositivos do RGC aplicáveis à Prestadora de Pequeno Porte). Mesmo sistema, mesmo subdomínio da ANVISA: https://anvisalegis.datalegis.net/action/ActionDatalegis.php?acao=detalharAto&tipo=RES&numeroAto=00000765&seqAto=000&valorAno=2023&orgao=ANATEL%2FMCOM&nomeTitulo=codigos&cod_modulo=644&cod_menu=9486
-- Resolução Anatel nº 765/2023 no portal da Anatel — é a página que exibe as duas redações do art. 90; respondeu HTTP 520 em 21/10/2026, igual ao endereço do RGST, e a comparação foi feita em cópia dela capturada mais cedo no mesmo dia: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
-- Anatel — Portabilidade, em Telefonia Fixa: migração em até 3 dias úteis, sem menção a custo; funda-se no art. 49, I do Anexo à Resolução nº 73/1998, revogada pelo art. 2º, II da Resolução nº 777/2025: https://www.gov.br/anatel/pt-br/consumidor/conheca-seus-direitos/telefonia-fixa/portabilidade
-- DECON/MPCE — Entenda como funciona a portabilidade numérica: cobrança máxima de R$ 4,00, que a prestadora pode dispensar, e a receptora como responsável por eventual cobrança: https://mpce.mp.br/decon/duvidas/telefonia/entenda-como-funciona-portabilidade-numerica/
-- Idec — Entenda a portabilidade numérica: a regulamentação da Anatel permite a cobrança, e eventual cobrança deve ser feita pela prestadora receptora: https://idec.org.br/consultas/dicas-e-direitos/entenda-a-portabilidade-numerica
-- Código de Defesa do Consumidor, Lei nº 8.078/1990, arts. 30 e 31 — vinculação da oferta e informação de preço: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
-- Apple Brasil — iPhone Air, especificações técnicas (aparelho sem compatibilidade com cartão SIM físico): https://www.apple.com/br/iphone-air/specs/
-- Apple Brasil — iPhone Duo, especificações técnicas (seção de cartão SIM e nota de rodapé 14: ativação por eSIM, sem cartão SIM físico): https://www.apple.com/br/iphone-duo/specs/
-
-## A conta do primeiro mês, somada
-
-Antes do botão de contratar, a conta somada. Quem vai pagar precisa ver o total antes de decidir, e não depois.
-
-Esta é a conta do **Liberty, 25 GB**, que é o plano que eu mais indico. Cada linha diz de onde saiu o número e com que peso: documento público, documento da própria MOVVA, material de divulgação da rede de distribuidores, ou nada. As linhas sem número estão aqui porque eu não encontrei o documento — não porque eu esqueci de preencher.
-
-São quatro linhas sem valor, e todas as quatro entram no total: o chip, a entrega, a eventual taxa de ativação e a portabilidade, que a norma da Anatel permite cobrar.
-
-| Componente | Valor | De onde vem |
-|---|---|---|
-| Mensalidade do Liberty, 25 GB | R$ 79,90/mês | material de divulgação da rede de distribuidores, conferido em 21/10/2026 — não é documento da MOVVA |
-| Portabilidade do seu número | pode ser cobrada; valor não confirmado | RGST, art. 70, lido em 21/10/2026: quem pode cobrar é a operadora de destino, e ela pode dispensar (§ 3º). A MOVVA é a operadora de destino quando você porta para ela, e eu não localizei documento da MOVVA dizendo se cobra ou dispensa |
-| Chip, o SIM card em si | não localizei valor | nenhum documento que eu tenha em arquivo traz o valor |
-| Entrega do chip no seu endereço | não localizei valor | idem — e, se houver ativação por eSIM, pode não haver entrega |
-| Taxa de ativação, adesão ou habilitação | não localizei documento — nem que institua, nem que afaste | em aberto |
-| **Total do primeiro mês** | **R$ 79,90 + chip + entrega + eventual taxa de ativação + eventual portabilidade** | soma parcial, de propósito: quatro das cinco linhas acima não têm valor |
-
-## O que eu consegui conferir, e com que peso
-
-**R$ 79,90 por mês, 25 GB — conferido, mas não em documento da empresa.** Eu confiro esse valor em material de divulgação da rede de distribuidores, em 21 de outubro de 2026. O documento oficial da MOVVA que eu tenho em arquivo, "Diferenciais planos de telefonia MOVVA", lista os seis diferenciais dos planos e não traz tabela de preços. Então este número não tem o peso de documento da empresa: confirme o valor vigente na própria página de contratação antes de pagar. Preço de telefonia muda.
-
-Uma reconciliação, porque o meu próprio site publica outro número. Em [os meus números, abertos](/oportunidade) eu declaro R$ 159,80 de custo mensal do meu plano, e a mesma cifra aparece na minha resposta sobre quanto se ganha, que também sai em [a análise da empresa](/movva-e-confiavel) e em [as perguntas frequentes](/perguntas-frequentes). É o dobro desta mensalidade. Eu não abri a minha fatura para escrever esta página, então não digo aqui o que esse valor cobre: fica em aberto. A conta desta página é a de quem contrata um Liberty de 25 GB hoje, não a minha.
-
-**A portabilidade pode ser cobrada, e quem pode cobrar é a operadora de destino.** O art. 92 do Regulamento Geral dos Serviços de Telecomunicações, anexo à Resolução Anatel nº 777/2025, veda à Prestadora Doadora — a operadora de onde você sai — instituir cobrança em função da portabilidade, e o art. 93 veda que ela cobre da operadora de destino. Isso não é o mesmo que gratuidade. Quem pode cobrar de você é a Prestadora Receptora: "A portabilidade pode ser onerosa ao Usuário Portado, por meio de valor cobrado pela Prestadora Receptora" (art. 70, caput). O § 3º do mesmo artigo deixa a receptora dispensar a cobrança e pagar a Entidade Administradora no seu lugar — é dispensa da operadora, não direito seu. E o art. 71 garante gratuidade em dois casos só, os dois dentro da mesma prestadora: mudança de oferta e troca de endereço de instalação dentro de uma Área Local, em telefonia fixa ou SCM. Trocar de operadora não está na lista. O detalhe artigo por artigo está em [o post de portabilidade](/blog/portabilidade-sem-perder-o-numero).
-
-Quando você porta o seu número para a MOVVA, é a MOVVA que ocupa o lugar de receptora. Se ela cobra ou dispensa, eu não sei: não localizei documento da MOVVA que trate disso. Em aberto.
-
-Sobre o valor, existe teto e eu não o achei na norma. O art. 70, § 1º manda a Anatel fixar valor máximo e forma de pagamento por Ato do Conselho Diretor, publicado no Diário Oficial. Eu não localizei esse Ato. O DECON do MPCE publica que "somente é permitida uma cobrança máxima de R$4,00", que a prestadora pode dispensar, e o Idec publica que eventual cobrança deve ser feita pela prestadora receptora, atribuindo o valor de R$ 4 ao Conselho Diretor. É teto publicado por fonte de defesa do consumidor, não número que eu tenha lido no Ato — e teto não é preço.
-
-**Onde eu li, e onde não consegui ler.** A página de legislação da Anatel respondeu com erro de servidor (HTTP 520) em 21/10/2026 nos dois endereços que eu uso, o do RGST e o do RGC. Os artigos acima eu li no DataLegis, o sistema federal de legislação, onde a Resolução 777/2025 aparece marcada como "Vigente", em 21/10/2026. O endereço do DataLegis fica em subdomínio da ANVISA, que hospeda o sistema: o que está lá é o ato oficial, com o anexo integral. As duas fontes estão na lista, com o estado de cada uma. Vale reconferir no portal da Anatel quando ele voltar.
-
-**E o prazo, para fechar a linha da portabilidade.** O art. 103, I fixa **até 3 dias úteis** para o processo; o art. 104, II diz que a efetivação não passa de 5 dias úteis; o art. 103, II dá 2 dias úteis para desistir. A página de consumidor da Anatel que está na lista abaixo é a de telefonia fixa: ela diz que a migração deve ocorrer em até 3 dias úteis, não menciona custo em lugar nenhum e se funda no art. 49, I do Anexo à Resolução nº 73/1998, que o art. 2º, II da própria Resolução 777/2025 revogou. Por isso o prazo aqui está pendurado no artigo, não na página.
-
-**O filtro de porte, e o que ele alcança.** Neste site, regra de consumidor só vira direito exigível depois do filtro de porte. O art. 90 do RGC, anexo à Resolução nº 765/2023, arrola um a um dispositivos **do próprio RGC** aplicáveis à Prestadora de Pequeno Porte. A Anatel mantém publicadas duas redações desse artigo, a original e a retificada; comparei as duas, elas diferem pela inclusão do art. 2º, e nenhum dos dispositivos citados aqui muda entre elas. A página que exibe as duas respondeu HTTP 520 hoje, e a comparação foi feita em cópia dela, capturada mais cedo no mesmo dia.
-
-Um exemplo do que essa lista faz. Do art. 15, que trata do Atendimento Telefônico, ela traz apenas os incisos I e II — ficam de fora o inciso III, que exige atendimento ininterrupto 24 horas por dia, 7 dias por semana, e o inciso IV, que fixa as horas de atendente humano. Para a pequena vale o art. 91: o Atendimento Telefônico dela "funcionará, no mínimo, pelo período de 8 (oito) horas, ininterruptamente, nos dias úteis". A troca sai do recorte da lista do art. 90, não do art. 91. E isso alcança atendimento, não preço de portabilidade.
-
-O preço da portabilidade está em outra resolução, o RGST. Na seção de portabilidade dele, que vai do art. 62 ao art. 115, "Prestadora de Pequeno Porte" aparece em um artigo só, o art. 82, no caput e no § 2º, e para outra coisa: quem **não** se enquadra como pequeno porte tem de implantar BDO **nas áreas geográficas onde detém poder de mercado**. Então, no assunto desta página: o que o porte muda é essa obrigação de BDO; o que o porte **não** muda é o art. 70 (a receptora pode cobrar), o art. 92 (a doadora não pode) e o art. 103 (prazos) — esses alcançam a operadora seja ela pequena ou não. Os arts. 30 e 31 do Código de Defesa do Consumidor também alcançam: são lei federal, e a lista do art. 90 é de dispositivos do RGC.
-
-O que continua em aberto é o enquadramento: eu não confirmei se a MOVVA é Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" que aparece no dossiê da própria empresa é classificação da Receita Federal, que é outra coisa — a da Anatel vai por acessos. Isso pesa no pacote de atendimento do RGC, não na linha da portabilidade.
-
-Se cobrarem portabilidade de você, há alavanca antes da reclamação: o art. 69, II, "c" do RGST obriga a prestadora a informar, nas condições da oferta, o valor a ser pago pela portabilidade e a forma de pagamento. Pergunte antes, peça por escrito e, se a cobrança aparecer sem ter sido informada, registre no 1331.
-
-Um número desta conta eu conferi: a mensalidade — e em material de distribuidor, não em documento da empresa. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
-
-## O chip e a entrega, que eu não achei
-
-Nenhum documento que eu tenha em arquivo publica o valor do chip nem o da entrega.
-
-O material de lançamento da MOVVA, de julho de 2026, fala do chip entrando na fila de produção com entrega em casa. Era a fila do lançamento, para quem já estava cadastrado, não a contratação de hoje — e ali não há valor de chip nem de entrega. Material de divulgação da rede de distribuidores descreve o envio do chip para o endereço do cliente, e material de distribuidor não é documento da empresa.
-
-Então são quatro coisas que eu não sei, e que eu prefiro escrever a estimar:
-
-- quanto custa o chip;
-- quanto custa a entrega;
-- se os dois são cobrados do cliente ou já vêm embutidos na primeira mensalidade;
-- se existe ativação por eSIM, que dispensaria a entrega. Eu não confirmei se a MOVVA oferece eSIM — [o que dá e o que não dá para afirmar sobre eSIM está neste post](/blog/esim-ou-chip-fisico). O dossiê da própria empresa cita o fornecimento de SIM Cards e eSIMs no contrato com a parceira de rede: isso mostra que o eSIM existe na operação, não que ele está na oferta ao cliente.
-
-Eu não vou chutar um valor para a tabela fechar bonito. Chute arredondado vira preço na cabeça de quem lê, e aí a conta que eu publiquei para proteger a pessoa é a mesma que a enganou.
-
-Pedi o meu chip em 20 de outubro de 2026 e ele ainda não chegou. Eu não abri o meu pedido para escrever esta página, então não publico nenhum número tirado dele. Quando eu tiver documento com os dois valores, eles entram na tabela acima com a fonte ao lado.
-
-## O que não entra nesta conta
-
-**SKY+ Light.** Existe um complemento de TV, e eu recebo comissão sobre ele: são R$ 8,66 no meu extrato, de 7 de julho a 30 de setembro de 2026 — o mesmo período sob o qual esse número está publicado em [o extrato aberto](/movva-e-confiavel). Lá ele aparece como linha de produto própria, separada da linha do plano de celular. Isso é a forma do meu extrato de comissão, não a forma da oferta ao cliente: se o pacote é vendido à parte ou embutido na mensalidade, eu não localizei documento que diga. Ele fica fora deste total porque o total aqui é o do plano Liberty, e eu não tenho documento pondo o SKY+ dentro dele — se aparecer documento que ponha, ele entra como mais uma linha. Preço e descrição do pacote eu também não localizei: estão na lista de em aberto.
-
-**Multa de cancelamento.** O documento oficial da MOVVA lista "não tem fidelidade" entre os seis diferenciais dos planos. Isso é anúncio da empresa, não contrato que eu tenha lido: eu não vi cláusula fixando multa zero. De todo modo, é custo de sair, não de entrar.
-
-**Aparelho.** O chip físico vai no celular que você já tem, e não existe compra de aparelho nesta conta. A exceção são os aparelhos só-eSIM, que não aceitam cartão SIM físico. A ficha técnica do iPhone Air na Apple Brasil traz dual eSIM e registra que o aparelho não é compatível com cartão SIM físico; a ficha do iPhone Duo diz o mesmo, na seção de cartão SIM e na nota de rodapé 14. As duas fichas estão na lista de fontes, cada uma com o seu endereço. Nesses aparelhos, a conta depende de existir eSIM na oferta, o que eu não confirmei.
-
-## As perguntas que fecham a conta
-
-Antes de qualquer pagamento, peça isto por escrito — no chat da plataforma ou no meu WhatsApp, tanto faz, desde que fique registrado:
-
-1. Qual o valor do chip e qual o valor do frete para o meu CEP?
-2. Existe taxa de ativação, de adesão ou de habilitação? Se existe, quanto é?
-3. Se eu portar o meu número, vai haver cobrança de portabilidade? De quanto?
-4. Qual é o valor total que vai ser cobrado hoje, somando tudo?
-
-A pergunta 3 não é desconfiança: é o art. 69, II, "c" do RGST, que manda a prestadora informar o valor da portabilidade e a forma de pagamento nas condições da oferta.
-
-Eu recebo comissão se você contratar pelo meu link ou pelo meu WhatsApp. É por isso que esta conta está somada e não arredondada.
-
-Guarde a resposta. O art. 31 do Código de Defesa do Consumidor obriga que a oferta traga informação correta, clara, precisa e ostensiva sobre o preço antes da contratação. E o que foi dito também vale: o art. 30 vincula o fornecedor a qualquer informação suficientemente precisa veiculada por qualquer meio, inclusive a falada, e ela integra o contrato. O que o escrito resolve é a prova — por isso peça no chat ou no WhatsApp, e guarde o protocolo.
-
-E se a resposta que você receber for diferente do que está nesta página, a resposta ganha. Me mande, que eu corrijo a tabela.
-
-## O que eu não consegui confirmar
-
-- O preço do chip. Não localizei valor em nenhum documento que eu tenha em arquivo.
-- O valor da entrega do chip, e se ela é cobrada do cliente.
-- Se existe taxa de ativação, adesão ou habilitação para cliente. Não localizei documento que institua nenhuma — e também não localizei documento que afaste a cobrança por escrito.
-- Se o chip e a entrega são cobrados à parte ou já vêm embutidos na primeira mensalidade. O material de lançamento, de julho de 2026, não fecha isso: ali "ativar cadastro" não tem preço — a ação põe o chip na fila de produção, com entrega em casa — e o pagamento de R$ 79,90 que aparece no mesmo material é da licença VIP de afiliado, outra coisa, fora desta conta.
-- Se a MOVVA cobra ou dispensa a portabilidade. A norma permite as duas: o art. 70 do RGST deixa a operadora de destino cobrar do usuário portado, e o § 3º deixa ela dispensar a cobrança e pagar a Entidade Administradora no lugar dele. Quando você porta para a MOVVA, é ela que ocupa esse lugar, e eu não localizei documento da MOVVA dizendo o que ela faz.
-- O teto da cobrança de portabilidade. O art. 70, § 1º do RGST remete o valor máximo a Ato do Conselho Diretor publicado no Diário Oficial, e eu não localizei esse Ato. Os R$ 4,00 vêm do DECON/MPCE e do Idec, que são fonte de defesa do consumidor, não o Ato — e são teto, não preço.
-- Se a MOVVA se enquadra como Prestadora de Pequeno Porte na Anatel. O "Empresa de Pequeno Porte (EPP)" do dossiê da empresa é classificação da Receita Federal, outra coisa. Isso pesa no pacote de atendimento do RGC, cuja lista está no art. 90, e não na linha da portabilidade, que é do RGST.
-- A origem do preço de R$ 79,90. Ele vem de material de divulgação da rede de distribuidores, não de documento da MOVVA: o documento oficial que eu tenho lista os diferenciais dos planos e não traz tabela de preços.
-- O preço do SKY+ Light, o que o pacote inclui e se ele é vendido à parte ou embutido na mensalidade. Eu só tenho a linha de comissão no meu próprio extrato, de R$ 8,66, no período de 7 de julho a 30 de setembro de 2026 — e linha de comissão não diz como o pacote é vendido ao cliente.
-- Se a MOVVA oferece ativação por eSIM, o que mudaria a linha da entrega. Não achei material da empresa que afirme nem que negue; o dossiê cita SIM Cards e eSIMs no contrato com a parceira de rede, e isso não é a oferta ao cliente.
-- Quanto eu mesmo paguei. Pedi o chip em 20 de outubro de 2026, ele não chegou, e eu não abri o pedido para escrever esta página. E eu publico um custo mensal de R$ 159,80 do meu plano, em /oportunidade e na minha resposta sobre quanto se ganha: é o dobro desta mensalidade, não abri a minha fatura, então não digo aqui o que esse valor cobre.
-- O texto oficial no portal da Anatel. Os endereços do RGST e do RGC em informacoes.anatel.gov.br responderam HTTP 520 em 21/10/2026. Os artigos citados aqui eu li no DataLegis, o sistema federal de legislação, no mesmo dia. Reconferir no portal da Anatel quando ele voltar.
-- Os documentos da MOVVA citados aqui não têm endereço público. São arquivos que eu tenho em pasta — "Diferenciais planos de telefonia MOVVA", o dossiê da empresa, o material de lançamento de julho de 2026 e as páginas de divulgação da rede de distribuidores. Por isso eles aparecem nomeados, e não linkados: nenhum deles entra na lista de fontes, que é de endereço público.
 
 ---
 
