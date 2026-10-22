@@ -14,6 +14,22 @@
 // Numeros de produto vieram da apresentacao oficial da MOVVA (paginas 31 e 32).
 // Confira antes de publicar: preco muda, e quem responde pelo que esta na peca
 // e quem publica.
+//
+// SEGUNDA REGRA, aprendida tres vezes neste arquivo: a peca paga viaja SOZINHA.
+// O rodape obrigatorio de lib/criativo.js carrega #publi, "Distribuidor
+// independente MOVVA" e o aviso de canal nao oficial — e mais nada. Nao ha
+// campo de fonte nem de data. Entao toda condicao que o documento impoe tem de
+// caber DENTRO da frase, ou a frase afirma mais do que a fonte sustenta.
+//
+// Ja aconteceu tres vezes: com "nao tem custo" na portabilidade, com
+// "infinitos" no acumulo, e com "contrato de rede" na analise. As tres estao
+// comentadas abaixo, no lugar onde aconteceram.
+
+import { RECOMENDADO, CONFERIDO_EM } from './planos.js';
+
+// Data curta: no corpo fixo do apoio o formato longo ("21 de outubro de 2026")
+// nao cabe sem empurrar a frase para fora da peca.
+const dataCurta = (iso) => iso.split('-').reverse().join('/');
 
 export const CRIATIVOS = [
   {
@@ -35,8 +51,16 @@ export const CRIATIVOS = [
   {
     chave: 'liberty-preco',
     chapeu: 'Plano Liberty',
-    titulo: '25 GB por R$ 79,90 por mês',
-    apoio: 'Leve o seu número, gigas acumulativos e sem prazo de permanência. Confira a cobertura na sua região antes de contratar.',
+    // Preco e franquia vem de planos.js, a unica definicao. Escritos a mao
+    // aqui, divergiriam dela no dia em que o preco mudar — que e exatamente o
+    // erro do index.astro que fez a pagina /planos existir.
+    titulo: `${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco} por mês`,
+    // ATENCAO: toda pagina do site publica este numero ATRIBUIDO e DATADO
+    // (planos.astro linha 87, perguntas.js, quanto-custa-o-primeiro-mes.md).
+    // Esta peca o publicava como fato proprio, sem dizer de onde vem nem
+    // quando foi conferido — e e a unica coisa que a pessoa ve. O deck nao
+    // traz data de emissao, por isso a peca manda conferir o valor vigente.
+    apoio: `Preço anunciado pela MOVVA, conferido em ${dataCurta(CONFERIDO_EM)}. Confira o valor vigente e a cobertura na sua região antes de contratar.`,
     formatos: ['quadrado', 'story'],
   },
   {
@@ -52,7 +76,16 @@ export const CRIATIVOS = [
     // O que ficou e o que as duas versoes sustentam: o saldo passa para o ciclo
     // seguinte. Se o saldo morre depois de um mes ou rola indefinidamente e
     // justamente o que esta em aberto, entao a peca nao toca nisso.
-    apoio: 'Gigas acumulativos: o que você não usou no mês fica para o ciclo seguinte, em vez de virar pó.',
+    //
+    // SEGUNDA PASSADA, 22/10/2026: tirar "infinitos" nao bastou. O deck diz
+    // "PAGANDO ATE A DATA DO VENCIMENTO, seus gigas nao utilizados permanecem
+    // disponiveis no proximo mes" — o acumulo tem condicao, e ela e material:
+    // internet-que-acumula.md registra que atraso mexe no saldo e que eu nao
+    // sei quanto. A peca afirmava o acumulo sem condicao nenhuma, enquanto
+    // perguntas.js, planos.js, index.astro e movva-vivo-claro-tim.md todos a
+    // carregam. Numa peca sem rodape de fonte, a condicao tem de estar na
+    // frase.
+    apoio: 'Pagando até a data do vencimento, o que você não usou fica disponível no mês seguinte — é o que a MOVVA anuncia.',
     formatos: ['quadrado', 'story'],
   },
   {
@@ -73,7 +106,14 @@ export const CRIATIVOS = [
     chave: 'confiavel',
     chapeu: 'Análise',
     titulo: 'A MOVVA é confiável?',
-    apoio: 'CNPJ, outorga da Anatel e contrato de rede — com as fontes públicas linkadas.',
+    // ATENCAO: "contrato de rede" saiu desta frase em 22/10/2026, e a razao e a
+    // mesma das outras duas correcoes deste arquivo. A peca prometia FONTE
+    // PUBLICA para a cadeia de rede — e a pagina que ela divulga tirou a cadeia
+    // de rede da lista do verificavel justamente porque eu nao consegui abrir
+    // registro publico que a comprove (movva-e-confiavel.astro, "o que eu tirei
+    // desta lista"). EMPRESA.fontes, no site.js, tem duas fontes publicas e so
+    // duas: Receita e Anatel. A peca prometia um terceiro link que nao existe.
+    apoio: 'CNPJ e outorga da Anatel, com as fontes públicas linkadas — e a cadeia de rede, que eu não consegui confirmar em registro público.',
     formatos: ['quadrado', 'miniatura'],
   },
 ];

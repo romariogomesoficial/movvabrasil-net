@@ -169,7 +169,8 @@ const schemaExtra = [
       <h2>O que vem em todos eles</h2>
       <p>
         Entre um plano e outro muda a franquia de dados. O resto é igual nos
-        cinco, e vem do documento oficial de diferenciais da MOVVA.
+        cinco, e vem do deck institucional da MOVVA — a maior parte dos próprios
+        cards de plano, na página 31, conferidos em {fmtData(CONFERIDO_EM)}.
       </p>
       <ul class="beneficios" role="list">
         {DIFERENCIAIS.map((d) => (
@@ -179,10 +180,17 @@ const schemaExtra = [
           </li>
         ))}
       </ul>
+      {/* A contagem SAI DA LISTA, e não escrita à mão. A frase dizia "seis
+          diferenciais" e "o sexto é o programa de indicação" desde quando a
+          lista tinha cinco itens vindos do documento de diferenciais; o deck a
+          levou a sete, e a frase ficou desmentida pela própria tela logo
+          acima. Número que o leitor pode conferir contando não se escreve à
+          mão. */}
       <p class="meta-line">
-        A empresa lista seis diferenciais. O sexto é o programa de indicação, que
-        não é característica do plano de celular e por isso não está aqui: ele
-        tem <a href="/oportunidade">página própria</a>, com os meus números reais.
+        São {DIFERENCIAIS.length} itens aqui. Os cards do deck trazem mais um, o
+        cashback do programa de indicação, que não é característica do plano de
+        celular e por isso ficou de fora: ele tem
+        {' '}<a href="/oportunidade">página própria</a>, com os meus números reais.
       </p>
     </section>
 

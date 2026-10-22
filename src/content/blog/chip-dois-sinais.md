@@ -4,7 +4,7 @@ description: "Multi-IMSI, eSIM, roaming e dual SIM são quatro coisas diferentes
 resposta: "Quatro coisas diferentes são vendidas com esse nome: multi-IMSI, eSIM com vários perfis, acordo de roaming e dual SIM. Nenhuma delas põe o aparelho em duas redes ao mesmo tempo, porque ele se registra numa rede por vez. As três primeiras mantêm um número só. Dual SIM é dois chips e dois números."
 cluster: diferencial
 publicado: 2026-10-20
-atualizado: 2026-10-20
+atualizado: 2026-10-21
 fontes:
   - rotulo: "ETSI TS 123 003 V19.8.0 (3GPP TS 23.003), cláusulas 2.1 a 2.3 — estrutura do IMSI e alocação de MCC e MNC"
     url: "https://www.etsi.org/deliver/etsi_ts/123000_123099/123003/19.08.00_60/ts_123003v190800p.pdf"

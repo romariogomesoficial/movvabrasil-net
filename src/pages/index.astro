@@ -28,7 +28,14 @@ import { Image } from 'astro:assets';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
 import { EMPRESA, CHIP } from '../data/site.js';
 import { PLANOS, RECOMENDADO, EM_ABERTO } from '../data/planos.js';
-import { perguntasDe, schemaFaq } from '../data/perguntas.js';
+import { getCollection } from 'astro:content';
+import { PERGUNTAS, perguntasDe, schemaFaq } from '../data/perguntas.js';
+
+// A contagem que a home anuncia e a MESMA que a central renderiza, e por isso
+// sai da mesma conta, nao escrita a mao: a central monta
+// TODAS = PERGUNTAS + uma por post do blog. A home dizia "25 perguntas" desde
+// quando esse era o total; hoje sao outras, e o leitor que clica conta.
+const TOTAL_PERGUNTAS = PERGUNTAS.length + (await getCollection('blog')).length;
 import { linkWhatsApp } from '../data/contato.js';
 
 // As cinco objeções de quem está decidindo trocar de operadora: preço, rede,
@@ -50,7 +57,7 @@ const MAIOR = PLANOS[PLANOS.length - 1];
 
 const title = `Chip MOVVA: ${RECOMENDADO.gb} GB por R$ ${RECOMENDADO.preco} e você leva o seu número`;
 const description =
-  `Planos MOVVA de ${MENOR.gb} a ${MAIOR.gb} GB, a partir de R$ ${MENOR.preco}. TIM e Vivo no mesmo chip, gigas acumulativos, sem prazo de permanência, e você leva o seu número — com os registros públicos da empresa à mão.`;
+  `Planos MOVVA de ${MENOR.gb} a ${MAIOR.gb} GB, a partir de R$ ${MENOR.preco}. Rede TIM com roaming da Vivo no mesmo chip, gigas acumulativos, sem prazo de permanência, e você leva o seu número — com os registros públicos da empresa à mão.`;
 
 // Os links de contratação são remunerados: levam ao meu WhatsApp e eu recebo
 // comissão. rel="sponsored" é o que o Google pede para link pago, e sem ele a
@@ -487,8 +494,7 @@ const BENEFICIOS = [
       <p class="meta-line">
         Sobre o <strong>Reclame Aqui</strong>: em 21 de outubro de 2026 eu não
         localizei página da operadora lá. A que aparece na busca com o nome
-        “Movva” é de <strong>outra empresa, com outro CNPJ</strong> — e eu já
-        errei isso aqui antes de conferir.
+        “Movva” é de <strong>outra empresa, com outro CNPJ</strong>.
         {' '}<a href="/blog/movva-reclame-aqui">Como checar em quinze minutos,
         pelo CNPJ</a>.
       </p>
@@ -614,7 +620,7 @@ const BENEFICIOS = [
       </div>
 
       <p class="meta-line">
-        <a href="/perguntas-frequentes">Ver as 25 perguntas</a> — empresa, preço,
+        <a href="/perguntas-frequentes">Ver as {TOTAL_PERGUNTAS} perguntas</a> — empresa, preço,
         cobertura, portabilidade e programa de afiliados, cada uma com o link de
         onde a resposta foi conferida.
       </p>

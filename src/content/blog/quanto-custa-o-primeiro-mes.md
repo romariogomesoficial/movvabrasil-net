@@ -1,6 +1,6 @@
 ---
 title: "O que você paga no primeiro mês, somado"
-description: "Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 em material de distribuidor, três valores que eu não achei e a portabilidade."
+description: "Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 publicada pela empresa, três valores que eu não achei e a portabilidade."
 resposta: "No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas."
 cluster: marca
 publicado: 2026-10-21
@@ -73,7 +73,7 @@ O que continua em aberto é o enquadramento: eu não confirmei se a MOVVA é Pre
 
 Se cobrarem portabilidade de você, há alavanca antes da reclamação: o art. 69, II, "c" do RGST obriga a prestadora a informar, nas condições da oferta, o valor a ser pago pela portabilidade e a forma de pagamento. Pergunte antes, peça por escrito e, se a cobrança aparecer sem ter sido informada, registre no 1331.
 
-Um número desta conta eu conferi: a mensalidade — e em material de distribuidor, não em documento da empresa. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
+Um número desta conta eu conferi: a mensalidade — e em documento da empresa, a página 31 do deck institucional, conferida em 21 de outubro de 2026. A portabilidade não entra como número conferido; entra como regra lida hoje, e a regra permite cobrança. Nenhum outro valor desta conta eu consegui sustentar.
 
 ## O chip e a entrega, que eu não achei
 

@@ -1,8 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
-import { AUTOR, EMPRESA } from '../data/site.js';
+import { AUTOR, EMPRESA, CHIP } from '../data/site.js';
+import { MATRIZ_CHEIA } from '../data/carreira.js';
 
-const atualizadoEm = '2026-10-20';
+const atualizadoEm = '2026-10-22';
 const title = 'Avisos legais';
 const description =
   'Declaração de vínculo, aviso de renda e limites de responsabilidade deste site. Distribuidor independente MOVVA, sem relação oficial com a empresa.';
@@ -25,7 +26,13 @@ const description =
         Este site é mantido por {AUTOR.nome}, <strong>distribuidor independente</strong> da
         {' '}{EMPRESA.razaoSocial}. <strong>Não é um canal oficial da empresa</strong>, não
         a representa juridicamente, não presta suporte corporativo e não fala em nome
-        dela. Opiniões, análises e medições publicadas aqui são minhas.
+        dela. Opiniões e análises publicadas aqui são minhas.
+      </p>
+      <p>
+        <strong>Não há medição de rede neste site.</strong> {CHIP.frase} Nenhum
+        teste de velocidade, de cobertura ou de qualidade de sinal publicado
+        aqui foi feito por mim, porque nenhum foi feito. Quando for, virá com
+        data, aparelho e local.
       </p>
       <p>
         Recebo comissão quando alguém se cadastra como cliente ou afiliado pelos links
@@ -62,10 +69,17 @@ const description =
       </p>
       <h3>Sobre projeções</h3>
       <p>
-        Este site não publica projeção de ganho. Números como "R$ 17.868 por mês" ou
-        "R$ 253.055 por ano", que circulam em material de divulgação, derivam de uma
-        matriz teoricamente completa com 11.110 pessoas. Não são previsão de resultado
-        e não devem ser usados para decidir nada.
+        Este site não publica projeção de ganho como resultado esperado.
+        Números como "R$ 17.868 por mês" ou "R$ 253.055 por ano", que circulam
+        em material de divulgação, e também os que o próprio deck institucional
+        da MOVVA apresenta como potencial de ganhos — {MATRIZ_CHEIA.totalMes} por
+        mês e {MATRIZ_CHEIA.totalAnoLicencas} por ano — derivam de uma matriz
+        3×12 teoricamente completa, que exige
+        {' '}{MATRIZ_CHEIA.pessoasFormatado} pessoas com plano ativo abaixo de
+        uma só. Não são previsão de resultado e não devem ser usados para
+        decidir nada. Onde eles aparecem
+        {' '}<a href="/oportunidade">na página do programa de afiliados</a>, é
+        com a conta de gente ao lado.
       </p>
     </section>
 

@@ -44,15 +44,14 @@ fontes:
     url: "https://teletime.com.br/19/03/2026/reclamacoes-anatel-2025/"
 ---
 
-## Começo pela parte que me desabona
+## Antes de procurar: este site não é canal de atendimento
 
-Este site não é canal de atendimento da MOVVA: para reclamar, os caminhos
-estão abaixo.
+Para reclamar da MOVVA, os caminhos estão abaixo, e nenhum deles passa por
+aqui.
 
-Por isso aqui tem método, não pedido de confiança: cada dado vem com o endereço
-onde você confere, inclusive contra mim. Começo pelo meu erro: a página
-/movva-e-confiavel dizia que havia uma página da Movva no Reclame Aqui. É de
-outra empresa, com outro CNPJ, e a frase está sendo corrigida.
+Aqui tem método, não pedido de confiança: cada dado desta página vem com o
+endereço onde você confere sozinho, e com a data em que eu olhei. É o que
+permite a você discordar de mim sem precisar da minha permissão.
 
 ## O que aparece quando você digita MOVVA no Reclame Aqui
 

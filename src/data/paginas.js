@@ -25,7 +25,12 @@ export const PAGINAS = [
     rotulo: 'Planos',
     naNav: true,
     resumo:
-      'Os cinco planos de celular lado a lado, com franquia, preço, preço por giga e para quem cada um serve. Traz também o que o autor não conseguiu confirmar sobre os planos, incluindo a origem dos preços.',
+      // NAO ENUMERE os itens em aberto aqui: eles mudam, e este resumo vai
+      // para o llms.txt, onde a frase velha vira a descricao que um sistema de
+      // IA le do site. Foi o que aconteceu com "incluindo a origem dos precos",
+      // que ficou aqui depois de a pagina 31 do deck fechar o ponto em
+      // 21/10/2026 — e a propria /planos ja afirmava a origem como conferida.
+      'Os cinco planos de celular lado a lado, com franquia, preço, preço por giga e para quem cada um serve. O preço é atribuído ao deck institucional da empresa, com a data da conferência. Traz também os pontos que o autor não conseguiu confirmar sobre os planos.',
   },
   {
     path: '/movva-e-confiavel',

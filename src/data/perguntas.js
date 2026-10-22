@@ -78,7 +78,7 @@ export const PERGUNTAS = [
     paginas: ['/', '/planos'],
     tema: 'O plano e o preço',
     p: 'Os planos da MOVVA têm fidelidade?',
-    r: 'Não. O documento oficial de diferenciais da MOVVA lista "não tem fidelidade" entre as características dos planos, sem prazo mínimo de permanência nem multa para sair.',
+    r: 'Não. Os cinco cards de plano da página 31 do deck institucional da MOVVA listam "sem fidelidade" e "sem multa de cancelamento" entre as características de todos eles, sem prazo mínimo de permanência.',
   },
   {
     paginas: ['/planos'],

@@ -4,7 +4,7 @@ description: "O sinal é o da rede hospedeira, porque a operadora virtual não t
 resposta: "Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa."
 cluster: categoria
 publicado: 2026-10-20
-atualizado: 2026-10-20
+atualizado: 2026-10-22
 fontes:
   - rotulo: "Anatel — Resolução nº 777/2025 e o RGST (Capítulo XII, arts. 216 a 263)"
     url: "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777"
@@ -151,9 +151,17 @@ número](/blog/portabilidade-sem-perder-o-numero).
 - **5G em plano de operadora virtual.** Um índice setorial privado afirma que
   nenhuma virtual reportou conexões 5G, sem cruzar com dado da Anatel.
   Onde confirmar: os termos do plano e a oferta de atacado da hospedeira.
-- **Qual rede a MOVVA Brasil usa.** Não localizei fonte primária. A empresa não
-  apareceu nas listas que eu abri em 20/10/2026, e isso não prova o modelo dela.
-  Onde confirmar: a lista do art. 218 e a própria oferta.
+- **Qual é a cadeia de rede da MOVVA Brasil.** Aqui a dúvida mudou de lugar, e
+  vale dizer como. O deck institucional da empresa anuncia, em letra, "Rede TIM
+  + Roaming da VIVO" — rede principal da TIM, com a Vivo entrando por roaming,
+  e não duas redes contratadas. Isso é anúncio da empresa, não verificação
+  minha. O que continua aberto é o instrumento: eu não achei a lista do art.
+  218 nem documento que diga qual prestadora de origem suporta o acesso. E há
+  um problema a mais: o dossiê de transparência da mesma empresa descreve outra
+  cadeia, com contrato com a ISPS do Brasil sobre infraestrutura da ARQIA, sem
+  mencionar TIM nem Vivo. São dois documentos da MOVVA que
+  [não fecham entre si](/movva-e-confiavel). Onde confirmar: a lista do art.
+  218, e a própria oferta — por escrito, com protocolo.
 
 ## Quem escreve, e o que isso muda na sua escolha
 

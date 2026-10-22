@@ -50,8 +50,6 @@ fontes:
     url: "https://www2.sercomtel.com.br/mapa-cobertura"
   - rotulo: "Anatel — Canais de atendimento (aplicativo Anatel Consumidor e 1331)"
     url: "https://www.gov.br/anatel/pt-br/canais_atendimento"
-  - rotulo: "Página de captação da rede de distribuidores MOVVA (material comercial, não documento da empresa), consultada em 21/10/2026"
-    url: "https://meumovvabrasil.com.br/"
 ---
 
 ## O que ter em mãos antes de abrir qualquer painel

@@ -4,6 +4,11 @@ import { Image } from 'astro:assets';
 import { LINK_AFILIADO } from '../data/site.js';
 import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 import { RECOMENDADO, CONFERIDO_EM } from '../data/planos.js';
+import {
+  DEGRAUS, PIN, PIN_ORFAO, PONTOS_POR_PLANO, PONTO_NAO_ZERA, PREMIACOES,
+  MATRIZ, MATRIZ_CHEIA, MEGA_BONUS, DESEMPENHO_LIDERANCA, EM_ABERTO_CARREIRA,
+  CONFERIDO_EM as CONFERIDO_CARREIRA,
+} from '../data/carreira.js';
 
 // A data da conferência da tabela de preços vem de planos.js, como o preço:
 // esta página cita o valor do plano, e citar o número sem a data de quando ele
@@ -13,14 +18,13 @@ const fmtData = (iso) =>
     day: '2-digit', month: 'long', year: 'numeric',
   });
 
-// Os treze PINs oficiais de graduação, na ordem da escada. Os nomes vêm dos
-// próprios medalhões, que são material da empresa — por isso os nomes entram
-// como verificados.
+// Os medalhões de graduação. Os doze primeiros são a escada da página 56 do
+// deck; o décimo terceiro existe como imagem e NÃO existe na escada, e é por
+// isso que ele é importado à parte, mais abaixo.
 //
-// As EXIGÊNCIAS de cada nível não entram. Elas circulam em site de
-// distribuidor e em PDF de grupo, e não localizei o documento oficial que as
-// fixe. A única exigência publicada aqui é a do meu próximo nível, porque essa
-// eu leio no meu próprio painel.
+// A escada em si — nomes, ordem e exigências — vem de src/data/carreira.js.
+// Até 22/10/2026 ela estava escrita à mão aqui, com treze degraus e Embaixador
+// em décimo, e divergiu do documento oficial sem ninguém notar.
 import consultor from '../assets/pins/consultor.png';
 import empreendedor from '../assets/pins/empreendedor.png';
 import especialista from '../assets/pins/especialista.png';
@@ -35,31 +39,29 @@ import embaixadorSenior from '../assets/pins/embaixador-senior.png';
 import vicePresidente from '../assets/pins/vice-presidente.png';
 import presidente from '../assets/pins/presidente.png';
 
-const NIVEIS = [
-  { n: 1, nome: 'Consultor', img: consultor },
-  { n: 2, nome: 'Empreendedor', img: empreendedor },
-  { n: 3, nome: 'Especialista', img: especialista },
-  { n: 4, nome: 'Supervisor', img: supervisor },
-  { n: 5, nome: 'Gestor', img: gestor },
-  { n: 6, nome: 'Executivo', img: executivo },
-  { n: 7, nome: 'Diretor', img: diretor },
-  { n: 8, nome: 'Diretor Sênior', img: diretorSenior },
-  { n: 9, nome: 'Acionista', img: acionista },
-  { n: 10, nome: 'Embaixador', img: embaixador },
-  { n: 11, nome: 'Embaixador Sênior', img: embaixadorSenior },
-  { n: 12, nome: 'Vice-Presidente', img: vicePresidente },
-  { n: 13, nome: 'Presidente', img: presidente },
-];
+// O medalhão de cada degrau, casado pelo nome do arquivo que carreira.js fixa.
+// Assim a escada tem uma definição só: mudar a ordem lá muda a ordem aqui.
+const IMG = {
+  consultor, empreendedor, especialista, supervisor, gestor, executivo,
+  diretor, 'diretor-senior': diretorSenior, acionista,
+  'vice-presidente': vicePresidente, presidente, embaixador,
+};
+
+const NIVEIS = DEGRAUS.map((d) => ({ ...d, img: IMG[PIN[d.nome]] }));
 
 // Onde eu estou de verdade, lido no meu painel em 21/10/2026.
 const MEU_NIVEL = 1;
+
+// O degrau seguinte, para a frase "para o próximo eu preciso de". Sai da mesma
+// lista, para não voltar a ser um número escrito à mão que envelhece sozinho.
+const PROXIMO = DEGRAUS.find((d) => d.n === MEU_NIVEL + 1);
 
 // As quatro perguntas de dinheiro vivem em src/data/perguntas.js, com as das
 // outras páginas, e aparecem aqui e na análise da empresa — são as mesmas
 // perguntas nos dois lugares, e escrever duas vezes é escrever duas respostas.
 const faq = perguntasDe('/oportunidade');
 
-const atualizadoEm = '2026-10-20';
+const atualizadoEm = '2026-10-22';
 const title = 'Programa de afiliados MOVVA: como funciona e quanto eu realmente ganhei';
 const description =
   'Como funciona a remuneração de afiliados da MOVVA Brasil, quanto custa participar e os números reais de um afiliado VIP em três meses e meio. Sem projeção de matriz cheia.';
@@ -90,9 +92,14 @@ const description =
           Isso é 0,5%.
         </p>
         <p>
-          Qualquer número de ganho que você vir por aí precisa ser lido junto com essa
-          proporção. Projeções construídas sobre uma matriz completa de 11.110 pessoas
-          não são previsão de resultado: são o cenário máximo teórico.
+          Qualquer número de ganho que você vir por aí precisa ser lido junto
+          com essa proporção. O próprio deck traz, nas páginas 46 e 47, o que
+          chama de <strong>potencial de ganhos</strong>: {MATRIZ_CHEIA.totalMes}
+          {' '}por mês sobre telefonia e {MATRIZ_CHEIA.totalAnoLicencas} por ano
+          sobre licenças. Esses dois números pressupõem a matriz 3×12
+          inteiramente preenchida, e a conta de gente que isso exige está logo
+          abaixo, na seção da matriz. Não são previsão de resultado: são o
+          cenário máximo teórico.
         </p>
       </div>
     </section>
@@ -148,12 +155,120 @@ const description =
         — a rede existe, os planos ainda não estavam rodando.
       </p>
 
+      <p>
+        Os nomes que o deck usa, para você reconhecer no material que te
+        mandarem: a terceira linha da tabela é o
+        {' '}<strong>{MEGA_BONUS.nome}</strong> — {MEGA_BONUS.valor}
+        {' '}{MEGA_BONUS.sobre}. A página 48 o ilustra com
+        {' '}{MEGA_BONUS.simulacaoComo}, chegando a {MEGA_BONUS.simulacao}; o
+        rótulo “simulação” vem em corpo miúdo embaixo do número grande, e é
+        simulação mesmo. Há ainda o <strong>Bônus Desempenho de Liderança</strong>,
+        que só começa em {DESEMPENHO_LIDERANCA.apartirDe}: {DESEMPENHO_LIDERANCA.porPin}
+        {' '}na matriz a cada novo pin, até o teto de {DESEMPENHO_LIDERANCA.teto}.
+      </p>
+
       <p class="meta-line">
-        A empresa cita ainda <strong>bônus de adesão</strong> e
-        <strong>GoldPoints</strong>, que destravam graduações e premiações. Os
-        valores desses dois eu não localizei em documento, então não publico
-        número. Percentual e valor mudam: confirme sempre no material oficial e
-        vigente, não em PDF antigo circulando em grupo de WhatsApp.
+        Até 22 de outubro de 2026 esta página dizia que os valores de
+        <strong>bônus de adesão</strong> e <strong>GoldPoints</strong> não
+        estavam documentados. Os GoldPoints estão, e agora têm seção própria
+        mais abaixo. O bônus de adesão continua sem tabela que eu tenha aberto —
+        existe no meu extrato, com valor, mas eu não achei o documento que o
+        fixe por plano. Percentual e valor mudam: confirme sempre no material
+        oficial e vigente, não em PDF antigo de grupo de WhatsApp.
+      </p>
+    </section>
+
+    {/* A seção da matriz não existia. Ela entra aqui, entre "como a remuneração
+        é composta" e "quanto custa entrar", porque é a peça que explica as
+        duas outras: por que a licença paga rápido e a telefonia não. */}
+    <section class="stack">
+      <h2>A matriz, e a regra de data que quase ninguém mostra</h2>
+      <p>
+        A MOVVA usa uma <strong>matriz {MATRIZ.formato}</strong>: doze níveis de
+        profundidade, três posições de largura. Os níveis não vêm todos de
+        início — destravam de três em três, conforme você tem diretos ativos.
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Diretos ativos</th>
+              <th class="num">Níveis que destravam</th>
+              <th class="num">Soma dos níveis</th>
+            </tr>
+          </thead>
+          <tbody>
+            {MATRIZ.destravas.map((d) => (
+              <tr>
+                <td>{d.diretos} diretos</td>
+                <td class="num">{d.niveis}</td>
+                <td class="num">{d.soma}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card card--warn">
+        <h3>Leia as duas linhas pequenas do deck</h3>
+        <p>
+          Na página 45, abaixo de cada valor, há uma linha em corpo miúdo
+          dizendo <em>quando</em> aquele ganho é pago. São regras diferentes, e
+          a diferença é o ponto inteiro desta página:
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>O ganho</th><th class="num">Quanto</th><th>Quando é pago</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sobre planos de telefonia da sua matriz</td>
+                <td class="num">{MATRIZ.planos.valor}</td>
+                <td><strong>{MATRIZ.planos.quando}</strong></td>
+              </tr>
+              <tr>
+                <td>Sobre licenças VIP da sua matriz</td>
+                <td class="num">{MATRIZ.licencaVip.valor}</td>
+                <td><strong>{MATRIZ.licencaVip.quando}</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Uma entra no ato da adesão. A outra só a partir da segunda fatura — de
+          uma conta que precisa continuar sendo paga. Não é acusação minha: é o
+          documento da empresa explicando sozinho por que o meu extrato tem
+          63,5% de licença e <strong>R$ 0,00</strong> de recorrência. Eu já
+          publicava o fato; o deck me deu o mecanismo.
+        </p>
+        <p class="meta-line">
+          {MATRIZ.licencaVip.restricao} E há {MATRIZ.compressao.toLowerCase()}
+        </p>
+      </div>
+
+      <h3>O que a matriz cheia exigiria</h3>
+      <p>
+        As páginas 46 e 47 do deck somam o dinheiro de uma matriz 3×12 completa.
+        O que elas não somam é a gente. Então eu somo: são
+        {' '}<strong>{MATRIZ_CHEIA.pessoasFormatado} pessoas</strong>, sendo
+        {' '}{MATRIZ_CHEIA.ultimoNivel} só no décimo segundo nível, todas com um
+        plano ativo e pago abaixo de você.
+      </p>
+      <p>
+        Vale comparar com o tamanho do mercado. Segundo a Teleco, os chips de
+        operadoras virtuais voltadas ao consumidor final somavam
+        <strong>2,2 milhões de acessos</strong> no Brasil inteiro no segundo
+        trimestre de 2025. A matriz cheia do deck pede
+        {' '}<strong>cerca de 36% desse mercado inteiro dentro de uma única
+        rede pessoal</strong> — a sua.
+      </p>
+      <p class="meta-line">
+        {MATRIZ_CHEIA.simulacaoBase} A soma de pessoas é minha, feita sobre os
+        afiliados por nível que o próprio deck lista. Reproduzo esses números
+        para mostrar o que eles custam em gente, e não como resultado que você
+        deva esperar.
       </p>
     </section>
 
@@ -177,7 +292,10 @@ const description =
             </tr>
             <tr>
               <td>O plano de celular</td>
-              <td>a partir de R$ {RECOMENDADO.preco}/mês</td>
+              <td>
+                a partir de R$ {RECOMENDADO.preco}/mês
+                <br /><span class="meta-line">preço anunciado pela MOVVA, conferido em {fmtData(CONFERIDO_EM)}</span>
+              </td>
               <td>
                 Aqui mora uma pegadinha: a tarja <strong>“direito ao programa de
                 afiliados”</strong> só aparece nos cards do Liberty, do Max e do
@@ -229,10 +347,12 @@ const description =
     </section>
 
     <section class="stack">
-      <h2>A escada tem treze degraus</h2>
+      <h2>A escada tem doze degraus</h2>
       <p>
-        O plano de carreira da MOVVA vai de Consultor a Presidente. Estes são os
-        medalhões oficiais de cada graduação, na ordem.
+        O plano de carreira da MOVVA vai de Consultor a Embaixador. A página 56
+        do deck institucional publica os doze, com a exigência de cada um. Os
+        quatro primeiros pedem diretos ativos e destravam níveis da matriz; do
+        quinto em diante a exigência vira pontuação, sempre com doze diretos.
       </p>
 
       <ol class="escada" role="list">
@@ -246,18 +366,155 @@ const description =
         ))}
       </ol>
 
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">#</th>
+              <th>Graduação</th>
+              <th>O que exige</th>
+              <th>O que vem junto</th>
+            </tr>
+          </thead>
+          <tbody>
+            {DEGRAUS.map((d) => (
+              <tr class={d.n === MEU_NIVEL ? 'linha--meu' : undefined}>
+                <td class="num">{d.n}</td>
+                <td><strong>{d.nome}</strong></td>
+                <td>
+                  {d.exige ?? `${d.pontos} · ${d.diretos}`}
+                  {d.vip && <> · <strong>ser VIP</strong></>}
+                  {d.vme && <span class="vme"> · VME {d.vme}</span>}
+                </td>
+                <td>
+                  {d.destrava ?? d.premio}
+                  {d.lideranca && <> · liderança {d.lideranca}</>}
+                  {d.lucros && <> · divisão de lucros</>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       <p>
-        Eu estou no primeiro. Cadastrei-me em julho de 2026 e graduei Consultor em
-        agosto; de lá para cá não subi. Para o segundo degrau, o meu painel pede
-        seis diretos ativos e eu tenho quatro.
+        Eu estou no primeiro. Cadastrei-me em julho de 2026 e graduei Consultor
+        em agosto; de lá para cá não subi. Para {PROXIMO.nome}, o degrau
+        seguinte, o deck pede {PROXIMO.exige} — e eu tenho quatro.
+      </p>
+
+      <div class="card card--warn">
+        <h3>Um medalhão a mais do que a escada</h3>
+        <p>
+          Esta página publicava <strong>treze</strong> degraus até 22 de outubro
+          de 2026, com Embaixador em décimo e Presidente no topo. Vinham dos
+          medalhões oficiais, que eu tenho em arquivo — e são treze mesmo. Este
+          aqui é o que sobra:
+        </p>
+        <p class="orfao">
+          <Image src={embaixadorSenior} alt={`Medalhão de ${PIN_ORFAO.nome}`} width={88} densities={[1, 2]} />
+          <span>{PIN_ORFAO.nome}</span>
+        </p>
+        <p>
+          Ele não aparece em nenhuma das 66 páginas do deck. Não está na escada
+          da página 56, e não está na página 57, que lista os cinco pins do
+          bônus de liderança e também termina em Embaixador. Duas partes
+          diferentes do mesmo documento concordam entre si e discordam do
+          medalhão.
+        </p>
+        <p>
+          Publico os doze porque o deck é o documento mais recente que eu tenho,
+          e deixo o décimo terceiro aqui à vista em vez de apagá-lo. São dois
+          materiais da mesma empresa dizendo coisas diferentes, e quem vai
+          decidir entrar merece saber disso. Se você conseguir o documento que
+          resolve, me mande: eu corrijo e digo que corrigi.
+        </p>
+      </div>
+    </section>
+
+    <section class="stack">
+      <h2>Como se faz ponto, e o que os pontos compram</h2>
+      <p>
+        A pontuação que move a escada vem dos planos ativos na sua rede. A mesma
+        tabela aparece duas vezes no deck, nas páginas 49 e 56, com os mesmos
+        valores. Ela dobra para quem tem a licença VIP.
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Produto ativo</th><th class="num">Sem licença</th><th class="num">Com licença VIP</th></tr>
+          </thead>
+          <tbody>
+            {PONTOS_POR_PLANO.map((p) => (
+              <tr>
+                <td>{p.produto}</td>
+                <td class="num">{p.sem}</td>
+                <td class="num">{p.vip}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="meta-line">Sobre a validade: “{PONTO_NAO_ZERA}” — deck, página 49.</p>
+
+      <h3>As premiações, e o que elas custam em gente</h3>
+      <p>
+        O programa de recompensas se chama GoldPoints Fidelity e tem seis
+        prêmios. A coluna da direita <strong>não é conta minha</strong>: é o
+        número que o próprio deck imprime em cada página, dizendo a quantos
+        planos Liberty ativos por doze meses aquele prêmio equivale.
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Prêmio</th>
+              <th class="num">GoldPoints</th>
+              <th class="num">Planos Liberty ativos por 12 meses</th>
+            </tr>
+          </thead>
+          <tbody>
+            {PREMIACOES.map((p) => (
+              <tr>
+                <td>{p.premio}</td>
+                <td class="num">{p.pontos}</td>
+                <td class="num">{p.planosEquivalentes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        É a informação mais útil da seção inteira, e ela está no material oficial:
+        o cruzeiro custa <strong>333 pessoas</strong> pagando conta por um ano. A
+        Mercedes custa <strong>25.000</strong>. Quem te mostrar a foto do carro
+        sem essa coluna está te mostrando metade do slide.
       </p>
       <p class="meta-line">
-        Os nomes das graduações vêm dos medalhões oficiais da empresa. As
-        exigências de cada nível não estão aqui porque eu não localizei o
-        documento oficial que as fixe — o que circula em site de distribuidor e
-        em PDF de grupo eu não reproduzo. A única exigência publicada acima é a
-        do meu próximo nível, porque essa eu leio no meu próprio painel.
+        Todos os seis trazem “VME 20%” ao lado, e o cruzeiro ressalva no rodapé
+        que taxas portuárias e seguro viagem obrigatório não entram. As cinco
+        viagens incluem acompanhante; a Mercedes é descrita como veículo quitado.
       </p>
+    </section>
+
+    <section class="stack">
+      <h2>O que eu ainda não sei sobre o plano de carreira</h2>
+      <div class="card card--warn">
+        <p>
+          O deck resolveu muita coisa que esta página declarava em aberto, e eu
+          troquei o texto onde ele resolveu. Não resolveu tudo. O que ficou
+          continua aqui, à vista, em vez de preenchido com suposição.
+        </p>
+        <ul>
+          {EM_ABERTO_CARREIRA.map((item) => <li>{item}</li>)}
+        </ul>
+        <p class="meta-line">
+          Conferido contra as páginas do deck em {fmtData(CONFERIDO_CARREIRA)}.
+        </p>
+      </div>
     </section>
 
     <section class="stack">

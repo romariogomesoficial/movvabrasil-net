@@ -78,9 +78,10 @@ chip não chegou e nada foi testado em campo. Nenhuma projeção de ganho é pub
 Ressalva registrada no site: o ato da Anatel autoriza serviços de telecomunicações,
 mas não diz em qual dos dois modelos de rede virtual da Resolução 777/2025 a
 empresa opera. O dossiê dela cita contrato com a ${EMPRESA.parceiroSmp} sobre
-infraestrutura da ${EMPRESA.infraestrutura}, enquanto o material comercial anuncia
-TIM e Vivo. As duas versões não fecham, e o autor não localizou documento público
-que resolva.
+infraestrutura da ${EMPRESA.infraestrutura}, enquanto o deck institucional da
+mesma empresa anuncia "Rede TIM + Roaming da VIVO". São dois documentos da
+própria MOVVA, as duas versões não fecham, e o autor não localizou documento
+público que resolva.
 
 ## Páginas principais
 

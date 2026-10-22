@@ -95,9 +95,20 @@ export const PLANOS = [
 
 export const RECOMENDADO = PLANOS.find((p) => p.destaque);
 
-// O que vem em todo plano, lido nos cinco cards da pagina 31 do deck
-// institucional. Cada card lista OITO itens, identicos entre os cinco — o que
-// e util: nao ha diferenca de beneficio entre os planos, so de franquia.
+// O que vem em todo plano. ATENCAO A ORIGEM, que nao e uma so:
+//
+// Os cinco cards da pagina 31 listam OITO itens, identicos entre os cinco — o
+// que e util: nao ha diferenca de beneficio entre os planos, so de franquia.
+// Sao eles: WhatsApp ilimitado, ligacoes ilimitadas, portabilidade inclusa,
+// dados acumulativos, MOVVA Club gratis, cashback para cliente, sem fidelidade
+// e sem multa de cancelamento. Desses oito, "sem fidelidade" e "sem multa"
+// entram juntos numa entrada so, e o cashback fica de fora (ver abaixo).
+//
+// A DUPLA CONECTIVIDADE NAO ESTA NESSES CARDS. Ela vem de outro ponto do deck,
+// que descreve "Rede TIM + Roaming da VIVO", e entra nesta lista porque vale
+// igual nos cinco planos. Dizer que ela saiu dos cards seria atribuir a
+// pagina errada — e este arquivo ja errou atribuicao duas vezes, nos dois
+// sentidos, como o comentario do topo registra.
 //
 // O texto fica proximo do original e nao ganha adjetivo de vendedor: isto e
 // afirmacao da empresa sobre o proprio produto, nao verificacao minha.

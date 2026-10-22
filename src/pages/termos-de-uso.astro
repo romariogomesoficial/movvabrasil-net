@@ -1,8 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { AUTOR, SITE } from '../data/site.js';
+import { AUTOR, SITE, CHIP } from '../data/site.js';
 
-const atualizadoEm = '2026-10-20';
+const atualizadoEm = '2026-10-22';
 const title = 'Termos de uso';
 const description =
   'Condições de uso do conteúdo deste site, natureza informativa do material e limites de responsabilidade.';
@@ -22,9 +22,16 @@ const CONTATO = 'contato@movvabrasil.net';
     <section class="stack">
       <h2>Natureza do conteúdo</h2>
       <p>
-        O material deste site é informativo e opinativo. Reúne registros públicos,
-        reprodução de material divulgado pela empresa citada e medições feitas por
-        mim, {AUTOR.nome}, na condição de distribuidor independente.
+        O material deste site é informativo e opinativo. Reúne registros
+        públicos, reprodução de material divulgado pela empresa citada, a
+        leitura das normas aplicáveis e os dados do meu próprio extrato de
+        afiliado, por mim, {AUTOR.nome}, na condição de distribuidor
+        independente.
+      </p>
+      <p>
+        <strong>Não há medição de rede neste site.</strong> {CHIP.frase} Quando
+        houver, ela virá identificada como medição minha, com data, aparelho e
+        local — e não antes disso.
       </p>
       <p>
         Nada aqui é consultoria financeira, jurídica, contábil ou de investimento, nem
@@ -38,7 +45,10 @@ const CONTATO = 'contato@movvabrasil.net';
       <p>
         Este site não é canal oficial da MOVVA Brasil Ltda e não a representa. Marcas,
         nomes e materiais da empresa pertencem a ela e são citados a título
-        informativo e de divulgação por distribuidor autorizado.
+        informativo e de divulgação por <strong>distribuidor independente</strong>,
+        que é o termo que este site usa em todas as outras páginas e o que
+        descreve corretamente a relação: cadastrado no programa de afiliados,
+        sem representação nem autorização para falar pela empresa.
       </p>
     </section>
 
