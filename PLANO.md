@@ -157,16 +157,68 @@ Cada uma nasceu de um erro real cometido no mesmo dia:
 
 Os buracos reais que a análise encontrou. Não é ceticismo, é compra.
 
-- [ ] **O sinal pega no seu endereço?** Procedimento de conferência no painel
-      da Anatel, antes de pagar. É a objeção nº 1 contra operadora virtual e a
-      home hoje não a resolve.
-- [ ] **O que você paga no primeiro mês, somado.** Plano + chip + frete, em um
-      número. O site do patrocinador diz "Nada! Comece sem colocar a mão no
-      bolso" e revela R$ 497 depois — fazer o contrário é diferencial.
-- [ ] **Como contratar, e como cancelar.** Uma página com os dois. A pergunta
-      silenciosa que decide o sim é "e se eu me arrepender?".
-- [ ] **"25 GB dá para quê?"** Pergunta órfã que nenhuma das quatro
-      arquiteturas respondia. Quem vê 25 GB não sabe se é muito ou pouco.
+- [x] **O sinal pega no seu endereço?** Virou
+      [post](src/content/blog/cobertura-no-meu-endereco.md) **e** seção da home.
+      A pesquisa de objeções confirmou o diagnóstico com evidência: a dúvida
+      apareceu nos cinco levantamentos, e em "qual operadora pega melhor" nove
+      das dez sugestões do Google são geográficas.
+- [x] **O que você paga no primeiro mês, somado.**
+      [Publicado](src/content/blog/quanto-custa-o-primeiro-mes.md).
+- [x] **Como contratar, e como cancelar.**
+      [Publicado](src/content/blog/contratar-chip-movva.md), e virou seção da
+      home com os dois lados lado a lado.
+- [x] **"25 GB dá para quê?"**
+      [Publicado](src/content/blog/25-gb-da-para-que.md), com a tabela de horas
+      por franquia e a advertência de que as linhas são alternativas, não somas.
+
+**A previsão desta fase se confirmou, e o documento apareceu.** O plano dizia
+que o site de referência promete "Nada! Comece sem colocar a mão no bolso" e
+revela R$ 497 depois. As duas frases estão **no mesmo documento**: página 61 do
+deck institucional. O cadastro é mesmo gratuito, e a licença VIP custa R$ 497 à
+vista ou 12× R$ 51,13 — que somam R$ 613,56, e o deck não chama a diferença de
+juros. Está publicado na tabela de custo de entrada da `/oportunidade`.
+
+---
+
+## Fase 3.5 — O deck, e o que ele fechou
+
+Não estava no plano porque ninguém sabia que era possível. O deck institucional
+de 66 páginas estava na pasta do projeto desde o começo e **nunca tinha sido
+lido**: zero texto extraível, todas as páginas são imagem, e nenhuma busca por
+palavra encontrava nada nele. Cinco rodadas de verificação procuraram, em
+fontes públicas, exatamente o que estava dentro dele.
+
+Lido página por página como imagem, ele fechou quatro pontos em aberto:
+
+- [x] **A origem dos preços.** Página 31, a tabela inteira. Os cinco valores
+      batem com os publicados, e o Liberty é **25 GB** — um FAQ de rede dizia 24.
+- [x] **O mecanismo da dupla conectividade.** Página 22: "Rede TIM + Roaming da
+      VIVO". É roaming, não duas redes contratadas.
+- [x] **O prazo do saldo acumulado.** Página 23: "pagando até a data do
+      vencimento, permanecem disponíveis no próximo mês". Não é "infinitos".
+- [x] **O que o MOVVA Club oferece.** Página 24: mais de 30 mil estabelecimentos.
+
+E revelou duas coisas que o site não tinha: **ligações e WhatsApp ilimitados**
+nos cinco planos, e a tarja **"direito ao programa de afiliados"** apenas no
+Liberty, no Max e no Ultra — o que tornava errada a linha "a partir de R$ 58,90"
+da tabela de custo de entrada.
+
+**A lição, que vale mais que os achados:** afirmar a origem de um número sem
+abrir a fonte erra nos dois sentidos. A atribuição dos preços foi "corrigida"
+de empresa para rede, e estava errada nas duas vezes. Quando a busca por
+palavra não acha, o documento pode estar ali mesmo assim — e PDF de
+apresentação quase sempre está.
+
+### A madrugada de 22/10
+
+- [x] **Desempenho medido pela primeira vez.** A home transfere 12 KB de HTML e
+      6 KB de CSS, não carrega JavaScript nenhum e mede CLS zero. A medição
+      achou o que importava: **quatro das seis requisições eram do Google
+      Fonts**. As fontes passaram a ser servidas daqui — menos requisições,
+      sem bloqueio de pintura, e o IP do visitante deixa de ir para o Google.
+      A política de privacidade mudou junto, para melhor.
+- [x] **Acessibilidade, primeira passada completa.** Dois saltos de nível de
+      título corrigidos. E `conferir-acessibilidade.mjs` entrou no build.
 
 ---
 
