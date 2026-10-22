@@ -74,19 +74,19 @@ que resolva.
 - [Como fazer portabilidade sem perder o número: prazo, custo e o que a Anatel garante](https://movvabrasil.net/blog/portabilidade-sem-perder-o-numero): Prazo real da portabilidade de celular, quanto custa, o que acontece com a linha durante a troca e até quando dá para desistir. Com a norma da Anatel citada.
   Resposta curta: A portabilidade de celular leva até 3 dias úteis a partir do pedido, e a efetivação não pode passar de 5 dias úteis (RGST, arts. 103, I, e 104, II). Você mantém o mesmo número e pode desistir em até 2 dias úteis. A janela de transição é de 2 horas em 99% dos casos, com teto de 24 horas.
 
-### Comparações
-
-- [MOVVA, Vivo, Claro e TIM lado a lado: o que é foto do dia e o que é estrutura](https://movvabrasil.net/blog/movva-vivo-claro-tim): MOVVA ao lado de Vivo, Claro e TIM: preço por giga lido nos sites delas em 21/10/2026 e, separado disso, o que a norma da Anatel garante em cada modelo.
-  Resposta curta: No preço por giga lido em 21/10/2026, as três ofertas da TIM saem abaixo dos cinco planos da MOVVA, cujos preços a empresa publica na página 31 do deck institucional dela. O que não muda toda semana é a estrutura: fidelidade, prazo do bônus, acúmulo de franquia e quem responde pelos seus direitos. Confira antes de contratar.
-- [Operadora virtual ou tradicional: o que muda de verdade](https://movvabrasil.net/blog/virtual-ou-tradicional): A diferença entre operadora virtual e tradicional não é a marca: é quem responde por você, qual atendimento a norma exige e de quem é a rede.
-  Resposta curta: Muda quem responde por você, não a antena. Na credenciada, você é usuário da rede hospedeira, que responde pelos seus direitos, e a credenciada responde solidariamente. Na autorizada de rede virtual, ela mesma é a prestadora. A tradicional tem outorga e espectro. A cobertura é sempre da rede que carrega a linha.
-
 ### Análise da empresa
 
 - [MOVVA no Reclame Aqui: o que existe hoje e como conferir](https://movvabrasil.net/blog/movva-reclame-aqui): Em 21/10/2026 não localizei página da operadora no Reclame Aqui: a que aparece é de outra empresa, com outro CNPJ. Veja como checar em quinze minutos.
   Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
 - [O que você paga no primeiro mês, somado](https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes): Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 em material de distribuidor, três valores que eu não achei e a portabilidade.
   Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
+
+### Comparações
+
+- [MOVVA, Vivo, Claro e TIM lado a lado: o que é foto do dia e o que é estrutura](https://movvabrasil.net/blog/movva-vivo-claro-tim): MOVVA ao lado de Vivo, Claro e TIM: preço por giga lido nos sites delas em 21/10/2026 e, separado disso, o que a norma da Anatel garante em cada modelo.
+  Resposta curta: No preço por giga lido em 21/10/2026, as três ofertas da TIM saem abaixo dos cinco planos da MOVVA, cujos preços a empresa publica na página 31 do deck institucional dela. O que não muda toda semana é a estrutura: fidelidade, prazo do bônus, acúmulo de franquia e quem responde pelos seus direitos. Confira antes de contratar.
+- [Operadora virtual ou tradicional: o que muda de verdade](https://movvabrasil.net/blog/virtual-ou-tradicional): A diferença entre operadora virtual e tradicional não é a marca: é quem responde por você, qual atendimento a norma exige e de quem é a rede.
+  Resposta curta: Muda quem responde por você, não a antena. Na credenciada, você é usuário da rede hospedeira, que responde pelos seus direitos, e a credenciada responde solidariamente. Na autorizada de rede virtual, ela mesma é a prestadora. A tradicional tem outorga e espectro. A cobertura é sempre da rede que carrega a linha.
 
 ### Tecnologia e características de plano
 
