@@ -53,7 +53,7 @@ Duas das seis etapas têm prazo em norma. Três eu não sei, e estão marcadas c
 | Etapa | Prazo | Onde isso está escrito | Estado |
 | --- | --- | --- | --- |
 | Escolher o plano e falar comigo | minutos | nada normativo: é conversa | — |
-| Pagar o plano, o chip e o frete | **não sei** | a estrutura de custo está na [análise](/movva-e-confiavel), vinda de material de distribuidor; o momento do pagamento não está em norma nem em documento que eu tenha aberto | em aberto |
+| Pagar o plano, o chip e o frete | **não sei** | o preço do plano está na [página de planos](/planos), atribuído ao deck institucional da empresa e datado; o do chip e do frete eu não localizei em documento nenhum, e o momento do pagamento não está em norma nem em documento que eu tenha aberto | em aberto |
 | Receber o contrato e a Etiqueta Padrão | no momento da contratação | RGC, art. 42, I — na lista do art. 90 | verificado |
 | O chip ser enviado e chegar | **não sei** | não localizei prazo de envio ou de entrega em norma nem em documento da MOVVA | em aberto |
 | Portabilidade do número | até 3 dias úteis; a efetivação, em nenhum caso, acima de 5 dias úteis | RGST, art. 103, I, e art. 104, II | verificado |
