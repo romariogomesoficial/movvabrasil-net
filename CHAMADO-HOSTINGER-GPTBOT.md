@@ -1,187 +1,108 @@
-# Chamado para o suporte da Hostinger — GPTBot bloqueado
+# Chamado Hostinger — GPTBot recebe HTTP 429 em movvabrasil.net
 
-Abra em **hPanel → Ajuda → Falar com o suporte**.
+Documento de trabalho. **Não é página publicada.**
 
-- **Se o chamado ainda estiver aberto**, cole o acompanhamento da seção
-  "Acompanhamento de 21/10/2026", que é mais forte: ele prova que não é limite
-  de taxa.
-- Se for abrir do zero, cole o acompanhamento mesmo assim — ele se sustenta
-  sozinho. O texto original ficou guardado abaixo só como registro.
+Diagnóstico feito em 22/10/2026, às 05:30 UTC, contra os dois IPs que o
+domínio resolve (88.222.222.157 e 2.57.91.74), com `curl --resolve` para não
+depender de resolvedor local.
 
----
+## O resumo, em uma linha
 
-## Acompanhamento de 21/10/2026 — a causa isolada
+O CDN da Hostinger devolve **429 Too Many Requests** para qualquer requisição
+cujo `User-Agent` contenha `GPTBot/` seguido de número de versão — que é
+exatamente o formato oficial do robô da OpenAI. Não é limite de taxa: é
+determinístico, na primeira requisição, nos dois IPs.
 
-O primeiro chamado dizia "o GPTBot leva 429 e os outros não", o que o suporte
-pode responder com "é limite de taxa, aguarde". Agora dá para fechar essa saída.
+## O que isso custa
 
-**O que foi descoberto:** o 429 depende do FORMATO do texto do user-agent, não
-do volume. Uma requisição de cada, em sequência:
+O `robots.txt` do site libera GPTBot explicitamente. O robô consegue ler o
+`robots.txt` (ele responde 200), vê que está liberado, pede a primeira página
+e leva 429. Resultado: o site não pode ser citado pelo ChatGPT, e do lado da
+OpenAI parece um site que convida e depois recusa.
 
-| Resposta | User-agent |
-|---|---|
-| 429 | `Mozilla/5.0 (compatible; GPTBot/1.1; +https://openai.com/gptbot)` |
-| 429 | `Mozilla/5.0 (compatible; GPTBot/1.0)` |
-| 200 | `GPTBot` (a palavra sozinha) |
-| 200 | `Mozilla/5.0 (compatible; GPT-Bot/1.1)` (com hífen) |
-| 200 | `Mozilla/5.0 (compatible; ChatGPT-User/1.0)` |
-| 200 | `Mozilla/5.0 (compatible; OAI-SearchBot/1.0)` |
+## A evidência
 
-Um limite de requisições conta acessos; não lê o formato do texto. Passar a
-palavra solta e barrar a mesma palavra dentro do envelope `Mozilla/5.0
-(compatible; ...)` é casamento de padrão.
+Todos os testes abaixo foram feitos no mesmo minuto, do mesmo IP de origem,
+contra `https://movvabrasil.net/`.
 
-**De onde vem:** do CDN da Hostinger, não do servidor de origem.
+Primeiro, que o problema é só com esse robô:
 
-```
-HTTP/1.1 429 Too Many Requests
-Content-Length: 0
-Server: hcdn
-x-hcdn-request-id: 2ffa1097bd45ebc23e01c0d5b291b3d7-fra-edge6
-```
+    200   Mozilla/5.0
+    429   GPTBot/1.2 (+https://openai.com/gptbot)
+    200   ClaudeBot/1.0
+    200   PerplexityBot/1.0
+    200   Google-Extended
 
-Sem `Retry-After`, sem `etag`, sem `last-modified` — a requisição não chegou a
-ser servida pelo arquivo. A mesma página, no mesmo segundo, com outro
-user-agent, responde 200 com `etag` e `last-modified` normais.
+Segundo, que o gatilho é a versão colada ao nome, e não a URL dentro do
+cabeçalho:
 
-O `x-hcdn-request-id` é de uma requisição real e deve estar no log deles.
+    200   GPTBot
+    200   gptbot
+    429   GPTBot/1.0
+    429   GPTBot/1.2
+    200   GPTBot (+https://openai.com/gptbot)
+    429   GPTBot/1.2 (+https://openai.com/gptbot)
+    200   Teste (+https://openai.com/gptbot)
+    200   Teste openai.com
 
-**Como refazer o teste** (o IP vem do DNS público porque o resolvedor da sua
-conexão pode estar com cache velho):
+Repare nas duas últimas: um User-Agent que contém o endereço da OpenAI passa
+sem problema. O que derruba é a sequência `GPTBot/` com versão.
 
-```bash
-IP=$(curl -s -H "accept: application/dns-json" "https://1.1.1.1/dns-query?name=movvabrasil.net&type=A" | grep -o '"data":"[0-9.]*"' | head -1 | cut -d'"' -f4)
-curl -s -D - -o /dev/null --resolve movvabrasil.net:443:$IP -A "Mozilla/5.0 (compatible; GPTBot/1.1; +https://openai.com/gptbot)" https://movvabrasil.net/
-```
+Terceiro, que robô nenhum com formato equivalente é afetado:
 
-### Texto para colar no chamado
+    200   Googlebot/2.1 (+http://www.google.com/bot.html)
+    200   Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)
+    200   ClaudeBot/1.0 (+https://anthropic.com/claudebot)
+    200   PerplexityBot/1.0 (+https://perplexity.ai/bot)
 
-```
-Assunto: Acompanhamento — GPTBot recebe HTTP 429 em movvabrasil.net, e o
-filtro é por user-agent, não por limite de taxa
+Quarto, que é determinístico e não limite de taxa — três tentativas em cada
+IP, alternando os dois cabeçalhos:
 
-Olá. Estou dando sequência ao chamado sobre o GPTBot receber HTTP 429 no
-domínio movvabrasil.net (plano Business, site estático publicado via Git
-deploy).
+    88.222.222.157    GPTBot/1.2 -> 429, 429, 429    |  GPTBot -> 200, 200, 200
+    2.57.91.74        GPTBot/1.2 -> 429, 429, 429    |  GPTBot -> 200, 200, 200
 
-O problema continua, e eu consegui isolar a causa. Não é limite de requisições.
+Se fosse limite de taxa, o `GPTBot` sem versão, enviado no mesmo instante e do
+mesmo IP, também seria bloqueado. Ele não é.
 
-O QUE O TESTE MOSTRA
-Fiz uma única requisição para https://movvabrasil.net/ com cada identificação
-abaixo, em sequência, em 21/10/2026 por volta das 06:34 UTC:
+## Os cabeçalhos da resposta 429
 
-  429  Mozilla/5.0 (compatible; GPTBot/1.1; +https://openai.com/gptbot)
-  429  Mozilla/5.0 (compatible; GPTBot/1.0)
-  200  GPTBot
-  200  Mozilla/5.0 (compatible; GPT-Bot/1.1)
-  200  Mozilla/5.0 (compatible; ChatGPT-User/1.0)
-  200  Mozilla/5.0 (compatible; OAI-SearchBot/1.0)
+    HTTP/1.1 429 Too Many Requests
+    Content-Length: 0
+    platform: hostinger
+    panel: hpanel
+    Server: hcdn
+    x-hcdn-request-id: e1d516a15138a2806c782b9495afe0d1-fra-edge6
 
-Reparem nas linhas 2, 3 e 4. A palavra "GPTBot" sozinha passa. A mesma palavra
-dentro do formato "Mozilla/5.0 (compatible; GPTBot/...)" é bloqueada. E basta
-inserir um hífen, virando "GPT-Bot", para voltar a passar.
+Não vem `Retry-After`, e o corpo é vazio. O `Server: hcdn` e o `x-hcdn-request-id`
+indicam que a resposta é gerada na borda do CDN, antes da aplicação — o site é
+estático e não tem nada que gere 429.
 
-Um limite de taxa não se comporta assim: ele conta requisições, não examina o
-formato do texto do user-agent. O resultado indica uma regra que casa um padrão
-de user-agent e devolve 429.
+O identificador acima serve de referência: `e1d516a15138a2806c782b9495afe0d1-fra-edge6`,
+borda `fra-edge6`.
 
-DE ONDE VEM A RESPOSTA
-Os cabeçalhos do 429 apontam para a camada de CDN de vocês, não para o servidor
-de origem:
+## O pedido
 
-  HTTP/1.1 429 Too Many Requests
-  Content-Length: 0
-  Server: hcdn
-  x-hcdn-request-id: 2ffa1097bd45ebc23e01c0d5b291b3d7-fra-edge6
+Remover ou desativar, para o domínio movvabrasil.net, a regra de borda que
+responde 429 ao User-Agent `GPTBot/<versão>`. O controle de quem pode rastrear
+este site já está no `robots.txt`, que libera GPTBot de propósito.
 
-Não vem Retry-After, e não vêm etag nem last-modified: a requisição não chegou
-a ser servida pelo arquivo. A mesma página, pedida no mesmo segundo com outro
-user-agent, responde 200 com etag e last-modified normais.
+Se a regra for de uma camada compartilhada e não puder sair só para este
+domínio, por favor digam isso com todas as letras: nesse caso a decisão passa a
+ser minha, entre manter a hospedagem como está ou pôr o domínio atrás de um CDN
+que me deixe controlar essas regras.
 
-O x-hcdn-request-id acima é de uma requisição real e deve constar no log de
-vocês.
+## O que este teste não prova
 
-MEU robots.txt LIBERA O GPTBOT
+Os testes partiram de um IP comum, não dos intervalos de IP que a OpenAI
+publica para o GPTBot. Se houver uma segunda regra, por faixa de IP, ela não
+aparece aqui. Mas a regra por User-Agent existe, é reproduzível e sozinha já
+basta para bloquear o robô.
 
-  User-agent: GPTBot
-  Allow: /
+## Como conferir de novo depois
 
-PEDIDO
-Por favor, removam a regra de proteção contra bots que casa o user-agent GPTBot
-na camada hcdn para o domínio movvabrasil.net. É um site estático e
-informativo, de volume baixo, e o bloqueio impede que o conteúdo entre no
-índice da OpenAI.
+    curl -s -o /dev/null -w "%{http_code}\n" \
+      --resolve movvabrasil.net:443:88.222.222.157 \
+      -A "GPTBot/1.2 (+https://openai.com/gptbot)" \
+      https://movvabrasil.net/
 
-Se essa regra for global da plataforma e não puder ser desativada por domínio,
-por favor me digam isso de forma explícita. Assim eu paro de investigar do meu
-lado e trato como limitação conhecida do plano.
-
-Obrigado.
-```
-
----
-
-## Texto original do primeiro chamado (registro)
-
-```
-Assunto: Requisições do GPTBot recebendo HTTP 429 no domínio movvabrasil.net
-
-Olá. O site movvabrasil.net está hospedado no meu plano Business e é um site
-estático, apenas HTML. Ele foi publicado hoje via Git deploy.
-
-PROBLEMA
-Requisições identificadas como GPTBot (o rastreador da OpenAI) estão recebendo
-HTTP 429 (Too Many Requests), enquanto o mesmo endereço responde HTTP 200
-normalmente para todos os outros rastreadores.
-
-MEDIÇÕES
-Testei a página inicial com dez identificações diferentes, uma requisição cada,
-com 6 segundos de intervalo entre elas. Resultado:
-
-  200  Navegador (Chrome)
-  200  Googlebot
-  200  Bingbot
-  429  GPTBot            <-- único bloqueado
-  200  OAI-SearchBot
-  200  ChatGPT-User
-  200  PerplexityBot
-  200  ClaudeBot
-  200  Google-Extended
-  200  Applebot
-
-Repeti o teste do GPTBot seis vezes, em dois momentos separados por mais de
-vinte minutos, com intervalos de 8 segundos. Todas as seis retornaram 429.
-O volume é baixíssimo e não caracteriza excesso de requisições.
-
-O meu robots.txt libera explicitamente o GPTBot:
-
-  User-agent: GPTBot
-  Allow: /
-
-PEDIDO
-Por favor, verifiquem se há alguma regra de proteção contra bots, no servidor ou
-no WAF, aplicando limite ou bloqueio ao user-agent GPTBot neste domínio, e
-removam essa restrição para o movvabrasil.net.
-
-O site é informativo e depende de ser indexado por mecanismos de busca e por
-assistentes de IA. O bloqueio do GPTBot impede que o conteúdo entre no índice da
-OpenAI.
-
-Obrigado.
-```
-
----
-
-## Contexto, para você saber o tamanho do problema
-
-O GPTBot é o rastreador que alimenta o índice mais amplo da OpenAI.
-
-**O que continua funcionando mesmo com ele bloqueado:** o `OAI-SearchBot` e o
-`ChatGPT-User` passam normalmente. São eles que buscam páginas quando o ChatGPT
-precisa responder algo com fonte citada, e quando alguém pede ao ChatGPT para
-abrir um endereço. Ou seja, **o caminho da citação no ChatGPT está aberto.**
-
-**O que se perde:** cobertura no índice mais amplo da OpenAI.
-
-Não é urgente, e não trava nada. Mas é um chamado gratuito que resolve uma perda
-silenciosa, então vale abrir.
+Enquanto devolver 429, o problema continua. O esperado é 200.
