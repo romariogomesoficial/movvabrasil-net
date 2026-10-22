@@ -29,7 +29,9 @@ export const CONFERIDO_EM = '2026-10-22';
 // matriz, sem pontuacao. Do quinto em diante a exigencia passa a ser pontos
 // (PG = Pontos de Graduacao), sempre com doze diretos ativos.
 //
-// VME aparece em todos os degraus e em todas as premiacoes. O deck NAO define
+// VME aparece em OITO dos doze degraus — do Gestor ao Embaixador; os quatro de
+// Fundacao nao trazem o campo — e nas seis premiacoes, o que da os catorze
+// lugares que LUGARES_COM_VME conta. O deck NAO define
 // a sigla em nenhuma das 66 paginas. Por isso o numero entra como o documento
 // o imprime, sem traducao minha. Esta em EM_ABERTO_CARREIRA.
 
@@ -419,10 +421,21 @@ export const DESEMPENHO_LIDERANCA = {
 // A ORDEM importa: a pagina mostra os tres primeiros em destaque.
 export const EM_ABERTO_CARREIRA = [
   'Quantos degraus a escada tem, de verdade. O deck publica doze, com Embaixador no topo. Os medalhões oficiais que eu tenho em arquivo são treze, e incluem um "Embaixador Sênior" que não aparece em nenhuma das 66 páginas do deck — nem na escada da página 56, nem na página 57, que lista os cinco pins do bônus de liderança e também para em Embaixador. São dois materiais da mesma empresa dizendo coisas diferentes. Publico os doze porque o deck é o documento mais recente que eu tenho, e registro o décimo terceiro aqui em vez de escondê-lo.',
-  'O que significa VME. A sigla aparece em todos os degraus da escada e em todas as seis premiações, sempre com um percentual ao lado, e cai de 50% para 20% conforme se sobe. O deck não a define em nenhuma das 66 páginas. Reproduzo o número como ele está impresso e não traduzo a sigla.',
+  // A contagem vem de LUGARES_COM_VME, logo acima, e NAO escrita por extenso.
+  // Em 22/10/2026 esta frase dizia "todos os degraus", que da dezoito — e a
+  // /oportunidade, que renderiza esta lista, ja dizia catorze cento e treze
+  // linhas antes. A mesma pagina com dois numeros, porque a correcao pegou o
+  // texto visivel e deixou o espelho.
+  `O que significa VME. A sigla aparece em ${LUGARES_COM_VME} lugares do deck — nos oito degraus que exigem pontuação, do Gestor ao Embaixador, e nas seis premiações —, sempre com um percentual ao lado, e cai de 50% para 20% conforme se sobe. Os quatro degraus de Fundação não a trazem. O deck não a define em nenhuma das 66 páginas. Reproduzo o número como ele está impresso e não traduzo a sigla.`,
   'O valor do bônus de adesão. Ele existe: o meu extrato tem R$ 39,92 sob esse rótulo. O deck descreve a indicação direta e a matriz, mas eu não localizei nele a tabela que fixe o valor da adesão por plano.',
   'Se a pontuação de graduação (PG) e os GoldPoints são a mesma contagem. O deck usa "Pts (PG)" na escada e "GoldPoints" nas premiações, com a mesma tabela de pontos por plano nas páginas 49 e 56. Isso sugere uma contagem só, mas o documento não diz isso com todas as letras.',
   'Em quanto tempo o ponto expira se o plano deixar de ser pago. O deck garante que o ponto não zera "enquanto você pagar seu plano em dia", o que descreve a hipótese boa e deixa a ruim sem resposta.',
+  // Os dois abaixo entraram em 22/10/2026. Nasceram escritos so no post do
+  // plano de carreira, e a /oportunidade — que renderiza ESTA lista — ficou
+  // sem eles por algumas horas: dois pontos em aberto que o site reconhecia
+  // num lugar e nao no outro.
+  'O que torna um direto "ativo", e por que a palavra aparece só nos quatro primeiros degraus. O deck escreve "diretos ativos" de Consultor a Supervisor e, do Gestor em diante, só "12 diretos" — sem dizer o critério de atividade nem explicar a mudança de redação.',
+  'O que é a "divisão de lucros" que os quatro degraus de cima prometem. Lucro de quê, calculado sobre qual resultado, pago quando. O deck imprime as três palavras e não responde nenhuma dessas perguntas.',
 ];
 
 // Quantos planos ativos um premio exige, dito em gente. Usado na pagina para

@@ -161,8 +161,13 @@ mínimo três diretos ativos e seja VIP.
 ## A pergunta que decide
 
 A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
-popular a obtenção de ganho ilícito por meio de bolas de neve, cadeias e
-processos equivalentes.
+popular obter ou tentar obter ganhos ilícitos **em detrimento do povo ou de
+número indeterminado de pessoas**, mediante especulações ou processos
+fraudulentos — e nomeia, entre eles, "bola de neve", "cadeias" e
+"pichardismo".
+
+Os dois elementos em destaque não são detalhe: é o que separa o tipo penal de
+qualquer negócio que simplesmente dê prejuízo.
 
 Repare no que o dispositivo faz e no que ele não faz: ele **tipifica a
 conduta**, e não enuncia o critério para distinguir uma coisa da outra. O
@@ -186,9 +191,9 @@ explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
 
 ## O que eu não consegui confirmar
 
-- **O que significa VME.** A sigla aparece em todos os degraus do plano de
-  carreira e em todas as premiações, com um percentual ao lado, e o deck não a
-  define em nenhuma das 66 páginas.
+- **O que significa VME.** A sigla aparece em catorze lugares do deck — oito
+  degraus do plano de carreira, do Gestor ao Embaixador, e as seis premiações —,
+  com um percentual ao lado, e o deck não a define em nenhuma das 66 páginas.
 - **O valor do bônus de adesão.** Existe no meu extrato, com valor. A tabela que
   o fixe por plano eu não localizei.
 - **O que conta como "ativo"** para efeito de destravar nível. O deck usa

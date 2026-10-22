@@ -3,10 +3,22 @@
 //
 // A barra e proporcional de verdade: as larguras saem dos valores, nao de
 // estimativa visual. Total R$ 146,08.
+// A LINHA DO PLANO ESTA PARTIDA EM DUAS, e isso nao e enfeite: o colchete que
+// marca R$ 141,28 so pode cair numa borda de faixa se as parcelas que ele soma
+// forem contiguas. Antes a barra do plano vinha inteira (44,72) e o colchete
+// terminava no meio dela, afirmando uma divisao que o desenho nao mostrava.
+//
+// A ordem agora acumula 92,70 / 132,62 / 141,28 / 146,08 — e os dois numeros
+// que o site publica, 90,8% e 96,7%, caem exatamente em duas bordas.
+//
+// Os R$ 4,80 do fim sao o que sobra da linha do plano depois do bonus de
+// adesao. NAO sao recorrencia: a recorrencia sobre telefonia e R$ 0,00, e o
+// extrato nao diz o que essa sobra e.
 const VALORES = [
   { rotulo: 'Licença VIP', valor: 92.70, tipo: 'entrada' },
-  { rotulo: 'Plano Liberty', valor: 44.72, tipo: 'misto' },
+  { rotulo: 'Bônus de adesão', valor: 39.92, tipo: 'entrada' },
   { rotulo: 'SKY+', valor: 8.66, tipo: 'misto' },
+  { rotulo: 'Resto do plano', valor: 4.80, tipo: 'misto' },
 ];
 const TOTAL = VALORES.reduce((s, v) => s + v.valor, 0);
 
@@ -31,7 +43,7 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
   <svg
     viewBox="0 0 620 294"
     role="img"
-    aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de entrada e licença. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
+    aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de licença, bônus de adesão e SKY+. Contando só licença e adesão, R$ 132,62. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
   >
     <defs>
       {/* userSpaceOnUse para a rampa atravessar a barra inteira: com o padrão
@@ -97,12 +109,16 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
       );
     })}
 
-    <!-- colchete: o que nasceu de entrada -->
+    <!-- Colchete: o que nasceu de entrada. As duas extremidades caem em bordas
+         REAIS de faixa, porque as faixas foram ordenadas para isso — 132,62 na
+         segunda borda e 141,28 na terceira. Antes o colchete terminava no meio
+         da barra do plano, afirmando uma divisao que o desenho nao mostrava. -->
     <line x1={X0} y1="126" x2={X0 + (141.28 / TOTAL) * L} y2="126" class="colchete" />
     <line x1={X0} y1="120" x2={X0} y2="132" class="colchete" />
+    <line x1={X0 + (132.62 / TOTAL) * L} y1="121" x2={X0 + (132.62 / TOTAL) * L} y2="131" class="colchete" />
     <line x1={X0 + (141.28 / TOTAL) * L} y1="120" x2={X0 + (141.28 / TOTAL) * L} y2="132" class="colchete" />
     <text x={X0 + 10} y="152" class="nota">
-      R$ 141,28 — 96,7% nasceu de alguém entrando: licença, adesão e SKY+
+      R$ 132,62 — 90,8% só de licença e adesão; com o SKY+, R$ 141,28, ou 96,7%
     </text>
 
     <!-- A parte que a tese do negocio prometia. E o ponto do grafico inteiro,

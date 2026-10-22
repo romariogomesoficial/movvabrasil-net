@@ -37,10 +37,15 @@ porque a matriz derrama gente de cima para baixo — e essa gente, que você nã
 indicou, **não conta** para graduar. Está explicado em
 [como funciona a matriz](/blog/matriz-movva-como-funciona).
 
-**Ativo** é o critério que eu não sei. O deck repete "diretos ativos" na escada
-inteira e em nenhum momento diz o que torna alguém ativo: plano pago no mês,
-plano pago em dia, volume mínimo, ou outra coisa. Como a palavra aparece na
-exigência de todos os doze degraus, é a primeira pergunta a fazer por escrito.
+**Ativo** é o critério que eu não sei. O deck escreve "diretos ativos" nos
+quatro primeiros degraus e, do quinto em diante, só "12 diretos" — e em nenhum
+momento diz o que torna alguém ativo: plano pago no mês, plano pago em dia,
+volume mínimo, ou outra coisa.
+
+Se a exigência afrouxa de propósito depois do Supervisor, ou se é apenas
+economia de palavra no slide, o documento não resolve. Pergunte por escrito. É
+a diferença entre precisar de doze pessoas pagando e de doze pessoas
+cadastradas.
 
 | # | Graduação | Exige | Destrava |
 |---|---|---|---|
@@ -64,7 +69,7 @@ licença VIP como requisito.
 | 11 | Presidente | 75.000 Pts (PG) · 12 diretos · ser VIP | 20% | Bora Bora · liderança +0,4% · divisão de lucros |
 | 12 | Embaixador | 150.000 Pts (PG) · 12 diretos · ser VIP | 20% | Mercedes · liderança +0,5% · divisão de lucros |
 
-Três colunas dessa tabela precisam de explicação, e as três vêm abaixo: o que
+Três coisas dessa tabela precisam de explicação, e as três vêm abaixo: o que
 é **VME**, o que o prêmio ao lado do degrau quer dizer — porque ele **não** vem
 junto com a graduação —, e o que é **divisão de lucros**.
 
@@ -123,13 +128,13 @@ Esta é a leitura errada mais fácil de fazer na tabela lá de cima, e vale desf
 antes de seguir.
 
 Ao lado do Diretor, o deck desenha um cruzeiro. Isso **não** quer dizer que
-graduar Diretor te dá um cruzeiro. São duas contagens diferentes, e a seção
-seguinte mostra a segunda: o cruzeiro custa **4.000 GoldPoints**, e Diretor pede
-**700 Pts (PG)**. Um é quase seis vezes o outro.
+graduar Diretor te dá um cruzeiro. São duas contagens diferentes: a tabela das
+premiações, mais abaixo nesta página, cobra **4.000 GoldPoints** pelo cruzeiro,
+e Diretor pede **700 Pts (PG)**. Um é quase seis vezes o outro.
 
 O que o desenho indica é a faixa em que aquele prêmio entra no horizonte de
 quem está subindo — não um brinde que acompanha a graduação. Para ter o prêmio,
-é a conta da próxima seção que vale.
+é a conta da tabela de premiações que vale.
 
 E eu preciso dizer que **não sei se "Pts (PG)" e "GoldPoints" são a mesma
 contagem**. O deck usa um termo na escada e outro nas premiações, com a mesma
@@ -218,8 +223,9 @@ digo que corrigi.
   divergem, e está explicado acima.
 - **O que significa VME.** A sigla aparece em catorze lugares do deck — oito
   degraus e seis premiações — e não é definida em nenhum.
-- **O que torna um direto "ativo".** A palavra está na exigência dos doze
-  degraus e o deck não diz o critério.
+- **O que torna um direto "ativo"** — e por que a palavra aparece só nos quatro
+  primeiros degraus, sumindo do quinto em diante. O deck não diz o critério nem
+  explica a mudança de redação.
 - **O que é a "divisão de lucros"** que os quatro degraus de cima prometem.
   Tenho as três palavras e nada mais.
 - **Se "Pts (PG)" e "GoldPoints" são a mesma contagem.** O deck usa um termo na

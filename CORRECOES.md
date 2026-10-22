@@ -15,6 +15,37 @@ da leitura do plano de carreira no deck; o lote veio de uma revisão das 28
 páginas com 45 leitores e verificação adversarial, que levantou 73 achados, dos
 quais 38 sobreviveram à checagem.
 
+### O padrão do dia: correção pela metade
+
+Vale separar este, porque foi o defeito mais caro de 22/10/2026 e não é um erro
+de pesquisa — é um erro de **método**.
+
+Três revisões acharam 125 defeitos. Muitos não eram fatos errados: eram fatos
+certos corrigidos em alguns lugares e não em todos. O mesmo fato vivia em
+cinco, seis arquivos; a correção pegava os visíveis; e o site passava a se
+contradizer sozinho.
+
+Os três piores, todos do mesmo dia:
+
+- **A contagem de VME** foi corrigida de dezoito para catorze em duas páginas e
+  ficou velha em outras três. Uma delas era renderizada na **mesma página** que
+  já dizia catorze, cento e treze linhas acima.
+- **A cadeia do saque** foi reescrita em cinco arquivos. Sobrou um sexto lugar,
+  dentro de um dos cinco, na linha cujo assunto era justamente a taxa.
+- **"O que vem junto"** virou "O que o deck põe ao lado" no post e não na
+  página, deixando um cabeçalho que afirmava exatamente o que o parágrafo
+  abaixo dele dizia ser falso.
+
+**O que mudou por causa disso:** entrou `scripts/conferir-coerencia.mjs`, que
+checa seis fatos que vivem em vários arquivos e falha o build se dois
+divergirem. Ele ignora comentário de código de propósito — é nele que estes
+registros ficam. E a contagem de VME deixou de ser escrita à mão: sai de
+`LUGARES_COM_VME`, que conta nos dados.
+
+**A lição:** quando um fato muda, o trabalho não é corrigi-lo — é achar todas
+as cópias dele primeiro, e só então corrigir. Um `grep` antes da primeira
+edição teria economizado as três rodadas.
+
 ### A taxa de saque: o número certo com a palavra errada
 
 **Passou a dizer:** a tabela mostra a cadeia inteira — gerado R$ 146,08, sacado

@@ -37,8 +37,14 @@ O material da empresa lista quatro linhas que a licença duplica:
 |---|---|---|
 | Indicação direta, por plano indicado | R$ 5,00 | R$ 10,00 |
 | Matriz global, sobre os planos da sua matriz | 0,5% | 1% |
-| Matching — o deck o chama de Mega Bônus —, sobre o que o seu direto ganha na matriz | 50% | 100% |
+| Matching, sobre o que o seu direto ganha na matriz | 50% | 100% |
 | Pontuação do plano de carreira | normal | dobrada |
+
+Sobre a terceira linha, um aviso de leitura: a tabela acima sai do documento de
+diferenciais, que a chama de **matching**. A página 48 do deck descreve um
+**Mega Bônus** com o mesmo percentual, a mesma base e a mesma mecânica. São
+dois documentos da empresa, e eu os trato como a mesma coisa — mas essa
+identificação é minha, não está escrita em lugar nenhum.
 
 E há uma quinta linha, que não é duplicação e sim acesso exclusivo. A página 45
 do deck traz um ganho de **R$ 10,40 por cada licença VIP** na sua matriz, com a
@@ -61,10 +67,13 @@ ninguém fazer em voz alta. Vou fazer por três caminhos, com os números do
 documento.
 
 Antes, o que é "a sua matriz", porque os três caminhos dependem disso e a
-diferença muda tudo. A MOVVA usa uma matriz forçada 3×12: doze níveis abaixo de
-você, três posições de largura. Ela se enche de duas formas — com quem **você**
-cadastrou e com quem foi derramado de cima, por gente acima de você. As duas
-contam para o ganho.
+diferença muda tudo. O deck nomeia a estrutura: **matriz forçada 3×12**, doze
+níveis abaixo de você, três posições de largura.
+
+O que ele não explica é o que "forçada" significa. Pela leitura corrente do
+termo — e isto é leitura minha, não citação —, a matriz se enche de duas
+formas: com quem **você** cadastrou e com quem foi derramado de cima, por gente
+acima de você. As duas contam para o ganho.
 
 Mas só quem você cadastrou, o **direto**, destrava os níveis: três diretos
 ativos abrem três níveis, seis abrem seis, e assim até doze. Quem não indica

@@ -7,7 +7,7 @@ import { RECOMENDADO, CONFERIDO_EM } from '../data/planos.js';
 import {
   DEGRAUS, PIN, PIN_ORFAO, PONTOS_POR_PLANO, PONTO_NAO_ZERA, PREMIACOES,
   MATRIZ, MATRIZ_CHEIA, MEGA_BONUS, DESEMPENHO_LIDERANCA, EM_ABERTO_CARREIRA,
-  LICENCA_VIP, O_QUE_A_LICENCA_DOBRA,
+  LICENCA_VIP, O_QUE_A_LICENCA_DOBRA, LUGARES_COM_VME,
   CONFERIDO_EM as CONFERIDO_CARREIRA,
 } from '../data/carreira.js';
 
@@ -112,7 +112,7 @@ const description =
     <section class="stack">
       <h2>Como a remuneração é composta</h2>
       <p>
-        A empresa publica três valores, e eles dobram para quem paga a licença
+        A empresa publica {O_QUE_A_LICENCA_DOBRA.length} linhas, e elas dobram para quem paga a licença
         VIP. Estão no documento oficial “Diferenciais planos de telefonia
         MOVVA”, que é material da própria MOVVA — não é dado meu nem boato de
         grupo. Duas dessas linhas aparecem <strong>também</strong> no deck
@@ -215,6 +215,20 @@ const description =
           </tbody>
         </table>
       </div>
+
+      {/* Esta explicação existia só no post da matriz, e a coluna "soma dos
+          níveis" é a que mais engana — o leitor conclui que doze níveis pagam
+          12% de alguma coisa. A página que publica a coluna precisa publicar o
+          aviso junto. */}
+      <p class="meta-line">
+        A terceira coluna engana se lida rápido. Cada nível paga
+        {' '}<strong>{MATRIZ.porNivel}</strong> sobre os planos ativos daquele
+        nível, para quem tem licença VIP, e {MATRIZ.porNivelSemVip} para quem
+        não tem. Os 3%, 6%, 9% e 12% são a <strong>soma dos percentuais dos
+        níveis abertos</strong>, não um percentual aplicado uma vez: com doze
+        níveis você não recebe 12% de nada — recebe 1% de cada plano em cada um
+        dos doze, e quanto isso dá depende de quantos planos existem lá.
+      </p>
 
       <div class="card card--warn">
         <h3>Leia as duas linhas pequenas do deck</h3>
@@ -332,8 +346,12 @@ const description =
             </tr>
             <tr>
               <td>Taxa sobre o saque</td>
-              <td>existe</td>
-              <td>Aparece no meu próprio extrato: gerei R$ 146,08 e recebi R$ 115,43.</td>
+              <td>16%</td>
+              {/* Esta célula também colava bruto e líquido, na linha cujo
+                  assunto é justamente a taxa — a sexta ocorrência do mesmo
+                  defeito, dentro da página que o corrigiu na tabela de baixo.
+                  A base da taxa é o saque, não o gerado. */}
+              <td>Aparece no meu próprio extrato: saquei R$ 137,42 e paguei R$ 21,99 de taxa.</td>
             </tr>
           </tbody>
         </table>
@@ -387,7 +405,11 @@ const description =
               <th class="num">#</th>
               <th>Graduação</th>
               <th>O que exige</th>
-              <th>O que vem junto</th>
+              {/* NÃO volte a escrever "O que vem junto": o prêmio desenhado ao
+                  lado de um degrau não vem com ele. Diretor pede 700 Pts e o
+                  cruzeiro custa 4.000 GoldPoints — são contagens diferentes, e
+                  o título antigo afirmava o contrário em três palavras. */}
+              <th>O que o deck põe ao lado</th>
             </tr>
           </thead>
           <tbody>
@@ -417,11 +439,14 @@ const description =
         seguinte, o deck pede {PROXIMO.exige} — e eu tenho quatro.
       </p>
       <p class="meta-line">
-        Três coisas dessa tabela o deck imprime sem explicar, e eu não invento:
-        o que significa <strong>VME</strong>, que aparece em catorze lugares do
-        documento; o que é a <strong>divisão de lucros</strong> que os quatro
-        degraus de cima prometem; e se o prêmio desenhado ao lado de um degrau
-        vem com ele — não vem, são contagens diferentes. Cada uma está aberta em
+        Duas coisas dessa tabela o deck imprime sem explicar, e eu não invento:
+        o que significa <strong>VME</strong>, que aparece em
+        {' '}{LUGARES_COM_VME} lugares do documento, e o que é a
+        {' '}<strong>divisão de lucros</strong> que os quatro degraus de cima
+        prometem. Uma terceira merece aviso: o prêmio desenhado ao lado de um
+        degrau <strong>não vem com ele</strong> — Diretor pede 700 Pts e o
+        cruzeiro custa 4.000 GoldPoints. Se essas duas contagens são a mesma, o
+        deck também não diz. As três estão abertas em
         {' '}<a href="/blog/plano-de-carreira-movva">os doze degraus, um por um</a>.
       </p>
 
