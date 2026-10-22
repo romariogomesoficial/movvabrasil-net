@@ -8,7 +8,7 @@ atualizado: 2026-10-22
 fontes:
   - rotulo: "MOVVA — plataforma oficial, onde as regras vigentes devem ser conferidas. A mecânica da matriz desta página foi lida nas páginas 45 a 48 do deck institucional da empresa, que não tem endereço público que eu possa linkar"
     url: "https://movvabrasil.com"
-  - rotulo: "Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular o ganho ilícito obtido por meio de bolas de neve, cadeias e processos equivalentes. O dispositivo tipifica a conduta; ele não enuncia o teste de origem da receita que esta página usa, e a página diz isso"
+  - rotulo: "Presidência da República — Lei nº 1.521/51, art. 2º, inciso IX, que trata como crime contra a economia popular obter ou tentar obter ganhos ilícitos em detrimento do povo ou de número indeterminado de pessoas, mediante especulações ou processos fraudulentos, entre eles a bola de neve, as cadeias e o pichardismo. O dispositivo tipifica a conduta; ele não enuncia o teste de origem da receita que esta página usa, e a página diz isso"
     url: "https://www.planalto.gov.br/ccivil_03/leis/l1521.htm"
 ---
 
@@ -162,8 +162,8 @@ mínimo três diretos ativos e seja VIP.
 
 A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
 popular obter ou tentar obter ganhos ilícitos **em detrimento do povo ou de
-número indeterminado de pessoas**, mediante especulações ou processos
-fraudulentos — e nomeia, entre eles, "bola de neve", "cadeias" e
+número indeterminado de pessoas**, **mediante especulações ou processos
+fraudulentos** — e nomeia, entre eles, "bola de neve", "cadeias" e
 "pichardismo".
 
 Os dois elementos em destaque não são detalhe: é o que separa o tipo penal de
@@ -196,8 +196,10 @@ explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
   com um percentual ao lado, e o deck não a define em nenhuma das 66 páginas.
 - **O valor do bônus de adesão.** Existe no meu extrato, com valor. A tabela que
   o fixe por plano eu não localizei.
-- **O que conta como "ativo"** para efeito de destravar nível. O deck usa
-  "diretos ativos" em toda a escada sem definir o critério de atividade.
+- **O que conta como "ativo"** para efeito de destravar nível. O deck escreve
+  "diretos ativos" nos quatro primeiros degraus da escada e, do quinto em
+  diante, só "12 diretos" — e em nenhum dos dois casos define o critério de
+  atividade.
 - **Quanto tempo a compressão dinâmica leva** para devolver a posição, se é que
   devolve, quando o ascendente volta a ficar apto.
 - **A data do deck.** O documento não traz data de emissão nem número de versão,

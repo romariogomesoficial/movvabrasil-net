@@ -27,7 +27,10 @@ export const CONFERIDO_EM = '2026-10-22';
 // A pagina agrupa os degraus em tres blocos nomeados: FUNDACAO, CONSTRUCAO e
 // LIBERDADE. Os quatro primeiros exigem diretos ativos e destravam niveis da
 // matriz, sem pontuacao. Do quinto em diante a exigencia passa a ser pontos
-// (PG = Pontos de Graduacao), sempre com doze diretos ativos.
+// (PG = Pontos de Graduacao), sempre com doze diretos. ATENCAO A PALAVRA: o
+// deck escreve "diretos ATIVOS" so nos quatro primeiros degraus; do quinto em
+// diante escreve so "12 diretos". Se e afrouxamento de exigencia ou economia
+// de palavra no slide, o documento nao diz — e esta em EM_ABERTO_CARREIRA.
 //
 // VME aparece em OITO dos doze degraus — do Gestor ao Embaixador; os quatro de
 // Fundacao nao trazem o campo — e nas seis premiacoes, o que da os catorze
@@ -391,7 +394,11 @@ export const O_QUE_A_LICENCA_DOBRA = [
     linha: 'Matching, sobre o que o seu direto ganha na matriz',
     sem: '50%',
     vip: '100%',
-    tambemNoDeck: 'página 48, onde se chama Mega Bônus',
+    // A IDENTIFICACAO E MINHA, e a pagina precisa dizer isso. O documento de
+    // diferenciais chama de "matching"; a pagina 48 do deck descreve um "Mega
+    // Bonus" com o mesmo percentual, a mesma base e a mesma mecanica. Sao dois
+    // documentos da empresa, e nenhum diz que sao a mesma coisa.
+    tambemNoDeck: 'página 48, onde um bônus de mesmo percentual e mesma base se chama Mega Bônus — juntar os dois é leitura minha',
   },
   {
     linha: 'Pontuação do plano de carreira',
@@ -426,7 +433,7 @@ export const EM_ABERTO_CARREIRA = [
   // /oportunidade, que renderiza esta lista, ja dizia catorze cento e treze
   // linhas antes. A mesma pagina com dois numeros, porque a correcao pegou o
   // texto visivel e deixou o espelho.
-  `O que significa VME. A sigla aparece em ${LUGARES_COM_VME} lugares do deck — nos oito degraus que exigem pontuação, do Gestor ao Embaixador, e nas seis premiações —, sempre com um percentual ao lado, e cai de 50% para 20% conforme se sobe. Os quatro degraus de Fundação não a trazem. O deck não a define em nenhuma das 66 páginas. Reproduzo o número como ele está impresso e não traduzo a sigla.`,
+  `O que significa VME. A sigla aparece em ${LUGARES_COM_VME} lugares do deck — nos oito degraus que exigem pontuação, do Gestor ao Embaixador, e nas seis premiações —, sempre com um percentual ao lado, e cai de 50% para 20% conforme se sobe. Os quatro primeiros não a trazem. O deck não a define em nenhuma das 66 páginas. Reproduzo o número como ele está impresso e não traduzo a sigla.`,
   'O valor do bônus de adesão. Ele existe: o meu extrato tem R$ 39,92 sob esse rótulo. O deck descreve a indicação direta e a matriz, mas eu não localizei nele a tabela que fixe o valor da adesão por plano.',
   'Se a pontuação de graduação (PG) e os GoldPoints são a mesma contagem. O deck usa "Pts (PG)" na escada e "GoldPoints" nas premiações, com a mesma tabela de pontos por plano nas páginas 49 e 56. Isso sugere uma contagem só, mas o documento não diz isso com todas as letras.',
   'Em quanto tempo o ponto expira se o plano deixar de ser pago. O deck garante que o ponto não zera "enquanto você pagar seu plano em dia", o que descreve a hipótese boa e deixa a ruim sem resposta.',

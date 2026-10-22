@@ -54,9 +54,10 @@ cadastradas.
 | 3 | Especialista | 9 diretos ativos | até o 9º nível |
 | 4 | Supervisor | 12 diretos ativos | até o 12º nível |
 
-Do **quinto em diante**, a exigência vira pontuação acumulada, e os doze diretos
-ativos passam a ser piso fixo em todos eles. A partir do sétimo, entra também a
-licença VIP como requisito.
+Do **quinto em diante**, a exigência vira pontuação acumulada, e doze diretos
+passam a ser piso fixo em todos eles — doze diretos, note bem, e não "doze
+diretos ativos": a palavra sai do texto aqui, e volto a ela daqui a pouco. A
+partir do sétimo, entra também a licença VIP como requisito.
 
 | # | Graduação | Exige | VME | O que o deck põe ao lado |
 |---|---|---|---|---|

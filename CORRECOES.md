@@ -15,6 +15,75 @@ da leitura do plano de carreira no deck; o lote veio de uma revisão das 28
 páginas com 45 leitores e verificação adversarial, que levantou 73 achados, dos
 quais 38 sobreviveram à checagem.
 
+### O gráfico quebrou três vezes, e as três por não medir antes
+
+O gráfico da comissão foi reescrito para o colchete cair numa borda real de
+faixa. Isso exigiu passar de três faixas para quatro — e cada passo seguinte
+quebrou alguma coisa que eu não tinha medido:
+
+1. **Os rótulos se sobrepuseram.** O layout tratava como estreita apenas a
+   última faixa, porque com três faixas só a última era. Com quatro, passaram a
+   ser três. Medido: 65px de sobreposição, e um rótulo saindo do quadro.
+2. **O fio de chamada atravessou os glifos.** Ao generalizar, mantive a
+   coordenada do fio e mudei a da base, invertendo o sinal: o fio passou a
+   correr 8px *acima* da linha de base, dentro da tinta. Medido: 136px dentro
+   de um rótulo.
+3. **O passo entre níveis ficou curto três vezes seguidas** — 16, depois 20,
+   depois 26 —, porque eu supus que a fonte do rótulo tinha 11px. Tem 17, e 21
+   na regra móvel.
+
+**A lição:** eu estimava e conferia depois. Em geometria isso não funciona,
+porque o erro não aparece no build nem na leitura do código — aparece só na
+tela, e só se alguém olhar. O certo é medir primeiro: largura real do texto,
+tamanho real da fonte, extensão real do glifo.
+
+Ficaram, de bônus: um campo `tipo` nos dados que não era lido por ninguém e
+dizia decidir a cor das faixas (removido); três comentários contando três
+faixas num gráfico de quatro; e os percentuais da barra saindo com ponto
+decimal em vez de vírgula.
+
+### O conferidor de coerência durou duas horas, e foi removido
+
+Vale registrar inteiro, porque é o erro mais instrutivo do dia.
+
+Depois que a terceira revisão mostrou que as correções ficavam pela metade,
+escrevi `scripts/conferir-coerencia.mjs`: seis regras que falhavam o build se
+dois arquivos divergissem sobre o mesmo fato. Testei nos dois sentidos, as seis
+dispararam nos casos injetados, e o arquivo entrou no build.
+
+A quarta revisão o derrubou com duas medições:
+
+**Quatro das seis regras acusam frases verdadeiras.** As regras proibiam
+PALAVRAS, não afirmações — e a forma que o site mais usa é a negação. Testado:
+
+- "Não há **medições feitas por mim** neste site" — acusada.
+- "O **preço** não vem de material de distribuidor, e sim da página 31" —
+  acusada.
+- "A escada tinha treze degraus até 22 de outubro, e hoje tem doze" — acusada.
+- "A sigla VME não aparece em todos os degraus" — acusada.
+
+As quatro são exatamente o texto correto, e duas delas são a própria correção
+que o conferidor deveria proteger.
+
+**E ele não pega os defeitos para os quais foi escrito.** Rodei contra o commit
+anterior, que carregava os dois: passou limpo. A regra do VME usa `[^.]` entre
+os termos e o texto real tem um ponto no meio; a regra do saque olha o arquivo
+inteiro, e o arquivo continha o número certo em outra linha, enquanto o defeito
+estava numa linha específica.
+
+**A decisão:** removido. A regra do projeto está no comentário do
+`conferir-acessibilidade`, e ela não admite exceção — alarme falso faz o
+conferidor ser ignorado, e conferidor ignorado é pior que nenhum. Um que além
+de dar alarme falso também não pega o que promete é pior ainda, porque dá
+sensação de proteção.
+
+**A lição, que é diferente da que eu tinha tirado:** nem toda regra editorial
+vira regra de script. "Dois arquivos não podem divergir sobre o mesmo fato" é
+uma afirmação sobre o SENTIDO do texto, e casamento de palavra não enxerga
+sentido — enxerga letra, e a negação tem as mesmas letras da afirmação. O que
+protege contra correção pela metade continua sendo o `grep` antes da primeira
+edição, feito por quem está corrigindo.
+
 ### O padrão do dia: correção pela metade
 
 Vale separar este, porque foi o defeito mais caro de 22/10/2026 e não é um erro

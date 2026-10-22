@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build && npm run conferir",
     "preview": "astro preview",
-    "conferir": "node scripts/conferir-conteudo.mjs && node scripts/conferir-coerencia.mjs && node scripts/conferir-acentos.mjs && node scripts/conferir-links.mjs && node scripts/conferir-acessibilidade.mjs"
+    "conferir": "node scripts/conferir-conteudo.mjs && node scripts/conferir-acentos.mjs && node scripts/conferir-links.mjs && node scripts/conferir-acessibilidade.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.6.0",
@@ -16,6 +16,7 @@
     "@fontsource/newsreader": "5.3.0",
     "@fontsource/source-sans-3": "5.3.1",
     "astro": "5.14.1",
+    "js-yaml": "4.3.2",
     "pdf-parse": "^2.4.5",
     "satori": "0.63.2",
     "sharp": "0.34.5"

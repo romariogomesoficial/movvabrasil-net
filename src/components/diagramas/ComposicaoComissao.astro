@@ -14,11 +14,17 @@
 // Os R$ 4,80 do fim sao o que sobra da linha do plano depois do bonus de
 // adesao. NAO sao recorrencia: a recorrencia sobre telefonia e R$ 0,00, e o
 // extrato nao diz o que essa sobra e.
+// NAO ha campo `tipo` aqui, e isso e deliberado. Existia um, com os valores
+// 'entrada' e 'misto', e um comentario dizendo que ele decidia a cor da faixa.
+// Nao decidia: nada no arquivo lia o campo, e as quatro faixas sao pintadas
+// pela mesma rampa. Dado morto que finge comportamento e pior que dado
+// nenhum, porque o proximo a mexer confia nele. O que e entrada e o que nao e
+// esta dito pelo colchete, que e o lugar certo.
 const VALORES = [
-  { rotulo: 'Licença VIP', valor: 92.70, tipo: 'entrada' },
-  { rotulo: 'Bônus de adesão', valor: 39.92, tipo: 'entrada' },
-  { rotulo: 'SKY+', valor: 8.66, tipo: 'misto' },
-  { rotulo: 'Resto do plano', valor: 4.80, tipo: 'misto' },
+  { rotulo: 'Licença VIP', valor: 92.70 },
+  { rotulo: 'Bônus de adesão', valor: 39.92 },
+  { rotulo: 'SKY+', valor: 8.66 },
+  { rotulo: 'Resto do plano', valor: 4.80 },
 ];
 const TOTAL = VALORES.reduce((s, v) => s + v.valor, 0);
 
@@ -36,10 +42,13 @@ const CABE_DENTRO = 190;
 // Altura do primeiro nivel de rotulo externo, e quanto cada nivel seguinte
 // sobe. Tres niveis cabem entre o topo do quadro e a barra, que comeca em 56.
 const NIVEL_BASE = 42;
-// 26, e o numero sai de medicao, nao de gosto: o rotulo e desenhado em 17px no
-// sistema de coordenadas do quadro, e a extensao de glifo de uma linha mede
-// 22,7px. Passo de 16 encavalava 7px; passo de 20 ainda encavalava 2,7px.
-const PASSO_NIVEL = 26;
+// 36, e o numero sai de medicao, nao de gosto. O rotulo e desenhado em 17px no
+// quadro, e em 21px na regra movel; a extensao de glifo de uma linha mede
+// 22,7px no primeiro caso e 28 no segundo. O passo precisa comportar a caixa
+// de glifo MAIS o fio de chamada, que agora corre 8px abaixo da base.
+// Historico, porque errei tres vezes antes de medir: 16 encavalava 7px, 20
+// encavalava 2,7px, e 26 punha o fio de um nivel dentro da caixa do de baixo.
+const PASSO_NIVEL = 36;
 
 let acumulado = 0;
 let estreitas = 0;
@@ -66,17 +75,19 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
 
 <figure class="figura" data-grafico-comissao>
   <svg
-    {/* O quadro comeca em -44, e nao em 0, para abrir espaco ACIMA da barra
-        sem mexer em nenhuma coordenada do desenho. Com quatro faixas sao tres
-        rotulos externos empilhados, a 26px de distancia um do outro, e o de
-        cima tem o topo de glifo em -28. */}
-    viewBox="0 -44 620 338"
+    {/* O quadro comeca em -80, e nao em 0, para abrir espaco ACIMA da barra sem
+        mexer em nenhuma coordenada do desenho. Com quatro faixas sao tres
+        rotulos externos empilhados a 36px um do outro, entao o de cima fica na
+        base -30 e a tinta dele sobe ate cerca de -58 na regra movel, onde a
+        fonte vai a 21px. O SVG corta o que passa da borda, entao a folga aqui
+        nao e enfeite. */}
+    viewBox="0 -80 620 374"
     role="img"
     aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de licença, bônus de adesão e SKY+. Contando só licença e adesão, R$ 132,62. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
   >
     <defs>
       {/* userSpaceOnUse para a rampa atravessar a barra inteira: com o padrão
-          cada faixa receberia o degradê completo e as três ficariam iguais. */}
+          cada faixa receberia o degradê completo e as quatro ficariam iguais. */}
       <linearGradient id="rampaComissao" gradientUnits="userSpaceOnUse" x1={X0} y1="0" x2={X0 + L} y2="0">
         <stop offset="0" stop-color="var(--b1)" />
         <stop offset="0.55" stop-color="var(--b2)" />
@@ -137,8 +148,14 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
       }
       return (
         <>
-          <line x1={cx} y1="54" x2={cx} y2={f.nivel - 8} class="chamada" />
-          <line x1={cx} y1={f.nivel - 8} x2={X0 + L} y2={f.nivel - 8} class="chamada" />
+          {/* `nivel + 8`, ABAIXO da linha de base, e nao acima. O desenho de
+              tres faixas punha o texto em 26 e o fio em 34 — 8px abaixo. Ao
+              generalizar, eu mantive o 34 como "nivel - 8" e mudei a base para
+              42, invertendo o sinal sem perceber: o fio passou a atravessar os
+              glifos do proprio rotulo, 136px dentro de um deles. Abaixo da base
+              so desce a perna do "p" e da virgula, entao ali ha vao. */}
+          <line x1={cx} y1="54" x2={cx} y2={f.nivel + 8} class="chamada" />
+          <line x1={cx} y1={f.nivel + 8} x2={X0 + L} y2={f.nivel + 8} class="chamada" />
           <text x={X0 + L} y={f.nivel} class="rotulo" text-anchor="end">
             {f.rotulo} · {brl(f.valor)}
           </text>
@@ -154,8 +171,15 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
     <line x1={X0} y1="120" x2={X0} y2="132" class="colchete" />
     <line x1={X0 + (132.62 / TOTAL) * L} y1="121" x2={X0 + (132.62 / TOTAL) * L} y2="131" class="colchete" />
     <line x1={X0 + (141.28 / TOTAL) * L} y1="120" x2={X0 + (141.28 / TOTAL) * L} y2="132" class="colchete" />
-    <text x={X0 + 10} y="152" class="nota">
-      R$ 132,62 — 90,8% só de licença e adesão; com o SKY+, R$ 141,28, ou 96,7%
+    {/* Em duas linhas pelo mesmo motivo da nota de baixo: texto em SVG nao
+        quebra sozinho. Numa linha so, esta frase media 706 unidades com a
+        fonte de 20px da regra movel, num quadro de 620 — e o pedaco cortado
+        era justamente o segundo numero. */}
+    <text x={X0 + 10} y="148" class="nota">
+      R$ 132,62 — 90,8% só de licença e adesão;
+    </text>
+    <text x={X0 + 10} y="170" class="nota">
+      com o SKY+, R$ 141,28, ou 96,7%
     </text>
 
     <!-- A parte que a tese do negocio prometia. E o ponto do grafico inteiro,
@@ -225,14 +249,14 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
      da marca dá 2,29:1 sobre papel claro, e num gráfico isso deixaria a faixa
      mais importante como a menos visível. Aqui a rampa escurece no claro
      (5,5 a 6,2 para o rótulo branco) e acende no escuro (9 a 13,9), mantendo
-     as três faixas legíveis nos dois temas. */
+     as quatro faixas legíveis nos dois temas. */
   .figura { --b1: #077A28; --b2: #0A6E2E; --b3: #06603C; }
   :global(body.escuro) .figura { --b1: #4FE06A; --b2: #19C63C; --b3: #0E8A3A; }
   @media (prefers-color-scheme: dark) {
     :global(:root:not([data-theme="light"])) .figura { --b1: #4FE06A; --b2: #19C63C; --b3: #0E8A3A; }
   }
 
-  /* As tres faixas correm sobre a mesma rampa, que atravessa a barra inteira,
+  /* As quatro faixas correm sobre a mesma rampa, que atravessa a barra inteira,
      e cada uma pega um trecho diferente dela — e o que as separa.
      Sem degrau de opacidade, de propósito: com opacity 0.6 a faixa do meio
      virava #70A0C9 no tema claro e o rótulo branco em cima dela caía para
@@ -248,8 +272,26 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
      pede texto claro, no escuro ela acende e pede texto escuro. O papel é
      justamente o oposto da barra nos dois casos. */
   .dentro { font-size: 19px; font-weight: 600; fill: var(--paper); font-family: var(--body); }
-  .rotulo { font-size: 17px; fill: var(--ink); font-family: var(--body); }
-  .chamada { stroke: var(--rule); stroke-width: 1.5; }
+  /* O halo da cor do papel nao e enfeite: tres rotulos externos vivem na
+     margem direita, e o fio de chamada de um nivel atravessa, no caminho, a
+     faixa de texto dos niveis de baixo. Sem o halo o fio aparece saindo de
+     cada vao entre letras. Com ele, o texto abre um vao limpo em qualquer fio
+     que o cruze — e a ordem importa: `stroke fill` pinta o contorno ANTES do
+     preenchimento, senao o halo cobriria a propria letra. */
+  .rotulo {
+    font-size: 17px;
+    fill: var(--ink);
+    font-family: var(--body);
+    paint-order: stroke fill;
+    stroke: var(--paper);
+    stroke-width: 3;
+    stroke-linejoin: round;
+  }
+  /* --muted, e nao --rule: cor de borda nao se enxerga como traco. No tema
+     escuro --rule da #18222C sobre #000408, que e o mesmo par invisivel que o
+     separador da faixa de conferencia tinha. E a chamada agora e a UNICA coisa
+     que liga tres rotulos as suas faixas. */
+  .chamada { stroke: var(--muted); stroke-width: 1.5; }
   .colchete { stroke: var(--muted); stroke-width: 1.5; }
   .nota { font-size: 16px; fill: var(--muted); font-family: var(--body); }
   .nota--forte { fill: var(--ink); font-weight: 600; font-size: 18px; }
