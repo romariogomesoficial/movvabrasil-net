@@ -28,10 +28,35 @@ const TOTAL = VALORES.reduce((s, v) => s + v.valor, 0);
 const L = 598;      // largura util da barra
 const X0 = 11;      // margem esquerda
 
+// Largura minima para o rotulo caber centrado DENTRO da propria faixa. O mais
+// largo e "Licença VIP · R$ 92,70", medido em 173px no navegador; 190 da folga
+// para a fonte renderizar um pouco maior em outro sistema.
+const CABE_DENTRO = 190;
+
+// Altura do primeiro nivel de rotulo externo, e quanto cada nivel seguinte
+// sobe. Tres niveis cabem entre o topo do quadro e a barra, que comeca em 56.
+const NIVEL_BASE = 42;
+// 26, e o numero sai de medicao, nao de gosto: o rotulo e desenhado em 17px no
+// sistema de coordenadas do quadro, e a extensao de glifo de uma linha mede
+// 22,7px. Passo de 16 encavalava 7px; passo de 20 ainda encavalava 2,7px.
+const PASSO_NIVEL = 26;
+
 let acumulado = 0;
+let estreitas = 0;
 const faixas = VALORES.map((v) => {
   const largura = (v.valor / TOTAL) * L;
-  const faixa = { ...v, x: X0 + acumulado, largura, pct: (v.valor / TOTAL) * 100 };
+  const cabeDentro = largura >= CABE_DENTRO;
+  const faixa = {
+    ...v,
+    x: X0 + acumulado,
+    largura,
+    pct: (v.valor / TOTAL) * 100,
+    cabeDentro,
+    // Cada faixa estreita ganha o nivel seguinte, subindo. Como as faixas vem
+    // da esquerda para a direita, as chamadas nunca se cruzam.
+    nivel: cabeDentro ? null : NIVEL_BASE - estreitas * PASSO_NIVEL,
+  };
+  if (!cabeDentro) estreitas += 1;
   acumulado += largura;
   return faixa;
 });
@@ -41,7 +66,11 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
 
 <figure class="figura" data-grafico-comissao>
   <svg
-    viewBox="0 0 620 294"
+    {/* O quadro comeca em -44, e nao em 0, para abrir espaco ACIMA da barra
+        sem mexer em nenhuma coordenada do desenho. Com quatro faixas sao tres
+        rotulos externos empilhados, a 26px de distancia um do outro, e o de
+        cima tem o topo de glifo em -28. */}
+    viewBox="0 -44 620 338"
     role="img"
     aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de licença, bônus de adesão e SKY+. Contando só licença e adesão, R$ 132,62. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
   >
@@ -72,39 +101,47 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
       ))}
     </g>
 
+    {/* Virgula decimal, e nao ponto: o numero e texto de tela em portugues, e
+        o resto do site escreve 63,5%. O ponto vinha direto do toFixed. */}
     {faixas.map((f) => (
       f.largura > 60 && (
         <text x={f.x + f.largura / 2} y="88" class="dentro" text-anchor="middle">
-          {f.pct.toFixed(1)}%
+          {f.pct.toFixed(1).replace('.', ',')}%
         </text>
       )
     ))}
 
-    <!-- Rotulo de cada faixa. O ultimo e estreito demais para caber um rotulo
-         centrado, entao ele ancora na borda direita da barra e a linha de
-         chamada sobe em L ate ele. -->
-    {faixas.map((f, i) => {
-      const ultimo = i === faixas.length - 1;
+    {/* Rotulo de cada faixa.
+
+        LEIA ANTES DE MEXER. A versao anterior tratava como estreita apenas a
+        ULTIMA faixa, porque com tres faixas so a ultima era. Ao partir a barra
+        do plano em duas, passaram a existir TRES faixas estreitas — e os
+        rotulos se sobrepuseram em 65px, com o do SKY+ saindo do quadro (ia a
+        629 num viewBox de 620). Medido no navegador, nao deduzido.
+
+        Agora a regra e generica: cabe dentro da propria faixa quem tem largura
+        para isso; quem nao tem ganha rotulo ancorado na borda direita, num
+        nivel proprio, com a chamada subindo em L. Os niveis descem da esquerda
+        para a direita, entao as chamadas nao se cruzam. */}
+    {faixas.map((f) => {
       const cx = f.x + f.largura / 2;
-      const y = ultimo ? 26 : 42;
+      if (f.cabeDentro) {
+        return (
+          <>
+            <line x1={cx} y1="47" x2={cx} y2="54" class="chamada" />
+            <text x={cx} y="42" class="rotulo" text-anchor="middle">
+              {f.rotulo} · {brl(f.valor)}
+            </text>
+          </>
+        );
+      }
       return (
         <>
-          {ultimo ? (
-            <>
-              <line x1={cx} y1="54" x2={cx} y2="34" class="chamada" />
-              <line x1={cx} y1="34" x2={X0 + L} y2="34" class="chamada" />
-              <text x={X0 + L} y={y} class="rotulo" text-anchor="end">
-                {f.rotulo} · {brl(f.valor)}
-              </text>
-            </>
-          ) : (
-            <>
-              <line x1={cx} y1={y + 5} x2={cx} y2="54" class="chamada" />
-              <text x={cx} y={y} class="rotulo" text-anchor="middle">
-                {f.rotulo} · {brl(f.valor)}
-              </text>
-            </>
-          )}
+          <line x1={cx} y1="54" x2={cx} y2={f.nivel - 8} class="chamada" />
+          <line x1={cx} y1={f.nivel - 8} x2={X0 + L} y2={f.nivel - 8} class="chamada" />
+          <text x={X0 + L} y={f.nivel} class="rotulo" text-anchor="end">
+            {f.rotulo} · {brl(f.valor)}
+          </text>
         </>
       );
     })}
