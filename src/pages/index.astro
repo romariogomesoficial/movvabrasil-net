@@ -27,7 +27,7 @@ import CadeiaDeRede from '../components/diagramas/CadeiaDeRede.astro';
 import { Image } from 'astro:assets';
 import logoEscuro from '../assets/logo-movva-branca-verde.png';
 import { EMPRESA, CHIP } from '../data/site.js';
-import { PLANOS, RECOMENDADO } from '../data/planos.js';
+import { PLANOS, RECOMENDADO, EM_ABERTO } from '../data/planos.js';
 import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 import { linkWhatsApp } from '../data/contato.js';
 
@@ -185,6 +185,125 @@ const BENEFICIOS = [
     </div>
   </section>
 
+  <!-- ===================== 3. BENEFÍCIOS ===================== -->
+  <section>
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>O que vem no plano</h2>
+        <p class="lede">
+          Os diferenciais de produto que a MOVVA publica no material oficial de
+          planos. Valem em todos — entre um plano e outro muda só a franquia de dados.
+        </p>
+      </header>
+
+      <div class="beneficios">
+        {BENEFICIOS.map((b) => (
+          <article class="beneficio">
+            <h3>{b.titulo}</h3>
+            <p>{b.texto}</p>
+            {b.link && <a class="beneficio__link" href={b.link}>{b.linkRotulo}</a>}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. PLANOS ===================== -->
+  <section id="planos">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Escolha a franquia</h2>
+        <p class="lede">
+          Preços conferidos em 21 de outubro de 2026 no deck institucional da
+          MOVVA — confirme o valor vigente antes de pagar. Destaco o Liberty porque é
+          onde a franquia para de ser apertada sem o preço dobrar: é escolha
+          minha, não dado de vendas da empresa.
+        </p>
+      </header>
+
+      <div class="planos">
+        {PLANOS.map((p) => (
+          <article class={`plano${p.destaque ? ' plano--destaque borda-luz' : ''}`}>
+            {p.destaque && <span class="plano__selo">Eu recomendo</span>}
+            <p class="plano__nome">MOVVA {p.nome}</p>
+            <p class={`plano__gb${p.destaque ? ' destaque' : ''}`}>{p.gb} GB</p>
+            <p class="plano__preco">R$ <strong>{p.preco}</strong><small>/mês</small></p>
+            <p class="plano__nota">{p.nota}</p>
+            <a
+              class={`btn btn--sm${p.destaque ? '' : ' btn--ghost'}`}
+              href={linkWhatsApp('plano')}
+              rel={REL_PAGO}
+              target="_blank"
+            >Contratar</a>
+          </article>
+        ))}
+      </div>
+
+      <p class="meta-line">
+        <a href="/planos">Ver a comparação completa</a> — preço por giga de cada
+        plano, para quem cada um serve e o que eu ainda não consegui confirmar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== COBERTURA =====================
+       A objeção número um, medida: ela apareceu nos cinco levantamentos de uma
+       pesquisa que olhou busca, reclamação, fórum, FAQ de operadora e material
+       de distribuidor. O sinal de que é do modelo virtual, e não de plano de
+       celular: em "qual operadora pega melhor", nove das dez sugestões do
+       Google são geográficas — e a mesma busca numa operadora tradicional não
+       devolve nenhuma sugestão sobre rede.
+       A home respondia metade dela, a parte do "qual rede", em quatro lugares.
+       A outra metade — pega na MINHA casa — tinha uma frase e um link para o
+       texto que explica o modelo, não para o que ensina a conferir. -->
+  <section>
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Vai pegar no seu endereço?</h2>
+        <p class="lede">
+          É a pergunta que mais trava a troca, e a única que ninguém pode
+          responder por você — nem eu. O que dá para fazer é conferir antes de
+          pagar, em quinze minutos, de graça.
+        </p>
+      </header>
+
+      <ol class="passos-cobertura" role="list">
+        <li>
+          <strong>Descubra de quem é a rede.</strong>
+          Em operadora virtual o sinal não é da marca do plano: é da rede que
+          carrega o tráfego. A MOVVA descreve a dela como rede TIM com roaming
+          da Vivo. Então é a cobertura da <strong>TIM</strong> no seu endereço
+          que decide o seu dia a dia.
+        </li>
+        <li>
+          <strong>Consulte os painéis da Anatel.</strong>
+          São três consultas diferentes, e cada uma mostra uma coisa que as
+          outras não mostram. Nenhuma delas mede o sinal dentro da sua casa —
+          todas são predição, não medição.
+        </li>
+        <li>
+          <strong>Olhe o mapa da rede hospedeira.</strong>
+          No site da própria TIM, pelo seu CEP. E guarde o resultado: se depois
+          não pegar, é o que você tem na mão.
+        </li>
+      </ol>
+
+      <p>
+        <a class="btn btn--ghost" href="/blog/cobertura-no-meu-endereco">
+          Ver o passo a passo completo
+        </a>
+      </p>
+
+      <p class="meta-line">
+        Mapa verde na sua rua não é promessa de sinal no seu quarto — a própria
+        Anatel avisa que os dados são predição. Se o problema é sinal fraco
+        dentro de casa, <a href="/blog/celular-sem-sinal-em-casa">há o que
+        fazer antes de trocar de operadora</a>. E
+        {' '}<a href="/blog/cobertura-zona-rural">na zona rural a conta é outra</a>.
+      </p>
+    </div>
+  </section>
+
   <!-- ===================== 2. COMO FUNCIONA ===================== -->
   <section class="faixa">
     <div class="wrap wrap--wide stack">
@@ -243,29 +362,6 @@ const BENEFICIOS = [
     </div>
   </section>
 
-  <!-- ===================== 3. BENEFÍCIOS ===================== -->
-  <section>
-    <div class="wrap wrap--wide stack">
-      <header class="cabeca">
-        <h2>O que vem no plano</h2>
-        <p class="lede">
-          Os diferenciais de produto que a MOVVA publica no material oficial de
-          planos. Valem em todos — entre um plano e outro muda só a franquia de dados.
-        </p>
-      </header>
-
-      <div class="beneficios">
-        {BENEFICIOS.map((b) => (
-          <article class="beneficio">
-            <h3>{b.titulo}</h3>
-            <p>{b.texto}</p>
-            {b.link && <a class="beneficio__link" href={b.link}>{b.linkRotulo}</a>}
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- ===================== 4. VIRTUAL x TRADICIONAL ===================== -->
   <section class="faixa">
     <div class="wrap wrap--wide stack">
@@ -321,52 +417,22 @@ const BENEFICIOS = [
     </div>
   </section>
 
-  <!-- ===================== 5. PLANOS ===================== -->
-  <section id="planos">
-    <div class="wrap wrap--wide stack">
-      <header class="cabeca">
-        <h2>Escolha a franquia</h2>
-        <p class="lede">
-          Preços conferidos em 21 de outubro de 2026 no deck institucional da
-          MOVVA — confirme o valor vigente antes de pagar. Destaco o Liberty porque é
-          onde a franquia para de ser apertada sem o preço dobrar: é escolha
-          minha, não dado de vendas da empresa.
-        </p>
-      </header>
-
-      <div class="planos">
-        {PLANOS.map((p) => (
-          <article class={`plano${p.destaque ? ' plano--destaque borda-luz' : ''}`}>
-            {p.destaque && <span class="plano__selo">Eu recomendo</span>}
-            <p class="plano__nome">MOVVA {p.nome}</p>
-            <p class={`plano__gb${p.destaque ? ' destaque' : ''}`}>{p.gb} GB</p>
-            <p class="plano__preco">R$ <strong>{p.preco}</strong><small>/mês</small></p>
-            <p class="plano__nota">{p.nota}</p>
-            <a
-              class={`btn btn--sm${p.destaque ? '' : ' btn--ghost'}`}
-              href={linkWhatsApp('plano')}
-              rel={REL_PAGO}
-              target="_blank"
-            >Contratar</a>
-          </article>
-        ))}
-      </div>
-
-      <p class="meta-line">
-        <a href="/planos">Ver a comparação completa</a> — preço por giga de cada
-        plano, para quem cada um serve e o que eu ainda não consegui confirmar.
-      </p>
-    </div>
-  </section>
-
   <!-- ===================== 6. CREDIBILIDADE ===================== -->
   <section class="faixa">
     <div class="wrap wrap--wide stack">
+      {/* O título usa as palavras que a pessoa realmente digita. Uma pesquisa
+          de cinco ângulos mediu isto: "movva brasil é confiável" é a terceira
+          sugestão do Google e "reclame aqui" a quarta — antes de "planos", que
+          é a sexta. E nenhuma dessas palavras existia nesta página: a busca por
+          "confiável", "golpe", "pirâmide" e "reclame" no arquivo dava zero.
+          A seção respondia "a empresa existe e é autorizada", que é uma
+          pergunta diferente da que está sendo feita. */}
       <header class="cabeca">
-        <h2>Quem é a empresa por trás do chip</h2>
+        <h2>É confiável? É pirâmide? Tem reclamação?</h2>
         <p class="lede">
-          Em vez de pedir que você acredite, deixo os registros públicos à mão —
-          e marco o que eu ainda não consegui confirmar.
+          São as três coisas que você digitou, ou pensou em digitar, antes de
+          chegar aqui. Em vez de pedir que você acredite, deixo os registros
+          públicos à mão — e marco o que eu ainda não consegui confirmar.
         </p>
       </header>
 
@@ -407,6 +473,113 @@ const BENEFICIOS = [
         <a href="/movva-e-confiavel">Leia a análise completa</a>, com os riscos que
         eu encontrei e os meus próprios números — inclusive os ruins.
       </p>
+
+      <p class="meta-line">
+        Sobre o <strong>Reclame Aqui</strong>: em 21 de outubro de 2026 eu não
+        localizei página da operadora lá. A que aparece na busca com o nome
+        “Movva” é de <strong>outra empresa, com outro CNPJ</strong> — e eu já
+        errei isso aqui antes de conferir.
+        {' '}<a href="/blog/movva-reclame-aqui">Como checar em quinze minutos,
+        pelo CNPJ</a>.
+      </p>
+      <p class="meta-line">
+        Sobre <strong>pirâmide</strong>: a diferença não é a palavra, é de onde
+        vem o dinheiro. Se a maior parte das comissões nasce de gente entrando,
+        e não de conta de celular sendo paga, a estrutura se aproxima do que a
+        Lei 1.521/51 trata como cadeia. Isso é mensurável, e eu publico a minha
+        própria medição — <a href="/oportunidade">inclusive os meses de ganho
+        zero</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== O QUE EU AINDA NÃO SEI =====================
+       A faixa do alto de toda página diz quantos pontos continuam em aberto.
+       O número é abstrato; três exemplos concretos são a prova.
+       Os três mudaram em 21/10/2026, e a razão vale guardar: os que estavam
+       aqui — quanto da franquia é de uso livre, o prazo do saldo acumulado e
+       se a dupla conectividade era roaming — FECHARAM, porque o deck
+       institucional da empresa foi lido. Sobraram os que custam dinheiro ou
+       mudam a experiência, que são melhores para esta seção de qualquer modo.
+       LER AQUI: estes três saem de EM_ABERTO, em src/data/planos.js. Mudou lá,
+       muda aqui — não escreva à mão. -->
+  <section>
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>O que eu ainda não sei sobre este plano</h2>
+        <p class="lede">
+          A faixa lá no alto conta quantos pontos continuam sem resposta no site
+          inteiro. Estes três são os que mexem no seu bolso — e eu prefiro que
+          você os leia aqui do que descubra depois de pagar.
+        </p>
+      </header>
+
+      <ul class="abertos" role="list">
+        {EM_ABERTO.slice(0, 3).map((item) => <li>{item}</li>)}
+      </ul>
+
+      <p class="meta-line">
+        Nenhum deles é opinião guardada: é documento que eu procurei e não
+        achei. Quando achar, eles saem daqui e a faixa diminui sozinha.
+        {' '}<a href="/planos">Os outros estão na página de planos</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTRATAR E SAIR =====================
+       Quarta objeção da pesquisa, e a única em que a home respondia "não".
+       O dado que a justifica: na Surf Telecom, a maior agregadora de marcas de
+       chip do país, a categoria nº 1 de reclamação é Atendimento, com 27,47%,
+       com tempo médio de resposta de dez dias e três horas.
+       A saída vem junto da entrada de propósito: a pergunta silenciosa que
+       decide o sim é "e se eu me arrepender?". -->
+  <section class="faixa">
+    <div class="wrap wrap--wide stack">
+      <header class="cabeca">
+        <h2>Como contratar, e como sair</h2>
+        <p class="lede">
+          Mostro os dois lados na mesma seção. Quem só conta a entrada está
+          escondendo a parte que você mais vai querer saber se der errado.
+        </p>
+      </header>
+
+      <div class="duasvias">
+        <div class="via">
+          <p class="via__titulo">Para entrar</p>
+          <ol role="list">
+            <li>Você me chama no WhatsApp e eu confiro a cobertura com você.</li>
+            <li>Escolhe a franquia e faz o cadastro na plataforma da MOVVA.</li>
+            <li>O chip vai para a sua casa. Se for portabilidade, a linha antiga
+              só para por até duas horas, em 99% dos casos.</li>
+          </ol>
+          <p class="meta-line">
+            Dá para contratar sozinho, direto na plataforma oficial, sem falar
+            comigo. Eu recebo comissão dos dois jeitos — e se você preferir não
+            conversar, essa é a porta.
+          </p>
+        </div>
+
+        <div class="via">
+          <p class="via__titulo">Para sair</p>
+          <ol role="list">
+            <li>Cancelamento a qualquer tempo, sem multa e sem prazo de permanência.</li>
+            <li>Contratou pela internet ou por telefone? Tem 7 dias para desistir,
+              pelo art. 49 do Código de Defesa do Consumidor.</li>
+            <li>Problema que não resolve: protocolo na operadora e, se não
+              resolver, Anatel pelo 1331.</li>
+          </ol>
+          <p class="meta-line">
+            Atendimento é a reclamação número um deste setor. Vale saber o
+            caminho antes de precisar dele.
+          </p>
+        </div>
+      </div>
+
+      <p>
+        <a class="btn btn--ghost" href="/blog/contratar-chip-movva">
+          Os prazos e os artigos de cada passo
+        </a>
+      </p>
     </div>
   </section>
 
@@ -443,6 +616,7 @@ const BENEFICIOS = [
       <ProximoPasso contexto="plano" />
     </div>
   </section>
+
 
 </Base>
 
@@ -664,6 +838,80 @@ const BENEFICIOS = [
   /* O link precisa de elemento próprio: dentro da string de texto o Astro
      escaparia a tag e a pessoa leria o HTML cru. */
   .beneficio__link { font-size: 0.86rem; margin-top: auto; padding-top: 0.2rem; }
+
+  /* ---------------- cobertura ---------------- */
+  /* Os três passos numerados: aqui a numeração é informação, não enfeite —
+     a ordem importa, porque conferir a hospedeira antes de saber qual é ela
+     não leva a lugar nenhum. */
+  .passos-cobertura {
+    display: grid;
+    gap: 0.9rem;
+    counter-reset: passo;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 52rem) { .passos-cobertura { grid-template-columns: repeat(3, 1fr); } }
+  .passos-cobertura li {
+    counter-increment: passo;
+    position: relative;
+    padding: 1rem 1.1rem 1rem 1.1rem;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--surface);
+    font-size: 0.95rem;
+    color: var(--muted);
+    min-width: 0;
+  }
+  .passos-cobertura li::before {
+    content: counter(passo);
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin-bottom: 0.35rem;
+  }
+  .passos-cobertura li > strong:first-of-type { color: var(--ink); display: block; margin-bottom: 0.2rem; }
+  .passos-cobertura strong { color: var(--ink); }
+
+  /* ---------------- o que eu ainda não sei ---------------- */
+  /* Sem ícone de alerta e sem cor de aviso: isto não é defeito do produto, é
+     informação que falta. Tratar como alarme seria exagerar no que o texto
+     já diz com clareza. */
+  .abertos {
+    display: grid;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .abertos li {
+    padding-left: 1rem;
+    border-left: 2px solid var(--borda-verde);
+    font-size: 0.95rem;
+    color: var(--muted);
+    min-width: 0;
+  }
+
+  /* ---------------- contratar e sair ---------------- */
+  .duasvias { display: grid; gap: 1rem; }
+  @media (min-width: 46rem) { .duasvias { grid-template-columns: 1fr 1fr; } }
+  .via {
+    padding: 1.2rem;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--surface);
+    min-width: 0;
+  }
+  .via__titulo {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent);
+    margin: 0 0 0.6rem;
+  }
+  .via ol { padding-left: 1.1rem; display: grid; gap: 0.45rem; font-size: 0.95rem; }
+  .via ol li { padding-left: 0.2rem; }
+  .via .meta-line { margin-top: 0.7rem; }
 
   /* ---------------- 7. perguntas ---------------- */
   .perguntas { display: grid; gap: 0.6rem; }

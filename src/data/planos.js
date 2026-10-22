@@ -160,10 +160,15 @@ export const DIFERENCIAIS = [
 // Quatro itens sairam daqui em 21/10/2026, fechados pelo deck institucional:
 // a origem dos precos, o mecanismo da dupla conectividade, o prazo do saldo
 // acumulado e o que o MOVVA Club oferece. Dois entraram no lugar.
+// A ORDEM desta lista importa: a home mostra os TRES PRIMEIROS, e eles foram
+// escolhidos pelo criterio de "o que custa dinheiro ou muda a experiencia de
+// quem esta prestes a pagar". Os dois ultimos — a data do deck e o eSIM — sao
+// verdadeiros e menos decisivos, entao ficam so na pagina de planos.
+// Mexeu na ordem? A home muda junto. Ela corta com slice(0, 3).
 export const EM_ABERTO = [
-  'A data do deck. Os preços, a franquia e os benefícios desta página saem do deck institucional da MOVVA, que não traz data de emissão nem número de versão. Ele é a melhor fonte que eu tenho e ainda assim não se data sozinho — então confirme o valor vigente na página de contratação antes de pagar.',
-  'Por quanto tempo a Vivo pode entrar por roaming. O deck descreve a dupla conectividade como "Rede TIM + Roaming da VIVO". O art. 66 do PGMC, anexo da Resolução 783/2025, veda o roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você. Eu não achei documento que explique como a característica permanente do plano convive com esse limite.',
   'A velocidade depois que a franquia acaba. O deck não diz se o plano reduz a velocidade, corta os dados ou vende pacote extra, nem a que preço.',
+  'O preço do chip e da entrega, e se entram à parte ou já na primeira mensalidade. O deck só diz "adquira seu chip e ative o plano".',
+  'Por quanto tempo a Vivo pode entrar por roaming. O deck descreve a dupla conectividade como "Rede TIM + Roaming da VIVO". O art. 66 do PGMC, anexo da Resolução 783/2025, veda o roaming permanente acima de 90 dias corridos — regra que vincula as prestadoras, não você. Eu não achei documento que explique como a característica permanente do plano convive com esse limite.',
+  'A data do deck. Os preços, a franquia e os benefícios desta página saem do deck institucional da MOVVA, que não traz data de emissão nem número de versão. É a melhor fonte que eu tenho e ainda assim não se data sozinha — então confirme o valor vigente na página de contratação antes de pagar.',
   'Quais aparelhos aceitam a dupla conectividade em eSIM, e se ela funciona igual no chip físico. O deck não trata de eSIM.',
-  'O preço do chip e da entrega para o cliente, e se entram à parte ou na primeira mensalidade. O deck só diz "adquira seu chip e ative o plano".',
 ];
