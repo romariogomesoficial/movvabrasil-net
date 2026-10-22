@@ -47,7 +47,13 @@ const dia = conferidoEm.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
   }
   .faixa__item { white-space: nowrap; }
   .faixa__item strong { color: var(--accent); font-weight: 600; }
-  .faixa__sep { color: var(--rule); }
+  /* --muted, e nao --rule. A cor de borda e escura demais para virar texto:
+     medido, o ponto ficava em 1,21 de contraste no tema escuro (#18222C sobre
+     #000408) e em pouco mais que isso no claro (#DCE5DF sobre #F6F9F7) — ou
+     seja, invisivel nos dois. Sem ele, os dois numeros da faixa se encostam e
+     leem como um so. O ponto e aria-hidden, entao nao precisa dos 4,5 de
+     texto; precisa aparecer. */
+  .faixa__sep { color: var(--muted); opacity: 0.55; }
   .faixa__item--link { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--rule); }
   .faixa__item--link:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
