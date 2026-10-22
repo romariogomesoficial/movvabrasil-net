@@ -162,15 +162,19 @@ const dataLegivel = atualizadoEm
   <meta name="author" content={AUTOR.nome} />
   {atualizadoEm && <meta name="last-modified" content={atualizadoEm} />}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- IBM Plex: família desenhada para uma empresa de tecnologia, com Sans e
-       Mono que foram feitos juntos. O Mono não é enfeite aqui: ele marca
-       identificador real — CNPJ, número de ato, processo, código de rede. -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
-  />
+  {/* IBM Plex: família desenhada para uma empresa de tecnologia, com Sans e
+      Mono que foram feitos juntos. O Mono não é enfeite aqui: ele marca
+      identificador real — CNPJ, número de ato, processo, código de rede.
+
+      As fontes são servidas daqui, não do Google. Antes eram quatro
+      requisições de terceiro por página, e o CSS deles bloqueia a primeira
+      pintura — mas o motivo maior é outro: pedir fonte ao Google entrega o IP
+      de cada visitante a ele, e este site tem uma página que descreve o que
+      coleta. Difícil defender a página de privacidade e deixar isso de pé.
+
+      Os dois arquivos de cada peso são carregados sob demanda: o navegador só
+      baixa o latin-ext se a página tiver um caractere que precise dele. */}
+  <link rel="preload" as="font" type="font/woff2" href="/fontes/ibm-plex-sans-400-latin.woff2" crossorigin />
 
   {schemas.map((s) => (
     <script type="application/ld+json" set:html={JSON.stringify(s)} />

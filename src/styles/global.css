@@ -1,3 +1,6 @@
+/* As fontes vêm primeiro: o resto do CSS depende das famílias declaradas lá. */
+@import './fontes.css';
+
 /* Identidade: verde e preto, a da marca.
    O site passou por três direções até aqui — papel editorial, depois
    instrumento ciano — e as duas primeiras evitavam o verde da MOVVA de
