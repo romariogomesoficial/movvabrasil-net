@@ -195,9 +195,52 @@ const faq = perguntasDe('/movva-e-confiavel');
         nunca com dinheiro que faça falta. E desconfie, sempre, de quem te mostra
         projeção de matriz cheia em vez do próprio extrato.
       </p>
+
+      {/* Esta página recebia link de sete outras e devolvia um só: um beco. Quem
+          chega aqui veio checar se dá para confiar, e sai com a resposta sem
+          saber para onde ir. As três saídas abaixo são as três decisões
+          possíveis depois de ler. */}
+      <ul class="saidas" role="list">
+        <li>
+          <strong>Quer o plano?</strong> Os cinco, com preço por giga e o que eu
+          não consegui confirmar, estão em <a href="/planos">planos</a>. E dá
+          para <a href="/blog/cobertura-no-meu-endereco">conferir a cobertura no
+          seu endereço</a> antes de pagar.
+        </li>
+        <li>
+          <strong>Quer comparar?</strong> A MOVVA ao lado de
+          {' '}<a href="/blog/movva-vivo-claro-tim">Vivo, Claro e TIM</a>, com o
+          preço separado do que a norma garante — e a parte em que a MOVVA perde.
+        </li>
+        <li>
+          <strong>Quer entender como este site decide o que publica?</strong> O
+          método está em <a href="/sobre">quem escreve e como</a>: o que entra
+          como verificado, o que é atribuído à empresa e o que fica em aberto.
+        </li>
+      </ul>
     </section>
 
     <ProximoPasso contexto="programa" mostrarPrograma={false} />
 
   </article>
 </Base>
+
+<style>
+  /* As três saídas da página: lista sem marcador, com a barra verde que o
+     resto do site usa para "isto é um caminho", não para "isto é um aviso". */
+  .saidas {
+    display: grid;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .saidas li {
+    padding-left: 1rem;
+    border-left: 2px solid var(--borda-verde);
+    font-size: 0.95rem;
+    color: var(--muted);
+    min-width: 0;
+  }
+  .saidas strong { color: var(--ink); }
+</style>

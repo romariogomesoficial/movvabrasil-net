@@ -29,11 +29,17 @@ const fmt = (iso) =>
 ---
 
 <aside class="nota">
+  {/* O link para /sobre fica aqui porque este é o lugar certo e porque, sem
+      ele, a página não era alcançada do corpo de lugar nenhum — só do rodapé.
+      É a página que explica o método, e quem acabou de ler um texto cheio de
+      ressalva é exatamente quem quer saber por que elas existem. */}
   <p>
     <strong>Nota de transparência.</strong> Escrito por {AUTOR.nome}, {AUTOR.papel}.
     Recebo comissão se você contratar um plano pelos links daqui. {CHIP.frase}
     Nada nesta página descreve característica de produto da MOVVA como
-    verificada por mim, e não há promessa de ganho.
+    verificada por mim, e não há promessa de ganho —
+    {' '}<a href="/sobre">as três categorias que organizam tudo aqui</a> explicam
+    o critério.
   </p>
   {extra && <p>{extra}</p>}
   {fontes && <p>Fontes verificadas em {fmt(fontes)}.</p>}
