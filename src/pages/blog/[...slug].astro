@@ -160,10 +160,20 @@ const fmt = (d) =>
   .prosa :global(h3) { margin-top: 0.6rem; }
   .prosa :global(ul), .prosa :global(ol) { padding-left: 1.2rem; }
 
-  /* Tabelas dentro do texto: a largura é do conteúdo, e número é dado. */
+  /* Tabelas dentro do texto: a largura é do conteúdo, e número é dado.
+
+     O `min-width: 0` NÃO É DECORAÇÃO, não tire. A regra global de tabela, em
+     global.css, impõe `min-width: 32rem` — que é certo lá, porque lá a tabela
+     vive dentro de `.table-scroll`, um contêiner que rola. Aqui não existe
+     esse contêiner: o Markdown emite `<table>` pelado, então os 32rem caíam
+     sobre a própria tabela e a caixa dela ia a 512px. Num telefone de 375px
+     isso punha a PÁGINA INTEIRA a rolar de lado, medido em 530px. Zerar o
+     mínimo devolve a caixa ao contêiner, e o `overflow-x` passa a rolar o que
+     está dentro, que era a intenção desde o começo. */
   .prosa :global(table) {
     border-collapse: collapse;
     width: 100%;
+    min-width: 0;
     font-size: 0.93rem;
     display: block;
     overflow-x: auto;
