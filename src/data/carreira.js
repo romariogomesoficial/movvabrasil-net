@@ -413,6 +413,18 @@ export const O_QUE_A_LICENCA_DOBRA = [
 export const LUGARES_COM_VME =
   DEGRAUS.filter((d) => d.vme).length + PREMIACOES.filter((p) => p.vme).length;
 
+// O mesmo numero por extenso, porque o site escreve numero pequeno em prosa
+// com palavra — "doze degraus", "catorze lugares" — e a interpolacao crua
+// imprimia "14" ao lado de "catorze" no post irmao. A lista cobre a faixa que
+// este arquivo pode produzir; fora dela cai no digito, que e feio mas nunca
+// errado.
+const POR_EXTENSO = [
+  'zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito',
+  'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis',
+  'dezessete', 'dezoito', 'dezenove', 'vinte',
+];
+export const porExtenso = (n) => POR_EXTENSO[n] ?? String(n);
+
 export const DESEMPENHO_LIDERANCA = {
   apartirDe: 'Diretor Sênior',
   porPin: '+0,1%',
@@ -428,12 +440,15 @@ export const DESEMPENHO_LIDERANCA = {
 // A ORDEM importa: a pagina mostra os tres primeiros em destaque.
 export const EM_ABERTO_CARREIRA = [
   'Quantos degraus a escada tem, de verdade. O deck publica doze, com Embaixador no topo. Os medalhões oficiais que eu tenho em arquivo são treze, e incluem um "Embaixador Sênior" que não aparece em nenhuma das 66 páginas do deck — nem na escada da página 56, nem na página 57, que lista os cinco pins do bônus de liderança e também para em Embaixador. São dois materiais da mesma empresa dizendo coisas diferentes. Publico os doze porque o deck é o documento mais recente que eu tenho, e registro o décimo terceiro aqui em vez de escondê-lo.',
-  // A contagem vem de LUGARES_COM_VME, logo acima, e NAO escrita por extenso.
+  // A contagem vem de LUGARES_COM_VME e sai por extenso, porque o site escreve
+  // numero pequeno em prosa com palavra e a interpolacao crua punha "14" ao
+  // lado de "catorze" no post irmao.
+  //
   // Em 22/10/2026 esta frase dizia "todos os degraus", que da dezoito — e a
   // /oportunidade, que renderiza esta lista, ja dizia catorze cento e treze
   // linhas antes. A mesma pagina com dois numeros, porque a correcao pegou o
   // texto visivel e deixou o espelho.
-  `O que significa VME. A sigla aparece em ${LUGARES_COM_VME} lugares do deck — nos oito degraus que exigem pontuação, do Gestor ao Embaixador, e nas seis premiações —, sempre com um percentual ao lado, e cai de 50% para 20% conforme se sobe. Os quatro primeiros não a trazem. O deck não a define em nenhuma das 66 páginas. Reproduzo o número como ele está impresso e não traduzo a sigla.`,
+  `O que significa VME. A sigla aparece em ${porExtenso(LUGARES_COM_VME)} lugares do deck — nos oito degraus que exigem pontuação, do Gestor ao Embaixador, e nas seis premiações —, sempre com um percentual ao lado, e cai de 50% para 20% conforme se sobe. Os quatro primeiros não a trazem. O deck não a define em nenhuma das 66 páginas. Reproduzo o número como ele está impresso e não traduzo a sigla.`,
   'O valor do bônus de adesão. Ele existe: o meu extrato tem R$ 39,92 sob esse rótulo. O deck descreve a indicação direta e a matriz, mas eu não localizei nele a tabela que fixe o valor da adesão por plano.',
   'Se a pontuação de graduação (PG) e os GoldPoints são a mesma contagem. O deck usa "Pts (PG)" na escada e "GoldPoints" nas premiações, com a mesma tabela de pontos por plano nas páginas 49 e 56. Isso sugere uma contagem só, mas o documento não diz isso com todas as letras.',
   'Em quanto tempo o ponto expira se o plano deixar de ser pago. O deck garante que o ponto não zera "enquanto você pagar seu plano em dia", o que descreve a hipótese boa e deixa a ruim sem resposta.',

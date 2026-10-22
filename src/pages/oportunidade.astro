@@ -7,7 +7,7 @@ import { RECOMENDADO, CONFERIDO_EM } from '../data/planos.js';
 import {
   DEGRAUS, PIN, PIN_ORFAO, PONTOS_POR_PLANO, PONTO_NAO_ZERA, PREMIACOES,
   MATRIZ, MATRIZ_CHEIA, MEGA_BONUS, DESEMPENHO_LIDERANCA, EM_ABERTO_CARREIRA,
-  LICENCA_VIP, O_QUE_A_LICENCA_DOBRA, LUGARES_COM_VME,
+  LICENCA_VIP, O_QUE_A_LICENCA_DOBRA, LUGARES_COM_VME, porExtenso,
   CONFERIDO_EM as CONFERIDO_CARREIRA,
 } from '../data/carreira.js';
 
@@ -112,7 +112,7 @@ const description =
     <section class="stack">
       <h2>Como a remuneração é composta</h2>
       <p>
-        A empresa publica {O_QUE_A_LICENCA_DOBRA.length} linhas, e elas dobram para quem paga a licença
+        A empresa publica {porExtenso(O_QUE_A_LICENCA_DOBRA.length)} linhas, e elas dobram para quem paga a licença
         VIP. Estão no documento oficial “Diferenciais planos de telefonia
         MOVVA”, que é material da própria MOVVA — não é dado meu nem boato de
         grupo. Duas dessas linhas aparecem <strong>também</strong> no deck
@@ -445,7 +445,7 @@ const description =
       <p class="meta-line">
         Duas coisas dessa tabela o deck imprime sem explicar, e eu não invento:
         o que significa <strong>VME</strong>, que aparece em
-        {' '}{LUGARES_COM_VME} lugares do documento, e o que é a
+        {' '}{porExtenso(LUGARES_COM_VME)} lugares do documento, e o que é a
         {' '}<strong>divisão de lucros</strong> que os quatro degraus de cima
         prometem. Uma terceira merece aviso: o prêmio desenhado ao lado de um
         degrau <strong>não vem com ele</strong> — Diretor pede 700 Pts e o
