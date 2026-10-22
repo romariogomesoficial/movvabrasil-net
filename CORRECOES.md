@@ -8,6 +8,114 @@ caso alguém pergunte.
 
 ---
 
+## 22 de outubro de 2026
+
+Dia de uma correção estrutural e de um lote grande. A correção estrutural veio
+da leitura do plano de carreira no deck; o lote veio de uma revisão das 28
+páginas com 45 leitores e verificação adversarial, que levantou 73 achados, dos
+quais 38 sobreviveram à checagem.
+
+### /oportunidade — a escada tinha treze degraus, e o deck publica doze
+
+**Passou a dizer:** doze graduações, de Consultor a Embaixador, com a exigência
+de cada uma, lidas na página 56 do deck institucional.
+
+**O erro:** a escada estava escrita à mão dentro de `oportunidade.astro`, com
+treze degraus, Embaixador em décimo e Presidente no topo. Vinha dos treze
+medalhões em arquivo. A página 56 do deck publica doze, em outra ordem, e a
+página 57 concorda com ela — lista os cinco pins do bônus de liderança e também
+termina em Embaixador.
+
+**Como apareceu:** três páginas novas sobre o lado empreendedor foram reprovadas
+nos portões de revisão por contradizerem a página publicada. As três estavam
+certas, e a página publicada estava velha.
+
+**O que ficou público, e por quê:** o décimo terceiro medalhão não foi apagado.
+Está na página como ponto em aberto, porque a divergência é entre dois materiais
+da própria empresa — isso é incerteza sobre o assunto, que este site publica, e
+não erro do autor, que vem para cá.
+
+**A lição estrutural:** a escada era o último dado de produto escrito à mão
+dentro de uma página. Por isso divergiu do documento sem ninguém notar. Agora
+vive em `src/data/carreira.js`, como os planos vivem em `planos.js`.
+
+### /oportunidade e /avisos-legais — a matriz de 11.110 pessoas
+
+**Passou a dizer:** a matriz 3×12 que o deck projeta exige 797.160 pessoas com
+plano ativo.
+
+**O erro:** o site citava "matriz teoricamente completa com 11.110 pessoas". Esse
+número não corresponde a nenhuma soma da matriz 3×12 do deck, que tem 531.441
+pessoas só no décimo segundo nível.
+
+**Como apareceu:** lendo as páginas 46 e 47, que somam o dinheiro da matriz
+cheia e não somam a gente.
+
+### Peças de anúncio pago — três afirmações além da fonte
+
+Três correções em `criativos.js`, todas da mesma família, e é a terceira vez que
+esta família aparece (antes foram "não tem custo" na portabilidade e "infinitos"
+no acúmulo):
+
+1. A peça `confiavel` prometia "contrato de rede — com as fontes públicas
+   linkadas". A página que ela divulga tirou a cadeia de rede da lista do
+   verificável, justamente porque não há registro público que a comprove.
+2. A peça do acúmulo afirmava o acúmulo sem a condição que o deck impõe
+   ("pagando até a data do vencimento"). Todo o resto do site carrega a
+   condição.
+3. A peça de preço afirmava R$ 79,90 como fato próprio, sem forma e sem data,
+   enquanto toda página do site o publica atribuído e datado. Agora lê de
+   `planos.js` e carrega a data.
+
+**A lição, escrita no topo do arquivo:** a peça paga viaja sozinha. O rodapé
+obrigatório não tem campo de fonte nem de data. Então toda condição que o
+documento impõe tem de caber dentro da frase.
+
+### /termos-de-uso e /avisos-legais — "medições feitas por mim"
+
+**Passou a dizer:** não há medição de rede neste site, com a frase do chip.
+
+**O erro:** as duas páginas legais afirmavam ao visitante que o site reúne
+"medições feitas por mim" e que "medições publicadas aqui são minhas". Não
+existe nenhuma: o chip foi pedido em 20/10/2026 e não chegou, e o site diz isso
+em todas as outras páginas.
+
+### quanto-custa-o-primeiro-mes — a origem do preço, de novo
+
+**O erro:** o corpo e o `description` ainda atribuíam a mensalidade a "material
+de distribuidor", enquanto a `resposta` e a tabela do mesmo arquivo a atribuíam
+à página 31 do deck. O `description` é o campo que mais viaja sozinho: meta tag,
+cartão de compartilhamento, índice do blog.
+
+**A lição, que este projeto já aprendeu uma vez:** quando uma atribuição muda,
+ela muda em todos os campos do arquivo, inclusive nos que não aparecem no corpo.
+
+### O resto do lote
+
+- `paginas.js`: o resumo de `/planos` ainda dizia que a origem dos preços estava
+  em aberto. Esse resumo vai para o `llms.txt`, ou seja, a frase velha era o que
+  um sistema de IA lia sobre o site. Agora não enumera itens em aberto, porque
+  eles mudam.
+- `/planos`: a frase dizia "seis diferenciais" e "o sexto" sobre uma lista que
+  mostra sete na tela, logo acima. A contagem agora sai da lista.
+- `planos.js`: o comentário dizia que os sete itens saíram dos cards da página
+  31. A dupla conectividade não está nesses cards — vem de outro ponto do deck.
+- Home: "Ver as 25 perguntas" numa central que mostrava outro número. Agora as
+  duas leem a mesma conta.
+- Home, `/movva-e-confiavel` e `llms.txt`: a cadeia de rede descrita como
+  "material comercial" contra o dossiê. São dois documentos da própria empresa.
+- `movva-reclame-aqui`: o primeiro H2 do post era "Começo pela parte que me
+  desabona", seguido da confissão de um erro meu. Pela regra de 21/10/2026, erro
+  do autor não vai para página pública — vem para este arquivo. O registro dele
+  continua acima.
+- `/movva-e-confiavel`: o mesmo extrato aparecia com dois períodos diferentes na
+  mesma página, um no texto e outro no gráfico.
+- `cobertura-no-meu-endereco`: uma fonte que se autodeclarava "material
+  comercial, não documento da empresa" entrava na contagem de fontes primárias
+  que o site exibe como credencial. Saiu.
+
+---
+
 ## 21 de outubro de 2026
 
 ### /movva-e-confiavel — página do Reclame Aqui

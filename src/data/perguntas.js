@@ -124,6 +124,28 @@ export const PERGUNTAS = [
     p: 'Quantas pessoas realmente ganham dinheiro com isso?',
     r: 'O material de treinamento da própria MOVVA apresenta esta proporção: de 200 pessoas convidadas, cerca de 100 conhecem o negócio, 10 entram, 6 ficam, 3 continuam e 1 se destaca. Isso é 0,5%. Qualquer número de ganho precisa ser lido junto dessa proporção.',
   },
+
+  // As tres abaixo entraram em 22/10/2026, com a leitura do deck. Elas sao as
+  // perguntas que mais chegam por busca no lado empreendedor, e cada resposta
+  // leva a pagina que abre a conta inteira.
+  {
+    paginas: ['/oportunidade'],
+    tema: 'O programa de afiliados',
+    p: 'Quantos degraus tem o plano de carreira da MOVVA?',
+    r: 'A página 56 do deck institucional da MOVVA publica doze graduações, de Consultor a Embaixador. As quatro primeiras exigem diretos ativos e destravam níveis da matriz; da quinta em diante a exigência vira pontuação acumulada, sempre com doze diretos, e a partir da sétima entra a licença VIP. Os medalhões oficiais que eu tenho em arquivo são treze: o décimo terceiro, "Embaixador Sênior", não aparece em nenhuma página do deck.',
+  },
+  {
+    paginas: ['/oportunidade'],
+    tema: 'O programa de afiliados',
+    p: 'Como funciona a matriz da MOVVA?',
+    r: 'É uma matriz forçada 3×12: três posições de largura, doze níveis de profundidade. Os níveis destravam de três em três conforme você tem diretos ativos, e cada um paga 0,5% sobre os planos ativos abaixo, ou 1% para quem tem licença VIP. A página 45 do deck acrescenta a condição que muda tudo: esse ganho é "pago da 2ª fatura em diante", enquanto o ganho sobre licença VIP é "pago no ato da adesão".',
+  },
+  {
+    paginas: ['/oportunidade'],
+    tema: 'O programa de afiliados',
+    p: 'A licença VIP da MOVVA vale a pena?',
+    r: 'Depende de qual tese você tem. O deck publica a licença a R$ 497 à vista ou 12× R$ 51,13, que somam R$ 613,56. Para recuperá-la pelas licenças de quem está abaixo de você são 48 pessoas, e esse ganho é pago no ato. Para recuperá-la pela matriz de telefonia são cerca de 1.244 plano-meses, ou pouco mais de um ano com 100 planos ativos. Eu paguei a minha e recebi R$ 115,43 líquidos em três meses e meio.',
+  },
 ];
 
 // A fatia de uma pagina, para a propria pagina listar.
