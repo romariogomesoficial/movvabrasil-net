@@ -1736,202 +1736,6 @@ Nenhuma afirmação sobre a MOVVA nesta página vem de teste em campo: contratei
 
 ---
 
-# MOVVA no Reclame Aqui: o que existe hoje e como conferir
-
-URL: https://movvabrasil.net/blog/movva-reclame-aqui
-Publicado: 2026-10-21 · Atualizado: 2026-10-21
-Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
-
-Fontes citadas:
-- Reclame Aqui — página da empresa “Movva”: https://www.reclameaqui.com.br/empresa/movva/
-- Reclame Aqui — aba Sobre de “Movva”: https://www.reclameaqui.com.br/empresa/movva/sobre/
-- Reclame Aqui — busca por “movva”: https://www.reclameaqui.com.br/busca/?q=movva
-- Reclame Aqui — página da empresa “movvabroker”: https://www.reclameaqui.com.br/empresa/movvabroker/
-- Reclame Aqui — página da empresa “Grupo Mova”: https://www.reclameaqui.com.br/empresa/grupo-mova/
-- Reclame Aqui — Manual de Reputação (oficial): https://manual.reclameaqui.com.br/reputacao-no-reclame-aqui
-- Blog Reclame Aqui — “Sem reputação no Reclame AQUI” (22/02/2024, atualizado 24/07/2026): https://blog.reclameaqui.com.br/sem-reputacao-no-reclame-aqui/
-- Receita Federal — Consulta CNPJ (fonte oficial): https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp
-- Consulta via BrasilAPI, que espelha a base pública da Receita — CNPJ 16.896.559/0001-81: https://brasilapi.com.br/api/cnpj/v1/16896559000181
-- Consulta via BrasilAPI, que espelha a base pública da Receita — CNPJ 28.450.689/0001-75: https://brasilapi.com.br/api/cnpj/v1/28450689000175
-- Consumidor.gov.br — Senacon, página institucional (Decreto nº 8.573/2015): https://www.consumidor.gov.br/pages/conteudo/publico/5
-- Consumidor.gov.br — Como aderir (empresas): https://www.consumidor.gov.br/pages/conteudo/publico/2
-- Consumidor.gov.br — Não encontrei a empresa para registrar minha reclamação: https://www.consumidor.gov.br/pages/conteudo/publico/41
-- Anatel — Registrar reclamação (página modificada em 01/10/2026): https://www.gov.br/anatel/pt-br/consumidor/reclamacao
-- Anatel — RGC, anexo à Resolução nº 765/2023, arts. 9º, 10, 87, 89 e 90: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
-- Anatel — Painéis de Dados, Consumidor: https://informacoes.anatel.gov.br/paineis/consumidor
-- Anatel — Painéis de Dados, Consumidor, aba Reclamações: https://informacoes.anatel.gov.br/paineis/consumidor/reclamacoes
-- TELETIME — “Pós-pago e banda larga puxam alta de reclamações na Anatel em 2025” (19/03/2026), sobre dados da Anatel: https://teletime.com.br/19/03/2026/reclamacoes-anatel-2025/
-
-## Antes de procurar: este site não é canal de atendimento
-
-Para reclamar da MOVVA, os caminhos estão abaixo, e nenhum deles passa por
-aqui.
-
-Aqui tem método, não pedido de confiança: cada dado desta página vem com o
-endereço onde você confere sozinho, e com a data em que eu olhei. É o que
-permite a você discordar de mim sem precisar da minha permissão.
-
-## O que aparece quando você digita MOVVA no Reclame Aqui
-
-A operadora, não. Em 21/10/2026, a página reclameaqui.com.br/empresa/movva/
-exibe "Sem reputação definida", selo "Não verificada", 0 reclamações recebidas,
-0% respondidas, 0 aguardando e 0 avaliadas, no período de 01/04/2026 a
-30/09/2026, com histórico "Sem índice" nos seis meses, de abril a setembro de
-2026.
-
-Os dados cadastrais da própria página explicam por quê: CNPJ 16.896.559/0001-81,
-razão social Movva, site mgovbrasil.com.br, telefone 31813974. Nenhum é da
-operadora, cujo CNPJ é 28.450.689/0001-75.
-
-## Três empresas de nome parecido, e nenhuma é a operadora
-
-| Nome na busca | CNPJ | Atividade na base da Receita | Reputação em 21/10/2026 |
-| --- | --- | --- | --- |
-| Movva | 16.896.559/0001-81 | MOVVA S.A., consultoria em gestão, CNAE 7020-4/00, Av. Paulista 171 | Sem reputação definida |
-| movvabroker | não informado | corretora, app.movvabroker.com | Não recomendada |
-| Grupo Mova | 20.465.898/0001-80 | contact center, grupomova.com.br | Sem reputação definida |
-| MOVVA BRASIL LTDA | 28.450.689/0001-75 | telecom sem fio, CNAE 6120-5/99, Av. Paulista 1842 | sem página localizada |
-
-O telefone 11 3181-3974 da MOVVA S.A. é o da página: duas empresas, dois
-endereços na mesma avenida. E CNAE é autodeclarado, não é outorga — a
-autorização que este site cita é o Ato nº 9021, de 08/07/2026.
-
-A busca por "movva" devolveu "50 empresas e 65 reclamações", e das 48 que
-carreguei antes de a lista travar nenhuma é operadora de celular. Não falo pelas
-duas que faltaram.
-
-Nome não identifica empresa. CNPJ identifica.
-
-## Página sem reclamação é sinal de qualidade?
-
-Não. E também não é sinal de defeito: é falta de dado.
-
-O limite é de 10 avaliações, não de 10 reclamações. Sem esse mínimo, a empresa
-fica automaticamente "Sem Reputação Definida" — rótulo que substituiu "Sem
-Índice" em 21/02/2024 e que o blog oficial atribui a falta de dados, não a
-julgamento.
-
-A plataforma ainda avisa, na aba Sobre de página não verificada, que "não
-podemos assegurar que ela existe ou que é confiável" (Reclame Aqui).
-
-Nem atestado, nem acusação.
-
-## Como o Reclame Aqui calcula reputação, em português
-
-Quatro indicadores: reclamações respondidas (IR), voltaria a fazer negócio (IN),
-solução (IS) e nota do consumidor (MA). A fórmula do manual é
-AR = ((IR × 2) + (MA × 10 × 3) + (IS × 3) + (IN × 2)) / 100 — três dos quatro
-dependem de o consumidor voltar para avaliar.
-
-As abas vão de 6 meses, a padrão, até a geral, de 3 anos; as de 6 e 12 meses
-ignoram o mês vigente, e a nota muda sozinha todo dia 1º.
-
-O RA1000 exige 50 avaliações, IR e IS de 90%, nota 7, IN de 70% e auditoria. Na
-outra ponta, "Em Análise" e "Reputação Suspensa" vão de 30 a 90 dias.
-
-## O caso movvabroker mostra a regra ao contrário
-
-A página movvabroker, segundo resultado da busca, está "NÃO RECOMENDADA": 10
-reclamações, 0% respondidas, 9 aguardando e 1 avaliada, com aviso de menos de
-50% respondidas. Tratam de saque retido em corretora, não de telefonia.
-
-O manual diz que responder a menos da metade já põe a empresa como "Não
-Recomendada", mesmo abaixo de 10 avaliações. Mas o Grupo Mova, com 1 reclamação
-e 0% de resposta, segue "Sem reputação definida": há um volume mínimo que o
-manual não mostra.
-
-Duas lições: nota de homônimo não diz nada sobre a operadora, e silêncio pesa
-mais do que volume.
-
-## Por que, em telecom, a agência diz mais
-
-O consumidor.gov.br é público e gratuito, da Senacon, institucionalizado pelo
-Decreto nº 8.573/2015. A adesão é voluntária, e quem adere se compromete a
-responder em até 10 dias. Sem cadastro não dá para reclamar ali: sobram Procon,
-Defensoria e Juizado, e dá para sugerir o cadastro pelo CNPJ.
-
-Na Anatel há o 1331, gratuito em dias úteis das 8h às 20h, o Anatel Consumidor e
-o Painel de Dados do Consumidor, com registros desde 2015 e organizado também
-pela dimensão "Marca" — então marca pequena aparece nominalmente.
-
-Escala, de fonte secundária: o TELETIME noticiou em 19/03/2026, sobre dados da
-Anatel, cerca de 1,35 milhão de casos em 2025, 490 mil no pós-pago. Plataforma
-privada não tem poder de fiscalizar, prazo em norma nem base aberta.
-
-## Qual é o caminho que a norma manda seguir?
-
-Protocolo, prestadora, ouvidoria, Anatel — com o recorte de porte colado em cada
-degrau.
-
-| Degrau | Prazo | RGC | Na lista do art. 90? |
-| --- | --- | --- | --- |
-| Protocolo no atendimento | imediato | art. 9º, caput e I | Sim |
-| Reclamação na prestadora | 7 dias corridos | art. 10, caput | Sim |
-| Ouvidoria | 10 dias corridos | art. 87, § 7º | Não aparece |
-| Levar à Anatel | remetido a Portaria | art. 89 | Não aparece |
-
-Quatro prazos de dez dias convivem sem se confundir: a solicitação ou o pedido
-de informação que a própria operadora não atende de imediato (art. 10, § 1º, que
-está na lista do art. 90), a ouvidoria, o que a Anatel afirma para a operadora
-responder reclamação encaminhada pela agência, e o do consumidor.gov.br.
-Reclamação direto na operadora é outra coisa: 7 dias.
-
-A ressalva pesa aqui: pela lista do art. 90, nas duas versões que a página da
-Anatel exibe, os arts. 9º e 10 alcançam Prestadora de Pequeno Porte e os
-arts. 87 e 89 não. Protocolo e os 7 dias você cobra; ouvidoria em 10 dias e ida
-direta à agência, não dá para prometer. É o mesmo recorte do [post sobre
-fidelidade, em que o art. 90 define quais regras do RGC alcançam prestadora de
-pequeno porte](/blog/operadora-sem-fidelidade). E porte na Receita é tributário,
-não a Prestadora de Pequeno Porte da Anatel, que vai por acessos.
-
-Aqui é site de distribuidor independente, não canal de atendimento.
-
-## Em operadora virtual, contra quem você reclama?
-
-Contra a prestadora de origem, se contratou por uma credenciada: quem assina
-passa a ser usuário da operadora que tem a rede. Então olhe também a rede
-hospedeira, não só a marca. O modelo está em [o que é operadora virtual, onde
-a Resolução 777/2025 põe o cliente da credenciada como usuário da prestadora de
-origem](/blog/o-que-e-operadora-virtual), e os painéis em [como conferir a
-cobertura e a qualidade da rede hospedeira na
-Anatel](/blog/operadora-virtual-pega-bem).
-
-## Como checar uma operadora em quinze minutos
-
-1. Pegue o CNPJ na oferta ou no contrato.
-2. Confirme razão social e CNAE na consulta da Receita.
-3. Procure no Reclame Aqui pelo CNPJ, não pelo nome.
-4. Abra a aba de 12 meses e a geral, não só a de 6 meses.
-5. Olhe o índice de resposta antes do volume.
-6. Veja se a empresa aderiu ao consumidor.gov.br.
-7. Consulte o painel da Anatel pela marca e pela rede hospedeira, com o ano ao
-   lado do número.
-8. Ligue 1331 com a dúvida que sobrar.
-
-## O que eu não consegui confirmar
-
-- **Página da operadora sob outro nome, e a marca no painel da Anatel.** A busca
-  travou em 48 das 50, e não filtrei a tabela sem aceitar cookies.
-- **Se ela aderiu ao consumidor.gov.br.** A consulta exige login gov.br, e eu
-  não entrei na conta de ninguém.
-- **O site mgovbrasil.com.br na página da MOVVA S.A.** Bases de terceiros a
-  associam a um nome anterior; a ponte é inferência minha.
-- **Por que o histórico ainda exibe "Sem índice"**, de que volume a regra dos
-  50% derruba reputação, e os cortes de AR.
-- **Se a operadora é Prestadora de Pequeno Porte**, e qual norma fixa os dez
-  dias na Anatel.
-
-Onde confirmar: Reclame Aqui pelo CNPJ, manual de reputação, Resolução 765/2023,
-painéis da Anatel e 1331.
-
----
-
-Consultas feitas em 21 de outubro de 2026. A reputação no Reclame Aqui muda
-sozinha todo dia 1º: me avise se achar número diferente. Não é consultoria
-jurídica.
-
----
-
 # MOVVA, Vivo, Claro e TIM lado a lado: o que é foto do dia e o que é estrutura
 
 URL: https://movvabrasil.net/blog/movva-vivo-claro-tim
@@ -2209,6 +2013,202 @@ A escolha não é entre "virtual" e "grande". É entre um preço que você confe
 - Qual Ato do Conselho Diretor publica hoje os grupos de pequeno porte. O PGMC remete a Ato e não o nomeia; a página da Anatel cita o Ato nº 6539/2019, anterior ao PGMC de 2025, e eu não abri o Ato.
 - Se o Capítulo XII do RGST está todo em vigor nesta data. Eu li o texto como publicado no DOU de 30/04/2025; a Resolução 777/2025 tem vigência diferida e eu não conferi prorrogações de prazo posteriores.
 - Velocidade, cobertura e qualidade de sinal de qualquer uma das quatro operadoras. O chip que eu pedi em 20 de outubro de 2026 não chegou: não há medição minha nesta página, e nenhuma comparação de sinal pode sair dela.
+
+---
+
+# MOVVA no Reclame Aqui: o que existe hoje e como conferir
+
+URL: https://movvabrasil.net/blog/movva-reclame-aqui
+Publicado: 2026-10-21 · Atualizado: 2026-10-21
+Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
+
+Fontes citadas:
+- Reclame Aqui — página da empresa “Movva”: https://www.reclameaqui.com.br/empresa/movva/
+- Reclame Aqui — aba Sobre de “Movva”: https://www.reclameaqui.com.br/empresa/movva/sobre/
+- Reclame Aqui — busca por “movva”: https://www.reclameaqui.com.br/busca/?q=movva
+- Reclame Aqui — página da empresa “movvabroker”: https://www.reclameaqui.com.br/empresa/movvabroker/
+- Reclame Aqui — página da empresa “Grupo Mova”: https://www.reclameaqui.com.br/empresa/grupo-mova/
+- Reclame Aqui — Manual de Reputação (oficial): https://manual.reclameaqui.com.br/reputacao-no-reclame-aqui
+- Blog Reclame Aqui — “Sem reputação no Reclame AQUI” (22/02/2024, atualizado 24/07/2026): https://blog.reclameaqui.com.br/sem-reputacao-no-reclame-aqui/
+- Receita Federal — Consulta CNPJ (fonte oficial): https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp
+- Consulta via BrasilAPI, que espelha a base pública da Receita — CNPJ 16.896.559/0001-81: https://brasilapi.com.br/api/cnpj/v1/16896559000181
+- Consulta via BrasilAPI, que espelha a base pública da Receita — CNPJ 28.450.689/0001-75: https://brasilapi.com.br/api/cnpj/v1/28450689000175
+- Consumidor.gov.br — Senacon, página institucional (Decreto nº 8.573/2015): https://www.consumidor.gov.br/pages/conteudo/publico/5
+- Consumidor.gov.br — Como aderir (empresas): https://www.consumidor.gov.br/pages/conteudo/publico/2
+- Consumidor.gov.br — Não encontrei a empresa para registrar minha reclamação: https://www.consumidor.gov.br/pages/conteudo/publico/41
+- Anatel — Registrar reclamação (página modificada em 01/10/2026): https://www.gov.br/anatel/pt-br/consumidor/reclamacao
+- Anatel — RGC, anexo à Resolução nº 765/2023, arts. 9º, 10, 87, 89 e 90: https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765
+- Anatel — Painéis de Dados, Consumidor: https://informacoes.anatel.gov.br/paineis/consumidor
+- Anatel — Painéis de Dados, Consumidor, aba Reclamações: https://informacoes.anatel.gov.br/paineis/consumidor/reclamacoes
+- TELETIME — “Pós-pago e banda larga puxam alta de reclamações na Anatel em 2025” (19/03/2026), sobre dados da Anatel: https://teletime.com.br/19/03/2026/reclamacoes-anatel-2025/
+
+## Antes de procurar: este site não é canal de atendimento
+
+Para reclamar da MOVVA, os caminhos estão abaixo, e nenhum deles passa por
+aqui.
+
+Aqui tem método, não pedido de confiança: cada dado desta página vem com o
+endereço onde você confere sozinho, e com a data em que eu olhei. É o que
+permite a você discordar de mim sem precisar da minha permissão.
+
+## O que aparece quando você digita MOVVA no Reclame Aqui
+
+A operadora, não. Em 21/10/2026, a página reclameaqui.com.br/empresa/movva/
+exibe "Sem reputação definida", selo "Não verificada", 0 reclamações recebidas,
+0% respondidas, 0 aguardando e 0 avaliadas, no período de 01/04/2026 a
+30/09/2026, com histórico "Sem índice" nos seis meses, de abril a setembro de
+2026.
+
+Os dados cadastrais da própria página explicam por quê: CNPJ 16.896.559/0001-81,
+razão social Movva, site mgovbrasil.com.br, telefone 31813974. Nenhum é da
+operadora, cujo CNPJ é 28.450.689/0001-75.
+
+## Três empresas de nome parecido, e nenhuma é a operadora
+
+| Nome na busca | CNPJ | Atividade na base da Receita | Reputação em 21/10/2026 |
+| --- | --- | --- | --- |
+| Movva | 16.896.559/0001-81 | MOVVA S.A., consultoria em gestão, CNAE 7020-4/00, Av. Paulista 171 | Sem reputação definida |
+| movvabroker | não informado | corretora, app.movvabroker.com | Não recomendada |
+| Grupo Mova | 20.465.898/0001-80 | contact center, grupomova.com.br | Sem reputação definida |
+| MOVVA BRASIL LTDA | 28.450.689/0001-75 | telecom sem fio, CNAE 6120-5/99, Av. Paulista 1842 | sem página localizada |
+
+O telefone 11 3181-3974 da MOVVA S.A. é o da página: duas empresas, dois
+endereços na mesma avenida. E CNAE é autodeclarado, não é outorga — a
+autorização que este site cita é o Ato nº 9021, de 08/07/2026.
+
+A busca por "movva" devolveu "50 empresas e 65 reclamações", e das 48 que
+carreguei antes de a lista travar nenhuma é operadora de celular. Não falo pelas
+duas que faltaram.
+
+Nome não identifica empresa. CNPJ identifica.
+
+## Página sem reclamação é sinal de qualidade?
+
+Não. E também não é sinal de defeito: é falta de dado.
+
+O limite é de 10 avaliações, não de 10 reclamações. Sem esse mínimo, a empresa
+fica automaticamente "Sem Reputação Definida" — rótulo que substituiu "Sem
+Índice" em 21/02/2024 e que o blog oficial atribui a falta de dados, não a
+julgamento.
+
+A plataforma ainda avisa, na aba Sobre de página não verificada, que "não
+podemos assegurar que ela existe ou que é confiável" (Reclame Aqui).
+
+Nem atestado, nem acusação.
+
+## Como o Reclame Aqui calcula reputação, em português
+
+Quatro indicadores: reclamações respondidas (IR), voltaria a fazer negócio (IN),
+solução (IS) e nota do consumidor (MA). A fórmula do manual é
+AR = ((IR × 2) + (MA × 10 × 3) + (IS × 3) + (IN × 2)) / 100 — três dos quatro
+dependem de o consumidor voltar para avaliar.
+
+As abas vão de 6 meses, a padrão, até a geral, de 3 anos; as de 6 e 12 meses
+ignoram o mês vigente, e a nota muda sozinha todo dia 1º.
+
+O RA1000 exige 50 avaliações, IR e IS de 90%, nota 7, IN de 70% e auditoria. Na
+outra ponta, "Em Análise" e "Reputação Suspensa" vão de 30 a 90 dias.
+
+## O caso movvabroker mostra a regra ao contrário
+
+A página movvabroker, segundo resultado da busca, está "NÃO RECOMENDADA": 10
+reclamações, 0% respondidas, 9 aguardando e 1 avaliada, com aviso de menos de
+50% respondidas. Tratam de saque retido em corretora, não de telefonia.
+
+O manual diz que responder a menos da metade já põe a empresa como "Não
+Recomendada", mesmo abaixo de 10 avaliações. Mas o Grupo Mova, com 1 reclamação
+e 0% de resposta, segue "Sem reputação definida": há um volume mínimo que o
+manual não mostra.
+
+Duas lições: nota de homônimo não diz nada sobre a operadora, e silêncio pesa
+mais do que volume.
+
+## Por que, em telecom, a agência diz mais
+
+O consumidor.gov.br é público e gratuito, da Senacon, institucionalizado pelo
+Decreto nº 8.573/2015. A adesão é voluntária, e quem adere se compromete a
+responder em até 10 dias. Sem cadastro não dá para reclamar ali: sobram Procon,
+Defensoria e Juizado, e dá para sugerir o cadastro pelo CNPJ.
+
+Na Anatel há o 1331, gratuito em dias úteis das 8h às 20h, o Anatel Consumidor e
+o Painel de Dados do Consumidor, com registros desde 2015 e organizado também
+pela dimensão "Marca" — então marca pequena aparece nominalmente.
+
+Escala, de fonte secundária: o TELETIME noticiou em 19/03/2026, sobre dados da
+Anatel, cerca de 1,35 milhão de casos em 2025, 490 mil no pós-pago. Plataforma
+privada não tem poder de fiscalizar, prazo em norma nem base aberta.
+
+## Qual é o caminho que a norma manda seguir?
+
+Protocolo, prestadora, ouvidoria, Anatel — com o recorte de porte colado em cada
+degrau.
+
+| Degrau | Prazo | RGC | Na lista do art. 90? |
+| --- | --- | --- | --- |
+| Protocolo no atendimento | imediato | art. 9º, caput e I | Sim |
+| Reclamação na prestadora | 7 dias corridos | art. 10, caput | Sim |
+| Ouvidoria | 10 dias corridos | art. 87, § 7º | Não aparece |
+| Levar à Anatel | remetido a Portaria | art. 89 | Não aparece |
+
+Quatro prazos de dez dias convivem sem se confundir: a solicitação ou o pedido
+de informação que a própria operadora não atende de imediato (art. 10, § 1º, que
+está na lista do art. 90), a ouvidoria, o que a Anatel afirma para a operadora
+responder reclamação encaminhada pela agência, e o do consumidor.gov.br.
+Reclamação direto na operadora é outra coisa: 7 dias.
+
+A ressalva pesa aqui: pela lista do art. 90, nas duas versões que a página da
+Anatel exibe, os arts. 9º e 10 alcançam Prestadora de Pequeno Porte e os
+arts. 87 e 89 não. Protocolo e os 7 dias você cobra; ouvidoria em 10 dias e ida
+direta à agência, não dá para prometer. É o mesmo recorte do [post sobre
+fidelidade, em que o art. 90 define quais regras do RGC alcançam prestadora de
+pequeno porte](/blog/operadora-sem-fidelidade). E porte na Receita é tributário,
+não a Prestadora de Pequeno Porte da Anatel, que vai por acessos.
+
+Aqui é site de distribuidor independente, não canal de atendimento.
+
+## Em operadora virtual, contra quem você reclama?
+
+Contra a prestadora de origem, se contratou por uma credenciada: quem assina
+passa a ser usuário da operadora que tem a rede. Então olhe também a rede
+hospedeira, não só a marca. O modelo está em [o que é operadora virtual, onde
+a Resolução 777/2025 põe o cliente da credenciada como usuário da prestadora de
+origem](/blog/o-que-e-operadora-virtual), e os painéis em [como conferir a
+cobertura e a qualidade da rede hospedeira na
+Anatel](/blog/operadora-virtual-pega-bem).
+
+## Como checar uma operadora em quinze minutos
+
+1. Pegue o CNPJ na oferta ou no contrato.
+2. Confirme razão social e CNAE na consulta da Receita.
+3. Procure no Reclame Aqui pelo CNPJ, não pelo nome.
+4. Abra a aba de 12 meses e a geral, não só a de 6 meses.
+5. Olhe o índice de resposta antes do volume.
+6. Veja se a empresa aderiu ao consumidor.gov.br.
+7. Consulte o painel da Anatel pela marca e pela rede hospedeira, com o ano ao
+   lado do número.
+8. Ligue 1331 com a dúvida que sobrar.
+
+## O que eu não consegui confirmar
+
+- **Página da operadora sob outro nome, e a marca no painel da Anatel.** A busca
+  travou em 48 das 50, e não filtrei a tabela sem aceitar cookies.
+- **Se ela aderiu ao consumidor.gov.br.** A consulta exige login gov.br, e eu
+  não entrei na conta de ninguém.
+- **O site mgovbrasil.com.br na página da MOVVA S.A.** Bases de terceiros a
+  associam a um nome anterior; a ponte é inferência minha.
+- **Por que o histórico ainda exibe "Sem índice"**, de que volume a regra dos
+  50% derruba reputação, e os cortes de AR.
+- **Se a operadora é Prestadora de Pequeno Porte**, e qual norma fixa os dez
+  dias na Anatel.
+
+Onde confirmar: Reclame Aqui pelo CNPJ, manual de reputação, Resolução 765/2023,
+painéis da Anatel e 1331.
+
+---
+
+Consultas feitas em 21 de outubro de 2026. A reputação no Reclame Aqui muda
+sozinha todo dia 1º: me avise se achar número diferente. Não é consultoria
+jurídica.
 
 ---
 
@@ -3093,179 +3093,6 @@ Não é consultoria jurídica.
 
 ---
 
-# O que é operadora virtual (MVNO) e como funciona no Brasil
-
-URL: https://movvabrasil.net/blog/o-que-e-operadora-virtual
-Publicado: 2026-10-20 · Atualizado: 2026-10-21
-Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
-
-Fontes citadas:
-- Anatel — MVNO (Regulado > Outorga > Telefonia Móvel): https://www.gov.br/anatel/pt-br/regulado/outorga/telefonia-movel/mvno
-- Anatel — Glossário do Setor de Telecomunicações, Anexo da Resolução nº 779, de 28/04/2025 (Prestadora Origem, art. 1º, CCCLXVIII): https://www.in.gov.br/web/dou/-/resolucao-anatel-n-779-de-28-de-abril-de-2025-626968487
-- Anatel — Resolução nº 777, de 28 de abril de 2025 (RGST): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
-- Anatel — Resolução nº 550, de 22 de novembro de 2010 (REVOGADA): https://informacoes.anatel.gov.br/legislacao/resolucoes/2010/46-resolucao-550
-- Anatel — Autorizações do Serviço Móvel Pessoal (SMP): https://www.gov.br/anatel/pt-br/regulado/outorga/telefonia-movel/autorizacoes-do-servico-movel-pessoal-smp
-- Anatel — Relatório de Monitoramento da Competição 3T2026: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/7c9e49beaaddf69df55fdb9b6dda5de7
-- Anatel — Relatório de Monitoramento da Competição 2T2026: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623
-- Anatel — Relatório de Monitoramento da Competição 4T2025: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/1cfc42a043dff9acb4d65c912a2d7bdb
-- Anatel — Relatório de Monitoramento da Competição 2T2025: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/44aaef993685036f18cab2ea0b4561e2
-- Anatel — Relatórios de Competição e painéis de dados: https://www.gov.br/anatel/pt-br/regulado/competicao/relatorios-de-competicao
-- TeleSíntese — Anatel revela acessos das MVNOs credenciadas (19/06/2026): https://telesintese.com.br/apos-disputa-com-claro-anatel-revela-acessos-das-mvnos-credenciadas-no-brasil/
-
-## O que é uma operadora virtual?
-
-É uma empresa que vende serviço de celular usando a rede de outra. MVNO vem de
-Mobile Virtual Network Operator.
-
-"Virtual" não quer dizer digital, nem pequena: quer dizer que a rede não é dela.
-Ela opera, por contrato, sobre a infraestrutura da prestadora de origem — que o
-Glossário da Anatel define como a autorizada do SMP com quem a credenciada ou a
-autorizada de rede virtual tem relação para explorar o SMP por meio de rede
-virtual (Anexo da Resolução 779/2025, art. 1º, CCCLXVIII).
-
-Na prática a origem costuma ser dona de rede, mas a norma não exige isso: o
-RGST, art. 258, admite que uma autorizada de rede virtual seja prestadora de
-origem de credenciados na mesma região geográfica — só não pode ser origem de
-outras autorizadas de rede virtual. Quem carrega a sua linha é a origem; quem
-tem antena e espectro é uma pergunta à parte, e vale fazer por escrito.
-
-## Quais são os dois modelos no Brasil?
-
-A exploração do Serviço Móvel Pessoal (SMP) por rede virtual é regulada pela
-Resolução 777/2025 da Anatel, no Capítulo XII, que prevê duas formas:
-credenciamento e autorização. Atenção: a 777/2025 não é norma de MVNO — ela
-aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST), e o capítulo
-de rede virtual está no Título IV.
-
-Na **credenciada**, a empresa representa a prestadora de origem e usa as ofertas
-e a numeração dela — não tem faixa própria (Art. 221). A eficácia do contrato de
-representação depende de homologação pela Anatel.
-
-Na **autorizada**, a empresa tem outorga própria e é prestadora autorizada de
-SMP, com as obrigações disso. Precisa de contrato de compartilhamento de rede
-sempre vigente com uma prestadora de origem, e pode ter mais de um na mesma área
-de registro (Arts. 239, 241 e 244). Ainda assim não detém espectro.
-
-A Resolução 550/2010, que quase todo resumo de MVNO ainda cita, está revogada. A
-página da Anatel marca o título como REVOGADA e aponta a revogação pela 777, de
-28/04/2025.
-
-## De quem você é cliente, afinal?
-
-Da prestadora de origem, se contratou por uma credenciada. É o Art. 237, o ponto
-mais importante do modelo para o consumidor: a relação formal de usuário do SMP
-é com a prestadora de origem, não com a marca que vendeu.
-
-Isso não dilui responsabilidade: a existência de um credenciado não desobriga a
-prestadora de origem do que ela assumiu, e a qualidade do serviço dela deve ser
-mantida quando atua por credenciados (Arts. 236 e 225).
-
-## O que ela controla, e o que não
-
-| Controla | Não controla |
-| --- | --- |
-| Marca e canal de venda | Espectro e antenas |
-| Atendimento comercial | Licenciamento das rádio base |
-| Empacotamento e serviços agregados | Numeração, no credenciamento (Art. 221) |
-| Preço, no que o contrato permite | Qualidade da rede (Arts. 225 e 236) |
-
-## Por que os números de MVNO divergem
-
-Os acessos das credenciadas apurados pela Anatel são computados às respectivas
-prestadoras de origem, não ao segmento de MVNO. Por isso os relatórios de
-competição tratam só das autorizadas, e qualquer total que junte os dois grupos
-precisa dizer qual critério usou.
-
-## Qual é o tamanho desse mercado?
-
-Pequeno, e crescendo rápido.
-
-| Indicador | Valor | Período |
-| --- | --- | --- |
-| Autorizadas | 13,1 milhões de acessos | 3T2026 (preliminar) |
-| Autorizadas | 11,31 milhões | 2T2026 |
-| Autorizadas | 9,5 milhões, ou 3,5% do SMP | fim de 2025 |
-| Autorizadas | 7.895.212, ou 3% do mercado | 2T2025 |
-| Autorizadas | 1,40 milhão | 2021 |
-| Mercado móvel total | 280,5 milhões | 3T2026 (preliminar) |
-
-Os números do 3T2026 são preliminares, apurados com dados de agosto de 2026, e o
-relatório avisa que serão atualizados. E o último percentual que a Anatel
-publicou para as autorizadas é 3,5%, de 2025: dividir 13,1 por 280,5 dá cerca de
-4,7%, mas essa conta é minha, não da agência.
-
-As autorizadas com atuação nacional no 3T2026 são 11: 1nce, Airnity Brasil, BBS
-Options Celular, Connect IoT Solutions, Datora, Emnify Brasil, Next Level
-Telecom, Surf Telecom, Telecall, Transatel Brasil e Vero.
-
-## Por que operadoras virtuais existem?
-
-Por economia de infraestrutura, dos dois lados: quem entra não compra espectro
-nem constrói rede, e quem hospeda vende capacidade ociosa no atacado.
-
-A Anatel, porém, avalia o arranjo com reservas explícitas: o negócio das MVNOs
-depende estruturalmente do acesso às redes de quem detém espectro, o poder de
-barganha delas é limitado, e o grupo faz pressão concorrencial pontual sem
-alterar a estrutura concentrada do mercado. A contribuição mais relevante aparece
-em nichos: IoT, corporativo e regional.
-
-A agência regula o modelo, homologa o contrato de credenciamento, outorga a
-autorização e publica os dados. Quem recebe pedido de compartilhamento de rede
-tem 60 dias corridos para responder e justificar recusa (Arts. 253 e 254). O que
-ela não faz: garantir preço ou qualidade comercial de quem revende.
-
-## Como verificar antes de assinar
-
-No credenciamento, as ofertas ao usuário são da prestadora de origem, e a norma
-exige que a oferta traga claramente o nome do credenciado e o da prestadora de
-origem (Art. 223, caput e § 2º).
-
-Daí sai um teste de dez segundos: se a oferta não diz em qual rede roda, está
-fora da regra. Vale para qualquer marca, inclusive as que este site divulga.
-
-Procure também a empresa no painel de outorga e licenciamento da Anatel, que
-desde junho de 2026 mostra os acessos de cada credenciada — o Conselho Diretor
-negou o pedido de sigilo da Claro. E, se vai levar o número, veja antes [como
-funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
-
-## O que eu não consegui confirmar
-
-- **Quantas credenciadas existem.** O dado mais recente que localizei é de abril
-  de 2026, 267 registros, via reportagem que cita o painel; o total do grupo não
-  saiu.
-- **A rede por trás de cada operadora virtual de consumo.** Confirmei Correios
-  Celular na Surf e NuCel na Claro em veículos de telecom, não em documento da
-  Anatel.
-- **Por que a contagem de autorizadas varia:** 14 no 2T2025, 11 no 3T2026, 17 na
-  Teleco em março de 2026. Parece metodologia, mas não achei documento da
-  agência.
-- **Se todo o Capítulo XII já está em vigor.** Dois acórdãos de 2025 prorrogaram
-  prazos de alguns artigos, e não verifiquei quais.
-- **Em qual modelo a MOVVA Brasil opera.** Não está entre as 11 autorizadas, o
-  que é esperado se for credenciada, mas não abri o painel de credenciadas.
-
-Onde confirmar: painel de outorga e licenciamento, painel de acessos
-(informacoes.anatel.gov.br/paineis/acessos/ranking) e o texto da Resolução
-777/2025.
-
-## O que isso muda na sua escolha
-
-Saber o modelo troca a pergunta. Em vez de "essa operadora é boa?", pergunte em
-qual rede ela roda, porque é dessa rede que vêm cobertura e sinal. Depois, quem
-responde por você. Só então preço e franquia, que é onde a virtual decide de
-fato.
-
-Quando uma dessas informações não aparece na oferta, isso já é uma resposta.
-
----
-
-Nota de transparência: este site é mantido por um distribuidor independente da
-MOVVA Brasil Ltda. Não é canal oficial da empresa. Nada aqui descreve
-característica de produto da MOVVA, e número de setor não é promessa de nada.
-Fontes da Anatel verificadas em 20/10/2026.
-
----
-
 # Plano de celular sem fidelidade: o que a regra garante
 
 URL: https://movvabrasil.net/blog/operadora-sem-fidelidade
@@ -3444,6 +3271,179 @@ MOVVA Brasil Ltda e não é canal oficial da empresa. Nada aqui descreve
 característica de produto da MOVVA — é regulação que vale para qualquer
 operadora. Páginas da Anatel verificadas em 20/10/2026. Não é consultoria
 jurídica.
+
+---
+
+# O que é operadora virtual (MVNO) e como funciona no Brasil
+
+URL: https://movvabrasil.net/blog/o-que-e-operadora-virtual
+Publicado: 2026-10-20 · Atualizado: 2026-10-21
+Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
+
+Fontes citadas:
+- Anatel — MVNO (Regulado > Outorga > Telefonia Móvel): https://www.gov.br/anatel/pt-br/regulado/outorga/telefonia-movel/mvno
+- Anatel — Glossário do Setor de Telecomunicações, Anexo da Resolução nº 779, de 28/04/2025 (Prestadora Origem, art. 1º, CCCLXVIII): https://www.in.gov.br/web/dou/-/resolucao-anatel-n-779-de-28-de-abril-de-2025-626968487
+- Anatel — Resolução nº 777, de 28 de abril de 2025 (RGST): https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777
+- Anatel — Resolução nº 550, de 22 de novembro de 2010 (REVOGADA): https://informacoes.anatel.gov.br/legislacao/resolucoes/2010/46-resolucao-550
+- Anatel — Autorizações do Serviço Móvel Pessoal (SMP): https://www.gov.br/anatel/pt-br/regulado/outorga/telefonia-movel/autorizacoes-do-servico-movel-pessoal-smp
+- Anatel — Relatório de Monitoramento da Competição 3T2026: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/7c9e49beaaddf69df55fdb9b6dda5de7
+- Anatel — Relatório de Monitoramento da Competição 2T2026: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/5262bda77a6a328d1851f1bb29d60623
+- Anatel — Relatório de Monitoramento da Competição 4T2025: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/1cfc42a043dff9acb4d65c912a2d7bdb
+- Anatel — Relatório de Monitoramento da Competição 2T2025: https://sistemas.anatel.gov.br/anexar-api/publico/anexos/download/44aaef993685036f18cab2ea0b4561e2
+- Anatel — Relatórios de Competição e painéis de dados: https://www.gov.br/anatel/pt-br/regulado/competicao/relatorios-de-competicao
+- TeleSíntese — Anatel revela acessos das MVNOs credenciadas (19/06/2026): https://telesintese.com.br/apos-disputa-com-claro-anatel-revela-acessos-das-mvnos-credenciadas-no-brasil/
+
+## O que é uma operadora virtual?
+
+É uma empresa que vende serviço de celular usando a rede de outra. MVNO vem de
+Mobile Virtual Network Operator.
+
+"Virtual" não quer dizer digital, nem pequena: quer dizer que a rede não é dela.
+Ela opera, por contrato, sobre a infraestrutura da prestadora de origem — que o
+Glossário da Anatel define como a autorizada do SMP com quem a credenciada ou a
+autorizada de rede virtual tem relação para explorar o SMP por meio de rede
+virtual (Anexo da Resolução 779/2025, art. 1º, CCCLXVIII).
+
+Na prática a origem costuma ser dona de rede, mas a norma não exige isso: o
+RGST, art. 258, admite que uma autorizada de rede virtual seja prestadora de
+origem de credenciados na mesma região geográfica — só não pode ser origem de
+outras autorizadas de rede virtual. Quem carrega a sua linha é a origem; quem
+tem antena e espectro é uma pergunta à parte, e vale fazer por escrito.
+
+## Quais são os dois modelos no Brasil?
+
+A exploração do Serviço Móvel Pessoal (SMP) por rede virtual é regulada pela
+Resolução 777/2025 da Anatel, no Capítulo XII, que prevê duas formas:
+credenciamento e autorização. Atenção: a 777/2025 não é norma de MVNO — ela
+aprova o Regulamento Geral dos Serviços de Telecomunicações (RGST), e o capítulo
+de rede virtual está no Título IV.
+
+Na **credenciada**, a empresa representa a prestadora de origem e usa as ofertas
+e a numeração dela — não tem faixa própria (Art. 221). A eficácia do contrato de
+representação depende de homologação pela Anatel.
+
+Na **autorizada**, a empresa tem outorga própria e é prestadora autorizada de
+SMP, com as obrigações disso. Precisa de contrato de compartilhamento de rede
+sempre vigente com uma prestadora de origem, e pode ter mais de um na mesma área
+de registro (Arts. 239, 241 e 244). Ainda assim não detém espectro.
+
+A Resolução 550/2010, que quase todo resumo de MVNO ainda cita, está revogada. A
+página da Anatel marca o título como REVOGADA e aponta a revogação pela 777, de
+28/04/2025.
+
+## De quem você é cliente, afinal?
+
+Da prestadora de origem, se contratou por uma credenciada. É o Art. 237, o ponto
+mais importante do modelo para o consumidor: a relação formal de usuário do SMP
+é com a prestadora de origem, não com a marca que vendeu.
+
+Isso não dilui responsabilidade: a existência de um credenciado não desobriga a
+prestadora de origem do que ela assumiu, e a qualidade do serviço dela deve ser
+mantida quando atua por credenciados (Arts. 236 e 225).
+
+## O que ela controla, e o que não
+
+| Controla | Não controla |
+| --- | --- |
+| Marca e canal de venda | Espectro e antenas |
+| Atendimento comercial | Licenciamento das rádio base |
+| Empacotamento e serviços agregados | Numeração, no credenciamento (Art. 221) |
+| Preço, no que o contrato permite | Qualidade da rede (Arts. 225 e 236) |
+
+## Por que os números de MVNO divergem
+
+Os acessos das credenciadas apurados pela Anatel são computados às respectivas
+prestadoras de origem, não ao segmento de MVNO. Por isso os relatórios de
+competição tratam só das autorizadas, e qualquer total que junte os dois grupos
+precisa dizer qual critério usou.
+
+## Qual é o tamanho desse mercado?
+
+Pequeno, e crescendo rápido.
+
+| Indicador | Valor | Período |
+| --- | --- | --- |
+| Autorizadas | 13,1 milhões de acessos | 3T2026 (preliminar) |
+| Autorizadas | 11,31 milhões | 2T2026 |
+| Autorizadas | 9,5 milhões, ou 3,5% do SMP | fim de 2025 |
+| Autorizadas | 7.895.212, ou 3% do mercado | 2T2025 |
+| Autorizadas | 1,40 milhão | 2021 |
+| Mercado móvel total | 280,5 milhões | 3T2026 (preliminar) |
+
+Os números do 3T2026 são preliminares, apurados com dados de agosto de 2026, e o
+relatório avisa que serão atualizados. E o último percentual que a Anatel
+publicou para as autorizadas é 3,5%, de 2025: dividir 13,1 por 280,5 dá cerca de
+4,7%, mas essa conta é minha, não da agência.
+
+As autorizadas com atuação nacional no 3T2026 são 11: 1nce, Airnity Brasil, BBS
+Options Celular, Connect IoT Solutions, Datora, Emnify Brasil, Next Level
+Telecom, Surf Telecom, Telecall, Transatel Brasil e Vero.
+
+## Por que operadoras virtuais existem?
+
+Por economia de infraestrutura, dos dois lados: quem entra não compra espectro
+nem constrói rede, e quem hospeda vende capacidade ociosa no atacado.
+
+A Anatel, porém, avalia o arranjo com reservas explícitas: o negócio das MVNOs
+depende estruturalmente do acesso às redes de quem detém espectro, o poder de
+barganha delas é limitado, e o grupo faz pressão concorrencial pontual sem
+alterar a estrutura concentrada do mercado. A contribuição mais relevante aparece
+em nichos: IoT, corporativo e regional.
+
+A agência regula o modelo, homologa o contrato de credenciamento, outorga a
+autorização e publica os dados. Quem recebe pedido de compartilhamento de rede
+tem 60 dias corridos para responder e justificar recusa (Arts. 253 e 254). O que
+ela não faz: garantir preço ou qualidade comercial de quem revende.
+
+## Como verificar antes de assinar
+
+No credenciamento, as ofertas ao usuário são da prestadora de origem, e a norma
+exige que a oferta traga claramente o nome do credenciado e o da prestadora de
+origem (Art. 223, caput e § 2º).
+
+Daí sai um teste de dez segundos: se a oferta não diz em qual rede roda, está
+fora da regra. Vale para qualquer marca, inclusive as que este site divulga.
+
+Procure também a empresa no painel de outorga e licenciamento da Anatel, que
+desde junho de 2026 mostra os acessos de cada credenciada — o Conselho Diretor
+negou o pedido de sigilo da Claro. E, se vai levar o número, veja antes [como
+funciona a portabilidade](/blog/portabilidade-sem-perder-o-numero).
+
+## O que eu não consegui confirmar
+
+- **Quantas credenciadas existem.** O dado mais recente que localizei é de abril
+  de 2026, 267 registros, via reportagem que cita o painel; o total do grupo não
+  saiu.
+- **A rede por trás de cada operadora virtual de consumo.** Confirmei Correios
+  Celular na Surf e NuCel na Claro em veículos de telecom, não em documento da
+  Anatel.
+- **Por que a contagem de autorizadas varia:** 14 no 2T2025, 11 no 3T2026, 17 na
+  Teleco em março de 2026. Parece metodologia, mas não achei documento da
+  agência.
+- **Se todo o Capítulo XII já está em vigor.** Dois acórdãos de 2025 prorrogaram
+  prazos de alguns artigos, e não verifiquei quais.
+- **Em qual modelo a MOVVA Brasil opera.** Não está entre as 11 autorizadas, o
+  que é esperado se for credenciada, mas não abri o painel de credenciadas.
+
+Onde confirmar: painel de outorga e licenciamento, painel de acessos
+(informacoes.anatel.gov.br/paineis/acessos/ranking) e o texto da Resolução
+777/2025.
+
+## O que isso muda na sua escolha
+
+Saber o modelo troca a pergunta. Em vez de "essa operadora é boa?", pergunte em
+qual rede ela roda, porque é dessa rede que vêm cobertura e sinal. Depois, quem
+responde por você. Só então preço e franquia, que é onde a virtual decide de
+fato.
+
+Quando uma dessas informações não aparece na oferta, isso já é uma resposta.
+
+---
+
+Nota de transparência: este site é mantido por um distribuidor independente da
+MOVVA Brasil Ltda. Não é canal oficial da empresa. Nada aqui descreve
+característica de produto da MOVVA, e número de setor não é promessa de nada.
+Fontes da Anatel verificadas em 20/10/2026.
 
 ---
 
