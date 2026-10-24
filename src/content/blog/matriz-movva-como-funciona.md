@@ -163,8 +163,11 @@ mínimo três diretos ativos e seja VIP.
 A Lei 1.521/51, no art. 2º, inciso IX, trata como crime contra a economia
 popular obter ou tentar obter ganhos ilícitos **em detrimento do povo ou de
 número indeterminado de pessoas**, **mediante especulações ou processos
-fraudulentos** — e nomeia, entre eles, "bola de neve", "cadeias" e
-"pichardismo".
+fraudulentos** — e fecha a lista assim: "bola de neve", "cadeias",
+"pichardismo" **e quaisquer outros equivalentes**.
+
+Essa última expressão importa: não adianta o esquema não se chamar bola de
+neve. O que conta é o funcionamento, não o nome.
 
 Os dois elementos em destaque não são detalhe: é o que separa o tipo penal de
 qualquer negócio que simplesmente dê prejuízo.

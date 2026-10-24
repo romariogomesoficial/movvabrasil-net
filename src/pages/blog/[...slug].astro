@@ -160,6 +160,21 @@ const fmt = (d) =>
   .prosa :global(h3) { margin-top: 0.6rem; }
   .prosa :global(ul), .prosa :global(ol) { padding-left: 1.2rem; }
 
+  /* Citação em bloco: é o documento falando, e tem de parecer. Este site vive
+     de separar o que a fonte diz do que eu digo, e a citação literal é a forma
+     mais forte dessa separação — se ela sai com a aparência de parágrafo
+     recuado, que é o padrão do navegador, a distinção se perde justamente onde
+     ela mais importa. A barra à esquerda é a mesma linguagem que o resto do
+     site usa para "isto vem de outro lugar". */
+  .prosa :global(blockquote) {
+    margin: 0;
+    padding: 0.2rem 0 0.2rem 1.1rem;
+    border-left: 3px solid var(--borda-verde);
+    color: var(--ink);
+  }
+  .prosa :global(blockquote p) { margin: 0; }
+  .prosa :global(blockquote p + p) { margin-top: 0.6rem; }
+
   /* Tabelas dentro do texto: a largura é do conteúdo, e número é dado.
 
      O `min-width: 0` NÃO É DECORAÇÃO, não tire. A regra global de tabela, em
