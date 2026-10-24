@@ -133,6 +133,17 @@ A pergunta 4 desta página, aplicada a mim, dá **zero**. A linha que deveria
 sustentar a tese do negócio — ganhar quando alguém paga a conta de celular,
 mês após mês — nunca teve um lançamento em três meses e meio.
 
+E agora a parte que enfraquece o meu próprio argumento, e que você deveria
+exigir de qualquer um que te mostre um extrato: **a minha medição não é
+limpa**. Desses três meses e meio, passei dois — agosto e setembro — com a
+minha mensalidade de R$ 79,90 sem pagar, e a ativação do meu chip só foi
+aprovada em 20 de outubro, o último dia do período. O material da empresa diz
+que quem não está ativo não recebe.
+
+Então o zero é real e eu não sei ainda o que ele prova. Essa distinção é a
+diferença entre um extrato que informa e um extrato que serve de prova para o
+que o dono dele já queria dizer — nos dois sentidos.
+
 E aqui vale um aviso que vale para **qualquer** empresa, não só para esta: o
 painel da MOVVA classifica R$ 78,02 do meu extrato como "Bônus Recorrência" —
 53% do total. Olhando só o rótulo, parece que a recorrência funciona. Abrindo

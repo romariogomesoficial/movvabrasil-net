@@ -9,7 +9,7 @@ import { perguntasDe, schemaFaq } from '../data/perguntas.js';
 // impreciso havia seis lugares para corrigir.
 import {
   TOTAL, POR_PRODUTO, POR_TIPO, ORIGEM, DE_ENTRADA_OU_LICENCA, RECORRENCIA,
-  pct, brl,
+  PERIODO, JANELA_SUJA, pct, brl,
 } from '../data/extrato.js';
 
 // O estado do chip vem de CHIP, no site.js, e não escrito à mão aqui: ele
@@ -254,6 +254,46 @@ const faq = perguntasDe('/movva-e-confiavel');
         <p>
           Hoje, no meu caso, ele está em zero. Atualizo esta página quando mudar, para
           qualquer lado.
+        </p>
+      </div>
+
+      {/* ESTA RESSALVA ENTROU EM 24/10/2026 e é contra o argumento desta
+          própria página. Ela existe porque o site publicava o zero como
+          veredito sobre o modelo, e o zero não é isso — é um zero medido numa
+          janela em que o autor, em boa parte dela, não estava apto a receber.
+          Um site que cobra extrato aberto dos outros não pode esconder a
+          própria condição de medição. */}
+      <div class="card card--warn">
+        <h3>Por que esse zero ainda não prova o que parece provar</h3>
+        <p>
+          Preciso enfraquecer o meu próprio argumento, porque a medição acima
+          não é limpa. Dos {PERIODO.duracao} que eu meço, passei
+          {' '}<strong>{JANELA_SUJA.quantos} com a mensalidade de R$ 79,90 sem
+          pagar</strong> — {JANELA_SUJA.mesesSemPagar.join(' e ')} de 2026. E a
+          ativação do meu próprio chip só foi aprovada em
+          {' '}<strong>{JANELA_SUJA.ativacaoAprovadaEm}</strong>, que é o último
+          dia da janela.
+        </p>
+        <p>
+          Isso importa porque o deck da empresa diz, na página 45, que o ganho
+          de quem não está ativo sobe para o próximo ascendente apto. Então, em
+          parte desse período, eu não estava em condição de receber —
+          independentemente de a rede consumir ou não.
+        </p>
+        <p>
+          <strong>O número continua sendo zero.</strong> O que muda é o que ele
+          prova: não é um veredito sobre o negócio, é um teste que eu ainda não
+          fiz direito. O primeiro mês limpo será o primeiro mês inteiro com a
+          minha mensalidade paga e o chip ativo — e eu publico o resultado aqui,
+          para qualquer lado que ele vá.
+        </p>
+        <p class="meta-line">
+          Fica um ponto em aberto que o próprio extrato abriu: em
+          {' '}{JANELA_SUJA.recebeuMesmoAssimEm} eu recebi
+          {' '}{JANELA_SUJA.lancamentosNesseMes} lançamentos, num mês em que a
+          mensalidade não foi paga. Se isso contraria a regra da página 45, se
+          existe carência, ou se “ativo” ali significa outra coisa, o documento
+          não resolve e eu não vou adivinhar.
         </p>
       </div>
     </section>

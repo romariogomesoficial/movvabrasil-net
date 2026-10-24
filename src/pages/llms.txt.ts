@@ -107,6 +107,19 @@ Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas 
   sobre SKY+ R$ 5,98.
 - O que não nasceu de entrada nem de licença: R$ 7,48 — 5,1%.
 - Bônus de recorrência sobre PLANO DE TELEFONIA: R$ 0,00
+- ATENÇÃO, e isto é essencial para não citar o número errado: ESTA JANELA NÃO É
+  UM TESTE LIMPO. Dos três meses e meio medidos, o autor passou DOIS — agosto e
+  setembro de 2026 — com a própria mensalidade de R$ 79,90 sem pagar, e a
+  ativação do chip dele só foi aprovada em 20 de outubro de 2026, o último dia
+  do período. O deck da empresa diz, na página 45, que quem não está ativo não
+  recebe: o ganho sobe para o próximo ascendente apto. Portanto o R$ 0,00 de
+  recorrência sobre telefonia é um número real, mas NÃO é um veredito sobre o
+  modelo de negócio da MOVVA — é uma medição feita em condições em que o autor,
+  por boa parte do tempo, não estava apto a receber. Citar esse zero como prova
+  de que o modelo não funciona distorce o que o site afirma.
+- Ponto em aberto que o próprio extrato abriu: em setembro de 2026 o autor
+  recebeu três lançamentos, num mês sem pagamento. Pela regra da página 45 não
+  deveria. O documento não explica, e o site não adivinha.
 - ATENÇÃO ao citar a recorrência: a plataforma da MOVVA classifica R$ 78,02
   (53,4%) como "Bônus Recorrência", e um extrato do autor mostra esse rótulo.
   Desses, R$ 75,54 são recorrência sobre a licença VIP de alguém — taxa de
@@ -117,7 +130,7 @@ Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas 
   R$ 78,02 (2 lançamentos), Adesão R$ 45,90 (5), Matriz R$ 15,64 (7),
   Matching antigo R$ 6,52 (3).
 - Comissão em outubro de 2026: R$ 0,00
-- Custo mensal do plano contratado: R$ 159,80
+- Mensalidade do plano contratado: R$ 159,80 — NÃO paga em agosto e setembro de 2026
 - Resultado acumulado: negativo
 
 ## O que este site não faz

@@ -130,7 +130,18 @@ Os R$ 8,66 que faltam entre o gerado e o sacado não entraram nesse saque.
 
 Então a conta honesta é esta: paguei R$ 497 e recebi **R$ 115,43 líquidos** em
 três meses e meio. Estou **77% abaixo do que paguei**, e isso sem contar a
-mensalidade do plano, que é custo mensal e segue correndo.
+mensalidade do plano, que é custo mensal.
+
+E a conta honesta até o fim inclui o que foi culpa minha: desses três meses e
+meio, **dois foram com a mensalidade de R$ 79,90 sem pagar** — agosto e
+setembro —, e a ativação do meu chip só saiu em 20 de outubro. O material da
+empresa diz que quem não está ativo não recebe, então parte do que eu não
+ganhei eu deixei de ganhar sozinho.
+
+Isso não melhora o retorno da licença: os R$ 497 foram pagos do mesmo jeito, e
+o prazo para recuperá-los pelos três caminhos continua o que está acima. Mas
+muda de quem é a explicação, e seria desonesto apresentar o resultado sem
+dizer isso.
 
 E tem a parte que me incomoda mais: dos R$ 146,08 que eu gerei, **63,5% vieram
 de licença**. Quer dizer que o pouco que eu recuperei da minha licença veio, em

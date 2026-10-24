@@ -119,7 +119,7 @@ export const PERGUNTAS = [
     paginas: ['/oportunidade', '/movva-e-confiavel'],
     tema: 'O programa de afiliados',
     p: 'Quanto se ganha na MOVVA?',
-    r: 'Não existe ganho garantido. Nos meus primeiros três meses e meio como afiliado VIP, com oito pessoas na rede, eu gerei R$ 146,08 em comissões. Saquei R$ 137,42 em 13 de agosto, meu único saque, e a taxa de 16% sobre esse saque — R$ 21,99 — deixou R$ 115,43 líquidos. Em outubro meu ganho foi R$ 0,00, contra R$ 159,80 por mês que eu pago de plano — o dobro do Liberty de 25 GB, e eu não abri a minha fatura para dizer o que esse valor cobre. Desconfie de qualquer número de projeção baseado em matriz cheia.',
+    r: 'Não existe ganho garantido. Nos meus primeiros três meses e meio como afiliado VIP, com oito pessoas na rede, eu gerei R$ 146,08 em comissões. Saquei R$ 137,42 em 13 de agosto, meu único saque, e a taxa de 16% sobre esse saque — R$ 21,99 — deixou R$ 115,43 líquidos. Em outubro meu ganho foi R$ 0,00. E leia isso sabendo que a medição não é limpa: nesses três meses e meio eu passei dois, agosto e setembro, com a mensalidade sem pagar, e a ativação do meu chip só saiu em 20 de outubro — e o deck diz que quem não está ativo não recebe. Desconfie de qualquer número de projeção baseado em matriz cheia, e desconfie também de extrato apresentado sem as condições em que foi medido, inclusive o meu.',
   },
   {
     paginas: ['/oportunidade', '/movva-e-confiavel'],

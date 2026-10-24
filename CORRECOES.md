@@ -53,6 +53,57 @@ lugares para corrigir — exatamente o arranjo que produziu os defeitos de 22 e
 23/10. O módulo não guarda nome de ninguém da rede: quem gerou cada lançamento
 é dado de terceiro, e o que importa publicamente é a origem do dinheiro.
 
+### A janela de medição não era limpa, e o site não dizia
+
+Esta é a correção mais importante que o site já fez, e ela é **contra o próprio
+argumento dele**.
+
+O site publicava "bônus de recorrência sobre plano de telefonia: R$ 0,00" como
+evidência sobre o modelo de negócio da MOVVA. O número é real. Mas faltava a
+condição em que ele foi medido:
+
+- dos três meses e meio da janela, **dois** — agosto e setembro de 2026 — o
+  autor passou com a própria mensalidade de R$ 79,90 **sem pagar**;
+- a ativação do chip dele só foi aprovada em **20 de outubro de 2026**, que é o
+  **último dia** do período medido.
+
+E a página 45 do deck diz que o ganho de quem não está ativo sobe para o
+próximo ascendente apto. Ou seja: em boa parte da janela, o autor não estava em
+condição de receber — independentemente de a rede consumir ou não.
+
+**O que mudou:** o número continua publicado, e continua sendo zero. O que o
+site deixou de afirmar é que ele seja um veredito sobre o negócio. Passou a
+dizer que o teste limpo ainda não foi feito, e que o primeiro mês válido será o
+primeiro mês inteiro com a mensalidade em dia e o chip ativo.
+
+A ressalva entrou em todas as páginas que usavam o número como argumento — a
+análise, o programa de afiliados, os três posts do lado empreendedor, os avisos
+legais, o FAQ e o `llms.txt`, este último com um aviso explícito para que um
+sistema de IA não cite o zero como prova de que o modelo não funciona.
+
+**Um ponto em aberto que o próprio extrato abriu:** em setembro de 2026 o autor
+recebeu três lançamentos, num mês sem pagamento. Pela regra da página 45, não
+deveria. Se há carência, se "ativo" significa outra coisa, ou se a regra só vale
+no fechamento, o documento não diz.
+
+**E uma coisa que a plataforma não mostra:** não existe, no escritório do
+afiliado, histórico de quais mensalidades foram pagas. `/meu-movva/faturas` só
+lista fatura em aberto. Os meses sem pagamento são declaração do próprio autor
+sobre o próprio bolso — não há como conferir pelo painel, e isso está dito.
+
+### O que o escritório virtual fechou e abriu
+
+Abrir o painel resolveu coisas que estavam em aberto há semanas:
+
+- **O saque bate ao centavo:** 13/08/2026 15:49, R$ 137,42, taxa R$ 21,99,
+  líquido R$ 115,43, PIX, aprovado.
+- **O prazo do chip tem uma primeira resposta:** a MOVVA faz um pedido ao
+  fabricante por mês, e o que entra nele "fica pronto para envio 90 dias
+  depois". O prazo de entrega depois disso segue sem resposta. O item saiu de
+  "em aberto" para "anunciado pela empresa".
+- **A VSL é oficial:** o painel chama aquele endereço de "Link de divulgação".
+  Não é material improvisado de rede — é o link que a plataforma entrega.
+
 ### A correção que eu quase fiz, e não devia
 
 Vale registrar porque o erro teria sido grande e foi evitado por um motivo

@@ -15,7 +15,8 @@ import {
 // entao entra com outro nome — importar os dois como `brl` trocaria o sentido
 // de uma dezena de valores sem erro de build.
 import {
-  DE_ENTRADA_OU_LICENCA, ORIGEM, RECORRENCIA, pct, brl as reais,
+  DE_ENTRADA_OU_LICENCA, ORIGEM, RECORRENCIA, PERIODO, JANELA_SUJA, MENSALIDADE,
+  pct, brl as reais,
 } from '../data/extrato.js';
 
 // Real com virgula, para os valores que saem de conta e nao de texto fixo.
@@ -602,6 +603,20 @@ const description =
         Afiliado VIP, cadastrado em julho de 2026, graduação Consultor, oito pessoas
         na rede. Período de 7 de julho a 20 de outubro de 2026.
       </p>
+      {/* Ressalva obrigatória, contra o meu próprio argumento. Sem ela a
+          tabela abaixo parece um veredito sobre o negócio, e não é: é um
+          resultado medido numa janela em que, por boa parte do tempo, eu não
+          estava apto a receber. */}
+      <p class="meta-line">
+        <strong>Leia a tabela sabendo disto:</strong> nesses
+        {' '}{PERIODO.duracao} eu passei {JANELA_SUJA.quantos} meses —
+        {' '}{JANELA_SUJA.mesesSemPagar.join(' e ')} — com a mensalidade de
+        R$ 79,90 sem pagar, e a ativação do meu chip só foi aprovada em
+        {' '}{JANELA_SUJA.ativacaoAprovadaEm}, o último dia do período. Pela
+        página 45 do deck, quem não está ativo não recebe. Os números são reais;
+        o teste é que ainda não foi feito em condições limpas, e
+        {' '}<a href="/movva-e-confiavel">explico isso por extenso na análise</a>.
+      </p>
       <div class="table-scroll">
         <table>
           <thead><tr><th>Indicador</th><th class="num">Valor</th></tr></thead>
@@ -621,7 +636,7 @@ const description =
             <tr><td>Recorrência que a plataforma registra, toda sobre licença e TV</td><td class="num">{reais(RECORRENCIA.totalNaPlataforma)}</td></tr>
             <tr><td>Bônus de recorrência sobre plano de telefonia</td><td class="num">R$ 0,00</td></tr>
             <tr><td>Comissão em outubro de 2026</td><td class="num">R$ 0,00</td></tr>
-            <tr><td>Custo mensal do meu plano</td><td class="num">R$ 159,80</td></tr>
+            <tr><td>{MENSALIDADE.rotulo}</td><td class="num">{reais(MENSALIDADE.valor)}</td></tr>
             <tr><td>Resultado acumulado até aqui</td><td class="num">negativo</td></tr>
           </tbody>
         </table>

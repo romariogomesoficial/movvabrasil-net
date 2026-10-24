@@ -28,6 +28,35 @@ export const PERIODO = {
 
 export const TOTAL = 146.08;
 
+// A JANELA NAO E UM TESTE LIMPO, e isto e a informacao mais importante deste
+// arquivo. Ate 24/10/2026 o site publicava o R$ 0,00 de recorrencia sobre
+// telefonia como evidencia sobre o MODELO. Nao e — ou nao so.
+//
+// Dos tres meses e meio medidos, o autor passou DOIS com a mensalidade de
+// R$ 79,90 sem pagar, e a ativacao do proprio chip so foi aprovada no ULTIMO
+// DIA da janela. Pela regra da pagina 45 do deck — compressao dinamica —, o
+// ganho de quem nao esta ativo sobe para o proximo ascendente apto.
+//
+// Isso NAO muda o numero: a recorrencia sobre telefonia foi zero mesmo. Muda o
+// que o numero prova. O site passa a dizer que o teste limpo ainda nao foi
+// feito, em vez de apresentar o zero como veredito sobre o negocio.
+//
+// Conferido no escritorio virtual em 24/10/2026: a ativacao consta "Aprovado
+// 20/10/2026, 20:01:33", e o Ponto Pessoal do plano do autor entrou as 20:02
+// do mesmo dia. Os meses sem pagamento sao declaracao do proprio autor sobre o
+// proprio bolso — a plataforma NAO mostra ao afiliado o historico de
+// mensalidade, e isso tambem esta publicado como ponto em aberto.
+export const JANELA_SUJA = {
+  mesesSemPagar: ['agosto', 'setembro'],
+  quantos: 2,
+  ativacaoAprovadaEm: '20 de outubro de 2026',
+  // Em setembro houve TRES lancamentos de comissao, num mes sem pagamento.
+  // Se isso contraria a compressao dinamica, se ha carencia, ou se "ativo"
+  // significa outra coisa, o documento nao resolve. Esta em aberto.
+  recebeuMesmoAssimEm: 'setembro',
+  lancamentosNesseMes: 3,
+};
+
 // O saque. A taxa incidiu sobre o SAQUE, que foi menor que o gerado — colar
 // "liquido" em "gerado" faz o leitor calcular 16% sobre 146,08 e achar um erro
 // de R$ 7,28 que nao existe.
@@ -82,6 +111,19 @@ export const brl = (v) => 'R$ ' + v.toFixed(2).replace('.', ',');
 
 // A recorrencia sobre TELEFONIA — a promessa central do negocio — e zero. A
 // recorrencia TOTAL nao e, e o site tem de dizer as duas coisas.
+// A mensalidade declarada pelo autor. O rotulo carrega os meses nao pagos de
+// proposito: publicar "custo mensal do meu plano: R$ 159,80" ao lado de "ganho
+// R$ 0,00" da a entender que ele pagou todos os meses, e nao pagou dois.
+//
+// O valor e o dobro do Liberty de 25 GB. O painel mostra 2 chips comprados, o
+// que e compativel com dois planos, mas o autor nao abriu a fatura — entao o
+// que a cifra cobre segue em aberto, e isso esta dito em
+// quanto-custa-o-primeiro-mes.md.
+export const MENSALIDADE = {
+  valor: 159.80,
+  rotulo: 'Mensalidade do meu plano, não paga em agosto e setembro',
+};
+
 export const RECORRENCIA = {
   totalNaPlataforma: 78.02,
   sobreLicenca: 75.54,

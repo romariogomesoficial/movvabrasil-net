@@ -189,8 +189,17 @@ a estrutura depende de entrada de gente — e isso tem um limite matemático
 conhecido, que é a conta das 797.160 pessoas lá em cima.
 
 No meu caso, hoje, ele está em zero. A regra da segunda fatura é parte da
-explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
-[a página dos meus números](/oportunidade) quando mudar, para qualquer lado.
+explicação — mas não posso parar aí, porque há uma parte que depende de mim e
+não da empresa: **nos três meses e meio que eu meço, dois foram com a minha
+própria mensalidade sem pagar**, agosto e setembro, e a ativação do meu chip só
+saiu em 20 de outubro, o último dia do período.
+
+Pela compressão dinâmica desta página, quem não está ativo não recebe: o ganho
+sobe. Então parte desse zero pode ser a regra funcionando sobre mim, e não a
+rede deixando de consumir. O teste limpo ainda não foi feito.
+
+Atualizo [a página dos meus números](/oportunidade) quando houver um mês
+inteiro com a mensalidade em dia — para qualquer lado que o resultado vá.
 
 ## O que eu não consegui confirmar
 
@@ -203,6 +212,11 @@ explicação, e o tempo vai dizer se é a explicação inteira. Atualizo
   "diretos ativos" nos quatro primeiros degraus da escada e, do quinto em
   diante, só "12 diretos" — e em nenhum dos dois casos define o critério de
   atividade.
+- **Se a compressão dinâmica é aplicada como está escrita.** Em setembro de
+  2026 eu recebi três lançamentos de comissão, num mês em que a minha
+  mensalidade não foi paga. Pela regra desta página, não deveria. Se existe
+  carência, se "ativo" ali significa outra coisa, ou se a regra vale só no
+  fechamento do mês, o documento não diz — e eu não vou adivinhar.
 - **Quanto tempo a compressão dinâmica leva** para devolver a posição, se é que
   devolve, quando o ascendente volta a ficar apto.
 - **A data do deck.** O documento não traz data de emissão nem número de versão,
