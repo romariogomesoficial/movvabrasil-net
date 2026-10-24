@@ -52,7 +52,16 @@ export const PERGUNTAS = [
     paginas: ['/movva-e-confiavel'],
     tema: 'A empresa',
     p: 'A MOVVA é uma pirâmide financeira?',
+    // NAO confundir com a pergunta GERAL, logo abaixo. Esta e sobre a empresa;
+    // aquela e sobre o modelo, e e a que traz gente que ainda nem ouviu falar
+    // da MOVVA. As duas convivem de proposito.
     r: 'A MOVVA vende plano de celular, que é serviço regulado pela Anatel — isso a diferencia de um esquema sem produto. Ressalva: ' + CHIP.frase + ' O ponto de atenção não é a existência do produto, e sim de onde vem o dinheiro das comissões: se a maior parte nasce de pessoas entrando e pagando licença, e não de contas de celular sendo pagas mês a mês, a estrutura se aproxima do que a Lei 1.521/51 trata como cadeia. Isso é mensurável, e eu publico a minha própria medição.',
+  },
+  {
+    paginas: ['/movva-e-confiavel'],
+    tema: 'A empresa',
+    p: 'Marketing multinível é pirâmide?',
+    r: 'Não necessariamente, e o modelo não é proibido no Brasil. O que o art. 2º, inciso IX da Lei 1.521/51 criminaliza é obter ganho ilícito em detrimento de número indeterminado de pessoas mediante "bola de neve", "cadeias" e quaisquer outros equivalentes — a conduta, não o formato. O dispositivo não diz como reconhecê-la, e o teste da origem da receita, que se usa para isso, vem da doutrina e não da lei.',
   },
   {
     paginas: ['/movva-e-confiavel'],
