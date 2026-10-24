@@ -42,12 +42,23 @@ público que resolva.
 - [Planos](https://movvabrasil.net/planos): Os cinco planos de celular lado a lado, com franquia, preço, preço por giga e para quem cada um serve. O preço é atribuído ao deck institucional da empresa, com a data da conferência. Traz também os pontos que o autor não conseguiu confirmar sobre os planos.
 - [É confiável?](https://movvabrasil.net/movva-e-confiavel): Análise com registros públicos, os riscos do programa de afiliados e os ganhos reais do autor. Responde também sobre CNPJ, Anatel, Reclame Aqui e quanto se ganha.
 - [Perguntas](https://movvabrasil.net/perguntas-frequentes): Central de perguntas sobre a empresa, o preço dos planos, cobertura, portabilidade e o programa de afiliados, com resposta curta em cada uma e o link de onde ela foi conferida.
-- [Blog](https://movvabrasil.net/blog): Textos sobre planos de celular, operadoras virtuais, portabilidade e cobertura, cada um com as fontes usadas e uma seção do que não foi confirmado. São 19 textos.
+- [Blog](https://movvabrasil.net/blog): Textos sobre planos de celular, operadoras virtuais, portabilidade e cobertura, cada um com as fontes usadas e uma seção do que não foi confirmado. São 20 textos.
 - [Programa de afiliados](https://movvabrasil.net/oportunidade): Composição da remuneração, custo de participação, a mecânica da matriz, o plano de carreira com a exigência de cada degrau e a tabela com os números reais do autor, inclusive os meses de ganho zero.
 - [Quem escreve](https://movvabrasil.net/sobre): Quem mantém o site e o método editorial: o que entra como verificado, o que é atribuído à empresa, o que fica em aberto, e o que o autor ganha com isso.
 - [Avisos legais](https://movvabrasil.net/avisos-legais): Declaração de vínculo, aviso de renda e limites de responsabilidade.
 
 ## Blog
+
+### Como funciona uma operadora virtual
+
+- [Marketing multinível é pirâmide? Como separar, pela origem do dinheiro](https://movvabrasil.net/blog/marketing-multinivel-ou-piramide): O que a Lei 1.521/51 proíbe, com o texto do dispositivo; por que ela não dá o critério para separar venda direta de cadeia; e seis perguntas que você pode fazer a qualquer empresa antes de entrar.
+  Resposta curta: Marketing multinível não é crime no Brasil; o que é crime, pelo art. 2º, IX da Lei 1.521/51, é obter ganho ilícito mediante 'bola de neve', 'cadeias' e processos equivalentes. A lei tipifica a conduta sem dizer como separar uma coisa da outra. O teste que se usa é de onde vem a receita.
+- [25 GB dá para quê? O que cada giga rende em horas de uso](https://movvabrasil.net/blog/25-gb-da-para-que): 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média ou 8 horas em HD — alternativas, não soma. Veja quanto cada app gasta por hora, com as contas abertas.
+  Resposta curta: 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média — ou 8 em HD, ou 23 de chamada de vídeo em 720p. São alternativas: cada uma gasta os 25 GB inteiros. O piso vem do teto por hora da Netflix e do requisito de banda do Zoom, que leio como teto.
+- [O que é operadora virtual (MVNO) e como funciona no Brasil](https://movvabrasil.net/blog/o-que-e-operadora-virtual): Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar.
+  Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
+- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
+  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
 
 ### Análise da empresa
 
@@ -57,19 +68,10 @@ público que resolva.
   Resposta curta: O deck institucional da MOVVA descreve uma matriz forçada 3×12: doze níveis de profundidade, três de largura. Segundo ele, os níveis destravam de três em três conforme você tem diretos ativos, e pagam 0,5% por plano ativo, ou 1% para quem tem licença VIP — esse ganho só a partir da segunda fatura.
 - [Plano de carreira da MOVVA: os doze degraus e o que cada um exige](https://movvabrasil.net/blog/plano-de-carreira-movva): Os doze degraus do plano de carreira da MOVVA, com a exigência de cada um lida na página 56 do deck institucional, a tabela de pontos e o que cada premiação custa em planos ativos.
   Resposta curta: A página 56 do deck institucional da MOVVA publica doze graduações, de Consultor a Embaixador. As quatro primeiras exigem diretos ativos; da quinta em diante a exigência vira pontuação, sempre com doze diretos e, a partir da sétima, licença VIP. Os medalhões oficiais, porém, são treze — dois materiais da empresa divergem.
-- [O que você paga no primeiro mês, somado](https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes): Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 publicada pela empresa, três valores que eu não achei e a portabilidade.
-  Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
 - [MOVVA no Reclame Aqui: o que existe hoje e como conferir](https://movvabrasil.net/blog/movva-reclame-aqui): Em 21/10/2026 não localizei página da operadora no Reclame Aqui: a que aparece é de outra empresa, com outro CNPJ. Veja como checar em quinze minutos.
   Resposta curta: Em 21/10/2026 não localizei página da MOVVA Brasil Ltda no Reclame Aqui. A página chamada “Movva” traz CNPJ 16.896.559/0001-81 e é de outra empresa. Ausência de reclamação não é elogio nem defeito: é falta de dado. Confira sempre pelo CNPJ, e use o 1331 e os painéis da Anatel.
-
-### Como funciona uma operadora virtual
-
-- [25 GB dá para quê? O que cada giga rende em horas de uso](https://movvabrasil.net/blog/25-gb-da-para-que): 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média ou 8 horas em HD — alternativas, não soma. Veja quanto cada app gasta por hora, com as contas abertas.
-  Resposta curta: 25 GB dão, no mínimo, 35 horas de vídeo em qualidade média — ou 8 em HD, ou 23 de chamada de vídeo em 720p. São alternativas: cada uma gasta os 25 GB inteiros. O piso vem do teto por hora da Netflix e do requisito de banda do Zoom, que leio como teto.
-- [O que é operadora virtual (MVNO) e como funciona no Brasil](https://movvabrasil.net/blog/o-que-e-operadora-virtual): Operadora virtual usa a rede de outra empresa. Veja os dois modelos da Resolução 777/2025, de quem você é cliente e como checar antes de assinar.
-  Resposta curta: Operadora virtual, ou MVNO, é a empresa que vende plano de celular sem ter rede própria: ela opera sobre infraestrutura contratada de uma autorizada do SMP, que a Anatel chama de prestadora de origem. A Resolução 777/2025 prevê dois modelos, credenciamento e autorização. Quem contrata por credenciada é usuário da prestadora de origem.
-- [Operadora virtual pega bem? Como funciona a cobertura](https://movvabrasil.net/blog/operadora-virtual-pega-bem): O sinal é o da rede hospedeira, porque a operadora virtual não tem antena. Veja o que a norma obriga, o que varia por contrato e como conferir.
-  Resposta curta: Pega o que a rede hospedeira pega, porque o sinal é dela. Uma operadora virtual não tem antena: usa a rede de quem tem. O regulamento da Anatel obriga a hospedeira a manter área de serviço e qualidade. O que varia por contrato é roaming, tecnologias liberadas e atendimento. Então a pergunta certa é qual rede ela usa.
+- [O que você paga no primeiro mês, somado](https://movvabrasil.net/blog/quanto-custa-o-primeiro-mes): Quanto custa o primeiro mês do MOVVA Liberty 25 GB: mensalidade de R$ 79,90 publicada pela empresa, três valores que eu não achei e a portabilidade.
+  Resposta curta: No Liberty de 25 GB, a mensalidade é R$ 79,90 — a empresa publica o preço na página 31 do deck institucional dela. Chip, entrega e taxa de ativação eu não localizei em documento nenhum. A portabilidade pode ser cobrada pela operadora de destino (RGST, art. 70). Total: R$ 79,90 mais essas quatro linhas abertas.
 
 ### Guias práticos
 
