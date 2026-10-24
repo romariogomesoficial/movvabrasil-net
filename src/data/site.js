@@ -24,8 +24,30 @@ export const AUTOR = {
 export const VINCULO =
   'Site de distribuidor independente. Não é canal oficial da MOVVA Brasil Ltda.';
 
-// Link de divulgacao do Romario. Unico lugar onde ele existe.
-export const LINK_AFILIADO = 'https://movvabrasil.com/f/apnmovva?ref=024E6ED7';
+// Link de cadastro do Romario. Unico lugar onde ele existe.
+//
+// POR QUE E O LINK DIRETO, e nao o "link de divulgacao" que o painel oferece
+// em destaque:
+//
+// O painel da MOVVA entrega tres enderecos. Dois sao funis com VSL; um e
+// cadastro direto. Ate 24/10/2026 este site apontava para o funil
+// /f/apnmovva, e o conteudo daquela pagina e o oposto exato do que este site
+// faz: "ter dinheiro caindo em sua conta ate enquanto dorme", "Renda
+// Recorrente Mensal perene para o resto da sua vida", com selo AO VIVO,
+// cronometro e o botao "QUERO GANHAR DINHEIRO INFINITO".
+//
+// Mandar o leitor de trinta paginas de ressalva para "dinheiro infinito"
+// gastava no ultimo clique a confianca que o site inteiro constroi. E o funil
+// nao estava compensando isso: o painel registra 11 cliques e ZERO cadastros
+// nele, e 31 cliques e zero no outro funil.
+//
+// O link abaixo e o mecanismo canonico da plataforma, nao um atalho: o proprio
+// aplicativo monta `/cadastro?ref=${referral_code}` a partir do codigo do
+// usuario, e valida o codigo no cadastro por validate_referral_code. A
+// atribuicao da comissao e a mesma.
+//
+// SE FOR TROCAR DE VOLTA, leia DESTINO-DO-LINK.md antes.
+export const LINK_AFILIADO = 'https://movvabrasil.com/cadastro?ref=REF-315C1470';
 
 // ---------------------------------------------------------------------------
 // O estado do teste em campo. ESTA E A UNICA DEFINICAO: o site inteiro le daqui.

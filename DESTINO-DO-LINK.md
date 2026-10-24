@@ -2,8 +2,40 @@
 
 Documento de trabalho. **Não é página publicada.** Escrito em 24/10/2026.
 
-Isto não é um defeito do site. É uma decisão que só você pode tomar, e eu não
-mexi em nada: o `LINK_AFILIADO` continua como estava.
+---
+
+## RESOLVIDO no mesmo dia — leia isto primeiro
+
+O resto deste documento descreve o problema e as opções, e fica como registro.
+Mas a opção A, que parecia depender da MOVVA, **não dependia**: o link já
+existia no seu próprio escritório virtual, em *Meus Links*.
+
+> **Link Direto de Cadastro** — "Cadastro sem funil, usando seu código de
+> indicação"
+> `https://movvabrasil.com/cadastro?ref=REF-315C1470`
+
+Conferi que ele é o mecanismo canônico da plataforma, e não um atalho: o
+próprio aplicativo monta `/cadastro?ref=${referral_code}` a partir do seu
+código, e valida o código no cadastro por `validate_referral_code`. A
+atribuição da comissão é a mesma.
+
+**O `LINK_AFILIADO` foi trocado para ele**, e o rótulo do botão passou de "Ver
+a apresentação oficial" para "Ir para o cadastro na MOVVA", porque o destino
+agora é uma tela de cadastro e não uma apresentação.
+
+E os números do painel dizem que não se perdeu nada ao sair da VSL:
+
+| Funil | Cliques | Cadastros | Receita |
+|---|---|---|---|
+| Máquina da Renda Recorrente | 31 | **0** | R$ 0,00 |
+| Landing de Apresentação (a VSL) | 11 | **0** | R$ 0,00 |
+
+Quarenta e dois cliques, zero cadastros. A VSL não estava convertendo —
+estava só contradizendo o site.
+
+**Para reverter**, se você discordar: é uma linha em `src/data/site.js`.
+
+---
 
 ## O que eu fui fazer, e o que achei sem querer
 
