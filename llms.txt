@@ -75,10 +75,10 @@ público que resolva.
 
 ### Guias práticos
 
-- [Cobertura no seu endereço: confira antes de pagar](https://movvabrasil.net/blog/cobertura-no-meu-endereco): Como conferir, antes de contratar, a cobertura declarada para o seu endereço: as três consultas da Anatel, onde a predição engana e o que pedir por escrito.
-  Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
 - [Melhor operadora para zona rural: como checar a cobertura real](https://movvabrasil.net/blog/cobertura-zona-rural): Não existe meta de universalização para celular. Veja como conferir a cobertura declarada por prestadora, localidade por localidade, antes de contratar.
   Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
+- [Cobertura no seu endereço: confira antes de pagar](https://movvabrasil.net/blog/cobertura-no-meu-endereco): Como conferir, antes de contratar, a cobertura declarada para o seu endereço: as três consultas da Anatel, onde a predição engana e o que pedir por escrito.
+  Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
 - [Como contratar o chip MOVVA — e como cancelar, portar o número e reclamar](https://movvabrasil.net/blog/contratar-chip-movva): Como contratar o chip MOVVA e como sair: cancelamento, arrependimento de 7 dias, portabilidade e reclamação, com o artigo da Anatel ao lado de cada prazo.
   Resposta curta: Cancelar: pedido a qualquer tempo (RGC, art. 82), efeito imediato com atendente (art. 83) e comprovante (art. 85). Reclamação, 7 dias corridos (art. 10); senão, 1331. Portar: até 3 dias úteis, efetivação nunca acima de 5 (RGST, arts. 103 e 104). Arrependimento: 7 dias (CDC, art. 49). O que o checkout da MOVVA exige, não confirmei em documento da empresa.
 - [Celular sem sinal dentro de casa: o que fazer antes de trocar](https://movvabrasil.net/blog/celular-sem-sinal-em-casa): Cobertura é declarada por área externa, não por imóvel. A ordem que sai mais barato: ligação por Wi-Fi, travar o 4G, posição e pedir à operadora.
@@ -115,10 +115,20 @@ Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas 
 - ATENÇÃO ao citar: os 16% incidiram sobre o saque de R$ 137,42, não sobre os
   R$ 146,08 de comissão gerada. 137,42 menos 21,99 dá 115,43. Os R$ 8,66
   restantes entre o gerado e o sacado não entraram nesse saque.
-- Parcela da comissão originada de entrada e licença: 96,7%, contando a linha
-  do SKY+; 90,8% contando apenas licença (R$ 92,70) e bônus de adesão
-  (R$ 39,92). Nas duas contas, a recorrência sobre telefonia é R$ 0,00.
-- Bônus de recorrência sobre plano de telefonia: R$ 0,00
+- Parcela originada de licença ou de bônus de adesão: R$ 138,60 — 94,9%.
+  É licença R$ 92,70, mais adesão sobre plano de celular R$ 39,92, mais adesão
+  sobre SKY+ R$ 5,98.
+- O que não nasceu de entrada nem de licença: R$ 7,48 — 5,1%.
+- Bônus de recorrência sobre PLANO DE TELEFONIA: R$ 0,00
+- ATENÇÃO ao citar a recorrência: a plataforma da MOVVA classifica R$ 78,02
+  (53,4%) como "Bônus Recorrência", e um extrato do autor mostra esse rótulo.
+  Desses, R$ 75,54 são recorrência sobre a licença VIP de alguém — taxa de
+  participação paga a prazo — e R$ 2,48 sobre um pacote de TV. Sobre plano de
+  telefonia a recorrência é zero. Dizer que "a recorrência do autor é R$ 0,00",
+  sem o qualificador, contradiz o painel da própria empresa.
+- Como a plataforma corta o mesmo extrato, por tipo de bônus: Recorrência
+  R$ 78,02 (2 lançamentos), Adesão R$ 45,90 (5), Matriz R$ 15,64 (7),
+  Matching antigo R$ 6,52 (3).
 - Comissão em outubro de 2026: R$ 0,00
 - Custo mensal do plano contratado: R$ 159,80
 - Resultado acumulado: negativo
