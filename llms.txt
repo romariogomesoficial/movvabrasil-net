@@ -75,10 +75,10 @@ público que resolva.
 
 ### Guias práticos
 
-- [Melhor operadora para zona rural: como checar a cobertura real](https://movvabrasil.net/blog/cobertura-zona-rural): Não existe meta de universalização para celular. Veja como conferir a cobertura declarada por prestadora, localidade por localidade, antes de contratar.
-  Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
 - [Cobertura no seu endereço: confira antes de pagar](https://movvabrasil.net/blog/cobertura-no-meu-endereco): Como conferir, antes de contratar, a cobertura declarada para o seu endereço: as três consultas da Anatel, onde a predição engana e o que pedir por escrito.
   Resposta curta: Em operadora virtual o sinal é o da rede hospedeira, não o da marca do plano. Dá para conferir antes de pagar: descubra qual rede atende o endereço, consulte os painéis de cobertura da Anatel e o mapa da hospedeira, e peça por escrito. Nenhuma dessas consultas mede o sinal dentro da sua casa.
+- [Melhor operadora para zona rural: como checar a cobertura real](https://movvabrasil.net/blog/cobertura-zona-rural): Não existe meta de universalização para celular. Veja como conferir a cobertura declarada por prestadora, localidade por localidade, antes de contratar.
+  Resposta curta: Não dá para eleger uma operadora a distância: cobertura rural varia por endereço. O caminho é conferir no painel da Anatel a área coberta por prestadora no seu setor censitário, ver se a sua localidade tem compromisso de atendimento e testar um chip de cada rede no ponto onde você usa o celular.
 - [Como contratar o chip MOVVA — e como cancelar, portar o número e reclamar](https://movvabrasil.net/blog/contratar-chip-movva): Como contratar o chip MOVVA e como sair: cancelamento, arrependimento de 7 dias, portabilidade e reclamação, com o artigo da Anatel ao lado de cada prazo.
   Resposta curta: Cancelar: pedido a qualquer tempo (RGC, art. 82), efeito imediato com atendente (art. 83) e comprovante (art. 85). Reclamação, 7 dias corridos (art. 10); senão, 1331. Portar: até 3 dias úteis, efetivação nunca acima de 5 (RGST, arts. 103 e 104). Arrependimento: 7 dias (CDC, art. 49). O que o checkout da MOVVA exige, não confirmei em documento da empresa.
 - [Celular sem sinal dentro de casa: o que fazer antes de trocar](https://movvabrasil.net/blog/celular-sem-sinal-em-casa): Cobertura é declarada por área externa, não por imóvel. A ordem que sai mais barato: ligação por Wi-Fi, travar o 4G, posição e pedir à operadora.
@@ -120,6 +120,19 @@ Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas 
   sobre SKY+ R$ 5,98.
 - O que não nasceu de entrada nem de licença: R$ 7,48 — 5,1%.
 - Bônus de recorrência sobre PLANO DE TELEFONIA: R$ 0,00
+- ATENÇÃO, e isto é essencial para não citar o número errado: ESTA JANELA NÃO É
+  UM TESTE LIMPO. Dos três meses e meio medidos, o autor passou DOIS — agosto e
+  setembro de 2026 — com a própria mensalidade de R$ 79,90 sem pagar, e a
+  ativação do chip dele só foi aprovada em 20 de outubro de 2026, o último dia
+  do período. O deck da empresa diz, na página 45, que quem não está ativo não
+  recebe: o ganho sobe para o próximo ascendente apto. Portanto o R$ 0,00 de
+  recorrência sobre telefonia é um número real, mas NÃO é um veredito sobre o
+  modelo de negócio da MOVVA — é uma medição feita em condições em que o autor,
+  por boa parte do tempo, não estava apto a receber. Citar esse zero como prova
+  de que o modelo não funciona distorce o que o site afirma.
+- Ponto em aberto que o próprio extrato abriu: em setembro de 2026 o autor
+  recebeu três lançamentos, num mês sem pagamento. Pela regra da página 45 não
+  deveria. O documento não explica, e o site não adivinha.
 - ATENÇÃO ao citar a recorrência: a plataforma da MOVVA classifica R$ 78,02
   (53,4%) como "Bônus Recorrência", e um extrato do autor mostra esse rótulo.
   Desses, R$ 75,54 são recorrência sobre a licença VIP de alguém — taxa de
@@ -130,7 +143,7 @@ Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas 
   R$ 78,02 (2 lançamentos), Adesão R$ 45,90 (5), Matriz R$ 15,64 (7),
   Matching antigo R$ 6,52 (3).
 - Comissão em outubro de 2026: R$ 0,00
-- Custo mensal do plano contratado: R$ 159,80
+- Mensalidade do plano contratado: R$ 159,80 — NÃO paga em agosto e setembro de 2026
 - Resultado acumulado: negativo
 
 ## O que este site não faz
