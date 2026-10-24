@@ -33,7 +33,41 @@ E os números do painel dizem que não se perdeu nada ao sair da VSL:
 Quarenta e dois cliques, zero cadastros. A VSL não estava convertendo —
 estava só contradizendo o site.
 
-**Para reverter**, se você discordar: é uma linha em `src/data/site.js`.
+**Ratificado pelo dono do site em 24/10/2026**, depois de ver os números dos
+funis e a verificação de que a atribuição não muda. Reverter continua sendo uma
+linha em `src/data/site.js`.
+
+Verificação da atribuição, para quem for conferir depois: no aplicativo da
+MOVVA, o `funnel_visitor_id` guardado no navegador é **analytics de funil** —
+conta visita e clique. Quem define o patrocinador é o `upline_external_id`, em
+`profiles_lookup`, gravado no cadastro a partir do `validate_referral_code`,
+que recebe o `ref` da URL. Os dois links carregam o mesmo `ref`.
+
+**Decisões associadas, de 24/10/2026:**
+
+1. **As duas VSLs saem também dos outros canais**, não só do site. O funil
+   "Máquina da Renda Recorrente" tinha 31 cliques que não vieram daqui — ou
+   seja, estava sendo divulgado por fora. Site rigoroso com WhatsApp prometendo
+   "dinheiro infinito" é incoerência que quem recebe os dois percebe primeiro.
+
+2. **O que vai no lugar da VSL é o SITE, não o link de cadastro.** Isto corrige
+   uma recomendação errada que eu mesmo tinha dado: a VSL, com todos os seus
+   defeitos, *explicava alguma coisa*; o link de cadastro não explica nada e
+   joga a pessoa num formulário sem contexto. Quem explica melhor que a VSL é o
+   próprio site. Então:
+
+   | Para quem | Manda este endereço |
+   | --- | --- |
+   | Quem você convida a empreender | `movvabrasil.net/oportunidade` |
+   | Quem você quer como cliente | `movvabrasil.net` ou `movvabrasil.net/planos` |
+   | Quem já leu e decidiu | o botão da própria página leva ao cadastro |
+
+   O link de cadastro é o **último** passo, não o primeiro. E o tráfego passa a
+   cair no domínio do autor, não no da empresa — que era um dos objetivos do
+   projeto desde o começo.
+
+3. **Não avisar a MOVVA sobre o conteúdo da VSL.** Proposto e recusado pelo
+   dono do site em 24/10/2026. Fica registrado que a opção foi considerada.
 
 ---
 
