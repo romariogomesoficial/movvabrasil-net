@@ -125,13 +125,22 @@ oito pessoas na rede:
 | O que | Quanto |
 |---|---|
 | Comissão bruta gerada | R$ 146,08 |
-| Parcela vinda de licença e bônus de adesão | R$ 132,62 — 90,8% |
-| A mesma parcela contando também o SKY+ | R$ 141,28 — 96,7% |
+| Parcela vinda de licença ou de bônus de adesão | **R$ 138,60 — 94,9%** |
+| O que não nasceu de entrada nem de licença | R$ 7,48 — 5,1% |
 | Bônus de recorrência sobre plano de telefonia | **R$ 0,00** |
 
 A pergunta 4 desta página, aplicada a mim, dá **zero**. A linha que deveria
 sustentar a tese do negócio — ganhar quando alguém paga a conta de celular,
 mês após mês — nunca teve um lançamento em três meses e meio.
+
+E aqui vale um aviso que vale para **qualquer** empresa, não só para esta: o
+painel da MOVVA classifica R$ 78,02 do meu extrato como "Bônus Recorrência" —
+53% do total. Olhando só o rótulo, parece que a recorrência funciona. Abrindo
+os lançamentos, R$ 75,54 são recorrência sobre a **licença** de alguém e
+R$ 2,48 sobre um pacote de TV. Nenhum centavo sobre conta de celular.
+
+É por isso que a pergunta 4 pede o extrato **aberto por origem**, e não o total
+nem o rótulo. O rótulo é a primeira coisa que qualquer plataforma arruma.
 
 Isso não prova que a MOVVA é uma cadeia. Prova que, **no meu caso e até aqui**,
 o dinheiro veio de gente entrando. Pode ser começo de rede, pode ser a regra de

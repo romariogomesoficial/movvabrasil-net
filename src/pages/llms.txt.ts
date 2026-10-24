@@ -102,10 +102,20 @@ Período de 7 de julho a 20 de outubro de 2026, com licença VIP e oito pessoas 
 - ATENÇÃO ao citar: os 16% incidiram sobre o saque de R$ 137,42, não sobre os
   R$ 146,08 de comissão gerada. 137,42 menos 21,99 dá 115,43. Os R$ 8,66
   restantes entre o gerado e o sacado não entraram nesse saque.
-- Parcela da comissão originada de entrada e licença: 96,7%, contando a linha
-  do SKY+; 90,8% contando apenas licença (R$ 92,70) e bônus de adesão
-  (R$ 39,92). Nas duas contas, a recorrência sobre telefonia é R$ 0,00.
-- Bônus de recorrência sobre plano de telefonia: R$ 0,00
+- Parcela originada de licença ou de bônus de adesão: R$ 138,60 — 94,9%.
+  É licença R$ 92,70, mais adesão sobre plano de celular R$ 39,92, mais adesão
+  sobre SKY+ R$ 5,98.
+- O que não nasceu de entrada nem de licença: R$ 7,48 — 5,1%.
+- Bônus de recorrência sobre PLANO DE TELEFONIA: R$ 0,00
+- ATENÇÃO ao citar a recorrência: a plataforma da MOVVA classifica R$ 78,02
+  (53,4%) como "Bônus Recorrência", e um extrato do autor mostra esse rótulo.
+  Desses, R$ 75,54 são recorrência sobre a licença VIP de alguém — taxa de
+  participação paga a prazo — e R$ 2,48 sobre um pacote de TV. Sobre plano de
+  telefonia a recorrência é zero. Dizer que "a recorrência do autor é R$ 0,00",
+  sem o qualificador, contradiz o painel da própria empresa.
+- Como a plataforma corta o mesmo extrato, por tipo de bônus: Recorrência
+  R$ 78,02 (2 lançamentos), Adesão R$ 45,90 (5), Matriz R$ 15,64 (7),
+  Matching antigo R$ 6,52 (3).
 - Comissão em outubro de 2026: R$ 0,00
 - Custo mensal do plano contratado: R$ 159,80
 - Resultado acumulado: negativo

@@ -1,4 +1,6 @@
 ---
+import { ORIGEM, DE_ENTRADA_OU_LICENCA, RECORRENCIA, pct } from '../../data/extrato.js';
+
 // De onde veio a comissao do autor. Dados reais do extrato, 07/07 a 20/10/2026.
 //
 // A barra e proporcional de verdade: as larguras saem dos valores, nao de
@@ -20,11 +22,20 @@
 // pela mesma rampa. Dado morto que finge comportamento e pior que dado
 // nenhum, porque o proximo a mexer confia nele. O que e entrada e o que nao e
 // esta dito pelo colchete, que e o lugar certo.
+// As faixas saem de src/data/extrato.js, e a ORDEM existe para que o colchete
+// caia numa borda REAL: 92,70 / 132,62 / 138,60 / 146,08, ou seja 63,5% /
+// 90,8% / 94,9% / 100%. O colchete marca 138,60, que e a fronteira entre o que
+// nasceu de entrada ou licenca e o que nao nasceu.
+//
+// Ate 24/10/2026 a terceira faixa era "SKY+ 8,66" inteira e a quarta era
+// "Resto do plano 4,80", porque o site supunha que o extrato nao separava
+// adesao de recorrencia dentro do SKY+. Separa: sao 5,98 de adesao e 2,68 de
+// recorrencia mais matriz.
 const VALORES = [
-  { rotulo: 'Licença VIP', valor: 92.70 },
-  { rotulo: 'Bônus de adesão', valor: 39.92 },
-  { rotulo: 'SKY+', valor: 8.66 },
-  { rotulo: 'Resto do plano', valor: 4.80 },
+  { rotulo: 'Licença VIP', valor: ORIGEM.licenca },
+  { rotulo: 'Adesão, plano', valor: ORIGEM.adesaoTelefonia },
+  { rotulo: 'Adesão, SKY+', valor: ORIGEM.adesaoSky },
+  { rotulo: 'Nem entrada nem licença', valor: ORIGEM.outro },
 ];
 const TOTAL = VALORES.reduce((s, v) => s + v.valor, 0);
 
@@ -83,7 +94,7 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
         nao e enfeite. */}
     viewBox="0 -80 620 374"
     role="img"
-    aria-label="De R$ 146,08 em comissões, R$ 141,28 nasceram de licença, bônus de adesão e SKY+. Contando só licença e adesão, R$ 132,62. Comissão de recorrência sobre o plano de telefonia: R$ 0,00."
+    aria-label={`De ${brl(TOTAL)} em comissões, ${brl(DE_ENTRADA_OU_LICENCA)} — ${pct(DE_ENTRADA_OU_LICENCA)} — nasceram de licença ou de bônus de adesão. Comissão de recorrência sobre o plano de telefonia: ${brl(RECORRENCIA.sobreTelefonia)}.`}
   >
     <defs>
       {/* userSpaceOnUse para a rampa atravessar a barra inteira: com o padrão
@@ -163,23 +174,23 @@ const brl = (n) => 'R$ ' + n.toFixed(2).replace('.', ',');
       );
     })}
 
-    <!-- Colchete: o que nasceu de entrada. As duas extremidades caem em bordas
-         REAIS de faixa, porque as faixas foram ordenadas para isso — 132,62 na
-         segunda borda e 141,28 na terceira. Antes o colchete terminava no meio
-         da barra do plano, afirmando uma divisao que o desenho nao mostrava. -->
-    <line x1={X0} y1="126" x2={X0 + (141.28 / TOTAL) * L} y2="126" class="colchete" />
+    <!-- Colchete: o que nasceu de entrada ou de licenca. A extremidade direita
+         cai numa borda REAL de faixa, porque as faixas foram ordenadas para
+         isso — a terceira borda e exatamente DE_ENTRADA_OU_LICENCA. Antes o
+         colchete terminava no meio da barra do plano, afirmando uma divisao
+         que o desenho nao mostrava. -->
+    <line x1={X0} y1="126" x2={X0 + (DE_ENTRADA_OU_LICENCA / TOTAL) * L} y2="126" class="colchete" />
     <line x1={X0} y1="120" x2={X0} y2="132" class="colchete" />
-    <line x1={X0 + (132.62 / TOTAL) * L} y1="121" x2={X0 + (132.62 / TOTAL) * L} y2="131" class="colchete" />
-    <line x1={X0 + (141.28 / TOTAL) * L} y1="120" x2={X0 + (141.28 / TOTAL) * L} y2="132" class="colchete" />
+    <line x1={X0 + (DE_ENTRADA_OU_LICENCA / TOTAL) * L} y1="120" x2={X0 + (DE_ENTRADA_OU_LICENCA / TOTAL) * L} y2="132" class="colchete" />
     {/* Em duas linhas pelo mesmo motivo da nota de baixo: texto em SVG nao
         quebra sozinho. Numa linha so, esta frase media 706 unidades com a
         fonte de 20px da regra movel, num quadro de 620 — e o pedaco cortado
         era justamente o segundo numero. */}
     <text x={X0 + 10} y="148" class="nota">
-      R$ 132,62 — 90,8% só de licença e adesão;
+      {brl(DE_ENTRADA_OU_LICENCA)} — {pct(DE_ENTRADA_OU_LICENCA)} nasceu
     </text>
     <text x={X0 + 10} y="170" class="nota">
-      com o SKY+, R$ 141,28, ou 96,7%
+      de alguém entrando ou de licença
     </text>
 
     <!-- A parte que a tese do negocio prometia. E o ponto do grafico inteiro,

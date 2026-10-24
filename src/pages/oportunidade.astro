@@ -10,6 +10,13 @@ import {
   LICENCA_VIP, O_QUE_A_LICENCA_DOBRA, LUGARES_COM_VME, porExtenso,
   CONFERIDO_EM as CONFERIDO_CARREIRA,
 } from '../data/carreira.js';
+// ATENCAO ao nome: esta pagina ja tem um `brl` local que formata SEM o "R$",
+// porque o prefixo e escrito no template. O do extrato.js inclui o prefixo,
+// entao entra com outro nome — importar os dois como `brl` trocaria o sentido
+// de uma dezena de valores sem erro de build.
+import {
+  DE_ENTRADA_OU_LICENCA, ORIGEM, RECORRENCIA, pct, brl as reais,
+} from '../data/extrato.js';
 
 // Real com virgula, para os valores que saem de conta e nao de texto fixo.
 const brl = (n) => n.toFixed(2).replace('.', ',');
@@ -157,8 +164,9 @@ const description =
         Repare no que a primeira linha significa: a indicação direta é
         <strong>por plano de telefonia</strong>, e ela só começa a pagar quando
         a pessoa indicada está de fato pagando uma conta de celular. É por isso
-        que a minha linha de recorrência está em R$ 0,00 na tabela mais abaixo
-        — a rede existe, os planos ainda não estavam rodando.
+        que a minha linha de recorrência <strong>sobre telefonia</strong> está
+        em R$ 0,00 na tabela mais abaixo — a rede existe, os planos ainda não
+        estavam rodando.
       </p>
 
       <p>
@@ -264,8 +272,28 @@ const description =
           Uma entra no ato da adesão. A outra só a partir da segunda fatura — de
           uma conta que precisa continuar sendo paga. Não é acusação minha: é o
           documento da empresa explicando sozinho por que o meu extrato tem
-          63,5% de licença e <strong>R$ 0,00</strong> de recorrência. Eu já
-          publicava o fato; o deck me deu o mecanismo.
+          63,5% de licença e <strong>R$ 0,00 de recorrência sobre
+          telefonia</strong>. Eu já publicava o fato; o deck me deu o mecanismo.
+        </p>
+        {/* ESTA RESSALVA É OBRIGATÓRIA, e saiu de conferir o extrato no
+            escritório virtual em 24/10/2026. A plataforma NÃO chama de zero a
+            minha recorrência: ela registra R$ 78,02 sob o rótulo "Bônus
+            Recorrência". Sem esta linha, quem abrir o próprio painel vê um
+            número que o site parece negar, e conclui que o site mente. */}
+        <p>
+          Preciso dizer uma coisa que o meu próprio painel mostra diferente. A
+          plataforma da MOVVA classifica <strong>R$ 78,02</strong> dos meus
+          R$ 146,08 como “Bônus Recorrência” — 53% do total. Desses, R$ 75,54
+          são recorrência sobre a <strong>licença VIP</strong> de alguém, e
+          R$ 2,48 sobre um pacote de TV. Sobre <strong>plano de telefonia</strong>,
+          que é a promessa do negócio, continua R$ 0,00.
+        </p>
+        <p class="meta-line">
+          Então há duas leituras do mesmo extrato, e eu publico as duas: pela
+          minha, recorrência sobre uma taxa de participação é entrada parcelada,
+          não consumo; pela da plataforma, é recorrência. Se você abrir o seu
+          painel, vai ver o rótulo dela — e agora sabe por que o meu número é
+          outro.
         </p>
         <p class="meta-line">
           {MATRIZ.licencaVip.restricao} E há {MATRIZ.compressao.toLowerCase()}
@@ -588,8 +616,9 @@ const description =
             <tr><td>Sacado em 13 de agosto de 2026, único saque do período</td><td class="num">R$ 137,42</td></tr>
             <tr><td>Taxa de saque, 16% sobre esse saque</td><td class="num">− R$ 21,99</td></tr>
             <tr><td>Recebido líquido</td><td class="num">R$ 115,43</td></tr>
-            <tr><td>Parcela originada de entrada e licença, contando o SKY+</td><td class="num">96,7%</td></tr>
-            <tr><td>A mesma parcela contando só licença e bônus de adesão</td><td class="num">90,8%</td></tr>
+            <tr><td>Parcela originada de licença ou de bônus de adesão</td><td class="num">{pct(DE_ENTRADA_OU_LICENCA)}</td></tr>
+            <tr><td>O que não nasceu de entrada nem de licença</td><td class="num">{reais(ORIGEM.outro)}</td></tr>
+            <tr><td>Recorrência que a plataforma registra, toda sobre licença e TV</td><td class="num">{reais(RECORRENCIA.totalNaPlataforma)}</td></tr>
             <tr><td>Bônus de recorrência sobre plano de telefonia</td><td class="num">R$ 0,00</td></tr>
             <tr><td>Comissão em outubro de 2026</td><td class="num">R$ 0,00</td></tr>
             <tr><td>Custo mensal do meu plano</td><td class="num">R$ 159,80</td></tr>

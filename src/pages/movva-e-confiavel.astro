@@ -4,6 +4,13 @@ import ProximoPasso from '../components/ProximoPasso.astro';
 import ComposicaoComissao from '../components/diagramas/ComposicaoComissao.astro';
 import { EMPRESA, CHIP } from '../data/site.js';
 import { perguntasDe, schemaFaq } from '../data/perguntas.js';
+// Os numeros do extrato vivem em src/data/extrato.js desde 24/10/2026. Estavam
+// escritos a mao em seis arquivos, e no dia em que um deles se mostrou
+// impreciso havia seis lugares para corrigir.
+import {
+  TOTAL, POR_PRODUTO, POR_TIPO, ORIGEM, DE_ENTRADA_OU_LICENCA, RECORRENCIA,
+  pct, brl,
+} from '../data/extrato.js';
 
 // O estado do chip vem de CHIP, no site.js, e não escrito à mão aqui: ele
 // aparece nesta página em dois lugares e no site inteiro em mais de dez.
@@ -103,9 +110,9 @@ const faq = perguntasDe('/movva-e-confiavel');
           <table>
             <thead><tr><th>Origem</th><th class="num">Valor</th><th class="num">Fatia</th></tr></thead>
             <tbody>
-              <tr><td>Licença VIP (taxa de participação)</td><td class="num">R$ 92,70</td><td class="num">63,5%</td></tr>
-              <tr><td>Plano de celular MOVVA Liberty</td><td class="num">R$ 44,72</td><td class="num">30,6%</td></tr>
-              <tr><td>SKY+ Light</td><td class="num">R$ 8,66</td><td class="num">5,9%</td></tr>
+              {POR_PRODUTO.map((p) => (
+                <tr><td>{p.rotulo}</td><td class="num">{brl(p.valor)}</td><td class="num">{pct(p.valor)}</td></tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -117,20 +124,61 @@ const faq = perguntasDe('/movva-e-confiavel');
           recorrência sobre o plano de telefonia, em três meses e meio:
           <strong>R$ 0,00</strong>. Nenhum lançamento.
         </p>
+        {/* Até 24/10/2026 este trecho publicava DUAS contas, 90,8% e 96,7%,
+            dizendo que o extrato não separava adesão de recorrência dentro da
+            linha do SKY+. Separa — eu é que não tinha aberto o detalhamento por
+            tipo de bônus no escritório virtual. Com a separação real, o número
+            é um só e sai de src/data/extrato.js. */}
         <p>
-          Some, para conferir: licença R$ 92,70, mais bônus de adesão R$ 39,92,
-          dá <strong>R$ 132,62 — 90,8%</strong> dos R$ 146,08. Somando também a
-          linha do SKY+, R$ 8,66, chega a <strong>R$ 141,28, ou 96,7%</strong>.
-          Publico as duas contas porque a segunda depende de eu tratar a linha do
-          SKY+ como entrada, e o meu extrato não separa, nessa linha, o que foi
-          adesão do que foi recorrência. A diferença entre 90,8% e 96,7% não muda
-          a conclusão.
+          Some, para conferir: licença {brl(ORIGEM.licenca)}, mais a adesão do
+          plano de celular {brl(ORIGEM.adesaoTelefonia)}, mais a adesão do SKY+
+          {' '}{brl(ORIGEM.adesaoSky)} — dá
+          {' '}<strong>{brl(DE_ENTRADA_OU_LICENCA)}, ou {pct(DE_ENTRADA_OU_LICENCA)}</strong>
+          {' '}dos {brl(TOTAL)}.
         </p>
         <p>
-          E o que sobra nas duas contas são <strong>R$ 4,80</strong> — a parte
-          da linha do plano que não é bônus de adesão. É o único pedaço dos
-          R$ 146,08 que não nasceu de alguém entrando nem de licença, e o meu
-          extrato não diz o que ele é. No gráfico acima, é a faixa fina do fim.
+          O que sobra são <strong>{brl(ORIGEM.outro)}</strong> — {pct(ORIGEM.outro)}.
+          É a única parte que não nasceu de alguém entrando nem de licença:
+          matriz e matching sobre os planos de celular, mais a recorrência e a
+          matriz do SKY+. No gráfico acima, é a faixa fina do fim.
+        </p>
+
+        <h4>O seu painel vai classificar isso de outro jeito</h4>
+        <p>
+          Preciso dizer isto porque é o que você vai ver se abrir o seu próprio
+          escritório. A MOVVA não corta o extrato por produto, como eu fiz
+          acima: ela corta por <strong>tipo de bônus</strong>. E no corte dela o
+          meu extrato aparece assim:
+        </p>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Como a plataforma classifica</th><th class="num">Lançamentos</th><th class="num">Valor</th></tr></thead>
+            <tbody>
+              {POR_TIPO.map((t) => (
+                <tr><td>{t.rotulo}</td><td class="num">{t.lancamentos}</td><td class="num">{brl(t.valor)}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Repare na primeira linha: <strong>{brl(RECORRENCIA.totalNaPlataforma)}
+          de “Bônus Recorrência”</strong>, {pct(RECORRENCIA.totalNaPlataforma)} do
+          total. Olhando só isso, parece que a recorrência funciona.
+        </p>
+        <p>
+          Abrindo os dois lançamentos: <strong>{brl(RECORRENCIA.sobreLicenca)}</strong>
+          {' '}são recorrência sobre a <strong>licença VIP</strong> de alguém —
+          taxa de participação paga a prazo, não serviço consumido — e
+          {' '}<strong>{brl(RECORRENCIA.sobreSky)}</strong> sobre um pacote de
+          TV. Sobre <strong>plano de telefonia</strong>, que é a promessa do
+          negócio, a recorrência continua em
+          {' '}<strong>{brl(RECORRENCIA.sobreTelefonia)}</strong>.
+        </p>
+        <p class="meta-line">
+          Os dois cortes são do mesmo extrato e nenhum é falso: o meu pergunta
+          <em>de quem consumindo o quê</em> veio o dinheiro; o da plataforma
+          pergunta <em>sob qual regra</em> ele foi pago. Publico os dois porque
+          publicar só o meu faria o seu painel parecer desmentir este site.
         </p>
         <p>
           A promessa central do negócio — ganhar toda vez

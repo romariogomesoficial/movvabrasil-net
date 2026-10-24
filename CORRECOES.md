@@ -15,6 +15,65 @@ da leitura do plano de carreira no deck; o lote veio de uma revisão das 28
 páginas com 45 leitores e verificação adversarial, que levantou 73 achados, dos
 quais 38 sobreviveram à checagem.
 
+## 24 de outubro de 2026
+
+### O extrato aberto no escritório virtual, e o que ele corrigiu
+
+Até hoje os números do extrato vinham de uma leitura antiga, e não do painel.
+Abrir o escritório virtual mudou duas coisas, uma delas séria.
+
+**A séria: a plataforma não chama de zero a minha recorrência.**
+
+O site dizia, em dois lugares da `/oportunidade`, "R$ 0,00 de recorrência",
+seco. O painel da MOVVA registra **R$ 78,02 sob o rótulo "Bônus Recorrência"**
+— 53% do total. Quem abrisse o próprio escritório veria um número que o site
+parecia negar, e concluiria que o site mente.
+
+As outras páginas estavam certas, porque qualificavam: "recorrência **sobre
+plano de telefonia**: R$ 0,00". Essa afirmação continua verdadeira — dos
+R$ 78,02, são R$ 75,54 de recorrência sobre a *licença VIP* de alguém e R$ 2,48
+sobre um pacote de TV. Sobre conta de celular, zero.
+
+**O que mudou:** o site passa a publicar os **dois cortes** do mesmo extrato —
+o dele, por produto, que pergunta de quem consumindo o quê veio o dinheiro; e o
+da plataforma, por tipo de bônus, que pergunta sob qual regra ele foi pago.
+Nenhum é falso, e publicar só o primeiro fazia o painel do leitor parecer
+desmentir o site.
+
+**A segunda: o extrato separa o que o site dizia que ele não separava.**
+
+A página publicava *duas* contas — 90,8% e 96,7% — justificando que o extrato
+não distinguia adesão de recorrência dentro da linha do SKY+. Distingue: são
+R$ 5,98 de adesão e R$ 2,68 de recorrência mais matriz. Com a separação real, o
+número é **um só: R$ 138,60, ou 94,9%**, e o que sobra são R$ 7,48.
+
+**E entrou `src/data/extrato.js`**, porque esses números estavam escritos à mão
+em seis arquivos. No dia em que um deles se mostrou impreciso, havia seis
+lugares para corrigir — exatamente o arranjo que produziu os defeitos de 22 e
+23/10. O módulo não guarda nome de ninguém da rede: quem gerou cada lançamento
+é dado de terceiro, e o que importa publicamente é a origem do dinheiro.
+
+### A correção que eu quase fiz, e não devia
+
+Vale registrar porque o erro teria sido grande e foi evitado por um motivo
+específico.
+
+O dono do site relatou ter ficado "uns 2 meses sem utilizar" a MOVVA, e disse
+que foi o caso de o próprio plano deixar de ser pago, com a conta ficando
+inativa. Se fosse verdade, mudaria o sentido de tudo: pela compressão dinâmica
+da página 45 do deck, afiliado inativo não recebe, e o R$ 0,00 de recorrência
+deixaria de ser evidência sobre o modelo para virar consequência de uma regra.
+Era uma correção **a favor da empresa**, e por isso mesmo obrigatória.
+
+Eu ia fazê-la. Antes, fui conferir no escritório virtual — e o registro diz o
+contrário: "Você está ativo como VIP", "VIP ativo", "Ativo para bônus",
+"4 direto(s) ativo(s)", e um lançamento de Pontos Pessoais no próprio plano do
+autor em 20/10/26. Não houve inatividade que bloqueasse bônus.
+
+**A lição:** relato de memória não é dado, nem quando vem do dono do site, nem
+quando a correção favorece a outra parte. O site publica extrato, e extrato se
+abre.
+
 ### O gráfico quebrou três vezes, e as três por não medir antes
 
 O gráfico da comissão foi reescrito para o colchete cair numa borda real de
