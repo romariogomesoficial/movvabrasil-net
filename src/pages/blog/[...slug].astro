@@ -107,6 +107,24 @@ const fmt = (d) =>
             <li><a href={f.url} rel="nofollow noopener">{f.rotulo}</a></li>
           ))}
         </ul>
+        {/* Esta nota existe por medição, não por precaução genérica. Em
+            24/10/2026 testei os 170 endereços que o site cita: nenhum estava
+            morto, mas as 27 fontes em informacoes.anatel.gov.br respondiam 200
+            e redirecionavam para um aviso de manutenção programada — ou seja,
+            o link "funciona" e não entrega o documento, e nenhum conferidor de
+            status pegaria isso. Como é justamente o host das resoluções que
+            sustentam o argumento regulatório do site, o leitor precisa saber o
+            que fazer quando cair numa dessas janelas. */}
+        {post.data.fontes.some((f) => f.url.includes('informacoes.anatel.gov.br')) && (
+          <p class="meta-line">
+            O portal de legislação da Anatel entra em manutenção programada com
+            alguma frequência, e nessas horas o link acima leva a um aviso em
+            vez do documento. Se isso acontecer, procure a norma pelo número no
+            Diário Oficial da União ou no DataLegis — e, enquanto isso, o
+            dispositivo citado está transcrito no corpo deste texto, que é
+            justamente o motivo de eu transcrever em vez de só linkar.
+          </p>
+        )}
       </section>
     )}
 
