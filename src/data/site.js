@@ -69,6 +69,29 @@ export const CHIP = {
   chegou: false,
   testadoEm: null,
 
+  // O TRAJETO MEDIDO, lido no rastreamento do escritorio virtual e na pagina da
+  // transportadora em 26/10/2026. Nao e estimativa nem promessa da empresa: sao
+  // os carimbos de data do envio real.
+  //
+  // ATENCAO, E O MOTIVO DESTE BLOCO EXISTIR: em 24/10/2026 este site publicou
+  // que a entrega "pode passar de 90 dias", apoiado numa frase do painel sobre
+  // producao de chips. A frase existe, mas e de OUTRO FLUXO — a compra de
+  // PACOTES DE CHIPS NO ATACADO, que o afiliado faz para revender, e que entra
+  // num pedido mensal ao fabricante. O chip de quem contrata um plano nao passa
+  // por ali. Confundir os dois fez o site publicar um prazo quase trinta vezes
+  // maior que o real, contra a empresa.
+  trajeto: {
+    solicitado: '20/10/2026, 20:01',
+    emitido: '21/10/2026, 16:18',
+    postado: '23/10/2026, 10:46',
+    ultimoMovimento: '24/10/2026, 12:52',
+    transportadora: 'LOGGI, via SuperFrete',
+    frete: 'R$ 20,00',
+    quantidade: 2,
+    // Conferido em 26/10/2026: dois dias sem movimento novo.
+    conferidoEm: '2026-10-26',
+  },
+
   // Atencao ao escrever aqui: estas frases NAO sao comentario, sao texto que o
   // visitante le em treze paginas. Vao com acento, ao contrario do resto deste
   // arquivo.

@@ -150,7 +150,7 @@ Comparação em que o lado de quem escreve ganha em tudo não convence ninguém,
 
 **E o argumento "sem fidelidade" não distingue a MOVVA da TIM nesta faixa.** As três etiquetas-padrão das ofertas Fit registram "Fidelização: Não se aplica" e multa por rescisão antecipada "Não se aplica".
 
-Uma linha que não está em nenhuma das colunas, e que muda a conta de quem entra: o preço do chip e da entrega da MOVVA. O deck só diz "adquira seu chip e ative o plano", sem valor. A conta do primeiro mês está em [quanto custa o primeiro mês](/blog/quanto-custa-o-primeiro-mes).
+Uma linha que não está em nenhuma das colunas, e que muda a conta de quem entra: o preço do chip da MOVVA. O deck só diz "adquira seu chip e ative o plano", sem valor. O frete eu já medi no meu próprio pedido — R$ 20,00 por dois chips —, mas o chip em si continua sem preço publicado. A conta do primeiro mês está em [quanto custa o primeiro mês](/blog/quanto-custa-o-primeiro-mes).
 
 ## O que vence o prazo: a conta que muda sem você fazer nada
 
@@ -293,7 +293,7 @@ A escolha não é entre "virtual" e "grande". É entre um preço que você confe
 - O regulamento de oferta da MOVVA. O deck não registra recorte por aplicativo na franquia, mas regulamento de oferta é outro documento, e é nele que ficariam o que acontece com a velocidade depois que a franquia acaba, se há pacote extra e a que preço, e a ordem de consumo entre franquia do mês e saldo acumulado.
 - Até quando vale o saldo acumulado da MOVVA. O deck fecha a condição — pagar até a data do vencimento — e o horizonte — o próximo mês. O que sobrou em janeiro ainda estar lá em março, e o que um atraso de fatura faz com o saldo, nenhum material da empresa responde.
 - Sob qual instrumento a Vivo entra no chip da MOVVA, e qual prestadora de origem suporta o acesso. O deck anuncia "Rede TIM + Roaming da VIVO", e o dossiê da mesma empresa descreve outra cadeia, com contrato com a ISPS do Brasil (TIP Brasil) sobre infraestrutura da ARQIA. Os dois são documentos dela e não fecham entre si; registro público que resolva, eu não achei.
-- O preço do chip e da entrega da MOVVA, que ficam fora da tabela de mensalidade desta página. O deck só diz "adquira seu chip e ative o plano", sem valor, e se eles entram à parte ou já na primeira mensalidade eu não localizei documento que diga.
+- O preço do chip da MOVVA, que fica fora da tabela de mensalidade desta página. O deck só diz "adquira seu chip e ative o plano", sem valor, e se ele entra à parte ou já na primeira mensalidade eu não localizei documento que diga. Do **frete** eu já tenho um número, medido no meu próprio envio: R$ 20,00 por dois chips. É um caso, não uma tabela de preços por CEP.
 - Os 10 GB de redes sociais da Vivo. O card dos planos Controle diz que são por R$ 5, e o checkout da mesma oferta diz que já estão somados à franquia total, sem mencionar custo. As duas afirmações são do site da Vivo e eu não sei qual vale.
 - Os PDFs de regulamento da Vivo. O modal "Mais informações" do Vivo Controle lista 12 regulamentos e eu não abri nenhum: o que registrei vem do card, do modal e da tela de checkout.
 - Os termos do desconto de R$ 5 por mês por débito em conta mais fatura digital da Claro. O aviso está na vitrine e o "Saiba mais" aponta para a própria página: eu não sei o prazo, se vale para os três planos, nem se acumula com a promoção do mês.

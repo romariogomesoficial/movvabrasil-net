@@ -178,7 +178,11 @@ export const DIFERENCIAIS = [
 // Mexeu na ordem? A home muda junto. Ela corta com slice(0, 3).
 export const EM_ABERTO = [
   'A velocidade depois que a franquia acaba. O deck não diz se o plano reduz a velocidade, corta os dados ou vende pacote extra, nem a que preço.',
-  'O preço do chip e da entrega, e se entram à parte ou já na primeira mensalidade. O deck só diz "adquira seu chip e ative o plano".',
+  // ATUALIZADO em 26/10/2026: o frete saiu de "não sei" para um número medido,
+  // lido no rastreamento do proprio envio do autor. O preco do CHIP continua
+  // sem documento, e o ponto segue em aberto por causa dele — mas publicar
+  // "nao sei o frete" tendo o numero seria mentira por inercia.
+  'O preço do chip, e se ele e o frete entram à parte ou já na primeira mensalidade. O deck só diz "adquira seu chip e ative o plano". Do frete eu já tenho um número medido: R$ 20,00 por dois chips no meu próprio envio — um caso, não uma tabela.',
   'Por qual contrato a Vivo entra. O deck descreve a dupla conectividade como "Rede TIM + Roaming da VIVO". O art. 66, § 4º, do PGMC veda o roaming permanente, definido como acampamento fora da área de prestação por mais de 90 dias corridos — regra que vincula as prestadoras, não você. O limite se mede por área de prestação, que é o alcance da outorga, e não por cobertura; e a norma permite contrato com mais de uma prestadora de origem na mesma área de registro (RGST, arts. 217, parágrafo único, e 241, § 2º), desenho em que o art. 66 não se aplica. Eu não achei documento da empresa dizendo qual é a prestadora de origem e sob qual instrumento a Vivo entra.',
   'A data do deck. Os preços, a franquia e os benefícios desta página saem do deck institucional da MOVVA, que não traz data de emissão nem número de versão. É a melhor fonte que eu tenho e ainda assim não se data sozinha — então confirme o valor vigente na página de contratação antes de pagar.',
   'Quais aparelhos aceitam a dupla conectividade em eSIM, e se ela funciona igual no chip físico. O deck não trata de eSIM.',

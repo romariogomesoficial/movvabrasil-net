@@ -15,6 +15,45 @@ da leitura do plano de carreira no deck; o lote veio de uma revisão das 28
 páginas com 45 leitores e verificação adversarial, que levantou 73 achados, dos
 quais 38 sobreviveram à checagem.
 
+## 26 de outubro de 2026
+
+### O prazo do chip: errei contra a empresa, por quase trinta vezes
+
+Em 24/10/2026 esta página publicou que a entrega do chip "pode passar de 90
+dias". Rastreando o envio real em 26/10, o número é outro: **três dias entre
+contratar e postar** — solicitado 20/10 às 20:01, etiqueta emitida 21/10 às
+16:18, postado 23/10 às 10:46.
+
+**De onde veio o erro:** o painel do afiliado tem dois fluxos de chip, e eu
+confundi os dois.
+
+1. **Pacotes de chips no atacado** — os que o afiliado compra para revender.
+   Esses entram num pedido mensal ao fabricante e "ficam prontos para envio 90
+   dias depois". A frase existe e está no painel.
+2. **Chip de plano** — o de quem contrata uma linha no próprio CPF. Não passa
+   por essa fila.
+
+Eu li a frase do fluxo 1 e apliquei ao fluxo 2. O resultado foi publicar, na
+página que responde "como contratar o chip MOVVA", um prazo quase trinta vezes
+maior que o real — e contra a empresa.
+
+**A lição, que é a mesma da semana toda em outra roupa:** um número lido num
+painel não vem com o seu escopo colado nele. "90 dias" estava certo; o sujeito
+da frase é que era outro. Antes de publicar prazo, preço ou percentual lido de
+uma tela, é preciso responder *de que exatamente este número fala* — e essa
+pergunta não se responde pelo número.
+
+### O frete saiu de "não sei" para R$ 20,00
+
+O rastreamento do mesmo envio traz "Transportadora — R$ 20,00", por dois chips,
+para Jundiaí/SP. O ponto em aberto sobre o frete existia em quatro lugares,
+inclusive entre os três que a home destaca.
+
+Publicar "não sei o frete" tendo o número seria mentira por inércia. O que
+**continua** aberto é o preço do chip em si, que não tem documento, e se frete
+e chip entram à parte ou na primeira fatura. E o número é um caso, não uma
+tabela por CEP — isso está dito.
+
 ## 24 de outubro de 2026
 
 ### O extrato aberto no escritório virtual, e o que ele corrigiu
