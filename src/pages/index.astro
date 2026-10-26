@@ -483,7 +483,9 @@ const BENEFICIOS = [
              material oficial. É o estado do MEU teste, que é outra coisa — e é
              o que me permite dizer, quando o chip chegar, como foi de verdade. -->
         <div class="prova prova--aberta">
-          <span class="estado estado--aberto">{CHIP.chegou ? 'Testado' : 'Falta eu testar'}</span>
+          <!-- Le `testado`, nao `chegou`: o selo fala da MEDICAO, e chip na mao
+               nao e medicao feita. Ver os tres estados em src/data/site.js. -->
+          <span class="estado estado--aberto">{CHIP.testado ? 'Testado' : 'Falta eu testar'}</span>
           <span class="prova__dado">A dupla conectividade TIM + Vivo em campo</span>
           <span class="prova__onde">{CHIP.frase}</span>
         </div>

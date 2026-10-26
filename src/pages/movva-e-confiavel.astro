@@ -205,7 +205,13 @@ const faq = perguntasDe('/movva-e-confiavel');
       </div>
 
       <div class="card card--warn">
-        <h3>4. {CHIP.chegou ? 'O produto chegou, e agora dá para medir' : 'O produto ainda não chegou na minha mão'}</h3>
+        {/* Tres estados, nao dois: chegar e medir sao eventos diferentes.
+            Ver src/data/site.js. */}
+        <h3>4. {!CHIP.chegou
+          ? 'O produto ainda não chegou na minha mão'
+          : CHIP.testado
+            ? 'O produto chegou e eu medi em campo'
+            : 'O produto chegou, mas eu ainda não medi nada'}</h3>
         <p>
           {CHIP.frase} Enquanto o serviço não roda, não existe consumo mensal — e
           sem consumo não existe a recorrência que sustenta a tese inteira. Pedi o

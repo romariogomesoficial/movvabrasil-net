@@ -61,8 +61,16 @@ export const LINK_AFILIADO = 'https://movvabrasil.com/cadastro?ref=REF-315C1470'
 // dele ainda pergunta "quando os chips estarao disponiveis?" enquanto a
 // operacao ja roda e os chips ja sairam. Frase de estado envelhece sozinha.
 //
-// QUANDO O CHIP CHEGAR: mude `chegou` para true e preencha `testadoEm`. O site
-// inteiro acompanha, e nenhuma pagina fica para tras.
+// SAO DUAS MUDANCAS, EM DOIS MOMENTOS DIFERENTES, e trocar as duas de uma vez
+// e o erro que este bloco passou a impedir:
+//
+//   1. QUANDO O CHIP CHEGAR: `chegou: true`, e so isso. O site passa a dizer
+//      que o produto esta na mao do autor e continua dizendo, em todas as
+//      paginas, que NAO existe medicao de campo.
+//   2. QUANDO O AUTOR TESTAR EM CAMPO: preencha `testadoEm` com a data. Somente
+//      dai o site fica autorizado a falar de medicao.
+//
+// O site inteiro acompanha as duas, e nenhuma pagina fica para tras.
 // ---------------------------------------------------------------------------
 export const CHIP = {
   pedidoEm: '2026-10-20',
@@ -84,26 +92,51 @@ export const CHIP = {
     solicitado: '20/10/2026, 20:01',
     emitido: '21/10/2026, 16:18',
     postado: '23/10/2026, 10:46',
-    ultimoMovimento: '24/10/2026, 12:52',
+    ultimoMovimento: '26/10/2026, 14:47',
+    ultimoEvento: 'Objeto em transferência',
     transportadora: 'LOGGI, via SuperFrete',
     frete: 'R$ 20,00',
     quantidade: 2,
-    // Conferido em 26/10/2026: dois dias sem movimento novo.
+    // Conferido em 26/10/2026, as 15h: o objeto se movimentou no mesmo dia, as
+    // 14:47, e nao existe evento de entrega na linha do tempo da LOGGI.
     conferidoEm: '2026-10-26',
+    entregaRegistrada: false,
+  },
+
+  // SAO TRES ESTADOS, NAO DOIS, e a diferenca entre os dois ultimos e a razao
+  // de este bloco ter sido reescrito em 26/10/2026.
+  //
+  // Antes, `chegou: true` fazia o site dizer "o que eu medi em campo esta
+  // escrito em cada post". Chegar e medir sao eventos DIFERENTES: o chip pode
+  // estar na mao do autor por dias antes de qualquer medicao de sinal, e nesse
+  // intervalo a frase antiga afirmaria medicao que nao existe — em treze
+  // paginas de uma vez. `testado` e o unico campo que autoriza falar de
+  // medicao, e ele depende de `testadoEm`, nao de `chegou`.
+  get testado() {
+    return this.chegou && Boolean(this.testadoEm);
   },
 
   // Atencao ao escrever aqui: estas frases NAO sao comentario, sao texto que o
   // visitante le em treze paginas. Vao com acento, ao contrario do resto deste
   // arquivo.
   get frase() {
-    return this.chegou
-      ? 'Contratei o plano e o chip chegou. O que eu medi em campo está escrito em cada post, com a data da medição.'
-      : 'Contratei o plano, o chip ainda não chegou e não testei nada em campo.';
+    if (!this.chegou) {
+      return 'Contratei o plano, o chip ainda não chegou e não testei nada em campo.';
+    }
+    if (!this.testadoEm) {
+      // A versao longa desta frase terminava em "— entao aqui nao ha medicao de
+      // sinal, de velocidade nem de cobertura", e foi encurtada depois de ver o
+      // render: em /avisos-legais e /termos-de-uso a frase ANTERIOR da pagina ja
+      // e "Nao ha medicao de rede neste site", e as duas juntas diziam a mesma
+      // coisa duas vezes. O que esta frase precisa afirmar e so o estado.
+      return 'Contratei o plano e o chip chegou. Ainda não testei nada em campo.';
+    }
+    return 'Contratei o plano, o chip chegou e eu testei em campo. O que eu medi está escrito em cada post, com a data da medição.';
   },
 
   // A versao curta, para onde o espaco e apertado (cartao, selo, tabela).
   get curta() {
-    return this.chegou ? 'testado em campo' : 'falta testar em campo';
+    return this.testado ? 'testado em campo' : 'falta testar em campo';
   },
 };
 

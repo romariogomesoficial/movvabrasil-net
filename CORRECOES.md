@@ -54,6 +54,40 @@ Publicar "não sei o frete" tendo o número seria mentira por inércia. O que
 e chip entram à parte ou na primeira fatura. E o número é um caso, não uma
 tabela por CEP — isso está dito.
 
+### "Chegou" não é "testei": um defeito que não chegou a ser publicado
+
+Este não é erro que o leitor viu. É defeito encontrado no próprio código, antes
+de ir ao ar, e fica registrado porque a forma dele é a mesma dos outros.
+
+O estado do chip vive num lugar só, `CHIP` em `src/data/site.js`, lido por 32
+páginas. Ele tinha **dois** estados, `chegou: true` e `chegou: false`, e o ramo
+`true` dizia: *"Contratei o plano e o chip chegou. O que eu medi em campo está
+escrito em cada post, com a data da medição."*
+
+Chegar e medir são **eventos diferentes**, separados por dias. No intervalo
+entre o chip estar na mão e existir a primeira medição de sinal, virar aquela
+chave faria 32 páginas afirmarem medição que não existe — e medição inventada é
+exatamente o que este site se compromete a não ter. Pior: dois rótulos liam
+`chegou` para dizer "Testado", um deles na home.
+
+**A correção:** três estados, não dois. `chegou` fala de posse; `testadoEm` fala
+de medição; e um terceiro campo, `testado`, é o único que autoriza falar de
+medição — ele depende de `testadoEm`, não de `chegou`. O ramo do meio diz só
+"Contratei o plano e o chip chegou. Ainda não testei nada em campo."
+
+**Como apareceu:** o dono do site disse que o chip havia chegado. Antes de
+virar a chave, fui ver o que a chave fazia.
+
+**A lição:** um booleano com dois valores para três estados não guarda a
+diferença — ele escolhe um dos três e mente nos outros dois. O erro não estava
+na frase, estava em haver só duas frases.
+
+**O comprimento também foi medido, não adivinhado.** A primeira versão do ramo
+do meio terminava em "— então aqui não há medição de sinal, de velocidade nem de
+cobertura". Vendo renderizado, em `/avisos-legais` e `/termos-de-uso` a frase
+anterior da página já é "Não há medição de rede neste site": as duas juntas
+diziam a mesma coisa duas vezes. Foi encurtada depois de olhar a tela.
+
 ## 24 de outubro de 2026
 
 ### O extrato aberto no escritório virtual, e o que ele corrigiu
