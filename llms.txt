@@ -15,8 +15,8 @@ Idioma: português do Brasil.
 Toda afirmação factual traz fonte primária linkada, com a data da checagem. O que
 não foi confirmado é marcado como não confirmado, com indicação de onde o leitor
 confirma — inclusive quando isso enfraquece o texto. Característica de produto da
-MOVVA é sempre atribuída à empresa, nunca afirmada: o autor contratou o plano, o
-chip não chegou e nada foi testado em campo. Nenhuma projeção de ganho é publicada.
+MOVVA é sempre atribuída à empresa, nunca afirmada. Contratei o plano e o chip chegou. Ainda não testei nada em campo. Nenhuma projeção
+de ganho é publicada.
 
 ## Sobre a empresa analisada
 
