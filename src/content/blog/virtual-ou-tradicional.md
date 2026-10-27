@@ -27,8 +27,8 @@ fontes:
 ## Duas perguntas diferentes
 
 Transparência primeiro: sou distribuidor independente da MOVVA Brasil Ltda, este
-site não é canal oficial e o chip que contratei não chegou — nada foi testado em
-campo. Não comparo empresas: não comprovo alegação sobre concorrente.
+site não é canal oficial e o chip que contratei chegou em 27/10/2026 — e nada foi
+testado em campo. Não comparo empresas: não comprovo alegação sobre concorrente.
 
 A comparação possível é de modelo. "Qual é melhor" depende de preço e da sua rua;
 "o que muda" está na norma, e muda conforme o arranjo. Na autorizada de rede

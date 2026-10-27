@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build && npm run conferir",
     "preview": "astro preview",
-    "conferir": "node scripts/conferir-conteudo.mjs && node scripts/conferir-acentos.mjs && node scripts/conferir-links.mjs && node scripts/conferir-acessibilidade.mjs"
+    "conferir": "node scripts/conferir-conteudo.mjs && node scripts/conferir-acentos.mjs && node scripts/conferir-links.mjs && node scripts/conferir-acessibilidade.mjs && node scripts/conferir-estado-do-chip.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.6.0",

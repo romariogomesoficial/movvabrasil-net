@@ -66,7 +66,7 @@ fontes:
 
 ## Duas tabelas, não uma
 
-Transparência primeiro: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial da empresa, e o chip que eu pedi em 20 de outubro de 2026 não chegou. Nada foi medido em campo. Por isso não existe, em nenhum lugar desta página, comparação de velocidade, de cobertura ou de qualidade de sinal: eu não medi nada, e número que operadora publica sobre a própria rede é afirmação dela, não apuração minha.
+Transparência primeiro: sou distribuidor independente da MOVVA Brasil Ltda, este site não é canal oficial da empresa, e o chip que eu pedi em 20 de outubro de 2026 chegou em 27 de outubro. Nada foi medido em campo. Por isso não existe, em nenhum lugar desta página, comparação de velocidade, de cobertura ou de qualidade de sinal: eu não medi nada, e número que operadora publica sobre a própria rede é afirmação dela, não apuração minha.
 
 A página se divide em duas partes, e saber em qual delas você está olhando é o que a torna útil.
 
@@ -202,7 +202,7 @@ Sobre roaming há uma regra que costuma ser citada errada. O art. 66, § 4º, do
 
 O que falta é documento que diga sob qual instrumento a Vivo entra e qual prestadora de origem suporta o acesso. Deck é peça da empresa, não contrato, e a palavra "roaming" numa peça não decide o enquadramento. Sem isso não dá para afirmar que o art. 66 alcança este plano, nem que não alcança. Peça por escrito, com protocolo.
 
-E o que não sai desta página em nenhuma hipótese: comparação de cobertura real, de velocidade ou de qualidade de sinal entre as quatro. O chip pedido em 20/10/2026 não chegou, e nada aqui foi medido.
+E o que não sai desta página em nenhuma hipótese: comparação de cobertura real, de velocidade ou de qualidade de sinal entre as quatro. O chip pedido em 20/10/2026 chegou em 27/10/2026, e nada aqui foi medido.
 
 ## Estrutural: quem responde por você
 
@@ -304,4 +304,4 @@ A escolha não é entre "virtual" e "grande". É entre um preço que você confe
 - A franquia do TIM Controle 2.0, que é faturado e aparece na página de ofertas vigentes a R$ 58,99 fidelizado e R$ 94,99 não fidelizado. Seria a comparação mais direta com plano faturado, e eu não abri a etiqueta-padrão dele.
 - Qual Ato do Conselho Diretor publica hoje os grupos de pequeno porte. O PGMC remete a Ato e não o nomeia; a página da Anatel cita o Ato nº 6539/2019, anterior ao PGMC de 2025, e eu não abri o Ato.
 - Se o Capítulo XII do RGST está todo em vigor nesta data. Eu li o texto como publicado no DOU de 30/04/2025; a Resolução 777/2025 tem vigência diferida e eu não conferi prorrogações de prazo posteriores.
-- Velocidade, cobertura e qualidade de sinal de qualquer uma das quatro operadoras. O chip que eu pedi em 20 de outubro de 2026 não chegou: não há medição minha nesta página, e nenhuma comparação de sinal pode sair dela.
+- Velocidade, cobertura e qualidade de sinal de qualquer uma das quatro operadoras. O chip que eu pedi em 20 de outubro de 2026 chegou em 27 de outubro, mas eu ainda não medi nada com ele: não há medição minha nesta página, e nenhuma comparação de sinal pode sair dela.

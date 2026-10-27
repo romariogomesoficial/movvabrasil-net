@@ -90,7 +90,7 @@ Então são quatro coisas que eu não sei, e que eu prefiro escrever a estimar:
 
 Eu não vou chutar um valor para a tabela fechar bonito. Chute arredondado vira preço na cabeça de quem lê, e aí a conta que eu publiquei para proteger a pessoa é a mesma que a enganou.
 
-Pedi o meu chip em 20 de outubro de 2026 e ele ainda não chegou. Eu não abri o meu pedido para escrever esta página, então não publico nenhum número tirado dele. Quando eu tiver documento com os dois valores, eles entram na tabela acima com a fonte ao lado.
+Pedi o meu chip em 20 de outubro de 2026 e ele chegou em 27 de outubro. Eu não abri a minha fatura para escrever esta página, então não publico nenhum número tirado dela. Quando eu tiver documento com os dois valores, eles entram na tabela acima com a fonte ao lado.
 
 ## O que não entra nesta conta
 
@@ -129,6 +129,6 @@ E se a resposta que você receber for diferente do que está nesta página, a re
 - A data do deck. O preço de R$ 79,90 sai da página 31 do deck institucional da MOVVA, que não traz data de emissão nem número de versão. É a melhor fonte que eu tenho sobre preço e ainda assim não se data sozinha.
 - O preço do SKY+ Light, o que o pacote inclui e se ele é vendido à parte ou embutido na mensalidade. Eu só tenho a linha de comissão no meu próprio extrato, de R$ 8,66, no período de 7 de julho a 20 de outubro de 2026 — e linha de comissão não diz como o pacote é vendido ao cliente.
 - Se a MOVVA oferece ativação por eSIM, o que mudaria a linha da entrega. Não achei material da empresa que afirme nem que negue; o dossiê cita SIM Cards e eSIMs no contrato com a parceira de rede, e isso não é a oferta ao cliente.
-- Quanto eu mesmo paguei. Pedi o chip em 20 de outubro de 2026, ele não chegou, e eu não abri o pedido para escrever esta página. E eu publico um custo mensal de R$ 159,80 do meu plano, em /oportunidade e na minha resposta sobre quanto se ganha: é o dobro desta mensalidade, não abri a minha fatura, então não digo aqui o que esse valor cobre.
+- Quanto eu mesmo paguei. Pedi o chip em 20 de outubro de 2026 e ele chegou em 27 de outubro, mas eu não abri a minha fatura para escrever esta página — então o que o chip custou e o que a primeira cobrança traz continuam sem número aqui. E eu publico um custo mensal de R$ 159,80 do meu plano, em /oportunidade e na minha resposta sobre quanto se ganha: é o dobro desta mensalidade, não abri a minha fatura, então não digo aqui o que esse valor cobre.
 - O texto oficial no portal da Anatel. Os endereços do RGST e do RGC em informacoes.anatel.gov.br responderam HTTP 520 em 21/10/2026. Os artigos citados aqui eu li no DataLegis, o sistema federal de legislação, no mesmo dia. Reconferir no portal da Anatel quando ele voltar.
 - Os documentos da MOVVA citados aqui não têm endereço público. São arquivos que eu tenho em pasta — o deck institucional, "Diferenciais planos de telefonia MOVVA", o dossiê da empresa, o material de lançamento de julho de 2026 e as páginas de divulgação da rede de distribuidores. Por isso eles aparecem nomeados, e não linkados: nenhum deles entra na lista de fontes, que é de endereço público.

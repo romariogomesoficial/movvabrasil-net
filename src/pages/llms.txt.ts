@@ -7,7 +7,7 @@
 // lembrar de atualizá-lo.
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { SITE, AUTOR, VINCULO, EMPRESA } from '../data/site.js';
+import { SITE, AUTOR, VINCULO, EMPRESA, CHIP } from '../data/site.js';
 import { ROTULO_DO_CLUSTER } from '../data/clusters.js';
 import { PAGINAS } from '../data/paginas.js';
 
@@ -62,8 +62,8 @@ Idioma: português do Brasil.
 Toda afirmação factual traz fonte primária linkada, com a data da checagem. O que
 não foi confirmado é marcado como não confirmado, com indicação de onde o leitor
 confirma — inclusive quando isso enfraquece o texto. Característica de produto da
-MOVVA é sempre atribuída à empresa, nunca afirmada: o autor contratou o plano, o
-chip não chegou e nada foi testado em campo. Nenhuma projeção de ganho é publicada.
+MOVVA é sempre atribuída à empresa, nunca afirmada. ${CHIP.frase} Nenhuma projeção
+de ganho é publicada.
 
 ## Sobre a empresa analisada
 

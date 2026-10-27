@@ -179,7 +179,7 @@ Plano sem prazo de permanência ajuda, porque sair não custa multa — mas não
 
 ---
 
-Nota de transparência: escrevo como distribuidor independente da MOVVA Brasil Ltda, e este site não é canal oficial da empresa. Pedi o chip em 20/10/2026 e ele não chegou: não há nesta página nenhuma medição minha em campo, nem relato de uso próprio. Característica de produto da MOVVA entra aqui como anúncio da empresa, nunca como fato verificado por mim. Páginas e endereços consultados em 21/10/2026 — os que não abriram para mim estão identificados um a um na tabela do Passo 3 e nos pontos em aberto.
+Nota de transparência: escrevo como distribuidor independente da MOVVA Brasil Ltda, e este site não é canal oficial da empresa. Pedi o chip em 20/10/2026 e ele chegou em 27/10/2026, mas eu ainda não medi nada: não há nesta página nenhuma medição minha em campo, nem relato de uso próprio. Característica de produto da MOVVA entra aqui como anúncio da empresa, nunca como fato verificado por mim. Páginas e endereços consultados em 21/10/2026 — os que não abriram para mim estão identificados um a um na tabela do Passo 3 e nos pontos em aberto.
 
 ## O que eu não consegui confirmar
 

@@ -56,7 +56,7 @@ Quatro advertências antes dos números, porque elas mudam a leitura de tudo o q
 
 **Quase todo número desta página é teto, não média.** A Netflix publica "até 0,3 GB" e "até 3 GB" por hora. O Zoom publica requisito de banda, que é outra coisa: é o que a conexão precisa ter, e tratá-lo como teto de consumo é leitura minha, não afirmação da empresa. Teto dividido na franquia devolve **piso** de horas: onde eu escrevo "no mínimo 35 h", o real pode ser mais, nunca menos — desde que a qualidade seja a da linha. Se o aplicativo subir a qualidade sozinho, ou se o sinal ruim fizer o aparelho repetir o que já baixou, você saiu da linha: o piso que vale passa a ser o da qualidade entregue, não o da que você escolheu. Nas linhas de chamada de vídeo, o piso vale na medida em que o requisito do Zoom sirva de teto. Onde o insumo é aproximado e não teto — os bitrates da Spotify, a mediana de página do HTTP Archive —, eu escrevo "cerca de", e aí o real pode passar. Não inventei valor típico para nenhum deles.
 
-**Nada aqui foi medido por mim.** São contas feitas sobre números que as próprias plataformas publicam. Medição em campo na rede da MOVVA é outra coisa, e depende do chip que eu pedi em 20 de outubro de 2026 e que ainda não chegou.
+**Nada aqui foi medido por mim.** São contas feitas sobre números que as próprias plataformas publicam. Medição em campo na rede da MOVVA é outra coisa: o chip que eu pedi em 20 de outubro de 2026 foi entregue em 27 de outubro, e eu ainda não medi nada com ele.
 
 ## Quanto cada atividade gasta por hora
 
@@ -266,4 +266,4 @@ O melhor plano não é o que tem mais giga nem o que tem o giga mais barato. É 
 - **Até quando vale o saldo acumulado da MOVVA.** O deck institucional fecha a condição — pagar até a data do vencimento — e o horizonte — o próximo mês. O regulamento da oferta, onde ficariam teto e ordem de consumo, eu não localizei, e o que sobrou em janeiro ainda estar lá em março é a pergunta que nenhum material da empresa responde.
 - **Se o GB da franquia MOVVA é contado a 1.000 MB ou a 1.024 MB.** Isso muda todas as horas desta página em cerca de 7%. Não localizei a definição no material da empresa.
 - **Se existe qualquer gestão de qualidade de vídeo na rede usada pela MOVVA.** Operadora pode limitar resolução de streaming por política de oferta, e isso mudaria o consumo por hora na prática. Não localizei o regulamento da oferta que trate disso.
-- **Nenhum número desta página foi medido por mim na rede da MOVVA.** São contas sobre o que as plataformas publicam. O chip que eu pedi em 20 de outubro de 2026 ainda não chegou, e medição em campo é outra coisa.
+- **Nenhum número desta página foi medido por mim na rede da MOVVA.** São contas sobre o que as plataformas publicam. O chip que eu pedi em 20 de outubro de 2026 chegou em 27 de outubro, mas eu ainda não medi nada em campo — e medição em campo é outra coisa.

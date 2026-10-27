@@ -72,9 +72,44 @@ export const LINK_AFILIADO = 'https://movvabrasil.com/cadastro?ref=REF-315C1470'
 //
 // O site inteiro acompanha as duas, e nenhuma pagina fica para tras.
 // ---------------------------------------------------------------------------
+// Duas funcoes de apoio para os prazos do chip, que sao DERIVADOS dos carimbos
+// do rastreamento em vez de escritos a mao. Os carimbos vem na forma que a
+// transportadora mostra, 'DD/MM/AAAA, HH:MM'.
+const emMilissegundos = (carimbo) => {
+  const [data, hora] = carimbo.split(', ');
+  const [dia, mes, ano] = data.split('/').map(Number);
+  const [h, min] = hora.split(':').map(Number);
+  return Date.UTC(ano, mes - 1, dia, h, min);
+};
+
+const horasEntre = (de, ate) => (emMilissegundos(ate) - emMilissegundos(de)) / 36e5;
+
+// "6 dias e 20 horas". O plural e o "e" sao tratados aqui para que nenhuma
+// pagina precise montar a frase, e para que nenhuma monte diferente da outra.
+const duracaoPorExtenso = (horas) => {
+  const dias = Math.floor(horas / 24);
+  const resto = Math.round(horas % 24);
+  const parteDias = `${dias} ${dias === 1 ? 'dia' : 'dias'}`;
+  if (resto === 0) return parteDias;
+  const parteHoras = `${resto} ${resto === 1 ? 'hora' : 'horas'}`;
+  return dias === 0 ? parteHoras : `${parteDias} e ${parteHoras}`;
+};
+
 export const CHIP = {
   pedidoEm: '2026-10-20',
-  chegou: false,
+
+  // VIROU TRUE EM 27/10/2026, as 15:44, no evento "Objeto entregue ao
+  // destinatario" registrado pela LOGGI. O QUE ESTE CAMPO AFIRMA, E O QUE NAO
+  // AFIRMA: ele diz que a entrega foi registrada pela transportadora que levou
+  // o objeto, com data e hora. Nao diz que o autor abriu o pacote, nem que
+  // conferiu os dois chips, nem que ativou a linha — e nao diz nada sobre
+  // medicao de campo, que e `testadoEm`, abaixo, e que continua null.
+  chegou: true,
+
+  // CONTINUA NULL, DE PROPOSITO. Chip entregue nao e chip testado. Enquanto
+  // este campo for null, nenhuma pagina deste site pode falar de sinal, de
+  // velocidade ou de cobertura medidos por mim — e o getter `testado` existe
+  // para garantir isso em 32 paginas de uma vez.
   testadoEm: null,
 
   // O TRAJETO MEDIDO, lido no rastreamento do escritorio virtual e na pagina da
@@ -92,15 +127,35 @@ export const CHIP = {
     solicitado: '20/10/2026, 20:01',
     emitido: '21/10/2026, 16:18',
     postado: '23/10/2026, 10:46',
-    ultimoMovimento: '26/10/2026, 14:47',
-    ultimoEvento: 'Objeto em transferência',
+    entregue: '27/10/2026, 15:44',
+    ultimoMovimento: '27/10/2026, 15:44',
+    ultimoEvento: 'Objeto entregue ao destinatário',
     transportadora: 'LOGGI, via SuperFrete',
     frete: 'R$ 20,00',
     quantidade: 2,
-    // Conferido em 26/10/2026, as 15h: o objeto se movimentou no mesmo dia, as
-    // 14:47, e nao existe evento de entrega na linha do tempo da LOGGI.
-    conferidoEm: '2026-10-26',
-    entregaRegistrada: false,
+    // Conferido em 27/10/2026 na pagina da transportadora. O painel da MOVVA
+    // nao pode ser conferido nesta rodada porque a sessao do escritorio virtual
+    // havia expirado — e a entrega e evento da transportadora, nao da MOVVA.
+    conferidoEm: '2026-10-27',
+    entregaRegistrada: true,
+
+    // OS DOIS PRAZOS SAO DERIVADOS, NAO ESCRITOS A MAO. Este arquivo ja viu o
+    // mesmo numero escrito em dois lugares e divergindo; aqui ele e calculado
+    // dos proprios carimbos acima, entao nao existe versao velha para ficar
+    // para tras quando um carimbo mudar.
+    get horasAteEntrega() {
+      return horasEntre(this.solicitado, this.entregue);
+    },
+    get horasDePostagemAEntrega() {
+      return horasEntre(this.postado, this.entregue);
+    },
+    // Frases prontas, porque e isto que as paginas leem. Vao acentuadas.
+    get prazoTotal() {
+      return duracaoPorExtenso(this.horasAteEntrega);
+    },
+    get prazoDeEntrega() {
+      return duracaoPorExtenso(this.horasDePostagemAEntrega);
+    },
   },
 
   // SAO TRES ESTADOS, NAO DOIS, e a diferenca entre os dois ultimos e a razao

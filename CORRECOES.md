@@ -8,6 +8,90 @@ caso alguém pergunte.
 
 ---
 
+## 27 de outubro de 2026
+
+### O chip chegou, e catorze frases escritas à mão ficaram falsas de uma vez
+
+A LOGGI registrou "objeto entregue ao destinatário" em 27/10/2026 às 15:44.
+`CHIP.chegou` virou `true`; `testadoEm` continua `null`, porque entregar não é
+medir.
+
+**O que isso revelou, e é o registro que importa aqui.** Virar um campo exigiu
+**catorze edições à mão em oito arquivos**, porque a frase "o chip não chegou"
+estava escrita em prosa de markdown em vez de ser lida do módulo. O site tem uma
+definição única do estado do chip exatamente para isso não acontecer — e ela
+cobria as páginas `.astro`, não a prosa dos posts.
+
+Catorze edições à mão são catorze chances de esquecer uma. A que ficasse para
+trás seria afirmação falsa sobre o autor numa página só, que é precisamente a
+que ninguém revê.
+
+**É a terceira vez que este projeto leva o mesmo erro:** a contagem de lugares
+com VME ficou corrigida em dois lugares e velha em três, um deles na *mesma
+página*, 113 linhas abaixo do trecho corrigido; a conta do saque ficou errada em
+cinco arquivos e depois num sexto, *dentro* de um dos cinco já "corrigidos"; e
+agora o estado do chip.
+
+**A resposta foi um conferidor, não mais cuidado:** `conferir-estado-do-chip.mjs`
+lê o `CHIP` real e trava o build se qualquer página publicada disser o contrário.
+Entrou no `npm run conferir`.
+
+**Ele foi provado nos dois sentidos, e é isso que o separa do conferidor que foi
+apagado.** Existiu aqui um `conferir-coerencia.mjs` que tentava achar contradição
+por palavra-chave, deu alarme falso em quatro de seis regras e passou limpo no
+commit que carregava os defeitos para os quais foi escrito. Foi removido. Este:
+
+1. Passa nas 32 páginas reais.
+2. Com uma página de bancada plantada no `dist`, acusa os três casos errados e
+   fica calado nos quatro controles.
+3. Com `chegou: false` e o `dist` velho dizendo que chegou, acusa o descompasso.
+
+**E ele achou dois defeitos em si mesmo durante a prova, os dois meus:**
+
+- A primeira versão pedia a negação em `exigePerto` em vez de `proibidoPerto`, e
+  acusou **38 frases verdadeiras**. O site afirma negando — "ainda não testei
+  nada em campo" tem as mesmas letras de "testei em campo" —, e eu havia escrito
+  o comentário certo com o campo invertido. Era o defeito do conferidor apagado,
+  reencenado.
+- A janela de 60 caracteres atravessava o ponto final, então a negação de uma
+  frase **anterior** salvava a frase seguinte. "Eu testei em campo e a cobertura
+  era boa" passou limpo na bancada. Agora a janela para na fronteira de frase.
+
+**A lição:** conferidor que não é provado falhando não é conferidor, é decoração
+que dá sensação de segurança. E a prova tem de ser nos dois sentidos — passar no
+estado certo não diz nada sobre pegar o estado errado.
+
+### O prazo de entrega saiu de "em aberto" para medido
+
+Do pedido à entrega: **6 dias e 20 horas** (20/10 às 20:01 → 27/10 às 15:44). Da
+postagem à entrega: 4 dias e 5 horas. LOGGI via SuperFrete, para Jundiaí/SP.
+
+O ponto em aberto não foi apagado, foi **reescrito para o que continua aberto**: um
+envio, um endereço e uma data não formam prazo de operadora, e a empresa não
+publica prazo. Está dito na página que, se o envio de outra pessoa demorar o
+dobro, o meu número não lhe dá direito a nada.
+
+**Os dois prazos são derivados, não escritos à mão** — calculados dos próprios
+carimbos do rastreamento, dentro de `CHIP.trajeto`. Este arquivo já viu o mesmo
+número escrito em dois lugares e divergindo; aqui não existe segunda cópia para
+ficar velha.
+
+### O llms.txt escrevia o estado do chip à mão
+
+O arquivo que as IAs leem para saber o que o site contém trazia "o chip não
+chegou" em texto fixo, enquanto 32 páginas liam do módulo. Passou a ler
+`CHIP.frase`. Era o lugar onde um estado velho iria para o Google e para as IAs
+sem aparecer na tela de ninguém.
+
+### O que não foi conferido nesta rodada
+
+O painel da MOVVA, porque a sessão do escritório virtual havia expirado e **eu
+não digito senha**. A entrega é evento da transportadora, que é quem levou o
+objeto, então a fonte primária estava disponível — mas fica registrado que a
+segunda fonte não foi conferida.
+
+---
+
 ## 22 de outubro de 2026
 
 Dia de uma correção estrutural e de um lote grande. A correção estrutural veio
